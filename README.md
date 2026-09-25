@@ -374,6 +374,16 @@ The timescale study compares longer signaling on frozen actual 4-, 8-, and 16-ce
 
 In the first seed-7 screen, the normal coupled run reaches activator standard deviation 0.1 at time 36.14; doubling the cycle interval delays this to 44.21. Measured from first reaching 16 cells, the delays are nearly equal: 23.76 and 23.34. Thus the original weak time-15 signals primarily reflect insufficient growth time in this case. The frozen 4-cell graph suppresses fluctuations, while the 8- and 16-cell graphs amplify them on different timescales. Multi-seed robustness, mechanical/grid convergence, and fate persistence remain untested by this screen.
 
+### Discrete-to-continuum transport bridge
+
+A new fixed-domain benchmark checks conservative compartment exchange against the same continuum diffusion and Gierer–Meinhardt equations at increasing spatial resolution. It uses explicit compartment volumes and face conductances, with a sparse operator that preserves molecular amount under pure diffusion. This is a transport verification experiment; its compartments are numerical elements, not a simulation of tens of thousands of biological cells.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m embryo.continuum --output outputs/continuum-bridge
+```
+
+Across 64 to 32,768 compartments, diffusion error falls from 0.002871 to 0.00004994 with approximately second-order convergence. Coarse grids predict ten unstable modes; finer grids recover the continuum prediction of seven. Fixed normalized exchange rates do not approximate the same bulk diffusivity under this refinement. The current embryo simulator and live dashboard retain their existing dynamics. See [equations, protocol, results, and the remaining bridge to changing geometry](docs/continuum_bridge.md).
+
 ## Outputs
 
 | File | Contents |

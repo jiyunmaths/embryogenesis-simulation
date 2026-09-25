@@ -14,6 +14,12 @@ For each model extension, record the proposed mechanism, quantities already impo
 
 The first [signaling-versus-cleavage timescale screen](timescales.md) is complete for seed 7: the time-15 baseline develops large signal differences by time 60, and doubling the cycle interval mainly delays reaching the larger graph. This resolves the initial short-run observation for one parameter set; contact-threshold sensitivity, mechanical/grid refinement, and independent-seed replication remain the next acceptance work.
 
+### Discrete-to-continuum bridge (first transport benchmark complete)
+
+The next scientific direction is to connect the small-cell model to a continuum description while keeping signaling, identity, and shape as separate explanatory targets. A [fixed-domain conservative transport benchmark](continuum_bridge.md) now verifies volume-weighted conservation, approximately second-order diffusion convergence, and early GM growth against discrete and continuum mode predictions on successively refined 3D meshes. It does not establish a continuum limit of the actual embryo contact graph.
+
+Next: validate transport on irregular geometry with known face areas and capacities, then introduce moving-domain amount balance and a hybrid field/cell coupling. Choose bulk, membrane-limited, or extracellular communication explicitly before interpreting contact weights as molecular conductances. Preserve fate memory and mechanics during this transition. Contact-cutoff sensitivity and the other validation requirements below remain necessary.
+
 ## Milestone 1 — mechanics and cleavage (implemented; coarse numerical checks)
 
 - Diffuse deformable cells with volume constraints, exclusion, and interface attraction.
