@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Embryo Lab · Live simulation</title>
+  <link rel="stylesheet" href="/dashboard.css">
+  <script src="/dashboard.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="/" aria-label="Embryo Lab home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="16" cy="14" r="9"/><circle cx="27" cy="22" r="8"/><circle cx="13" cy="28" r="7"/></svg><span>embryo<span class="brand-light">lab</span><small>A living systems sandbox</small></span></a>
+    <div class="header-context"><span class="eyebrow">EXPERIMENT WORKSPACE</span><span>From one cell to emergent structure</span></div>
+    <button id="about" class="button subtle">About the model <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main class="workspace">
+    <aside class="parameters" aria-label="Simulation parameters">
+      <div class="rail-heading"><div><span class="eyebrow">01 / CONFIGURE</span><h1>Experiment setup</h1></div><button id="defaults" class="text-button" disabled>Defaults</button></div>
+      <p class="rail-description">Choose the rules.<br>Watch the organization emerge.</p>
+      <div id="parameter-note" class="parameter-note">Parameters apply when you start a run. Reset returns to a single cell using these settings.</div>
+      <form id="parameters" novalidate><p class="loading">Loading parameters…</p></form>
+      <div class="rail-footer"><span class="tiny-dot"></span>Dimensionless model · two possible identities</div>
+    </aside>
+
+    <section class="experiment" aria-label="Simulation dashboard">
+      <div class="experiment-header">
+        <div><div class="eyebrow">02 / OBSERVE</div><h2>Development, in motion<span class="title-dot">.</span></h2></div>
+        <div class="run-controls" aria-label="Simulation controls">
+          <button id="run" class="button primary" disabled><span aria-hidden="true">▶</span> <span id="run-label">Run</span></button>
+          <button id="pause" class="button" disabled><span aria-hidden="true">Ⅱ</span> Pause</button>
+          <button id="reset" class="button" disabled><span aria-hidden="true">↺</span> Reset</button>
+        </div>
+      </div>
+      <div id="error" class="error-banner" role="alert" hidden></div>
+      <div class="run-strip"><span id="state" class="state-pill"><i></i>Connecting</span><span id="run-detail">Connecting to the simulation…</span><span id="connection" class="connection">Local session</span></div>
+      <div class="progress-track"><div id="progress"></div></div>
+
+      <div class="metrics-grid" aria-label="Current frame metrics">
+        <article class="metric"><span class="metric-label">Cell population</span><div><strong id="metric-cells">—</strong><span id="metric-cap" class="metric-unit">cells</span></div><small id="metric-division">One zygote. An open possibility.</small></article>
+        <article class="metric"><span class="metric-label">Simulation time</span><div><strong id="metric-time">—</strong><span class="metric-unit">t</span></div><small id="metric-step">Waiting for initial state</small></article>
+        <article class="metric"><span class="metric-label">Signal variation</span><div><strong id="metric-signal">—</strong><span class="metric-unit">σ activator</span></div><small id="metric-modes">Graph-supported growing modes</small></article>
+        <article class="metric"><span class="metric-label">Shape anisotropy</span><div><strong id="metric-shape">—</strong><span class="metric-unit">axis ratio</span></div><small>A sphere has a ratio of 1.00</small></article>
+      </div>
+
+      <section class="scene-card" aria-label="Three-dimensional embryo">
+        <div class="scene-toolbar">
+          <div class="scene-title"><span class="scene-dot"></span>3D cell geometry <span id="view-mode" class="view-tag">CURRENT STATE</span></div>
+          <div class="scene-tools"><label for="color">Color</label><select id="color"><option value="fate">Cell identity</option><option value="activator">Activator</option><option value="inhibitor">Inhibitor</option><option value="lineage">Cell ID</option></select><button id="camera" title="Reset camera" class="icon-button" aria-label="Reset camera">⌖</button></div>
+        </div>
+        <div class="scene">
+          <canvas id="view" aria-label="Interactive 3D view of the simulated cell surfaces. Drag to orbit and scroll to zoom."></canvas>
+          <div class="scene-overlay"><span class="scene-overline">CELL SURFACES / 3D</span><div id="scene-caption">The beginning of an experiment</div></div>
+          <div id="legend" class="scene-legend"></div>
+          <div class="scene-help">Drag to orbit <span>·</span> Scroll to zoom</div>
+          <div class="scene-options"><label><input id="arrows" type="checkbox" checked> Polarity</label><label><input id="contacts" type="checkbox"> Contacts</label></div>
+          <div id="scene-empty">Preparing the zygote…</div>
+        </div>
+        <div class="view-controls"><label class="cut-label" for="cut">Cutaway <span id="cut-value">Full embryo</span></label><input id="cut" type="range" min="-1.6" max="1.6" step="0.02" value="1.6" aria-label="Cutaway along world Z"><span class="view-note">World Z</span></div>
+        <div class="timeline-bar"><button id="live" class="button live active" aria-pressed="true">● Follow live</button><input id="timeline" type="range" min="0" max="0" value="0" step="1" aria-label="Inspect recorded simulation frames"><span id="frame-info">Frame 1 / 1</span></div>
+      </section>
+
+      <section class="charts-grid" aria-label="Development histories">
+        <article class="chart-card"><div class="chart-heading"><div><span class="eyebrow">SIGNALING</span><h3>From fluctuations to differences</h3></div><div class="chart-key"><span><i class="key teal"></i>Activator σ</span><span><i class="key gold"></i>Inhibitor σ</span></div></div><canvas id="signals-chart" class="chart" aria-label="Activator and inhibitor standard deviation over time"></canvas><p>Variation is measured relative to uniform signaling.</p></article>
+        <article class="chart-card"><div class="chart-heading"><div><span class="eyebrow">ORGANIZATION</span><h3 id="organization-title">Identity through time</h3></div><select id="organization" aria-label="Organization chart"><option value="fates">Cell identities</option><option value="shape">Shape anisotropy</option><option value="volume">Volume error</option></select></div><canvas id="organization-chart" class="chart" aria-label="Cell identity counts, shape anisotropy, or volume error over time"></canvas><div id="organization-key" class="chart-key bottom-key"></div></article>
+      </section>
+
+      <section class="diagnostics-card" aria-label="Simulation diagnostics"><div><span class="eyebrow">NUMERICAL CHECKS</span><h3 id="diagnostic-title">Inspect before interpreting</h3></div><div class="diagnostic-values"><span>Volume error <b id="volume-error">—</b></span><span>Polarity <b id="polarity-value">—</b></span><span>Uncommitted <b id="uncommitted">—</b></span></div><p id="diagnostic-note">Cell identity labels indicate regulatory tendencies, not proven commitment.</p></section>
+      <footer class="experiment-footer"><span id="history-note">Live surfaces and metrics are sampled as the solver advances.</span><button id="download" class="text-button" disabled>Download recorded frames ↓</button></footer>
+    </section>
+  </main>
+
+  <dialog id="about-dialog"><button id="close-about" class="dialog-close" aria-label="Close model information">×</button><span class="eyebrow">THE EXPERIMENT</span><h2>Local rules.<br>Collective behavior.</h2><p>A generic 3D model couples deformable cell shapes, Gierer–Meinhardt activator–inhibitor signaling on the contact graph, a two-fate regulatory switch, and apical–basal polarity.</p><p>Cells divide along a shape-selected axis through progressive cytokinesis. The embryo outline and daughter identities are not prescribed.</p><p>Time and parameters are dimensionless. Identity thresholds do not establish irreversible commitment, and shape changes do not establish a developmental axis. Cavity fluid transport is not implemented.</p><p>Run starts or resumes the solver. Pause preserves the current state. To change parameters after starting, pause, edit, then Reset. Reset applies the edited parameters and starts again from a zygote.</p><p>The timeline inspects recorded frames; it does not rewind the solver. This local session is held in memory. Downloaded frames contain visualization data and parameters, not a checkpoint for exact continuation.</p><button id="about-done" class="button primary">Back to the experiment</button></dialog>
+</body>
+</html>

@@ -14,10 +14,13 @@ test = ["pytest>=7"]
 
 [project.scripts]
 embryo = "embryo.__main__:main"
+embryo-dashboard = "embryo.dashboard:main"
 
 [tool.setuptools.package-data]
-embryo = ["viewer.html"]
+embryo = ["viewer.html", "dashboard.html", "dashboard.css", "dashboard.js"]
+
+[tool.setuptools.packages.find]
+include = ["embryo*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-

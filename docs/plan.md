@@ -12,6 +12,8 @@ Gierer–Meinhardt signaling on the normalized contact graph and apical–basal 
 
 For each model extension, record the proposed mechanism, quantities already imposed by the model, an ablation or perturbation that could challenge the explanation, and quantitative acceptance criteria. Use unbiased initial fluctuations for spontaneous-symmetry-breaking experiments. Keep externally imposed signals as labeled controls. Analyze stability and spatial modes before claiming a Turing mechanism; report regimes without organization as well as successful patterns.
 
+The first [signaling-versus-cleavage timescale screen](timescales.md) is complete for seed 7: the time-15 baseline develops large signal differences by time 60, and doubling the cycle interval mainly delays reaching the larger graph. This resolves the initial short-run observation for one parameter set; contact-threshold sensitivity, mechanical/grid refinement, and independent-seed replication remain the next acceptance work.
+
 ## Milestone 1 — mechanics and cleavage (implemented; coarse numerical checks)
 
 - Diffuse deformable cells with volume constraints, exclusion, and interface attraction.

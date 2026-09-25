@@ -169,6 +169,8 @@ Polarity tests verify no grid-selected cue in an isolated sphere, apical cues aw
 
 The initial coupled run uses seed 7, a $40^3$ grid, and time 15. Actual first recorded 4-, 8-, and 16-cell graphs have zero, two, and four unstable spatial modes, respectively. Both the polarity-enabled run and its matched no-polarity control reach 16 cells. At time 15, the polarity-enabled activator standard deviation is only about $0.00137$ and all cells remain below the fate-commitment thresholds. The mean polarity magnitude is about $0.0835$; final axis ratios are 1.2689 with polarity and 1.2703 without. This establishes functioning coupling and finite-mode growth analysis, **not robust fate differentiation or a polarity-driven developmental axis**. Signaling growth times relative to cleavage and mechanical relaxation remain a research variable.
 
+A subsequent [timescale experiment](timescales.md) extends the coupled run to time 60, freezes actual division-event graphs, and compares slower cleavage with controlled graph replay. It observes large later signal differences and quantifies the time needed for amplification. Its exact division-event spectra can differ from the regularly sampled snapshots above.
+
 These are single-seed, coarse-grid demonstrations. Contact threshold sensitivity, evolving-graph transient amplification, longer signaling times, and mechanical/grid refinement remain necessary before biological interpretation.
 
 ## Sources
