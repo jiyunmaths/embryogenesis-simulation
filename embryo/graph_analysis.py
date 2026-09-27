@@ -1,4 +1,4 @@
-"""Finite-graph spectral preflight, without a 3D simulation."""
+"""Historical random-walk spectral experiment (not the conservative live preflight)."""
 
 import argparse
 import json
@@ -27,7 +27,7 @@ def verify_mode(graph, beta=2., da=1., dh=20.):
     if abs(values[index].imag) > 1e-10:
         return {"mode": int(mode), "verification": "oscillatory mode; no scalar exponential fit"}
     chemical = vectors[:, index].real
-    scale = np.sqrt(np.where(graph.degree > 0, graph.degree, 1))
+    scale = np.sqrt(graph.masses if graph.masses is not None else np.where(graph.degree > 0, graph.degree, 1))
     spatial = graph.eigenvectors[:, mode] / scale
     a, h = 1 + 1e-6 * spatial * chemical[0], 1 + 1e-6 * spatial * chemical[1]
     ts, amplitude = [], []

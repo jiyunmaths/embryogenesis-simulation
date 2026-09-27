@@ -53,6 +53,28 @@ def test_single_cell_remains_centered_and_isotropic():
     assert abs(sim.metrics()["relative_volume_error"]) < .05
 
 
+@pytest.mark.parametrize("coefficients", [
+    {"adhesion": 4, "surface_tension": 1.0},
+    {"adhesion": 4.0, "surface_tension": 1},
+    {"adhesion": 4, "surface_tension": 1},
+])
+def test_integer_mechanical_coefficients_match_float_trajectory(coefficients):
+    sim = small(max_cells=2, **coefficients)
+    reference = small(max_cells=2, adhesion=4.0, surface_tension=1.0)
+    for candidate in (sim, reference):
+        # Two contacting cells with nonzero fates exercise both feedback terms.
+        candidate.phi = np.concatenate([candidate.phi * .5] * 2)
+        candidate.target = candidate.volumes()
+        candidate.fate = np.array([.4, -.2])
+        candidate.polarity = np.zeros((2, 3))
+        candidate.ids = np.array([0, 1])
+    for _ in range(5):
+        sim.mechanical_step()
+        reference.mechanical_step()
+        np.testing.assert_array_equal(sim.phi, reference.phi)
+    assert np.isfinite(sim.phi).all()
+
+
 def test_checkpoint_continuation_is_exact(tmp_path):
     sim = small(division_interval=.15, max_cells=4, competence_cells=2)
     for _ in range(20):

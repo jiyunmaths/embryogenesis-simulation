@@ -7,7 +7,8 @@ from scipy.integrate import solve_ivp
 from scipy.sparse.linalg import eigsh, expm_multiply
 
 from embryo.signaling import gm_reaction, normalized_graph
-from embryo.transport import cartesian_transport, conservative_transport, integrate_gm
+from embryo.transport import (cartesian_transport, conservative_transport,
+                              integrate_gm, masked_cartesian_transport)
 
 
 def irregular_transport():
@@ -244,3 +245,92 @@ def test_cartesian_transport_rejects_invalid_geometry(kwargs):
 def test_gm_rejects_invalid_states_and_parameters(a, h, parameters):
     with pytest.raises(ValueError):
         integrate_gm(a, h, irregular_transport(), **{"dt": .1, **parameters})
+
+
+def test_masked_nonuniform_l_prism_geometry_and_conservation():
+    edges = (np.array([0., .2, .5, 1.]), np.array([0., .5, .8, 1.]), np.array([0., .3, 1.]))
+    full = cartesian_transport(edges=edges)
+    x, y = np.meshgrid(edges[0][:-1], edges[1][:-1], indexing="ij")
+    # Exact L-shaped prism: remove [0.5,1] x [0.5,1] x [0,1].
+    mask = np.asfortranarray(np.repeat(~((x >= .5) & (y >= .5))[..., None], 2, axis=2))
+    original_mask = mask.copy()
+    transport = masked_cartesian_transport(edges=edges, mask=mask)
+    active = np.flatnonzero(mask.ravel(order="C"))
+    assert transport.shape is None
+    assert len(transport.volumes) == 14
+    assert np.ptp(transport.volumes) > 0
+    np.testing.assert_allclose(transport.volumes.sum(), .75, rtol=1e-15)
+    np.testing.assert_array_equal(transport.centers, full.centers[active])
+    np.testing.assert_array_equal(transport.volumes, full.volumes[active])
+    np.testing.assert_array_equal(mask, original_mask)
+    np.testing.assert_allclose(transport.delta @ np.ones(len(active)), 0, atol=1e-14)
+    np.testing.assert_allclose(transport.volumes @ transport.delta, 0, atol=1e-15)
+    initial = np.linspace(.1, 2., len(active))
+    final = expm_multiply(.05 * transport.delta, initial)
+    assert np.all(final > 0)
+    np.testing.assert_allclose(transport.volumes @ final, transport.volumes @ initial, rtol=1e-14)
+
+
+def test_masked_generator_removes_loss_through_omitted_faces():
+    edges = (np.array([0., .5, 1.]),) * 3
+    mask = np.ones((2, 2, 2), dtype=bool)
+    mask[1, 1, :] = False
+    transport = masked_cartesian_transport(edges=edges, mask=mask)
+    full = cartesian_transport(edges=edges)
+    active = np.flatnonzero(mask.ravel())
+    # (0,1,0), full/active index 2, loses its +x neighbor (1,1,0).
+    # Each retained face contributes G/V = 0.5/0.125 = 4.
+    assert full.delta[2, 2] == -12
+    assert transport.delta[2, 2] == -8
+    np.testing.assert_array_equal(transport.conductance[2].indices, [0, 3])
+    np.testing.assert_allclose(transport.delta @ np.ones(6), 0)
+    # Retaining the old diagonals would act as an absorbing boundary.
+    leaking = full.delta[active][:, active]
+    assert (leaking @ np.ones(6))[2] == -4
+    assert transport.volumes @ (leaking @ np.ones(6)) < 0
+
+
+def test_all_active_mask_reproduces_original_cartesian_transport():
+    edges = ([0., .2, .5, 1.], [-1., .3, 1.], [0., .1, .4, 1.])
+    full = cartesian_transport(edges=edges)
+    transport = masked_cartesian_transport(edges=edges, mask=np.ones(full.shape, dtype=bool))
+    for name in ("conductance", "delta", "symmetric"):
+        assert (getattr(transport, name) != getattr(full, name)).nnz == 0
+    np.testing.assert_array_equal(transport.volumes, full.volumes)
+    np.testing.assert_array_equal(transport.centers, full.centers)
+    assert transport.shape is None
+
+
+def test_masked_disconnected_domains_conserve_each_component_separately():
+    from scipy.sparse.csgraph import connected_components
+    edges = ([0., .2, .5, .8, 1.], [0., .4, 1.], [0., .3, 1.])
+    mask = np.ones((4, 2, 2), dtype=bool)
+    mask[1, :, :] = False
+    transport = masked_cartesian_transport(edges=edges, mask=mask)
+    count, labels = connected_components(transport.conductance, directed=False)
+    assert count == 2
+    initial = np.linspace(1., 3., len(labels))
+    final = expm_multiply(.1 * transport.delta, initial)
+    for component in range(count):
+        selected = labels == component
+        volume = transport.volumes[selected]
+        np.testing.assert_allclose(volume @ final[selected], volume @ initial[selected], rtol=1e-14)
+    # Compartments touching only at a corner do not exchange material.
+    isolated_mask = np.zeros((2, 2, 2), dtype=bool)
+    isolated_mask[0, 0, 0] = isolated_mask[1, 1, 1] = True
+    isolated = masked_cartesian_transport(edges=([0., .5, 1.],) * 3, mask=isolated_mask)
+    assert isolated.conductance.nnz == isolated.delta.nnz == isolated.symmetric.nnz == 0
+    np.testing.assert_array_equal(expm_multiply(isolated.delta, np.array([1., 2.])), [1., 2.])
+
+
+@pytest.mark.parametrize("mask, message", [
+    ([[[True]]], "boolean ndarray"),
+    (np.ones((2, 2, 2), dtype=int), "boolean ndarray"),
+    (np.ones((2, 2, 2), dtype=float), "boolean ndarray"),
+    (np.ones((2, 2), dtype=bool), "shape"),
+    (np.ones((2, 2, 3), dtype=bool), "shape"),
+    (np.zeros((2, 2, 2), dtype=bool), "at least one"),
+])
+def test_masked_transport_rejects_invalid_masks(mask, message):
+    with pytest.raises(ValueError, match=message):
+        masked_cartesian_transport(edges=([0., .5, 1.],) * 3, mask=mask)

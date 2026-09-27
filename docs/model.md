@@ -1,6 +1,6 @@
 # Model definition
 
-The explicit graph signaling equations, discrete stability analysis, and apical–basal polarity mechanics are specified in [graph_signaling.md](graph_signaling.md). The scalar activity below is the downstream fate variable, distinct from activator and inhibitor.
+The current conservative signaling equations, dilution, and spectral analysis are specified in [live_transport.md](live_transport.md). Historical normalized signaling and current polarity mechanics are specified in [graph_signaling.md](graph_signaling.md). The scalar activity below is the downstream fate variable, distinct from activator and inhibitor.
 
 All coordinates, times, activities, energies, and coefficients are dimensionless. The model is generic. Parameters are illustrative rather than measured.
 
@@ -45,7 +45,7 @@ $$
 = -\frac{\delta E}{\delta\phi_i}.
 $$
 
-The code uses a finite-difference Laplacian and explicit time integration. Values are clipped to $[0,1]$; `clipped_fraction` exposes this numerical safeguard. Check step-size sensitivity, especially after division, rather than assuming clipping makes the method accurate.
+The production kernel reuses current-state occupancy/volume arrays and evaluates only the spatial operator selected by the tension model; [exact trajectory comparisons and timing](signal_patch.md#equation-preserving-kernel-optimization) document this optimization. The code uses a finite-difference Laplacian and explicit time integration. Values are clipped to $[0,1]$; `clipped_fraction` exposes this numerical safeguard. Check step-size sensitivity, especially after division, rather than assuming clipping makes the method accurate.
 
 The attraction is a phenomenological attraction between diffuse interface regions, not a calibrated cadherin or junction model. The volume penalty is soft outside cytokinesis; a dividing mother additionally uses the volume constraint below. Changing fate, cleavage, and stochastic dynamics mean the full simulation is not a passive energy-minimization process.
 
@@ -196,7 +196,7 @@ There is no growth between divisions. A partitioning draw $\eta$ gives activitie
 
 Lineage records distinguish `division_start` from `division` (abscission), and store the spindle axis and neck/overlap diagnostics at completion. Daughter clocks begin at abscission. The cell cap includes reservations for active mothers, including non-power-of-two caps.
 
-Independent mechanical and regulatory random streams remain separate. Coupled controls can nevertheless differ in cleavage orientation and completion timing because shape and mechanical relaxation now determine these events. Full active-event state is checkpointed. Checkpoint schema 3 includes signaling, polarity, and graph-event state and resumes exactly; earlier checkpoints are rejected explicitly because their subsequent dynamics would differ.
+Independent mechanical and regulatory random streams remain separate. Coupled controls can nevertheless differ in cleavage orientation and completion timing because shape and mechanical relaxation now determine these events. Full active-event state is checkpointed. Checkpoint schema 3 includes signaling, polarity, and graph-event state. New checkpoints record `signal_transport`; historical schema-3 files lacking it explicitly restore `random_walk`, preserving their original dynamics; earlier checkpoints are rejected explicitly because their subsequent dynamics would differ.
 
 ## Shape diagnostics
 

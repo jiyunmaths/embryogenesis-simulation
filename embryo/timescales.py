@@ -16,6 +16,7 @@ from scipy.linalg import expm
 
 from .model import Config, Simulation
 from .signaling import normalized_graph, stability, integrate, gm_jacobian
+from .transport import conservative_transport, transport_graph
 from .graph_analysis import cycle, verify_mode
 
 
@@ -35,13 +36,13 @@ def capture(config, output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     write_json(output / "config.json", asdict(config))
-    write_json(output / "graph_preflight.json", {
-        f"cycle_{n}": stability(cycle(n), config.signal_beta, config.signal_da, config.signal_dh)
-        for n in (4, 8, 16)
-    })
     sim = Simulation(config)
+    from .dashboard import reference_preflight
+    write_json(output / "graph_preflight.json", reference_preflight(config, sim))
     shape = (config.steps + 1, config.max_cells)
     weights = np.zeros((*shape, config.max_cells))
+    volumes = np.zeros(shape)
+    conductances = np.zeros_like(weights)
     counts = np.zeros(shape[0], dtype=int)
     ids = np.full(shape, -1, dtype=int)
     activator, inhibitor = np.zeros(shape), np.zeros(shape)
@@ -50,12 +51,14 @@ def capture(config, output):
     for step in range(config.steps + 1):
         n = len(sim.phi)
         weights[step, :n, :n] = sim.contacts()[0]
+        graph = sim.signaling_graph(weights[step, :n, :n])
+        volumes[step, :n] = sim.volumes()
+        conductances[step, :n, :n] = graph.weights
         counts[step] = n
         ids[step, :n] = sim.ids
         activator[step, :n], inhibitor[step, :n] = sim.activator, sim.inhibitor
         if step % config.save_every == 0 or step == config.steps:
             row = sim.metrics()
-            graph = normalized_graph(weights[step, :n, :n], config.graph_contact_cutoff)
             row["maximum_spatial_growth"] = stability(
                 graph, config.signal_beta, config.signal_da, config.signal_dh)["maximum_spatial_growth"]
             metrics.append(row)
@@ -65,7 +68,7 @@ def capture(config, output):
         if step < config.steps:
             sim.step()
     np.savez_compressed(output / "trace.npz", time=np.arange(config.steps + 1) * config.dt,
-                        counts=counts, ids=ids, weights=weights,
+                        counts=counts, ids=ids, weights=weights, volumes=volumes, conductances=conductances,
                         activator=activator, inhibitor=inhibitor)
     write_json(output / "cleavage_spectra.json", sim.graph_events)
     write_json(output / "metrics.json", metrics)
@@ -75,12 +78,14 @@ def capture(config, output):
         writer.writerows(metrics)
     sim.checkpoint(output / "final_state.npz")
     write_json(output / "run.json", {"elapsed_seconds": time.monotonic() - started,
-                                    "final": metrics[-1], "trace_schema": 1})
+                                    "final": metrics[-1], "trace_schema": 2})
 
 
 def load_capture(directory):
     directory = Path(directory)
-    config = Config(**json.loads((directory / "config.json").read_text()))
+    settings = json.loads((directory / "config.json").read_text())
+    settings.setdefault("signal_transport", "random_walk")
+    config = Config(**settings)
     with np.load(directory / "trace.npz", allow_pickle=False) as data:
         trace = {key: data[key] for key in data.files}
     events = json.loads((directory / "cleavage_spectra.json").read_text())
@@ -127,13 +132,26 @@ def replay(config, trace, events, precleavage_factor=1.0):
         n = int(trace["counts"][step])
         if len(a) != n:
             raise ValueError("trace and cleavage events have inconsistent cell counts")
-        graph = normalized_graph(trace["weights"][step, :n, :n], config.graph_contact_cutoff)
+        if config.signal_transport == "conservative":
+            if "conductances" not in trace or "volumes" not in trace:
+                raise ValueError("conservative replay requires conductances and measured volumes")
+            graph = transport_graph(conservative_transport(trace["conductances"][step, :n, :n],
+                                                            trace["volumes"][step, :n]))
+        else:
+            graph = normalized_graph(trace["weights"][step, :n, :n], config.graph_contact_cutoff)
         dt = trace["time"][step + 1] - trace["time"][step]
         # Use the configured step to exactly match the coupled integrator.
         if not np.isclose(dt, config.dt):
             raise ValueError("replay requires a trace recorded at every solver step")
         dt = config.dt * (precleavage_factor if step < last_division else 1)
         a, b = integrate(a, b, graph, dt, config.signal_beta, config.signal_da, config.signal_dh)
+        if config.signal_transport == "conservative":
+            next_events = by_step.get(step + 1, [])
+            next_volumes = (np.asarray(next_events[0]["volumes_before"]) if next_events
+                            else trace["volumes"][step + 1, :n])
+            dilution = trace["volumes"][step, :n] / next_volumes
+            a *= dilution
+            b *= dilution
         for event in by_step.get(step + 1, []):
             a = apply_inheritance(a, event, "activator")
             b = apply_inheritance(b, event, "inhibitor")
@@ -145,11 +163,16 @@ def replay(config, trace, events, precleavage_factor=1.0):
     return result
 
 
-def frozen(config, weights, activator, inhibitor, duration=60., dt=.05):
+def frozen(config, weights, activator, inhibitor, duration=60., dt=.05, *, volumes=None):
     """Nonlinear signals and exact linearized evolution from the same real state."""
     if min(duration, dt) <= 0 or not np.isfinite([duration, dt]).all():
         raise ValueError("duration and dt must be finite and positive")
-    graph = normalized_graph(weights, config.graph_contact_cutoff)
+    if config.signal_transport == "conservative":
+        if volumes is None:
+            raise ValueError("conservative frozen analysis requires conductances and volumes")
+        graph = transport_graph(conservative_transport(weights, volumes))
+    else:
+        graph = normalized_graph(weights, config.graph_contact_cutoff)
     count = len(graph.degree)
     steps = int(np.ceil(duration / dt))
     dt = duration / steps
@@ -247,9 +270,10 @@ def analyze(baseline, slow, output, frozen_duration=120., replay_factor=2., froz
     curves = {}
     for n in (4, 8, 16):
         index = int(np.flatnonzero(trace["counts"] == n)[0])
-        weights = trace["weights"][index, :n, :n]
+        weights = trace["conductances" if config.signal_transport == "conservative" else "weights"][index, :n, :n]
         graph, result = frozen(config, weights, trace["activator"][index, :n],
-                               trace["inhibitor"][index, :n], frozen_duration, frozen_dt)
+                               trace["inhibitor"][index, :n], frozen_duration, frozen_dt,
+                               volumes=trace["volumes"][index, :n] if "volumes" in trace else None)
         np.savez_compressed(output / f"frozen_{n}.npz", weights=weights, **result)
         report = stability(graph, config.signal_beta, config.signal_da, config.signal_dh)
         rate = report["maximum_spatial_growth"]

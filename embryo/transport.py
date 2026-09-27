@@ -3,8 +3,8 @@
 Conductances contain geometry (interface area / center separation), not a
 diffusion coefficient. With compartment volumes M = diag(V), the positive
 stiffness matrix K = diag(G 1) - G gives Delta = -M^-1 K. This is a physical
-finite-volume discretization, separate from the normalized activity exchange
-used by the existing deformable-cell simulation.
+finite-volume discretization. The live-cell adapter calibrates diffuse contact
+overlap to an approximate interface area; this closure needs separate validation.
 """
 
 from dataclasses import dataclass
@@ -159,6 +159,39 @@ def cartesian_transport(n=None, length=1.0, edges=None):
     return transport
 
 
+def masked_cartesian_transport(*, edges, mask):
+    """Conservative diffusion on a union of whole Cartesian compartments.
+
+    ``edges`` has the same meaning as in :func:`cartesian_transport`. ``mask``
+    must be a boolean ndarray with the full grid shape, containing at least one
+    active compartment. Active volumes and centers are returned in C order
+    (z varying fastest). The returned ``shape`` is None because the selected
+    domain need not be a rectangular array.
+
+    Only face conductances connecting two active compartments are retained.
+    Rebuilding the generator from these conductances removes the diagonal losses
+    associated with omitted neighbors, imposing zero normal flux on every
+    exposed axis-aligned face. Slicing the original generator instead would
+    incorrectly allow mass to leak into omitted compartments.
+
+    This excludes whole compartments; it does not calculate partially occupied
+    cut cells or impose a curved boundary. Disconnected components and isolated
+    active compartments are allowed, each with its own no-flux boundary.
+    """
+    if not isinstance(mask, np.ndarray) or mask.dtype != np.dtype(bool):
+        raise ValueError("mask must be a boolean ndarray")
+    full = cartesian_transport(edges=edges)
+    if mask.shape != full.shape:
+        raise ValueError("mask shape must match the Cartesian grid shape")
+    active = np.flatnonzero(mask.ravel(order="C"))
+    if not len(active):
+        raise ValueError("mask must contain at least one active compartment")
+    conductance = full.conductance[active][:, active]
+    transport = conservative_transport(conductance, full.volumes[active])
+    transport.centers = full.centers[active]
+    return transport
+
+
 def integrate_gm(a, h, transport, dt, beta=2.0, da=.02, dh=.4):
     """Advance GM concentrations with conservative transport and SSP-RK2.
 
@@ -213,3 +246,50 @@ def integrate_gm(a, h, transport, dt, beta=2.0, da=.02, dh=.4):
     if not np.isfinite(a).all() or not np.isfinite(h).all():
         raise FloatingPointError("GM concentrations became nonfinite; reduce dt/check kinetics")
     return a, h
+
+
+def transport_graph(transport):
+    """Dense spectral view for small live-cell systems, with volume-weighted modes."""
+    from .signaling import Graph
+    symmetric = transport.symmetric.toarray()
+    values, vectors = np.linalg.eigh(symmetric)
+    values[np.abs(values) < 1e-12] = 0
+    weights = transport.conductance.toarray()
+    return Graph(weights, weights.sum(axis=1), transport.delta.toarray(),
+                 symmetric, values, vectors, transport.volumes.copy(), "conservative")
+
+
+def contact_transport(contacts, volumes, centers, interface_width, relative_cutoff=0.02):
+    """Approximate geometric conductances from diffuse phase-field contacts.
+
+    For complementary flat equilibrium profiles, phi'=sqrt(2)/epsilon*phi(1-phi),
+    W/A = integral phi^2(1-phi)^2 ds = epsilon/(6*sqrt(2)). Thus A_est=6*sqrt(2)*W/epsilon.
+    This is a calibrated closure, not exact face reconstruction: gaps, overlap,
+    curvature and nonorthogonal center-to-face directions can bias its fluxes.
+    Cutoff is applied symmetrically to raw overlaps; no degree normalization.
+    """
+    if not np.isfinite(interface_width) or interface_width <= 0:
+        raise ValueError("interface_width must be positive and finite")
+    weights = np.asarray(contacts, dtype=float).copy()
+    if (weights.ndim != 2 or weights.shape[0] != weights.shape[1] or not len(weights)
+            or not np.isfinite(weights).all() or np.any(weights < 0)
+            or not np.allclose(weights, weights.T, rtol=1e-12, atol=0)):
+        raise ValueError("contacts must be a nonempty finite nonnegative symmetric matrix")
+    if not 0 <= relative_cutoff < 1:
+        raise ValueError("relative_cutoff must be in [0,1)")
+    weights = .5 * (weights + weights.T)
+    np.fill_diagonal(weights, 0)
+    # Relative filtering retains dimensional scaling under geometric rescaling.
+    weights[weights < relative_cutoff * weights.max()] = 0
+    centers = np.asarray(centers, dtype=float)
+    if centers.shape != (len(weights), 3) or not np.isfinite(centers).all():
+        raise ValueError("centers must be a finite N-by-3 array")
+    distances = np.linalg.norm(centers[:, None] - centers[None, :], axis=-1)
+    active = weights > 0
+    if np.any(distances[active] <= 1e-12):
+        raise ValueError("contacting compartments must have distinct centers")
+    areas = 6 * np.sqrt(2) * weights / interface_width
+    conductance = np.divide(areas, distances, out=np.zeros_like(areas), where=active)
+    result = conservative_transport(conductance, volumes)
+    result.centers = centers.copy()
+    return result

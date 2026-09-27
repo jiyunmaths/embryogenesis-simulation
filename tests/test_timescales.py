@@ -59,7 +59,7 @@ def test_frozen_linear_solution_matches_analytic_eigenmode():
     chemical = vectors[:, index].real
     spatial = np.cos(2 * np.pi * np.arange(8) / 8)
     a, b = 1 + 1e-6 * chemical[0] * spatial, 1 + 1e-6 * chemical[1] * spatial
-    _, result = frozen(Config(), graph.weights, a, b, duration=2.)
+    _, result = frozen(Config(signal_transport="random_walk", signal_da=1., signal_dh=20.), graph.weights, a, b, duration=2.)
     expected = (a - 1).std() * np.exp(values[index].real * result["time"])
     np.testing.assert_allclose(result["linear_activator_deviation"].std(axis=1), expected, rtol=1e-9)
     np.testing.assert_allclose(result["activator"].std(axis=1), expected, rtol=2e-5)

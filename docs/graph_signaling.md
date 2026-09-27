@@ -1,6 +1,8 @@
 # Discrete graph signaling and apical–basal polarity
 
-This model implements Gierer–Meinhardt activator–inhibitor dynamics directly on the finite normalized contact graph. Spatial instability is decided from its actual eigenvalues, not by assuming that a continuous unstable wavelength is available. The apical–basal polarity module couples signaling and exposed cortex to directional mechanics.
+**Historical signaling model:** new live runs default to [conservative transport](live_transport.md). The normalized formulas, cycle examples, and `embryo.graph_analysis` CLI below describe the retained `random_walk` model. The polarity mechanics section remains applicable; orientation alignment continues to use normalized averaging.
+
+This historical model implements Gierer–Meinhardt activator–inhibitor dynamics directly on the finite normalized contact graph. Spatial instability is decided from its actual eigenvalues, not by assuming that a continuous unstable wavelength is available. The apical–basal polarity module couples signaling and exposed cortex to directional mechanics.
 
 ## Normalization and transport assumptions
 

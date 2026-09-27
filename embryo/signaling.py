@@ -1,4 +1,4 @@
-"""Gierer–Meinhardt kinetics and exact finite normalized-graph stability."""
+"""Gierer–Meinhardt kinetics and finite-operator spectral stability."""
 
 from dataclasses import dataclass
 import numpy as np
@@ -12,6 +12,8 @@ class Graph:
     symmetric: np.ndarray
     eigenvalues: np.ndarray
     eigenvectors: np.ndarray
+    masses: np.ndarray | None = None
+    operator: str = "random_walk"
 
 
 def normalized_graph(contacts, relative_cutoff=0.02):
@@ -66,6 +68,7 @@ def stability(graph, beta=2.0, da=1.0, dh=20.0):
     band = band if len(band) == 2 and local < 0 else None
     unstable = nonzero & (growth > 1e-10)
     return {
+        "operator": graph.operator,
         "cells": len(graph.degree), "edges": int(np.count_nonzero(np.triu(graph.weights, 1))),
         "components": int(np.count_nonzero(~nonzero)),
         "smallest_positive_eigenvalue": float(graph.eigenvalues[nonzero].min()) if np.any(nonzero) else None,
@@ -81,12 +84,17 @@ def stability(graph, beta=2.0, da=1.0, dh=20.0):
 
 def integrate(a, h, graph, dt, beta=2.0, da=1.0, dh=20.0):
     """SSP-RK2 with positive Euler stages for this production/loss system."""
+    if graph.masses is not None:
+        from .transport import conservative_transport, integrate_gm
+        return integrate_gm(a, h, conservative_transport(graph.weights, graph.masses),
+                            dt, beta, da, dh)
     if dt <= 0 or min(beta, da, dh) <= 0 or not np.isfinite([dt, beta, da, dh]).all():
         raise ValueError("dt and signaling parameters must be positive and finite")
     a, h = np.asarray(a, dtype=float).copy(), np.asarray(h, dtype=float).copy()
     if a.shape != graph.degree.shape or h.shape != a.shape or np.any(a < 0) or np.any(h <= 0):
         raise ValueError("signals must match graph size, with a>=0 and h>0")
-    substeps = max(1, int(np.ceil(dt * max(1 + da, beta + dh) / 0.2)))
+    exit_rate = float(np.max(-np.diag(graph.delta)))
+    substeps = max(1, int(np.ceil(dt * max(1 + da * exit_rate, beta + dh * exit_rate) / 0.2)))
     step = dt / substeps
 
     def rhs(x, y):
@@ -116,15 +124,16 @@ def eigenvalue_groups(values, tolerance=1e-8):
 def mode_transfer(before, after, prolongation):
     """Basis-invariant energy transfer between degenerate spectral subspaces.
 
-    P copies parent activities to daughters. Transform random-walk right modes
-    through P into the new degree-weighted symmetric eigenbasis. Summing squares
+    P copies parent concentrations to daughters (partition jumps are separate).
+    Transform right modes through P into the new symmetric eigenbasis, weighted
+    by measured volumes for conservative transport or legacy graph degrees. Summing squares
     over old and new degenerate groups avoids arbitrary eigenvector signs/rotations.
     """
     p = np.asarray(prolongation, dtype=float)
     if p.shape != (len(after.degree), len(before.degree)) or not np.allclose(p.sum(axis=1), 1):
         raise ValueError("prolongation must have new-by-old shape and preserve constants")
-    old_scale = np.sqrt(np.where(before.degree > 0, before.degree, 1))
-    new_scale = np.sqrt(np.where(after.degree > 0, after.degree, 1))
+    old_scale = np.sqrt(before.masses if before.masses is not None else np.where(before.degree > 0, before.degree, 1))
+    new_scale = np.sqrt(after.masses if after.masses is not None else np.where(after.degree > 0, after.degree, 1))
     transfer = after.eigenvectors.T @ (new_scale[:, None] * p) @ (before.eigenvectors / old_scale[:, None])
     old_groups, new_groups = eigenvalue_groups(before.eigenvalues), eigenvalue_groups(after.eigenvalues)
     energy = np.array([[np.sum(transfer[np.ix_(new, old)]**2) for old in old_groups] for new in new_groups])

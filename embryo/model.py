@@ -7,6 +7,7 @@ from dataclasses import asdict, dataclass
 import numpy as np
 from scipy.ndimage import laplace
 from .signaling import normalized_graph, stability, integrate, mode_transfer, cleavage_prolongation
+from .transport import contact_transport, transport_graph
 from .polarity import exposure_cue, evolve, tension_field, flux_divergence
 
 
@@ -40,11 +41,14 @@ class Config:
     partition_noise: float = 0.0
     signaling: bool = True
     signal_beta: float = 2.0
-    signal_da: float = 1.0
-    signal_dh: float = 20.0
+    signal_transport: str = "conservative"
+    signal_da: float = 0.02
+    signal_dh: float = 0.4
     signal_partition_noise: float = 0.001
     signal_fate_gain: float = 1.0
     graph_contact_cutoff: float = 0.02
+    # -1 preserves historical shared-cutoff behavior; >=0 isolates polarity filtering.
+    polarity_contact_cutoff: float = -1.0
     polarity_enabled: bool = True
     polarity_rate: float = 1.0
     polarity_alignment: float = 0.25
@@ -57,6 +61,8 @@ class Config:
     differentiation: bool = True
 
     def validate(self):
+        if self.signal_transport not in ("conservative", "random_walk"):
+            raise ValueError("signal_transport must be conservative or random_walk")
         for name in ("grid", "steps", "max_cells", "competence_cells", "save_every"):
             value = getattr(self, name)
             if isinstance(value, bool) or not isinstance(value, int) or value < 1:
@@ -76,6 +82,8 @@ class Config:
         for name in ("cycle_jitter", "fate_adhesion", "fate_tension", "graph_contact_cutoff", "polarity_tension"):
             if not 0 <= getattr(self, name) < 1:
                 raise ValueError(f"{name} must be in [0, 1)")
+        if self.polarity_contact_cutoff != -1 and not 0 <= self.polarity_contact_cutoff < 1:
+            raise ValueError("polarity_contact_cutoff must be -1 (inherit) or in [0, 1)")
         if self.division_orientation not in ("shape", "isotropic"):
             raise ValueError("division_orientation must be 'shape' or 'isotropic'")
         for name in ("axis_degeneracy", "neck_threshold", "division_overlap_tolerance"):
@@ -143,7 +151,8 @@ class Simulation:
 
     def centers(self):
         h = occupancy(self.phi)
-        return np.einsum("nijk,dijk->nd", h, self.xyz) * self.dx**3 / self.volumes()[:, None]
+        volumes = h.sum(axis=(1, 2, 3), dtype=np.float64) * self.dx**3
+        return np.einsum("nijk,dijk->nd", h, self.xyz) * self.dx**3 / volumes[:, None]
 
     def division_direction(self, index):
         """Spindle axis; the cleavage plane is perpendicular to this direction."""
@@ -191,7 +200,8 @@ class Simulation:
         flat = shell.reshape(len(shell), -1)
         contacts = (flat @ flat.T).astype(float) * self.dx**3
         np.fill_diagonal(contacts, 0)
-        others = occupancy(self.phi).sum(axis=0)[None] - occupancy(self.phi)
+        h = occupancy(self.phi)
+        others = h.sum(axis=0)[None] - h
         # An interface-weighted exposure proxy, not a measured geometric surface fraction.
         blocked = np.clip(2 * others, 0, 1)
         exposure = 1 - (shell * blocked).sum(axis=(1, 2, 3)) / np.maximum(shell.sum(axis=(1, 2, 3)), 1e-12)
@@ -208,14 +218,27 @@ class Simulation:
                  + (c.signal_fate_gain * (self.activator - 1) if c.signaling else 0))
         self.fate += c.dt * drift + c.fate_noise * np.sqrt(c.dt) * self.fate_rng.normal(size=len(self.fate))
 
+    def signaling_graph(self, contacts=None):
+        """Frozen signaling operator on the current measured cell geometry."""
+        if contacts is None:
+            contacts = self.contacts()[0]
+        c = self.config
+        if c.signal_transport == "random_walk":
+            return normalized_graph(contacts, c.graph_contact_cutoff)
+        return transport_graph(contact_transport(contacts, self.volumes(), self.centers(),
+                                                  c.interface_width, c.graph_contact_cutoff))
+
     def graph_snapshot(self, contacts=None):
         if contacts is None:
             contacts = self.contacts()[0]
         c = self.config
-        graph = normalized_graph(contacts, c.graph_contact_cutoff)
+        graph = self.signaling_graph(contacts)
         return {"time": self.time, "ids": self.ids.tolist(), "weights": graph.weights.tolist(),
                 "activator": self.activator.tolist(), "inhibitor": self.inhibitor.tolist(),
                 "polarity": self.polarity.tolist(),
+                "volumes": self.volumes().tolist(),
+                "weight_kind": "conductance" if graph.masses is not None else "shell_overlap",
+                "eigenvalue_units": "model_length^-2" if graph.masses is not None else "dimensionless",
                 **stability(graph, c.signal_beta, c.signal_da, c.signal_dh)}
 
     def mechanical_step(self):
@@ -224,25 +247,33 @@ class Simulation:
         shell2 = (phi * (1 - phi))**2
         derivative = 2 * phi * (1 - phi) * (1 - 2 * phi)
         fate = np.tanh(self.fate)
-        adhesion = np.full((len(phi), len(phi)), c.adhesion)
-        tension = np.full(len(phi), c.surface_tension)
+        # Whole-valued parameters (e.g. JSON 4 instead of 4.0) still need
+        # floating-point storage for the in-place mechanical feedback below.
+        adhesion = np.full((len(phi), len(phi)), c.adhesion, dtype=float)
+        tension = np.full(len(phi), c.surface_tension, dtype=float)
         if c.feedback:
             adhesion *= 1 + c.fate_adhesion * fate[:, None] * fate[None, :]
             tension *= 1 + c.fate_tension * fate
         np.fill_diagonal(adhesion, 0)
         attract = (adhesion @ shell2.reshape(len(phi), -1)).reshape(phi.shape)
         exclude = np.sum(phi**2, axis=0)[None] - phi**2
-        volume_force = c.volume_stiffness * (self.target - self.volumes()) / self.target
+        h = occupancy(phi)
+        volumes = h.sum(axis=(1, 2, 3), dtype=np.float64) * self.dx**3
+        volume_force = c.volume_stiffness * (self.target - volumes) / self.target
         updated = np.empty_like(phi)
         self.volume_projection_max = 0.0
-        centers = self.centers()
+        # Reuse current-state occupancy and volumes; never cache across steps.
+        centers = np.einsum("nijk,dijk->nd", h, self.xyz) * self.dx**3 / volumes[:, None]
         for i in range(len(phi)):
-            diffusion = laplace(phi[i], mode="nearest") / self.dx**2
-            force = tension[i] * (c.interface_width**2 * diffusion - derivative[i])
             if c.feedback and c.polarity_enabled and np.linalg.norm(self.polarity[i]) > 1e-10:
                 gamma = tension_field(self.xyz - centers[i, :, None, None, None], self.polarity[i],
                                       tension[i], c.polarity_tension, c.interface_width)
                 force = c.interface_width**2 * flux_divergence(phi[i], gamma, self.dx) - gamma * derivative[i]
+            else:
+                # This Laplacian was previously evaluated then discarded in
+                # every cell using variable cortical tension.
+                diffusion = laplace(phi[i], mode="nearest") / self.dx**2
+                force = tension[i] * (c.interface_width**2 * diffusion - derivative[i])
             force += volume_force[i] * 6 * phi[i] * (1 - phi[i])
             force -= c.repulsion * phi[i] * exclude[i]
             force += derivative[i] * attract[i]
@@ -336,7 +367,8 @@ class Simulation:
 
     def _complete_division(self, index, daughters, fraction, neck, overlap):
         c = self.config
-        old_graph = normalized_graph(self.contacts()[0], c.graph_contact_cutoff)
+        old_graph = self.signaling_graph()
+        old_volumes = self.volumes()
         old_ids = self.ids.tolist()
         old_a, old_h = self.activator.copy(), self.inhibitor.copy()
         prolongation = cleavage_prolongation(len(self.phi), index)
@@ -344,6 +376,8 @@ class Simulation:
         first_id, second_id = self.next_id, self.next_id + 1
         self.next_id += 2
         self.phi = np.concatenate([self.phi[:index], self.phi[index + 1:], daughters])
+        new_volumes = self.volumes()
+        actual_fraction = new_volumes[-2] / new_volumes[-2:].sum()
         target = self.target[index]
         # Preserve the mother target and the same relative volume error in both
         # daughters, avoiding an imposed 50:50 pressure jump in asymmetric lobes.
@@ -356,8 +390,13 @@ class Simulation:
             values = getattr(self, name)
             parent_value = values[index]
             draw = self.signal_rng.normal(scale=c.signal_partition_noise) if c.signaling else 0.0
+            split_fraction = fraction
+            if c.signal_transport == "conservative":
+                parent_value *= old_volumes[index] / new_volumes[-2:].sum()
+                split_fraction = actual_fraction
             variation = parent_value * np.clip(draw, -.1, .1)
-            inherited = [parent_value + 2 * variation * (1 - fraction), parent_value - 2 * variation * fraction]
+            inherited = [parent_value + 2 * variation * (1 - split_fraction),
+                         parent_value - 2 * variation * split_fraction]
             setattr(self, name, np.r_[np.delete(values, index), inherited])
         self.polarity = prolongation @ self.polarity
         self.ids = np.r_[np.delete(self.ids, index), first_id, second_id]
@@ -368,9 +407,11 @@ class Simulation:
         self.lineage.extend({"id": child, "parent": parent, "birth": self.time, "division": None}
                             for child in (first_id, second_id))
         del self.divisions[parent]
-        new_graph = normalized_graph(self.contacts()[0], c.graph_contact_cutoff)
+        new_graph = self.signaling_graph()
         self.graph_events.append({"time": self.time, "parent": parent,
                                   "ids_before": old_ids, "ids_after": self.ids.tolist(),
+                                  "volumes_before": old_volumes.tolist(),
+                                  "volumes_after": new_volumes.tolist(),
                                   "weights_before": old_graph.weights.tolist(),
                                   "weights_after": new_graph.weights.tolist(),
                                   "activator_before": old_a.tolist(), "inhibitor_before": old_h.tolist(),
@@ -382,19 +423,43 @@ class Simulation:
                                   "prolongation": prolongation.tolist(),
                                   "mode_transfer": mode_transfer(old_graph, new_graph, prolongation)})
 
-    def step(self):
+    def step(self, *, prescribed_signals=None):
+        """Advance once, optionally clamping regulators for a forced-response test.
+
+        A prescribed (activator, inhibitor) pair replaces graph reaction and
+        transport for this step only. Fate, polarity, and mechanics still evolve.
+        This externally maintained chemical pattern is not spontaneous signaling.
+        """
+        if prescribed_signals is not None:
+            if not self.config.signaling:
+                raise ValueError("prescribed signals require signaling-enabled downstream coupling")
+            if len(prescribed_signals) != 2:
+                raise ValueError("provide activator and inhibitor arrays")
+            prescribed = tuple(np.asarray(x, dtype=float) for x in prescribed_signals)
+            if any(x.shape != self.activator.shape or not np.isfinite(x).all() or np.any(x <= 0)
+                   for x in prescribed):
+                raise ValueError("prescribed signals must be positive finite arrays matching cells")
         contact, exposure = self.contacts()
         c = self.config
-        graph = normalized_graph(contact, c.graph_contact_cutoff)
-        if c.signaling:
+        graph = self.signaling_graph(contact)
+        if prescribed_signals is not None:
+            self.activator, self.inhibitor = (x.copy() for x in prescribed)
+        elif c.signaling:
             self.activator, self.inhibitor = integrate(self.activator, self.inhibitor, graph, c.dt,
                                                        c.signal_beta, c.signal_da, c.signal_dh)
         if c.polarity_enabled:
             cue = exposure_cue(self.phi, self.dx)
-            self.polarity = evolve(self.polarity, cue, self.activator, graph.delta, c.dt,
+            self.polarity = evolve(self.polarity, cue, self.activator, normalized_graph(contact, c.graph_contact_cutoff if c.polarity_contact_cutoff == -1 else c.polarity_contact_cutoff).delta, c.dt,
                                    c.polarity_rate, c.polarity_alignment, c.polarity_decay)
         self.update_fate(contact, exposure)
+        old_volumes = self.volumes()
         self.mechanical_step()
+        if c.signaling and c.signal_transport == "conservative" and prescribed_signals is None:
+            # Lagrangian compartments: mechanics redistributes concentration,
+            # never creates molecular amount. Reactions were advanced above.
+            dilution = old_volumes / self.volumes()
+            self.activator *= dilution
+            self.inhibitor *= dilution
         self.step_number += 1
         self.time = self.step_number * self.config.dt
         self._finish_divisions()
@@ -435,6 +500,8 @@ class Simulation:
             "volume_projection_max": self.volume_projection_max,
             "fate_a": int(fate_a.sum()), "fate_b": int(fate_b.sum()),
             "uncommitted": int((~(fate_a | fate_b)).sum()),
+            "activator_amount": float(volumes @ self.activator),
+            "inhibitor_amount": float(volumes @ self.inhibitor),
             "total_volume": float(volumes.sum()), "target_volume": float(self.target.sum()),
             "relative_volume_error": float((volumes.sum() - self.target.sum()) / self.target.sum()),
             "max_cell_volume_error": float(np.max(np.abs(volumes / self.target - 1))),
@@ -445,7 +512,7 @@ class Simulation:
             "activator_std": float(self.activator.std()),
             "inhibitor_std": float(self.inhibitor.std()),
             "mean_polarity": float(np.linalg.norm(self.polarity, axis=1).mean()),
-            "unstable_graph_modes": len(stability(normalized_graph(contact, self.config.graph_contact_cutoff),
+            "unstable_graph_modes": len(stability(self.signaling_graph(contact),
                                                    self.config.signal_beta, self.config.signal_da,
                                                    self.config.signal_dh)["unstable_modes"]),
             "boundary_occupancy": float(union[edge].max()),
@@ -453,8 +520,9 @@ class Simulation:
             "min_radius_grid_cells": float(np.min((3 * volumes / (4 * np.pi))**(1 / 3)) / self.dx),
         }
 
-    def surfaces(self, max_points=1400):
-        """Interpolate phi=0.5 edge crossings for visualization (not physical measurement)."""
+    def surfaces(self, max_points=1400, *, include_mesh=True):
+        """Export phi=0.5 meshes plus legacy points; never change physical state."""
+        from .surface import cell_mesh
         cells = []
         volumes = self.volumes()
         centers = self.centers()
@@ -480,6 +548,8 @@ class Simulation:
                           "activator": float(self.activator[i]), "inhibitor": float(self.inhibitor[i]),
                           "polarity": self.polarity[i].tolist(), "center": centers[i].tolist(),
                           "points": np.round(points, 4).tolist()})
+            if include_mesh:
+                cells[-1]["mesh"] = cell_mesh(field, self.dx, self.config.extent)
         return cells
 
     def checkpoint(self, path):
@@ -505,7 +575,10 @@ class Simulation:
             meta = json.loads(str(data["metadata"]))
             if meta.get("schema_version") != 3:
                 raise ValueError("checkpoint uses a previous model without graph signaling/polarity; start a new run")
-            sim = cls(Config(**meta["config"]))
+            config = dict(meta["config"])
+            # Never silently reinterpret historical activity checkpoints as concentrations.
+            config.setdefault("signal_transport", "random_walk")
+            sim = cls(Config(**config))
             for key in ("phi", "target", "fate", "ids", "parents", "due", "activator", "inhibitor", "polarity"):
                 setattr(sim, key, data[key].copy())
             for key in ("time", "step_number", "next_id", "initial_volume", "lineage"):

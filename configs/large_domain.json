@@ -1,0 +1,11 @@
+{
+  "grid": 56,
+  "extent": 2.24,
+  "interface_width": 0.085,
+  "dt": 0.015,
+  "steps": 2000,
+  "save_every": 40,
+  "signal_transport": "conservative",
+  "signal_da": 0.02,
+  "signal_dh": 0.4
+}

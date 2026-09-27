@@ -61,13 +61,8 @@ def run(config, output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     sim = Simulation(config)
-    # Analyze finite reference graphs before advancing any 3D state.
-    import numpy as np
-    preflight = {}
-    for n in (4, 8, 16):
-        preflight[f"cycle_{n}"] = stability(cycle(n), config.signal_beta, config.signal_da, config.signal_dh)
-        preflight[f"complete_{n}"] = stability(normalized_graph(np.ones((n, n)) - np.eye(n)),
-                                               config.signal_beta, config.signal_da, config.signal_dh)
+    from .dashboard import reference_preflight
+    preflight = reference_preflight(config, sim)
     (output / "graph_preflight.json").write_text(json.dumps(preflight, indent=2) + "\n")
     frames = []
     started = time.monotonic()
@@ -94,7 +89,8 @@ def run(config, output):
     payload = {"config": asdict(config), "frames": frames}
     text = json.dumps(payload, separators=(",", ":"), allow_nan=False)
     (output / "trajectory.json").write_text(text)
-    template = Path(__file__).with_name("viewer.html").read_text()
+    from .surface import viewer_template
+    template = viewer_template()
     (output / "viewer.html").write_text(template.replace("__SIMULATION_DATA__", text))
     export_plot(frames, output / "summary.png")
     diagnostics = {

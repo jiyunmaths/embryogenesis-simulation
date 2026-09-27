@@ -216,3 +216,40 @@ dialog .button{margin-top:9px}
 .parameter-field.boolean{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .parameter-field input[aria-invalid=true]{border-color:#c77364}
 .chart-heading select{max-width:140px}
+
+/* Two scientific workspaces share a session, not simulation state. */
+[hidden]{display:none!important}
+.workspace-tabs{display:flex;align-items:center;gap:8px;padding:12px 33px;background:#fff;border-bottom:1px solid var(--line)}
+.workspace-tab{border:1px solid transparent;border-radius:6px;background:transparent;color:#71847a;text-align:left;padding:10px 16px;font-size:12px;font-weight:600}
+.workspace-tab span{display:block;font-size:9px;font-weight:400;margin-top:5px;letter-spacing:.1px}
+.workspace-tab.active{background:#edf5f0;border-color:#d3e4da;color:#246853}
+.workspace-status{margin-left:auto;font-size:10px;color:#6c8278}
+.benchmark-workspace{max-width:1460px;margin:auto;padding:30px 33px}
+.benchmark-intro{font-size:12px;color:#71847a;line-height:1.65;margin-top:10px;max-width:650px}
+.benchmark-controls{display:flex;flex-wrap:wrap;align-items:end;gap:15px;padding:17px 20px;border:1px solid var(--line);border-radius:8px;background:#fff;margin-bottom:20px}
+.benchmark-controls label{display:flex;flex-direction:column;gap:7px;font-size:10px;color:#71847a}
+.benchmark-controls select{font-size:12px;min-height:36px}
+.benchmark-controls label:first-child{flex:1;min-width:230px}
+.benchmark-controls .button{margin-left:auto}
+.benchmark-message{background:#edf3ef;padding:18px;border-radius:7px;font-size:12px;line-height:1.8;color:#546f60;margin-bottom:20px;white-space:pre-line}
+.benchmark-message.error{background:#fff1e8;color:#985237}
+#benchmark-canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+#benchmark-canvas:active{cursor:grabbing}
+.benchmark-scene{height:480px}
+.benchmark-legend{position:absolute;right:22px;top:23px;color:#c8d9d4;width:160px;font-size:10px;pointer-events:none}
+.concentration-ramp{height:9px;border-radius:3px;background:linear-gradient(90deg,#352a87,#246caa,#1b9e91,#8cbe55,#f5df4d);margin:9px 0 5px}
+.benchmark-legend-values{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}
+.benchmark-legend small{display:block;margin-top:7px;font-size:8px;color:#91ada5}
+.benchmark-slice-label{font-size:10px;color:#6e8477;font-variant-numeric:tabular-nums}
+.benchmark-disclosure{font-size:11px;color:#72867b;line-height:1.65;margin:12px 2px 0;max-width:1000px}
+.benchmark-loading{position:absolute;inset:0;background:#132c32de;color:#c4d8d0;display:grid;place-items:center;font-size:13px}
+.benchmark-check-details{grid-column:1/-1;font-size:11px;color:#5c7566;line-height:1.9}
+.benchmark-check-details summary{cursor:pointer;font-weight:600}
+.benchmark-check-details ul{columns:2;margin:10px 0 0;padding:0;list-style:none}
+.benchmark-check-details li{break-inside:avoid;padding:3px 0}
+.benchmark-check-details .failed{color:#a15638}
+@media(max-width:900px){.workspace-tabs{padding:10px 17px;flex-wrap:wrap}.workspace-status{width:100%;margin:0 12px}.benchmark-workspace{padding:22px 17px}.benchmark-legend{width:130px}.benchmark-scene{height:400px}.benchmark-check-details ul{columns:1}}
+@media(max-width:640px){.workspace-tab{flex:1;padding:9px 10px;font-size:11px}.workspace-tab span{font-size:8px}.benchmark-controls{gap:12px;padding:14px}.benchmark-controls label:first-child{width:100%;flex:auto}.benchmark-controls select{font-size:11px}.benchmark-controls .button{margin-left:0}.benchmark-timeline{flex-wrap:wrap}.benchmark-timeline input{min-width:50%;order:3}.benchmark-timeline>span{order:4}.benchmark-legend{top:auto;bottom:43px;right:15px;width:120px}.benchmark-slice-label{font-size:9px}.benchmark-scene{height:390px}.benchmark-workspace>.experiment-header{gap:10px}}
+
+/* Surface/point selector remains accessible on narrow screens. */
+.scene-toolbar,.scene-tools{flex-wrap:wrap}

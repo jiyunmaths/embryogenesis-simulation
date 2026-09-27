@@ -29,9 +29,9 @@ This objective guides subsequent model changes and experiments. Each extension s
 
 ## Current starting point
 
-The runnable prototype models one cell dividing into a deformable multicellular aggregate. Gierer–Meinhardt activator and inhibitor activities evolve on its normalized contact graph and drive a downstream bistable fate switch. Apical–basal polarity develops from exposed cortex and neighboring orientations, and changes cortical tension directionally.
+The runnable prototype models one cell dividing into a deformable multicellular aggregate. Gierer–Meinhardt activator and inhibitor concentrations evolve through conservative volume-weighted contact transport and drive a downstream bistable fate switch. Apical–basal polarity develops from exposed cortex and neighboring orientations, and changes cortical tension directionally.
 
-**Finite-graph stability is analyzed before 3D evolution.** The solver uses a constant-preserving random-walk normalized Laplacian, checks each discrete eigenvalue against the reaction–diffusion Jacobian, and records changes in spectral modes at every cleavage. A continuous unstable band can contain no supported modes on a small graph. Activator/inhibitor variables are distinct from cell fate; the old independent fate noise and geometry biases are disabled by default. See [graph signaling and polarity](docs/graph_signaling.md) for equations, spectral-gap results, and limitations.
+**Finite-graph stability is analyzed before 3D evolution.** The solver uses a conservative volume-weighted Laplacian, checks each discrete eigenvalue against the reaction–diffusion Jacobian, and records changes in spectral modes at every cleavage. A continuous unstable band can contain no supported modes on a small graph. Activator/inhibitor variables are distinct from cell fate; the old independent fate noise and geometry biases are disabled by default. See [live conservative signaling](docs/live_transport.md) for equations, spectral convergence, and limitations, and [polarity mechanics](docs/graph_signaling.md#apicalbasal-polarity-and-mechanics) for the mechanical coupling.
 
 This is an exploratory model in dimensionless units, not a reconstruction of a particular organism. The simulation evolves each cell's shape on a 3D grid. It does not prescribe an embryo outline or assign daughter identities.
 
@@ -98,26 +98,44 @@ W_{ij}^{\mathrm{raw}}=\int_\Omega s_i s_j\,\mathrm{d}\mathbf{x},
 \qquad W_{ii}=0.
 $$
 
-Before signaling, weights below 2% of the largest current contact, or below an absolute floor of $10^{-12}$, are removed. The resulting symmetric matrix $W$ is a diffuse contact proxy, not a measured junction area. Let $d_i=\sum_jW_{ij}$. The constant-preserving, random-walk normalized graph operator is
+The live simulation defaults to **conservative concentration transport** (`signal_transport="conservative"`). Contacts below 2% of the largest current overlap are removed symmetrically. For complementary flat equilibrium interfaces,
 
 $$
-(\Delta x)_i=\frac{1}{d_i}\sum_jW_{ij}(x_j-x_i).
+\frac{W_{ij}}{A_{ij}}=\int_{-\infty}^{\infty}\phi^2(1-\phi)^2\,\mathrm{d}s
+=\frac{\epsilon}{6\sqrt{2}}.
 $$
 
-For an isolated cell, this expression is defined as zero. A uniform activity therefore remains uniform under transport even on an irregular graph.
+We therefore estimate interface area and conductance by
 
-The implemented Gierer–Meinhardt kinetics are
+$$
+\widehat A_{ij}=\frac{6\sqrt{2}}{\epsilon}W_{ij},\qquad
+\ell_{ij}=\lVert\mathbf c_j-\mathbf c_i\rVert,\qquad
+g_{ij}=\frac{\widehat A_{ij}}{\ell_{ij}}.
+$$
+
+Here $\mathbf c_i$ is the occupancy-weighted cell center. The area estimate is a calibrated closure, not an exact face reconstruction. Gaps, overlapping or curved interfaces, and nonorthogonal center-to-face directions can bias transport. Coincident centers with positive contact are rejected.
+
+With measured cell volumes $M=\operatorname{diag}(V_i)$ and $K=\operatorname{diag}(G\mathbf1)-G$,
+
+$$
+\Delta_V=-M^{-1}K,\qquad
+(\Delta_V c)_i=\frac{1}{V_i}\sum_jg_{ij}(c_j-c_i).
+$$
+
+Exchange preserves constants and total amount $\sum_i V_i c_i$ on frozen geometry. Isolated cells have zero exchange. The Gierer–Meinhardt equations on moving compartments are
 
 $$
 \begin{aligned}
-\dot a_i&=\frac{a_i^2}{b_i}-a_i+D_a(\Delta a)_i,\\
-\dot b_i&=\beta(a_i^2-b_i)+D_b(\Delta b)_i.
+\frac{\mathrm d(V_i a_i)}{\mathrm dt}
+ &=V_i\left(\frac{a_i^2}{b_i}-a_i\right)+D_a\sum_jg_{ij}(a_j-a_i),\\
+\frac{\mathrm d(V_i b_i)}{\mathrm dt}
+ &=V_i\beta(a_i^2-b_i)+D_b\sum_jg_{ij}(b_j-b_i).
 \end{aligned}
 $$
 
-The activator promotes its own production and inhibitor production. The inhibitor suppresses activator production through the denominator. Faster inhibitor exchange can allow nearby activation to coexist with inhibition over more graph steps. This mechanism follows the activator–inhibitor framework of [Gierer and Meinhardt (1972)](https://pubmed.ncbi.nlm.nih.gov/4663624/); its finite-network interpretation is motivated by [Nakao and Mikhailov (2010)](https://www.nature.com/articles/nphys1651).
+Thus concentration equations include dilution $-c_i\dot V_i/V_i$. Each step advances reaction/exchange on frozen pre-step geometry with positivity-preserving SSP-RK2 substeps, advances mechanics, then rescales concentrations by $V_i^{old}/V_i^{new}$. This is first-order splitting of the coupled moving problem; the internal RK2 solver does not make the full simulation second order. Abscission partitions measured amounts conservatively. Externally clamped signal experiments instead supply/remove regulators to maintain the imposed concentration.
 
-These are **normalized activity-exchange rates**, not physical diffusivities. On a fixed graph, transport alone conserves degree-weighted activity, not cell-volume-weighted molecular mass. Uniformly scaling all surviving contact weights leaves the operator unchanged. Molecular transport would instead require explicit contact conductances and cell capacities.
+Defaults are $\beta=2$, $D_a=0.02$, $D_b=0.4$ in model length-squared/time units. These are exploratory diffusivities, not calibrated molecular measurements or a conversion of the old exchange rates. The explicit `random_walk` option preserves the historical model; old checkpoints without the selector restore that option and their recorded coefficients. Polarity neighbor alignment still uses normalized orientation averaging, separately from molecular transport.
 
 ### Discrete linear stability before 3D simulation
 
@@ -129,14 +147,13 @@ J=\begin{pmatrix}1&-1\\2\beta&-\beta\end{pmatrix},
 \qquad \det J=\beta.
 $$
 
-Local kinetics are stable for $\beta>1$. For spectral analysis, the code uses the symmetric normalized Laplacian
+Local kinetics are stable for $\beta>1$. For frozen-geometry spectral analysis, the code diagonalizes
 
 $$
-L_{\mathrm{sym}}=I_{\mathrm{active}}-D^{-1/2}WD^{-1/2},
-\qquad D=\operatorname{diag}(d_i).
+S=M^{-1/2}KM^{-1/2}.
 $$
 
-Inverse degrees are set to zero on isolated cells, whose rows are zero. Its eigenvalues satisfy $0\le\lambda_k\le2$; the corresponding graph transport eigenvalues are $-\lambda_k$. Each mode has a two-variable linear system
+Its eigenvalues are nonnegative, have inverse-length-squared units, and equal the eigenvalues of $-\Delta_V$. Physical right modes are $M^{-1/2}\mathbf q_k$, where $\mathbf q_k$ are orthonormal eigenvectors of $S$. There is no normalized upper bound of two. Each mode has a two-variable linear system
 
 $$
 M_k=J-\lambda_k\operatorname{diag}(D_a,D_b),
@@ -149,20 +166,11 @@ $$
 \det M_k=\beta+(\beta D_a-D_b)\lambda_k+D_aD_b\lambda_k^2.
 $$
 
-For the defaults $\beta=2$, $D_a=1$, and $D_b=20$, instability is possible only for $0.129844<\lambda_k<0.770156$. A small graph may have no eigenvalue in that interval:
+For the defaults $\beta=2$, $D_a=0.02$, and $D_b=0.4$, the unstable interval is $6.492189<\lambda_k<38.507811$. Its physical units and coefficients stay fixed during refinement; whether discrete eigenvalues enter the interval must converge and is not guaranteed on a coarse mesh. The dashboard and batch preflight use fixed unit-box meshes, followed by actual live-geometry spectra. Every abscission records spectra and volume-weighted mode transfer.
 
-| Reference graph | Smallest positive eigenvalue | Unstable modes, counting multiplicity |
-|---|---:|---:|
-| 4-node cycle | 1.000000 | 0 |
-| 8-node cycle | 0.292893 | 2 |
-| 16-node cycle | 0.076120 | 4 |
-| Complete graph with 4, 8, or 16 nodes | $N/(N-1)$ | 0 |
+The [calibrated-contact refinement experiment](docs/live_transport.md) uses the same contact adapter on manufactured 3D slabs with unit transverse area. First-mode error decreases from 1.27% at 8 compartments to 0.020% at 64 (observed final order 1.998). The continuum has one unstable mode; 8 compartments incorrectly support two, while 16, 32, and 64 recover one. Measured small-perturbation growth agrees with the discrete prediction within $7.6\times10^{-11}$. This establishes convergence for flat complementary contacts, not arbitrary embryo geometry.
 
-The 16-node cycle's lowest mode is below the unstable band; higher modes remain unstable. Thus more cells need not preserve the same dominant pattern. Reference graphs are analyzed before coupled stepping, while the actual geometry-derived graphs are analyzed during the run. A supplied contact matrix or checkpoint geometry can also be analyzed independently.
-
-At every abscission, the code records the old/new spectra and maps inherited activities between graph eigenbases. Degenerate eigenspaces are compared collectively to avoid arbitrary eigenvector sign or basis choices. On a refined cycle, an inherited harmonic spans twice as many vertices per wavelength; this does **not** establish a doubling of physical wavelength. The present normalized rates contain no automatic inverse-spacing-squared correction.
-
-Frozen-graph stability is a diagnostic of the signaling subsystem around its homogeneous equilibrium. It is not a stability proof for the entire evolving signaling–fate–mechanics system. Graph changes, mode mixing, and insufficient growth time can prevent a mature pattern. See [the full spectral and inheritance treatment](docs/graph_signaling.md).
+Frozen-geometry spectra describe the signaling subsystem near $(1,1)$. Volume changes introduce dilution; graph changes, mode mixing, and finite growth time require time-dependent analysis. These spectra are not a stability proof for the coupled signaling–fate–mechanics system. Historical normalized-graph experiments remain documented in [graph_signaling.md](docs/graph_signaling.md).
 
 ### From signaling to two possible cell identities
 
@@ -205,7 +213,7 @@ An isolated sphere has no net cue. Contacts can create a cue toward free cortex 
 $$
 \dot{\mathbf{p}}_i=
 \alpha\frac{2a_i}{1+a_i}\mathbf{q}_i
-+\eta(\Delta\mathbf{p})_i
++\eta(\Delta_{\mathrm{rw}}\mathbf{p})_i
 -(\mu+\lVert\mathbf{p}_i\rVert^2)\mathbf{p}_i.
 $$
 
@@ -266,7 +274,7 @@ h(\phi_1)=w\,h(\phi_{\mathrm{mother}}),
 \qquad w=\frac{1+\tanh(z_i/\epsilon)}{2}.
 $$
 
-Occupancy is conserved pointwise by this construction, up to numerical precision. Daughter target volumes follow their measured lobe fractions; there is no growth between divisions. Signal partition perturbations preserve target-volume-weighted activity at cleavage, although subsequent reactions and normalized transport need not conserve it. Unresolved divisions remain active rather than being forcibly cut. See [cytokinesis details and validation](docs/cytokinesis.md).
+Occupancy is conserved pointwise by this construction, up to numerical precision. Daughter target volumes follow their measured lobe fractions; there is no growth between divisions. Signal partition perturbations preserve measured volume-weighted regulator amounts at cleavage; reactions can change these amounts, whereas exchange and mechanical dilution conserve them. Unresolved divisions remain active rather than being forcibly cut. See [cytokinesis details and validation](docs/cytokinesis.md).
 
 ### Numerical workflow and default scales
 
@@ -276,7 +284,7 @@ Each time step reconstructs contacts, advances signaling, updates polarity and f
 |---|---|
 | Domain and time | $40^3$ grid; $\Delta t=0.015$; 1,000 steps; final time 15 |
 | Mechanics | $\epsilon=0.085$, $\gamma_0=1$, $K_V=12$, $R=3$, $A_0=4$ |
-| Signaling | $\beta=2$, $D_a=1$, $D_b=20$; partition-noise scale 0.001 |
+| Signaling | $\beta=2$, $D_a=0.02$, $D_b=0.4$; partition-noise scale 0.001 |
 | Fate | $r_f=0.8$, $g_a=1$; competence at 4 cells |
 | Mechanical feedback | $c_\gamma=0.25$, $c_A=0.35$ |
 | Polarity | $\alpha=1$, $\eta=0.25$, $\mu=0.5$, $\chi=0.35$ |
@@ -310,7 +318,7 @@ python -m pip install -e '.[test]'
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.dashboard
 ```
 
-Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The dashboard advances the actual 3D simulation while displaying sampled cell surfaces, signaling variation, cell identities, shape anisotropy, and numerical diagnostics.
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The dashboard advances the actual 3D simulation while displaying shaded cell surfaces, signaling variation, cell identities, shape anisotropy, and numerical diagnostics. **Show → Cell surfaces** renders the actual closed cell boundaries; **Point samples** retains the previous display. Restart an existing server and refresh the browser after updating. The [surface-rendering documentation](docs/dashboard.md#closed-cell-surfaces) explains mesh extraction, cutaway behavior, and how to inspect an existing checkpoint.
 
 - **Run** starts the solver; **Pause** stops at a numerical step boundary; **Resume** continues the same state and random streams.
 - Edit parameters before running, or pause, edit, then **Reset** to apply them to a new zygote. **Defaults** restores the form values; Reset applies them.
@@ -374,6 +382,22 @@ The timescale study compares longer signaling on frozen actual 4-, 8-, and 16-ce
 
 In the first seed-7 screen, the normal coupled run reaches activator standard deviation 0.1 at time 36.14; doubling the cycle interval delays this to 44.21. Measured from first reaching 16 cells, the delays are nearly equal: 23.76 and 23.34. Thus the original weak time-15 signals primarily reflect insufficient growth time in this case. The frozen 4-cell graph suppresses fluctuations, while the 8- and 16-cell graphs amplify them on different timescales. Multi-seed robustness, mechanical/grid convergence, and fate persistence remain untested by this screen.
 
+### Larger domain at unchanged cell resolution
+
+The new conservative model has a [fixed-spacing domain-size protocol](docs/domain_size.md). The larger dashboard preset uses `grid=56`, `extent=2.24`, preserving the original voxel spacing 0.08 while adding 0.64 length units on each side:
+
+```bash
+python -m embryo.dashboard --config configs/large_domain.json
+```
+
+This starts a new zygote; the preset runs to $t=30$. The completed conservative-model study compares grids 40, 48, and 56 from the same initial state. Through $t=30$, peak boundary occupancy falls from $7.39\times10^{-4}$ to $1.90\times10^{-11}$; the two larger domains agree within 0.0000141% in axis ratio and 0.000948% in final common-box cell fields. All three boxes pass the boundary screen in this window. Increasing the domain does not improve cell resolution or establish clearance for longer runs. See the protocol for boundary and domain-sensitivity checks.
+
+The $t=180$ domain continuation is complete. The original box crosses the boundary threshold at $t=131.4$; the two larger boxes pass their screens and agree within 0.000673% in axis ratio. The 56³ run retains 12 A / 4 B labels while activator contrast decays almost to zero, so persistent labels do not establish persistent signaling. Full results are in `outputs/domain-conservative-extended/RESULTS.md`. See [continuation and monitoring](docs/domain_size.md#long-time-continuation-protocol).
+
+### Coupled spatial and temporal resolution
+
+The [next resolution screen](docs/coupled_resolution.md) tests grids 56³, 72³, and 88³ at fixed half-width 2.24 and interface width 0.085, with a separate time-step sweep. Every grid samples the same manufactured 16-cell geometry directly. Frozen-geometry spectra agree within 0.000193% between the finer grids. The five coupled cases are complete: 11/12 checks pass, but the finest spatial occupancy-field discrepancy is 1.43%, above the 1% criterion. The completed [projection-error audit](docs/projection_audit.md) finds 1.49% discrepancy even before evolution under the original linear reconstruction; higher-order final comparisons range from 0.24% to 0.32%. This identifies substantial measurement contamination. The original failed result remains unchanged. An [independent 112³ confirmation](docs/refinement_confirmation.md) passed all 11 prospectively specified checks; finest-pair field differences are 0.162–0.207%. This supports short-time consistency for the manufactured state, not developmental convergence.
+
 ### Discrete-to-continuum transport bridge
 
 A new fixed-domain benchmark checks conservative compartment exchange against the same continuum diffusion and Gierer–Meinhardt equations at increasing spatial resolution. It uses explicit compartment volumes and face conductances, with a sparse operator that preserves molecular amount under pure diffusion. This is a transport verification experiment; its compartments are numerical elements, not a simulation of tens of thousands of biological cells.
@@ -382,7 +406,58 @@ A new fixed-domain benchmark checks conservative compartment exchange against th
 OPENBLAS_NUM_THREADS=1 python -m embryo.continuum --output outputs/continuum-bridge
 ```
 
-Across 64 to 32,768 compartments, diffusion error falls from 0.002871 to 0.00004994 with approximately second-order convergence. Coarse grids predict ten unstable modes; finer grids recover the continuum prediction of seven. Fixed normalized exchange rates do not approximate the same bulk diffusivity under this refinement. The current embryo simulator and live dashboard retain their existing dynamics. See [equations, protocol, results, and the remaining bridge to changing geometry](docs/continuum_bridge.md).
+Across 64 to 32,768 compartments, diffusion error falls from 0.002871 to 0.00004994 with approximately second-order convergence. Coarse grids predict ten unstable modes; finer grids recover the continuum prediction of seven. Fixed normalized exchange rates do not approximate the same bulk diffusivity under this refinement. The live simulator now uses conservative transport through a calibrated diffuse-contact adapter; its geometry closure has separate validation requirements. See [equations, protocol, results, and the remaining bridge to changing geometry](docs/continuum_bridge.md).
+
+The next bridge stage now verifies diffusion on a **3D L-shaped domain with unequal compartment volumes**. It uses exact continuum cell averages, a uniform-mesh control, and a separate pulse traveling between the two arms:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m embryo.irregular --output outputs/irregular-bridge
+```
+
+Across 48 to 24,576 active compartments, graded-mesh error falls from 0.003924 to 0.0001186; the final observed order is 1.992. Pure-diffusion mass drift stays below $1.5\times10^{-14}$ in the refinement runs. The pulse reaches the other arm and approaches the correct volume-weighted equilibrium. All ten default acceptance checks pass. These results establish smooth-solution transport convergence on this fixed nonconvex domain; nonlinear pattern formation, moving geometry, and cell/field coupling remain separate tests. See [the irregular-domain protocol and results](docs/irregular_bridge.md).
+
+The [irregular-domain signaling study](docs/irregular_signaling.md) now computes the complete discrete weighted spectrum and verifies early Gierer-Meinhardt growth:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m embryo.irregular_signaling \
+  --output outputs/irregular-signaling-repeat
+```
+
+Refinement changes the predicted unstable-mode count from **9 to 7 to 4 to 4**. On the finest mesh, the fastest predicted growth rate is 0.215193833 and the nonlinear solver measures 0.215193831. Both growing and decaying probes pass verification, and all nine default checks pass. Agreement of the finest discrete counts is refinement evidence; an exact continuum instability count remains a separate question.
+
+The [nonlinear persistence and convergence study](docs/nonlinear_bridge.md) now follows one physical initial perturbation through $t=100$ on the same graded L-domain:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.nonlinear \
+  --output outputs/nonlinear-bridge-repeat
+```
+
+All **eleven default criteria pass**. The final two-species spatial difference decreases from 5.43% ($n=8$ versus $16$) to **1.26%** ($n=16$ versus $32$). Independent time refinement gives a **0.095% maximum sampled difference** between the two smaller steps. Late field change stays below 0.41%, while an equal-diffusivity control returns to uniformity. The benchmark uses conservative fine-to-coarse averaging and an independently tested implicit-diffusion solver; it saves concentration snapshots, histories, and comparison figures. This verifies finite-window nonlinear signaling persistence for one prescribed perturbation on fixed geometry. Moving-domain dilution and amount balance are now tested below; initial-condition robustness, fate persistence, and emergent shape remain separate tests.
+
+The dashboard’s **Continuum signaling** workspace now plays the saved concentration fields with 3D cutaways, X/Y/Z cross-sections, activator/inhibitor colors, run selection, and convergence charts. Start with `python -m embryo.dashboard --benchmark outputs/nonlinear-bridge-verified`; an existing server needs restarting. Playback is separate from the live embryo solver. See the [dashboard guide](docs/dashboard.md#continuum-signaling-nonlinear-benchmark-playback).
+
+
+The [moving-domain transport test](docs/moving_domain.md) now verifies conservation and dilution during prescribed 3D expansion and deformation:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.moving \
+  --output outputs/moving-domain-repeat
+```
+
+All **eleven checks pass**. Isotropic expansion, unequal axis expansion, and volume-preserving stretching conserve total amount to within $2.2\times10^{-14}$ relative drift. Uniform concentration follows inverse volume; spatial and temporal errors approach second-order convergence. The largest finest-mesh transport error is **0.01069%** relative to the exact full concentration field. Omitting dilution instead creates an artificial **82.21% amount gain** in the expanding control. This tests prescribed material motion with fixed connectivity, not emergent shape. Conservative remapping at live-cell abscission is now implemented; general remeshing remains separate.
+
+
+The [persistent shape pilot](docs/shape_persistence.md) now tests the coupled embryo model through $t=90$, including matched mature-state feedback removal and a separate zygote developed without feedback. All four trajectories retain an identifiable long axis, with final shape ratios **1.323–1.331**. Full feedback does **not** exceed the controls; all final axes remain within **1.37°** of the first-cleavage axis. This is evidence of persistent elongation, not a demonstrated activator–inhibitor-specific shape axis. Every run also narrowly fails the four-grid-spacing smallest-cell-radius screen, so mechanical refinement remains necessary. The experiment exports offline 3D playbacks, axis histories, and a matched-camera comparison; [the protocol](docs/shape_persistence.md#reproduce) reproduces all controls.
+
+
+The [long-time continuation](docs/shape_persistence.md#long-time-continuation) extends the three mature branches to $t=180$ without increasing the timestep. A separate [controlled chemical-patch experiment](docs/signal_patch.md) tests the response of the existing mechanics to imposed signaling, compares default and stronger fate-dependent tension against matched uniform controls, and then releases the clamp. It is explicitly a forced-response diagnostic, not evidence of spontaneous symmetry breaking.
+
+The completed extension gives final axis ratios **1.328** (full feedback) and **1.341** (both ablations), with no positive feedback-specific excess. The full run crosses the boundary-occupancy screen at $t=124.2$, and all branches retain the smallest-cell resolution failure. Longer time has therefore exposed a domain-size limitation as well as modest shape evolution; [the continuation results](docs/shape_persistence.md#completed-continuation-results) report both.
+
+The completed [patch-and-release pilot](docs/signal_patch.md#completed-pilot-results) also shows modest deformation: patched aggregates remain near axis ratio **1.329** at the end of forcing, at both tested fate–tension strengths. The patch/uniform difference increases with coupling, partly because the stronger uniform control becomes less elongated. All patch runs retain the resolution failure; the four feedback-enabled branches also cross the boundary screen. Larger-domain and refinement checks are therefore the next priority before interpreting later shape differences.
+
+The mechanics kernel now avoids discarded Laplacians and repeated occupancy calculations. It reproduces the previous kernel's tested trajectories exactly; the mature 16-cell benchmark measured **1.34× throughput (25% less runtime)**. This optimization also applies to the live dashboard after restarting its server. The [benchmark and protocol](docs/signal_patch.md#equation-preserving-kernel-optimization) document the scope and reproduction commands.
+
 
 ## Outputs
 
@@ -416,7 +491,7 @@ sim.checkpoint("outputs/continued.npz")
 - Interface attraction, optionally dependent on fate similarity.
 - Shape-aligned division, progressive equatorial constriction, and mechanically gated abscission.
 - Exact final occupancy partitioning, conserved mother volume during cytokinesis, and lineage records.
-- Gierer–Meinhardt activator/inhibitor dynamics on a normalized contact graph.
+- Gierer–Meinhardt concentrations with conservative contact exchange, mechanical dilution, and amount-preserving cleavage.
 - Exact discrete-mode linear stability, spectral gaps, and cleavage mode-transfer diagnostics.
 - A downstream signed fate switch driven by activator activity.
 - Apical–basal polarity and directional cortical tension with conservative spatial fluxes.
@@ -425,7 +500,7 @@ sim.checkpoint("outputs/continued.npz")
 
 **The default target is 16 cells on a modest grid.** Resolve and validate this before scaling to the planned 32–64-cell model. Volume constraints are soft between divisions; inspect the measured errors. Surface/interface widths and small daughter cells need resolution studies.
 
-A/B labels are instantaneous activity thresholds. They do **not** establish stable commitment. There is no tensile-stress-based spindle rule, lumen, growth between divisions, extracellular morphogen field, or calibrated gene network yet. Graph activities have normalized exchange rates; they are not a volume-conserving molecular diffusion model. Equatorial contraction is a prescribed ring surrogate, not a resolved actomyosin network. Elongation following cleavage is not proof of a spontaneously selected developmental axis.
+A/B labels are instantaneous activity thresholds. They do **not** establish stable commitment. There is no tensile-stress-based spindle rule, lumen, growth between divisions, extracellular morphogen field, or calibrated gene network yet. Conservative exchange uses an approximate diffuse-contact area closure; continuum consistency on arbitrary deformed cell geometries remains unverified. Equatorial contraction is a prescribed ring surrogate, not a resolved actomyosin network. Elongation following cleavage is not proof of a spontaneously selected developmental axis.
 
 ## Tests and next steps
 
@@ -438,3 +513,27 @@ Tests check shape-oriented spindles, gradual furrowing, volume conservation, dau
 The graph preflight is in `outputs/graph-analysis`; the coupled example is `outputs/graph-polarity/viewer.html`, with a matched no-polarity control in `outputs/graph-no-polarity`. Earlier outputs are historical models. In the initial time-15 coupled example, signals remain small and all 16 cells remain uncommitted: a positive frozen-graph growth rate does not guarantee a mature pattern on the available developmental timescale.
 
 Read [the cytokinesis update and validation](docs/cytokinesis.md), [the equations and assumptions](docs/model.md), [the staged implementation plan](docs/plan.md), and [the initial numerical results](docs/results.md).
+
+## Manuscript draft
+
+The manuscript describes the earlier normalized live model and has not yet been revised for the conservative coupling. The [Introduction and Methods draft](manuscript/introduction_methods.md) describes the coupled model, signaling-timescale experiments, and conservative transport benchmark with primary references. The [manuscript folder](manuscript/README.md) contains editable source, a self-contained HTML reading copy, and LaTeX/BibTeX files. This is a partial manuscript for development toward an arXiv submission, not a submitted paper.
+
+The subsequent [frozen contact-cutoff screen](docs/contact_sensitivity.md) preserves connectivity and unstable-mode counts across all seven tested geometries, but fails its quantitative spectral-growth sensitivity check at four developmental times. The [paired evolving-geometry experiment](docs/cutoff_dynamics.md) completed t=30 to 90 with all five sensitivity checks passing while polarity filtering was fixed at 0.02. Identity labels match throughout; maximum activator RMS difference is 0.00203 and maximum relative axis-ratio difference is 1.19e-6. Default trajectories retain the historical shared-cutoff behavior; the known cell-resolution shortfall remains explicit.
+
+The next [controlled small-cell cleavage screen](docs/cleavage_resolution.md) compares three grids, three time steps, and axial/oblique division directions. It tests abscission conservation, daughter connectivity, event timing, and shape before full developmental refinement.
+
+The [full developmental refinement study](docs/development_refinement.md) is now running five fresh zygote-to-t=90 cases: grids 56³/72³/88³ at fixed time step, plus an independent time-step sweep on 72³. It compares division history, signaling distributions, fate fractions, and shape while checking cell resolution and numerical quality. No developmental convergence result is claimed yet.
+
+The cleavage measurement issue is [resolved by calibrated native-phase reconstruction](docs/cleavage_measurement.md): reconstruct phi before applying occupancy, giving at most 0.1503% cubic error across analytic holdouts (limit 0.25%). All 10 revised checks pass; axial and oblique finest-pair evolved differences stay below 0.56%. Original results and ongoing developmental simulations remain unchanged.
+
+The [geometric transport validation](docs/geometric_transport.md) exposes limits beyond numerical conservation: curved-interface area bias reaches 5.80% at width/radius 0.3, a one-width gap retains 82% of planar overlap, and nonorthogonal contacts fail a linear-field flux test. General-geometry closure checks fail despite accurate quadrature and conservation. The current operator is therefore not validated as continuum bulk diffusion on arbitrary embryo geometries; the ongoing refinement runs remain tests of its existing approximation.
+
+The [face-normal-aware skew-mesh prototype](docs/skew_flux.md) now passes linear-flux, conservation, stability, and approximately second-order refinement checks. At shear 1, finest error falls from 2.31% with A/ell to 0.0140%. Its positive-pulse test fails (minimum −0.00443 under exact discrete evolution), so it remains separate from live signaling. A positivity-preserving correction is the next transport task.
+
+A [positive wider-stencil skew-mesh prototype](docs/positive_skew_flux.md) now passes all 11 checks: nonnegative rates and pulse evolution, exact affine face fluxes, mass conservation, and approximately second-order space/time convergence. Worst finest-grid error is 0.0030%. It remains separate from the live model; skewed no-flux boundaries and irregular geometry are next.
+
+The [reflecting-wall skew-mesh test](docs/skew_boundary.md) passes 8/9 checks: positivity, conservation, and finest errors below 0.1% hold, but intermediate-shear refinement orders of 1.58 and 1.52 miss the 1.8 criterion. Boundary accuracy must be improved or independently resolved before irregular-geometry/live integration.
+
+A [derived positive wall-conductance correction](docs/skew_boundary_correction.md) resolves the tested boundary-order failure: all nine checks pass for two independent wall families, with 64³ confirmation orders near 1.997 and errors below 0.0052%. Conservation and positivity remain intact. Nonuniform capacities and graded geometry are next; live transport is unchanged.
+
+The first [causal activator–inhibitor screen](docs/causal_signaling.md) is complete on one frozen resolved embryo graph with 20 paired chemical perturbation seeds. Full feedback sustains signal contrast in 20/20 trials; removing self-activation, transport, or differential diffusion suppresses it. Those controls still produce both fate labels, exposing the separate bistable fate switch as an alternative mechanism. Removing signal-to-fate coupling prevents commitment. The original finer-time checks reproduced labels but failed continuous-fate tolerances. A subsequent [joint signal/fate integrator](docs/joint_fate.md) resolves that sensitivity against a tightened independent ODE reference: maximum fate error is 6.63e-5 at dt=0.0075, below the unchanged 0.05 limit. The corrected trajectories retain the same scientific distinction between persistent patterns and fate labels. Four matched [moving-geometry feedback controls](docs/moving_causal.md) are now running from t=18 to t=78; their shape comparison is pending. This is not yet a developmental ensemble.

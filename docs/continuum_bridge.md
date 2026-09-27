@@ -6,7 +6,7 @@ Can a growing number of spatial compartments approximate the **same physical sig
 
 This first bridge is a numerical experiment on a fixed three-dimensional cube. It connects conservative compartment exchange to continuum diffusion and checks the early Gierer–Meinhardt instability. It does not yet convert the deformable embryo into a continuum tissue. Compartment counts below are numerical resolutions, not biological cell counts; the experiment has no division, cell identity dynamics, or shape evolution.
 
-Keeping a fixed domain separates spatial refinement from biological growth and cleavage. It also gives an analytic reference that the actual embryo geometry does not provide. The current embryo simulation and dashboard still use their existing normalized contact-graph model.
+Keeping a fixed domain separates spatial refinement from biological growth and cleavage. It also gives an analytic reference that the actual embryo geometry does not provide. The live simulation now couples this conservative operator through a calibrated diffuse-contact closure; see [live transport and its validation limits](live_transport.md).
 
 ## Conservation supplies the missing spatial scale
 
@@ -35,7 +35,7 @@ $$
 
 The positive symmetric operator $M^{-1/2}KM^{-1/2}$ has the same eigenvalues as $-\Delta_V$. Equivalently, physical modes solve $K\mathbf{u}=\mu M\mathbf{u}$. This replaces a degree-based inner product with a volume-based one.
 
-For the normalized random-walk operator already used by the embryo model,
+For the normalized random-walk operator used by the historical embryo model,
 
 $$
 \Delta_{\mathrm{rw}}=\operatorname{diag}(d_i)^{-1}G-I,
@@ -155,7 +155,9 @@ The three project outcomes still need distinct transitions:
 | Cell identity differentiation | The same GM kinetics can supply a signal in either representation | Cell-level sampling/production, persistent fate memory, and a justified coarse-grained identity description |
 | Shape symmetry breaking | No new claim; geometry is held fixed for this experiment | Reciprocal signal–mechanical coupling, free boundaries, constitutive assumptions, and convergence of shape observables |
 
-The next implementation should connect this verified transport to **irregular geometry with known face areas and capacities**, retaining an analytic or independently refined reference. A hybrid model can then keep individual cell mechanics and fate variables while solving chemical fields on an independent spatial mesh; the chemical resolution need not equal the biological cell count.
+The next stage is now implemented as an [irregular-domain benchmark](irregular_bridge.md): a fixed 3D L-shaped prism with unequal orthogonal compartments, exact face areas and capacities, analytical smooth diffusion references, and an arm-to-arm pulse test. It verifies this nonconvex boundary and mesh grading; arbitrary polyhedral cells, curved interfaces, and nonorthogonal fluxes remain outside its scope.
+
+The [weighted spatial spectrum and early GM growth on the irregular domain](irregular_signaling.md) are now checked using full discrete spectra and small growing/decaying perturbations. The [long nonlinear signaling study](nonlinear_bridge.md) also now passes eleven criteria using one consistently sampled physical perturbation: final spatial error decreases to 1.26%, and independent time refinement reduces the maximum sampled difference to 0.095%. The [moving-domain verification](moving_domain.md) now also passes eleven checks for prescribed affine expansion and deformation, with inverse-volume dilution and approximately second-order transport accuracy. Next comes conservative remapping under compartment changes, followed by conservative cell/field coupling. Nonlinear robustness across initial conditions remains untested. A hybrid model can then keep individual cell mechanics and fate variables while solving chemical fields on an independent spatial mesh; the chemical resolution need not equal the biological cell count.
 
 When compartments move or grow, the balance must be written for amount, $\mathrm{d}(V_i c_i)/\mathrm{d}t$, with fluxes defined relative to the moving boundaries. A material-domain continuum description includes
 

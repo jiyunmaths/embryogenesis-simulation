@@ -40,9 +40,9 @@ def test_schema_and_reference_preflight(controller):
     assert description["types"]["signaling"] == "boolean"
     assert description["choices"]["division_orientation"] == ["shape", "isotropic"]
     report = controller.preflight()
-    assert report["graphs"]["cycle_4"]["unstable_modes"] == []
-    assert len(report["graphs"]["cycle_8"]["unstable_modes"]) == 2
-    assert len(report["graphs"]["cycle_16"]["unstable_modes"]) == 4
+    assert report["parameters"]["operator"] == "conservative"
+    assert report["graphs"]["unit_box_4x4x4"]["operator"] == "conservative"
+    assert report["graphs"]["unit_box_4x4x4"]["diffusion_driven_instability"]
     assert report["initial_graph"]["ids"] == [0]
     initial = controller.snapshot()
     assert initial["state"] == "ready"
@@ -237,3 +237,56 @@ def test_http_rejects_foreign_origins_and_oversized_or_malformed_bodies(http_das
 def test_config_non_objects_are_rejected():
     with pytest.raises(ValueError, match="JSON object"):
         validated_config([])
+
+
+def browser_json_config(config):
+    """JSON.stringify emits integral JavaScript Numbers without '.0'."""
+    return {name: int(value) if type(value) is float and value.is_integer() else value
+            for name, value in asdict(config).items()}
+
+
+def test_number_settings_are_coerced_to_float_without_changing_payload():
+    payload = browser_json_config(small_config())
+    original = payload.copy()
+    assert type(payload["surface_tension"]) is int
+    assert type(payload["adhesion"]) is int
+    config = validated_config(payload)
+    for name, kind in schema()["types"].items():
+        if kind == "number":
+            assert type(getattr(config, name)) is float, name
+    assert type(config.steps) is int
+    assert type(config.signaling) is bool
+    assert payload == original
+    assert all(type(payload[name]) is type(original[name]) for name in payload)
+
+
+@pytest.mark.parametrize("reset_first", [False, True], ids=["edited-run", "reset-then-run"])
+def test_browser_numeric_payload_advances_actual_http_run(http_dashboard, controller, reset_first):
+    reference_config = Config(**{**asdict(small_config()), "steps": 11})
+    payload = browser_json_config(reference_config)
+    if reset_first:
+        status, reset = request(http_dashboard, "POST", "/api/reset", {"config": payload})
+        assert status == 200 and reset["state"] == "ready"
+        run_body = {}
+    else:
+        run_body = {"config": payload}
+    status, _ = request(http_dashboard, "POST", "/api/run", run_body)
+    assert status == 200
+    until(lambda: controller.snapshot()["state"] in ("completed", "error"))
+    status, final = request(http_dashboard, "GET", "/api/state")
+    assert status == 200
+    assert final["state"] == "completed", final["error"]
+    assert final["error"] is None and final["step"] == 11
+    controller.pause()
+    reference = Simulation(reference_config)
+    for _ in range(reference_config.steps):
+        reference.step()
+    for name in ("phi", "fate", "activator", "inhibitor", "polarity"):
+        np.testing.assert_array_equal(getattr(controller._simulation, name), getattr(reference, name))
+
+
+def test_surface_renderer_asset_and_initial_closed_mesh(http_dashboard):
+    code,body=request(http_dashboard,'GET','/cell_surface.js')
+    assert code==200 and b'gl.DEPTH_TEST' in body
+    code,state=request(http_dashboard,'GET','/api/state')
+    assert code==200 and state['frames'][0]['cells'][0]['mesh']['closed']

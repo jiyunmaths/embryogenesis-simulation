@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Embryo Lab · Live simulation</title>
   <link rel="stylesheet" href="/dashboard.css">
+  <script src="/cell_surface.js" defer></script>
   <script src="/dashboard.js" defer></script>
+  <script src="/benchmark.js" defer></script>
 </head>
 <body>
   <header class="app-header">
@@ -14,7 +16,12 @@
     <button id="about" class="button subtle">About the model <span aria-hidden="true">↗</span></button>
   </header>
 
-  <main class="workspace">
+  <nav class="workspace-tabs" aria-label="Experiment workspace">
+    <button id="tab-embryo" class="workspace-tab active" aria-pressed="true" aria-controls="embryo-workspace">Live embryo <span>Cells · identities · mechanics</span></button>
+    <button id="tab-benchmark" class="workspace-tab" aria-pressed="false" aria-controls="benchmark-workspace">Continuum signaling <span>Patterns · persistence · convergence</span></button>
+    <span id="workspace-background-status" class="workspace-status"></span>
+  </nav>
+  <main id="embryo-workspace" class="workspace">
     <aside class="parameters" aria-label="Simulation parameters">
       <div class="rail-heading"><div><span class="eyebrow">01 / CONFIGURE</span><h1>Experiment setup</h1></div><button id="defaults" class="text-button" disabled>Defaults</button></div>
       <p class="rail-description">Choose the rules.<br>Watch the organization emerge.</p>
@@ -46,13 +53,13 @@
       <section class="scene-card" aria-label="Three-dimensional embryo">
         <div class="scene-toolbar">
           <div class="scene-title"><span class="scene-dot"></span>3D cell geometry <span id="view-mode" class="view-tag">CURRENT STATE</span></div>
-          <div class="scene-tools"><label for="color">Color</label><select id="color"><option value="fate">Cell identity</option><option value="activator">Activator</option><option value="inhibitor">Inhibitor</option><option value="lineage">Cell ID</option></select><button id="camera" title="Reset camera" class="icon-button" aria-label="Reset camera">⌖</button></div>
+          <div class="scene-tools"><label for="geometry">Show</label><select id="geometry"><option value="surfaces">Cell surfaces</option><option value="points">Point samples</option></select><label for="color">Color</label><select id="color"><option value="fate">Cell identity</option><option value="activator">Activator</option><option value="inhibitor">Inhibitor</option><option value="lineage">Cell ID</option></select><button id="camera" title="Reset camera" class="icon-button" aria-label="Reset camera">⌖</button></div>
         </div>
         <div class="scene">
           <canvas id="view" aria-label="Interactive 3D view of the simulated cell surfaces. Drag to orbit and scroll to zoom."></canvas>
           <div class="scene-overlay"><span class="scene-overline">CELL SURFACES / 3D</span><div id="scene-caption">The beginning of an experiment</div></div>
           <div id="legend" class="scene-legend"></div>
-          <div class="scene-help">Drag to orbit <span>·</span> Scroll to zoom</div>
+          <div class="scene-help">Drag to orbit <span>·</span> Scroll to zoom <span id="surface-note"></span></div>
           <div class="scene-options"><label><input id="arrows" type="checkbox" checked> Polarity</label><label><input id="contacts" type="checkbox"> Contacts</label></div>
           <div id="scene-empty">Preparing the zygote…</div>
         </div>
@@ -68,6 +75,49 @@
       <section class="diagnostics-card" aria-label="Simulation diagnostics"><div><span class="eyebrow">NUMERICAL CHECKS</span><h3 id="diagnostic-title">Inspect before interpreting</h3></div><div class="diagnostic-values"><span>Volume error <b id="volume-error">—</b></span><span>Polarity <b id="polarity-value">—</b></span><span>Uncommitted <b id="uncommitted">—</b></span></div><p id="diagnostic-note">Cell identity labels indicate regulatory tendencies, not proven commitment.</p></section>
       <footer class="experiment-footer"><span id="history-note">Live surfaces and metrics are sampled as the solver advances.</span><button id="download" class="text-button" disabled>Download recorded frames ↓</button></footer>
     </section>
+  </main>
+
+
+  <main id="benchmark-workspace" class="benchmark-workspace" hidden>
+    <div class="experiment-header">
+      <div><div class="eyebrow">DISCRETE → CONTINUUM / NONLINEAR SIGNALING</div><h2>A pattern takes shape<span class="title-dot">.</span></h2><p class="benchmark-intro">Follow activator–inhibitor dynamics on a fixed 3D domain. Compare what survives numerical refinement.</p></div>
+      <span class="state-pill">RECORDED EXPERIMENT</span>
+    </div>
+    <div id="benchmark-message" class="benchmark-message" role="status">Loading the nonlinear experiment…</div>
+    <div id="benchmark-content" hidden>
+      <div class="benchmark-controls">
+        <label>Recorded run<select id="benchmark-run" aria-label="Recorded benchmark run"></select></label>
+        <label>Chemical<select id="benchmark-species"><option value="a">Activator</option><option value="h">Inhibitor</option></select></label>
+        <label>View<select id="benchmark-view"><option value="3d">3D cutaway</option><option value="slice">2D cross-section</option></select></label>
+        <label>Slice axis<select id="benchmark-axis"><option value="2">Z</option><option value="1">Y</option><option value="0">X</option></select></label>
+        <button id="benchmark-camera" class="button">Reset camera</button>
+      </div>
+      <div class="metrics-grid" aria-label="Selected benchmark snapshot">
+        <article class="metric"><span class="metric-label">Numerical compartments</span><div><strong id="benchmark-count">—</strong></div><small id="benchmark-resolution">Control volumes, not biological cells</small></article>
+        <article class="metric"><span class="metric-label">Snapshot time</span><div><strong id="benchmark-time">—</strong><span class="metric-unit">t</span></div><small id="benchmark-dt">Recorded solver time step</small></article>
+        <article class="metric"><span class="metric-label">Activator contrast</span><div><strong id="benchmark-contrast">—</strong><span class="metric-unit">σ</span></div><small>Volume-weighted over the full 3D field</small></article>
+        <article class="metric"><span class="metric-label">Late pattern change</span><div><strong id="benchmark-late">—</strong></div><small id="benchmark-window">Sampled late window</small></article>
+      </div>
+      <section class="scene-card" aria-label="Recorded concentration fields">
+        <div class="scene-toolbar"><div class="scene-title"><span class="scene-dot"></span>Concentration field <span class="view-tag">FIXED L-SHAPED DOMAIN</span></div><span id="benchmark-source" class="view-note"></span></div>
+        <div class="scene benchmark-scene">
+          <canvas id="benchmark-canvas" aria-label="Three-dimensional concentration field. Drag to orbit; scroll to zoom. Use slice controls for interior values."></canvas>
+          <div class="scene-overlay"><span class="scene-overline">CONSERVATIVE TRANSPORT / 3D</span><div id="benchmark-caption"></div></div>
+          <div class="benchmark-legend"><span id="benchmark-legend-title">Activator</span><div class="concentration-ramp"></div><div class="benchmark-legend-values"><span id="benchmark-color-min"></span><span id="benchmark-color-max"></span></div><small>Fixed across runs and time</small></div>
+          <div id="benchmark-scene-help" class="scene-help">Drag to orbit · scroll to zoom · slice to inspect the interior</div>
+          <div id="benchmark-loading" class="benchmark-loading" hidden>Loading concentration fields…</div>
+        </div>
+        <div class="view-controls"><label class="cut-label" for="benchmark-slice">Slice / cutaway</label><input id="benchmark-slice" type="range" min="0" max="31" value="31" step="1"><span id="benchmark-slice-label" class="benchmark-slice-label"></span></div>
+        <div class="timeline-bar benchmark-timeline"><button id="benchmark-play" class="button primary">▶ Play</button><button id="benchmark-reset" class="button">↺ Reset playback</button><input id="benchmark-timeline" type="range" min="0" max="7" value="0" step="1" aria-label="Recorded benchmark snapshot"><span id="benchmark-frame">Frame 1 / 8</span></div>
+      </section>
+      <p class="benchmark-disclosure">Playback steps through saved snapshots at equal display intervals; simulated time gaps vary. No fields are interpolated and playback does not run a solver. The domain is prescribed; changing colors show signaling organization, not embryo shape formation.</p>
+      <section class="charts-grid" aria-label="Nonlinear signaling and convergence">
+        <article class="chart-card"><div class="chart-heading"><div><span class="eyebrow">SIGNALING HISTORY</span><h3>Growth, saturation, persistence</h3></div></div><div id="benchmark-signal-key" class="chart-key bottom-key"></div><canvas id="benchmark-signals" class="chart" aria-label="Full-field activator and inhibitor standard deviation and equal diffusion control over time"></canvas><p>The vertical line marks the selected snapshot. Shading marks the late measurement window.</p></article>
+        <article class="chart-card"><div class="chart-heading"><div><span class="eyebrow">NUMERICAL REFINEMENT</span><h3 id="benchmark-comparison-title">Spatial agreement</h3></div><select id="benchmark-comparison" aria-label="Refinement comparison"><option value="spatial">Space refinement</option><option value="temporal">Time refinement</option></select></div><div id="benchmark-comparison-key" class="chart-key bottom-key"></div><canvas id="benchmark-errors" class="chart" aria-label="Relative two-species field differences at saved comparison times"></canvas><p>Percent error relative to spatial contrast. Fine fields are conservatively averaged for spatial comparisons.</p></article>
+      </section>
+      <section class="diagnostics-card"><div><span class="eyebrow">MEASURED EVIDENCE</span><h3 id="benchmark-check-summary">Benchmark checks</h3></div><p id="benchmark-summary"></p><details class="benchmark-check-details"><summary>Inspect acceptance checks</summary><ul id="benchmark-checks"></ul></details></section>
+      <footer class="experiment-footer"><span>One prescribed initial perturbation · fixed geometry · no fate or mechanical dynamics.</span><span>New runs use the benchmark CLI; embryo parameters apply only in Live embryo.</span></footer>
+    </div>
   </main>
 
   <dialog id="about-dialog"><button id="close-about" class="dialog-close" aria-label="Close model information">×</button><span class="eyebrow">THE EXPERIMENT</span><h2>Local rules.<br>Collective behavior.</h2><p>A generic 3D model couples deformable cell shapes, Gierer–Meinhardt activator–inhibitor signaling on the contact graph, a two-fate regulatory switch, and apical–basal polarity.</p><p>Cells divide along a shape-selected axis through progressive cytokinesis. The embryo outline and daughter identities are not prescribed.</p><p>Time and parameters are dimensionless. Identity thresholds do not establish irreversible commitment, and shape changes do not establish a developmental axis. Cavity fluid transport is not implemented.</p><p>Run starts or resumes the solver. Pause preserves the current state. To change parameters after starting, pause, edit, then Reset. Reset applies the edited parameters and starts again from a zygote.</p><p>The timeline inspects recorded frames; it does not rewind the solver. This local session is held in memory. Downloaded frames contain visualization data and parameters, not a checkpoint for exact continuation.</p><button id="about-done" class="button primary">Back to the experiment</button></dialog>

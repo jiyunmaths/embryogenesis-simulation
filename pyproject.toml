@@ -7,7 +7,7 @@ name = "embryogenesis-simulation"
 version = "0.1.0"
 description = "A minimal three-dimensional deformable-cell embryogenesis model"
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.6"]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.6", "scikit-image>=0.25,<0.27"]
 
 [project.optional-dependencies]
 test = ["pytest>=7"]
@@ -17,7 +17,7 @@ embryo = "embryo.__main__:main"
 embryo-dashboard = "embryo.dashboard:main"
 
 [tool.setuptools.package-data]
-embryo = ["viewer.html", "dashboard.html", "dashboard.css", "dashboard.js"]
+embryo = ["viewer.html", "dashboard.html", "dashboard.css", "dashboard.js", "benchmark.js", "cell_surface.js"]
 
 [tool.setuptools.packages.find]
 include = ["embryo*"]

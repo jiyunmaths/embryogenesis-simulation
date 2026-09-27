@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 outputs/
 
+
+# Manuscript sources and compiled manuscript are kept local.
+/manuscript/
+/output/pdf/embryogenesis_introduction_methods.pdf

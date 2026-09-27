@@ -55,6 +55,7 @@ async function client() {
       return {ok:true,json:async()=>url==='/api/schema' ? schema : server};
     }
   });
+  vm.runInContext(fs.readFileSync(path.join(root,'embryo/cell_surface.js'),'utf8'),context);
   vm.runInContext(source,context); await settle();
   const run=expression=>vm.runInContext(expression,context);
   const flushPaint=()=>{while(paints.length)paints.shift()();};

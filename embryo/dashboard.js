@@ -3,24 +3,26 @@
 const $ = id => document.getElementById(id);
 const groups = [
   ["Run & resolution", ["seed", "steps", "max_cells", "save_every", "grid", "extent", "dt", "interface_width"]],
-  ["Activator–inhibitor signaling", ["signaling", "signal_beta", "signal_da", "signal_dh", "signal_partition_noise", "signal_fate_gain", "graph_contact_cutoff"]],
+  ["Activator–inhibitor signaling", ["signaling", "signal_transport", "signal_beta", "signal_da", "signal_dh", "signal_partition_noise", "signal_fate_gain", "graph_contact_cutoff"]],
   ["Division & cytokinesis", ["division_interval", "cycle_jitter", "division_orientation", "axis_degeneracy", "cytokinesis_duration", "ring_strength", "neck_threshold", "division_overlap_tolerance"]],
   ["Cell identity", ["differentiation", "competence_cells", "fate_rate", "fate_threshold", "neighbor_inhibition", "exposure_bias", "fate_noise", "partition_noise"]],
   ["Mechanical feedback", ["feedback", "surface_tension", "volume_stiffness", "repulsion", "adhesion", "fate_adhesion", "fate_tension"]],
-  ["Apical–basal polarity", ["polarity_enabled", "polarity_rate", "polarity_alignment", "polarity_decay", "polarity_tension"]]
+  ["Apical–basal polarity", ["polarity_enabled", "polarity_rate", "polarity_alignment", "polarity_contact_cutoff", "polarity_decay", "polarity_tension"]]
 ];
-const labels = {seed:"Random seed", steps:"Total steps", max_cells:"Cell limit", save_every:"Record every (steps)", grid:"Grid per axis", extent:"Domain half-width", dt:"Time step", interface_width:"Interface width", signaling:"Enable signaling", signal_beta:"Inhibitor reaction rate", signal_da:"Activator coupling", signal_dh:"Inhibitor coupling", signal_partition_noise:"Signal partition noise", signal_fate_gain:"Signal → identity gain", graph_contact_cutoff:"Contact cutoff", division_interval:"Division interval", cycle_jitter:"Cycle jitter", division_orientation:"Spindle orientation", axis_degeneracy:"Axis degeneracy", cytokinesis_duration:"Cytokinesis duration", ring_strength:"Ring strength", neck_threshold:"Neck threshold", division_overlap_tolerance:"Overlap tolerance", differentiation:"Enable differentiation", competence_cells:"Competence cell count", fate_rate:"Identity response rate", fate_threshold:"Identity threshold", neighbor_inhibition:"Neighbor inhibition", exposure_bias:"Exposure bias", fate_noise:"Identity noise", partition_noise:"Identity partition noise", feedback:"Enable mechanical feedback", surface_tension:"Surface tension", volume_stiffness:"Volume stiffness", repulsion:"Cell repulsion", adhesion:"Cell adhesion", fate_adhesion:"Identity adhesion contrast", fate_tension:"Identity tension contrast", polarity_enabled:"Enable polarity", polarity_rate:"Exposure response", polarity_alignment:"Neighbor alignment", polarity_decay:"Polarity decay", polarity_tension:"Directional tension"};
+const labels = {seed:"Random seed", steps:"Total steps", max_cells:"Cell limit", save_every:"Record every (steps)", grid:"Grid per axis", extent:"Domain half-width", dt:"Time step", interface_width:"Interface width", signaling:"Enable signaling", signal_beta:"Inhibitor reaction rate", signal_transport:"Transport operator", signal_da:"Activator diffusivity / rate", signal_dh:"Inhibitor diffusivity / rate", signal_partition_noise:"Signal partition noise", signal_fate_gain:"Signal → identity gain", graph_contact_cutoff:"Contact cutoff", division_interval:"Division interval", cycle_jitter:"Cycle jitter", division_orientation:"Spindle orientation", axis_degeneracy:"Axis degeneracy", cytokinesis_duration:"Cytokinesis duration", ring_strength:"Ring strength", neck_threshold:"Neck threshold", division_overlap_tolerance:"Overlap tolerance", differentiation:"Enable differentiation", competence_cells:"Competence cell count", fate_rate:"Identity response rate", fate_threshold:"Identity threshold", neighbor_inhibition:"Neighbor inhibition", exposure_bias:"Exposure bias", fate_noise:"Identity noise", partition_noise:"Identity partition noise", feedback:"Enable mechanical feedback", surface_tension:"Surface tension", volume_stiffness:"Volume stiffness", repulsion:"Cell repulsion", adhesion:"Cell adhesion", fate_adhesion:"Identity adhesion contrast", fate_tension:"Identity tension contrast", polarity_enabled:"Enable polarity", polarity_rate:"Exposure response", polarity_alignment:"Neighbor alignment", polarity_contact_cutoff:"Polarity contact cutoff", polarity_decay:"Polarity decay", polarity_tension:"Directional tension"};
 const help = {
   seed:"Reset with the same settings and seed reproduces the same simulation.",
   save_every:"Snapshot spacing, not solver speed. Pause and completion also record a frame.",
   grid:"Dense grid along each of the three axes. Higher resolution costs more memory and time.",
+  extent:"Domain half-width. Increase grid in proportion to preserve spacing: grid 56 and half-width 2.24 retain the default spacing 0.08.",
   dt:"Changing dt also changes simulated duration (steps × dt). Numerical stability constraints are checked by the server.",
   interface_width:"Must be at least 0.6 grid spacings. Adjust together with grid and extent.",
-  signal_da:"Dimensionless exchange rate on the normalized contact graph, not a physical diffusion coefficient.",
-  signal_dh:"Dimensionless exchange rate on the normalized contact graph, not a physical diffusion coefficient.",
+  signal_da:"Conservative: diffusivity in model length²/time. Legacy random_walk: degree-normalized exchange rate. Values are not interchangeable.",
+  signal_dh:"Conservative: diffusivity in model length²/time. Legacy random_walk: degree-normalized exchange rate. Values are not interchangeable.",
   division_orientation:"Shape aligns the spindle with the longest cell axis; isotropic is a comparison control.",
   fate_threshold:"Labels for the continuous regulatory state. These do not establish irreversible commitment.",
   feedback:"Enable identity-dependent adhesion/tension and polarity-dependent tension. Disabling this retains polarity dynamics but removes its mechanical effect.",
+  polarity_contact_cutoff:"Use -1 to inherit the signaling contact cutoff, or a value from 0 up to (but not including) 1 to set the polarity graph cutoff separately.",
   competence_cells:"Minimum population at which the identity switch responds."
 };
 const palette = {teal:"#209d91", gold:"#d89f38", blue:"#70a9df", coral:"#ee957f", gray:"#9caab0"};
@@ -42,9 +44,9 @@ function buildParameters() {
       const label = document.createElement("label"); label.htmlFor = `param-${name}`; label.textContent = labels[name] || name;
       const input = document.createElement(type === "string" ? "select" : "input"); input.id = `param-${name}`; input.name = name;
       input.title = help[name] || name.replaceAll("_", " ");
-      if (type === "string") (schema.choices[name] || []).forEach(value => {const option = document.createElement("option"); option.value=value; option.textContent=value === "shape" ? "Longest cell axis" : "Isotropic (control)"; input.append(option);});
+      if (type === "string") (schema.choices[name] || []).forEach(value => {const option = document.createElement("option"); option.value=value; option.textContent=({shape:"Longest cell axis", isotropic:"Isotropic (control)", conservative:"Conservative concentrations", random_walk:"Normalized exchange (legacy)"}[value] || value); input.append(option);});
       else if (type === "boolean") input.type="checkbox";
-      else {input.type="number"; input.step=type === "integer" ? "1" : "any"; input.required=true; input.min="0"; if (Array.isArray(schema.limits[name])) {input.min=schema.limits[name][0]; input.max=schema.limits[name][1];}}
+      else {input.type="number"; input.step=type === "integer" ? "1" : "any"; input.required=true; input.min=name === "polarity_contact_cutoff" ? "-1" : "0"; if (Array.isArray(schema.limits[name])) {input.min=schema.limits[name][0]; input.max=schema.limits[name][1];}}
       input.addEventListener("input", updateControls); wrapper.append(label,input); grid.append(wrapper); fields.set(name,input);
     });
     $("parameters").append(group);
@@ -123,6 +125,7 @@ async function poll() {
   } finally {setTimeout(poll, state?.state === "running" ? 400 : 900);}
 }
 function renderStatus() {
+  $("workspace-background-status").textContent = `Live embryo: ${state.state} · step ${state.step} / ${state.total_steps}`;
   const names={ready:"Ready", running:"Running", paused:"Paused", completed:"Completed", error:"Solver error"};
   $("state").className=`state-pill ${state.state}`; $("state").replaceChildren(document.createElement("i"),document.createTextNode(names[state.state] || state.state));
   $("run-detail").textContent=`Step ${state.step.toLocaleString()} / ${state.total_steps.toLocaleString()} · ${number(state.step*state.config.dt)} simulated time`;
@@ -183,18 +186,18 @@ function drawScene(frame) {
   for(let k=-4;k<=4;k++) {
     for(const pair of [[[k*extent/4,-extent*.7,-extent],[k*extent/4,-extent*.7,extent]],[[-extent,-extent*.7,k*extent/4],[extent,-extent*.7,k*extent/4]]]) {const a=project(pair[0]),b=project(pair[1]); ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();}
   }
+  const surface=CellSurface.draw(ctx,{width,height,dpr:Math.min(window.devicePixelRatio||1,2),
+    cells:frame.cells,color:cellColor,rotate,project,scale,cut,extent,
+    yaw:camera.yaw,pitch:camera.pitch,mode:$("geometry").value,
+    radius:Math.max(1.2,Math.min(8,scale*(2*extent/state.config.grid)*.58))});
+  $("view").setAttribute("data-renderer",surface.backend);
+  $("surface-note").textContent=surface.open ? " · Surface reaches domain edge" : surface.legacy && $("geometry").value!=="points" ? " · Older frame: point samples only" : "";
   if($("contacts").checked && frame.graph?.weights) {
     const cellsById=new Map(frame.cells.map(cell=>[cell.id,cell]));
     const ordered=(frame.graph.ids || frame.cells.map(cell=>cell.id)).map(id=>cellsById.get(id));
     ctx.strokeStyle="rgba(174,210,200,.38)";ctx.lineWidth=1;
     ordered.forEach((cell,i)=>{if(!cell || cell.center[2]>cut) return; for(let j=i+1;j<ordered.length;j++){const other=ordered[j];if(!other || other.center[2]>cut || !(frame.graph.weights[i]?.[j]>0))continue;const a=project(cell.center),b=project(other.center);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();}});
   }
-  const points=[];
-  for(const cell of frame.cells) {const color=cellColor(cell); for(const point of cell.points) if(point[2]<=cut) {const p=project(point);points.push({x:p[0],y:p[1],z:p[2],color});}}
-  points.sort((a,b)=>a.z-b.z);
-  const radius=Math.max(1.2,Math.min(8,scale*(2*extent/(state.config.grid-1))*.58));
-  for(const p of points) {ctx.globalAlpha=.78+.2*Math.max(0,Math.min(1,(p.z/extent+1)/2));ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,radius,0,Math.PI*2);ctx.fill();}
-  ctx.globalAlpha=1;
   if($("arrows").checked) for(const cell of frame.cells) {
     if(cell.center[2]>cut || !cell.polarity || Math.hypot(...cell.polarity)<.02)continue;
     const a=project(cell.center),b=project(cell.center.map((v,i)=>v+.3*cell.polarity[i])); const angle=Math.atan2(b[1]-a[1],b[0]-a[0]);
@@ -237,7 +240,7 @@ $("about").addEventListener("click",()=>$("about-dialog").showModal());
 for(const id of ["close-about","about-done"]) $(id).addEventListener("click",()=>$("about-dialog").close());
 $("timeline").addEventListener("input",()=>{followLive=false;selected=Number($("timeline").value);schedulePaint();});
 $("live").addEventListener("click",()=>{followLive=true;selected=Math.max(0,frames.length-1);schedulePaint();});
-for(const id of ["color","arrows","contacts","cut","organization"]) $(id).addEventListener("input",schedulePaint);
+for(const id of ["color","geometry","arrows","contacts","cut","organization"]) $(id).addEventListener("input",schedulePaint);
 $("camera").addEventListener("click",()=>{camera={yaw:.65,pitch:.4,zoom:1};schedulePaint();});
 let drag=null;
 $("view").addEventListener("pointerdown",event=>{drag={id:event.pointerId,x:event.clientX,y:event.clientY};$("view").setPointerCapture(event.pointerId);});

@@ -23,6 +23,7 @@ from urllib.parse import parse_qs, urlsplit
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 import numpy as np
 
+from .dashboard_benchmark import BenchmarkData
 from .graph_analysis import cycle
 from .model import Config, Simulation
 from .signaling import normalized_graph, stability
@@ -44,7 +45,8 @@ def schema():
     return {
         "defaults": defaults,
         "types": {field.name: names[field.type] for field in fields(Config)},
-        "choices": {"division_orientation": ["shape", "isotropic"]},
+        "choices": {"division_orientation": ["shape", "isotropic"],
+                    "signal_transport": ["conservative", "random_walk"]},
         "limits": {"grid": [12, 128], "max_cells": [1, 128],
                    "seed": [0, 2**32 - 1], "cell_grid_voxels": 16_777_216,
                    "dt_times_signal_rate": 100, "history_frames": MAX_HISTORY_FRAMES,
@@ -65,6 +67,7 @@ def validated_config(values):
     unknown = values.keys() - description["defaults"].keys()
     if unknown:
         raise ValueError("unknown configuration fields: " + ", ".join(sorted(unknown)))
+    normalized = values.copy()
     for name, value in values.items():
         kind = description["types"][name]
         if kind == "integer" and type(value) is not int:
@@ -80,7 +83,10 @@ def validated_config(values):
                 finite = False
             if not finite:
                 raise ValueError(f"{name} must be a finite number")
-    config = Config(**values)
+            # JavaScript has one Number type: JSON.stringify(1.0) emits 1.
+            # Restore declared real-valued parameter types at the API boundary.
+            normalized[name] = float(value)
+    config = Config(**normalized)
     if not 0 <= config.seed <= 2**32 - 1:
         raise ValueError("seed must be between 0 and 4294967295")
     if config.grid > 128 or config.max_cells > 128:
@@ -95,19 +101,29 @@ def validated_config(values):
 
 def reference_preflight(config, simulation):
     """Reference finite-graph spectra, evaluated before any 3D time step."""
+    from .transport import cartesian_transport, transport_graph
     reports = {}
-    for count in (4, 8, 16):
-        graphs = {f"cycle_{count}": cycle(count),
-                  f"complete_{count}": normalized_graph(np.ones((count, count)) - np.eye(count))}
-        for name, graph in graphs.items():
-            reports[name] = stability(graph, config.signal_beta, config.signal_da, config.signal_dh)
+    if config.signal_transport == "conservative":
+        # Fixed unit box, refined physical compartments; not predicted embryo geometry.
+        for n in (2, 3, 4):
+            graph = transport_graph(cartesian_transport(n))
+            reports[f"unit_box_{n}x{n}x{n}"] = stability(
+                graph, config.signal_beta, config.signal_da, config.signal_dh)
+    else:
+        for count in (4, 8, 16):
+            for name, graph in {f"cycle_{count}": cycle(count),
+                    f"complete_{count}": normalized_graph(np.ones((count, count)) - np.eye(count))}.items():
+                reports[name] = stability(graph, config.signal_beta, config.signal_da, config.signal_dh)
     return {"parameters": {"beta": config.signal_beta, "da": config.signal_da,
-                           "dh": config.signal_dh, "cutoff": config.graph_contact_cutoff},
+                           "dh": config.signal_dh, "cutoff": config.graph_contact_cutoff,
+                           "operator": config.signal_transport},
             "graphs": reports, "initial_graph": simulation.graph_snapshot(),
             "signaling_enabled": config.signaling,
-            "interpretation": "Reference cycle/complete graphs are not predicted embryo contacts. "
-                              "Frozen-graph growth rates apply near the homogeneous equilibrium; "
-                              "normalized eigenvalues are not physical wavenumbers."}
+            "interpretation": "Reference geometries are not predicted embryo contacts. "
+                              "Frozen-geometry growth rates apply near (a,b)=(1,1); "
+                              "conservative spectra have inverse-length-squared units. "
+                              "Moving geometry adds dilution and requires time-dependent analysis."}
+
 
 
 class DashboardController:
@@ -274,8 +290,10 @@ class DashboardController:
             self._join_worker()
 
 
-def make_server(controller, port=8765):
+def make_server(controller, port=8765, benchmark=None):
     """Bind IPv4 loopback only; expose a fixed, package-owned static allowlist."""
+
+    benchmark_data = BenchmarkData(benchmark)
 
     class Handler(BaseHTTPRequestHandler):
         server_version = "EmbryoDashboard/1"
@@ -332,10 +350,22 @@ def make_server(controller, port=8765):
                     self._send(400, {"error": "after must be an integer revision"})
                     return
                 self._send(200, controller.snapshot(after))
-            elif url.path in ("/", "/dashboard.js", "/dashboard.css"):
+            elif url.path == "/api/benchmark":
+                self._send(200, benchmark_data.metadata())
+            elif url.path == "/api/benchmark/run":
+                try:
+                    name = parse_qs(url.query).get("id", [""])[0]
+                    self._send(200, benchmark_data.run(name))
+                except KeyError:
+                    self._send(404, {"error": "Unknown benchmark run"})
+                except (ValueError, OSError) as error:
+                    self._send(409, {"error": str(error)})
+            elif url.path in ("/", "/dashboard.js", "/benchmark.js", "/cell_surface.js", "/dashboard.css"):
                 filename = "dashboard.html" if url.path == "/" else url.path[1:]
                 content_type = {"dashboard.html": "text/html; charset=utf-8",
                                 "dashboard.js": "text/javascript; charset=utf-8",
+                                "benchmark.js": "text/javascript; charset=utf-8",
+                                "cell_surface.js": "text/javascript; charset=utf-8",
                                 "dashboard.css": "text/css; charset=utf-8"}[filename]
                 try:
                     self._send(200, files("embryo").joinpath(filename).read_bytes(), content_type)
@@ -405,13 +435,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8765, help="Loopback HTTP port (default: 8765)")
     parser.add_argument("--config", type=Path, help="Initial model configuration JSON")
+    parser.add_argument("--benchmark", type=Path, help="Completed nonlinear benchmark directory (auto-detected in outputs by default)")
     args = parser.parse_args()
     if not 0 <= args.port <= 65535:
         parser.error("port must be between 0 and 65535")
     try:
         values = json.loads(args.config.read_text()) if args.config else {}
         controller = DashboardController(validated_config(values))
-        server = make_server(controller, args.port)
+        server = make_server(controller, args.port, args.benchmark)
     except (ValueError, TypeError, OSError) as error:
         parser.error(str(error))
     print(f"Live embryo dashboard: http://127.0.0.1:{server.server_address[1]}", flush=True)
