@@ -35,7 +35,17 @@ The runnable prototype models one cell dividing into a deformable multicellular 
 
 This is an exploratory model in dimensionless units, not a reconstruction of a particular organism. The simulation evolves each cell's shape on a 3D grid. It does not prescribe an embryo outline or assign daughter identities.
 
+## New experiment: identities as emergent cellular phenotypes
+
+The [attribute-based developmental experiment](docs/attribute_development.md) is now running two fresh zygote-to-t=90 branches **without the prescribed bistable fate switch or A/B labels**. It retains activator–inhibitor signaling and compares continuous activity-dependent mechanics with no regulatory mechanical feedback. Chemical activity, polarity strength, and cell shape are recorded as attributes; position, lineage, and exposure are context. No number of identities is prescribed and no clustering is imposed. Persistent differences would initially be candidate phenotypes, requiring perturbation and robustness tests before being called identities.
+
+This experimental branch leaves the historical core/dashboard model unchanged. The method section below describes that historical baseline, including the supplied fate switch, so its assumptions and prior results remain reproducible. The new branch's equations, compatibility details, and protocol are documented separately. Its scientific results are pending.
+
 ## Method and mathematical model
+
+Read the equations as a set of coupled rules: **geometry determines contacts; contacts transport signals; signals bias fate and polarity; fate and polarity change mechanics; mechanics changes geometry**. The model does not assume that any one of these links is sufficient to produce an organized embryo.
+
+In the notation below, $i,j$ label cells, $\mathbf{x}$ is a location in the 3D box $\Omega$, a dot means a time derivative, and an integral adds a quantity over the box. A star on $V_i^\star$ denotes a prescribed target, not a measured volume. The occupancy function $h(\phi)$ is unrelated to the inhibitor, which is written $b_i$ here (`inhibitor` and sometimes `h` in the code). Adhesion strength is $A_{ij}$; geometric contact area is $\mathcal A_{ij}$. See [the annotated model](docs/model.md#reading-the-equations) for derivative notation and a term-by-term mechanical derivation.
 
 ### State variables and initial conditions
 
@@ -66,6 +76,14 @@ h(\phi)=\phi^2(3-2\phi),
 \qquad V_i=\int_\Omega h(\phi_i)\,\mathrm{d}\mathbf{x}.
 $$
 
+**Occupancy is a smooth volume-counting rule.** It gives $h(0)=0$, $h(1)=1$, and $h(1/2)=1/2$: a grid location in the diffuse boundary contributes a fractional amount to cell volume. The cubic is the lowest-degree polynomial that also has zero slope at both endpoints. Consequently, volume-restoring forces proportional to $h'(\phi)=6\phi(1-\phi)$ act mainly at the boundary, rather than changing the uniform cell interior or empty space. Occupancy is not a probability of cell identity.
+
+**The potential makes inside and outside preferable to an intermediate phase.** The nonnegative quartic $q$ has equal minima at 0 and 1 and a maximum at $1/2$. It penalizes a broad region of intermediate phase; the gradient term below opposes an infinitely sharp boundary. Their competition produces a finite-width interface. These polynomials are simple modeling choices with useful smoothness and symmetry, not unique biological laws.
+
+![Occupancy rises smoothly from zero to one; the potential has minima at zero and one and a maximum at one half.](docs/images/occupancy-potential.svg)
+
+The panels have different vertical scales: occupancy counts volume, whereas the potential contributes to interface energy. They are different functions with different jobs.
+
 With regulatory states and the spatial tension coefficients frozen during each mechanical update, the baseline energy is
 
 $$
@@ -78,7 +96,27 @@ E={}&\sum_i\int_\Omega\gamma_i(\mathbf{x})
 \end{aligned}
 $$
 
-The four terms represent interface cost, resistance to cell-volume changes, overlap repulsion, and attraction between diffuse interfaces. Here $\epsilon$ sets interface width, $K_V$ is volume stiffness, $R$ controls repulsion, and $A_{ij}$ controls attraction. The interface attraction is a contact surrogate, not a resolved cadherin or tight-junction model.
+“Energy” here means a scalar mechanical cost used to generate shape-restoring forces. Lower values are preferred by the passive shape update. It is not ATP use, a developmental objective, or a claim that an embryo minimizes one fixed energy throughout development.
+
+| Term, in equation order | Why this form? | What competes with it? |
+|---|---|---|
+| Interface cost | $\lVert\nabla\phi\rVert^2$ penalizes abrupt spatial changes; $q(\phi)$ favors inside/outside values. Together they assign a cost to cell boundary area. | Without a volume constraint, a cell can lower this cost by shrinking. |
+| Volume penalty | The square penalizes both swelling and shrinkage and vanishes at the target. Dividing by $V_i^\star$ makes its derivative depend on relative volume error. | Surface and contact forces can sustain a small volume error because this constraint is soft. |
+| Overlap repulsion | $\phi_i^2\phi_j^2$ is large where two cell interiors occupy the same region. The positive sign makes overlap costly. | It limits the overlap favored indirectly by cell attraction. |
+| Interface attraction | $q(\phi_i)q(\phi_j)$ is appreciable only where both diffuse boundaries meet. The negative sign makes such contact favorable. | It competes with repulsion and interface cost; it does not impose a specific aggregate shape. |
+
+The sum $i<j$ counts each cell pair once. The factors $1/2$ are coefficient conventions that simplify derivatives; they do not represent half a physical interaction. In particular, the attraction coefficient is not a contact area or a molecular binding constant.
+
+| Symbol | Configuration name (default) | Interpretation when increased, with other parameters fixed |
+|---|---|---|
+| $\epsilon$ | `interface_width` (0.085) | Broadens diffuse interfaces and also changes their energy per area; it is not simply grid resolution. |
+| $\gamma_0$ | `surface_tension` (1) | Raises the baseline cost of the cell boundary and the associated restoring force. |
+| $K_V$ | `volume_stiffness` (12) | Resists fractional volume changes more strongly; can require smaller explicit time steps. |
+| $R$ | `repulsion` (3) | Penalizes interpenetration more strongly. |
+| $A_0$ | `adhesion` (4) | Strengthens the preference for overlapping diffuse interfaces. |
+| $V_i^\star$ | Stored cell target, not a global configuration constant | Sets the preferred cell volume; daughters share the mother's target and do not grow between divisions. |
+
+These tendencies do not guarantee monotonic changes in whole-embryo shape. With this energy normalization, an isolated flat equilibrium interface with constant $\gamma$ has energy per area $\gamma\epsilon\sqrt{2}/6$. Thus `surface_tension` is a model energy coefficient, not directly a measured cortical tension. The interface attraction is a contact surrogate, not a resolved cadherin or tight-junction model. [Derivation and force signs](docs/model.md#how-the-energy-generates-shape-change).
 
 Mechanical evolution is overdamped, with mobility set to one:
 
@@ -86,6 +124,8 @@ $$
 \frac{\partial\phi_i}{\partial t}
 =-\frac{\delta E}{\delta\phi_i}+F_{\mathrm{furrow},i}.
 $$
+
+The minus sign means the passive field moves in the direction that reduces the instantaneous energy. The functional derivative $\delta E/\delta\phi_i$ asks how the energy changes when the shape field changes locally. “Overdamped” means there is no separate acceleration or momentum equation; mobility converts restoring force into the rate of shape change and is absorbed into the time scale here.
 
 The furrow force is present only during division. Volume constraints are soft for nondividing cells; dividing mothers additionally receive the volume-preserving correction described below. Because signaling changes material properties and cytokinesis supplies active forcing, the complete simulation is not passive relaxation of a single fixed energy.
 
@@ -101,19 +141,19 @@ $$
 The live simulation defaults to **conservative concentration transport** (`signal_transport="conservative"`). Contacts below 2% of the largest current overlap are removed symmetrically. For complementary flat equilibrium interfaces,
 
 $$
-\frac{W_{ij}}{A_{ij}}=\int_{-\infty}^{\infty}\phi^2(1-\phi)^2\,\mathrm{d}s
+\frac{W_{ij}}{\mathcal A_{ij}}=\int_{-\infty}^{\infty}\phi^2(1-\phi)^2\,\mathrm{d}s
 =\frac{\epsilon}{6\sqrt{2}}.
 $$
 
 We therefore estimate interface area and conductance by
 
 $$
-\widehat A_{ij}=\frac{6\sqrt{2}}{\epsilon}W_{ij},\qquad
+\widehat{\mathcal A}_{ij}=\frac{6\sqrt{2}}{\epsilon}W_{ij},\qquad
 \ell_{ij}=\lVert\mathbf c_j-\mathbf c_i\rVert,\qquad
-g_{ij}=\frac{\widehat A_{ij}}{\ell_{ij}}.
+g_{ij}=\frac{\widehat{\mathcal A}_{ij}}{\ell_{ij}}.
 $$
 
-Here $\mathbf c_i$ is the occupancy-weighted cell center. The area estimate is a calibrated closure, not an exact face reconstruction. Gaps, overlapping or curved interfaces, and nonorthogonal center-to-face directions can bias transport. Coincident centers with positive contact are rejected.
+The shell weight $s_i$ is zero in the interior and exterior and largest at the interface, so $W_{ij}$ measures diffuse boundary overlap. The factor $6\sqrt{2}/\epsilon$ converts that overlap volume into an estimated area under the flat-interface assumption. Conductance increases with area and decreases with transport distance: a wider connection permits more exchange, while a longer path permits less. Here $\mathbf c_i$ is the occupancy-weighted cell center. The area estimate is a calibrated closure, not an exact face reconstruction. Gaps, overlapping or curved interfaces, and nonorthogonal center-to-face directions can bias transport. Coincident centers with positive contact are rejected.
 
 With measured cell volumes $M=\operatorname{diag}(V_i)$ and $K=\operatorname{diag}(G\mathbf1)-G$,
 
@@ -121,6 +161,8 @@ $$
 \Delta_V=-M^{-1}K,\qquad
 (\Delta_V c)_i=\frac{1}{V_i}\sum_jg_{ij}(c_j-c_i).
 $$
+
+The difference $c_j-c_i$ sends regulator from higher to lower concentration. Dividing the net incoming amount flux by $V_i$ converts it to a concentration rate; the same incoming amount changes a small cell's concentration more than a large cell's. $M$ stores these volume capacities, and $K$ assembles the equal-and-opposite pairwise fluxes.
 
 Exchange preserves constants and total amount $\sum_i V_i c_i$ on frozen geometry. Isolated cells have zero exchange. The Gierer–Meinhardt equations on moving compartments are
 
@@ -132,6 +174,16 @@ $$
  &=V_i\beta(a_i^2-b_i)+D_b\sum_jg_{ij}(b_j-b_i).
 \end{aligned}
 $$
+
+| Reaction term | Meaning and modeling choice |
+|---|---|
+| $a_i^2/b_i$ | Activator promotes its own production through the quadratic numerator; inhibitor suppresses that production through the denominator. The reciprocal law is a simplified inhibition rule requiring $b_i>0$. |
+| $-a_i$ | Linear activator turnover; its coefficient is set to one by the chosen time scale. |
+| $\beta a_i^2$ | Activator induces inhibitor, closing the negative feedback loop. |
+| $-\beta b_i$ | Linear inhibitor turnover. The same $\beta$ scales inhibitor production and loss, changing its reaction time scale without shifting the positive uniform equilibrium $(1,1)$. |
+| $D_a,D_b$ | Transport strengths (`signal_da`, `signal_dh`). Faster inhibitor transport can oppose broad activation while allowing localized activation; it does not guarantee a pattern on the available graph. |
+
+The powers and coefficients specify a minimal reduced feedback system, not identified biochemical reaction steps. A quadratic production law is one way to supply nonlinear self-amplification; it is not derived from the mere existence of an activator–inhibitor loop. The model must test whether this assumed loop explains the observed outcome.
 
 Thus concentration equations include dilution $-c_i\dot V_i/V_i$. Each step advances reaction/exchange on frozen pre-step geometry with positivity-preserving SSP-RK2 substeps, advances mechanics, then rescales concentrations by $V_i^{old}/V_i^{new}$. This is first-order splitting of the coupled moving problem; the internal RK2 solver does not make the full simulation second order. Abscission partitions measured amounts conservatively. Externally clamped signal experiments instead supply/remove regulators to maintain the imposed concentration.
 
@@ -147,7 +199,7 @@ J=\begin{pmatrix}1&-1\\2\beta&-\beta\end{pmatrix},
 \qquad \det J=\beta.
 $$
 
-Local kinetics are stable for $\beta>1$. For frozen-geometry spectral analysis, the code diagonalizes
+Each Jacobian entry is the response of one reaction rate to a small change in one activity. The positive upper-left entry represents self-amplification, the negative upper-right entry inhibition, and the positive lower-left entry inhibitor induction. Local stability means a small perturbation in a well-mixed cell decays through their combined action, despite the activator's individual positive feedback. Local kinetics are stable for $\beta>1$. For frozen-geometry spectral analysis, the code diagonalizes
 
 $$
 S=M^{-1/2}KM^{-1/2}.
@@ -159,6 +211,8 @@ $$
 M_k=J-\lambda_k\operatorname{diag}(D_a,D_b),
 \qquad r_k=\max\operatorname{Re}\operatorname{eig}(M_k).
 $$
+
+A graph mode is a pattern of cell-to-cell activity differences, and $\lambda_k$ measures how strongly transport damps that mode. The zero mode is constant on each connected component. The rate $r_k$ tells whether a small perturbation grows ($r_k>0$) or decays ($r_k<0$); early linear growth is proportional to $\exp(r_k t)$. A mode with small positive growth may need much longer than one cell cycle to become visible.
 
 A diffusion-driven instability requires stable local kinetics and at least one **supported nonzero graph eigenvalue** with $r_k>0$. The determinant is
 
@@ -180,6 +234,8 @@ $$
 \dot f_i=r_f\left[f_i-f_i^3+g_a(a_i-1)\right].
 $$
 
+Here $r_f$ (`fate_rate`, 0.8) sets response speed and $g_a$ (`signal_fate_gain`, 1) sets the activator bias. The linear term $+f_i$ amplifies a small signed deviation from zero; the cubic term $-f_i^3$ limits that amplification. Subtracting the reference activity 1 makes homogeneous equilibrium signaling unbiased. A positive bias favors A and a negative bias favors B; it does not assign either identity directly.
+
 Without a signaling bias, this switch has stable states at $f=\pm1$ and an unstable state at zero. Activator above or below its homogeneous value biases the switch toward opposite identities. Independent fate noise, legacy neighbor inhibition, and the direct exposure bias are disabled by default; their optional terms are documented in [the full model definition](docs/model.md).
 
 Cells with $f_i>0.55$ are labeled A, those with $f_i<-0.55$ are labeled B, and the remainder are uncommitted. These labels are thresholds, not proof of irreversible commitment or named biological lineages. Because the fate switch is already bistable by construction, differentiated labels alone would not demonstrate a Turing mechanism; signaling growth must be tested separately.
@@ -192,6 +248,8 @@ $$
 A_{ij}&=A_0[1+c_A\tanh(f_i)\tanh(f_j)].
 \end{aligned}
 $$
+
+The bounded function $\tanh(f)$ prevents unbounded material coefficients when fate leaves the interval $[-1,1]$. The contrast parameters $c_\gamma$ (`fate_tension`, 0.25) and $c_A$ (`fate_adhesion`, 0.35) set the strength of this constitutive coupling. For example, the tension multiplier is bounded between $1-c_\gamma$ and $1+c_\gamma$; these limits are approached only at large fate magnitude. The product in the adhesion law is positive for similar signs and negative for opposite signs. Choosing these forms expresses a hypothesis about identity-dependent mechanics, not a consequence of the signaling equations.
 
 Positive fate has higher baseline tension, and similarly biased cells have stronger attraction. These are explicit constitutive hypotheses, not experimentally calibrated effects of the generic identities A and B.
 
@@ -217,7 +275,7 @@ $$
 -(\mu+\lVert\mathbf{p}_i\rVert^2)\mathbf{p}_i.
 $$
 
-The terms describe signal-modulated geometric polarization, neighbor alignment, and relaxation with nonlinear saturation. Each numerical update caps the vector magnitude at one. Daughters inherit the mother's vector and subsequently adapt to their new geometry.
+Here $\alpha$ (`polarity_rate`, 1) controls response to free cortex, $\eta$ (`polarity_alignment`, 0.25) controls averaging toward neighboring orientations, and $\mu$ (`polarity_decay`, 0.5) removes polarity when cues are absent. The activity factor $2a/(1+a)$ equals one at $a=1$ and saturates at two, so signaling modulates rather than indefinitely amplifies the geometric cue. The cubic vector term $-\lVert\mathbf p\rVert^2\mathbf p$ increasingly opposes large polarity. These are response and saturation assumptions, not a resolved polarity-protein network. Each numerical update caps the vector magnitude at one. Daughters inherit the mother's vector and subsequently adapt to their new geometry.
 
 Polarity modifies cortical tension spatially:
 
@@ -231,7 +289,7 @@ F_i^{\mathrm{surface}}&=\epsilon^2\nabla\cdot(\gamma_i\nabla\phi_i)-\gamma_i q'(
 \end{aligned}
 $$
 
-Here $\mathbf{c}_i$ is the cell centroid. Positive $\chi$ lowers effective tension on the apical side and raises it on the basal side; $\chi<1$ keeps tension positive. Conservative face fluxes include the spatial gradient of tension. Centroids and polarity are held fixed within each mechanical update.
+Here $\mathbf{c}_i$ is the cell centroid and $\chi$ (`polarity_tension`, 0.35) is the strength of the directional tension contrast. The dot product selects position relative to the apical direction; the $\epsilon^2$ in the denominator prevents division by zero at the centroid. Positive $\chi$ lowers effective tension on the apical side and raises it on the basal side; $\chi<1$ keeps tension positive. Conservative face fluxes include the spatial gradient of tension. Centroids and polarity are held fixed within each mechanical update.
 
 [Nissen et al. (2018)](https://elifesciences.org/articles/38407) motivates investigating polarity-dependent morphology, but this particular cue and tension law are project-specific assumptions. There is no planar cell polarity or resolved apical protein network. Geometry can polarize cells even with uniform activator, so local polarity is not evidence of a chemically selected global axis.
 
@@ -263,6 +321,8 @@ F_{\mathrm{furrow},i}=-\kappa S(u)
 \frac{1+\tanh[(r_\perp-R_{\mathrm{ring}})/\epsilon]}{2}
 h'(\phi_i).
 $$
+
+The smooth ramp starts and ends with zero slope, avoiding an abrupt switch in forcing. The Gaussian confines the force near the cleavage plane; the tanh factor selects tissue outside the shrinking ring; and $h'(\phi_i)$ localizes its action to the cell boundary. The negative sign removes occupancy from that equatorial region, while volume preservation redistributes it into the lobes. $T$ (`cytokinesis_duration`, 0.9) sets the nominal constriction time and $\kappa$ (`ring_strength`, 8) sets force amplitude. Neither alone determines actual abscission time, which also depends on the resolved neck.
 
 This is a contracting-ring surrogate, not a resolved actomyosin network. After each mechanical update, an interface-local scalar correction preserves the mother's measured onset volume. That correction is a numerical constraint, not a hydrostatic pressure solve.
 
@@ -502,6 +562,36 @@ sim.checkpoint("outputs/continued.npz")
 
 A/B labels are instantaneous activity thresholds. They do **not** establish stable commitment. There is no tensile-stress-based spindle rule, lumen, growth between divisions, extracellular morphogen field, or calibrated gene network yet. Conservative exchange uses an approximate diffuse-contact area closure; continuum consistency on arbitrary deformed cell geometries remains unverified. Equatorial contraction is a prescribed ring surrogate, not a resolved actomyosin network. Elongation following cleavage is not proof of a spontaneously selected developmental axis.
 
+## What our current model and results can explain, and what remains missing
+
+**The model currently provides conditional explanations of particular mechanisms of organization, rather than a validated account of embryogenesis as a whole.** Its strongest result concerns signal amplification on a fixed cell-contact network. Cell identity and shape require separate evidence: a signaling pattern, two fate labels, and an elongated aggregate are not interchangeable outcomes.
+
+| Question | What the current evidence supports | What it does not yet establish |
+|---|---|---|
+| Can small signal differences become persistent patterns? | On one resolved frozen embryo graph, the full activator–inhibitor loop sustains contrast in 20/20 chemical perturbation trials. Removing self-activation, transport, or differential diffusion suppresses persistent contrast. Finite-graph spectra explain which small perturbations can initially grow. | Robust patterning across independently developed embryos, arbitrary moving geometries, or biologically calibrated parameters. The 20 trials share one geometry. |
+| Can initially similar cells acquire different identities? | Activator differences can bias the downstream switch toward A or B. Stable signaling ablations still yield both labels in 20/20 trials, whereas removing signal-to-fate forcing leaves the noiseless switch at zero. | That sustained activator–inhibitor patterning is necessary for differentiation. The two stable fate states are built into the switch; their biological meaning and robustness in the coupled moving embryo remain untested. Withdrawal, reversal, and noise responses of the isolated switch are now quantified separately. |
+| Can local interactions produce changing, asymmetric shapes? | Deformable interfaces, contact interactions, polarity, and progressive cleavage generate changing 3D geometry without prescribing an aggregate outline. Earlier runs retain elongation and memory of the first-cleavage axis. | That the chemical loop selects a new global axis or causes additional persistent elongation. Earlier shape controls did not demonstrate that effect and had numerical limitations; the completed conservative moving controls also fail the predeclared feedback-specific elongation tests, while passing numerical-quality screens. |
+
+The [joint signal/fate validation](docs/joint_fate.md) strengthens the first two conclusions: against a tightened independent ODE reference, the maximum continuous-fate error is $6.63\times10^{-5}$ at the tested production step, with unchanged cell-wise final labels. This resolves the tested frozen-geometry integration sensitivity, not the accuracy of the entire moving developmental trajectory.
+
+In the [current moving pilot](docs/moving_causal.md), the full-feedback branch has completed $t=18$–78. It ends with axis ratio 1.3285 and 6 A / 10 B cells, but its cell-to-cell activator standard deviation is only 0.0135–0.0244 over the declared late window, below the persistent-contrast criterion of 0.1. All three controls are complete. Full feedback has a lower late mean axis ratio than no mechanical feedback (1.32663 versus 1.32975) and no self-activation (1.32691); it does not achieve the required positive 0.05 excess. This demonstrates why a frozen-graph instability, differentiated labels, and an elongated shape cannot alone establish chemically driven organization under movement; the completed shape comparison does not support additional feedback-specific elongation in this pilot.
+
+Conservative transport explains how exchange and volume changes preserve regulator amount. Manufactured benchmarks establish convergence in their specified geometries. However, the live overlap-to-area approximation fails general-geometry closure screens, and the completed [zygote-to-t=90 refinement study](docs/development_refinement.md) does not pass its combined acceptance criteria: spatial refinement disagrees on signaling, while time refinement disagrees on shape and fate fractions. Numerical conservation and successful component tests therefore do not yet establish a converged developmental prediction.
+
+What remains missing is both numerical and biological:
+
+- **A validated causal link to shape:** refine the completed moving controls' coupled time integration, and repeat across independent developmental geometries and perturbation seeds. Test spatial organization and axis selection alongside elongation.
+- **Reliable full-development numerics:** diagnose the observed refinement failures and validate transport on irregular, changing contacts. Successful regular-mesh prototypes are not yet a validated replacement for the live geometric approximation.
+- **Evidence for stable cell identity:** extend the completed isolated-switch withdrawal, reversal, and noise assays to the coupled developing embryo, and distinguish fate memory from transient threshold crossings. A/B are generic model states, not identified lineages.
+- **Additional developmental mechanisms:** growth between divisions, resolved intracellular/extracellular signaling, tissue fluid mechanics, and a lumen are absent. Cavitation would require an explicit account of fluid accumulation, osmotic/active transport, sealing, and pressure; an empty gap between cells would not demonstrate that mechanism.
+- **Biological calibration and prediction:** relate model scales and coefficients to measurements, specify a biological system, and test predictions against independent observations and perturbations.
+
+Order here means amplification and organization of small differences in an already structured dynamical system. Cells, interactions, feedback laws, fate bistability, and division rules are supplied assumptions. The project can test how much organization follows from those assumptions and which couplings are necessary; it does not currently derive the origin of those rules or explain the emergence of life itself.
+
+The [signal-withdrawal experiment](docs/fate_memory.md) now quantifies this built-in fate memory. On the same frozen geometry with twenty paired perturbation seeds, even 0.6 time units of activator input lead to both labels in 20/20 trials by time 120 under the bistable law; no cells were labeled when that short input ended. A matched non-bistable relaxing law returns all cells to the uncommitted state after every tested withdrawal duration. All numerical checks pass (maximum fate timestep discrepancy 0.0009524). This supports transient signal selection followed by intrinsic switch memory, not a requirement for sustained Turing patterns or proof of irreversible biological commitment.
+
+The subsequent [fate-reversal and noise assay](docs/fate_robustness.md) characterizes the isolated switch starting at its ideal equilibria. Opposing bias above the analytic threshold 0.3849 can reverse fate with a sufficiently long pulse; tested switching durations are 24, 12, and 3 for biases 0.4, 0.5, and 0.75. At time 60, additive-noise amplitudes 0.3 and 0.4 produce opposite labels in 42/512 and 167/512 paths. All numerical checks pass. Memory is persistent but reversible in this assumed equation; robustness of the coupled developmental system remains untested.
+
 ## Tests and next steps
 
 ```bash
@@ -522,7 +612,7 @@ The subsequent [frozen contact-cutoff screen](docs/contact_sensitivity.md) prese
 
 The next [controlled small-cell cleavage screen](docs/cleavage_resolution.md) compares three grids, three time steps, and axial/oblique division directions. It tests abscission conservation, daughter connectivity, event timing, and shape before full developmental refinement.
 
-The [full developmental refinement study](docs/development_refinement.md) is now running five fresh zygote-to-t=90 cases: grids 56³/72³/88³ at fixed time step, plus an independent time-step sweep on 72³. It compares division history, signaling distributions, fate fractions, and shape while checking cell resolution and numerical quality. No developmental convergence result is claimed yet.
+The [full developmental refinement study](docs/development_refinement.md) has completed all five fresh zygote-to-t=90 cases: grids 56³/72³/88³ at fixed time step, plus an independent time-step sweep on 72³. The combined acceptance result is **FAIL**: spatial signaling comparisons and temporal shape/fate comparisons exceed their declared limits. Passing component checks do not establish developmental convergence. The coarse 56³ reference also fails the smallest-cell resolution screen.
 
 The cleavage measurement issue is [resolved by calibrated native-phase reconstruction](docs/cleavage_measurement.md): reconstruct phi before applying occupancy, giving at most 0.1503% cubic error across analytic holdouts (limit 0.25%). All 10 revised checks pass; axial and oblique finest-pair evolved differences stay below 0.56%. Original results and ongoing developmental simulations remain unchanged.
 
@@ -536,4 +626,7 @@ The [reflecting-wall skew-mesh test](docs/skew_boundary.md) passes 8/9 checks: p
 
 A [derived positive wall-conductance correction](docs/skew_boundary_correction.md) resolves the tested boundary-order failure: all nine checks pass for two independent wall families, with 64³ confirmation orders near 1.997 and errors below 0.0052%. Conservation and positivity remain intact. Nonuniform capacities and graded geometry are next; live transport is unchanged.
 
-The first [causal activator–inhibitor screen](docs/causal_signaling.md) is complete on one frozen resolved embryo graph with 20 paired chemical perturbation seeds. Full feedback sustains signal contrast in 20/20 trials; removing self-activation, transport, or differential diffusion suppresses it. Those controls still produce both fate labels, exposing the separate bistable fate switch as an alternative mechanism. Removing signal-to-fate coupling prevents commitment. The original finer-time checks reproduced labels but failed continuous-fate tolerances. A subsequent [joint signal/fate integrator](docs/joint_fate.md) resolves that sensitivity against a tightened independent ODE reference: maximum fate error is 6.63e-5 at dt=0.0075, below the unchanged 0.05 limit. The corrected trajectories retain the same scientific distinction between persistent patterns and fate labels. Four matched [moving-geometry feedback controls](docs/moving_causal.md) are now running from t=18 to t=78; their shape comparison is pending. This is not yet a developmental ensemble.
+The first [causal activator–inhibitor screen](docs/causal_signaling.md) is complete on one frozen resolved embryo graph with 20 paired chemical perturbation seeds. Full feedback sustains signal contrast in 20/20 trials; removing self-activation, transport, or differential diffusion suppresses it. Those controls still produce both fate labels, exposing the separate bistable fate switch as an alternative mechanism. Removing signal-to-fate coupling prevents commitment. The original finer-time checks reproduced labels but failed continuous-fate tolerances. A subsequent [joint signal/fate integrator](docs/joint_fate.md) resolves that sensitivity against a tightened independent ODE reference: maximum fate error is 6.63e-5 at dt=0.0075, below the unchanged 0.05 limit. The corrected trajectories retain the same scientific distinction between persistent patterns and fate labels. Four matched [moving-geometry feedback controls](docs/moving_causal.md) have completed t=18 to t=78. All quality checks pass, but full feedback does not exceed the no-feedback or no-self-activation shape controls, and its persistent-signal check fails. This is not yet a developmental ensemble.
+
+
+The [geometry replay diagnostic](docs/geometry_replay.md) now tests frozen transport, replayed transport/volumes, omitted dilution, and frozen transport with volume forcing. The six-unit snapshot pilot passes chemical step refinement but fails fidelity to the live trajectory and snapshot-spacing checks; causal attribution is withheld. An exact continuation is capturing conductances and volumes at every mechanical step, with bitwise checkpoint verification, before automatically repeating the replay controls.

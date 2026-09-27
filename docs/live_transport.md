@@ -2,6 +2,24 @@
 
 New simulations default to `signal_transport="conservative"`. This couples `transport.conservative_transport` and its positivity-preserving `integrate_gm` solver to measured live-cell geometry. `random_walk` remains an explicit historical control. Old schema-3 checkpoints without the selector restore random-walk transport with their original parameters; no historical trajectory is silently reinterpreted.
 
+## Reading the transport model
+
+Each cell is treated as a well-mixed compartment: $a_i$ and $b_i$ describe concentrations averaged over a cell, not a resolved concentration field inside its cytoplasm. Exchange occurs through a geometry-dependent graph. This assumption separates the voxel resolution of shape from the number of signaling compartments; making the shape grid finer does not add independent chemical degrees of freedom within a cell.
+
+| Symbol | Meaning | Code/configuration connection |
+|---|---|---|
+| $a_i,b_i$ | Activator and inhibitor; uniform reference values are both 1 | `activator`, `inhibitor`; inhibitor is sometimes named `h` in code |
+| $V_i$ | Measured occupancy volume, the cell's capacity for regulator amount | `volumes()`; not target volume |
+| $W_{ij}$ | Overlap integral of two diffuse interface shells | Raw contact proxy, with volume scaling |
+| $\widehat{\mathcal A}_{ij}$ | Estimated contact area | Distinct from mechanical adhesion coefficient $A_{ij}$ |
+| $\ell_{ij}$ | Distance between occupancy-weighted centers | Approximate exchange path length |
+| $g_{ij}$ | Area divided by path length | Symmetric conductance before multiplication by species diffusivity |
+| $D_a,D_b$ | Species diffusivities in model length squared per time | `signal_da` = 0.02; `signal_dh` = 0.4 |
+| $\beta$ | Inhibitor reaction-rate multiplier relative to activator turnover | `signal_beta` = 2 |
+| $\tau$ | Relative contact threshold | `graph_contact_cutoff` = 0.02; remove links weaker than $\tau$ times the strongest overlap |
+
+The inhibitor parameter is named `signal_dh` for historical reasons; it is $D_b$ in this document. All defaults are illustrative, and changing a rate can alter time scales as well as pattern selection.
+
 ## Geometry and equations
 
 For each pair, the code measures the existing shell overlap
@@ -13,18 +31,20 @@ $$
 For complementary flat interfaces at the equilibrium profile of this model, $|\phi'|=\sqrt{2}\phi(1-\phi)/\epsilon$. Substitution gives
 
 $$
-W_{ij}/A_{ij}=\frac{\epsilon}{\sqrt{2}}\int_0^1\phi(1-\phi)\,\mathrm d\phi
+W_{ij}/\mathcal A_{ij}=\frac{\epsilon}{\sqrt{2}}\int_0^1\phi(1-\phi)\,\mathrm d\phi
 =\frac{\epsilon}{6\sqrt{2}}.
 $$
 
 After symmetric relative contact filtering (default 0.02, with no absolute floor for conservative transport), define
 
 $$
-\widehat A_{ij}=6\sqrt{2}W_{ij}/\epsilon,\quad
+\widehat{\mathcal A}_{ij}=6\sqrt{2}W_{ij}/\epsilon,\quad
 \ell_{ij}=|\mathbf c_i-\mathbf c_j|,\quad
-g_{ij}=\widehat A_{ij}/\ell_{ij},\quad
+g_{ij}=\widehat{\mathcal A}_{ij}/\ell_{ij},\quad
 V_i=\int h(\phi_i)\,\mathrm dV.
 $$
+
+The area factor is obtained by integrating through one ideal planar interface, not by fitting the desired pattern. It compensates for shell overlap growing with interface width. Larger area permits more exchange; larger center separation reduces the approximate concentration gradient. Neither $W_{ij}$ nor $g_{ij}$ is the mechanical attraction coefficient: geometry and adhesion can influence each other dynamically, but these numbers play different roles.
 
 Centers use the same occupancy weighting as volumes. Positive contact between coincident centers is rejected rather than assigned an arbitrary regularized flux. The sparse operator is
 
@@ -32,6 +52,17 @@ $$
 K=\operatorname{diag}(G\mathbf 1)-G,\qquad M=\operatorname{diag}(V_i),\qquad
 \Delta_V=-M^{-1}K.
 $$
+
+Here $G$ has entries $g_{ij}$ and $\mathbf1$ is the all-ones vector. The diagonal of $K$ stores total outgoing conductance and its off-diagonal entries are $-g_{ij}$. The minus sign in $\Delta_V=-M^{-1}K$ therefore produces incoming differences $c_j-c_i$. Division by the diagonal capacity $V_i$ converts amount rate into concentration rate.
+
+For a single link, the amount flux from $j$ into $i$ is
+
+$$
+F_{j\to i}=D_cg_{ij}(c_j-c_i),
+\qquad F_{i\to j}=-F_{j\to i}.
+$$
+
+If one cell has twice the volume of the other, the same exchanged amount changes its concentration by half as much. Pairwise cancellation gives $\sum_i V_i(\Delta_Vc)_i=0$ on frozen geometry. The ordinary unweighted sum of concentrations generally is not conserved and should not be used as an amount diagnostic.
 
 It obeys $\Delta_V\mathbf1=0$ and $\mathbf1^TM\Delta_V=0$. Isolated cells have zero exchange. Equal-and-opposite pairwise amount fluxes conserve total amount under diffusion even for unequal volumes. Reactions remain active and can create/remove regulators.
 
@@ -42,6 +73,10 @@ $$
 \dot c_i=R_c+D_c(\Delta_Vc)_i-c_i\frac{\dot V_i}{V_i}.
 $$
 
+The amount equation is the starting point: regulator amount equals concentration times measured volume. Applying the product rule gives the dilution term. With no reactions or exchange, doubling volume halves concentration and leaves amount unchanged. Conversely, compression increases concentration without creating regulator. These volume effects can perturb chemistry even in the absence of imposed chemical noise.
+
+The local reactions express four assumptions: $a^2/b$ is nonlinear activator self-production suppressed by inhibitor, $-a$ is activator turnover, $\beta a^2$ is inhibitor induction by activator, and $-\beta b$ is inhibitor turnover. The quadratic is a chosen minimal nonlinearity, not a measured reaction stoichiometry. The reciprocal inhibition law requires positive $b$ and does not by itself provide a bounded production ceiling. The common $\beta$ changes both inhibitor reaction terms, retaining the positive equilibrium $(1,1)$ while changing its dynamics. Only transport and dilution conserve amount; reactions are allowed to produce or remove it.
+
 The step freezes geometry, advances reaction/exchange, advances mechanics, then applies $c_i\leftarrow c_iV_i^{old}/V_i^{new}$. At cleavage, the parent amount is divided between measured daughter volumes, with volume-balanced partition noise. A small volume discrepancy at relabeling cannot create regulator amount. Signals disabled as a control remain frozen; prescribed concentration clamps are external sources/sinks and bypass dilution while active.
 
 The internal SSP-RK2 stages use a maximum loss rate
@@ -50,6 +85,8 @@ $$
 L=\max(1+D_a r_{\max},\,\beta+D_b r_{\max}),\qquad
 r_{\max}=\max_i\frac{\sum_j g_{ij}}{V_i},\qquad \delta t L\le0.2.
 $$
+
+The quantity $r_{\max}$ is the largest compartment escape rate before multiplication by a diffusivity. $L$ adds local reaction losses to diffusion losses; the substep condition prevents removing too much of a positive concentration in one explicit stage. The factor 0.2 is a conservative numerical choice, not a biological constant. Positivity is necessary, but alone does not establish time accuracy.
 
 This replaces the normalized-graph step restriction. Smaller compartments can require more substeps. Full moving-geometry integration is **first-order operator splitting**, despite second-order integration of frozen reaction/exchange. No higher-order coupled convergence is claimed.
 
@@ -62,6 +99,10 @@ For frozen geometry, diagonalize $S=M^{-1/2}KM^{-1/2}$. Its eigenvalues $\lambda
 $$
 J=\begin{pmatrix}1&-1\\2\beta&-\beta\end{pmatrix}.
 $$
+
+Although $\Delta_V$ is generally nonsymmetric in ordinary coordinates for unequal volumes, $S$ is symmetric. The transformation accounts for volume capacity and gives a real nonnegative spectrum without changing the physical operator. $J$ describes local chemical feedback, whereas $-\lambda_k\operatorname{diag}(D_a,D_b)$ describes the damping of that particular spatial mode by transport.
+
+A positive largest real eigenvalue of this two-by-two matrix predicts early growth of a small perturbation, not the final nonlinear pattern. A candidate continuum band supplies possible scales; the finite graph must actually support a mode in it. Geometry changes can alter eigenvalues, rotate mode shapes, and change volume-driven forcing while a perturbation is growing.
 
 For these defaults, the physically fixed unstable band is $6.492189<\lambda<38.507811$. The interval formula alone is not evidence of convergence: discrete supported modes must approach their continuum counterparts. Frozen equilibrium spectra also omit dilution during deformation, so they do not certify a moving embryo's stability.
 

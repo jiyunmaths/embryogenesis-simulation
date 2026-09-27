@@ -8,6 +8,22 @@ A prescribed contracting equatorial annulus drives ingression over multiple step
 
 Read [the equations](model.md#cleavage-and-progressive-cytokinesis) for the precise force, volume constraint, and thresholds. This is an exploratory ring surrogate, not a resolved actomyosin/fluid model or a tensile-stress-based spindle rule.
 
+## Interpreting the division parameters
+
+| Parameter | Default | What it controls |
+|---|---:|---|
+| `division_interval` | 2 | Mean scheduled cycle interval; the schedule starts constriction, not instantaneous separation. |
+| `cycle_jitter` | 0.12 | Relative variation in scheduled cycle lengths. |
+| `axis_degeneracy` | 0.03 | How similar the longest covariance eigenvalues must be before orientation is sampled within their shared subspace. |
+| `cytokinesis_duration` | 0.9 | Time scale of the prescribed ring ramp; a lower bound on completion, not a guaranteed completion time. |
+| `ring_strength` | 8 | Amplitude of equatorial occupancy removal; a larger value makes the explicit force stiffer. |
+| `neck_threshold` | 0.15 | Maximum permitted phase value in the resolved neck before relabeling. |
+| `division_overlap_tolerance` | 0.002 | Maximum prospective daughter bulk-overlap integral divided by mother onset volume. |
+
+The ramp is smooth to avoid an abrupt onset of forcing. The equatorial Gaussian confines forcing near the plane, the moving tanh profile selects the shrinking ring, and the occupancy derivative makes the response strongest at interfaces. The mother-volume correction redistributes occupancy instead of allowing furrowing to remove cell volume. These choices represent a prescribed mechanical mechanism; they do not derive the cell cycle or ring contraction from activator–inhibitor chemistry.
+
+Thresholds are resolution-dependent measurements, so making them stricter does not automatically make a simulation more physical. A division that never passes them stays active. The cell-cap and no-growth assumptions are separate from these force laws.
+
 ## Run and inspect
 
 ```bash

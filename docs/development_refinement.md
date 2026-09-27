@@ -62,4 +62,17 @@ The production study is `outputs/development-refinement`. Its immutable protocol
 
 Each completed case exports a final checkpoint, complete sampled history, lineage and event audits, plus an animated surface viewer spanning development. After all five cases finish, `comparison.json`, `RESULTS.md`, and `comparison.png` are written automatically. No numerical-quality failure is relabeled as success, and no physical parameter is tuned based on an attractive morphology.
 
-These long runs are in progress; no developmental refinement result is claimed yet. Follow-up decisions depend on whether failures come from division timing, signaling, fate, shape, or numerical quality. More seeds, interface-width sensitivity, and causal feedback controls remain separate requirements.
+## Completed outcome
+
+All five production cases completed through t=90. The combined predeclared acceptance result is **FAIL**. The saved `comparison.json` and `RESULTS.md` report:
+
+| Comparison | Passing checks | Unresolved checks |
+|---|---|---|
+| Spatial refinement | Shape tolerance, fate fractions, cell counts, maturity timing, decreasing shape discrepancy | Signal distribution and contrast tolerances; decreasing activator/inhibitor distribution discrepancies |
+| Temporal refinement | Signal distribution and contrast tolerances, cell counts, maturity timing, decreasing shape and signal-distribution discrepancies | Shape tolerance and fate-fraction tolerance |
+
+The coarse 56³ reference also fails the minimum cell-radius screen. These outcomes do not isolate one cause: event-history differences, chemistry–mechanics coupling, and integration must be investigated without assuming matching numeric cell IDs imply matching descendants. Finer-time improvement in a discrepancy is insufficient if it still exceeds the acceptance limit.
+
+The original generated report retains its preparation-time statement about an unresolved cleavage measurement issue. That measurement issue was subsequently resolved in the separate validation linked above; the frozen report is preserved, and its stale wording must not be interpreted as a new measurement failure. Resolving it does not clear the developmental comparison failures reported here.
+
+The later joint signal/fate integrator was validated on frozen mature geometry and is used in a separate moving pilot. It was not used in these developmental runs; its success therefore does not retrospectively certify their fate trajectories. More seeds, interface-width sensitivity, and causal feedback controls remain separate requirements.

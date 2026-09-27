@@ -41,6 +41,8 @@ $$
 \end{aligned}
 $$
 
+The feedback loop is explicit: the activator's quadratic term promotes itself and induces inhibitor; inhibitor suppresses activator production through the denominator. Linear loss removes both regulators. $\beta$ scales both inhibitor production and turnover, rather than independently setting their strengths. The reaction equations are the same in the current conservative model, but the meaning and scale of the transport operator differ. See the [current parameter guide and flux explanation](live_transport.md#reading-the-transport-model); the numerical transport defaults in this historical section must not be transferred unchanged.
+
 The positive homogeneous equilibrium is $(a_*,b_*)=(1,1)$. Its reaction Jacobian is
 
 $$
@@ -136,6 +138,8 @@ $$
 \mathbf q_i=\frac{\int s_i e_i\mathbf n_i\,\mathrm d\mathbf x}{\int s_i\,\mathrm d\mathbf x}.
 $$
 
+The numerator adds outward normals only where the cortex is exposed. Opposing directions cancel, so the cue reflects asymmetric exposure rather than total exposed area alone. Dividing by the entire shell weight, rather than only the free shell, also weakens the cue when little cortex is exposed. The shell and exposure factors are diffuse proxies; they are not exact membrane areas or a solved extracellular field.
+
 An isolated spherical cell has zero cue. Contacts can create a net cue toward free cortex without an imposed global axis. Polarity evolves as
 
 $$
@@ -145,7 +149,17 @@ $$
 -(\mu+\lVert\mathbf p_i\rVert^2)\mathbf p_i.
 $$
 
-The discrete update projects magnitudes above one back to one. Both daughters inherit the mother's vector and then adapt to their new contacts. Thus apical polarity can arise from geometry even before an activator pattern develops; it is not by itself evidence of a Turing-selected axis.
+| Term / parameter | Meaning and reason for the form |
+|---|---|
+| $\alpha\,2a_i/(1+a_i)\,\mathbf q_i$ | Builds polarity in the geometric cue direction. `polarity_rate` $\alpha=1$ sets its speed. The activity factor equals one at baseline and saturates at two, bounding signal modulation. |
+| $\eta(\Delta\mathbf p)_i$ | Pulls the vector toward the contact-weighted mean neighbor vector. `polarity_alignment` $\eta=0.25$ is an orientation-averaging rate, not a molecular diffusivity. |
+| $-\mu\mathbf p_i$ | Relaxes polarity when sustained cues are absent. `polarity_decay` $\mu=0.5$ sets this rate. |
+| $-\lVert\mathbf p_i\rVert^2\mathbf p_i$ | Adds increasingly strong damping at large magnitude; its coefficient is fixed at one in this reduced model. |
+| $\chi$ in the tension law below | `polarity_tension` = 0.35 controls how strongly orientation affects mechanics, separately from how fast orientation develops. |
+
+Normalized averaging is used here because the variable is a cell orientation with no conserved molecular amount. This does not repair or justify normalized transport for chemical concentrations. The polarity cutoff can be separated using `polarity_contact_cutoff`; its default −1 inherits the signaling cutoff.
+
+The smooth saturation term limits growth, but does not by itself guarantee magnitude below one for arbitrary forcing. The discrete update projects magnitudes above one back to one. Both daughters inherit the mother's vector and then adapt to their new contacts. Thus apical polarity can arise from geometry even before an activator pattern develops; it is not by itself evidence of a Turing-selected axis.
 
 Polarity creates a spatial cortical tension field. For regularized radial direction $\widehat{\mathbf r}_i$ from the cell centroid,
 
@@ -156,6 +170,8 @@ F_i^{\mathrm{surface}}&=
 \epsilon^2\nabla\cdot(\gamma_i\nabla\phi_i)-\gamma_i q'(\phi_i).
 \end{aligned}
 $$
+
+The dot product is positive on the side toward which the vector points and negative on the opposite side. At zero polarity, this law reduces to the isotropic baseline. Choosing the minus sign makes the apical side softer in the model; the opposite sign would express a different constitutive hypothesis. The regularized radial vector is defined in the [README](../README.md#apicalbasal-polarity-and-directional-mechanics); its denominator avoids a singularity at the cell center.
 
 The apical side has lower effective cortical tension for positive $\chi$; the basal side has higher tension. With $\chi<1$ and $\lVert\mathbf p_i\rVert\le1$, tension stays positive. The isotropic baseline $\gamma_i^0$ retains the existing fate-dependent coefficient.
 
