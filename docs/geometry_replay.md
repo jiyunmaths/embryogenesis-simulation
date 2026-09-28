@@ -61,7 +61,7 @@ These approximate patterns motivate examining contact changes, but **do not esta
 
 ## Every-step capture and automatic replay
 
-`embryo.dense_geometry_replay` is now capturing the same full branch from its exact t=18 checkpoint. It saves symmetric conductances and individual measured volumes at every mechanical step (0.0075 time units), while leaving the equations and source files unchanged. At every original six-unit checkpoint, phase fields, joint chemical/fate state, and polarity must be bitwise identical to the source. Any mismatch stops the experiment.
+`embryo.dense_geometry_replay` captured the same full branch from its exact t=18 checkpoint. It saves symmetric conductances and individual measured volumes at every mechanical step (0.0075 time units), while leaving the equations and source files unchanged. At every original six-unit checkpoint, phase fields, joint chemical/fate state, and polarity must be bitwise identical to the source. Any mismatch stops the experiment.
 
 After capture reaches t=78, it automatically runs the four arms at both chemical timesteps, using every-step geometry and a two-step decimation. It requires signal/fate/label fidelity to the recorded full trajectory at both chemical timesteps, plus the same per-arm refinement tolerances as the sparse pilot. The output separates exact source-continuation verification from approximate chemistry-only replay checks; interpolated substeps can differ from the original split evolution.
 
@@ -70,4 +70,19 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.dense_geometry_replay 
   --source outputs/moving-causal --output outputs/dense-geometry-replay-repeat
 ```
 
-The current run is `outputs/dense-geometry-replay`; `status.json` reports capture/replay/completion, and `capture-audit.json` records checkpoint equality. Final decisions are written automatically to `comparison.json` and `RESULTS.md`. Dense capture requires another full mechanical continuation, so it is slower than the graph-only pilot. No source trajectories or acceptance tolerances are overwritten. This experiment still does not refine the underlying mechanical trajectory or establish multi-seed robustness.
+The completed run is `outputs/dense-geometry-replay`; `status.json` reports capture/replay/completion, and `capture-audit.json` records checkpoint equality. Final decisions are written automatically to `comparison.json` and `RESULTS.md`. Dense capture requires another full mechanical continuation, so it is slower than the graph-only pilot. No source trajectories or acceptance tolerances are overwritten. This experiment still does not refine the underlying mechanical trajectory or establish multi-seed robustness.
+
+## Dense replay completed
+
+The every-step capture and all four replay controls are complete. All eleven source checkpoints match bitwise, and all timestep, snapshot-decimation, and source-fidelity checks pass. At the original step, replay differs from recorded chemistry by at most 1.97e-14 RMS and fate by 7.87e-13; the half-step discrepancies are 8.84e-6 and 0.01008, respectively, with identical final labels.
+
+| Arm | Late activator standard deviation range |
+|---|---:|
+| Frozen geometry | 0.41836–0.52504 |
+| Full geometry replay | 0.01350–0.02437 |
+| Replay without dilution | 0.01763–0.02199 |
+| Frozen transport with recorded volume forcing | 0.41239–0.49356 |
+
+In this recorded history, changing transport is sufficient to keep contrast small even when explicit dilution is omitted. Recorded volume forcing with frozen transport does not reproduce that suppression. This supports changing transport as the principal tested contributor to the lost contrast, rather than dilution alone. It does not decompose conductance changes versus changing volume capacities, and the diagnostic interventions have the conservation limitations stated above.
+
+This result belongs to the older fate-based mature geometry/seed. It cannot be automatically transferred to the new fresh-zygote attribute-development experiment. The underlying mechanical trajectory has not been independently refined by these chemistry-only replay checks.

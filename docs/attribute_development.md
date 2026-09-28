@@ -1,8 +1,8 @@
 # Development with continuous attributes and no prescribed identities
 
-The first production experiment is running in `outputs/attribute-development`. It asks whether a developing regulatory–mechanical system produces distinct, persistent **phenotypes without a supplied two-state fate switch**. There is no requested number of types, no clustering, and no A/B labels in its observations or surface exports. Results are pending.
+The first production experiment has completed through time 90 in `outputs/attribute-development`. It asks whether a developing regulatory–mechanical system produces distinct, persistent **phenotypes without a supplied two-state fate switch**. There is no requested number of types, no clustering, and no A/B labels in its observations or surface exports. Both branches pass the declared numerical-quality checks; the completed assessment is below.
 
-This is an experimental branch implemented in `embryo/attribute_development.py`. The historical core/dashboard model remains available for comparison, and its existing fate equation is still documented elsewhere. Neither that code nor the ongoing dense-geometry replay is changed by this experiment.
+This is an experimental branch implemented in `embryo/attribute_development.py`. The historical core/dashboard model remains available for comparison, and its existing fate equation is still documented elsewhere. Neither that code nor the completed dense-geometry replay is changed by this experiment.
 
 ## What is removed, and what remains
 
@@ -73,3 +73,39 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.attribute_development 
 ```
 
 The two branches run in separate worker processes. Per-branch `status.json` reports time. `history.json` contains attributes and context; `surface-*.json` contains meshes with continuous chemical values; `lineage.json` records divisions. Final `comparison.json`, `RESULTS.md`, and `comparison.png` are generated automatically. Resume an experimental checkpoint with `AttributeSimulation.restore`, not `Simulation.restore`, to retain the new equations. The old dashboard has not been converted to this experiment's attribute-based schema.
+
+## Interim assessment at matched time 46.2
+
+This archived interim assessment was written before completion: both branches had reached 16 cells, but the t=90 run and predeclared t=75–90 comparison window were not yet complete. Compare them at the same physical time rather than comparing each branch's latest available frame:
+
+| Branch | Activator standard deviation | Aggregate axis ratio | Individual cell axis-ratio range |
+|---|---:|---:|---:|
+| Direct feedback | 0.03115 | 1.31882 | 1.01949–1.05265 |
+| No feedback | 0.06921 | 1.31664 | 1.02605–1.06745 |
+
+Both branches exhibit continuous chemical and morphological differences without a prescribed fate switch. Direct feedback currently has less chemical variation, not more, and the aggregate axis-ratio difference is only 0.00218. The signals are still developing: from t=31.2 to 46.2, activator SD rises from 0.00853 to 0.03115 with feedback and from 0.01130 to 0.06921 without it. This is not yet a stationary phenotype distribution.
+
+Cell shape covaries with exposure in both branches (within-embryo Pearson correlations approximately −0.78 and −0.84). These are descriptive correlations among sixteen interacting cells, not independent biological replicates or proof of causation. They reinforce the need to distinguish environmental deformation from internal identity. No clustering or test establishing discrete populations has been performed.
+
+Sampled numerical diagnostics through this common time remain within limits: maximum per-cell volume errors are approximately 1.59% and 1.61%, minimum radius exceeds 5.10 grid spacings, clipping is zero, and boundary occupancy is below 4e-11. The final every-step audit and development-completion assessment remain pending.
+
+The defensible interim result is **heterogeneity without predefined labels**, not demonstrated emergent identities. Next evaluate the completed late-window trajectories and whether candidate states persist when signals or environmental context are perturbed. The matched-time history prefixes, numerical summary, and comparison plot are saved under `outputs/attribute-development/interim-46.2` so that this assessment remains reproducible as the runs advance.
+
+## Completed developmental assessment
+
+Both branches finish at t=90 with sixteen cells and no active divisions. Maximum individual volume errors are 1.61% and 1.62%, minimum radius exceeds 5.09 grid spacings, clipping is zero, and maximum sampled boundary occupancy is below 1.3e-10. All declared quality checks pass. This does not resolve the historical full-trajectory refinement failures.
+
+The predeclared t=75–90 window gives:
+
+| Measurement | Direct feedback | No feedback |
+|---|---:|---:|
+| Mean across-cell SD of log activator | 0.05539 | 0.98610 |
+| Median within-cell range of log activator | 0.02151 | 0.01007 |
+| Mean across-cell SD of log inhibitor | 0.05153 | 0.32426 |
+| Mean across-cell SD of polarity magnitude | 0.00228 | 0.01132 |
+| Mean across-cell SD of individual axis ratio minus one | 0.00328 | 0.00547 |
+| Mean aggregate axis ratio | 1.33328 | 1.33299 |
+
+Cell IDs remain stable in this window. The no-feedback branch has strong chemical variation with relatively little within-cell chemical drift. Its log-activator dispersion is about eighteen times that of the direct branch. Neither shape comparison establishes feedback-driven elongation: the aggregate axis-ratio difference is only 0.00029. Shape and polarity remain continuous attributes, and no population count has been inferred.
+
+The completed [frozen-context recovery assay](attribute_persistence.md) further distinguishes these outcomes: the direct branch loses its chemical heterogeneity when geometry is frozen, whereas the no-feedback branch retains a patterned stable state and recovers after small perturbations. This establishes a candidate chemical pattern conditional on geometry, not independent cell identities.
