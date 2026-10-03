@@ -1,6 +1,6 @@
 # Moving-geometry survival: timestep and developmental replication
 
-Status: **running; scientific assessment pending**. The completed seed-7 experiment retained chemical contrast and initial-cell association in both moving branches from model time 90 to 150. This study tests whether that result depends on the timestep or the developmental history. See [the original survival experiment](feedback_survival.md).
+Status: **completed; both timestep comparisons pass, and both additional histories retain patterns in their paired moving continuations**. The completed seed-7 experiment retained chemical contrast and initial-cell association in both moving branches from model time 90 to 150. This study tests whether that result depends on the timestep or the developmental history. See [the original survival experiment](feedback_survival.md).
 
 ## Fixed experimental design
 
@@ -60,3 +60,7 @@ The prepared experiment is in `outputs/feedback-survival-validation/`. The drive
 Checkpoints are written every six model-time units, and completed work can be resumed with the same `run` command after the previous driver has stopped. Hash verification rejects changed source or inputs. A completed process does not itself mean the scientific acceptance gates passed; inspect `refinement.json` and every cohort outcome.
 
 This experiment does not resolve spatial-grid convergence, the geometric transport closure, indefinite moving-system stability, or biological cell-type identity. It asks a narrower question: is finite-horizon survival of an established chemical pattern robust to timestep halving and a small set of independently developed geometries?
+
+## Completed assessment
+
+Both seed-7 timestep comparisons pass all declared gates. Seeds 8 and 9 complete development and both survival branches, retaining contrast and initial-cell association. All three planned histories therefore reproduce finite-horizon maintenance. See the [completed assessment](feedback_completed_assessment.md) for values, denominators, and scope. The quality checks do not resolve spatial convergence, the live conductance closure, or biological identity.

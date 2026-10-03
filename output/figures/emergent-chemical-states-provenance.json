@@ -1,0 +1,82 @@
+{
+  "source_sha256": {
+    "outputs/attribute-development/no_feedback/surface-0.json": "50f9abb988b52d4164a3aabdb7447c3a9a5178e5d4ae1dbbbd9ff9386c99bdfb",
+    "outputs/attribute-development/no_feedback/surface-6.json": "d8a6556d214edb3dc3ec3d7a7005c0b706b55e92dd15c487cd6f647a038e841b",
+    "outputs/attribute-development/no_feedback/surface-12.json": "9f0276302790e5fd62f8f81bfcd10ca56d2069c28116af1f4f61cbce2ddbcce2",
+    "outputs/attribute-development/no_feedback/surface-18.json": "50b013bac79ee2ef49fec89b90775587d72220a78e0bb4ee01fd60e69b4db546",
+    "outputs/attribute-development/no_feedback/surface-24.json": "bd1bc11cd6595b2d769db0a32efbe4699e87a48767cd2b69b9c6d9685c4c04bf",
+    "outputs/attribute-development/no_feedback/surface-30.json": "4cc7510c822ce327e839cc40b5c2d18d3aff9244dd41c06dc36efa14cebb8f22",
+    "outputs/attribute-development/no_feedback/surface-36.json": "37eeb0add2283bc53a7adbca926e3da698b21cd70db33caa4773b25877dac319",
+    "outputs/attribute-development/no_feedback/surface-42.json": "5c4b384c17e90a05e26fab2522e55bbc68151cbe45d60fbb137ea2011dcc6b9c",
+    "outputs/attribute-development/no_feedback/surface-48.json": "ff5e08efcad42f9fc163667152934a51844e874ae8ac14eb8bfabbf8fac69e17",
+    "outputs/attribute-development/no_feedback/surface-54.json": "95dd30c2e69acb44efa2c389d2e42d827997c0df3b52ba9789c5c89e4d05efa2",
+    "outputs/attribute-development/no_feedback/surface-60.json": "ba94658d35a7b28e0cb5eb78e4c0e14d97865df73520f1e5b4a2ecfa92e8bed0",
+    "outputs/attribute-development/no_feedback/surface-66.json": "91964059034c3d97555048b8a417168689f7d47e1b2c9220d12756a803a1741c",
+    "outputs/attribute-development/no_feedback/surface-72.json": "3fee79e8dda36d764e027612081c99e1d81c60c7064f76c6603109dab5fb382d",
+    "outputs/attribute-development/no_feedback/surface-78.json": "c388b1d045e03eb467e2d39431f2763f184246d7aaeca358c13c57507594c165",
+    "outputs/attribute-development/no_feedback/surface-84.json": "b808538edccbf5744c0e4c8b793a8fae0e823a57432fa9b4fecfa3c013628ffd",
+    "outputs/attribute-development/no_feedback/surface-90.json": "045923aff6bb2f9d264015f6b06bd3a0bed9916795b0be9c2c9316c4b67777ff",
+    "outputs/attribute-development/direct/surface-0.json": "e118e9b6c83ff02ee469ecf4c778c306a71db3d06c419bfe83f6f495f47f763d",
+    "outputs/attribute-development/direct/surface-6.json": "d94584928567bec60a238c48d70a84c8d3aa7305ebbbd4efd99d8cea3d50da6d",
+    "outputs/attribute-development/direct/surface-12.json": "17573b90da8c72a21537142c6d8a0ae17da869c30fd57496c3657c71ce380cef",
+    "outputs/attribute-development/direct/surface-18.json": "dba77ee2d5842c86fda4faac9f3a2259b1d383d2b98c7867b00d27ab52f4d54e",
+    "outputs/attribute-development/direct/surface-24.json": "0a384d0581db182d2afb278570527b9592b3d487f570f839e69262196f1aac7e",
+    "outputs/attribute-development/direct/surface-30.json": "9f53819afd66c8cc689d30e79cb2af75976693489f6e59b90df35a51df3e8156",
+    "outputs/attribute-development/direct/surface-36.json": "0bc6a70c8c23c8828108177aed2dd4ad58236350de7a34486e0cadd694181204",
+    "outputs/attribute-development/direct/surface-42.json": "72b7ac347bb82edec77341bb75dbdda642545920ac82d4c83f8d23a261f17abb",
+    "outputs/attribute-development/direct/surface-48.json": "967d84f3441dddcd2209ed0f34e2406d2349915854b01534d57652b8645136af",
+    "outputs/attribute-development/direct/surface-54.json": "41845d637d06f3253fe24021baececb7450664a90f07829322e142540ba6818a",
+    "outputs/attribute-development/direct/surface-60.json": "399dfb878ba96f04c6c4ca12a81efe41e6bc8c9f07e11ea70f60bd053f21f3c9",
+    "outputs/attribute-development/direct/surface-66.json": "7131739fec3a9ed207688d5de34fc36419cb6f4167ef6c635f5cdcbebb98f61e",
+    "outputs/attribute-development/direct/surface-72.json": "1339af5e73d1211e0a5b31f309ccebed841a156d459d2158512df5e4ae637abd",
+    "outputs/attribute-development/direct/surface-78.json": "54209345e596d15efac46502bebf1519b843e24b8e6cf215616ebbd12a387a3f",
+    "outputs/attribute-development/direct/surface-84.json": "a549f6adcbc4078690fcb077253f4e67bd1643afe7f967031ebbb2f2e32e7fba",
+    "outputs/attribute-development/direct/surface-90.json": "abcd246d093e1f1bab9d726b4263287309ae8dd67bee65f37833ea23d2543b61",
+    "outputs/attribute-development/no_feedback/history.json": "5f636fa8a92a5cdc896fb4d414d840be29ab042b3935f8c44bacb53d41e96252",
+    "outputs/attribute-development/direct/history.json": "35d084e09b74b73651842c8f0586d74bdad1d1cdc8d56e6f5cd4b91a84ddf0a4",
+    "outputs/feedback-long/comparison.json": "f79fa2612148c2b9d829b844705a98580a381c38d428eabdbad14d17730c4a07",
+    "outputs/feedback-polarity-ablation/comparison.json": "c3a69c204f03b38a62898370153fa7140c811e63b5a2f1566cb18f261c8847df",
+    "outputs/feedback-survival/comparison.json": "a7d17bcdc559b3a47c3ef55a05feb259b8324b4aa684af28eba2f192752a7d7f",
+    "outputs/feedback-survival-validation/seed-8/survival/comparison.json": "716dd529a4f86b773b2d3f81153796d344a05bbbc2e12369315284b4b28c2572",
+    "outputs/feedback-survival-validation/seed-9/survival/comparison.json": "59e8d9aead6497247d39397c48050971718dc2e60b943251ca1ab56a50270651"
+  },
+  "development_seed": 7,
+  "surface_times": [
+    0,
+    12,
+    36,
+    60,
+    90
+  ],
+  "all_rendered_meshes_closed": true,
+  "concentration_scale": [
+    0,
+    1.4
+  ],
+  "formation_minima": {
+    "baseline": 0.1232206898079529,
+    "tension": 0.1259332455378781,
+    "adhesion": 0.12288800730915693,
+    "tension_adhesion": 0.12558414811417865,
+    "polarity": 0.022120201723742915,
+    "full": 0.022428192917834055
+  },
+  "survival": [
+    {
+      "seed": 7,
+      "off": 1.0868282855433087,
+      "on": 1.1476197415003486
+    },
+    {
+      "seed": 8,
+      "off": 1.1222389960546284,
+      "on": 1.1735121055243976
+    },
+    {
+      "seed": 9,
+      "off": 1.2047557025871773,
+      "on": 1.257218855957663
+    }
+  ],
+  "limitations": "Chemical differentiation, not biological cell identities. Polarity mechanics suppresses formation in the tested regime; mature-state component test is not a zygote ablation."
+}

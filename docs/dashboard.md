@@ -1,5 +1,7 @@
 # Live simulation dashboard
 
+**Model scope:** Live embryo currently uses the historical core `Simulation`, including its supplied fate switch and A/B reporting thresholds. The current identity-focused research uses the separate [attribute model](attribute_development.md) without those labels. The dashboard has not been switched to that schema or the resident GPU runner. Continuum signaling is playback of completed benchmark fields, not a continuous chemical field coupled to the live embryo.
+
 Start from the repository with its Python dependencies installed:
 
 ```bash

@@ -2,13 +2,25 @@
 
 ## Objective
 
-Determine how far a small, interpretable set of mathematical equations can explain the emergence of organized development from a single zygote. Explicit activator–inhibitor feedback is a core requirement: activation, induced inhibition, and spatial communication must be represented dynamically and coupled to cell identity and changing 3D geometry. Start with two identities and a generic model before choosing organism-specific hypotheses.
+Determine how far a small, interpretable set of mathematical equations can explain organized development from a single zygote. Explicit activator–inhibitor feedback is a core requirement: activation, induced inhibition, and spatial communication must be represented dynamically and coupled to continuous cell attributes and changing 3D geometry. Begin with two chemical species; do not prescribe two cell identities or a population classifier. Organism-specific interpretation requires later calibration.
 
 The [scientific objective and criteria in the README](../README.md#scientific-objective) govern the remaining work. Keep identity differentiation, signaling symmetry breaking, and geometry/shape symmetry breaking as separate measured outcomes. Treat complex structures as hypotheses to explain rather than shapes to prescribe.
 
 ## Next scientific priority and decision rules
 
-Gierer–Meinhardt signaling with conservative volume-weighted contact transport and apical–basal mechanical feedback are now implemented. Finite-graph spectra and cleavage mode transfer are checked before interpreting patterns. The next priority is to establish developmental timescale, parameter, and resolution regimes where these equations yield persistent organization. Activator/inhibitor variables must be distinguished from A/B identity labels.
+The active research model is `AttributeSimulation`: Gierer–Meinhardt chemistry, conservative volume-weighted contact transport/dilution, continuous activity-dependent tension/adhesion, and apical–basal polarity. It has no downstream fate drift or A/B labels. Finite-graph spectra describe initiation about uniform chemistry; nonlinear persistence and moving mechanics require separate tests. The core/dashboard fate model is retained as a historical alternative.
+
+The current compute path uses **resident PyTorch arrays/matrix operations plus custom CUDA mechanics and spatial geometry/polarity** for accepted mature direct-feedback continuations. CPU development and native C++/OpenMP references remain necessary. Four full control/pulse CPU/GPU replays passed; this is backend agreement at tested parameters, not a convergence or biological claim.
+
+| Priority | Current action / decision rule |
+|---|---|
+| Moving-history replication | Finish the 36 continuations on seeds 8 and 9, retaining the completed seed-7 reference. All six new-context native/GPU checks passed. Report formation/reorganization, response transfer, and numerical failures separately by history. |
+| Assay-specific numerical robustness | Refine exchange formation and selected new-history response runs from identical physical starts. Existing seed-7 negative-pulse refinement does not cover every history/stage. Changed GPU timesteps require their own gate. |
+| Identity versus context | Test neighbor/environment dependence, stronger challenges, and eventual inheritance through division. Donor-nearer behavior is descriptive, not donor equivalence or autonomy. |
+| Transport and development | Resolve geometric conductance closure and full attribute-development space/time convergence before interpreting a many-cell continuum or greatly increasing cell count. |
+| Polarity mechanism and shape | Isolate the activator multiplier in polarity dynamics; test shape-specific causality separately from chemical contrast and first-cleavage memory. |
+
+The [moving-history protocol](cell_response_moving.md#replication-across-developmental-histories) uses mature equilibrated/transplanted chemistry at t=150, not new zygote-to-identity formation. Its backgrounds, targets, and pulse signs are nested within two additional histories. Three histories including seed 7 are a pilot. Earlier milestones below retain their original model assumptions and validation limits; their completed checks do not silently transfer to the current branch.
 
 For each model extension, record the proposed mechanism, quantities already imposed by the model, an ablation or perturbation that could challenge the explanation, and quantitative acceptance criteria. Use unbiased initial fluctuations for spontaneous-symmetry-breaking experiments. Keep externally imposed signals as labeled controls. Analyze stability and spatial modes before claiming a Turing mechanism; report regimes without organization as well as successful patterns.
 
@@ -42,7 +54,7 @@ The [known-geometry validation](geometric_transport.md) passes flat calibration,
 
 ### Causal feedback screen (first fixed-geometry stage complete)
 
-At the user’s request, the [paired causal screen](causal_signaling.md) tests seven interventions on the resolved 72³ post-cleavage graph using twenty matched chemical perturbation seeds. Full-loop persistent signals appear in 20/20, while no self-activation, no transport, and equal diffusion suppress contrast. Both fate labels nevertheless appear in all those controls; the separate bistable switch can preserve/amplify transient activity differences. Signal-to-fate ablation prevents commitment. Inhibition knockouts become locally unstable and hit the predeclared ceiling, not an organized-pattern success. Historical fine-time checks failed continuous-fate tolerances in two controls. The [joint signal/fate validation](joint_fate.md) now passes against tightened DOP853 references for all five tested arms and twenty seeds, without relaxing tolerances. Four [moving-geometry controls](moving_causal.md) have completed t=78 with passing numerical quality. Full feedback fails the declared additional-elongation and persistent-contrast criteria. The [geometry replay pilot](geometry_replay.md) passes chemical timestep checks but fails sparse-snapshot fidelity; every-step geometry capture and automatic replay are now running to separate changing transport from dilution without relying on an inaccurate reconstructed history. This priority shift does not clear the remaining geometric-transport limitations.
+The historical [paired causal screen](causal_signaling.md) tests seven interventions on a resolved post-cleavage graph with twenty matched chemical perturbation seeds. Full-loop persistent signals appear in 20/20, while no self-activation, no transport, and equal diffusion suppress contrast. Both fate labels nevertheless appear in those controls: the supplied bistable switch can preserve/amplify transient differences. That distinction motivated the current fate-free attribute model. The [joint signal/fate validation](joint_fate.md) resolves tested frozen integration sensitivity; four [moving-geometry controls](moving_causal.md) finish t=78 but fail the additional-elongation and persistent-contrast criteria. The completed every-step [geometry replay](geometry_replay.md) passes fidelity checks and implicates changing transport in suppression on that older-model history. This does not isolate the mechanism for all current attribute geometries or clear the conductance-closure limitation.
 
 ### Live conservative coupling (implemented; general geometry convergence pending)
 
@@ -60,7 +72,7 @@ The [nonlinear persistence benchmark](nonlinear_bridge.md) is now complete for o
 
 The [moving-domain benchmark](moving_domain.md) now passes eleven checks, including inverse-volume dilution, amount drift below $2.2\times10^{-14}$, and approximately second-order space/time convergence for three prescribed affine motions. This holds connectivity fixed and has no chemical reactions.
 
-Next: conservative remapping during compartment splits/refinement and coarsening, followed by a hybrid field/cell coupling. Nonlinear robustness across physical perturbations, parameters, and disturbances remains pending. Choose bulk, membrane-limited, or extracellular communication explicitly before interpreting contact weights as molecular conductances. Preserve fate memory and mechanics during this transition. Contact-cutoff sensitivity and the other validation requirements below remain necessary.
+Next: conservative remapping during compartment splits/refinement and coarsening, followed by a hybrid field/cell coupling. Nonlinear robustness across physical perturbations, parameters, and disturbances remains pending. Choose bulk, membrane-limited, or extracellular communication explicitly before interpreting contact weights as molecular conductances. Preserve measured chemical state and mechanics during this transition; do not introduce a fate switch to stand in for identity evidence. Contact-cutoff sensitivity and the other validation requirements below remain necessary.
 
 ## Milestone 1 — mechanics and cleavage (implemented; coarse numerical checks)
 
@@ -71,38 +83,50 @@ Next: conservative remapping during compartment splits/refinement and coarsening
 
 Next acceptance work: establish a resolution and time-step range with acceptable individual volume error, cell connectivity, contact geometry, and relaxation speed. Compare pair-contact angles as attraction changes. Test rotated configurations for grid bias. Use grids fine enough to resolve the smallest cells with several interface-independent interior voxels.
 
-## Milestone 2 — activator–inhibitor signaling and two identities (graph model implemented; robustness pending)
+## Milestone 2 — activator–inhibitor signaling and emergent attributes
 
-- Gierer–Meinhardt signaling, constant-preserving normalized graph exchange, a downstream fate switch, discrete-mode stability, and cleavage spectral transfer.
-- Legacy independent fate noise and geometry bias are off by default.
-- Paired controls with independent random streams.
-- Thresholded fate counts and continuous state recording.
+- Gierer–Meinhardt signaling, conservative volume-weighted transport/dilution, discrete-mode stability, and cleavage spectral transfer.
+- Continuous chemical/polarity/shape attributes with no fate drift, labels, or prescribed population count.
+- Paired interventions and distinct developmental histories; record initial state and context explicitly.
+- Historical normalized transport and bistable fate alternatives remain archived for comparison.
 
 Required next validation (the graph kinetics, transport, and linear analysis below now have an implementation):
 
 - Explicit Gierer–Meinhardt activities, production, turnover, and inhibition are implemented. Validate their parameter ranges and timescales relative to cleavage and mechanics.
 - Conservative volume-weighted exchange, geometric dilution, and amount-preserving cleavage are implemented. Test contact-threshold sensitivity, geometric closure accuracy, and refinement-driven mode changes; normalized exchange remains a historical control.
 - The homogeneous equilibrium, Jacobian, discrete mode growth rates, and cleavage mode transfer are implemented and checked. Extend analysis to evolving-graph transient amplification and nonlinear regimes; do not assume a fixed physical wavelength or a single pole.
-- Activator-biased fate dynamics are implemented. Measure activity distributions and dwell times, withdraw partition noise after differentiation, and perturb or reposition cells to assess persistence and reversibility.
-- Test removal of self-activation, inhibitor production/action, and signal transport separately. Map outcomes over parameters and seeds before expanding the identity count or asserting robustness.
+- Recovery, bistability, chemical exchange, and matched pulse-response assays are implemented. Extend context/neighbor-dependence tests, perturbations, and inheritance checks without thresholding continuous states into supplied identities.
+- Test removal of self-activation, inhibitor production/action, and signal transport separately. Map outcomes over parameters and histories before asserting robust differentiation or a population count.
 
-Acceptance: a reproducible account of when the loop amplifies or suppresses spatial fluctuations, whether the resulting signals generate persistent fate differences, and which mechanisms are necessary. Two identities need not imply two signaling domains or a changed embryo shape.
+Acceptance: a reproducible account of when the loop amplifies or suppresses spatial fluctuations, whether resulting cell-associated chemical/behavioral differences persist, and which mechanisms are necessary. Chemical differences need not imply discrete identities or a changed embryo shape.
 
 ## Milestone 3 — two-way geometry feedback (prototype implemented)
 
 - Contact/exposure influences regulatory state.
 - Activity changes surface tension and interface attraction.
-- Compare mechanics-only, geometry-to-fate only, and full-feedback controls.
+- Compare baseline, tension, adhesion, polar mechanics, and combined feedback; keep polarity dynamics versus its mechanical action distinct.
 
-Next acceptance work: couple the validated activator–inhibitor module to mechanical properties and update its transport/sensing as geometry evolves. Add contact enrichment, fate-versus-exposure plots, and signal spatial correlations; isolate adhesion, tension, and each feedback direction. Run at least 20 seeds per screened parameter set before drawing robustness conclusions. Test fixed preassigned activities as a distinct sorting experiment, clearly separated from emergent differentiation.
+The coupling and component controls are implemented. The [completed component/survival assessment](feedback_completed_assessment.md) separates polarity-mediated suppression of initiation from maintenance of established patterns. Next refine/replicate component necessity controls, isolate chemical modulation of polarity, and study activity versus exposure and evolving transport. Existing three-history survival evidence is a pilot, not population inference. Imposed activities remain labeled forcing/sorting experiments, separate from emergent differentiation.
 
 ## Milestone 4 — 32–64 cells and reliable geometry (pending)
 
 - Benchmark memory and time; avoid prematurely increasing cell count on a fixed coarse grid.
 - Profile local field storage, neighbor culling, and accelerated kernels.
 - Refine the grid at fixed physical interface width, then study the diffuse-interface approximation separately.
-- Add explicit surface reconstruction, area, cell shape axes, and connected-component checks.
+- Closed surface reconstruction is implemented for visualization. Validate measured area, cell shape axes, and connectivity over full trajectories rather than relying on visual smoothness.
 - Maintain free embryo boundaries; model a deformable external envelope only as a separate experiment.
+
+### GPU implementation design
+
+The selected design uses **PyTorch for GPU arrays and matrix operations**, with **custom CUDA for mechanics, geometry, and polarity calculations**. The [benchmarks](model.md#pytorch-gpu-benchmark) support this choice on the installed GTX 1080 Ti. The mature resident backend has now passed four full 60-unit control/pulse replays against accepted CPU trajectories; a validation-gated adapter supports subsequent mature response protocols at the tested parameters. Developmental cleavage and the other unsupported regimes below remain separate work.
+
+1. Keep phase fields, chemical state, polarity, occupancy/surface arrays, and intermediate buffers resident as PyTorch tensors. Use PyTorch matrix products for contact and adhesion calculations and tensor operations for the small conservative transport matrices. Preserve the model's precision conventions initially.
+2. Bind the existing custom CUDA mechanics and geometry/cue kernels to tensor storage without a CPU round trip. Validate contiguous layout, dtype, device, buffer ownership, and CUDA stream ordering. Keep polarity evolution on the device, retaining custom CUDA for its spatial geometry/cue calculations.
+3. Implement a mature, non-dividing GPU continuation with the existing equations and checkpoint format. Transfer diagnostics and checkpoints at recorded intervals; avoid copying full spatial fields every step. CPU checkpoints must preserve chemical state, polarity, cell IDs, physical time, and random streams.
+4. Compare complete control/pulse trajectories with the accepted native CPU backend over the full 60-unit response horizon, including response waveforms, recovery, conservation, volume error, boundary occupancy, and clipping. Component benchmarks alone cannot authorize replacing the scientific backend. Test division and developmental trajectories separately before supporting those regimes.
+5. Benchmark the whole coupled step and completed assay, including transfers and diagnostics, before choosing worker/GPU concurrency or a lower-precision mode. Do not infer end-to-end speedup by adding individual kernel timings.
+
+The [targeted moving exchange-response timestep refinement](cell_response_moving.md#targeted-exchange-response-timestep-refinement) completed and passed all six continuations. The user-prioritized [full-horizon resident-GPU backend validation](model.md#resident-gpu-backend-validation) also passed. The running scientific test is [replication on developmental histories 8 and 9](cell_response_moving.md#replication-across-developmental-histories): six moving formation/retention controls followed by thirty pulse/control continuations at dt=0.00375. All six new-context native/GPU checks passed. Preserve the seed-7 reference and report outcomes by history; backgrounds and pulse interventions are nested within each history. This uses pre-existing mature patterned basins, not new zygote-to-identity trajectories. Follow with exchange-formation timestep refinement and targeted new-history response checks before broadening interpretation.
 
 ## Milestone 5 — persistent axis formation (controlled pilot implemented; validation pending)
 

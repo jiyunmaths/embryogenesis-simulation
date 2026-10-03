@@ -124,9 +124,9 @@ For this coordinate transformation only, isolated vertices use unit scale. Degen
 
 `graph_history.json` stores actual graph snapshots. `cleavage_spectra.json` stores all division transitions. The full signaling dynamics automatically evolves on the changing graph; frozen-graph growth rates alone do not solve the time-dependent, mechanically coupled stability problem. Eigenvector mixing, finite time within an unstable regime, and feedback can prevent a mature pattern even when some instantaneous rates are positive.
 
-## Coupling to identity and inheritance
+## Historical fate coupling and chemical inheritance
 
-The existing fate variable $f_i$ receives an added bias $g_a(a_i-1)$ in its bistable drift. Activator/inhibitor variables are distinct from the two possible cell identities. Default independent fate noise, neighbor inhibition, exposure bias, and fate partition noise are now zero, so they do not independently manufacture a fate pattern.
+The historical core/dashboard fate variable $f_i$ receives an added bias $g_a(a_i-1)$ in its bistable drift. Its two stable states are prescribed by that model, not identities inferred from activator/inhibitor dynamics. Independent fate noise, neighbor inhibition, exposure bias, and fate partition noise default to zero. The current [attribute-based model](attribute_development.md) removes fate dynamics and classification; it measures continuous chemistry, polarity, and shape instead.
 
 The zygote begins at $a=b=1$. Small, bounded, target-volume-balanced activity perturbations are introduced at cleavage (`signal_partition_noise=0.001`), using a separate RNG stream. For lobe fraction $\theta$ and parent activity $x$, a perturbation $\delta$ gives daughters $x+2\delta(1-\theta)$ and $x-2\delta\theta$. Without partition noise, the inherited field is exactly $Px$. This preserves target-volume-weighted activity at cleavage, but does not make subsequent normalized transport molecular-mass-conserving.
 
@@ -145,14 +145,14 @@ An isolated spherical cell has zero cue. Contacts can create a net cue toward fr
 $$
 \dot{\mathbf p}_i=
 \alpha\frac{2a_i}{1+a_i}\mathbf q_i
-+\eta(\Delta\mathbf p)_i
++\eta(\Delta_{\mathrm{rw}}\mathbf p)_i
 -(\mu+\lVert\mathbf p_i\rVert^2)\mathbf p_i.
 $$
 
 | Term / parameter | Meaning and reason for the form |
 |---|---|
 | $\alpha\,2a_i/(1+a_i)\,\mathbf q_i$ | Builds polarity in the geometric cue direction. `polarity_rate` $\alpha=1$ sets its speed. The activity factor equals one at baseline and saturates at two, bounding signal modulation. |
-| $\eta(\Delta\mathbf p)_i$ | Pulls the vector toward the contact-weighted mean neighbor vector. `polarity_alignment` $\eta=0.25$ is an orientation-averaging rate, not a molecular diffusivity. |
+| $\eta(\Delta_{\mathrm{rw}}\mathbf p)_i$ | Pulls the vector toward the contact-weighted mean neighbor vector. `polarity_alignment` $\eta=0.25$ is an orientation-averaging rate, not a molecular diffusivity. |
 | $-\mu\mathbf p_i$ | Relaxes polarity when sustained cues are absent. `polarity_decay` $\mu=0.5$ sets this rate. |
 | $-\lVert\mathbf p_i\rVert^2\mathbf p_i$ | Adds increasingly strong damping at large magnitude; its coefficient is fixed at one in this reduced model. |
 | $\chi$ in the tension law below | `polarity_tension` = 0.35 controls how strongly orientation affects mechanics, separately from how fast orientation develops. |
@@ -173,11 +173,21 @@ $$
 
 The dot product is positive on the side toward which the vector points and negative on the opposite side. At zero polarity, this law reduces to the isotropic baseline. Choosing the minus sign makes the apical side softer in the model; the opposite sign would express a different constitutive hypothesis. The regularized radial vector is defined in the [README](../README.md#apicalbasal-polarity-and-directional-mechanics); its denominator avoids a singularity at the cell center.
 
-The apical side has lower effective cortical tension for positive $\chi$; the basal side has higher tension. With $\chi<1$ and $\lVert\mathbf p_i\rVert\le1$, tension stays positive. The isotropic baseline $\gamma_i^0$ retains the existing fate-dependent coefficient.
+The apical side has lower effective cortical tension for positive $\chi$; the basal side has higher tension. With a positive baseline, $\chi<1$, and $\lVert\mathbf p_i\rVert\le1$, tension stays positive. In the current attribute model, the isotropic baseline is
+
+$$
+\gamma_i^0=\gamma_0[1+c_\gamma\tanh(a_i-1)].
+$$
+
+Here $\gamma_0$ sets baseline tension and $c_\gamma=0.25$ bounds the activity-dependent contrast around the homogeneous reference. There is no fate state in this law. The historical core instead uses its fate-dependent coefficient; those two implementations must not be interchanged when restoring a checkpoint.
 
 The implementation computes conservative face fluxes with reflecting boundaries. It includes the spatial gradient of tension; multiplying a Laplacian by $\gamma_i$ alone would omit part of the force. Cell centroids and polarity are frozen during each mechanical substep, then updated. This is a phenomenological active-cortex rule, not a calibrated hydrodynamic force balance, resolved apical protein network, or tensile-stress-based spindle rule. It introduces no preselected embryo outline.
 
-`--no-polarity` removes polarity dynamics and its tension contrast. `--no-feedback` leaves signaling/polarity dynamics active but removes their fate/polarity-dependent mechanical effects. `--no-signaling` holds chemical activities at their inherited values and removes signal partition noise in a new run; geometry can still polarize cells. `--mechanics-only` disables signaling, polarity, and differentiation.
+In the historical core CLI, `--no-polarity` removes polarity dynamics and its tension contrast. `--no-feedback` leaves signaling/polarity dynamics active but removes their fate/polarity-dependent mechanical effects. `--no-signaling` holds chemical activities at their inherited values and removes signal partition noise in a new run; geometry can still polarize cells. `--mechanics-only` disables signaling, polarity, and differentiation.
+
+The current [polarity necessity control](feedback_polarity_ablation.md) uses a different intervention: it sets only $\chi$ to zero, retaining polarity dynamics, activity-dependent tension, and adhesion. Polarity-only mechanics suppresses formation and removing its mechanical action rescues formation in the tested matched setting. The factor $2a/(1+a)$ remains active in every component arm, so these controls do not establish independence from chemical regulation. [Completed mechanistic assessment](feedback_completed_assessment.md).
+
+The mature [PyTorch/custom-CUDA backend](model.md#resident-gpu-backend-validation) implements the same orientation and tension laws with measured CPU/GPU agreement. Its validation covers supported nondividing direct-feedback states; it does not certify GPU cleavage or all polarity ablations.
 
 ## Verification and observed limits
 

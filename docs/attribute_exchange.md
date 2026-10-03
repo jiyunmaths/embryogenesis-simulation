@@ -63,13 +63,17 @@ The nominally uniform reset remains effectively uniform (final log-activator SD 
 
 A further post-run analysis of the full chemical Jacobian at all 120 exchange endpoints and twenty seeded-reset endpoints finds negative largest real eigenvalues, ranging from −0.61305 to −0.01789. Combined with the small residual derivatives, this supports multiple locally stable chemical patterns on this particular fixed graph. It does not count every possible attractor, establish global stability, or test structural robustness to changing the graph. The reproducible post-run diagnostics are implemented in `embryo/attribute_exchange_assessment.py` and saved in `assessment.json`; they were not predeclared classification criteria.
 
-## Interpretation and next test
+## Interpretation and subsequent tests
 
 **Both the contact environment and chemical history matter.** Some transferred differences disappear and the original pattern returns; other exchanges redirect the network into a different stable pattern. The same geometry can support multiple arrangements, so it does not uniquely specify each cell's state. Conversely, a chemical state is not simply carried unchanged into a new context.
 
 These results support history-dependent organization of the coupled chemical network. They do not yet show cell-intrinsic identity: only two chemical variables were transplanted, the surrounding network continued interacting, and cell shape, polarity, and lineage were not moved. The 120 exchanges share one developed embryo and are interventions, not independent developmental replicates. The arbitrary live contact-geometry approximation and unresolved developmental refinement issues remain limitations.
 
-The [completed common-environment test](attribute_common_environment.md) finds that all tested isolated states converge to one equilibrium, whereas identical sustained reservoirs can support two stable states. It distinguishes autonomous persistence from environment-supported chemical memory. A subsequent moving-geometry exchange should then assess the complete attribute vector. Additional developmental seeds are needed before estimating how often these outcomes arise.
+The [completed common-environment test](attribute_common_environment.md) finds that all tested isolated states converge to one equilibrium, whereas identical sustained reservoirs can support two stable states. The [finite-reservoir follow-up](attribute_finite_reservoir.md) tests reciprocal environmental exchange without clamping its composition. Both are separate frozen chemical-compartment assays.
+
+Later [frozen exchange/response assays](cell_response.md) compare response behavior on endpoint geometries from three developmental histories; all 48 exchanged-cell response comparisons are nearer the donor response than the original destination response. The [seed-7 moving exchange-response assay](cell_response_moving.md#completed-moving-exchange-response-study) completes fifteen moving continuations and likewise favors the donor in all eight comparisons. Its exchanged concentrations reorganize rather than remaining unchanged. Donor-nearer response behavior and retention of the transferred concentration vector are different outcomes.
+
+The current [seed-8/9 moving replication](cell_response_moving.md#replication-across-developmental-histories) tests six preparation/retention controls followed by thirty matched response continuations. Its response results remain pending. It retains prepared mature starts, not fresh formation from a zygote. These follow-ups do not transplant the full shape/polarity/lineage state or establish inheritance; the original 120 exchanges still share one geometry and must not be counted as independent developmental replicates.
 
 ## Reproduce
 

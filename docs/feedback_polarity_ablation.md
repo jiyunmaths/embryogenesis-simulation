@@ -1,6 +1,6 @@
 # Tension and adhesion together without polarity mechanics
 
-Status: **running; outcome pending**. This completes the missing combined control in the [matched mechanical-component study](feedback_long.md).
+Status: **completed; removing polarity mechanics restores formation**. Both arms pass all declared numerical-quality screens. This completes the missing combined control in the [matched mechanical-component study](feedback_long.md).
 
 The completed study found sustained formation with baseline, tension-only, and adhesion-only mechanics, but not with polarity-only or full coupling. Polarity mechanics was sufficient to reproduce suppression on that initial geometry. It remained possible that tension and adhesion together would also suppress formation without polarity mechanics.
 
@@ -41,3 +41,7 @@ Output directory: `outputs/feedback-polarity-ablation/`. Per-arm histories/statu
 Quality criteria remain maximum per-cell volume error below 5%, radius at least four grid spacings, zero clipping, and sampled boundary occupancy below 0.01. These are quality screens, not spatial or temporal convergence certification of this new control.
 
 Four relevant tests pass, including exact single-coefficient ablation, preservation of starting fields and random streams, real worker execution/restart, unchanged original arm registration, and alternative outcome classification.
+
+## Completed outcome
+
+Formation has late minimum log-activator SD 0.12558 (threshold 0.1), compared with 0.02243 under full coupling. Prepared-pattern persistence also passes, with minimum 1.15970. Removing polar mechanics therefore rescues formation while retaining tension and adhesion. Together with the polarity-only control, this supports necessity and sufficiency for suppression in this single tested setting, not general necessity or independence from chemical modulation. See the [completed assessment](feedback_completed_assessment.md).

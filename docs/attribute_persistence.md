@@ -61,9 +61,13 @@ The direct branch's frozen graph instead stabilizes uniform chemistry. Its modes
 
 ## What this does not establish
 
-The persistent pattern may depend on cell position and contact environment. No relocation, environmental swap, moving-geometry recovery, lineage inheritance, or independent developmental-seed experiment has been performed here. No discrete type count was inferred, and the assay does not establish persistence of shape or polarity. Live contact-geometry approximation and developmental refinement limitations remain.
+The persistent pattern may depend on cell position and contact environment. This original assay freezes one history's geometry; it does not test relocation, evolving mechanics, inheritance, or independent developmental histories. No discrete type count was inferred, and it does not establish persistence of shape or polarity. Live contact-geometry approximation and developmental refinement limitations remain.
 
-The [completed chemical-state exchange experiment](attribute_exchange.md) tests all 120 pairs, with unmodified and uniform-reset controls. Among 96 informative exchanges, 48 return to the original pattern and 48 select another stationary pattern. This reveals both context dependence and chemical history dependence. A later moving-geometry version must test the entire attribute vector before calling the outcomes emergent cell identities.
+The [completed chemical-state exchange experiment](attribute_exchange.md) tests all 120 pairs, with unmodified and uniform-reset controls. Among 96 informative exchanges, 48 return to the original pattern and 48 select another stationary pattern. This reveals both context dependence and chemical history dependence.
+
+Subsequent [moving survival and timestep/history checks](feedback_survival_validation.md) retain developed patterns in all three planned histories (seeds 7, 8, and 9). [Frozen-endpoint assays](feedback_endpoint_bistability.md) support locally stable uniform and patterned chemistry on all six resulting endpoint graphs. These are different starting states and protocols from this original recovery assay, not additional replicates of its eighty perturbation trials.
+
+The [moving exchange/response method](cell_response_moving.md) then tests prepared chemistry on mature moving geometry, including matched pulse responses. Seed-7 results and selected response-timestep checks are complete; the seed-8/9 response replication is running. Persistent or donor-nearer chemistry alone does not establish a persistent full attribute vector, autonomy, inheritance, or biological function. Frozen ODE tolerance checks, coupled timestep checks, and CPU/GPU validation address separate numerical questions.
 
 ## Reproduce
 

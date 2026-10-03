@@ -2,6 +2,8 @@
 
 New simulations default to `signal_transport="conservative"`. This couples `transport.conservative_transport` and its positivity-preserving `integrate_gm` solver to measured live-cell geometry. `random_walk` remains an explicit historical control. Old schema-3 checkpoints without the selector restore random-walk transport with their original parameters; no historical trajectory is silently reinterpreted.
 
+These equations are shared by the current fate-free attribute model and the historical core model; they do not prescribe cell identities. The current mature GPU path constructs the same volume-weighted operator and advances the same chemical equations with PyTorch tensors. CPU and GPU differ in arithmetic/reduction details and are checked by whole-trajectory agreement, not by changing the transport law. Normalized neighbor averaging remains appropriate to the separate polarity-orientation rule and is not used as molecular diffusion in the current model.
+
 ## Reading the transport model
 
 Each cell is treated as a well-mixed compartment: $a_i$ and $b_i$ describe concentrations averaged over a cell, not a resolved concentration field inside its cytoplasm. Exchange occurs through a geometry-dependent graph. This assumption separates the voxel resolution of shape from the number of signaling compartments; making the shape grid finer does not add independent chemical degrees of freedom within a cell.
@@ -138,3 +140,9 @@ Next test voxel refinement at fixed cell geometry and fixed interface width; var
 ## General-geometry validation outcome
 
 The [geometry benchmark](geometric_transport.md) now quantifies curvature bias, diffuse gap leakage, and nonorthogonal linear-field flux errors. It fails all three general-geometry closure screens while passing numerical/reference checks. The calibrated area-over-distance law is not established as a consistent bulk-diffusion discretization on arbitrary deformed contacts. See the benchmark for the distinction between sharp contact, extracellular transport, and phenomenological well-mixed compartment exchange.
+
+## Current use and validation boundaries
+
+There are three separate refinements. **Voxel refinement** improves the shape/overlap measurements for fixed cells and interface width. **Compartment refinement** changes the number and physical sizes of chemical capacities and requires consistent conductance/remapping. **Biological cleavage** changes geometry and contact topology physically; it need not preserve the previous spectrum or wavelength. More voxels alone do not turn sixteen well-mixed cells into a continuous chemical field.
+
+The current [moving exchange-response replication](cell_response_moving.md#replication-across-developmental-histories) holds the accepted physical coefficients, grid, and dt=0.00375 fixed while varying developmental history and chemical intervention. Its GPU backend passed full-horizon seed-7 CPU comparisons and all six new-history starting-context checks. This supports backend use for that assay, not the arbitrary-geometry closure, a many-cell continuum limit, or full-developmental convergence. [Backend method and acceptance criteria](model.md#resident-gpu-backend-validation).

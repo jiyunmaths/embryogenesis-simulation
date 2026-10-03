@@ -4,6 +4,8 @@ This experiment removes the externally fixed chemical concentrations of the comm
 
 The experiment asks two separate questions: do already differentiated chemical states persist after the reservoir is released, and can small differences grow into a sustained pattern when cells and reservoir start near the homogeneous state?
 
+**Methodological scope:** this is a separate chemical-compartment assay with fixed cell volumes, no direct cell-contact transport, and no evolving geometry. The reservoir is globally well mixed. It is not part of the live phase-field embryo or the resident GPU state. See [the current moving identity assays](cell_response_moving.md) for experiments with local contact transport and mechanics.
+
 ## Equations and amount balance
 
 For cell $i$ of fixed measured volume $V_i$,
@@ -121,7 +123,7 @@ The modeled activator–inhibitor feedback can sustain distinct chemical states 
 
 It remains a globally coupled chemical-compartment model with assumed reaction sources. It does not demonstrate autonomous isolated-cell memory, nutrient/energy self-sufficiency, a spatial tissue pattern, inherited cell identity, or shape symmetry breaking. The transient reservoir composition and chemical history still affect the outcome; one tested release does not sustain differences despite using the same exchange strength that supports formation from other starts.
 
-The next useful test is robustness across cell number and compartment size while holding physical volume and exchange conductance conventions fixed. For a spatial developmental model, the reservoir must ultimately be replaced by an explicitly resolved extracellular field or justified local extracellular compartments, followed by mechanical feedback and convergence checks. Simply attaching a global reservoir to the 3D simulation would not validate spatial signaling.
+For this reservoir branch, a remaining test is robustness across cell number and compartment size while holding physical volume and exchange conductance conventions fixed. The current spatial research sequence instead tests moving exchange/response across developmental histories; it does not yet couple the reservoir to the embryo. A spatial environmental extension would require an explicitly resolved extracellular field or justified local extracellular compartments, followed by mechanical feedback and convergence checks. Simply attaching a global reservoir to the 3D simulation would not validate spatial signaling.
 
 ## Reproduce
 

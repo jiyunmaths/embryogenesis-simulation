@@ -2,7 +2,7 @@
 
 The first production experiment has completed through time 90 in `outputs/attribute-development`. It asks whether a developing regulatory–mechanical system produces distinct, persistent **phenotypes without a supplied two-state fate switch**. There is no requested number of types, no clustering, and no A/B labels in its observations or surface exports. Both branches pass the declared numerical-quality checks; the completed assessment is below.
 
-This is an experimental branch implemented in `embryo/attribute_development.py`. The historical core/dashboard model remains available for comparison, and its existing fate equation is still documented elsewhere. Neither that code nor the completed dense-geometry replay is changed by this experiment.
+This is the current identity-focused research model, implemented in `embryo/attribute_development.py`. The historical core/dashboard remains available with its supplied fate equation for comparison and reproduction. Earlier fate-model and replay results are not silently reinterpreted as evidence from this branch.
 
 ## What is removed, and what remains
 
@@ -40,6 +40,28 @@ $$
 with $\gamma_0=1$, $A_0=4$, $c_\gamma=0.25$, and $c_A=0.35$. Existing polarity-dependent directional tension is then applied in the direct branch. The contrast values are retained from the prior mechanics for an initial controlled comparison; the old configuration names `fate_tension` and `fate_adhesion` store these numbers, but no fate variable enters their calculation here.
 
 This law assumes that activity changes material properties promptly and that responses of the same sign favor attraction. It can encourage activity-dependent rearrangement and must eventually be compared with alternative constitutive laws. It does not specify two stable identities or discretize activity into categories. Any apparent populations must be assessed independently of this assumed coupling. No-feedback mechanics is identical to the historical no-feedback kernel; for the direct branch, substitution of the same coefficient values reproduces the core mechanical update exactly in regression tests.
+
+## Current integration and computing method
+
+Chemical transport uses $\Delta_V=-M^{-1}K$ with measured cell volumes, symmetric contact conductances, and the calibrated diffuse-overlap area closure. It is separate from the normalized neighbor averaging used for polarity. The [transport method](live_transport.md) derives reactions, exchange, dilution, and discrete-mode stability and records the unresolved general-geometry closure limits. Cells remain chemically well mixed: refining the voxel grid resolves shape more finely but does not add chemical degrees of freedom within a cell.
+
+The coupled step advances chemistry on fixed geometry with positivity-restricted SSP-RK2, advances polarity, evaluates the current activity-dependent coefficients, advances mechanics, and rescales concentrations by old/new measured volume. CPU development also performs division/inheritance. This is first-order operator splitting, not a second-order solver for the complete moving system. Amount conservation applies to exchange, dilution, and conservative interventions; reactions can produce or remove chemicals.
+
+The original NumPy/SciPy path supports development and its checkpoints. Native C++/OpenMP provides accelerated mature CPU references. The accepted mature GPU path uses resident **PyTorch tensors and matrix operations**, with custom CUDA for mechanics and spatial geometry/polarity. It preserves the same constitutive laws and standard checkpoint schema. [Full-horizon backend validation](model.md#resident-gpu-backend-validation) passed at dt=0.00375; this does not validate GPU zygote development, active cleavage, cue forcing, or no-feedback/nonpolar mechanics. The original developmental pilot above remains at dt=0.0075 on CPU.
+
+## How the identity assays build on development
+
+| Assay | Preserved state / intervention | Interpretation |
+|---|---|---|
+| Moving survival | Actual no-feedback t=90 chemistry; switch feedback on or keep it off | Maintenance of a developed pattern, distinct from initiating one |
+| Frozen recovery/bistability | Fixed endpoint graph; perturb or initialize chemistry | Conditional chemical basins and local recovery |
+| Conservative chemical exchange | Swap both species, rescaling only the selected pair to preserve each amount | State restoration, transfer, or collective reorganization; no cell displacement |
+| Moving formation/retention | Untouched equilibrium, fresh exchange, or frozen pre-relaxed chemistry on one t=150 geometry | Effects of moving contacts and volume on prepared states |
+| Matched pulse response | Preserve each t=210 moving endpoint; independent ±10% activator pulses and its own control | Continuous response transfer, with donor/destination references at the same age |
+
+The existing moving-survival experiment is not chemically re-equilibrated before its challenge. The later exchange/response assays deliberately transplant equilibrium or exchanged chemistry onto a mature source geometry, preserving polarity, IDs, clock, and random streams. Those starting-state interventions must be reported; they cannot be called fresh zygote-to-identity formation.
+
+Current history replication adds seeds 8 and 9 to the completed seed-7 moving exchange-response reference. Six new-context native/GPU checks passed before the 36 continuations were admitted. The [full moving protocol](cell_response_moving.md#replication-across-developmental-histories) keeps outcomes separate by history and reports uninformative pairs/numerical failures. Backgrounds, target cells, and pulse signs are nested interventions, not additional developmental replicas. Nearest donor response does not establish donor equivalence, autonomy, inheritance, or biological function.
 
 ## What we measure
 

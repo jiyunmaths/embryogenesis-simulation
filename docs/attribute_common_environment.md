@@ -102,13 +102,15 @@ The follow-up `embryo/attribute_common_verification.py` compares the reported ti
 
 The reported tight solutions are therefore supported without relaxing the original threshold. Independent Radau checks cover one selected initial state per arm, not all 2256 states. Every arm also meets the endpoint derivative and equilibrium-distance checks. Very small endpoint differences are numerical agreement, not physically meaningful precision.
 
-## Interpretation and next experiment
+## Interpretation and subsequent experiments
 
 **The tested chemical states have no autonomous persistence in isolation, but they can remain distinct under identical sustained surroundings.** Thus the earlier network pattern is not simply an assembly of independently bistable isolated cells. Nor does a common environment inevitably erase differences: chemical history selects among multiple stable states when reservoir exchange changes the effective reactions.
 
 This is evidence for environment-supported chemical memory within this model. It remains narrower than emergent biological cell identity: there is no gene-regulatory memory, inheritance test, or demonstrated persistence of the full shape/polarity phenotype. Failure of autonomous persistence is not a general requirement that biological identities must survive removal from their tissue environment.
 
-The [completed finite-reservoir test](attribute_finite_reservoir.md) lets the shared composition respond to cells with amount-conservative exchange. It supports sustained chemical differences, and at strong exchange formation from small perturbations, without clamping the reservoir. Release outcomes remain dependent on initial conditions and reservoir size. Moving-geometry recovery and independent developmental seeds remain necessary after this chemical test.
+The [completed finite-reservoir test](attribute_finite_reservoir.md) lets the shared composition respond to cells with amount-conservative exchange. It supports sustained chemical differences, and at strong exchange formation from small perturbations, without clamping the reservoir. Release outcomes remain dependent on initial conditions and reservoir size.
+
+Subsequent [moving survival](feedback_survival_validation.md) retains actual developed patterns in three histories, and [moving chemical exchange/response](cell_response_moving.md) tests behavior on prepared mature backgrounds. These test collective organization with local cell contacts; they do not repeat the common-reservoir experiment under moving geometry. Neither the fixed nor the finite global reservoir is part of the current live 3D/GPU model. Biological cell identity still requires evidence beyond chemical contrast and response similarity, including inheritance and independently measured function.
 
 ## Reproduce
 

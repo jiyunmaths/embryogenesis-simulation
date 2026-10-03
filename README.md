@@ -4,13 +4,13 @@
 
 **To what extent can mathematical equations explain the emergence of organized living structure from an initially simple zygote?** This project investigates how small fluctuations in an approximately uniform initial state can develop into reproducible cell identities, spatial signals, and complex, changing three-dimensional shapes.
 
-The central mechanism to investigate is an **explicit activator–inhibitor feedback loop**: an activator promotes its own production and the production of an inhibitor; the inhibitor suppresses activation. We will study how the kinetics, interaction ranges, and coupling to cell mechanics determine whether this feedback amplifies fluctuations into order, suppresses them, or produces unstable patterns. Activator and inhibitor are signaling variables; they are distinct from the two initial cell identities, A and B.
+The central mechanism to investigate is an **explicit activator–inhibitor feedback loop**: an activator promotes its own production and the production of an inhibitor; the inhibitor suppresses activation. We study how kinetics, interaction ranges, and coupling to cell mechanics determine whether this feedback amplifies fluctuations into order, suppresses them, or produces unstable patterns. Activator and inhibitor are continuous chemical activities, not cell identities. **The current research model supplies no A/B labels, downstream fate switch, or requested number of cell types.**
 
 We will evaluate three linked outcomes separately:
 
 | Outcome | Scientific question | Evidence to measure |
 |---|---|---|
-| Cell identity differentiation | Can initially similar cells acquire distinct, persistent identities through local regulatory dynamics and signaling? | Activity distributions, fate persistence, lineage histories, and responses to perturbations |
+| Cell identity differentiation | Can initially similar cells acquire distinct, persistent behavior through local regulatory dynamics and signaling? | Continuous attributes, persistence, responses to perturbations/exchange, context dependence, and eventual inheritance tests |
 | Signaling symmetry breaking | Can nearly uniform signaling develop persistent spatial domains, poles, or axes without a prescribed directional cue? | Pattern onset, spatial correlations, wavelength, domain number, and orientation across independent runs |
 | Geometry and shape symmetry breaking | Can signaling and cell behavior produce sustained changes in tissue shape while the embryo divides and rearranges? | Shape anisotropy, axis persistence, cell organization, and later folding or cavity formation where the model supports them |
 
@@ -18,7 +18,7 @@ The intended feedback is reciprocal: **signaling influences identity and cell me
 
 ## How we will assess explanatory power
 
-The aim is to identify the smallest interpretable set of equations that accounts for progressively more developmental organization, and to document where that explanation fails. Two identities and a small cell population are the starting point; more complex structures are later tests of the same approach.
+The aim is to identify the smallest interpretable set of equations that accounts for progressively more developmental organization, and to document where that explanation fails. Two chemical regulators and a small, resolved cell population are the starting point. Whether discrete identities emerge, and how many, are questions for the experiments rather than supplied classifications.
 
 - **Separate emergence from assumptions.** Record which features arise from the dynamics and which are supplied through initial conditions, boundary conditions, cell-cycle rules, or prescribed forces. Begin spontaneous-symmetry-breaking experiments with unbiased fluctuations; label imposed gradients and asymmetries as separate controls.
 - **Establish the mechanism.** Analyze steady states and their stability, identify parameter regimes where spatial perturbations grow, and test the necessity of activation, inhibition, signal transport, and mechanical feedback by disabling them individually. An activator–inhibitor loop does not automatically imply a Turing instability or a single developmental axis.
@@ -29,21 +29,37 @@ This objective guides subsequent model changes and experiments. Each extension s
 
 ## Current starting point
 
-The runnable prototype models one cell dividing into a deformable multicellular aggregate. Gierer–Meinhardt activator and inhibitor concentrations evolve through conservative volume-weighted contact transport and drive a downstream bistable fate switch. Apical–basal polarity develops from exposed cortex and neighboring orientations, and changes cortical tension directionally.
+The current scientific model, `AttributeSimulation`, develops one cell into a deformable multicellular aggregate. Gierer–Meinhardt activator and inhibitor activities evolve through **conservative volume-weighted contact transport**, reactions, and mechanical dilution. Chemical activity changes tension and adhesion continuously. Apical–basal polarity develops from exposed cortex and neighboring orientations and changes cortical tension directionally. There is no independently integrated fate variable.
 
-**Finite-graph stability is analyzed before 3D evolution.** The solver uses a conservative volume-weighted Laplacian, checks each discrete eigenvalue against the reaction–diffusion Jacobian, and records changes in spectral modes at every cleavage. A continuous unstable band can contain no supported modes on a small graph. Activator/inhibitor variables are distinct from cell fate; the old independent fate noise and geometry biases are disabled by default. See [live conservative signaling](docs/live_transport.md) for equations, spectral convergence, and limitations, and [polarity mechanics](docs/graph_signaling.md#apicalbasal-polarity-and-mechanics) for the mechanical coupling.
+**Finite-graph stability precedes pattern interpretation.** Each supported eigenvalue of the conservative Laplacian is checked against the reaction–diffusion Jacobian, with spectral mode transfer recorded at cleavage. A continuous unstable band can contain no supported modes on a small graph. Stability about uniform chemistry describes initiation, not the persistence of a finite-amplitude pattern or stability of the complete moving system. See [live conservative signaling](docs/live_transport.md) and [polarity mechanics](docs/graph_signaling.md#apicalbasal-polarity-and-mechanics).
 
 This is an exploratory model in dimensionless units, not a reconstruction of a particular organism. The simulation evolves each cell's shape on a 3D grid. It does not prescribe an embryo outline or assign daughter identities.
 
-## New experiment: identities as emergent cellular phenotypes
+## Cell identity as emergent attributes
 
-The [attribute-based developmental experiment](docs/attribute_development.md) is now running two fresh zygote-to-t=90 branches **without the prescribed bistable fate switch or A/B labels**. It retains activator–inhibitor signaling and compares continuous activity-dependent mechanics with no regulatory mechanical feedback. Chemical activity, polarity strength, and cell shape are recorded as attributes; position, lineage, and exposure are context. No number of identities is prescribed and no clustering is imposed. Persistent differences would initially be candidate phenotypes, requiring perturbation and robustness tests before being called identities.
+The [attribute-based developmental experiment](docs/attribute_development.md) completed two fresh zygote-to-t=90 branches: direct regulatory mechanical feedback and a matched no-feedback branch. We record log activator, log inhibitor, polarity magnitude, cell axis ratio, and asphericity as continuous attributes. Position, lineage, exposure, and contact geometry are context. Tension and adhesion are derived from activity and therefore do not count as independent evidence of differentiation. No clustering or number of identities is imposed.
 
-This experimental branch leaves the historical core/dashboard model unchanged. The method section below describes that historical baseline, including the supplied fate switch, so its assumptions and prior results remain reproducible. The new branch's equations, compatibility details, and protocol are documented separately. Its scientific results are pending.
+The method now combines developmental controls, frozen-context stability/recovery, chemical-state exchange, and matched pulse responses under moving geometry. These tests ask separately whether differences form, persist, recover, or follow transferred chemistry. Environment-supported collective organization is distinguished from an autonomous cell identity. The [current moving-history replication](docs/cell_response_moving.md#replication-across-developmental-histories) repeats exchange and response tests on seeds 8 and 9, using seed 7 as a historical reference.
+
+The historical `Simulation` and dashboard still integrate a supplied bistable fate switch and can report A/B. They are available for reproducing earlier experiments. Their fate labels are not used by the current attribute-based identity studies, and GPU acceleration is not automatically enabled in the dashboard.
+
+### Experimental stages and what they test
+
+| Stage | Starting state and controlled change | Question answered |
+|---|---|---|
+| Development | One zygote, initially unit chemistry and zero polarity; matched feedback-on/off branches | Do continuous attributes become different during cleavage and changing shape? |
+| Component controls | One common mature geometry; vary tension, adhesion, or polarity's mechanical action with either small chemical perturbations or a prepared pattern | Which mechanical term changes the opportunity to form a pattern, and does that differ from maintaining one? |
+| Moving survival | Actual developed chemistry at t=90; switch feedback on or keep it off through t=150 | Can a developed pattern survive evolving mechanics, transport, and dilution? |
+| Frozen recovery and bistability | Hold measured volumes and the contact operator fixed; perturb equilibria or change chemical initial conditions | Which chemical states are locally stable on that geometry? |
+| Chemical exchange | Conservatively exchange both species between selected cells; compare fresh and frozen pre-relaxed exchanges | Do states return to their destination values, follow transferred chemistry, or reorganize collectively? |
+| Matched response | At each moving background's t=210 endpoint, pulse one cell's activator by ±10%; subtract that background's unpulsed continuation | Does response behavior resemble the chemical donor or the original destination? |
+| Environment assays | Remove transport, clamp a shared reservoir, or let a finite shared reservoir evolve | Are differences autonomous or supported by reciprocal environmental exchange? |
+
+The mature exchange/response sequence uses prepared chemical states on developed geometry; it is not a second zygote-to-identity experiment. Chemical exchange leaves cell shape, polarity, position, and lineage in place. Reservoir assays are separate compartment models, not an extracellular field in the live embryo. Formation, maintenance, response similarity, and inherited identity therefore remain distinct claims. [Detailed assay methods](docs/attribute_development.md#how-the-identity-assays-build-on-development).
 
 ## Method and mathematical model
 
-Read the equations as a set of coupled rules: **geometry determines contacts; contacts transport signals; signals bias fate and polarity; fate and polarity change mechanics; mechanics changes geometry**. The model does not assume that any one of these links is sufficient to produce an organized embryo.
+Read the equations as coupled rules: **geometry determines contacts and polarity cues; contacts transport chemicals; chemical activity modulates polarity, tension, and adhesion; mechanics changes geometry and volume; volume changes dilute or concentrate chemicals**. The model does not assume that any one link is sufficient to produce an organized embryo. The equations below describe the current attribute model; the supplied fate switch is identified separately as a historical alternative.
 
 In the notation below, $i,j$ label cells, $\mathbf{x}$ is a location in the 3D box $\Omega$, a dot means a time derivative, and an integral adds a quantity over the box. A star on $V_i^\star$ denotes a prescribed target, not a measured volume. The occupancy function $h(\phi)$ is unrelated to the inhibitor, which is written $b_i$ here (`inhibitor` and sometimes `h` in the code). Adhesion strength is $A_{ij}$; geometric contact area is $\mathcal A_{ij}$. See [the annotated model](docs/model.md#reading-the-equations) for derivative notation and a term-by-term mechanical derivation.
 
@@ -55,14 +71,13 @@ The simulation combines a continuous description of cell shape with a discrete d
 |---|---|---|
 | $\phi_i(\mathbf{x},t)$ | Diffuse cell indicator: approximately one inside cell $i$, zero outside | Smooth sphere of radius 0.8 |
 | $a_i(t), b_i(t)$ | Nonnegative activator and positive inhibitor activities | Both one |
-| $f_i(t)$ | Signed downstream fate variable | Zero, uncommitted |
 | $\mathbf{p}_i(t)$ | Apical–basal polarity vector, pointing toward the apical side | Zero |
 | $V_i^\star$ | Target cell volume | Measured initial zygote volume |
 | Cell ID, parent ID, cycle state | Lineage and division bookkeeping | One founder cell |
 
 All quantities are **dimensionless**. Activities are reduced regulatory variables, not identified genes or measured concentrations. Cell-cycle timing, constitutive laws, and noise amplitudes are supplied assumptions. The model tests their consequences; it does not derive living matter, metabolism, or the cell cycle from chemistry.
 
-The default domain is $[-1.6,1.6]^3$ on a $40^3$ grid, with reflecting mechanical boundaries. The embryo outline is not prescribed. Initially uniform signaling is perturbed by small random partition differences at cleavage; there is no imposed chemical gradient. Random division orientation is used only within geometrically degenerate long-axis subspaces, unless the isotropic control is explicitly selected.
+Current developmental studies use $[-2.24,2.24]^3$ on a $72^3$ grid, with zero-normal-gradient mechanical boundaries and a sixteen-cell cap. The embryo outline is not prescribed. Initially uniform chemistry receives small amount-balanced partition perturbations at cleavage; there is no imposed chemical gradient in the baseline. Random division orientation is used within geometrically degenerate long-axis subspaces, unless the isotropic control is explicitly selected. The smaller $40^3$ core/dashboard default is a demonstration preset, not the current research resolution.
 
 ### Deformable cells and mechanical interactions
 
@@ -224,34 +239,33 @@ For the defaults $\beta=2$, $D_a=0.02$, and $D_b=0.4$, the unstable interval is 
 
 The [calibrated-contact refinement experiment](docs/live_transport.md) uses the same contact adapter on manufactured 3D slabs with unit transverse area. First-mode error decreases from 1.27% at 8 compartments to 0.020% at 64 (observed final order 1.998). The continuum has one unstable mode; 8 compartments incorrectly support two, while 16, 32, and 64 recover one. Measured small-perturbation growth agrees with the discrete prediction within $7.6\times10^{-11}$. This establishes convergence for flat complementary contacts, not arbitrary embryo geometry.
 
-Frozen-geometry spectra describe the signaling subsystem near $(1,1)$. Volume changes introduce dilution; graph changes, mode mixing, and finite growth time require time-dependent analysis. These spectra are not a stability proof for the coupled signaling–fate–mechanics system. Historical normalized-graph experiments remain documented in [graph_signaling.md](docs/graph_signaling.md).
+Frozen-geometry spectra describe the signaling subsystem near $(1,1)$. Volume changes introduce dilution; graph changes, mode mixing, and finite growth time require time-dependent analysis. These spectra are not a stability proof for the coupled chemistry–polarity–mechanics system. Historical normalized-graph experiments remain documented in [graph_signaling.md](docs/graph_signaling.md).
 
-### From signaling to two possible cell identities
+### From chemical activity to mechanics
 
-Once at least four cells are present, the default downstream fate equation is
-
-$$
-\dot f_i=r_f\left[f_i-f_i^3+g_a(a_i-1)\right].
-$$
-
-Here $r_f$ (`fate_rate`, 0.8) sets response speed and $g_a$ (`signal_fate_gain`, 1) sets the activator bias. The linear term $+f_i$ amplifies a small signed deviation from zero; the cubic term $-f_i^3$ limits that amplification. Subtracting the reference activity 1 makes homogeneous equilibrium signaling unbiased. A positive bias favors A and a negative bias favors B; it does not assign either identity directly.
-
-Without a signaling bias, this switch has stable states at $f=\pm1$ and an unstable state at zero. Activator above or below its homogeneous value biases the switch toward opposite identities. Independent fate noise, legacy neighbor inhibition, and the direct exposure bias are disabled by default; their optional terms are documented in [the full model definition](docs/model.md).
-
-Cells with $f_i>0.55$ are labeled A, those with $f_i<-0.55$ are labeled B, and the remainder are uncommitted. These labels are thresholds, not proof of irreversible commitment or named biological lineages. Because the fate switch is already bistable by construction, differentiated labels alone would not demonstrate a Turing mechanism; signaling growth must be tested separately.
-
-With mechanical feedback enabled, fate changes baseline tension and interface attraction:
+The current attribute model uses an instantaneous, bounded material response:
 
 $$
 \begin{aligned}
-\gamma_i^0&=\gamma_0[1+c_\gamma\tanh(f_i)],\\
-A_{ij}&=A_0[1+c_A\tanh(f_i)\tanh(f_j)].
+r_i&=\tanh(a_i-1),\\
+\gamma_i^0&=\gamma_0(1+c_\gamma r_i),\\
+A_{ij}&=A_0(1+c_A r_i r_j),\qquad A_{ii}=0.
 \end{aligned}
 $$
 
-The bounded function $\tanh(f)$ prevents unbounded material coefficients when fate leaves the interval $[-1,1]$. The contrast parameters $c_\gamma$ (`fate_tension`, 0.25) and $c_A$ (`fate_adhesion`, 0.35) set the strength of this constitutive coupling. For example, the tension multiplier is bounded between $1-c_\gamma$ and $1+c_\gamma$; these limits are approached only at large fate magnitude. The product in the adhesion law is positive for similar signs and negative for opposite signs. Choosing these forms expresses a hypothesis about identity-dependent mechanics, not a consequence of the signaling equations.
+Subtracting the homogeneous activator reference, one, makes baseline chemistry mechanically unbiased. The tanh bounds the response and prevents unbounded material coefficients. Higher activity increases baseline tension; cells with responses of the same sign have stronger attraction than opposite-sign pairs. The contrasts $c_\gamma=0.25$ and $c_A=0.35$ retain configuration names `fate_tension` and `fate_adhesion` for compatibility, but **no fate variable enters this calculation**. At these contrasts, tension and attraction remain positive.
 
-Positive fate has higher baseline tension, and similarly biased cells have stronger attraction. These are explicit constitutive hypotheses, not experimentally calibrated effects of the generic identities A and B.
+The response $r_i$ has no differential equation, stored memory, or threshold classification. These constitutive laws assume prompt activity-dependent mechanics; any persistent phenotype must arise from the coupled chemical/geometric dynamics. In the no-feedback control, tension and attraction retain their baseline values, and polarity cannot change mechanical tension; chemical and polarity dynamics remain active. [Detailed definitions and developmental controls](docs/attribute_development.md).
+
+### Historical fate-switch alternative
+
+The core/dashboard model instead integrates a supplied signed switch after four cells are present:
+
+$$
+\dot f_i=r_f[f_i-f_i^3+g_a(a_i-1)].
+$$
+
+Its two stable states at $f=\pm1$ are an assumption. It derives material responses from $\tanh(f_i)$ and reports A/B using $f_i>0.55$ or $f_i<-0.55$. Earlier experiments showed that transient chemical differences can select these labels without sustained Turing patterning. This motivated removing the switch from identity-focused research. The attribute model keeps only zero-valued compatibility arrays for checkpoint bookkeeping; no fate drift or A/B classification is performed. [Historical equations and interpretation](docs/model.md#regulatory-activity).
 
 ### Apical–basal polarity and directional mechanics
 
@@ -336,33 +350,36 @@ $$
 
 Occupancy is conserved pointwise by this construction, up to numerical precision. Daughter target volumes follow their measured lobe fractions; there is no growth between divisions. Signal partition perturbations preserve measured volume-weighted regulator amounts at cleavage; reactions can change these amounts, whereas exchange and mechanical dilution conserve them. Unresolved divisions remain active rather than being forcibly cut. See [cytokinesis details and validation](docs/cytokinesis.md).
 
-### Numerical workflow and default scales
+### Numerical workflow and research scales
 
-Each time step reconstructs contacts, advances signaling, updates polarity and fate, relaxes cell geometry, and then handles completed or newly scheduled divisions. Signaling uses SSP-RK2 with rate-dependent substeps; polarity, fate, and mechanics use explicit updates. Phase fields are clipped to $[0,1]$, and the fraction clipped is reported. A smaller time step and spatial refinement remain necessary checks, even if the simulation stays numerically finite.
+Each attribute-model step reconstructs contacts and volumes, advances reactions/exchange on that geometry, updates polarity, computes material coefficients from the updated activator, and advances mechanics. Concentrations are then multiplied by $V_i^{\mathrm{old}}/V_i^{\mathrm{new}}$, preserving each species' amount during the volume change. CPU development additionally handles completed and newly scheduled divisions. Chemistry uses positivity-restricted SSP-RK2 substeps; polarity and mechanics use explicit updates. **The complete coupled scheme is first-order operator splitting**, even though frozen-geometry chemical integration is second order.
 
-| Parameter group | Default values |
+| Parameter group | Current research values |
 |---|---|
-| Domain and time | $40^3$ grid; $\Delta t=0.015$; 1,000 steps; final time 15 |
+| Domain and population | $[-2.24,2.24]^3$; $72^3$ grid; sixteen-cell cap |
+| Time | Development/component pilots: $\Delta t=0.0075$; accepted mature response/GPU studies: $\Delta t=0.00375$; response refinement: $0.001875$ |
 | Mechanics | $\epsilon=0.085$, $\gamma_0=1$, $K_V=12$, $R=3$, $A_0=4$ |
 | Signaling | $\beta=2$, $D_a=0.02$, $D_b=0.4$; partition-noise scale 0.001 |
-| Fate | $r_f=0.8$, $g_a=1$; competence at 4 cells |
-| Mechanical feedback | $c_\gamma=0.25$, $c_A=0.35$ |
+| Material response | $r_i=\tanh(a_i-1)$, $c_\gamma=0.25$, $c_A=0.35$; no fate switch |
 | Polarity | $\alpha=1$, $\eta=0.25$, $\mu=0.5$, $\chi=0.35$ |
 | Division | Mean cycle interval 2; nominal constriction duration 0.9; maximum 16 cells |
+| Mature response observations | Every 0.15 units; restart checkpoint every three units; 60-unit moving response horizon |
 
-These values are illustrative. In particular, signaling growth time, cell-cycle time, and mechanical relaxation time must be compared rather than assuming pattern formation finishes before the next cleavage. Complete defaults and validation rules are in [Config](embryo/model.py), with a configurable example in [default.json](examples/default.json).
+These are dimensionless experimental values, not calibrated biology or universal accuracy guarantees. Signaling growth time, cell-cycle time, and mechanical relaxation time must be compared. [Config](embryo/model.py) and [default.json](examples/default.json) describe the smaller historical demonstration defaults; frozen protocols record each research configuration and its controls.
 
-Shape measurements use the capped aggregate occupancy $\rho=\min(\sum_i h(\phi_i),1)$. If its spatial covariance eigenvalues are $\ell_1\le\ell_2\le\ell_3$, the principal axis ratio is $\sqrt{\ell_3/\ell_1}$, equal to one for a sphere. Signal variation, fate counts, lineage, polarity, graph spectra, and volume errors are recorded alongside shape. Elongation alone cannot identify whether its cause is cleavage, regulatory feedback, or numerical anisotropy.
+Every-step production screens require per-cell volume error below 5%, equivalent radius at least four grid spacings, zero clipping, and positive finite chemistry. Sampled boundary occupancy must remain below 0.01. Clipping is a numerical safeguard and its activation fails these studies; staying finite is insufficient. Numerical failures are not classified as biological loss of organization.
+
+Shape measurements use the capped aggregate occupancy $\rho=\min(\sum_i h(\phi_i),1)$. If its spatial covariance eigenvalues are $\ell_1\le\ell_2\le\ell_3$, the principal axis ratio is $\sqrt{\ell_3/\ell_1}$, equal to one for a sphere. Continuous chemical attributes, lineage, polarity, graph spectra, and volume errors are recorded alongside shape. Elongation alone cannot identify whether its cause is cleavage, regulatory feedback, or numerical anisotropy.
 
 ### What this model can explain, and what remains missing
 
-The implemented system lets us test whether local activation and inhibition, a changing contact network, and polarity-dependent mechanics are sufficient for specific forms of organization. The signal equations do not guarantee two differentiated populations, and local polarity does not guarantee a persistent developmental axis. The current single-seed time-15 example reaches 16 cells with small signal differences and no threshold-classified A/B cells; it is not a validated model of mature differentiation.
+The implemented system tests whether local activation and inhibition, a changing contact network, and polarity-dependent mechanics are sufficient for specific forms of organization. Formation and maintenance must be tested separately: polarity-mediated mechanics can suppress initiation on a given geometry while established nonlinear chemical patterns persist. Continuous heterogeneity, donor-nearer response behavior, and local polarity each require further evidence before being called cell identity or a selected developmental axis.
 
 **Blastocoel cavitation is not implemented.** Repulsion and cell-volume penalties can leave geometric gaps, but they do not explain accumulation of pressurized extracellular fluid. Na⁺/K⁺-ATPases actively transport ions; aquaporins conduct water passively; a low-leak epithelial barrier permits fluid accumulation. Experimental work also links pump signaling to tight-junction function. [Giannatselis et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21901128/)
 
 A future cavity model needs solute and water balances, barrier permeability, lumen pressure coupled to cell mechanics, and communication between microlumens. Hydraulic opening of contacts and microlumen coarsening can contribute to cavity positioning, as shown in mouse embryos. [Dumortier et al. (2019)](https://pubmed.ncbi.nlm.nih.gov/31371608/) A centered cavity can preserve rotational symmetry; selecting its position is a separate explanatory target. Signaling and polarity could regulate these processes, but cannot substitute for fluid transport equations.
 
-The remaining validation requirements include contact-threshold sensitivity, grid/time refinement, multiple independent seeds, longer signaling times, fate-persistence assays, and comparisons with measured biology. References motivate individual mechanisms; none establishes that this combined implementation reproduces an actual embryo.
+The remaining requirements include convergence of the full attribute-based developmental trajectory and geometric transport closure, exchange-specific refinement, additional histories, context/neighbor-dependence and inheritance tests, and biological calibration. Completed component, conservation, and backend checks do not replace these. References motivate individual mechanisms; none establishes that the combined implementation reproduces an actual embryo.
 
 ## Run
 
@@ -372,7 +389,34 @@ From this directory, using Python 3.10 or newer:
 python -m pip install -e '.[test]'
 ```
 
-### Live dashboard
+### Current attribute-based research workflow
+
+Development is run on CPU, using the attribute model rather than the historical core CLI:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.attribute_development prepare \
+  --output outputs/attribute-development-repeat
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.attribute_development run \
+  --output outputs/attribute-development-repeat
+```
+
+The moving-history replication requires the completed survival, frozen-endpoint/exchange, and GPU-validation artifacts already present locally. It uses a separate output directory and verifies their hashes:
+
+```bash
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+python -m embryo.exchange_response_histories prepare \
+  --output outputs/exchange-response-histories-repeat
+
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+python -m embryo.exchange_response_histories run \
+  --output outputs/exchange-response-histories-repeat
+```
+
+The GPU path additionally requires the compatible PyTorch/CUDA environment and CUDA compiler described in [the backend method and validation](docs/model.md#resident-gpu-backend-validation). Device selection above is specific to this machine's dedicated GTX 1080 Ti. It is not a portable GPU-index convention. Preparation requires a fresh directory; restart uses `run` on the existing prepared directory without changing its frozen sources or inputs. Full scientific outputs are local artifacts, not included by installing the Python package.
+
+### Historical core dashboard
 
 ```bash
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m embryo.dashboard
@@ -387,7 +431,7 @@ Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The dashboard advances the 
 
 The server binds only to this computer and needs no browser dependencies or internet connection. Use `--config examples/default.json` for an initial configuration or `--port 8766` for another port. Reference graph stability is computed before stepping; the dashboard also shows the current contact graph's growing-mode count. See [dashboard controls and limits](docs/dashboard.md).
 
-### Batch simulation and offline playback
+### Historical core batch simulation and offline playback
 
 ```bash
 # Analyze finite reference graphs before a coupled run (no 3D simulation):
@@ -409,6 +453,8 @@ Open `outputs/my-run/viewer.html` in a browser. It is self-contained and works o
 Signal colors are relative to the homogeneous activity of one, not automatically rescaled to exaggerate small variations. The viewer displays samples of the simulated cell surfaces. Its apparent surface texture is a rendering approximation; it does not enter the dynamics.
 
 ## Experiments
+
+The commands immediately below exercise the historical core/fate model. Current identity-focused protocols use `AttributeSimulation` and the research workflow above. Older experiments remain useful controls and numerical evidence, but their A/B outcomes are not reinterpreted as emergent identities in the new model.
 
 ```bash
 # Same seed and parameters, without fate/polarity-dependent mechanical properties:
@@ -456,7 +502,7 @@ The $t=180$ domain continuation is complete. The original box crosses the bounda
 
 ### Coupled spatial and temporal resolution
 
-The [next resolution screen](docs/coupled_resolution.md) tests grids 56³, 72³, and 88³ at fixed half-width 2.24 and interface width 0.085, with a separate time-step sweep. Every grid samples the same manufactured 16-cell geometry directly. Frozen-geometry spectra agree within 0.000193% between the finer grids. The five coupled cases are complete: 11/12 checks pass, but the finest spatial occupancy-field discrepancy is 1.43%, above the 1% criterion. The completed [projection-error audit](docs/projection_audit.md) finds 1.49% discrepancy even before evolution under the original linear reconstruction; higher-order final comparisons range from 0.24% to 0.32%. This identifies substantial measurement contamination. The original failed result remains unchanged. An [independent 112³ confirmation](docs/refinement_confirmation.md) passed all 11 prospectively specified checks; finest-pair field differences are 0.162–0.207%. This supports short-time consistency for the manufactured state, not developmental convergence.
+The [completed resolution screen](docs/coupled_resolution.md) tests grids 56³, 72³, and 88³ at fixed half-width 2.24 and interface width 0.085, with a separate time-step sweep. Every grid samples the same manufactured 16-cell geometry directly. Frozen-geometry spectra agree within 0.000193% between the finer grids. The five coupled cases are complete: 11/12 checks pass, but the finest spatial occupancy-field discrepancy is 1.43%, above the 1% criterion. The completed [projection-error audit](docs/projection_audit.md) finds 1.49% discrepancy even before evolution under the original linear reconstruction; higher-order final comparisons range from 0.24% to 0.32%. This identifies substantial measurement contamination. The original failed result remains unchanged. An [independent 112³ confirmation](docs/refinement_confirmation.md) passed all 11 prospectively specified checks; finest-pair field differences are 0.162–0.207%. This supports short-time consistency for the manufactured state, not developmental convergence.
 
 ### Discrete-to-continuum transport bridge
 
@@ -468,7 +514,7 @@ OPENBLAS_NUM_THREADS=1 python -m embryo.continuum --output outputs/continuum-bri
 
 Across 64 to 32,768 compartments, diffusion error falls from 0.002871 to 0.00004994 with approximately second-order convergence. Coarse grids predict ten unstable modes; finer grids recover the continuum prediction of seven. Fixed normalized exchange rates do not approximate the same bulk diffusivity under this refinement. The live simulator now uses conservative transport through a calibrated diffuse-contact adapter; its geometry closure has separate validation requirements. See [equations, protocol, results, and the remaining bridge to changing geometry](docs/continuum_bridge.md).
 
-The next bridge stage now verifies diffusion on a **3D L-shaped domain with unequal compartment volumes**. It uses exact continuum cell averages, a uniform-mesh control, and a separate pulse traveling between the two arms:
+The completed irregular-domain bridge verifies diffusion on a **3D L-shaped domain with unequal compartment volumes**. It uses exact continuum cell averages, a uniform-mesh control, and a separate pulse traveling between the two arms:
 
 ```bash
 OPENBLAS_NUM_THREADS=1 python -m embryo.irregular --output outputs/irregular-bridge
@@ -514,12 +560,59 @@ The [long-time continuation](docs/shape_persistence.md#long-time-continuation) e
 
 The completed extension gives final axis ratios **1.328** (full feedback) and **1.341** (both ablations), with no positive feedback-specific excess. The full run crosses the boundary-occupancy screen at $t=124.2$, and all branches retain the smallest-cell resolution failure. Longer time has therefore exposed a domain-size limitation as well as modest shape evolution; [the continuation results](docs/shape_persistence.md#completed-continuation-results) report both.
 
-The completed [patch-and-release pilot](docs/signal_patch.md#completed-pilot-results) also shows modest deformation: patched aggregates remain near axis ratio **1.329** at the end of forcing, at both tested fate–tension strengths. The patch/uniform difference increases with coupling, partly because the stronger uniform control becomes less elongated. All patch runs retain the resolution failure; the four feedback-enabled branches also cross the boundary screen. Larger-domain and refinement checks are therefore the next priority before interpreting later shape differences.
+The completed [patch-and-release pilot](docs/signal_patch.md#completed-pilot-results) also shows modest deformation: patched aggregates remain near axis ratio **1.329** at the end of forcing, at both tested fate–tension strengths. The patch/uniform difference increases with coupling, partly because the stronger uniform control becomes less elongated. All patch runs retain the resolution failure; the four feedback-enabled branches also cross the boundary screen. These are historical fate-model results. Later larger-domain and resolution studies address selected numerical issues but do not validate activator–inhibitor-specific shape formation.
 
 The mechanics kernel now avoids discarded Laplacians and repeated occupancy calculations. It reproduces the previous kernel's tested trajectories exactly; the mature 16-cell benchmark measured **1.34× throughput (25% less runtime)**. This optimization also applies to the live dashboard after restarting its server. The [benchmark and protocol](docs/signal_patch.md#equation-preserving-kernel-optimization) document the scope and reproduction commands.
 
 
+### Current computing methodology
+
+| Path | Role | Validation scope |
+|---|---|---|
+| Python/NumPy/SciPy attribute model | CPU development and reference equations | Original scientific protocols and developmental diagnostics |
+| Native C++/OpenMP | Faster mature CPU mechanics and geometry/polarity reference | Complete tested control/pulse replays; retains the standard attribute checkpoint format |
+| Resident PyTorch + custom CUDA | Current mature direct-feedback continuations | Four full 60-unit CPU/GPU comparisons at the tested parameters, plus checks at new starting contexts |
+
+**PyTorch owns GPU arrays and matrix operations; custom CUDA computes mechanics and spatial geometry/polarity.** Spatial fields stay resident between steps. Fields, occupancy, and shell/contact products use float32; chemistry, transport, polarity, mechanical force arithmetic, and geometry accumulation use float64. Shell-squared adhesion buffers are float64. TF32 and fast-math are not enabled. Small diagnostics cross to the host routinely; complete spatial fields are copied for standard checkpoints. CPU/GPU agreement is measured with explicit tolerances, rather than assumed bitwise equality.
+
+All four [full-horizon validation replays](docs/model.md#resident-gpu-backend-validation) passed against accepted CPU trajectories. Maximum chemical log difference was 4.92e-7 and normalized response difference was below 1.57e-6; target/network recovery times were unchanged. The gated adapter independently rechecks the saved evidence, physical parameters, device/software environment, source hashes, and starting state before scientific execution. GPU support currently covers mature, nondividing, polar, direct-feedback attribute states with conservative chemistry. Developmental cleavage, cue forcing, and no-feedback/nonpolar regimes require separate GPU work and validation.
+
+A matched 120-step coupled benchmark measured **22.3× throughput** against the four-thread native CPU backend: **9.97 versus 222.37 ms/step**, including routine quality checks and sampled diagnostics. Checkpoint writes were measured separately and take about 1.4 seconds on both backends. This is a short mature-step benchmark, not a full developmental or multi-worker speedup. Earlier C/CUDA/PyTorch component measurements and execution transitions remain in [the model documentation](docs/model.md#opt-in-mechanics-optimization-and-validation).
+
+The [seed-7 moving exchange-response study](docs/cell_response_moving.md#completed-moving-exchange-response-study) completed all fifteen runs with passing numerical quality. All eight exchanged-cell comparisons were closer to the chemical donor response than the destination reference. Six [targeted timestep-refinement continuations](docs/cell_response_moving.md#targeted-exchange-response-timestep-refinement) passed, preserving recovery times and nearest-reference classification. The [current replication](docs/cell_response_moving.md#replication-across-developmental-histories) adds seeds 8 and 9: six formation/retention controls and thirty response continuations. All six new-context CPU/GPU checks passed; complete response results remain pending. These are interventions nested within developmental histories, not independent-cell replicas.
+
 ## Outputs
+
+Current research experiments retain the following evidence, with exact locations/schema specified by each protocol:
+
+| Artifact | Meaning |
+|---|---|
+| `protocol.json` | Frozen parameters, interventions, thresholds, source/input hashes, and interpretation limits |
+| `status.json` | Root/child progress and failures; completion alone does not establish a biological claim |
+| `initial_states.npz`, source checkpoint | Prepared chemistry, IDs, measured capacities, and the full physical start |
+| Per-job `history.json` | Matched-time chemistry, volumes, centers, polarity, transport, and shape diagnostics; developmental histories additionally record attributes/context |
+| Per-job `latest_state.npz` | Full standard attribute checkpoint with restart metadata, clock, lineage, and random streams |
+| Per-job `result.json` | Protocol association and numerical-quality audit |
+| `formation_comparison.json`, `comparison.json`, refinement reports | Stage-specific outcomes or aggregate assessment after required jobs finish |
+| GPU-validation and prefix reports | Independent CPU/GPU discrepancies, endpoint comparisons, and evidence hashes |
+
+Restore current checkpoints with the attribute class, preserving its constitutive law:
+
+```python
+from embryo.attribute_development import AttributeSimulation
+
+sim = AttributeSimulation.restore(
+    "outputs/exchange-response-histories/seed-8/formation/"
+    "unexchanged_control/latest_state.npz"
+)
+for _ in range(100):
+    sim.step()
+sim.checkpoint("outputs/continued-attribute.npz")
+```
+
+This illustrates a manual CPU continuation, not a replacement for a hashed scientific protocol. Recorded GPU studies use the gated runner. Restoring an attribute checkpoint into the core `Simulation` would select the wrong material-response implementation.
+
+The historical core batch CLI writes the following visualization and fate-model outputs:
 
 | File | Contents |
 |---|---|
@@ -535,7 +628,7 @@ The mechanics kernel now avoids discarded Laplacians and repeated occupancy calc
 | `final_state.npz` | Full final fields and RNG states for continuation |
 | `diagnostics.json` | Run timing and numerical diagnostics |
 
-The sampled trajectory is for visualization, not full-field reconstruction at earlier times. Current (schema 3) checkpoints can be continued exactly. Earlier model checkpoints are rejected rather than silently resumed with different dynamics:
+The sampled trajectory is for visualization, not full-field reconstruction at earlier times. Core schema-3 checkpoints can be continued with their original class; older unsupported schemas are rejected. For a historical core checkpoint only:
 
 ```python
 from embryo import Simulation
@@ -547,104 +640,77 @@ sim.checkpoint("outputs/continued.npz")
 
 ## What is implemented
 
-- Freely deforming cell interfaces with soft volume constraints and repulsion.
-- Interface attraction, optionally dependent on fate similarity.
-- Shape-aligned division, progressive equatorial constriction, and mechanically gated abscission.
-- Exact final occupancy partitioning, conserved mother volume during cytokinesis, and lineage records.
-- Gierer–Meinhardt concentrations with conservative contact exchange, mechanical dilution, and amount-preserving cleavage.
-- Exact discrete-mode linear stability, spectral gaps, and cleavage mode-transfer diagnostics.
-- A downstream signed fate switch driven by activator activity.
-- Apical–basal polarity and directional cortical tension with conservative spatial fluxes.
-- Fate-dependent effective surface tension.
-- Numerical diagnostics, paired ablations, and reproducible checkpoints.
+- Deformable 3D cell phase fields, soft volume constraints, exclusion, and interface attraction.
+- Shape-aligned division, progressive equatorial constriction, mechanically gated abscission, conserved occupancy partitioning, and lineage tracking on CPU.
+- Gierer–Meinhardt reactions, conservative geometry-dependent transport, mechanical dilution, and amount-balanced chemical partitioning.
+- Finite-graph stability and cleavage spectral-transfer diagnostics; orientation averaging for polarity remains separate from chemical transport.
+- Continuous activity-dependent material response and apical–basal polarity, without fate drift or A/B classification in the attribute model.
+- Developmental ablations, frozen-context recovery/bistability, state exchange, matched pulse-response assays, and moving continuations.
+- Opt-in native CPU acceleration and a validation-gated resident GPU backend for the supported mature regime.
+- Per-step numerical audits, hashed protocols/evidence, observation histories, and resumable checkpoints.
 
-**The default target is 16 cells on a modest grid.** Resolve and validate this before scaling to the planned 32–64-cell model. Volume constraints are soft between divisions; inspect the measured errors. Surface/interface widths and small daughter cells need resolution studies.
-
-A/B labels are instantaneous activity thresholds. They do **not** establish stable commitment. There is no tensile-stress-based spindle rule, lumen, growth between divisions, extracellular morphogen field, or calibrated gene network yet. Conservative exchange uses an approximate diffuse-contact area closure; continuum consistency on arbitrary deformed cell geometries remains unverified. Equatorial contraction is a prescribed ring surrogate, not a resolved actomyosin network. Elongation following cleavage is not proof of a spontaneously selected developmental axis.
+The historical core/dashboard additionally retains its supplied fate switch for reproducing earlier studies. Current research remains capped at sixteen chemically well-mixed cells. A finer shape grid does not add chemical compartments or establish a many-cell continuum limit.
 
 ## What our current model and results can explain, and what remains missing
 
-**The model currently provides conditional explanations of particular mechanisms of organization, rather than a validated account of embryogenesis as a whole.** Its strongest result concerns signal amplification on a fixed cell-contact network. Cell identity and shape require separate evidence: a signaling pattern, two fate labels, and an elongated aggregate are not interchangeable outcomes.
+**The strongest current explanation is conditional collective chemical organization, with distinct mechanisms for formation and maintenance.** A chemical pattern, a persistent cell-associated state, a transferred response, and a developmental shape axis are different outcomes.
 
-| Question | What the current evidence supports | What it does not yet establish |
+| Question | Current evidence | Limit of the claim |
 |---|---|---|
-| Can small signal differences become persistent patterns? | On one resolved frozen embryo graph, the full activator–inhibitor loop sustains contrast in 20/20 chemical perturbation trials. Removing self-activation, transport, or differential diffusion suppresses persistent contrast. Finite-graph spectra explain which small perturbations can initially grow. | Robust patterning across independently developed embryos, arbitrary moving geometries, or biologically calibrated parameters. The 20 trials share one geometry. |
-| Can initially similar cells acquire different identities? | Activator differences can bias the downstream switch toward A or B. Stable signaling ablations still yield both labels in 20/20 trials, whereas removing signal-to-fate forcing leaves the noiseless switch at zero. | That sustained activator–inhibitor patterning is necessary for differentiation. The two stable fate states are built into the switch; their biological meaning and robustness in the coupled moving embryo remain untested. Withdrawal, reversal, and noise responses of the isolated switch are now quantified separately. |
-| Can local interactions produce changing, asymmetric shapes? | Deformable interfaces, contact interactions, polarity, and progressive cleavage generate changing 3D geometry without prescribing an aggregate outline. Earlier runs retain elongation and memory of the first-cleavage axis. | That the chemical loop selects a new global axis or causes additional persistent elongation. Earlier shape controls did not demonstrate that effect and had numerical limitations; the completed conservative moving controls also fail the predeclared feedback-specific elongation tests, while passing numerical-quality screens. |
+| How does moving mechanics affect formation? | The matched component study finds suppression with polarity-only or full mechanics; tension plus adhesion without polar mechanics restores formation. Corresponding contact spectra move toward or away from uniform-state instability. | Necessity/sufficiency for suppression is demonstrated on one starting geometry, perturbation, coefficient set, and horizon. Polarity's chemical modulation remains active; geometry-only causation has not been isolated. |
+| Can formed chemical differences survive movement? | Actual no-feedback developmental patterns survive feedback-on and feedback-off continuations from t=90 to 150 in all three planned histories, with the seed-7 timestep-halving check passing. | Finite-horizon maintenance after the sixteen-cell cap, not inherited identity or indefinite stability of the full moving system. |
+| Are uniform and patterned states compatible with the same geometry? | Frozen-endpoint assays support locally stable uniform and patterned chemical equilibria on all six endpoint graphs from the three histories. | Chemical bistability conditional on a frozen graph, not a stability proof for mechanics and chemistry together. |
+| Does chemical history affect subsequent behavior? | All 48 frozen exchanged-cell response comparisons and all eight seed-7 moving comparisons are nearer the untouched donor response. Fresh and pre-relaxed exchanges reorganize the network. The low-state recipient resembles its donor more closely than the high-state recipient. | These comparisons are nested interventions. Donor-nearer behavior need not mean donor equivalence, an unchanged transferred phenotype, or autonomy. Additional moving-history responses remain pending. |
+| Can the system support differences without a clamped environment? | The separate finite, evolving-reservoir assay supports stable differences in selected exchange regimes with conservative cell–reservoir transfer. | That assay is not the live spatial embryo; its reservoir is not part of the current 3D/GPU state. Reactions still produce and remove chemicals. |
+| Does the chemical loop explain a new shape axis? | Cleavage, packing, and polarity produce changing asymmetric geometry. Tested controls have not demonstrated additional persistent activator–inhibitor-specific elongation. | A spontaneously selected chemical shape axis, folding, or cavitation has not been established. |
 
-The [joint signal/fate validation](docs/joint_fate.md) strengthens the first two conclusions: against a tightened independent ODE reference, the maximum continuous-fate error is $6.63\times10^{-5}$ at the tested production step, with unchanged cell-wise final labels. This resolves the tested frozen-geometry integration sensitivity, not the accuracy of the entire moving developmental trajectory.
+See [completed mechanism and survival assessment](docs/feedback_completed_assessment.md), [frozen-endpoint replication](docs/feedback_endpoint_bistability.md), [response assays](docs/cell_response.md), and [moving responses](docs/cell_response_moving.md) for denominators, protocols, and numerical evidence.
 
-In the [current moving pilot](docs/moving_causal.md), the full-feedback branch has completed $t=18$–78. It ends with axis ratio 1.3285 and 6 A / 10 B cells, but its cell-to-cell activator standard deviation is only 0.0135–0.0244 over the declared late window, below the persistent-contrast criterion of 0.1. All three controls are complete. Full feedback has a lower late mean axis ratio than no mechanical feedback (1.32663 versus 1.32975) and no self-activation (1.32691); it does not achieve the required positive 0.05 excess. This demonstrates why a frozen-graph instability, differentiated labels, and an elongated shape cannot alone establish chemically driven organization under movement; the completed shape comparison does not support additional feedback-specific elongation in this pilot.
+The live operator conserves volume-weighted amounts under exchange and mechanical dilution. Manufactured regular/irregular transport benchmarks show approximately second-order convergence in their specified geometries. However, the overlap-to-area/path-length approximation fails general curved, separated, and nonorthogonal-contact closure screens. Conservative bookkeeping does not establish a continuum diffusion PDE on arbitrary embryo contacts. Historical full-developmental refinement also fails combined acceptance criteria; later response/backend checks do not retrospectively validate those trajectories. [Transport limitations](docs/geometric_transport.md), [developmental refinement](docs/development_refinement.md).
 
-Conservative transport explains how exchange and volume changes preserve regulator amount. Manufactured benchmarks establish convergence in their specified geometries. However, the live overlap-to-area approximation fails general-geometry closure screens, and the completed [zygote-to-t=90 refinement study](docs/development_refinement.md) does not pass its combined acceptance criteria: spatial refinement disagrees on signaling, while time refinement disagrees on shape and fate fractions. Numerical conservation and successful component tests therefore do not yet establish a converged developmental prediction.
+Cell identity is evaluated operationally through continuous attributes, persistence, perturbation responses, relocation, and dependence on surroundings. There is no imposed population classifier. Cell-autonomous memory, inheritance through later divisions, distinct biological function, and calibration to measured lineages remain missing. These require further experiments and ultimately biological evidence.
 
-What remains missing is both numerical and biological:
-
-- **A validated causal link to shape:** refine the completed moving controls' coupled time integration, and repeat across independent developmental geometries and perturbation seeds. Test spatial organization and axis selection alongside elongation.
-- **Reliable full-development numerics:** diagnose the observed refinement failures and validate transport on irregular, changing contacts. Successful regular-mesh prototypes are not yet a validated replacement for the live geometric approximation.
-- **Evidence for stable cell identity:** extend the completed isolated-switch withdrawal, reversal, and noise assays to the coupled developing embryo, and distinguish fate memory from transient threshold crossings. A/B are generic model states, not identified lineages.
-- **Additional developmental mechanisms:** growth between divisions, resolved intracellular/extracellular signaling, tissue fluid mechanics, and a lumen are absent. Cavitation would require an explicit account of fluid accumulation, osmotic/active transport, sealing, and pressure; an empty gap between cells would not demonstrate that mechanism.
-- **Biological calibration and prediction:** relate model scales and coefficients to measurements, specify a biological system, and test predictions against independent observations and perturbations.
-
-Order here means amplification and organization of small differences in an already structured dynamical system. Cells, interactions, feedback laws, fate bistability, and division rules are supplied assumptions. The project can test how much organization follows from those assumptions and which couplings are necessary; it does not currently derive the origin of those rules or explain the emergence of life itself.
-
-The [signal-withdrawal experiment](docs/fate_memory.md) now quantifies this built-in fate memory. On the same frozen geometry with twenty paired perturbation seeds, even 0.6 time units of activator input lead to both labels in 20/20 trials by time 120 under the bistable law; no cells were labeled when that short input ended. A matched non-bistable relaxing law returns all cells to the uncommitted state after every tested withdrawal duration. All numerical checks pass (maximum fate timestep discrepancy 0.0009524). This supports transient signal selection followed by intrinsic switch memory, not a requirement for sustained Turing patterns or proof of irreversible biological commitment.
-
-The subsequent [fate-reversal and noise assay](docs/fate_robustness.md) characterizes the isolated switch starting at its ideal equilibria. Opposing bias above the analytic threshold 0.3849 can reverse fate with a sufficiently long pulse; tested switching durations are 24, 12, and 3 for biases 0.4, 0.5, and 0.75. At time 60, additive-noise amplitudes 0.3 and 0.4 produce opposite labels in 42/512 and 167/512 paths. All numerical checks pass. Memory is persistent but reversible in this assumed equation; robustness of the coupled developmental system remains untested.
+Order here means amplification and organization of differences in a structured mathematical system. Cells, regulatory laws, material couplings, and division rules are supplied assumptions. The project tests what follows from those assumptions; it does not derive the origin of life, metabolism, or the feedback laws themselves.
 
 ## Tests and next steps
 
 ```bash
-OPENBLAS_NUM_THREADS=1 python -m pytest -q
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q
+
+# Opt-in GPU checks require the compatible CUDA environment:
+EMBRYO_CUDA_TESTS=1 CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 \
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q \
+  tests/test_gpu_backend.py tests/test_gpu_response_runner.py \
+  tests/test_validate_gpu_backend.py tests/test_exchange_response_histories.py
 ```
 
-Tests check shape-oriented spindles, gradual furrowing, volume conservation, daughter connectivity, contact symmetry, single-cell isotropy, exact continuation through active cytokinesis, cell-cap reservations, controls, and a basic time-refinement check. They are software/numerical checks, not biological validation.
+Software tests, numerical convergence, backend equivalence, and biological mechanism tests answer different questions. A faster backend is admitted only after whole-trajectory agreement, response/recovery comparisons, quality screens, and source/evidence verification; a backend pass is not biological validation.
 
-The graph preflight is in `outputs/graph-analysis`; the coupled example is `outputs/graph-polarity/viewer.html`, with a matched no-polarity control in `outputs/graph-no-polarity`. Earlier outputs are historical models. In the initial time-15 coupled example, signals remain small and all 16 cells remain uncommitted: a positive frozen-graph growth rate does not guarantee a mature pattern on the available developmental timescale.
+The immediate sequence is:
 
-Read [the cytokinesis update and validation](docs/cytokinesis.md), [the equations and assumptions](docs/model.md), [the staged implementation plan](docs/plan.md), and [the initial numerical results](docs/results.md).
+1. Finish and assess the moving-history replication, keeping formation/reorganization and response-transfer outcomes separate for seeds 8 and 9 and the seed-7 reference.
+2. Refine exchange formation (t=150–210) and selected new-history responses while preserving the exact physical starts and intervention definitions. The existing seed-7 negative-pulse check does not cover every stage/history. A changed GPU timestep requires a corresponding acceptance gate.
+3. Test dependence on neighbors/context and whether recovery or response survives stronger interventions and subsequent divisions. Do not replace these tests with threshold labels.
+4. Resolve geometric transport closure and full attribute-development spatial/time convergence before extending to substantially more cells or claiming a tissue continuum.
+5. Isolate the chemical modulation of polarity and test shape-specific causality with matched controls; calibrate any biological interpretation independently.
+
+Current protocols and decision rules are in [the implementation plan](docs/plan.md). Research sources and outputs are hashed before launch; numerical failures and uninformative reference pairs remain explicit outcomes. The root/child `status.json` files give live progress. Documentation describes the protocol; a complete aggregate result is produced only after all required trajectories pass their quality checks.
+
+## Documentation guide
+
+| Topic | Document |
+|---|---|
+| Equations, parameter meanings, legacy alternatives, and backend method | [Model](docs/model.md) |
+| Fate-free attributes, direct constitutive coupling, and developmental controls | [Attribute development](docs/attribute_development.md) |
+| Conservative amounts, dilution, discrete stability, and closure limits | [Live transport](docs/live_transport.md) |
+| Formation versus maintenance and polarity controls | [Completed feedback assessment](docs/feedback_completed_assessment.md), [polarity necessity control](docs/feedback_polarity_ablation.md) |
+| Recovery and environment-supported memory | [Persistence](docs/attribute_persistence.md), [common environment](docs/attribute_common_environment.md), [finite reservoir](docs/attribute_finite_reservoir.md) |
+| Frozen and moving exchange/response methodology | [Cell response](docs/cell_response.md), [moving response](docs/cell_response_moving.md) |
+| Cleavage, shape, and numerical refinement | [Cytokinesis](docs/cytokinesis.md), [shape persistence](docs/shape_persistence.md), [developmental refinement](docs/development_refinement.md) |
+| Discrete-to-continuum evidence and unresolved geometry | [Continuum bridge](docs/continuum_bridge.md), [geometric transport](docs/geometric_transport.md), [skew-boundary correction](docs/skew_boundary_correction.md) |
+| Historical visual interface and earliest results | [Dashboard](docs/dashboard.md), [historical results](docs/results.md) |
+| Priorities and acceptance criteria | [Plan](docs/plan.md) |
 
 ## Manuscript draft
 
-The manuscript sources and compiled PDFs are kept locally and excluded from this repository; the links in this section are for the local workspace.
-
-The [O1-focused manuscript](manuscript/introduction_methods.md) now describes the conservative, attribute-based model without a prescribed fate switch. It includes completed developmental, moving-feedback survival, and frozen-endpoint attractor results, with an explicit distinction between collective chemical differentiation and established cell identity. Long-run timestep refinement and developmental replication remain pending. Read the [compiled PDF](output/pdf/embryogenesis_o1.pdf) or the [manuscript build and evidence notes](manuscript/README.md). This is a research draft, not a submitted paper.
-
-The subsequent [frozen contact-cutoff screen](docs/contact_sensitivity.md) preserves connectivity and unstable-mode counts across all seven tested geometries, but fails its quantitative spectral-growth sensitivity check at four developmental times. The [paired evolving-geometry experiment](docs/cutoff_dynamics.md) completed t=30 to 90 with all five sensitivity checks passing while polarity filtering was fixed at 0.02. Identity labels match throughout; maximum activator RMS difference is 0.00203 and maximum relative axis-ratio difference is 1.19e-6. Default trajectories retain the historical shared-cutoff behavior; the known cell-resolution shortfall remains explicit.
-
-The next [controlled small-cell cleavage screen](docs/cleavage_resolution.md) compares three grids, three time steps, and axial/oblique division directions. It tests abscission conservation, daughter connectivity, event timing, and shape before full developmental refinement.
-
-The [full developmental refinement study](docs/development_refinement.md) has completed all five fresh zygote-to-t=90 cases: grids 56³/72³/88³ at fixed time step, plus an independent time-step sweep on 72³. The combined acceptance result is **FAIL**: spatial signaling comparisons and temporal shape/fate comparisons exceed their declared limits. Passing component checks do not establish developmental convergence. The coarse 56³ reference also fails the smallest-cell resolution screen.
-
-The cleavage measurement issue is [resolved by calibrated native-phase reconstruction](docs/cleavage_measurement.md): reconstruct phi before applying occupancy, giving at most 0.1503% cubic error across analytic holdouts (limit 0.25%). All 10 revised checks pass; axial and oblique finest-pair evolved differences stay below 0.56%. Original results and ongoing developmental simulations remain unchanged.
-
-The [geometric transport validation](docs/geometric_transport.md) exposes limits beyond numerical conservation: curved-interface area bias reaches 5.80% at width/radius 0.3, a one-width gap retains 82% of planar overlap, and nonorthogonal contacts fail a linear-field flux test. General-geometry closure checks fail despite accurate quadrature and conservation. The current operator is therefore not validated as continuum bulk diffusion on arbitrary embryo geometries; the ongoing refinement runs remain tests of its existing approximation.
-
-The [face-normal-aware skew-mesh prototype](docs/skew_flux.md) now passes linear-flux, conservation, stability, and approximately second-order refinement checks. At shear 1, finest error falls from 2.31% with A/ell to 0.0140%. Its positive-pulse test fails (minimum −0.00443 under exact discrete evolution), so it remains separate from live signaling. A positivity-preserving correction is the next transport task.
-
-A [positive wider-stencil skew-mesh prototype](docs/positive_skew_flux.md) now passes all 11 checks: nonnegative rates and pulse evolution, exact affine face fluxes, mass conservation, and approximately second-order space/time convergence. Worst finest-grid error is 0.0030%. It remains separate from the live model; skewed no-flux boundaries and irregular geometry are next.
-
-The [reflecting-wall skew-mesh test](docs/skew_boundary.md) passes 8/9 checks: positivity, conservation, and finest errors below 0.1% hold, but intermediate-shear refinement orders of 1.58 and 1.52 miss the 1.8 criterion. Boundary accuracy must be improved or independently resolved before irregular-geometry/live integration.
-
-A [derived positive wall-conductance correction](docs/skew_boundary_correction.md) resolves the tested boundary-order failure: all nine checks pass for two independent wall families, with 64³ confirmation orders near 1.997 and errors below 0.0052%. Conservation and positivity remain intact. Nonuniform capacities and graded geometry are next; live transport is unchanged.
-
-The first [causal activator–inhibitor screen](docs/causal_signaling.md) is complete on one frozen resolved embryo graph with 20 paired chemical perturbation seeds. Full feedback sustains signal contrast in 20/20 trials; removing self-activation, transport, or differential diffusion suppresses it. Those controls still produce both fate labels, exposing the separate bistable fate switch as an alternative mechanism. Removing signal-to-fate coupling prevents commitment. The original finer-time checks reproduced labels but failed continuous-fate tolerances. A subsequent [joint signal/fate integrator](docs/joint_fate.md) resolves that sensitivity against a tightened independent ODE reference: maximum fate error is 6.63e-5 at dt=0.0075, below the unchanged 0.05 limit. The corrected trajectories retain the same scientific distinction between persistent patterns and fate labels. Four matched [moving-geometry feedback controls](docs/moving_causal.md) have completed t=18 to t=78. All quality checks pass, but full feedback does not exceed the no-feedback or no-self-activation shape controls, and its persistent-signal check fails. This is not yet a developmental ensemble.
-
-
-The [geometry replay diagnostic](docs/geometry_replay.md) now tests frozen transport, replayed transport/volumes, omitted dilution, and frozen transport with volume forcing. The six-unit snapshot pilot passes chemical step refinement but fails fidelity to the live trajectory and snapshot-spacing checks; causal attribution is withheld. The completed every-step replay passes all checkpoint, timestep, sampling, and source-fidelity checks. On the recorded older-model history, changing transport keeps contrast small even without explicit dilution; frozen transport with recorded volume forcing retains strong contrast. This supports changing transport as the principal tested contributor in that history, not a universal conclusion for the new attribute-based branch.
-
-The [completed attribute-development experiment](docs/attribute_development.md#completed-developmental-assessment) produces continuous attributes without a prescribed fate switch. Both fresh-zygote branches finish t=90 and pass the declared quality checks. Late log-activator dispersion is 0.05539 with direct mechanical feedback versus 0.98610 without it; aggregate axis ratios are almost identical (1.33328 versus 1.33299). In the [chemical recovery assay](docs/attribute_persistence.md), freezing the final geometry makes the direct branch relax to uniform activity, while the no-feedback branch retains a stable pattern. Both recover from all forty tested small perturbations. These results support a geometry-dependent chemical pattern, not yet persistent cell identities independent of context.
-
-The [chemical-state exchange assay](docs/attribute_exchange.md) now tests all 120 cell pairs on the patterned branch's frozen geometry. Of 96 exchanges with appreciable chemical contrast, 48 return to the original pattern and 48 reorganize; the 60 pairs with contrasting geometric contexts split 30/30. No pair retains the transferred concentrations within the declared tolerance, but reorganized pairs retain reversed activator ordering. Seeded uniform resets also select multiple locally stable patterns on the same graph. This supports organization influenced by both environment and chemical history, without yet establishing cell-intrinsic identities.
-
-The [common-environment assay](docs/attribute_common_environment.md) separates autonomous chemical persistence from environment-supported memory. All tested chemical states converge to (1,1) in isolation. Under each of six identical-reservoir conditions, two stable chemical states instead arise from the reaction–exchange equations without a separate fate switch. Analytical equilibria and refined numerical checks support this result. It establishes conditional chemical bistability, not yet cell identity; the subsequent finite-reservoir experiment tests dependence on prescribed environmental forcing.
-
-The [finite-reservoir experiment](docs/attribute_finite_reservoir.md) now lets the shared environment respond to cell uptake and release with amount-conservative exchange. Weak and intermediate exchange preserve established chemical patterns but suppress small differences near uniformity. Strong exchange generates stable differences in all twenty perturbed formation trials across four reservoir sizes, confirmed with independent integration. Seven of eight perturbed strong-exchange release tests also settle into stable patterns; the remaining large-reservoir case loses contrast and remains nonstationary. This supports self-maintained organization in a coupled chemical system without a clamped reservoir, but does not yet demonstrate spatial patterning or cell identity in the moving 3D model.
-
-The [feedback-mechanism investigation](docs/feedback_mechanism.md) now explains the suppression at the transport-spectrum level. The direct branch loses its last unstable sampled mode between t=60 and 66, while the no-feedback graph retains one at t=90. Direct conductance is approximately 21% lower; reducing conductance scale or equalizing positive edge weights separately stabilizes the no-feedback endpoint graph. Matched mechanical interventions show that adhesion and polarity initially suppress spectral growth, while tension initially promotes it and becomes suppressive over a short continuation. Increasing joint coupling through the tested short screen is more suppressive, with no observed amplification window. The high-strength extension uses an explicitly different positive constitutive law; long developmental component ablations remain necessary. A selected timestep-halving check passes.
-
-The [long matched feedback-component study](docs/feedback_long.md) is now running: baseline, tension-only, adhesion-only, polarity-only, and full coupling, each tested with near-uniform chemistry and an established chemical pattern on the same resolved sixteen-cell geometry. The ten continuations cover t=18–78 and will compare late contrast, shape, and transport spectra. Starting-state validation, exact checkpoint replay tests, and the ten-arm smoke workflow pass. Production outcomes remain pending; this is a matched mature-geometry experiment, not yet a full developmental ablation ensemble.
-
-The [completed developmental t=90 feedback-switch survival test](docs/feedback_survival.md#completed-moving-geometry-survival-assessment) shows that the actual developed pattern survives to t=150 with chemistry and mechanics co-evolving. Late minimum log-activator SD is 1.14762 with feedback switched on versus 1.08683 with feedback kept off; initial-state correlations remain above 0.9989. Both pass quality checks even though both final graphs stabilize uniform chemistry. The [endpoint attractor-coexistence test](docs/feedback_endpoint_bistability.md) supports locally stable uniform and patterned chemical states on each graph, with perturbation recovery and independent numerical checks. Thus feedback can suppress initiation without erasing established organization; full moving-system stability, long-run refinement, and developmental replication remain open.
-
-The [moving-survival validation study](docs/feedback_survival_validation.md) is now running: the exact seed-7 time-90 checkpoint is continued to time 150 with timestep halved from 0.0075 to 0.00375, and seeds 8 and 9 are independently developed from zygotes before paired feedback-on/off continuations. Tolerances and seeds are fixed in advance; histories without an initial pattern remain explicitly reported. Results are pending. This separates temporal sensitivity from developmental variation without claiming spatial convergence or established cell identities.
+The [O1-focused manuscript](manuscript/introduction_methods.md), [compiled PDF](output/pdf/embryogenesis_o1.pdf), and [build/evidence notes](manuscript/README.md) are research drafts, not a submitted paper. Use the model and assay documents above for the latest methodology and execution status; manuscript claims must be tied to the specific completed evidence included in each draft.

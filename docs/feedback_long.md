@@ -64,11 +64,11 @@ This experiment can attribute differences among matched mature-geometry trajecto
 The two-step 72³ smoke run completed all ten arms and passed every numerical quality check, including final comparison and checkpoint export. Its tiny time horizon verifies workflow only and is not evidence of successful formation or persistence. Production runs use the full predeclared sixty-unit horizon.
 
 
-The [t=90 feedback-switch experiment](feedback_survival.md) separately addresses survival of the actual developmentally produced pattern, without chemical preconditioning. It runs alongside this component study and directly tests whether turning feedback on destroys an existing pattern while geometry moves.
+The completed [t=90 feedback-switch experiment](feedback_survival.md) separately addresses survival of the actual developmentally produced pattern, without chemical preconditioning. Its [timestep/history follow-up](feedback_survival_validation.md) supports maintenance across three planned histories, a different question from component-specific formation on this single mature geometry.
 
 ## Completed assessment
 
-All five preconditioned persistence arms retain contrast over time 63–78. Formation passes with baseline, tension-only, and adhesion-only mechanics, but fails with polarity-only and full coupling. Polarity-only therefore reproduces the qualitative formation suppression on this matched initial geometry; the [tension-plus-adhesion control](feedback_polarity_ablation.md) is now running to test whether polarity mechanics is necessary in the full combination. These are one-geometry intervention results, not fresh developmental replicates.
+All five preconditioned persistence arms retain contrast over time 63–78. Formation passes with baseline, tension-only, and adhesion-only mechanics, but fails with polarity-only and full coupling. Polarity-only therefore reproduces the qualitative formation suppression on this matched initial geometry; the completed [tension-plus-adhesion control](feedback_polarity_ablation.md) restores formation when polarity mechanics is removed, supporting necessity in this tested combination. These are one-geometry intervention results, not fresh developmental replicates.
 
 | Mechanical arm | Formation | Persistence |
 |---|---:|---:|
@@ -78,4 +78,4 @@ All five preconditioned persistence arms retain contrast over time 63–78. Form
 | polarity | 0.02212 | 1.20381 |
 | full | 0.02243 | 1.21569 |
 
-See the [28 September completed-component and survival reassessment](feedback_reassessment_2026-09-28.md) for numerical values, interpretation, independent seed-8 survival, and remaining limitations.
+See the [completed feedback assessment](feedback_completed_assessment.md) for the combined control, all three survival histories, timestep checks, and follow-up endpoint assays. The [28 September reassessment](feedback_reassessment_2026-09-28.md) remains an earlier evidence snapshot. Chemical modulation of polarity is active in all component arms, so these results do not establish independence from chemical regulation. Long-run refinement and independent-geometry replication of the component comparison remain open.
