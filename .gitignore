@@ -5,7 +5,10 @@ __pycache__/
 outputs/
 
 
-# Manuscript sources and compiled manuscript are kept local.
-/manuscript/
+# Manuscript sources and compiled manuscript, including archive copies, stay local.
+manuscript/
 /output/pdf/embryogenesis_introduction_methods.pdf
 /output/pdf/embryogenesis_o1.pdf
+
+# Local document-rendering scratch files.
+/tmp/

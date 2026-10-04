@@ -1,0 +1,17 @@
+{
+  "archived_utc": "2026-10-04T18:48:10.942517+00:00",
+  "purpose": "Preserve original ledger decisions and old-method assessments before claim-level carry audit. No scientific outputs changed.",
+  "files_sha256": {
+    "docs/results_ledger.json": "141c5655995c7bc4747c1535786bff56fd16b63d4a617a9496765dbe20b9a32d",
+    "docs/results_ledger.md": "53744feb596c49251b223ca4d9c944cbf38b86ef23999d4cf1c7ba3385c222ec",
+    "embryo/results_ledger.py": "748a7b3a6ad58c4f6d79d8bda77617bdc22303f0b3d0d1d340d1129fe9aa1e4c",
+    "README.md": "6cde5436dfbe70603debcd570473deb908aaeb835662a8977b6b809a7a544655",
+    "docs/plan.md": "8e91b7ae6c3f3429adc642d2f7b948b787da6a42fd292d379e87830e5f72b313",
+    "docs/parameter_robustness_assessment.md": "5ded3677876cd2e67af319384cefb376b422148abfaec1b6b755194cbf1ceade",
+    "docs/polarity_robustness_assessment.md": "0a5eb43e897cbf5103fc7e18acb66dda05030f308ce4d7251c5953764673eb64",
+    "docs/polarity_refinement_assessment.md": "5856f89babb39c67d65a6b8a69c8d1d4b3054fa442701383813acf4f89eeccd9",
+    "manuscript/evidence_manifest.json": "b980544d8ef0b3567aceb3cae570242593b8bdad91c7552b4544c5f41e2c6734",
+    "manuscript/README.md": "ab20d72a1c6475b428474bfe1a4df914e8a484e9f23c6b5459bb9d31dccb8247",
+    "manuscript/snapshot_evidence.py": "3d2d483f0a89d261cb38315693e3008831a9af4d22089ee47eca005ccb002c85"
+  }
+}

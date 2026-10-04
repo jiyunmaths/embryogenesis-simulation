@@ -1,0 +1,134 @@
+{
+  "verified": true,
+  "verified_utc": "2026-10-04T15:48:52.282151+00:00",
+  "independent_histories": 1,
+  "new_histories": 0,
+  "moving_trajectories": 2,
+  "moving_observations": 3202,
+  "frozen_endpoint_graphs": 2,
+  "frozen_trials": 10,
+  "frozen_observations": 1210,
+  "original_outputs_unchanged": true,
+  "source_and_input_hashes_verified": true,
+  "new_full_window_refinement_pass": true,
+  "original_no_carry_refinement_pass": false,
+  "chemical_discrepancy_improvement": 182.93793627235144,
+  "raw_chemical_profiles": {
+    "carry": {
+      "max_log_difference": 0.00020500448762656042,
+      "peak_elapsed": 117.89999999999999,
+      "chemical": "activator",
+      "cell_id": 27,
+      "endpoint_log_difference": 2.1238837179549693e-07
+    },
+    "no_carry": {
+      "max_log_difference": 0.03750309789297377,
+      "peak_elapsed": 117.75,
+      "chemical": "activator",
+      "cell_id": 27,
+      "endpoint_log_difference": 0.0003870402683813963
+    }
+  },
+  "endpoints": [
+    {
+      "level": "fine",
+      "phase": "coexistence",
+      "uniform_growth": -0.046029574453348765,
+      "pattern_growth": -0.7003075123231399,
+      "max_solver_log_error": 2.7232194281068083e-10,
+      "max_stationarity_rhs": 3.168534612463247e-10
+    },
+    {
+      "level": "finer",
+      "phase": "coexistence",
+      "uniform_growth": -0.04602930020888163,
+      "pattern_growth": -0.7003075177725429,
+      "max_solver_log_error": 3.085068867512849e-10,
+      "max_stationarity_rhs": 3.1685687185145644e-10
+    }
+  ],
+  "same_dt_interventions": {
+    "fine": {
+      "passed": false,
+      "errors": {
+        "chemical_log_max": 0.06656637653640507,
+        "polarity_abs_max": 0.0002587855298764371,
+        "relative_axis_max": 1.3054579915294795e-05,
+        "relative_volume_max": 2.3795659045866557e-05,
+        "relative_transport_max": 0.00046384376526333433,
+        "growth_abs_max": 0.00026610232590495997
+      },
+      "crossing_times": [
+        137.2074813521939,
+        136.96753235088906
+      ],
+      "crossing_time_error": 0.23994900130483643,
+      "onset_times": [
+        75.32093312723602,
+        75.41626748614841
+      ],
+      "onset_time_error": 0.09533435891239606,
+      "persistent_contrast": [
+        true,
+        true
+      ],
+      "horizon": 240.0,
+      "interpretation": "Same-state timestep halving in prespecified near-uniform history 9. Instantaneous modal growth is a frozen-snapshot diagnostic, not full moving-system stability."
+    },
+    "finer": {
+      "passed": false,
+      "errors": {
+        "chemical_log_max": 0.10427397553912383,
+        "polarity_abs_max": 0.00040650549917355984,
+        "relative_axis_max": 2.5503595673326274e-05,
+        "relative_volume_max": 3.7314346343686466e-05,
+        "relative_transport_max": 0.0007241217738999805,
+        "growth_abs_max": 0.0004125645587587101
+      },
+      "crossing_times": [
+        137.34951619075164,
+        136.96800119587343
+      ],
+      "crossing_time_error": 0.3815149948782164,
+      "onset_times": [
+        75.2649608312122,
+        75.41671647977408
+      ],
+      "onset_time_error": 0.15175564856187407,
+      "persistent_contrast": [
+        true,
+        true
+      ],
+      "horizon": 240.0,
+      "interpretation": "Same-state timestep halving in prespecified near-uniform history 9. Instantaneous modal growth is a frozen-snapshot diagnostic, not full moving-system stability."
+    }
+  },
+  "evidence_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/protocol.json": "3b4b684e5411b47fb5e72988841d62afdcab5b706c6f2a8379b4d627d2f5c92c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/status.json": "5690d2a75f4f5d44d6e4f0591b95555e717cbd67a447d4ac6bed41e6f16a2d6e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/summary.json": "4edc2324f5c5d5c37ffbabaaa558d1fdecfc0d0cc83cd3ab7d7843d582b4cddd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/transfer-verification.json": "e23e63ac9594d175bc4a6279902a1ba359a11673a8b08a0af2cc0c1fa9bed302",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/restart-gate.json": "ddc9b3a1469a3e70f2934cbedf28da48ed44e07d579503aa1bcaa25184f1ed40",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/result.json": "130a98c38a22fd08f19fca31cab99b85489a9fc9e4e61e9907ecc9cfa1556b2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/history.json": "56c28f13900b8d0ad6e1459f26f5a968628584141089f6d162b66a2bda5f9968",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/latest_state.npz": "152fa2d7361a62bd0e1adbb4902dc825634ce259817953ca1df1648ae8a48679",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/source.npz": "46568b1331e64d7e0d71b83a30fd5cc02e78674cd9c929ee26889bdea8e7f88e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/protocol.json": "b89e676a43de312c66feaaaf918319e64fb3e13878a660f24760b822dd3315c9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/assay/result.json": "e8ba82cf4f89b10fb0e93976e743197dedbee3c5ae45a30eae3689ad5bd3b5ac",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/assay/paths.npz": "5265fc7af7abd8aae1a745d9fad2113239d8ec77341d9978871bd8e8fdcc62c9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/assay/status.json": "198705d4b7e48555d0739d497437ea1bf119861847453594e4b249eb42aaeb3e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/result.json": "390384748c4df745731160837328e82f7242622380dcd41da4bf8f53a3d71e2e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/history.json": "77d8a368db17ad67a405a6a51bb648e1bc2e4f8f54cad9522c63bc2bad68ec07",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/latest_state.npz": "b8b616b90924f2c3c3df5d856f62efae1715e4636987e853a5758aca3825ebb6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/source.npz": "446af3717f188a3f5b15b587c7e20b57c3542d689a28d8f4ba7584f4993f5134",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/protocol.json": "1403aac15b16e562774893aa68a72c3c94e2416efdf464f92dcdef463870cfbd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/assay/result.json": "f1fd9f192fe56f2e9929c37db05a887fdbe3cd3a2008f76ac4f2a319c3a83f59",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/assay/paths.npz": "d8e0416c48178064caa9ea6c8e9abbaccd48b76aca5a375ad0fca433c1476535",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/assay/status.json": "198705d4b7e48555d0739d497437ea1bf119861847453594e4b249eb42aaeb3e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_fine_polarity-0_uniform/history.json": "54237fff79bfb4a3288f0e7ccb19950eeaf7156f13cfdfb714dadcb67340d2ec",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness-refined/seed-9_finer_polarity-0_uniform/history.json": "2698e473c75cb415d43c20a6bdcb97eec686280252376314a0a01aac64d1dd95",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation_assessment.py": "bd1acb4ba0a685e4e465757a2cb308a3d5332c66a06b86758ae4c40b11212618",
+    "docs/images/phase-carry-formation.png": "d25a5009ebe3a7696bf2c4e47d30cb6f09d9caf1a96b8fedea00ac455e8075bf",
+    "docs/phase_carry_formation.md": "284be8cee6843b70b334e2bc3eb0f0c6f28e7d1227496b4f888005e47911b9b2"
+  }
+}

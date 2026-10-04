@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-04T00:11:19.080182+00:00",
+  "scientific_runs_launched": 0,
+  "unique_primary_histories": 3,
+  "curated_studies": 22,
+  "retired_backend_families": 3,
+  "archival_source_files": 10,
+  "checks": [
+    "Ledger source/evidence/history checkpoint hashes and Markdown verified",
+    "Archive snapshots and retained originals verified",
+    "New manuscript table values independently checked against reports",
+    "Four accepted scientific protocols retain source/input hashes",
+    "Previous manuscript snapshot verified",
+    "29 PDF pages rendered and visually reviewed"
+  ],
+  "files_sha256": {
+    "docs/results_ledger.json": "141c5655995c7bc4747c1535786bff56fd16b63d4a617a9496765dbe20b9a32d",
+    "docs/results_ledger.md": "53744feb596c49251b223ca4d9c944cbf38b86ef23999d4cf1c7ba3385c222ec",
+    "docs/backends.md": "09a3dde458b2bcd06531d5317be630acc82c44c53e87783189794af835ea7116",
+    "archive/backends/manifest.json": "1906020a6a73755956656b34554baffa30aca81b48e2da3791acc46e62c58bb8",
+    "manuscript/sections.md": "643401965c66531163776568e642c685c0a9e678076a28f8b5d3847517752240",
+    "manuscript/evidence_manifest.json": "7975b5a6d28f3a46f8976d5415b383b431ce74104699627659b56858f73cab4a",
+    "manuscript/build_validation.json": "bd961bcac7a3ad9dd893282bd8fd0d2c65286adc654c481f58d0506fb5adf961",
+    "output/pdf/embryogenesis_o1.pdf": "0bc80e11737c15c79c9763043eb4b7ea9ed3ab5a4e2aa4d7a9a167e84c890787"
+  }
+}

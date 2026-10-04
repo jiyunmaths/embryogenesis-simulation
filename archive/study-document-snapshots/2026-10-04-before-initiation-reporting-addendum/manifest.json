@@ -1,0 +1,10 @@
+{
+  "archived_utc": "2026-10-04T19:14:41.557479+00:00",
+  "purpose": "Preserve prior reporting documentation before clarifying history-level interpretation and specifying the shared moving-geometry follow-up. Active protocol and runner are unchanged.",
+  "files_sha256": {
+    "docs/phase_carry_polarity.md": "7ca3c4f67c2a6dfc405baee258511741ad619a3c6a7be2d03f0fdee015257082",
+    "docs/phase_carry_polarity_launch_verification.json": "e8eeec3513e00254aeaa041a107e33ab3a5817c7a9b58f8fce56a0c946bbbad1",
+    "docs/plan.md": "91af42a1c8b48294b5c1dcebb3cfbc446de6d9d06b023cb8fb8486743ba4a221",
+    "docs/claim_precision_audit_verification.json": "dd5ea90b2631051cfd9cfebe73efd42ccb823edcdba9b80b2ae92a394fbed582"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "purpose": "Preserve planning bytes before launching full phase-carry formation and prescribed geometry\u2013chemistry time coupling.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-phase-carry-formation/README.md",
+      "sha256": "3a6051e1697939e4c66481f691827c58085fceaf8548a8d40e01a503bc7f8a41"
+    },
+    {
+      "original_path": "docs/plan.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-phase-carry-formation/docs/plan.md",
+      "sha256": "3fa42be41ad615ab9c853b6887f71f9afb31013e570a19b36657c54bfb80178c"
+    }
+  ]
+}

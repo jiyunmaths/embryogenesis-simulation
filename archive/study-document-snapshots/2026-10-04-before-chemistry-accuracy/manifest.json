@@ -1,0 +1,15 @@
+{
+  "purpose": "Preserve current planning bytes before documenting the frozen chemical diagnosis and separate moving precision controls.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-chemistry-accuracy/README.md",
+      "sha256": "4048dc970510e7294568e21479e98d911cb85ba093b3fe1a84477fe70a9edba3"
+    },
+    {
+      "original_path": "docs/plan.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-chemistry-accuracy/docs/plan.md",
+      "sha256": "e9223fd1c9e4bc30ccfe118323b99930f11851ccaa2f1b24af537cf9e4ea30c1"
+    }
+  ]
+}

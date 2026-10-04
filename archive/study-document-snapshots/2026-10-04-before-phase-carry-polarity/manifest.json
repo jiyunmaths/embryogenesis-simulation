@@ -1,0 +1,11 @@
+{
+  "reason": "Preserve documentation after the nutrient-assumption revision, before reporting completed carry convergence and launching the matched polarity controls. Scientific outcomes and manuscript sources remain unchanged.",
+  "sha256": {
+    "README.md": "aaa179eaa0236cd96600f5bded0d40734c7a1c1e91bb528e6ff3137a39c0ce32",
+    "docs/plan.md": "f2f6bdcc2e58de387b9f040179d97220df09f66ac8637641ec74044f66302202",
+    "docs/backends.md": "0de2fd98c03a097973479092bf27cf958e86cf8af7786d0124f49666105112dd",
+    "docs/phase_carry_convergence.md": "780fb3ad7d7b39e8812dc70155fbccaeacde69fb6fd663aab3a33bf4dae822f2",
+    "docs/phase_carry_convergence_launch_verification.json": "1511365bbaf54a95b40b35046aa650a773a235583d822fab248622efe00c2c82",
+    "manuscript/nutrition_assumption_verification.json": "6abd5c20cc007069ebf4df39b63d9bcace236d261bb5dc7c9acae14447b2a5cf"
+  }
+}

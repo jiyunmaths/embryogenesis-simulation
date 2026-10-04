@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-04T00:32:33.323859+00:00",
+  "independent_histories": 3,
+  "frozen_cases_completed": 66,
+  "frozen_trajectories": 330,
+  "frozen_numerical_pass": true,
+  "matched_short_references_completed": 18,
+  "software_tests_passed": 41,
+  "software_tests_skipped": 1,
+  "moving_status": {
+    "state": "running",
+    "completed": 1,
+    "total": 18,
+    "current_job": "seed-7_baseline_pattern"
+  },
+  "limits": "Moving jobs remain active. Software pass and baseline/short parameter gates do not establish convergence at every new parameter or a dense 2D phase diagram.",
+  "files_sha256": {
+    "outputs/parameter-robustness/protocol.json": "43ed6925844afc43dcd5d72b38e72143e0d5aec83b6425023e84ce78e3c68d9d",
+    "outputs/parameter-robustness/summary.json": "cf7fbbb8e3a1f16c740ee7d4f3e0d00ed39a3d608721fa7582ea7df4bc2571c9",
+    "outputs/parameter-robustness/moving-selection.json": "599baae5cedfdfd9e8c78a569e5583fd759cafc4d909ec5f3f001afc57bc0300",
+    "outputs/parameter-robustness-moving/protocol.json": "d12009d95fd46ea7ae808c92c24348f524433543232d78f59ac7c5bff82909d7",
+    "outputs/parameter-robustness-reference/protocol.json": "2958f6705a7716271bf99e2c7c99c6089a3ba155690b5bc826ea70dfd019a8e4",
+    "outputs/parameter-robustness-reference/results.json": "a3ed0ceec549adcc9b09e234c24c890744a5e936675d2e051cd14cd5c9b22481"
+  }
+}

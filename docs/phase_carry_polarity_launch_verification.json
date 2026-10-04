@@ -1,0 +1,68 @@
+{
+  "verified_utc": "2026-10-04T17:19:24.263596+00:00",
+  "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+  "source_hashes_verified": 37,
+  "input_hashes_verified": 200,
+  "matched_starts_verified": 6,
+  "contrasts_change_only_directional_tension": true,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "numerical_paths": 12,
+  "reused_paths": 2,
+  "new_moving_jobs": 10,
+  "old_qualification_passed": true,
+  "old_qualification_verified": "7b3fedc2f9fd94e16acc9c7bd3a7f36d15ecb9b37da6b7f236d04821478d410d",
+  "criteria_before_launch": {
+    "chemical_log_max": 0.01,
+    "polarity_abs_max": 0.01,
+    "relative_axis_max": 0.01,
+    "relative_volume_max": 0.005,
+    "relative_transport_max": 0.01,
+    "growth_abs_max": 0.001,
+    "crossing_time_abs_max": 0.3,
+    "onset_time_abs_max": 0.3,
+    "same_late_contrast_required": true,
+    "same_crossing_presence_required": true
+  },
+  "reference_criteria": {
+    "phase_abs_max": 5e-06,
+    "phase_relative_l2": 2e-06,
+    "relative_volume_max": 2e-06,
+    "clipping_max": 0.0,
+    "reference_pair_error_ratio_min": 1.5
+  },
+  "cpu_tests_passed": 11,
+  "cpu_tests_scope": "Balanced design, interpretation of failed controls, pair-specific pilot blocking, immutable records, carry-dependent restart, prior convergence retiming and independent float64 operator/energy/reference tests.",
+  "cpu_tests_sha256": {
+    "tests/test_phase_carry_polarity.py": "0e28e3fed0a91e5656a1d30e7534f9a66b087db8715f14ea92bc4d6efde3399b",
+    "tests/test_phase_carry_convergence.py": "677033bf51657b4df551227d28d0d3fbc2bc1b8f1bf88aa7a66c06510257aba9",
+    "tests/test_mechanics_float64_reference.py": "fc49081b192d2df93d45b5a61448a88f29ffdb320f590761dedb683ebc72565a"
+  },
+  "launch": {
+    "pid": 2045755,
+    "launched_utc": "2026-10-04T17:17:00.093740+00:00",
+    "physical_gpu": 1,
+    "endpoint_cpu_workers": 2,
+    "root": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity"
+  },
+  "status_at_check": {
+    "state": "running",
+    "stage": "matched_60_unit_pilot",
+    "current_job": "seed-9_coarse_chi-0.35",
+    "completed": 0,
+    "total": 10
+  },
+  "scientific_outcome_pending": true,
+  "documents_sha256": {
+    "README.md": "6cde5436dfbe70603debcd570473deb908aaeb835662a8977b6b809a7a544655",
+    "docs/plan.md": "8e91b7ae6c3f3429adc642d2f7b948b787da6a42fd292d379e87830e5f72b313",
+    "docs/phase_carry_convergence.md": "f4b721a64ec61368fcb9dc87a1ae359020705a4deec6ce7d516d6f244c65eb00",
+    "docs/phase_carry_polarity.md": "7ca3c4f67c2a6dfc405baee258511741ad619a3c6a7be2d03f0fdee015257082"
+  },
+  "prior_document_archive_manifest_sha256": "100aee31f19498b1b0a6472f9bb1ad859241f809ff756c39ab462d91a96ef015",
+  "positive_reference_pass": true,
+  "positive_reference_result_sha256": "45db2cfb6a3a91b38a70f0c646ef086f20d0124a9455cab15633a68a8d90fff4",
+  "positive_reference_fields_verified": true,
+  "first_new_context_gate_pass": true,
+  "first_new_context_gate_sha256": "a906b980a6f6a31a16c0897119de62e3ee95e0b50f964589a853a00c914c3613"
+}

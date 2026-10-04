@@ -1,6 +1,6 @@
 # Moving-geometry cell-response pilot
 
-Current scope: the seed-7 pilot, its response refinement, fifteen moving exchange-response runs, and six targeted refinement runs are complete. The replication on seeds 8 and 9 is running through the accepted PyTorch/custom-CUDA backend after all six new-context CPU/GPU checks passed. The following protocols retain their distinct starts, horizons, and inference limits; [the current replication](#replication-across-developmental-histories) is conditional on mature patterned basins.
+Current scope: the seed-7 pilot, its response refinement, fifteen moving exchange-response runs, six targeted refinement runs, and all 36 seed-8/9 continuations are complete. The replication used the accepted PyTorch/custom-CUDA backend after all six new-context CPU/GPU checks passed. All eighteen [new-history timestep continuations](exchange_response_refinement.md) pass after four full smaller-timestep backend comparisons and ten context checks pass. The [neighbor-context screen](neighbor_context.md) is the next assay. The following protocols retain their distinct starts, horizons, and inference limits; [the completed replication](#replication-across-developmental-histories) is conditional on mature patterned basins.
 
 ## Question
 
@@ -104,7 +104,7 @@ The targeted check excludes positive pulses, pre-relaxed exchange, spatial refin
 
 ## Replication across developmental histories
 
-The running experiment repeats the moving exchange-and-response assay on **seeds 8 and 9**, with the completed seed-7 study retained as a historical reference. It asks whether transferable response behavior occurs in more than one independently developed geometry. Results are pending; this protocol does not assume that either new history will reproduce the seed-7 outcome.
+The completed experiment repeats the moving exchange-and-response assay on **seeds 8 and 9**, with the completed seed-7 study retained as a historical reference. It asks whether transferable response behavior occurs in more than one independently developed geometry. All 36 continuations passed numerical quality checks. Results are assessed below; the original protocol and thresholds remain unchanged.
 
 Both sources are existing sixteen-cell, direct-feedback, polarity-enabled checkpoints at t=150 from the completed survival study. Their frozen-endpoint bistability and conservative-exchange assays must have passed. Their physical parameters match the accepted GPU regime. Retiming from dt=0.0075 to **0.00375** preserves geometry, chemical state, polarity, cell IDs, physical age, and random streams; replacing chemistry with the specified equilibrium/exchange state is a separate experimental intervention.
 
@@ -149,4 +149,20 @@ python -m embryo.exchange_response_histories assess
 
 The default output is `outputs/exchange-response-histories/`. The root status identifies the current stage; child statuses report individual trajectory progress. Saved passing prefixes and completed jobs are verified on restart, and unfinished GPU jobs resume without repeating a pulse. `formation_comparison.json` is written for each history after formation, and the aggregate `comparison.json` is generated only after all scientific jobs pass their numerical screens.
 
-**Interpretation limits:** this is conditional on previously formed mature patterned basins. Equilibrated or exchanged chemistry is transplanted at t=150; it does not test spontaneous identity formation from a new zygote or estimate pattern-formation frequency. Three developmental histories including seed 7 are a pilot. Backgrounds, cells, and pulse signs are nested interventions, not independent developmental replicas. Nearest donor behavior does not demonstrate donor equivalence or autonomous identity. Exchange-formation timestep refinement, new-history response refinement, spatial convergence, and broader developmental replication remain separate tests.
+### Completed history-replication assessment
+
+| Developmental history | Donor-nearer exchanged-cell response comparisons | Role |
+|---|---:|---|
+| Seed 7 | 8/8 | Completed historical reference |
+| Seed 8 | 8/8 | New matched replication |
+| Seed 9 | 8/8 | New matched replication |
+
+The total is **24 comparisons within three developmental histories**. Each history contributes two exchanged backgrounds, two target cells, and two pulse signs; these are nested interventions. Both new histories retain chemical contrast in all three formation backgrounds. Exchanged concentrations reorganize: neither the moving destination-state nor conservatively transferred-state likeness criterion passes. Donor-nearer pulse behavior therefore survives a change in the concentration vector rather than proving preservation of the original vector.
+
+The low-state recipient follows its donor more closely than the high-state recipient in both new histories. Their donor waveform distances, divided by untouched donor/destination separation, are approximately 0.037–0.041 versus 0.183–0.229 for seed 8, and 0.094–0.105 versus 0.530–0.675 for seed 9. Nearest-reference classification alone does not establish donor equivalence. Fresh and frozen pre-relaxed preparations yield very similar moving outcomes: the maximum relative difference in target activator response integral is below 0.04%. This similarity in tested starts does not establish a unique global attractor.
+
+All 24 new pulse trials recover within the observed window: target recovery times are 2.4–4.2 model units and network recovery times 2.4–6.3. Across all 36 continuations, maximum individual volume error is 1.16%, minimum radius exceeds 5.10 grid spacings, clipping is zero, and sampled boundary occupancy stays below 3.54e-9. Aggregate shape differences are modest (below 0.4% in axis ratio); these responses do not demonstrate a new chemical shape axis.
+
+Evidence is in `outputs/exchange-response-histories/comparison.json`, per-history `formation_comparison.json`, and each job's history/checkpoint/quality audit. The [completed timestep protocol](exchange_response_refinement.md) passes all six formation/retention and twelve selected response continuations from identical physical starts at dt=0.001875, following four full GPU/native replays and ten starting-context checks. Response classifications and recovery times are unchanged. The [neighbor-context screen](neighbor_context.md) now isolates surrounding chemistry from target initial state on frozen graphs.
+
+**Interpretation limits:** this is conditional on previously formed mature patterned basins. Equilibrated or exchanged chemistry is transplanted at t=150; it does not test spontaneous identity formation from a new zygote or estimate pattern-formation frequency. Three developmental histories including seed 7 are a pilot. Backgrounds, cells, and pulse signs are nested interventions, not independent developmental replicas. Nearest donor behavior does not demonstrate donor equivalence or autonomous identity. One timestep halving now passes for formation and selected responses; positive/pre-relaxed response refinement, end-to-end refined development, spatial convergence, and broader developmental replication remain separate tests.

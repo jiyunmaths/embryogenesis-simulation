@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-10-04T17:19:24.262478+00:00",
+  "protocol_sha256": "89f3753ee84baabfce58dfe271a31f7c68c77fd7b116d8c2da719d757bb1d195",
+  "summary_sha256": "c68f06e006ecb47d530cf11387fd75f9ecaa499691a1d766253f71e78c23efc9",
+  "source_hashes_verified": 36,
+  "input_hashes_verified": 115,
+  "all_three_checkpoints_verified": true,
+  "adjacent_comparisons_recomputed": true,
+  "reference_field_hashes_verified": true,
+  "reference_pass": true,
+  "chemical_error_trend": {
+    "coarse_fine": 0.0004096314648225956,
+    "fine_finer": 0.00020500448762656042,
+    "ratio": 1.9981585260162065,
+    "observed_pair_order": 0.9986710454050703,
+    "passed": true,
+    "interpretation": "Ratio of adjacent-pair maximum errors at common saved times, not proof of asymptotic order or an absolute solution-error estimate."
+  },
+  "new_endpoint": {
+    "numerical_pass": true,
+    "all_trials_settled": true,
+    "phase": "coexistence",
+    "local_bistability": true
+  },
+  "independent_histories": 1,
+  "new_histories": 0,
+  "scope": "Require both adjacent moving pairs to pass the unchanged original raw tolerances, plus >=1.5 reduction in maximum chemical pair error under halving, all physical quality checks, and dual-solver endpoint stationarity. A decreasing three-point error trend and short independent mechanics check do not establish full-system high-precision equivalence, spatial convergence, history robustness, positive-chi behavior, initiation from zygotes or autonomous cell identity. Keep old no-carry failures unchanged."
+}

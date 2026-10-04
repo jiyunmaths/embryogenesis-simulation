@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-04T11:46:48.118492+00:00",
+  "protocol_sha256": "15c65f0b82747f7b26dd15a8c812ab96f951a59ef9a8cd7f15cedc8120cad5d8",
+  "execution_state": "completed_with_unresolved_checks",
+  "independent_histories": 3,
+  "completed_moving_runs": 21,
+  "completed_context_checks": 21,
+  "completed_endpoint_assays": 21,
+  "frozen_endpoint_trials": 105,
+  "quality": {
+    "moving_quality_pass": true,
+    "native_gpu_context_pass_count": 21,
+    "endpoint_numerical_pass_count": 21,
+    "max_volume_error": 0.011601158411352008,
+    "min_radius": 5.1061430848382585,
+    "max_clipping": 0.0,
+    "boundary_max": 2.5226604805084207e-08,
+    "dilution_error_max": 4.440892098500626e-16,
+    "context_error_max": {
+      "chemical_log_max": 1.8598911264303504e-07,
+      "polarity_abs_max": 8.037446128355413e-09,
+      "relative_axis_max": 4.889916249695148e-10,
+      "relative_volume_max": 1.0217689028202415e-08,
+      "relative_transport_max": 2.8643387090118304e-07
+    },
+    "context_phi_abs_max": 5.960464477539063e-08,
+    "endpoint_solver_log_max": 2.6869090322138743e-09,
+    "endpoint_rhs_max": 3.808090687229538e-09,
+    "endpoint_trial_count": 105,
+    "spectrum_observations_recomputed": 33621,
+    "spectrum_recompute_max": 0.0,
+    "contrast_recompute_max": 0.0
+  },
+  "initiation_and_maintenance": [
+    {
+      "chi": 0.0,
+      "initiation_histories": [
+        9
+      ],
+      "maintenance_histories": [
+        7,
+        8,
+        9
+      ],
+      "developed_final_sd_range": [
+        1.3038768688619395,
+        1.423708056444974
+      ],
+      "developed_endpoint_bistability_histories": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "chi": 0.35,
+      "initiation_histories": [],
+      "maintenance_histories": [
+        7,
+        8,
+        9
+      ],
+      "developed_final_sd_range": [
+        1.4566995742996005,
+        1.5643075316942798
+      ],
+      "developed_endpoint_bistability_histories": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "chi": 0.7,
+      "initiation_histories": [],
+      "maintenance_histories": [
+        7,
+        8,
+        9
+      ],
+      "developed_final_sd_range": [
+        1.572518389777809,
+        1.6865735408418876
+      ],
+      "developed_endpoint_bistability_histories": [
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "pilot_refinement_pass": true,
+  "long_refinement_pass": false,
+  "unresolved_check": {
+    "history": 9,
+    "family": "uniform",
+    "chi": 0.0,
+    "maximum_chemical_log_error": 0.02574031713440399,
+    "declared_limit": 0.01,
+    "elapsed_at_maximum": 117.75,
+    "cell_id": 27,
+    "species": "activator",
+    "late_chemical_log_max": 0.00024618091785841555,
+    "original_acceptance_criteria_unchanged": true,
+    "interpretation": "Initiation classification and timing agree at both tested timesteps, but the full formation transient fails quantitative timestep acceptance."
+  },
+  "source_hashes_verified": 28,
+  "evidence_hashes_verified": 248,
+  "existing_results_ledger_verified": true,
+  "ledger_verification_command": "python -m embryo.results_ledger --verify",
+  "original_source_and_protocol_bytes_unchanged": true,
+  "new_scientific_simulations_launched": false,
+  "next_priority": "Further timestep halving for history-9 near-uniform chi=0 using the exact initial state and unchanged criteria; compare fine versus finer.",
+  "files_sha256": {
+    "docs/polarity_robustness_assessment.md": "0a5eb43e897cbf5103fc7e18acb66dda05030f308ce4d7251c5953764673eb64",
+    "docs/polarity_robustness.md": "d0cfbf047f1298bbba78d2357f7db10985782e44a7012b2774b9f08a358e605d",
+    "docs/images/polarity-robustness-completed.png": "3a4724eeff1a384d29c4d5a0fff3b9b232f040bdb70a1dd7f9327a9bdb1cc1a7",
+    "embryo/polarity_robustness_assessment.py": "f2e694aacfaa0e40e3e86946e5b8091a22866dfbc212bdd484de5c646cb63e9c",
+    "README.md": "a0b15bb5207bb56f19d1794e71a0f75afa3025c6d88b594a7d62fdd36d049604",
+    "docs/plan.md": "0d8a6529bdefc3ca410b3d6d0e2d1dd5b2cd18e2ef58f610ce8c2ae24f80dbbf",
+    "docs/results_ledger.json": "141c5655995c7bc4747c1535786bff56fd16b63d4a617a9496765dbe20b9a32d",
+    "docs/results_ledger.md": "53744feb596c49251b223ca4d9c944cbf38b86ef23999d4cf1c7ba3385c222ec",
+    "outputs/polarity-robustness/protocol.json": "15c65f0b82747f7b26dd15a8c812ab96f951a59ef9a8cd7f15cedc8120cad5d8",
+    "outputs/polarity-robustness/status.json": "0c3076cf2bcf83b28f21cd201e21ed416dab824fbbe7e94889f89276b7e578aa",
+    "outputs/polarity-robustness/summary.json": "d3d73ec170991c94ce2fcbc5f7b9ede8db778e0c9b1f446fea9eaad38f9acae6",
+    "outputs/polarity-robustness/assessment.json": "06896b712a54b85cff90198f2cc6e44b355252a90e7686582d4effedf995198a",
+    "outputs/polarity-robustness/pilot-refinement.json": "26539bf254fc9068404f09e6ec1377a8e32f36a0593fcc9fcd9d86185688eea0",
+    "outputs/polarity-robustness/long-refinement.json": "c50464b5260bf3c94da79af1d7fcc8e42b6108f6712eff366a97bc5e842cd78e"
+  }
+}

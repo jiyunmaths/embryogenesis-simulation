@@ -1,0 +1,10 @@
+{
+  "captured_utc": "2026-10-04T15:46:59.229139+00:00",
+  "scope": "Before assessing the completed long phase-carry pair; preserve pending descriptions and launch-time proof. Scientific outputs are unchanged.",
+  "files_sha256": {
+    "README.md": "17c3ecb78f3cf8743155f0518d747adf0e68526438f0b5cdbc1cbf5783a2e440",
+    "docs/plan.md": "a3702df715a4d075e2bbd905e46c6fd2576547eff98bfa24cc3ab96fb1824efb",
+    "docs/phase_carry_formation.md": "62d3b298fa7b473afcece876ef68d5757f68eefc42c0c95e213eb6f90fd50e30",
+    "docs/phase_carry_formation_launch_verification.json": "8e6129a5192095e06e9a197e05d030927129128a9ac722e8361b43520b97be2a"
+  }
+}

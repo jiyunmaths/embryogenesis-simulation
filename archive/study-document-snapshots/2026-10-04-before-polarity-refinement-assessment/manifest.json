@@ -1,0 +1,20 @@
+{
+  "purpose": "Preserve document bytes referenced by historical completed-study and launch verification snapshots before updating the current planning documents.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-polarity-refinement-assessment/README.md",
+      "sha256": "a0b15bb5207bb56f19d1794e71a0f75afa3025c6d88b594a7d62fdd36d049604"
+    },
+    {
+      "original_path": "docs/plan.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-polarity-refinement-assessment/docs/plan.md",
+      "sha256": "0d8a6529bdefc3ca410b3d6d0e2d1dd5b2cd18e2ef58f610ce8c2ae24f80dbbf"
+    },
+    {
+      "original_path": "docs/polarity_robustness_refinement.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-04-before-polarity-refinement-assessment/docs/polarity_robustness_refinement.md",
+      "sha256": "5b6cdd6eb19a4a22642488f142e2ab8afdb9d85cf891e31ba69ae3f49bb00dbe"
+    }
+  ]
+}

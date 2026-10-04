@@ -1,0 +1,2365 @@
+{
+  "schema": 1,
+  "captured_utc": "2026-10-04T00:06:48.974327+00:00",
+  "replication_unit": "Developmental history; cells, branches, graphs, pulses, preparation choices and numerical repeats are nested.",
+  "unique_primary_histories": 3,
+  "histories_added_by_consolidation": 0,
+  "history_registry": {
+    "7": {
+      "id": "attribute-history-7",
+      "seed": 7,
+      "model": "Conservative AttributeSimulation; no supplied fate switch",
+      "lineage": "No-feedback zygote development to t=90; mature descendants reused in later assays",
+      "source": "outputs/attribute-development/no_feedback/final_state.npz"
+    },
+    "8": {
+      "id": "attribute-history-8",
+      "seed": 8,
+      "model": "Conservative AttributeSimulation; no supplied fate switch",
+      "lineage": "No-feedback zygote development to t=90; mature descendants reused in later assays",
+      "source": "outputs/feedback-survival-validation/seed-8/development/latest_state.npz"
+    },
+    "9": {
+      "id": "attribute-history-9",
+      "seed": 9,
+      "model": "Conservative AttributeSimulation; no supplied fate switch",
+      "lineage": "No-feedback zygote development to t=90; mature descendants reused in later assays",
+      "source": "outputs/feedback-survival-validation/seed-9/development/latest_state.npz"
+    }
+  },
+  "history_count_note": "Three unique attribute histories globally, reused across rows. The paired seed-7 direct branch is an intervention in that registered random-stream history. Historical fate-model and analytic tests are not pooled with these histories.",
+  "scope": "Consolidation snapshot; no new scientific simulations. Curated decisions and evidence are separate from the complete directory inventory.",
+  "entries": [
+    {
+      "id": "initiation",
+      "theme": "Initiation",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "No-feedback development produces strong chemical contrast; full coupling suppresses it in the paired zygote comparison.",
+      "validation": "quality_pass",
+      "limitations": "One paired history; formation contrast is not a discrete identity or shape-causality result.",
+      "evidence": [
+        "outputs/attribute-development/protocol.json",
+        "outputs/attribute-development/comparison.json"
+      ],
+      "details": {
+        "direct": {
+          "log_activator_spread": 0.05538782492212216,
+          "mean_axis_ratio": 1.3332837185866826
+        },
+        "no_feedback": {
+          "log_activator_spread": 0.9861045056026487,
+          "mean_axis_ratio": 1.3329901407055484
+        }
+      }
+    },
+    {
+      "id": "polarity-components",
+      "theme": "Initiation",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "Polar mechanics alone suppresses initiation; removing its mechanical contribution from tension+adhesion restores formation on the matched geometry.",
+      "validation": "quality_pass",
+      "limitations": "One mature geometry, two prepared chemical families, twelve continuations; chemical modulation of polarity remains active.",
+      "evidence": [
+        "outputs/feedback-long/protocol.json",
+        "outputs/feedback-long/comparison.json",
+        "outputs/feedback-polarity-ablation/protocol.json",
+        "outputs/feedback-polarity-ablation/comparison.json"
+      ],
+      "details": {
+        "component_continuations": 12,
+        "ablation_verdict": "removing_polar_mechanics_restores_formation"
+      }
+    },
+    {
+      "id": "homogeneous-spectrum",
+      "theme": "Initiation",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "The direct branch loses graph-supported homogeneous instability during development.",
+      "validation": "descriptive_spectral_analysis",
+      "limitations": "Instantaneous frozen-graph linearization; not a nonlinear-maintenance or moving-system stability proof.",
+      "evidence": [
+        "outputs/feedback-spectrum/protocol.json",
+        "outputs/feedback-spectrum/spectra.json",
+        "outputs/feedback-spectrum/counterfactuals.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "moving-maintenance",
+      "theme": "Maintenance",
+      "history_ids": [
+        "attribute-history-7",
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 3,
+      "claim": "All three histories retain developed chemical contrast and cell association after switching full coupling on; paired keep-off controls also retain it.",
+      "validation": "quality_pass",
+      "limitations": "Finite horizon t=90-150 after the 16-cell cap; not direct-feedback formation, continued division, or inherited identity.",
+      "evidence": [
+        "outputs/feedback-survival/protocol.json",
+        "outputs/feedback-survival-validation/summary.json",
+        "outputs/feedback-survival/comparison.json",
+        "outputs/feedback-survival-validation/seed-8/survival/comparison.json",
+        "outputs/feedback-survival-validation/seed-9/survival/comparison.json"
+      ],
+      "details": {
+        "by_history": {
+          "7": {
+            "keep_off": {
+              "arm": "keep_off",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.010623440402777073,
+                "min_radius": 5.108002597357639,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 7.446419869605592e-11,
+                "elapsed_seconds": 10984.970509511011
+              },
+              "late_min_log_activator_sd": 1.0868282855433087,
+              "late_min_initial_correlation": 0.999485066955405,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 33,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.7781696383288308,
+                "spectral_gap": 0.7781696383288308,
+                "eigenvalues": [
+                  0.0,
+                  0.7781696383288308,
+                  0.985668209925885,
+                  0.9894577312450719,
+                  2.036227076979648,
+                  2.0761789802578985,
+                  2.1588090302723124,
+                  2.4476552699432537,
+                  2.500721075279553,
+                  3.151530152623214,
+                  3.248595731280196,
+                  4.6152914292717275,
+                  4.7132288948571,
+                  4.9528759133443,
+                  5.085597954496129,
+                  5.43490052238603
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.6634156240490544,
+                  -0.7069903240844357,
+                  -0.7077861235614651,
+                  -0.9276076861657262,
+                  -0.9359975858541587,
+                  -0.9533498963571856,
+                  -1.0140076066880832,
+                  -1.0251514258087062,
+                  -0.5254861026869175,
+                  -0.48745595721258317,
+                  -0.18481284085251648,
+                  -0.17126190158699828,
+                  -0.14056557439144424,
+                  -0.12490377711920608,
+                  -0.08755297238101711
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.08755297238101711,
+                "time": 150.0,
+                "edge_conductance_cv": 0.6178065615262026,
+                "volume_cv": 0.005648460378486455,
+                "weighted_degree_cv": 0.10458802039660978,
+                "mean_positive_conductance": 0.09271200955179658,
+                "total_conductance": 3.059496315209287,
+                "log_activator_sd": 1.1055509898288887
+              }
+            },
+            "switch_on": {
+              "arm": "switch_on",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.01138584060813208,
+                "min_radius": 5.108002597357639,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 1.468069971144459e-10,
+                "elapsed_seconds": 14266.422157065012
+              },
+              "late_min_log_activator_sd": 1.1476197415003486,
+              "late_min_initial_correlation": 0.9989646542991284,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 28,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.6662390650805877,
+                "spectral_gap": 0.6662390650805877,
+                "eigenvalues": [
+                  0.0,
+                  0.6662390650805877,
+                  0.816775475121167,
+                  0.8262753351854228,
+                  1.724806333518842,
+                  1.7442471157029495,
+                  1.806153697962084,
+                  2.051125217020504,
+                  2.0970622586255985,
+                  2.659231851853247,
+                  2.7520186438174683,
+                  3.901834259483978,
+                  3.972681987393928,
+                  4.214367884163447,
+                  4.347345451069304,
+                  4.645858381451478
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.6399102036669231,
+                  -0.6715228497754453,
+                  -0.6735178203889385,
+                  -0.8622093300389571,
+                  -0.8662918942976197,
+                  -0.8792922765720377,
+                  -0.9307362955743061,
+                  -0.9403830743113757,
+                  -0.9133738328097945,
+                  -0.7745135893875474,
+                  -0.3076326851544451,
+                  -0.29303018327315566,
+                  -0.24775824229613574,
+                  -0.22540067291110777,
+                  -0.18051571650046228
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.18051571650046228,
+                "time": 150.0,
+                "edge_conductance_cv": 0.4309040191017444,
+                "volume_cv": 0.005181114485900468,
+                "weighted_degree_cv": 0.11351684534323091,
+                "mean_positive_conductance": 0.09248977444444384,
+                "total_conductance": 2.5897136844444275,
+                "log_activator_sd": 1.1789504517423472
+              }
+            }
+          },
+          "8": {
+            "keep_off": {
+              "arm": "keep_off",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.010623961553894445,
+                "min_radius": 5.107825288176802,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 3.8974795613100355e-10,
+                "elapsed_seconds": 11359.194967585034
+              },
+              "late_min_log_activator_sd": 1.1222389960546284,
+              "late_min_initial_correlation": 0.9992016448081718,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 40,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.7800096558581303,
+                "spectral_gap": 0.7800096558581303,
+                "eigenvalues": [
+                  0.0,
+                  0.7800096558581303,
+                  0.9958860498150591,
+                  1.0093329520026793,
+                  2.0431383702411194,
+                  2.062034949480859,
+                  2.173307993674607,
+                  2.463833938235482,
+                  2.503490932942699,
+                  3.109895947999005,
+                  3.2635383829440325,
+                  4.555598500554656,
+                  4.630027823858041,
+                  4.789828138849356,
+                  5.083893799518907,
+                  5.346255678030702
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.6638020277302074,
+                  -0.7091360704611622,
+                  -0.7119599199205625,
+                  -0.9290590577506351,
+                  -0.9330273393909803,
+                  -0.9563946786716675,
+                  -1.017405127029451,
+                  -1.0257330959179667,
+                  -0.5433403884762069,
+                  -0.48198928988313616,
+                  -0.1933896168709719,
+                  -0.1827333360322978,
+                  -0.1610871194665675,
+                  -0.1250993426346163,
+                  -0.0965445754958889
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.0965445754958889,
+                "time": 150.0,
+                "edge_conductance_cv": 0.7949509930897409,
+                "volume_cv": 0.005810085576922614,
+                "weighted_degree_cv": 0.10356105089145817,
+                "mean_positive_conductance": 0.07586876041277628,
+                "total_conductance": 3.0347504165110513,
+                "log_activator_sd": 1.138821637127092
+              }
+            },
+            "switch_on": {
+              "arm": "switch_on",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.011641005094046641,
+                "min_radius": 5.106074466925141,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 8.520605332407172e-10,
+                "elapsed_seconds": 13472.751210833987
+              },
+              "late_min_log_activator_sd": 1.1735121055243976,
+              "late_min_initial_correlation": 0.9987009031822985,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 38,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.6706515781509148,
+                "spectral_gap": 0.6706515781509148,
+                "eigenvalues": [
+                  0.0,
+                  0.6706515781509148,
+                  0.8384727283547614,
+                  0.8461193654659075,
+                  1.700002628537492,
+                  1.7715220321644074,
+                  1.8336710413197412,
+                  2.0748719431828673,
+                  2.1325590356258624,
+                  2.629734746259976,
+                  2.7815782653556496,
+                  3.8679543975288735,
+                  3.924565600005503,
+                  4.114862218115511,
+                  4.397834979405574,
+                  4.632118117319344
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.6408368314116922,
+                  -0.6760792729544998,
+                  -0.6776850667478403,
+                  -0.8570005519928733,
+                  -0.8720196267545255,
+                  -0.8850709186771454,
+                  -0.9357231080684023,
+                  -0.9478373974814314,
+                  -1.0522442967145955,
+                  -0.7452926476792312,
+                  -0.31485943613298817,
+                  -0.3028741149624774,
+                  -0.2656130084373891,
+                  -0.21732218069665654,
+                  -0.18243955555914138
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.18243955555914138,
+                "time": 150.0,
+                "edge_conductance_cv": 0.754843227264701,
+                "volume_cv": 0.005712262143327645,
+                "weighted_degree_cv": 0.11767096928029389,
+                "mean_positive_conductance": 0.06812956736909492,
+                "total_conductance": 2.588923560025607,
+                "log_activator_sd": 1.2010822823641316
+              }
+            }
+          },
+          "9": {
+            "keep_off": {
+              "arm": "keep_off",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.010665929677823094,
+                "min_radius": 5.110491080755334,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 2.0616449519783586e-11,
+                "elapsed_seconds": 7948.162670099991
+              },
+              "late_min_log_activator_sd": 1.2047557025871773,
+              "late_min_initial_correlation": 0.9997246410705569,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 30,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.6400905032142621,
+                "spectral_gap": 0.6400905032142621,
+                "eigenvalues": [
+                  0.0,
+                  0.6400905032142621,
+                  1.0083773651955217,
+                  1.0341482995523186,
+                  1.8608757667817768,
+                  1.9692621290274515,
+                  2.0818321627696847,
+                  2.361037565360023,
+                  3.3152858888340933,
+                  3.423508636880204,
+                  3.6339568512220377,
+                  3.7245878926490086,
+                  4.674562519186749,
+                  4.687271613916579,
+                  5.382136474609386,
+                  5.87990899311733
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.634419005674995,
+                  -0.7117592466910598,
+                  -0.717171142905987,
+                  -0.8907839110241731,
+                  -0.9135450470957649,
+                  -0.9371847541816336,
+                  -0.9958178887256047,
+                  -0.4637536163971392,
+                  -0.42867940372899493,
+                  -0.3697782112677679,
+                  -0.34738309115125743,
+                  -0.17653704642450174,
+                  -0.1747926109575939,
+                  -0.09286754915632311,
+                  -0.04669163419694211
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.04669163419694211,
+                "time": 150.0,
+                "edge_conductance_cv": 0.5318467791244101,
+                "volume_cv": 0.004470858054570103,
+                "weighted_degree_cv": 0.11635053576474225,
+                "mean_positive_conductance": 0.1031358064151382,
+                "total_conductance": 3.094074192454146,
+                "log_activator_sd": 1.2230859248954793
+              }
+            },
+            "switch_on": {
+              "arm": "switch_on",
+              "quality_pass": true,
+              "audit": {
+                "max_volume_error": 0.011662256143582739,
+                "min_radius": 5.109001054408866,
+                "max_clipping": 0.0,
+                "max_sampled_boundary": 3.9231538156991874e-11,
+                "elapsed_seconds": 9187.753612251021
+              },
+              "late_min_log_activator_sd": 1.257218855957663,
+              "late_min_initial_correlation": 0.9995870889378691,
+              "contrast_survives": true,
+              "initial_ordering_retained": true,
+              "outcome": "contrast_and_ordering_retained",
+              "final_spectrum": {
+                "operator": "conservative",
+                "cells": 16,
+                "edges": 30,
+                "components": 1,
+                "smallest_positive_eigenvalue": 0.5591440491416848,
+                "spectral_gap": 0.5591440491416848,
+                "eigenvalues": [
+                  0.0,
+                  0.5591440491416848,
+                  0.8565010079964199,
+                  0.8894481519485588,
+                  1.5675171425084347,
+                  1.6574328828527196,
+                  1.7888885180072804,
+                  2.017388614782947,
+                  2.821219883968226,
+                  2.918690264435036,
+                  3.157375277456388,
+                  3.232043179478618,
+                  3.998292504045435,
+                  4.05410079244176,
+                  4.71095808131173,
+                  5.127369335749157
+                ],
+                "growth_rates": [
+                  -0.4999999999999999,
+                  -0.6174202503197537,
+                  -0.679865211679248,
+                  -0.6867841119091972,
+                  -0.8291785999267713,
+                  -0.848060905399071,
+                  -0.8756665887815291,
+                  -0.9236516091044189,
+                  -0.7111093507634001,
+                  -0.64262672146767,
+                  -0.5230601512168649,
+                  -0.4936240139077137,
+                  -0.2879125122385755,
+                  -0.2770393238137743,
+                  -0.17156907083294826,
+                  -0.12015341662439294
+                ],
+                "local_growth_rate": -0.4999999999999999,
+                "local_stable": true,
+                "continuous_lambda_band": [
+                  6.492189406417878,
+                  38.50781059358213
+                ],
+                "unstable_modes": [],
+                "diffusion_driven_instability": false,
+                "maximum_spatial_growth": -0.12015341662439294,
+                "time": 150.0,
+                "edge_conductance_cv": 0.5461766227481121,
+                "volume_cv": 0.004543940621113116,
+                "weighted_degree_cv": 0.1320124924085121,
+                "mean_positive_conductance": 0.08889750377224857,
+                "total_conductance": 2.666925113167457,
+                "log_activator_sd": 1.2868798890335662
+              }
+            }
+          }
+        },
+        "paired_branches": 6
+      }
+    },
+    {
+      "id": "frozen-coexistence",
+      "theme": "Maintenance",
+      "history_ids": [
+        "attribute-history-7",
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 3,
+      "claim": "Both endpoint graphs in each of the three histories support locally stable uniform and patterned chemical states.",
+      "validation": "chemical_acceptance_pass",
+      "limitations": "Six graphs and 252 nested starts are not independent histories; no full moving-system stability or bifurcation classification.",
+      "evidence": [
+        "outputs/feedback-endpoint-bistability/protocol.json",
+        "outputs/feedback-endpoint-bistability/results.json",
+        "outputs/feedback-endpoint-bistability-seed-8/protocol.json",
+        "outputs/feedback-endpoint-bistability-seed-8/results.json",
+        "outputs/feedback-endpoint-bistability-seed-9/protocol.json",
+        "outputs/feedback-endpoint-bistability-seed-9/results.json"
+      ],
+      "details": {
+        "by_history": {
+          "7": {
+            "switch_on": {
+              "bistability_supported": true,
+              "trials": 42
+            },
+            "keep_off": {
+              "bistability_supported": true,
+              "trials": 42
+            }
+          },
+          "8": {
+            "switch_on": {
+              "bistability_supported": true,
+              "trials": 42
+            },
+            "keep_off": {
+              "bistability_supported": true,
+              "trials": 42
+            }
+          },
+          "9": {
+            "switch_on": {
+              "bistability_supported": true,
+              "trials": 42
+            },
+            "keep_off": {
+              "bistability_supported": true,
+              "trials": 42
+            }
+          }
+        },
+        "graphs": 6,
+        "chemical_starts": 252
+      }
+    },
+    {
+      "id": "original-frozen-recovery",
+      "theme": "Maintenance",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "Small perturbations recover on both original graphs; only the no-feedback graph retains strong chemical contrast.",
+      "validation": "tolerance_and_recovery_pass",
+      "limitations": "Two graphs from one paired history; recovery of uniform chemistry is not differentiation.",
+      "evidence": [
+        "outputs/attribute-persistence/protocol.json",
+        "outputs/attribute-persistence/results.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "all-pair-exchange",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "Among 96 informative chemical transplants, half return and half reorganize; none meets transferred-concentration likeness.",
+      "validation": "tolerance_pass",
+      "limitations": "120 pairs within one fixed graph; post-run endpoint stability is exploratory, not independent replication.",
+      "evidence": [
+        "outputs/attribute-exchange/protocol.json",
+        "outputs/attribute-exchange/results.json",
+        "outputs/attribute-exchange/assessment.json"
+      ],
+      "details": {
+        "pair_counts": {
+          "destination": 48,
+          "transferred": 0,
+          "reorganized": 48,
+          "unsettled": 0,
+          "uninformative": 24
+        }
+      }
+    },
+    {
+      "id": "common-environment",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "Isolation erases differences in the tested releases; common reservoir exchange can support multiple stable chemical states.",
+      "validation": "independent_checks_pass",
+      "limitations": "2256 sampled cell states descend from one history; fixed reservoirs supply external support. An initial strength-4 tolerance failure is retained; further refinement passes, with one selected independent Radau check per arm.",
+      "evidence": [
+        "outputs/attribute-common-environment/protocol.json",
+        "outputs/attribute-common-environment/results.json",
+        "outputs/attribute-common-environment/verification.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "finite-reservoir",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "An evolving finite reservoir can support differences; formation and release depend on exchange regime.",
+      "validation": "qualified_with_retained_failures",
+      "limitations": "Original strong-release numerical failure, unstable symmetric endpoints, and an unsettled follow-up remain exceptions; not new developmental histories.",
+      "evidence": [
+        "outputs/attribute-finite-reservoir/protocol.json",
+        "outputs/attribute-finite-reservoir/results.json",
+        "outputs/attribute-finite-reservoir/verification.json",
+        "outputs/attribute-finite-reservoir/summary.json"
+      ],
+      "details": {
+        "baseline_numerical_failures": [
+          "release_unit_4_R100"
+        ],
+        "baseline_nonstationary": [
+          "release_unit_4_R100",
+          "release_mean_4_R100"
+        ],
+        "independent_failures": [],
+        "verified_stable_persistent": 27
+      }
+    },
+    {
+      "id": "frozen-exchange-response",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7",
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 3,
+      "claim": "Exchanged-cell responses favor the donor reference on both endpoint graphs in each history.",
+      "validation": "independent_solver_and_settling_pass",
+      "limitations": "48 reference comparisons nested in three histories; donor-nearer is not unchanged transfer or autonomous identity.",
+      "evidence": [
+        "outputs/cell-response-exchange/protocol.json",
+        "outputs/cell-response-exchange/results.json",
+        "outputs/cell-response-exchange/assessment.json"
+      ],
+      "details": {
+        "completed_arms": 24,
+        "pulse_trials": 96,
+        "all_relaxations_settled": true,
+        "max_solver_log_error": 5.742767944352904e-09,
+        "max_final_rhs": 4.864997293907436e-12,
+        "least_negative_growth": -0.07353938973812917,
+        "donor_nearer": 48,
+        "exchange_response_comparisons": 48,
+        "max_exact_conservative_endpoint_log_difference": 4.2835734959204156e-12,
+        "all_selected_activator_orderings_reversed": true,
+        "pulse_recovered": 96
+      }
+    },
+    {
+      "id": "moving-exchange-response",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7",
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 3,
+      "claim": "Each history has eight donor-nearer moving response comparisons; exchanged chemistry reorganizes rather than retaining transferred values unchanged.",
+      "validation": "completed_quality_and_backend_checks",
+      "limitations": "Prepared mature patterned basins; 24 comparisons reuse the same three histories, not new formation or population-frequency evidence.",
+      "evidence": [
+        "outputs/cell-exchange-response-moving/protocol.json",
+        "outputs/cell-exchange-response-moving/comparison.json",
+        "outputs/exchange-response-histories/protocol.json",
+        "outputs/exchange-response-histories/status.json",
+        "outputs/exchange-response-histories/comparison.json"
+      ],
+      "details": {
+        "by_history": {
+          "7": {
+            "donor": 8
+          },
+          "8": {
+            "donor": 8,
+            "destination": 0,
+            "unresolved": 0
+          },
+          "9": {
+            "donor": 8,
+            "destination": 0,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "neighbor-context",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-7",
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 3,
+      "claim": "Conservative neighbor averaging shifts the fresh low-state recipient in all three histories; broader challenges alter late states and pulse responses.",
+      "validation": "independent_solver_and_sham_pass",
+      "limitations": "36 challenges and 72 comparisons nested in three histories; immediate pulses occur during reorganization; geometry is frozen.",
+      "evidence": [
+        "outputs/neighbor-context/protocol.json",
+        "outputs/neighbor-context/results.json",
+        "outputs/neighbor-context/summary.json",
+        "outputs/neighbor-context/status.json"
+      ],
+      "details": {
+        "by_history": {
+          "7": {
+            "challenges": 12,
+            "state_shifts": 4,
+            "pulse_comparisons": 24,
+            "response_shifts": 17,
+            "conservative_recipient_state_ratio": 0.3419157396779335
+          },
+          "8": {
+            "challenges": 12,
+            "state_shifts": 4,
+            "pulse_comparisons": 24,
+            "response_shifts": 15,
+            "conservative_recipient_state_ratio": 0.3214268720804183
+          },
+          "9": {
+            "challenges": 12,
+            "state_shifts": 3,
+            "pulse_comparisons": 24,
+            "response_shifts": 14,
+            "conservative_recipient_state_ratio": 0.5828809445457446
+          }
+        },
+        "nested_counts": {
+          "arm_jobs": 60,
+          "trajectories": 180,
+          "independent_histories": 3,
+          "target_background_contexts": 12,
+          "challenges": 36,
+          "informative": 36,
+          "state_shifted": 11,
+          "state_near_baseline": 25,
+          "pulse_comparisons": 72,
+          "response_shifted": 46,
+          "nearest_own": 72,
+          "target_unrecovered": 2,
+          "network_unrecovered": 2,
+          "baseline_target_unrecovered": 0,
+          "baseline_network_unrecovered": 0
+        }
+      }
+    },
+    {
+      "id": "delayed-pulses",
+      "theme": "Context",
+      "history_ids": [
+        "attribute-history-8"
+      ],
+      "histories": 1,
+      "claim": "Both selected seed-8 immediate-pulse nonrecoveries recover when challenged after settling, under percentage and original-amount controls; alternative endpoints also resist these pulses.",
+      "validation": "independent_solver_and_control_pass",
+      "limitations": "Post-selected follow-up of two cases in one reused history; 24 pulses are not a replication rate, a measured delay window, or moving-context evidence.",
+      "evidence": [
+        "outputs/neighbor-context-delayed/protocol.json",
+        "outputs/neighbor-context-delayed/results.json",
+        "outputs/neighbor-context-delayed/status.json",
+        "outputs/neighbor-context-delayed/verification.json"
+      ],
+      "details": {
+        "counts": {
+          "untouched": {
+            "pulses": 8,
+            "target_recovered": 8,
+            "network_recovered": 8,
+            "returned": 8,
+            "different_stable_endpoint": 0
+          },
+          "challenged": {
+            "pulses": 8,
+            "target_recovered": 8,
+            "network_recovered": 8,
+            "returned": 8,
+            "different_stable_endpoint": 0
+          },
+          "alternative": {
+            "pulses": 8,
+            "target_recovered": 8,
+            "network_recovered": 8,
+            "returned": 8,
+            "different_stable_endpoint": 0
+          }
+        },
+        "max_solver_log_error": 4.0475045529200306e-10,
+        "max_control_drift_log": 5.423038704781115e-11
+      }
+    },
+    {
+      "id": "gpu-validation",
+      "theme": "Numerical",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "Four full accepted mature CPU/GPU control/pulse replays pass; additional contexts are checked before scientific use.",
+      "validation": "backend_pass",
+      "limitations": "Backend agreement in the tested mature regime, not an extra history, developmental convergence, or GPU division validation.",
+      "evidence": [
+        "outputs/gpu-backend-validation/protocol.json",
+        "outputs/gpu-backend-validation/comparison.json",
+        "outputs/gpu-backend-validation/status.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "mature-timestep",
+      "theme": "Numerical",
+      "history_ids": [
+        "attribute-history-8",
+        "attribute-history-9"
+      ],
+      "histories": 2,
+      "claim": "Both existing histories pass mature exchange/retention and selected same-state response timestep halving; classifications and sampled recoveries agree.",
+      "validation": "refinement_pass",
+      "limitations": "18 repeated continuations, four full backend replays, ten context checks; no new history, spatial convergence, or refined development.",
+      "evidence": [
+        "outputs/exchange-response-histories-refined/protocol.json",
+        "outputs/exchange-response-histories-refined/refinement.json",
+        "outputs/exchange-response-histories-refined/status.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "survival-timestep",
+      "theme": "Numerical",
+      "history_ids": [
+        "attribute-history-7"
+      ],
+      "histories": 1,
+      "claim": "The paired t=90-150 seed-7 maintenance continuation passes timestep halving.",
+      "validation": "pass",
+      "limitations": "Same physical starts; no validation of preceding cleavage.",
+      "evidence": [
+        "outputs/feedback-survival-validation/refinement.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "conservative-reference",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "Conservative volume-weighted transport converges on the controlled regular reference; random-walk scaling does not give fixed physical diffusivity.",
+      "validation": "pass",
+      "limitations": "Regular reference does not validate diffuse-contact conductance closure.",
+      "evidence": [
+        "outputs/live-transport-validation-complete/report.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "geometric-closure",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "Flat orthogonal reference checks pass; all three declared general-geometry closure checks fail.",
+      "validation": "fail",
+      "limitations": "Curvature, diffuse gaps, and nonorthogonal flux remain physical approximation limits.",
+      "evidence": [
+        "outputs/geometry-transport-validation/comparison.json",
+        "outputs/geometry-transport-validation/status.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "positive-skew-prototype",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "The separate conservative-positive flux prototype passes its specified patches.",
+      "validation": "pass",
+      "limitations": "Not coupled to live mechanics; does not repair the current conductance approximation.",
+      "evidence": [
+        "outputs/positive-skew-flux/comparison.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "boundary-skew-prototype",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "The separate corrected-boundary prototype passes its prescribed patches.",
+      "validation": "pass",
+      "limitations": "Not live-integrated; no general moving-tissue acceptance.",
+      "evidence": [
+        "outputs/skew-boundary-correction/comparison.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "historical-development-refinement",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "The historical full-development refinement completes five cases but fails the combined predeclared gate.",
+      "validation": "fail",
+      "limitations": "Historical fate model; not three new attribute-model histories, and no full-development acceptance transferred.",
+      "evidence": [
+        "outputs/development-refinement/comparison.json",
+        "outputs/development-refinement/status.json"
+      ],
+      "details": {}
+    },
+    {
+      "id": "cleavage-measurement",
+      "theme": "Numerical",
+      "history_ids": [],
+      "histories": 0,
+      "claim": "A separate calibrated diagnostic resolves the cleavage measurement failure without rewriting the original failed screen.",
+      "validation": "pass",
+      "limitations": "Controlled analytic cleavage, not full developmental or sharp-interface convergence.",
+      "evidence": [
+        "outputs/cleavage-measurement/comparison.json"
+      ],
+      "details": {}
+    }
+  ],
+  "evidence_sha256": {
+    "outputs/attribute-development/comparison.json": "f32b5afedd9b37294a2a9ee310a27fe81e0d68386672fe67f9d70e8a23627a69",
+    "outputs/attribute-development/protocol.json": "4f620bc5fe0783cc20a8ae4b16bc425979164a207ffa09a1129703d11e07ae7f",
+    "outputs/feedback-long/comparison.json": "f79fa2612148c2b9d829b844705a98580a381c38d428eabdbad14d17730c4a07",
+    "outputs/feedback-polarity-ablation/comparison.json": "c3a69c204f03b38a62898370153fa7140c811e63b5a2f1566cb18f261c8847df",
+    "outputs/feedback-long/protocol.json": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3",
+    "outputs/feedback-polarity-ablation/protocol.json": "c55c9f68121db4e0c6128fe3fef489581c30a4bf4fc3e15a03d48a520348e82c",
+    "outputs/feedback-spectrum/protocol.json": "a2aec4fa96174cf1d277291a0dc0d949fa14eac5ff05f1de9eb1f5d52f4a1e8a",
+    "outputs/feedback-spectrum/spectra.json": "8f6de45b50c8b45a32655155757278ec74935a65964e937dd713a888aca0c6d6",
+    "outputs/feedback-spectrum/counterfactuals.json": "a3a54da572bb370072f19c1a2d57399c34f77077fadc179aa2f97f8147ee3246",
+    "outputs/feedback-survival/comparison.json": "a7d17bcdc559b3a47c3ef55a05feb259b8324b4aa684af28eba2f192752a7d7f",
+    "outputs/feedback-survival-validation/seed-8/survival/comparison.json": "716dd529a4f86b773b2d3f81153796d344a05bbbc2e12369315284b4b28c2572",
+    "outputs/feedback-survival-validation/seed-9/survival/comparison.json": "59e8d9aead6497247d39397c48050971718dc2e60b943251ca1ab56a50270651",
+    "outputs/feedback-survival/protocol.json": "9aeeea4102694193c741d5e02f4b8de0b5122adc85e47aafc52d9729e1c644e9",
+    "outputs/feedback-survival-validation/summary.json": "09bca544b25cce4278cc9a89233fe95a6d90b2916625ccd9c91e9751c2e83a97",
+    "outputs/feedback-endpoint-bistability/results.json": "5c1205b9a5da9635102c191183eaa56b31cd459576e66646db2d6ce692d2520b",
+    "outputs/feedback-endpoint-bistability-seed-8/results.json": "300eeea11f33a2c322a20f4fcad15cb52fc6fbfe9debdffe7efbdfc876bbe892",
+    "outputs/feedback-endpoint-bistability-seed-9/results.json": "1715b037370250512cf362be39df8c7b5c3a09a0b46b5e822c99ffe1b2cb7829",
+    "outputs/feedback-endpoint-bistability/protocol.json": "c2628bbd5ffca3ee2bd5d563925f698b042163e44c6695da832ead3c7f203d09",
+    "outputs/feedback-endpoint-bistability-seed-8/protocol.json": "e9a02e1d6f2193f608e176dfbf55da273cfbdfa8e37e3f60122c6ff24990cc6d",
+    "outputs/feedback-endpoint-bistability-seed-9/protocol.json": "c33873b37d1f9ab9dbf124a68188fa5207d52a1e1c097bcbb9f9833bf80b23fc",
+    "outputs/attribute-persistence/results.json": "79732969b43592d18e887531f16b0314891a77d22df7a0d83a5c2811acf8c297",
+    "outputs/attribute-persistence/protocol.json": "d57193b874de49edbbe8183923b7f217e312e9c19fd0ce764df1d2b26f2b0b68",
+    "outputs/attribute-exchange/results.json": "f96564d8dcd200a761f5afaa473f620f21a40cb6501c0a174d0d9e86d97c324a",
+    "outputs/attribute-exchange/protocol.json": "e493d8ab55a635cb1c68d59ad23416631081962bb72ea18661f0755d224a3b82",
+    "outputs/attribute-exchange/assessment.json": "7aa0f403808d192d61d8f7a92b326d59ddab8f3db0bcce8f1bc4744b4797a0c9",
+    "outputs/attribute-common-environment/verification.json": "b2fb8911fa5aef8c32ed195ee9e1a6d502e2fc3f2819ed15ab05fe1c016ac8ef",
+    "outputs/attribute-common-environment/protocol.json": "f9a61194bfb29ffbd82f5fca88090175b7d79078c8f17a871fd9b62d971dbbb7",
+    "outputs/attribute-common-environment/results.json": "eb772d6bcbb3708b6bb11704f004ab09ffe74fc3ddb383830ecad68a4c3957bd",
+    "outputs/attribute-finite-reservoir/summary.json": "94ba453c0564e0f82a4b685e1b73e52981076c38514bd610dcc5b16eefe583bf",
+    "outputs/attribute-finite-reservoir/protocol.json": "c7f8ec8eee0e531543e138252e311580794bb69f8bfb6aafd0bfd9b8b4050160",
+    "outputs/attribute-finite-reservoir/results.json": "402aa39c489c981b9348b3c4b718afa16e396cb5d4e32b759a3c7c0555b465b6",
+    "outputs/attribute-finite-reservoir/verification.json": "6a87f9a72c469e40cf99255ad4de03a36863c2f8385c28b37f89b37fafcd7a28",
+    "outputs/cell-response-exchange/assessment.json": "deae35b03f9bc4de51b3bebfbbda3e40c0b66a210afeec95e82c7fe778dd5124",
+    "outputs/cell-response-exchange/protocol.json": "aaa68129c4674033e37e00e23ea7957bc022233968a4b45ea0263a39710b2038",
+    "outputs/cell-response-exchange/results.json": "7c5d9db310a4d7e58ee08088d12220038a555f2e94dc4d6582b9670e4dbe3364",
+    "outputs/exchange-response-histories/comparison.json": "75f359bb91f533fd58f4cc45f12ce4764f91fc32a73498a00dae1f687c9ccd5d",
+    "outputs/cell-exchange-response-moving/protocol.json": "d5d4010d5260db493e54c74b019121625273bec53416b2179b7d85158434a640",
+    "outputs/cell-exchange-response-moving/comparison.json": "89548bcf15b91f039a6d094bfd6a0287959da8a1901f5c0b547cef977dba93a1",
+    "outputs/exchange-response-histories/protocol.json": "abcbd9c498d3875ca0eaf10efbfa9836311c91158f9757a4734ed8b2c251e5d8",
+    "outputs/exchange-response-histories/status.json": "ee1b526652911bf1c120f7803538e8aeb1598c01ac26973fd600494aad27155d",
+    "outputs/neighbor-context/results.json": "150ae64d33d328ed3eb48e058889e05926d37c189352e75f86c134d4b4c60625",
+    "outputs/neighbor-context/summary.json": "90eba35aa7c1deb889b44a76e9db1a94d1b208bc69ad908ef500dcf0da3d7105",
+    "outputs/neighbor-context/protocol.json": "e07261e777fcdf38afcba55d015d19c0b02d68f31f39c88854344baec3cb5db8",
+    "outputs/neighbor-context/status.json": "124f5fe5786b94f30ed14e16289759ce1054426d0c5f76a349e0a1d800c5f629",
+    "outputs/neighbor-context-delayed/results.json": "bb4dbbc8b62c6e26a3f9a2c6301239d1b013acc949b3d20e08f36e1986fc2304",
+    "outputs/neighbor-context-delayed/protocol.json": "9e012f0a13c4b9535b8ae956d68b0d094885b5e30900dc09340366ae85e2c64a",
+    "outputs/neighbor-context-delayed/status.json": "1194b6fc244a16e13e7f006e4bf33655a03df63e557572fc5fffbba6206f94a8",
+    "outputs/neighbor-context-delayed/verification.json": "30a71d0a15e13ac193c6b59d9fbeb02c8ed5e671671c5d360623b3cb2c62e707",
+    "outputs/gpu-backend-validation/comparison.json": "26bf5b9b4135f5a71e223b19e48359ddebf000baadbfd2bd7f5c358013b43401",
+    "outputs/gpu-backend-validation/protocol.json": "67e4835feeb770e5cc03faa64c707542881dfb5bd12025f3bbcb1f496b4cf6f8",
+    "outputs/gpu-backend-validation/status.json": "43a6dade72187737e33832b5fe594528e2bb1f233af0383807390d7a82b48e9c",
+    "outputs/exchange-response-histories-refined/refinement.json": "bbe68e2a87e2f9981abeca3da3e623c388e1409ff5d7d82a9039e1ecc2ab4290",
+    "outputs/exchange-response-histories-refined/protocol.json": "9d71021970087974546b1e0fdaa6a8f955dcf7355ed38e61b31c504040794808",
+    "outputs/exchange-response-histories-refined/status.json": "c0da0130b5ebc0487c5c6aff81e36d13d956053407d2071d241e804ceb893689",
+    "outputs/feedback-survival-validation/refinement.json": "c087c6a0fb498bedd1f67666612f041e3b0bb956fbb8ead04013e1bd1dae8c4b",
+    "outputs/live-transport-validation-complete/report.json": "a65bcf25865fbfebcf030727293ebf2a1748afdacc87bc657366080c93d6881f",
+    "outputs/geometry-transport-validation/comparison.json": "13c49ad7026800d4315c8b9d38b188d9a16590f72b33e08b91527ab3be0388e1",
+    "outputs/geometry-transport-validation/status.json": "43165eff61e56f4d32e9e20f0364f4fe049e39374a0ae13094bfa524b04d95f3",
+    "outputs/positive-skew-flux/comparison.json": "8940fb9401451eef4636c1ff98cb2123f0c345f88d3af63dbb7a5c2d81ded866",
+    "outputs/skew-boundary-correction/comparison.json": "1e6f223fa4814004a0f44a2998ad19eb1f2eb0a38bb714ba85ead9616ff5ba7e",
+    "outputs/development-refinement/comparison.json": "eab9e5cc176aafaff205ffa0df6c9c5bf9e9febd6fe95ce812a641cd5c2149c8",
+    "outputs/development-refinement/status.json": "721f1237be14ed6f93c2d687771140e4ac95fe56d09b03bfb9dc64cca84dbe40",
+    "outputs/cleavage-measurement/comparison.json": "1795b12f10d9a9e86043c76dad9279d369451af04194551244cb8c9b943659c8"
+  },
+  "source_sha256": {
+    "embryo/results_ledger.py": "748a7b3a6ad58c4f6d79d8bda77617bdc22303f0b3d0d1d340d1129fe9aa1e4c"
+  },
+  "history_checkpoint_sha256": {
+    "outputs/attribute-development/no_feedback/final_state.npz": "a6ed6d8599acc6c6aadf09e725dc5dd025798395152d4fd280d040de8d177589",
+    "outputs/feedback-survival-validation/seed-8/development/latest_state.npz": "d0d48b45813bc00cf24568c77d62d461d486e2d776855e901095f1c26c228d5e",
+    "outputs/feedback-survival-validation/seed-9/development/latest_state.npz": "4d8999916e58ae432cca24219fc9ea5edc5b1868364892245a4e11f344acbf14"
+  },
+  "directory_inventory": [
+    {
+      "directory": "outputs/attribute-common-environment",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json",
+        "verification.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-development",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_quality_pass": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-development-parallel-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_quality_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-development-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_quality_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-exchange",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-finite-reservoir",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json",
+        "status.json",
+        "summary.json",
+        "verification.json"
+      ]
+    },
+    {
+      "directory": "outputs/attribute-persistence",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/causal-signaling",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "equal_diffusion-half-dt.json",
+        "equal_diffusion.json",
+        "full-half-dt.json",
+        "full.json",
+        "no_induced_inhibitor.json",
+        "no_inhibitor_action.json",
+        "no_self_activation-half-dt.json",
+        "no_self_activation.json",
+        "no_signal_to_fate.json",
+        "no_transport.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/causal-signaling-confirmation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "equal_diffusion-0.000625.json",
+        "equal_diffusion-0.00125.json",
+        "full-0.000625.json",
+        "full-0.00125.json",
+        "no_self_activation-0.000625.json",
+        "no_self_activation-0.00125.json",
+        "no_transport-0.000625.json",
+        "no_transport-0.00125.json",
+        "progress.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-exchange-moving",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "dependency_check.json",
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-exchange-moving-incomplete-preparation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/cell-exchange-response-moving",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "backend-transition.json",
+        "comparison.json",
+        "launcher.json",
+        "native-backend-transition.json",
+        "native-launch.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-exchange-response-refined",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "refinement.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/cell-response-exchange",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "launcher.json",
+        "results.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-moving",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-moving-interim-20260930T003007Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-moving-refined",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "launcher.json",
+        "refinement.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-moving-refined-interim-20260930T212237Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "running",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-moving-refined-interim-20261001T020257Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "running",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-response-refined",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "refinement.json"
+      ]
+    },
+    {
+      "directory": "outputs/cell-surface-preview",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "provenance.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/cleavage-measurement",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": true
+      },
+      "root_reports": [
+        "calibration.json",
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cleavage-resolution",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/completed-feedback-assessment-20260929T012311Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "directory": "outputs/contact-cutoff-sensitivity",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/continuum-bridge",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/continuum-bridge-verified",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/continuum-bridge1",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/coupled-resolution",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "frozen_geometry.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cuda-kernel-cache",
+      "disposition": "cache",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/cuda-precision-extended",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "runs.json",
+        "status.json",
+        "unexchanged_cell-27_factor-0.9-32-history.json",
+        "unexchanged_cell-27_factor-0.9-64-history.json",
+        "unexchanged_control-32-history.json",
+        "unexchanged_control-64-history.json"
+      ]
+    },
+    {
+      "directory": "outputs/cuda-precision-pilot",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json"
+      ]
+    },
+    {
+      "directory": "outputs/cuda-spatial-bench",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "metadata.json",
+        "scaling.json",
+        "snapshots.json",
+        "transfers.json",
+        "verification.json"
+      ]
+    },
+    {
+      "directory": "outputs/cutoff-dynamics",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/cytokinesis-baseline",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/cytokinesis-check",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json"
+      ]
+    },
+    {
+      "directory": "outputs/demo",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "config.json",
+        "diagnostics.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/dense-geometry-replay",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "capture-audit.json",
+        "comparison.json",
+        "progress.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/development-refinement",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/domain-conservative",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json"
+      ]
+    },
+    {
+      "directory": "outputs/domain-conservative-extended",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/exchange-response-histories",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/exchange-response-histories-refined",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "refinement.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-mechanics-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "concurrency.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-mechanics-validation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-mechanics-validation-preflight",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "prepared",
+      "acceptance_flags": {},
+      "root_reports": [
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-polarity-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-polarity-benchmark-v2",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-polarity-validation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "stopped_by_user",
+      "acceptance_flags": {},
+      "root_reports": [
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fast-polarity-validation-first-prototype",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "prepared",
+      "acceptance_flags": {},
+      "root_reports": [
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fate-memory",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fate-robustness",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-components",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "adhesion_only_history.json",
+        "results.json",
+        "tension_only_history.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-endpoint-bistability",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-endpoint-bistability-seed-8",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-endpoint-bistability-seed-9",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-long",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-long-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-polarity-ablation",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-response",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-response-refinement",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "results.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-spectrum",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "counterfactuals.json",
+        "cutoff_checks.json",
+        "force_split.json",
+        "modulation_amplitudes.json",
+        "spectra.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-survival",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "launcher.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-survival-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/feedback-survival-validation",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "cohort.json",
+        "refinement.json",
+        "status.json",
+        "summary.json"
+      ]
+    },
+    {
+      "directory": "outputs/fertilization-cue",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "stopped_by_user",
+      "acceptance_flags": {},
+      "root_reports": [
+        "launcher.json",
+        "results.json",
+        "screen.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/fertilization-cue-preflight-protocol",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "prepared",
+      "acceptance_flags": {},
+      "root_reports": [
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/geometry-replay",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "progress.json",
+        "spectra.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/geometry-transport-validation",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/gpu-adapter-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/gpu-adapter-smoke-source",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/gpu-backend-validation",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "device.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/graph-analysis",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json",
+        "refinement_dynamics.json"
+      ]
+    },
+    {
+      "directory": "outputs/graph-no-polarity",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "cleavage_spectra.json",
+        "config.json",
+        "diagnostics.json",
+        "graph_history.json",
+        "graph_preflight.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/graph-polarity",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "cleavage_spectra.json",
+        "config.json",
+        "diagnostics.json",
+        "graph_history.json",
+        "graph_preflight.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/graph-preflight",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/identity-interim-20261001T162647Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "directory": "outputs/identity-interim-20261001T215218Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "directory": "outputs/initial-prototype",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "config.json",
+        "diagnostics.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/interim-feedback-20260928T151647Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json",
+        "quality.json"
+      ]
+    },
+    {
+      "directory": "outputs/interim-feedback-20260928T201920Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/interim-feedback-20260928T201929Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "assessment.json",
+        "manifest.json"
+      ]
+    },
+    {
+      "directory": "outputs/irregular-bridge",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/irregular-signaling",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/joint-fate-validation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "progress.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/kernel-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/live-conservative-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "cleavage_spectra.json",
+        "config.json",
+        "diagnostics.json",
+        "graph_history.json",
+        "graph_preflight.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/live-transport-validation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/live-transport-validation-complete",
+      "disposition": "curated",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "report.json"
+      ]
+    },
+    {
+      "directory": "outputs/mechanics-kernel-cache",
+      "disposition": "cache",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/moving-causal",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_quality_pass": true
+      },
+      "root_reports": [
+        "assessment-status.json",
+        "assessment.json",
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/moving-causal-smoke",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_quality_pass": true
+      },
+      "root_reports": [
+        "assessment.json",
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/moving-domain",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/moving-domain-verified",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/native-mechanics-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "parallel.json",
+        "thread_scaling.json",
+        "verification.json"
+      ]
+    },
+    {
+      "directory": "outputs/native-mechanics-validation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "passed": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/neighbor-context",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "numerical_pass": true
+      },
+      "root_reports": [
+        "results.json",
+        "status.json",
+        "summary.json"
+      ]
+    },
+    {
+      "directory": "outputs/neighbor-context-delayed",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "numerical_pass": true
+      },
+      "root_reports": [
+        "results.json",
+        "status.json",
+        "verification.json"
+      ]
+    },
+    {
+      "directory": "outputs/nonlinear-bridge",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/nonlinear-bridge-verified",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json"
+      ]
+    },
+    {
+      "directory": "outputs/optimization-shutdown-20261002T163919Z",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "processes.json"
+      ]
+    },
+    {
+      "directory": "outputs/positive-skew-flux",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/progressive",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "config.json",
+        "diagnostics.json",
+        "lineage.json",
+        "trajectory.json"
+      ]
+    },
+    {
+      "directory": "outputs/projection-audit",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {},
+      "root_reports": [
+        "analysis.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/refinement-confirmation",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/resident-gpu-coupled-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "comparison.json",
+        "gpu-history.json",
+        "native-history.json"
+      ]
+    },
+    {
+      "directory": "outputs/screen",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "11_mechanics.json",
+        "11_one_way.json",
+        "11_two_way.json",
+        "23_mechanics.json",
+        "23_one_way.json",
+        "23_two_way.json",
+        "7_mechanics.json",
+        "7_one_way.json",
+        "7_two_way.json",
+        "configs.json"
+      ]
+    },
+    {
+      "directory": "outputs/shape-extended",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/shape-persistence",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/signal-patch",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": []
+    },
+    {
+      "directory": "outputs/signaling-timescales",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "frozen_refinement.json",
+        "frozen_step_check.json"
+      ]
+    },
+    {
+      "directory": "outputs/skew-boundary",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/skew-boundary-correction",
+      "disposition": "curated",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": true
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/skew-flux",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "completed",
+      "acceptance_flags": {
+        "all_checks_pass": false
+      },
+      "root_reports": [
+        "comparison.json",
+        "status.json"
+      ]
+    },
+    {
+      "directory": "outputs/torch-gpu-benchmark",
+      "disposition": "historical_or_unassessed",
+      "runner_state": "no_root_status",
+      "acceptance_flags": {},
+      "root_reports": [
+        "cases.json",
+        "comparison.json",
+        "verification.json"
+      ]
+    }
+  ]
+}

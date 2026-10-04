@@ -1,0 +1,495 @@
+{
+  "created_utc": "2026-10-04T00:03:16.346254+00:00",
+  "policy": "Retired prototypes; retained original paths preserve provenance. Shared active support is not retired.",
+  "files": [
+    {
+      "family": "compiled-c-polarity",
+      "original": "embryo/fast_polarity.py",
+      "snapshot": "snapshots/compiled-c-polarity/fast_polarity.py",
+      "sha256": "86cc27ee750d4db8f2aa154753580b6273f4c386a1a52333c6e1857984464d60",
+      "pinned_reports": [
+        {
+          "report": "outputs/fast-polarity-validation/protocol.json",
+          "recorded_sha256": "86cc27ee750d4db8f2aa154753580b6273f4c386a1a52333c6e1857984464d60",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/fast-polarity-validation-first-prototype/protocol.json",
+          "recorded_sha256": "86cc27ee750d4db8f2aa154753580b6273f4c386a1a52333c6e1857984464d60",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "compiled-c-polarity",
+      "original": "embryo/fast_polarity.c",
+      "snapshot": "snapshots/compiled-c-polarity/fast_polarity.c",
+      "sha256": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+      "pinned_reports": [
+        {
+          "report": "outputs/fast-polarity-validation/protocol.json",
+          "recorded_sha256": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/fast-polarity-validation-first-prototype/protocol.json",
+          "recorded_sha256": "631acb980bceacde9a80b6a134a9cf31c4145bd2f1dc5f21f14f0f8ec87c1f65",
+          "matches_snapshot": false
+        }
+      ]
+    },
+    {
+      "family": "compiled-c-polarity",
+      "original": "embryo/benchmark_fast_polarity.py",
+      "snapshot": "snapshots/compiled-c-polarity/benchmark_fast_polarity.py",
+      "sha256": "f730f88be4e9305ff0043f784b5859bc5292059fd80bc937bb1ce7d7e15bf146",
+      "pinned_reports": []
+    },
+    {
+      "family": "compiled-c-polarity",
+      "original": "embryo/validate_fast_polarity.py",
+      "snapshot": "snapshots/compiled-c-polarity/validate_fast_polarity.py",
+      "sha256": "467031d3e1b7a5511d012392b28236e135611744aae6f4b9789118977337e131",
+      "pinned_reports": [
+        {
+          "report": "outputs/fast-polarity-validation/protocol.json",
+          "recorded_sha256": "467031d3e1b7a5511d012392b28236e135611744aae6f4b9789118977337e131",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/fast-polarity-validation-first-prototype/protocol.json",
+          "recorded_sha256": "467031d3e1b7a5511d012392b28236e135611744aae6f4b9789118977337e131",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "host-transfer-cuda",
+      "original": "embryo/cuda_benchmark.py",
+      "snapshot": "snapshots/host-transfer-cuda/cuda_benchmark.py",
+      "sha256": "76345ca159a9e42193926da4a1a65c0670d35e90791cc52a261062e5f99b77f8",
+      "pinned_reports": [
+        {
+          "report": "outputs/cuda-precision-extended/protocol.json",
+          "recorded_sha256": "76345ca159a9e42193926da4a1a65c0670d35e90791cc52a261062e5f99b77f8",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "host-transfer-cuda",
+      "original": "embryo/cuda_precision_extended.py",
+      "snapshot": "snapshots/host-transfer-cuda/cuda_precision_extended.py",
+      "sha256": "982ef81875d1056422e370630a93f0e37d1572c1389e01c8b3b495b1ffb4e94c",
+      "pinned_reports": [
+        {
+          "report": "outputs/cuda-precision-extended/protocol.json",
+          "recorded_sha256": "982ef81875d1056422e370630a93f0e37d1572c1389e01c8b3b495b1ffb4e94c",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "host-transfer-cuda",
+      "original": "embryo/cuda_spatial_bench.py",
+      "snapshot": "snapshots/host-transfer-cuda/cuda_spatial_bench.py",
+      "sha256": "485574412822eb25d78141a214b87e0b6033c9060d3e3d72713cc11072aec95d",
+      "pinned_reports": [
+        {
+          "report": "outputs/cuda-precision-extended/protocol.json",
+          "recorded_sha256": "485574412822eb25d78141a214b87e0b6033c9060d3e3d72713cc11072aec95d",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "pure-torch-snapshots",
+      "original": "embryo/torch_benchmark.py",
+      "snapshot": "snapshots/pure-torch-snapshots/torch_benchmark.py",
+      "sha256": "d1526fd345d464360e6a9d5c960cb4f0925db74f69f6cea61fcfa479ebf20da7",
+      "pinned_reports": [
+        {
+          "report": "outputs/torch-gpu-benchmark/comparison.json",
+          "recorded_sha256": "d1526fd345d464360e6a9d5c960cb4f0925db74f69f6cea61fcfa479ebf20da7",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "shared-active-support",
+      "original": "embryo/cuda_mechanics.cu",
+      "snapshot": "snapshots/shared-active-support/cuda_mechanics.cu",
+      "sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+      "pinned_reports": [
+        {
+          "report": "outputs/cuda-precision-extended/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/formation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/formation-source/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/relaxed_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/relaxed_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/formation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/formation-source/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/relaxed_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/relaxed_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/gpu-validation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/formation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/formation-source/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/formation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/formation-source/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/gpu-backend-validation/protocol.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/torch-gpu-benchmark/comparison.json",
+          "recorded_sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+          "matches_snapshot": true
+        }
+      ]
+    },
+    {
+      "family": "shared-active-support",
+      "original": "embryo/cuda_spatial_bench.cu",
+      "snapshot": "snapshots/shared-active-support/cuda_spatial_bench.cu",
+      "sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+      "pinned_reports": [
+        {
+          "report": "outputs/cuda-precision-extended/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/formation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/formation-source/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/relaxed_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/relaxed_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-8/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/formation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/formation-source/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/relaxed_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/relaxed_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories/seed-9/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/gpu-validation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/formation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/formation-source/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-8/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/formation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/formation-source/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response-source/fresh_exchange/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/exchange-response-histories-refined/seed-9/response-source/unexchanged/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/gpu-backend-validation/protocol.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        },
+        {
+          "report": "outputs/torch-gpu-benchmark/comparison.json",
+          "recorded_sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+          "matches_snapshot": true
+        }
+      ]
+    }
+  ]
+}

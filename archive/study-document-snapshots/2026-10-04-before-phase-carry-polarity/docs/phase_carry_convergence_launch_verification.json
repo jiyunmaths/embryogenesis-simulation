@@ -1,0 +1,79 @@
+{
+  "checked_utc": "2026-10-04T16:11:09.803320+00:00",
+  "protocol_sha256": "89f3753ee84baabfce58dfe271a31f7c68c77fd7b116d8c2da719d757bb1d195",
+  "source_hashes_verified": 36,
+  "input_hashes_verified": 115,
+  "parent_evidence_unchanged": true,
+  "coarsened_start_preserved": true,
+  "independent_histories": 1,
+  "new_histories": 0,
+  "new_moving_jobs": 1,
+  "reused_moving_trajectories": 2,
+  "implementation_gate": {
+    "passed": true,
+    "baseline_bit_exact_steps": 16,
+    "zero_carry_first_step_bit_exact": true,
+    "carry_restart_bit_exact_steps": 4,
+    "quality": {
+      "max_volume_error": 0.010622251919744197,
+      "min_radius": 5.11057148197844,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 2.220446049250313e-16
+    },
+    "checkpoint_sha256": "ec941e686d6322a1b04e41ac8def217abab3af071b19cf1ea9112acdba842fc1",
+    "device": {
+      "name": "NVIDIA GeForce GTX 1080 Ti",
+      "torch": "2.7.1+cu118",
+      "torch_cuda": "11.8",
+      "experimental_binary": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cuda-kernel-cache/precision-control-1089b0250fe7cee4c282.so",
+      "experimental_binary_sha256": "9f41e889e108deae63feb425ae35a8330c5ba5d377429745c70092785745f39f",
+      "accepted_binary": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cuda-kernel-cache/resident-13344c021dacb157a3dc.so",
+      "accepted_binary_sha256": "4517360041700bd30406b478fc7ac6b70d88e3d26775ed6b977ea90ced353cc0"
+    }
+  },
+  "cpu_tests": {
+    "passed": 10,
+    "skipped": 1,
+    "scope": "Independent mechanics operator/energy/reference trend, retiming, and existing transfer/precision tests; skipped opt-in GPU unit test is covered separately by exact-context implementation gates."
+  },
+  "tests_sha256": {
+    "tests/test_mechanics_float64_reference.py": "fc49081b192d2df93d45b5a61448a88f29ffdb320f590761dedb683ebc72565a",
+    "tests/test_phase_carry_convergence.py": "677033bf51657b4df551227d28d0d3fbc2bc1b8f1bf88aa7a66c06510257aba9"
+  },
+  "criteria_before_launch": {
+    "chemical_log_max": 0.01,
+    "polarity_abs_max": 0.01,
+    "relative_axis_max": 0.01,
+    "relative_volume_max": 0.005,
+    "relative_transport_max": 0.01,
+    "growth_abs_max": 0.001,
+    "crossing_time_abs_max": 0.3,
+    "onset_time_abs_max": 0.3,
+    "same_late_contrast_required": true,
+    "same_crossing_presence_required": true
+  },
+  "trend_criteria": {
+    "chemical_pair_error_ratio_min": 1.5
+  },
+  "reference_criteria": {
+    "phase_abs_max": 5e-06,
+    "phase_relative_l2": 2e-06,
+    "relative_volume_max": 2e-06,
+    "clipping_max": 0.0,
+    "reference_pair_error_ratio_min": 1.5
+  },
+  "status_at_check": {
+    "state": "running",
+    "stage": "independent_float64_reference",
+    "completed": 0,
+    "total": 1
+  },
+  "scientific_outcome_pending": true,
+  "documents_sha256": {
+    "README.md": "64093edbf1f8be7d838cc59f039441bb26d83b37d3f035369e0d6923a46649dd",
+    "docs/plan.md": "f2f6bdcc2e58de387b9f040179d97220df09f66ac8637641ec74044f66302202",
+    "docs/backends.md": "0de2fd98c03a097973479092bf27cf958e86cf8af7786d0124f49666105112dd",
+    "docs/phase_carry_convergence.md": "780fb3ad7d7b39e8812dc70155fbccaeacde69fb6fd663aab3a33bf4dae822f2"
+  },
+  "archived_document_manifest_sha256": "271c8fd117b4ba551d5bae1d9bf282ba25829b62b7aced7161a680de4628b277"
+}

@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-10-04T19:15:43.109962+00:00",
+  "reporting_addendum_sha256": "d9c08674e9261e0803ff9d7dcd2063e91d476906d0b32156c516cc798d54c0f5",
+  "active_protocol_unchanged": true,
+  "active_source_hashes_verified": 37,
+  "active_input_hashes_verified": 200,
+  "original_thresholds_and_horizons_retained": true,
+  "prior_document_snapshots_verified": 4,
+  "scientific_runner_modified": false,
+  "scientific_outputs_modified": false,
+  "new_control_runs_launched": false,
+  "document_sha256": {
+    "docs/moving_geometry_initiation_controls.md": "4cdc4276b22c4aced7fe2dc3a4ae7a3beb5d795597fc2b52fe7a28309d3da2f8",
+    "docs/phase_carry_polarity.md": "62798e8a52f701631a219b78da6e1a64b6346c6ab8f18916d41ecf427c9c713d",
+    "docs/plan.md": "86c539c09ae2f7d99fe7ec7510dc5bd68aa59a81975a69cf557f31b917369c1c"
+  }
+}

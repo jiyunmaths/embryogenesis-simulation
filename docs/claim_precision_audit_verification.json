@@ -1,0 +1,56 @@
+{
+  "verified_utc": "2026-10-04T19:41:18.245403+00:00",
+  "curated_entries": 22,
+  "supplemental_studies": 2,
+  "outcome_claim_groups": 14,
+  "trajectory_claim_groups": 15,
+  "original_entry_claims_decisions_counts_limits_preserved": true,
+  "original_evidence_hashes_preserved": true,
+  "original_history_checkpoint_hashes_preserved": true,
+  "archived_files_verified": 11,
+  "active_study_source_hashes_verified": 37,
+  "active_study_input_hashes_verified": 200,
+  "manuscript_scientific_report_snapshots_unchanged": true,
+  "manuscript_results_and_pdf_not_regenerated_by_audit": true,
+  "previous_manuscript_manifest_canonical_source_matches": {
+    "manuscript/sections.md": false,
+    "manuscript/main.tex": true,
+    "manuscript/references.bib": true
+  },
+  "prior_manifest_note": "The prior sections.md hash was already stale: its file modification predates the audit archive. This audit did not edit the canonical manuscript. The refreshed manifest records its actual current bytes and unchanged scientific report snapshots.",
+  "manuscript_evidence_manifest_hashes_verified": 103,
+  "tests": {
+    "passed": 6,
+    "suite": "tests/test_precision_claim_audit.py",
+    "portable_isolated_fixtures": true
+  },
+  "same_dt_chemical_log_max": {
+    "fine": 0.06656637653640507,
+    "finer": 0.10427397553912383
+  },
+  "source_document_sha256": {
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200",
+    "embryo/precision_claim_audit.py": "bade026d6fdbdf61b4986623c5ad4909d70224e87a9fda30156ac7eddad888a3",
+    "embryo/results_ledger.py": "4c9d4666b77649bb0d9443881386bed4c2cecd67d7415d586d95bc57b4cad9cd",
+    "tests/test_precision_claim_audit.py": "2b80c6d07a502e478bd88686c1eca374f54b3081ccc8bd7f764293f26f1ed07e",
+    "README.md": "8b9144ad527f324171dd7f48a43874cd3a16b15794d0bfd64142c0918756e4fa",
+    "docs/plan.md": "86c539c09ae2f7d99fe7ec7510dc5bd68aa59a81975a69cf557f31b917369c1c",
+    "docs/parameter_robustness_assessment.md": "c95d03b3ec76044ed2245d04bd2c1bcb29b2a65a2291936df49ca0b67935d023",
+    "docs/polarity_robustness_assessment.md": "b36c06b5253870e04bd6db316345c33b1dc5e9da7c8cd8fe2c9b2d1b0f2dbb58",
+    "docs/polarity_refinement_assessment.md": "8a6d1b350fbb8276a5b4ec5573cbde6bc3be92334432bc2c3732b83331afba9c",
+    "manuscript/README.md": "493acebddb9501e2bc07b8897eb2dbe0812aefe97b26040d3fad05e4573fc879",
+    "manuscript/snapshot_evidence.py": "e899d0f087cd3de841942bf7b72c755d86ea3e58797baf17adc86187b395131b",
+    "manuscript/evidence_manifest.json": "b434318e9643a26c9ed83094d34e5bd1785cb35b9fa38ebbe8b30c4ac2dc8e82"
+  },
+  "active_study_status_snapshot": {
+    "state": "running",
+    "stage": "long_moving_initiation",
+    "current_job": "seed-7_fine_chi-0",
+    "completed": 3,
+    "total": 10,
+    "failed_pilot_contexts": []
+  },
+  "scope": "Documentation and claim-provenance audit only. No new science launched or original scientific output edited. Outcome candidates are not certified carry robust; frozen results remain conditional on their old inputs; trajectory quantities require carry rederivation.",
+  "previous_verification_snapshot": "archive/study-document-snapshots/2026-10-04-before-initiation-reporting-addendum/docs/claim_precision_audit_verification.json"
+}

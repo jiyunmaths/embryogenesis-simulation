@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-04T02:56:50.751139+00:00",
+  "independent_histories": 3,
+  "completed_moving_runs": 18,
+  "completed_context_checks": 18,
+  "completed_endpoint_assays": 18,
+  "all_quality_and_context_checks_pass": true,
+  "all_endpoint_numerical_checks_pass": true,
+  "pattern_persistence": 9,
+  "near_uniform_persistent_initiation": 0,
+  "assessment_sha256": "e216f4b7264f127ba9e3595f37b1960b27cf8d13e00264f7daaa1045c3dc1570",
+  "supplementary_metrics": "Cell association, conductance/area-proxy decomposition and morphology are descriptive; they do not change the predeclared acceptance criteria.",
+  "files_sha256": {
+    "docs/parameter_robustness_assessment.md": "5ded3677876cd2e67af319384cefb376b422148abfaec1b6b755194cbf1ceade",
+    "docs/images/parameter-robustness-completed.png": "8f1fb81a5883f3d90c842853c7e2d41b6de8b475becef93dda6a5c21af6bad7f",
+    "outputs/parameter-robustness-moving/protocol.json": "d12009d95fd46ea7ae808c92c24348f524433543232d78f59ac7c5bff82909d7",
+    "outputs/parameter-robustness-moving/summary.json": "3db835d84e50bcd679c0012419332b1b3047003b7b8c2d4141557b3785cd7fc2",
+    "outputs/parameter-robustness-reference/comparison.json": "e55f541c4e0829b87f99391f97894a0be63b6dad9b2059f4c50ed4a09b6d1066"
+  }
+}

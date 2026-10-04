@@ -1,0 +1,65 @@
+{
+  "verified_utc": "2026-10-04T03:11:03.269860+00:00",
+  "protocol_sha256": "15c65f0b82747f7b26dd15a8c812ab96f951a59ef9a8cd7f15cedc8120cad5d8",
+  "tests": {
+    "passed": 40,
+    "skipped": 1,
+    "scope": [
+      "polarity robustness",
+      "parameter robustness",
+      "moving parameter controls",
+      "matched frozen references",
+      "GPU adapter",
+      "frozen endpoint bistability"
+    ]
+  },
+  "previous_ledger_verified": true,
+  "independent_histories": 3,
+  "moving_jobs": 21,
+  "reused_physical_prefixes": 6,
+  "frozen_completed": 6,
+  "frozen_numerical_pass": true,
+  "frozen_uniform_results": [
+    {
+      "seed": 7,
+      "family": "uniform",
+      "solver_log_error": 1.74159242598182e-10,
+      "final_log_sd": 1.1845481368254103,
+      "late_min_log_sd": 1.1845481368254103,
+      "persistent_contrast": true,
+      "first_contrast_crossing": 177.61153536957622
+    },
+    {
+      "seed": 8,
+      "family": "uniform",
+      "solver_log_error": 1.6498902245782811e-10,
+      "final_log_sd": 1.1902339642671518,
+      "late_min_log_sd": 1.185215494923523,
+      "persistent_contrast": true,
+      "first_contrast_crossing": 156.66202523639285
+    },
+    {
+      "seed": 9,
+      "family": "uniform",
+      "solver_log_error": 1.2969936235276878e-10,
+      "final_log_sd": 1.4704192595518508,
+      "late_min_log_sd": 1.4704192595496943,
+      "persistent_contrast": true,
+      "first_contrast_crossing": 58.02417017064929
+    }
+  ],
+  "pilot_refinement": "pending",
+  "long_refinement": "pending",
+  "moving_outcomes": "pending",
+  "evidence_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/protocol.json": "15c65f0b82747f7b26dd15a8c812ab96f951a59ef9a8cd7f15cedc8120cad5d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/frozen/results.json": "0b7e94bd24c4140db8bb24b0d84c5a9afaf15b0a1ba840592ccd53eb31d315b7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.7_uniform/transfer.json": "cb7c99e9e915170aa2bb48e31b5be6504d019d0b1fced7a74bb616251b87562a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.7_pattern/transfer.json": "9c6e7500235b7130e987bb84c812880e9ac7a5840b986a4a53586c30bf4411e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.7_uniform/transfer.json": "f797c86fc1fc3521a7a73b4f706b4ea3139d6c3ad071a8ed2e54e1b188ce4868",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.7_pattern/transfer.json": "c886064ba14a0c10ec6631b5895677f98091adcb440ff7d60da339e0b5b993b7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.7_uniform/transfer.json": "91e5de59912ee0d9228557b67ee2d2479e54ee70ef9e8100286ca3316824ada2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.7_pattern/transfer.json": "aa57f4f1e466fd12a2324e46beccefa1d2b00ac2acf61302408629f00a5d335a"
+  },
+  "interpretation": "Preparation/software/frozen-reference verification only. Pending moving or timestep results are not accepted scientific outcomes."
+}

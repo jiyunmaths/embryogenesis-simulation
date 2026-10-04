@@ -1,0 +1,9 @@
+{
+  "reason": "Preserve the documentation and prior completed assessment before the new third-timestep/float64-reference study. Scientific evidence is unchanged.",
+  "sha256": {
+    "README.md": "56e67949c6624b4e7079b140bddfe5efb727df1c3d7e4c31b45490652404f8c4",
+    "docs/plan.md": "0b498cf361a50120a8fbb6e6ecd844793b0e3ae5e7708e41cf2c5962828e2c8c",
+    "docs/backends.md": "09a3dde458b2bcd06531d5317be630acc82c44c53e87783189794af835ea7116",
+    "docs/phase_carry_formation_completed_verification.json": "af05e04fb04f4b5e490fb2064e91e2e796d1791fcbafe72ccf7b0e29ca6d55cf"
+  }
+}
