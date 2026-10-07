@@ -1,0 +1,91 @@
+{
+  "captured_utc": "2026-10-06T11:49:36.961650+00:00",
+  "state": "completed",
+  "active_root": "outputs/phase-carry-network-context",
+  "active_protocol_sha256": "155d8dfd673cb3d68630297e6e9a2fdb531607140f9a9340fc06fb6556466278",
+  "scanned_files": 6055,
+  "scanned_text_files": 4372,
+  "scan_errors": [],
+  "removed": [
+    {
+      "path": "outputs/cell-exchange-moving-incomplete-preparation/source.npz",
+      "kind": "unused_abandoned_preparation_exact_duplicate",
+      "bytes": 23177031,
+      "allocated_bytes": 23179264,
+      "sha256": "d5bae8171c6039345e113fd01ac3537af8911c2b90dfca5c82071a4b025ab6cd",
+      "retained_path": "outputs/cell-exchange-moving/source.npz",
+      "retained_sha256": "d5bae8171c6039345e113fd01ac3537af8911c2b90dfca5c82071a4b025ab6cd",
+      "removed": true
+    },
+    {
+      "path": "outputs/cell-exchange-moving-incomplete-preparation/initial_states.npz",
+      "kind": "unused_abandoned_preparation_exact_duplicate",
+      "bytes": 1967,
+      "allocated_bytes": 4096,
+      "sha256": "d4414ad22e397818717f35cdf342e5f56ce7b2e677071b5cd6effb29d8e56aa1",
+      "retained_path": "outputs/cell-exchange-moving/initial_states.npz",
+      "retained_sha256": "d4414ad22e397818717f35cdf342e5f56ce7b2e677071b5cd6effb29d8e56aa1",
+      "removed": true
+    },
+    {
+      "path": "outputs/cell-exchange-moving-incomplete-preparation/frozen_reference.npz",
+      "kind": "unused_abandoned_preparation_exact_duplicate",
+      "bytes": 159457,
+      "allocated_bytes": 159744,
+      "sha256": "fa0d1e718a7ec9d545e31e5bfadb0a27dc26c2455fb7a112d9756893fd70cef4",
+      "retained_path": "outputs/cell-exchange-moving/frozen_reference.npz",
+      "retained_sha256": "fa0d1e718a7ec9d545e31e5bfadb0a27dc26c2455fb7a112d9756893fd70cef4",
+      "removed": true
+    },
+    {
+      "path": "outputs/moving-initiation-controls-interim/2026-10-05T023407Z/partial-seed-7_coarse_fixed-conductances.json",
+      "kind": "orphan_working_snapshot_complete_history_prefix",
+      "bytes": 10418375,
+      "allocated_bytes": 10420224,
+      "sha256": "f4e9a12e74697276b814e43a5a408ac802823896f09843f19a9bff70ca671f41",
+      "retained_prefix_rows": 401,
+      "complete_rows": 1601,
+      "retained_path": "outputs/moving-initiation-controls/seed-7_coarse_fixed-conductances/history.json",
+      "retained_sha256": "4ae98ee2d6a429e9dc06e2ea698024b5c1f353e2609f12dcb880d8a152e31862",
+      "removed": true
+    },
+    {
+      "path": "outputs/moving-initiation-controls-interim/2026-10-05T023407Z/partial-seed-7_fine_fixed-conductances.json",
+      "kind": "orphan_working_snapshot_complete_history_prefix",
+      "bytes": 25566,
+      "allocated_bytes": 28672,
+      "sha256": "0459ab17a65eb0092fcc4fe600b8f911bdfcc36054250966f280233d64c57748",
+      "retained_prefix_rows": 1,
+      "complete_rows": 1601,
+      "retained_path": "outputs/moving-initiation-controls/seed-7_fine_fixed-conductances/history.json",
+      "retained_sha256": "35f357fa930d6ffb534e68eaf151e6a48df622b17f6a720bd850b6851ddee906",
+      "removed": true
+    },
+    {
+      "path": "outputs/cytokinesis-baseline/__pycache__/model.cpython-312.pyc",
+      "kind": "regenerable_python_bytecode",
+      "bytes": 27327,
+      "allocated_bytes": 28672,
+      "sha256": "c754b56053579325215c72392000a25500962392655e6da2620ef20d3a525c46",
+      "retained_path": "outputs/cytokinesis-baseline/model.py",
+      "retained_sha256": "5473a86b8adb32d0b3f250522aa33c8a66d46a3c856c49a5c19e7bd590d0d9a1",
+      "removed": true
+    }
+  ],
+  "removed_directories": [
+    "outputs/cell-exchange-moving-incomplete-preparation",
+    "outputs/moving-initiation-controls-interim/2026-10-05T023407Z",
+    "outputs/cytokinesis-baseline/__pycache__",
+    "outputs/live-transport-validation"
+  ],
+  "deleted_bytes": 33809723,
+  "free_bytes_before": 39663480832,
+  "scope": "Only unused exact preparation copies, orphan working snapshots recoverable from retained full histories, and bytecode. Scientific evidence and active inputs remain at their original paths.",
+  "historical_inventory_note": "The dated results ledger and its archives are unchanged; they continue to describe their original directory inventories.",
+  "completed_utc": "2026-10-06T11:49:37.302232+00:00",
+  "active_protocol_unchanged": true,
+  "active_protocol_existing_paths_preserved": 772,
+  "retained_replacements_verified": true,
+  "deleted_allocated_bytes": 33820672,
+  "free_bytes_after": 39697076224
+}

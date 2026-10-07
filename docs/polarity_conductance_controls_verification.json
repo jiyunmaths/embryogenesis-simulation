@@ -1,0 +1,204 @@
+{
+  "verified_utc": "2026-10-05T11:58:10.454018+00:00",
+  "protocol_sha256": "bc6b748601c96c357c47d12a6a77912fd0613b4b7eb3f448505bb7d8e1899934",
+  "implementation_gate_sha256": "578f7662c2ac35b17971904a8e2caf06685e90254d77a5daa745613e2b8713cd",
+  "new_contexts": 8,
+  "arm_context_checks": 16,
+  "baseline_exact_steps": 16,
+  "cpu_reference_steps": 8,
+  "restart_exact_steps": 2,
+  "cpu_chemical_log_max": 2.2204460492503136e-16,
+  "amount_accounting_max": 4.440892098500626e-16,
+  "actual_checkpoint_configuration_checks": [
+    {
+      "job": "seed-9_coarse_chi-0_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-coarse-chi-0/baseline-restart.npz",
+      "checkpoint_sha256": "3c3249c2fb122697fabbf448f3996772c082da27c040049e26fb58b1f59e7dcb",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_coarse_chi-0_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-coarse-chi-0/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "5a7844f2a2d7934130c74ae43b0055a685894495a6462d7d3a8b3555b57e44e2",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_fine_chi-0_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-fine-chi-0/baseline-restart.npz",
+      "checkpoint_sha256": "f78cd4e4b1ba0d4105ec64186697230316eb95a81473dbc6f305171819476c9d",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_fine_chi-0_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-fine-chi-0/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "c7106ff05c4b22ceb5bc2a74df2f83a05ea3e86d50fc9e5bda803c7eac04c144",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_coarse_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-coarse-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "a28bfa39e6ef0921ad8753796a1c81261a242cbe77826d185353916425badb63",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_coarse_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-coarse-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "e18f173c4041773cf74bca66479d54cb7c773752a1aa7dbe1476b23e1bea7516",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_fine_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-fine-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "a16bca1d815a47a8fe0eae2e1675bf90fdca7dc9357b5abe5033343501a3a91c",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-9_fine_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/gate-fine-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "25dbccf4494088ee3ee4d2774590c9aa9f9625f00c2fd22fcc81b4350a734e97",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-7_coarse_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/gate-coarse-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "70c6385ac4de5dd3c7ab4b57540b4c2dde21a2351a86d01fe8fb76396272fb4c",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-7_coarse_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/gate-coarse-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "ab22a02bebf24c9a289be0113b51919de85ec8aca14af0537f116706f1782669",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-7_fine_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/gate-fine-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "cfeab178123770324b814fc08780140dc7720921347f818153b82994a85efe11",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-7_fine_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/gate-fine-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "bf498cb5acb65432aad84e9f23ef70a20225ef89a11f9edc4f98febf515be2d7",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-8_coarse_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/gate-coarse-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "5a2fad6c3037a86a9fadcc0c2d90765384b3f7e89cefe4965a34428ea7fcf39b",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-8_coarse_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/gate-coarse-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "19ae1bbf0948661bcfdb23356adaad1464fbabc853bd5fc919e6f6eff894f65c",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-8_fine_chi-0.35_baseline",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/gate-fine-chi-0.35/baseline-restart.npz",
+      "checkpoint_sha256": "4aabc7e41a8cb2c7ff1033021b6cc6e2a406653bd97b9fcc77bee5aa9b4e7397",
+      "config_checked": true,
+      "source_zero": true
+    },
+    {
+      "job": "seed-8_fine_chi-0.35_fixed-conductances",
+      "checkpoint": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/gate-fine-chi-0.35/fixed-conductances-restart.npz",
+      "checkpoint_sha256": "09b3e7a140e711e0b74c72818ceeb57813d63e0d87eaa8c18530cc4c8ee5cce6",
+      "config_checked": true,
+      "source_zero": true
+    }
+  ],
+  "tests": {
+    "cpu_passed": 35,
+    "gpu_new_passed": 4,
+    "new_distinct_passed": 17,
+    "files": [
+      "tests/test_polarity_conductance_controls.py",
+      "tests/test_moving_initiation_controls.py",
+      "tests/test_phase_carry_polarity.py"
+    ]
+  },
+  "pinned_sources": 41,
+  "pinned_inputs": 369,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "new_moving_jobs": 8,
+  "reused_trajectories": 16,
+  "estimated_new_moving_hours": 5.672472681862871,
+  "original_sources_preserved": true,
+  "scope": "Preparation and launch verification only; no new scientific outcome yet. Original kernels and parent evidence preserved. Eight actual contexts and sixteen arm/context checks pass; sixteen completed paths are reused read-only, while eight new paths run in three existing histories. Fixed G0 with changing M(t), dilution retained in every branch. Original raw gates, horizon, endpoint checks and history-level reporting rules preserved.",
+  "protocol": "outputs/polarity-conductance-controls/protocol.json",
+  "implementation_gate": "outputs/polarity-conductance-controls/implementation-verification.json",
+  "prelaunch_verification": "outputs/polarity-conductance-controls/prelaunch-verification.json",
+  "prelaunch_verification_sha256": "4b1d21f285f248ea798a8a3583a6a47d578947224121a41b047e0717c4d232cf",
+  "launched": {
+    "launched_utc": "2026-10-05T11:58:21.813940+00:00",
+    "pid": 2608629,
+    "command": [
+      "/home/sji/miniforge3/envs/deeplearning/bin/python",
+      "-u",
+      "-m",
+      "embryo.polarity_conductance_controls",
+      "run",
+      "--output",
+      "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls"
+    ],
+    "physical_gpu": 1,
+    "environment": {
+      "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+      "CUDA_VISIBLE_DEVICES": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "MPLCONFIGDIR": "/tmp/embryo-mpl",
+      "PYTHONPATH": "/home/sji/Documents/Programming/Python/embryogenesis-simulation"
+    },
+    "endpoint_workers": 2
+  },
+  "status_snapshot": {
+    "state": "running",
+    "stage": "matched_pilot",
+    "current_job": "seed-9_coarse_chi-0_fixed-conductances",
+    "completed": 0,
+    "total": 8
+  },
+  "source_document_sha256": {
+    "embryo/polarity_conductance_controls.py": "e55de53bc80a99a5f71c936ed19aa2e5186d34071ee2e2b39f824443554f94df",
+    "tests/test_polarity_conductance_controls.py": "d59ecaac8fca92ebd15a599f000704d703379a380f61be8f7a2f6847c29ad607",
+    "docs/polarity_conductance_controls.md": "94e0f3562131bc8bea17401d211563b694953108ea763567df9ddd5e62366471"
+  },
+  "first_job_progress": {
+    "state": "running",
+    "elapsed": 9.0,
+    "target_horizon": 60.0,
+    "audit": {
+      "max_volume_error": 0.01134461945904608,
+      "min_radius": 5.109538728944298,
+      "max_clipping": 0.0,
+      "boundary_max": 4.0390853855987174e-11,
+      "dilution_error_max": 4.440892098500626e-16,
+      "wall_seconds": 65.02705890696961
+    },
+    "log_activator_sd": 0.002336936178598116
+  },
+  "progress_verified_utc": "2026-10-05T12:00:01.937626+00:00",
+  "execution_script_sha256": {
+    "outputs/polarity-conductance-controls/launch_script.py": "0bf7d1c6927c55f6966a816ca968a6c2d498fd2261f0c6b1293d780d498d7d53",
+    "outputs/polarity-conductance-controls/prelaunch_verification_script.py": "3652fc99f66c8944872fe06cff54ff586a9a7ef4c295abc39755dcd48b14daa5"
+  }
+}

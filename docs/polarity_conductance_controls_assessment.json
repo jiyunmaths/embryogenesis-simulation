@@ -1,0 +1,681 @@
+{
+  "verified_utc": "2026-10-05T17:11:53.962017+00:00",
+  "passed": true,
+  "protocol_sha256": "bc6b748601c96c357c47d12a6a77912fd0613b4b7eb3f448505bb7d8e1899934",
+  "original_summary_sha256": "52dcff752c7c9f5afc7a9ff03921f39d8eb7a33c292080b098dc40fb5f4c321e",
+  "original_status_sha256": "0635e093f4633bec4143b10ba5c1a3a09bb486362052b86d6593d14375388466",
+  "full_review": "outputs/polarity-conductance-controls-review/2026-10-05T170941Z/assessment.json",
+  "full_review_sha256": "efbf596d96e4588194367c059ed65ac6c673ca4995c54fdb9c09670ff60f8081",
+  "assessment_script_sha256": "8c7737b7a814462dbcef17575649ef73a9380123d212d397f0e06d89acbaa609",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "new_moving_paths": 8,
+  "reused_moving_paths": 16,
+  "pilot_comparisons": 12,
+  "full_comparisons": 12,
+  "endpoint_assays": 24,
+  "source_hashes_verified": 41,
+  "input_hashes_verified": 369,
+  "by_history": [
+    {
+      "seed": 9,
+      "formation": {
+        "chi-0_baseline": true,
+        "chi-0_fixed-conductances": true,
+        "chi-0.35_baseline": false,
+        "chi-0.35_fixed-conductances": true
+      },
+      "qualified": true,
+      "original_polarity_comparison": "suppression_supported_in_this_history",
+      "fixed_conductance_polarity_comparison": "both_initiate",
+      "positive_contrast_conductance_rescue": true,
+      "conclusion": "conductance_preservation_removes_observed_polarity_suppression"
+    },
+    {
+      "seed": 7,
+      "formation": {
+        "chi-0_baseline": false,
+        "chi-0_fixed-conductances": true,
+        "chi-0.35_baseline": false,
+        "chi-0.35_fixed-conductances": true
+      },
+      "qualified": true,
+      "original_polarity_comparison": "neither_initiates_no_successful_control",
+      "fixed_conductance_polarity_comparison": "both_initiate",
+      "positive_contrast_conductance_rescue": true,
+      "conclusion": "fixed_conductances_enable_both_contrasts_without_original_polarity_specific_loss"
+    },
+    {
+      "seed": 8,
+      "formation": {
+        "chi-0_baseline": false,
+        "chi-0_fixed-conductances": true,
+        "chi-0.35_baseline": false,
+        "chi-0.35_fixed-conductances": true
+      },
+      "qualified": true,
+      "original_polarity_comparison": "neither_initiates_no_successful_control",
+      "fixed_conductance_polarity_comparison": "both_initiate",
+      "positive_contrast_conductance_rescue": true,
+      "conclusion": "fixed_conductances_enable_both_contrasts_without_original_polarity_specific_loss"
+    }
+  ],
+  "fine_results": [
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0_baseline",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": false,
+      "late_min_log_sd": 1.8842676398687552e-06,
+      "final_log_sd": 1.8842676398687552e-06,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 63.159731270447296,
+      "positive_frozen_growth_integral": 1.2481760493102199,
+      "final_axis_ratio": 1.3561998302606737,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_growth": 0.03582111717405123,
+      "final_growth": -0.07831920195750097,
+      "initial_largest_lambda": 4.645857874252735,
+      "final_largest_lambda": 3.7554967232504497,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.1450302185615716,
+      "chemical_total_conductance_change_fraction": -0.1450302185615716,
+      "relative_geometric_conductance_change": 0.17168467225123096,
+      "final_relative_cell_volume_change_max": 0.0019080692468336213,
+      "final_relative_total_volume_change": -0.0002792270245425277,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0_fixed-conductances",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.1812282733861719,
+      "final_log_sd": 1.374710426709619,
+      "onset_elapsed": 120.52920920703531,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 8.640904778001742,
+      "final_axis_ratio": 1.356112851690709,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_growth": 0.03582111717405123,
+      "final_growth": 0.03585905721165705,
+      "initial_largest_lambda": 4.645857874252735,
+      "final_largest_lambda": 4.64622222433849,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.15937207010361976,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.19025430972644314,
+      "final_relative_cell_volume_change_max": 0.0029102338807919237,
+      "final_relative_total_volume_change": 0.00011241419609087089,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.3322676295501878e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0.35_baseline",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": false,
+      "late_min_log_sd": 7.375850538356665e-09,
+      "final_log_sd": 8.06450739752004e-09,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 19.623987760668953,
+      "positive_frozen_growth_integral": 0.3974521596201658,
+      "final_axis_ratio": 1.3465783270773974,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_growth": 0.03582111717405123,
+      "final_growth": -0.3689314108445334,
+      "initial_largest_lambda": 4.645857874252735,
+      "final_largest_lambda": 2.552958133940748,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.43612758045611255,
+      "chemical_total_conductance_change_fraction": -0.43612758045611255,
+      "relative_geometric_conductance_change": 0.43897598817971545,
+      "final_relative_cell_volume_change_max": 0.0018924879869469668,
+      "final_relative_total_volume_change": -0.0002658208447490207,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0.35_fixed-conductances",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7/initial-transport.npz"
+      },
+      "reused": false,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.1812354708324153,
+      "final_log_sd": 1.3738821074589955,
+      "onset_elapsed": 120.54896833498523,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 8.639195466234671,
+      "final_axis_ratio": 1.3541804737175112,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_growth": 0.03582111717405123,
+      "final_growth": 0.03585155339060009,
+      "initial_largest_lambda": 4.645857874252735,
+      "final_largest_lambda": 4.646150158375111,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.42372129637357003,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.42644067059513996,
+      "final_relative_cell_volume_change_max": 0.0028932763922013827,
+      "final_relative_total_volume_change": 0.0001259317337483079,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.3322676295501878e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0_baseline",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": false,
+      "late_min_log_sd": 8.103624787047247e-07,
+      "final_log_sd": 8.103624787047247e-07,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 59.51963544879156,
+      "positive_frozen_growth_integral": 1.1279736006836485,
+      "final_axis_ratio": 1.3872525100610829,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_growth": 0.03438603560391673,
+      "final_growth": -0.08004362607109128,
+      "initial_largest_lambda": 4.63211708189238,
+      "final_largest_lambda": 3.7446270480654045,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.14538390341018415,
+      "chemical_total_conductance_change_fraction": -0.14538390341018415,
+      "relative_geometric_conductance_change": 0.17062595239265013,
+      "final_relative_cell_volume_change_max": 0.0019193413235804035,
+      "final_relative_total_volume_change": -0.00028192771643709147,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0_fixed-conductances",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.200126550821942,
+      "final_log_sd": 1.397165627822166,
+      "onset_elapsed": 130.62377332968762,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 8.2857251158483,
+      "final_axis_ratio": 1.3872614691989271,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_growth": 0.03438603560391673,
+      "final_growth": 0.03435893645500254,
+      "initial_largest_lambda": 4.63211708189238,
+      "final_largest_lambda": 4.631858371148966,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.15972283757717853,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.1884712635916062,
+      "final_relative_cell_volume_change_max": 0.002907121285605885,
+      "final_relative_total_volume_change": 0.00011061291157687947,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.3322676295501878e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0.35_baseline",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": false,
+      "late_min_log_sd": 7.890571552135043e-09,
+      "final_log_sd": 8.667724105170724e-09,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 18.32407862392202,
+      "positive_frozen_growth_integral": 0.35804544640670954,
+      "final_axis_ratio": 1.3776815984094963,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_growth": 0.03438603560391673,
+      "final_growth": -0.3780639155099004,
+      "initial_largest_lambda": 4.63211708189238,
+      "final_largest_lambda": 2.529660122121547,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.44321103454483246,
+      "chemical_total_conductance_change_fraction": -0.44321103454483246,
+      "relative_geometric_conductance_change": 0.44215791137766974,
+      "final_relative_cell_volume_change_max": 0.0019079925713603174,
+      "final_relative_total_volume_change": -0.00026909431029542574,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0.35_fixed-conductances",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8/initial-transport.npz"
+      },
+      "reused": false,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.1997224953618781,
+      "final_log_sd": 1.3971729182994417,
+      "onset_elapsed": 130.6426934686705,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 8.284017419656642,
+      "final_axis_ratio": 1.3801562446553794,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_growth": 0.03438603560391673,
+      "final_growth": 0.034351291659842076,
+      "initial_largest_lambda": 4.63211708189238,
+      "final_largest_lambda": 4.631785392741712,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.43891003424918984,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.43880017359311346,
+      "final_relative_cell_volume_change_max": 0.002890414316110701,
+      "final_relative_total_volume_change": 0.00012392951177853107,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.3322676295501878e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0_baseline",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.575210039318825,
+      "final_log_sd": 1.5831846195503334,
+      "onset_elapsed": 75.41626748614841,
+      "uniform_growth_crossing": 136.96753235088906,
+      "positive_frozen_growth_integral": 5.871379966393446,
+      "final_axis_ratio": 1.4378352658968965,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_growth": 0.08136170804260168,
+      "final_growth": -0.046029574453348765,
+      "initial_largest_lambda": 5.127369119253334,
+      "final_largest_lambda": 3.9713338093152615,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.20411669298762036,
+      "chemical_total_conductance_change_fraction": -0.20411669298762036,
+      "relative_geometric_conductance_change": 0.22921978944922144,
+      "final_relative_cell_volume_change_max": 0.002740715292279594,
+      "final_relative_total_volume_change": 0.00024220968773680518,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0_fixed-conductances",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial-transport.npz"
+      },
+      "reused": false,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.4711295352506564,
+      "final_log_sd": 1.4711301702484085,
+      "onset_elapsed": 57.09565893803403,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 19.53576798019845,
+      "final_axis_ratio": 1.4374869160942159,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_growth": 0.08136170804260168,
+      "final_growth": 0.08133153999337583,
+      "initial_largest_lambda": 5.127369119253334,
+      "final_largest_lambda": 5.127017835567688,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.21028880425760965,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.23469191026611647,
+      "final_relative_cell_volume_change_max": 0.0028926458410829525,
+      "final_relative_total_volume_change": 0.0001866865780653093,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0.35_baseline",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "baseline",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial-transport.npz"
+      },
+      "reused": true,
+      "quality_pass": true,
+      "persistent_contrast": false,
+      "late_min_log_sd": 1.3206496452603557e-08,
+      "final_log_sd": 1.3631665465767617e-08,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 46.20620748021476,
+      "positive_frozen_growth_integral": 1.9409398270853238,
+      "final_axis_ratio": 1.4198757534567354,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_growth": 0.08136170804260168,
+      "final_growth": -0.2870226063394199,
+      "initial_largest_lambda": 5.127369119253334,
+      "final_largest_lambda": 2.792666508554616,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 0,
+      "geometric_total_conductance_change_fraction": -0.45538924433823214,
+      "chemical_total_conductance_change_fraction": -0.45538924433823214,
+      "relative_geometric_conductance_change": 0.457540028385237,
+      "final_relative_cell_volume_change_max": 0.0018987891338807517,
+      "final_relative_total_volume_change": -0.000332837919995832,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.1102230246251565e-15,
+      "recomputed_contrast_error_max": 0.0
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0.35_fixed-conductances",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "arm": "fixed-conductances",
+        "family": "uniform",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial_states.npz",
+        "initial_transport": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9/initial-transport.npz"
+      },
+      "reused": false,
+      "quality_pass": true,
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.4711363750281514,
+      "final_log_sd": 1.471136794944445,
+      "onset_elapsed": 57.098180868524786,
+      "uniform_growth_crossing": null,
+      "positive_frozen_growth_integral": 19.53412398488465,
+      "final_axis_ratio": 1.419577555887598,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_growth": 0.08136170804260168,
+      "final_growth": 0.08132453351137148,
+      "initial_largest_lambda": 5.127369119253334,
+      "final_largest_lambda": 5.12693625726083,
+      "initial_unstable_modes": 2,
+      "final_unstable_modes": 2,
+      "geometric_total_conductance_change_fraction": -0.4407473070000444,
+      "chemical_total_conductance_change_fraction": 0.0,
+      "relative_geometric_conductance_change": 0.44559021425205386,
+      "final_relative_cell_volume_change_max": 0.002875185013590409,
+      "final_relative_total_volume_change": 0.00020008575925190009,
+      "cumulative_volume_amount_source_total": [
+        0.0,
+        0.0
+      ],
+      "recomputed_graph_diagnostic_error_max": 1.5543122344752192e-15,
+      "recomputed_contrast_error_max": 0.0
+    }
+  ],
+  "maxima": {
+    "chemical_log_refinement": 0.0004096314648225956,
+    "new_context_chemical_log_refinement": 5.944749357566811e-06,
+    "endpoint_solver_log": 7.492364503782635e-10,
+    "volume_error": 0.011521478728323098,
+    "clipping": 0.0,
+    "boundary": 7.60974305791251e-09,
+    "amount_accounting": 4.440892098500626e-16
+  },
+  "minimum_radius": 5.106579625361965,
+  "descriptive_contrast_comparisons": [
+    {
+      "seed": 9,
+      "arm": "baseline",
+      "final_chemical_log_max": 3.0354837100377368,
+      "whole_window_chemical_log_max": 3.0354837100377368,
+      "onset_abs_difference": null,
+      "final_log_sd_abs_difference": 1.5831846059186678
+    },
+    {
+      "seed": 9,
+      "arm": "fixed-conductances",
+      "final_chemical_log_max": 2.2291214593806684e-05,
+      "whole_window_chemical_log_max": 0.0012678852070720052,
+      "onset_abs_difference": 0.0025219304907579954,
+      "final_log_sd_abs_difference": 6.624696036405808e-06
+    },
+    {
+      "seed": 7,
+      "arm": "baseline",
+      "final_chemical_log_max": 2.783021728474448e-06,
+      "whole_window_chemical_log_max": 0.004916994554736046,
+      "onset_abs_difference": null,
+      "final_log_sd_abs_difference": 1.8762031324712352e-06
+    },
+    {
+      "seed": 7,
+      "arm": "fixed-conductances",
+      "final_chemical_log_max": 0.007654032373623747,
+      "whole_window_chemical_log_max": 0.02079637885568675,
+      "onset_abs_difference": 0.01975912794992496,
+      "final_log_sd_abs_difference": 0.0008283192506235437
+    },
+    {
+      "seed": 8,
+      "arm": "baseline",
+      "final_chemical_log_max": 1.4208197634581995e-06,
+      "whole_window_chemical_log_max": 0.004227770605779836,
+      "onset_abs_difference": null,
+      "final_log_sd_abs_difference": 8.01694754599554e-07
+    },
+    {
+      "seed": 8,
+      "arm": "fixed-conductances",
+      "final_chemical_log_max": 1.871566501185577e-05,
+      "whole_window_chemical_log_max": 0.013116440113397663,
+      "onset_abs_difference": 0.018920138982878143,
+      "final_log_sd_abs_difference": 7.2904772756565706e-06
+    }
+  ],
+  "new_moving_wall_seconds": 17797.072354941047,
+  "protected_document_sha256": {
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200",
+    "docs/phase_carry_polarity_reporting.json": "d9c08674e9261e0803ff9d7dcd2063e91d476906d0b32156c516cc798d54c0f5",
+    "docs/moving_geometry_initiation_controls.md": "4cdc4276b22c4aced7fe2dc3a4ae7a3beb5d795597fc2b52fe7a28309d3da2f8",
+    "docs/polarity_conductance_controls.md": "94e0f3562131bc8bea17401d211563b694953108ea763567df9ddd5e62366471",
+    "docs/phase_carry_polarity_assessment.json": "c1fa2854d484be4ccefd7847a6b80cbbfe484ece5524df071e73e9bb926abf7d",
+    "docs/moving_initiation_controls_assessment.json": "614f9b3c79daedb1c9332b8cd8a19f95b35456f0b79d278683cb57c364426c3f",
+    "docs/claim_precision_audit_verification.json": "b19c6b5fdb4128a6277b55053e7f4ce0572ba7c536f27150490d755278a47d73"
+  },
+  "figure_sha256": {
+    "outputs/polarity-conductance-controls-review/2026-10-05T170941Z/polarity_conductance_controls.png": "a13d5ed300b9026577f78ad299371ca120f035f43801609894eda01083c2c0af",
+    "outputs/polarity-conductance-controls-review/2026-10-05T170941Z/polarity_conductance_controls.pdf": "e0905ed72be85c2a2bcc311f3c550a04ea6b108141fe5c913baeaaf3b92fc888"
+  },
+  "scope": "CPU/read-only final verification. Recomputed raw paired comparisons, chemical contrasts, all saved graph spectra, endpoint residual/Jacobian/basin classifications and history-level decisions; verified checkpoints, actual chemical endpoint operators, original solver agreement records and source/input hashes. No extra moving/frozen solves, no original outputs rewritten, no new history or biological identity/continuum/backend promotion. Independent endpoint solver errors are verified from their original hashed records; secondary solver trajectories were not saved and those solves were not rerun."
+}

@@ -1,0 +1,15 @@
+{
+  "captured_utc": "2026-10-07T10:56:14.518363+00:00",
+  "purpose": "Preserve working reports before recording the completed delayed-response review; no scientific inputs or results changed.",
+  "files": {
+    "README.md": "d81e8ab5562fee85df98fc7858e7add0304e4200e5dcd962b34fb3c0aa957762",
+    "docs/plan.md": "c1ed2d237dc565dc82ed8f0b5294a60dc156ec2cf21887002eb32ca9fb1316ec"
+  },
+  "unchanged_scientific_documents": {
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200",
+    "docs/phase_carry_delayed_response.md": "e5c6b713d1ec4717962f09f0c956817397ef21f07116985365980d56de226941",
+    "docs/phase_carry_network_context_assessment.md": "8103e9ae894b9b95552642221db04177b14692b7d9a85ff1d8ddb9c70466e0a5",
+    "docs/phase_carry_network_context_assessment.json": "8077b18c0b3d6ed0d2b85eef22e87f0047768ec4bbd97266351131a576503e30"
+  }
+}

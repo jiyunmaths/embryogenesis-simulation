@@ -1,0 +1,36 @@
+{
+  "protocol_sha256": "547d648ebb819e8f892c523328832f57dea7694ccf21b22fcb0848cc3ed02a2a",
+  "worker_pid": 148455,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "paths": 42,
+  "new_paths": 24,
+  "reused_paths": 18,
+  "scientific_sources": 51,
+  "input_hashes": 1073,
+  "cpu_cases_passed": 55,
+  "new_gpu_cases_passed": 4,
+  "full_size_prefixes_passed": 4,
+  "max_formula_log_error": 5.828670879282072e-16,
+  "max_relative_amount_error": 3.8354969116965644e-16,
+  "maximum_prefix_errors": {
+    "chemical_log_max": 9.28662175162961e-07,
+    "polarity_abs_max": 1.65199177098313e-07,
+    "relative_axis_max": 5.3909106512151084e-08,
+    "relative_volume_max": 2.461100379047565e-07,
+    "relative_transport_max": 3.8825602108677355e-06,
+    "final_phi_abs_max": 3.7550926208496094e-06
+  },
+  "scientific_outcomes_accepted": false,
+  "evidence_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/preparation-verification.json": "c5769ccb14d25e1895343361c584f3bc699a90a278feec8bc55b281101962753",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/preflight.json": "b968eb741876eb8c6482769a32ad7d00edb2c405642008f657c91effa9fa5d13",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/implementation-verification.json": "f17e8df0bd5a24c08beb74ce1f5857d196f3a57ded0f1087b91df31a4fc6d4d6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/launch.json": "f687d95eccf9a21ddb307d970733df5d8451b211768eb590ffb5ac0cee3c6942",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/running-verification.json": "6fc6b7023f9d119e660e04efd3137bc5152c64f7ef1fda3d1c84a5f2c69444a0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_context_dosage_launch.md": "74c53c6c548d346d0953ad62af0ce01d8ab7adf7f533f4ed2a2bd54450f5f594",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/README.md": "3b6f0c4b7fa7e01b17325359bf612e03790838ce2740b7fd0c9d4be93760c003",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/plan.md": "c63c89683285bd4c652db91ba933ffe0c76959bf24e4813210378e51368d3092"
+  },
+  "ledger_manuscript_guards_verified": 50
+}

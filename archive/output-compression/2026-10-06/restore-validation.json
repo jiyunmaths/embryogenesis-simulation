@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "format": "history.json",
+      "exact_byte_restore": true,
+      "mode_and_mtime_preserved": true,
+      "independent_restored_inode": true,
+      "idempotent": true,
+      "changed_original_refused": true,
+      "corrupt_archive_refused": true
+    },
+    {
+      "format": "checkpoint.npz",
+      "exact_byte_restore": true,
+      "mode_and_mtime_preserved": true,
+      "independent_restored_inode": true,
+      "idempotent": true,
+      "changed_original_refused": true,
+      "corrupt_archive_refused": true
+    }
+  ],
+  "unsafe_paths_refused": true
+}

@@ -1,0 +1,781 @@
+{
+  "snapshot_utc": "2026-10-06T21:05:47.374452+00:00",
+  "verified_utc": "2026-10-06T21:09:40.841798+00:00",
+  "full_study_accepted": true,
+  "protocol_sha256": "155d8dfd673cb3d68630297e6e9a2fdb531607140f9a9340fc06fb6556466278",
+  "source_hashes_verified": 47,
+  "input_hashes_verified": 764,
+  "completed_paths": 42,
+  "new_paths": 33,
+  "reused_paths": 9,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "new_prefix_contexts": 33,
+  "reused_prefix_contexts": 9,
+  "pilot_pairs": 3,
+  "full_pairs": 3,
+  "full_mechanical_pairs": 21,
+  "full_response_pairs": 12,
+  "by_history": [
+    {
+      "seed": 7,
+      "qualified": true,
+      "selected_ids": [
+        22,
+        23
+      ],
+      "late_state_shifts": 2,
+      "response_shifts": 1,
+      "donor_nearer_after_reset": 2,
+      "all_target_and_network_pulses_recover": true,
+      "recipient_comparisons": [
+        {
+          "cell": 22,
+          "donor": 23,
+          "reference_separation": 0.17295952119254016,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.6437594232981672,
+              "late_min_log_sd": 1.6314911128794247,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.6120855743111275,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.012863924521367122,
+                "target_activator_peak_gain": 1.2142089367171325,
+                "target_inhibitor_peak_gain": 1.4709022521409827,
+                "target_activator_log_auc_per_log_pulse": 2.8655462851995046,
+                "other_cells_peak_log_rms_per_log_pulse": 0.06656775027812126,
+                "target_recovery_time": 5.55,
+                "network_recovery_time": 6.1499999999999995,
+                "final_log_rms_from_control": 9.51411622392358e-06,
+                "late_max_log_rms_from_control": 9.925825705922993e-06
+              },
+              "destination_distance": 0.19114977812004977,
+              "donor_distance": 0.08744702547821437,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-22": {
+              "final_log_sd": 1.3716489865045443,
+              "late_min_log_sd": 1.3591216223580613,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.3379603524435297,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.01626143837787512,
+              "target_state_shift_final": 0.014767867471015913,
+              "metrics": {
+                "injected_activator_amount": -0.012863924521367122,
+                "target_activator_peak_gain": 1.2176609720009346,
+                "target_inhibitor_peak_gain": 1.4470061524776432,
+                "target_activator_log_auc_per_log_pulse": 3.0235152043018165,
+                "other_cells_peak_log_rms_per_log_pulse": 0.06468972072977208,
+                "target_recovery_time": 5.55,
+                "network_recovery_time": 6.45,
+                "final_log_rms_from_control": 4.6293790686541635e-06,
+                "late_max_log_rms_from_control": 4.848159024963335e-06
+              },
+              "destination_distance": 0.1960291401731915,
+              "donor_distance": 0.09852035214538579,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.011255885268927715,
+          "response_shift_detected": true,
+          "late_target_state_shift_detected": true
+        },
+        {
+          "cell": 23,
+          "donor": 22,
+          "reference_separation": 0.17295952119254016,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.6437594232981672,
+              "late_min_log_sd": 1.6314911128794247,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.6120855743111275,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.00023732554954164665,
+                "target_activator_peak_gain": 1.000000000000001,
+                "target_inhibitor_peak_gain": 0.0013358779872583392,
+                "target_activator_log_auc_per_log_pulse": 1.1592328387196338,
+                "other_cells_peak_log_rms_per_log_pulse": 0.0006125512416624949,
+                "target_recovery_time": 2.6999999999999997,
+                "network_recovery_time": 2.6999999999999997,
+                "final_log_rms_from_control": 4.873578820162627e-07,
+                "late_max_log_rms_from_control": 5.099225330831831e-07
+              },
+              "destination_distance": 0.17340072732474746,
+              "donor_distance": 0.0018138829691373751,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-23": {
+              "final_log_sd": 1.7411190583437601,
+              "late_min_log_sd": 1.7277016336190263,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.6728424661136703,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.02570305307024716,
+              "target_state_shift_final": 0.024846112229985097,
+              "metrics": {
+                "injected_activator_amount": -0.00023732554954164665,
+                "target_activator_peak_gain": 1.000000000000001,
+                "target_inhibitor_peak_gain": 0.0013707718537003329,
+                "target_activator_log_auc_per_log_pulse": 1.1633128457677158,
+                "other_cells_peak_log_rms_per_log_pulse": 0.000537333228003654,
+                "target_recovery_time": 2.6999999999999997,
+                "network_recovery_time": 2.6999999999999997,
+                "final_log_rms_from_control": 4.871942018146178e-07,
+                "late_max_log_rms_from_control": 5.093992768286845e-07
+              },
+              "destination_distance": 0.17321545998051552,
+              "donor_distance": 0.0016486773625240061,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.0006214572905612472,
+          "response_shift_detected": false,
+          "late_target_state_shift_detected": true
+        }
+      ],
+      "additional_descriptive_metrics": [
+        {
+          "cell": 22,
+          "late_state_shift_min": 0.014767867471015913,
+          "final_reset_over_sham_concentrations": [
+            1.0155036661493824,
+            1.0142243252808705
+          ],
+          "pulse_auc_reset_over_sham": 1.0551269822156488,
+          "response_squared_difference_fraction_first_six_units": 0.9929983053493149,
+          "late_response_shift_rms": 7.320220725937533e-06,
+          "donor_nearer_margins": {
+            "sham": 0.1037027526418354,
+            "reset-cell-22": 0.09750878802780572
+          },
+          "state_effect_margin": 0.0062614383778751195,
+          "response_effect_margin": 0.0012558852689277152
+        },
+        {
+          "cell": 23,
+          "late_state_shift_min": 0.024846112229985097,
+          "final_reset_over_sham_concentrations": [
+            1.0274111028240096,
+            1.0226897359459783
+          ],
+          "pulse_auc_reset_over_sham": 1.0035195751119235,
+          "response_squared_difference_fraction_first_six_units": 0.9998430935093539,
+          "late_response_shift_rms": 1.0623286733223732e-07,
+          "donor_nearer_margins": {
+            "sham": 0.17158684435561009,
+            "reset-cell-23": 0.17156678261799152
+          },
+          "state_effect_margin": 0.015703053070247157,
+          "response_effect_margin": -0.009378542709438753
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "qualified": true,
+      "selected_ids": [
+        19,
+        20
+      ],
+      "late_state_shifts": 2,
+      "response_shifts": 2,
+      "donor_nearer_after_reset": 2,
+      "all_target_and_network_pulses_recover": true,
+      "recipient_comparisons": [
+        {
+          "cell": 19,
+          "donor": 20,
+          "reference_separation": 0.16765670317743503,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.7363633239527452,
+              "late_min_log_sd": 1.719724641329726,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.6956342541715834,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.015435080466450432,
+                "target_activator_peak_gain": 1.16426636627239,
+                "target_inhibitor_peak_gain": 1.635205288571043,
+                "target_activator_log_auc_per_log_pulse": 1.7418489700846458,
+                "other_cells_peak_log_rms_per_log_pulse": 0.2105916199833136,
+                "target_recovery_time": 4.2,
+                "network_recovery_time": 4.8,
+                "final_log_rms_from_control": 6.389896856199587e-05,
+                "late_max_log_rms_from_control": 0.00019898252043413012
+              },
+              "destination_distance": 0.16964653936660287,
+              "donor_distance": 0.039442866459454586,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-19": {
+              "final_log_sd": 1.3579319582028624,
+              "late_min_log_sd": 1.34515436847016,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.3252875060942144,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.13866640572644515,
+              "target_state_shift_final": 0.1324995391716409,
+              "metrics": {
+                "injected_activator_amount": -0.015435080466450432,
+                "target_activator_peak_gain": 1.171768311482072,
+                "target_inhibitor_peak_gain": 1.488240477880176,
+                "target_activator_log_auc_per_log_pulse": 2.415257704818897,
+                "other_cells_peak_log_rms_per_log_pulse": 0.07491842352746157,
+                "target_recovery_time": 4.05,
+                "network_recovery_time": 5.85,
+                "final_log_rms_from_control": 3.288912491129297e-06,
+                "late_max_log_rms_from_control": 3.833699629265908e-06
+              },
+              "destination_distance": 0.18014334181295752,
+              "donor_distance": 0.10597680753840878,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.07129897817565232,
+          "response_shift_detected": true,
+          "late_target_state_shift_detected": true
+        },
+        {
+          "cell": 20,
+          "donor": 19,
+          "reference_separation": 0.16765670317743503,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.7363633239527452,
+              "late_min_log_sd": 1.719724641329726,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.6956342541715834,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.0001712088693324053,
+                "target_activator_peak_gain": 1.0,
+                "target_inhibitor_peak_gain": 0.0008152801548492717,
+                "target_activator_log_auc_per_log_pulse": 1.1213476044657116,
+                "other_cells_peak_log_rms_per_log_pulse": 0.0006797836357211817,
+                "target_recovery_time": 2.6999999999999997,
+                "network_recovery_time": 2.6999999999999997,
+                "final_log_rms_from_control": 5.72130515756832e-08,
+                "late_max_log_rms_from_control": 5.8403523905485256e-08
+              },
+              "destination_distance": 0.16787726294334557,
+              "donor_distance": 0.003380260061003652,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-20": {
+              "final_log_sd": 2.2355163026403386,
+              "late_min_log_sd": 2.2245857588810005,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.69798058098806,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 1.9714108473604155,
+              "target_state_shift_final": 1.9398739044557687,
+              "metrics": {
+                "injected_activator_amount": -0.0001712088693324053,
+                "target_activator_peak_gain": 1.0,
+                "target_inhibitor_peak_gain": 0.0009829854804195167,
+                "target_activator_log_auc_per_log_pulse": 3.100876272526107,
+                "other_cells_peak_log_rms_per_log_pulse": 0.0007354138665607968,
+                "target_recovery_time": 5.1,
+                "network_recovery_time": 5.1,
+                "final_log_rms_from_control": 4.855425744597281e-07,
+                "late_max_log_rms_from_control": 5.000322976802982e-07
+              },
+              "destination_distance": 0.19054774551606876,
+              "donor_distance": 0.08144424418196816,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.08476310638094867,
+          "response_shift_detected": true,
+          "late_target_state_shift_detected": true
+        }
+      ],
+      "additional_descriptive_metrics": [
+        {
+          "cell": 19,
+          "late_state_shift_min": 0.1324995391716409,
+          "final_reset_over_sham_concentrations": [
+            0.8704853558258117,
+            0.8816240793440161
+          ],
+          "pulse_auc_reset_over_sham": 1.3866056967622897,
+          "response_squared_difference_fraction_first_six_units": 0.9979301032544815,
+          "late_response_shift_rms": 0.00028979073188534145,
+          "donor_nearer_margins": {
+            "sham": 0.1302036729071483,
+            "reset-cell-19": 0.07416653427454874
+          },
+          "state_effect_margin": 0.12866640572644514,
+          "response_effect_margin": 0.06129897817565232
+        },
+        {
+          "cell": 20,
+          "late_state_shift_min": 1.9398739044557687,
+          "final_reset_over_sham_concentrations": [
+            0.07361488058540659,
+            0.4280898724767177
+          ],
+          "pulse_auc_reset_over_sham": 2.7653122548057536,
+          "response_squared_difference_fraction_first_six_units": 0.9991664537804097,
+          "late_response_shift_rms": 1.7695311023561e-05,
+          "donor_nearer_margins": {
+            "sham": 0.16449700288234193,
+            "reset-cell-20": 0.1091035013341006
+          },
+          "state_effect_margin": 1.9614108473604155,
+          "response_effect_margin": 0.07476310638094867
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "qualified": true,
+      "selected_ids": [
+        29,
+        30
+      ],
+      "late_state_shifts": 2,
+      "response_shifts": 2,
+      "donor_nearer_after_reset": 2,
+      "all_target_and_network_pulses_recover": true,
+      "recipient_comparisons": [
+        {
+          "cell": 29,
+          "donor": 30,
+          "reference_separation": 0.16840144453413292,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.8136212070901288,
+              "late_min_log_sd": 1.799860315853685,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.7777346773559541,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.015253028335185633,
+                "target_activator_peak_gain": 1.1661601038219398,
+                "target_inhibitor_peak_gain": 1.633258049168451,
+                "target_activator_log_auc_per_log_pulse": 1.7521987015286178,
+                "other_cells_peak_log_rms_per_log_pulse": 0.21377681085789987,
+                "target_recovery_time": 4.2,
+                "network_recovery_time": 4.8,
+                "final_log_rms_from_control": 5.7338315419249874e-05,
+                "late_max_log_rms_from_control": 6.181394016048223e-05
+              },
+              "destination_distance": 0.1701642344880428,
+              "donor_distance": 0.04142149781728906,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-29": {
+              "final_log_sd": 1.5066347053628621,
+              "late_min_log_sd": 1.4934445639716836,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.4720365891208558,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.13982287798074042,
+              "target_state_shift_final": 0.13380620250279646,
+              "metrics": {
+                "injected_activator_amount": -0.015253028335185633,
+                "target_activator_peak_gain": 1.1737413896719309,
+                "target_inhibitor_peak_gain": 1.4868293192266493,
+                "target_activator_log_auc_per_log_pulse": 2.4136163347869526,
+                "other_cells_peak_log_rms_per_log_pulse": 0.07300597127092538,
+                "target_recovery_time": 4.2,
+                "network_recovery_time": 5.55,
+                "final_log_rms_from_control": 6.7238844504128754e-06,
+                "late_max_log_rms_from_control": 7.042858297063414e-06
+              },
+              "destination_distance": 0.18070732035673825,
+              "donor_distance": 0.10756923484210726,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.0710747860250325,
+          "response_shift_detected": true,
+          "late_target_state_shift_detected": true
+        },
+        {
+          "cell": 30,
+          "donor": 29,
+          "reference_separation": 0.16840144453413292,
+          "contexts": {
+            "sham": {
+              "final_log_sd": 1.8136212070901288,
+              "late_min_log_sd": 1.799860315853685,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.7777346773559541,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 0.0,
+              "target_state_shift_final": 0.0,
+              "metrics": {
+                "injected_activator_amount": -0.00016753339387478347,
+                "target_activator_peak_gain": 1.0,
+                "target_inhibitor_peak_gain": 0.0007884534480534531,
+                "target_activator_log_auc_per_log_pulse": 1.119729926003708,
+                "other_cells_peak_log_rms_per_log_pulse": 0.0006312453568573076,
+                "target_recovery_time": 2.6999999999999997,
+                "network_recovery_time": 2.6999999999999997,
+                "final_log_rms_from_control": 2.357307162637193e-07,
+                "late_max_log_rms_from_control": 2.498041988420286e-07
+              },
+              "destination_distance": 0.16861640001906233,
+              "donor_distance": 0.003398763722194513,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            },
+            "reset-cell-30": {
+              "final_log_sd": 2.2978290439959985,
+              "late_min_log_sd": 2.286614705509807,
+              "persistent_contrast": true,
+              "whole_window_min_log_sd": 1.7683574643506776,
+              "whole_window_retained": true,
+              "first_loss": null,
+              "target_state_shift_late_max": 2.129552306391793,
+              "target_state_shift_final": 2.118113307003949,
+              "metrics": {
+                "injected_activator_amount": -0.00016753339387478347,
+                "target_activator_peak_gain": 1.0,
+                "target_inhibitor_peak_gain": 0.0009514099823989304,
+                "target_activator_log_auc_per_log_pulse": 3.286542354490715,
+                "other_cells_peak_log_rms_per_log_pulse": 0.0006956214667107626,
+                "target_recovery_time": 5.3999999999999995,
+                "network_recovery_time": 5.3999999999999995,
+                "final_log_rms_from_control": 5.614340615366454e-07,
+                "late_max_log_rms_from_control": 6.026933824882535e-07
+              },
+              "destination_distance": 0.19502480120653598,
+              "donor_distance": 0.08818122142880515,
+              "informative_reference": true,
+              "nearest_reference": "donor"
+            }
+          },
+          "response_shift_rms": 0.09149979898045947,
+          "response_shift_detected": true,
+          "late_target_state_shift_detected": true
+        }
+      ],
+      "additional_descriptive_metrics": [
+        {
+          "cell": 29,
+          "late_state_shift_min": 0.13380620250279646,
+          "final_reset_over_sham_concentrations": [
+            0.86931464909178,
+            0.8805079944992065
+          ],
+          "pulse_auc_reset_over_sham": 1.3774786687613192,
+          "response_squared_difference_fraction_first_six_units": 0.998454366527671,
+          "late_response_shift_rms": 0.0002493986997380154,
+          "donor_nearer_margins": {
+            "sham": 0.12874273667075375,
+            "reset-cell-29": 0.073138085514631
+          },
+          "state_effect_margin": 0.1298228779807404,
+          "response_effect_margin": 0.0610747860250325
+        },
+        {
+          "cell": 30,
+          "late_state_shift_min": 2.118113307003949,
+          "final_reset_over_sham_concentrations": [
+            0.05712893808133195,
+            0.41365040518687973
+          ],
+          "pulse_auc_reset_over_sham": 2.9351205841397077,
+          "response_squared_difference_fraction_first_six_units": 0.9989245074705958,
+          "late_response_shift_rms": 1.2488675191816697e-05,
+          "donor_nearer_margins": {
+            "sham": 0.1652176362968678,
+            "reset-cell-30": 0.10684357977773083
+          },
+          "state_effect_margin": 2.1195523063917934,
+          "response_effect_margin": 0.08149979898045948
+        }
+      ]
+    }
+  ],
+  "interventions": [
+    {
+      "seed": 7,
+      "recipient": null,
+      "surrounding_log_rms": 0.0,
+      "reset_added_amounts": [
+        0.0,
+        0.0
+      ],
+      "initial_total_amounts": [
+        1.7502047941704457,
+        1.8617082985951434
+      ],
+      "reset_total_amounts": [
+        1.7502047941704457,
+        1.8617082985951434
+      ],
+      "fractional_total_amount_changes": [
+        0.0,
+        0.0
+      ],
+      "amount_error_max": 0.0
+    },
+    {
+      "seed": 7,
+      "recipient": 22,
+      "surrounding_log_rms": 0.826922283851495,
+      "reset_added_amounts": [
+        0.15039546389256644,
+        0.13439430724638537
+      ],
+      "initial_total_amounts": [
+        1.7502047941704457,
+        1.8617082985951434
+      ],
+      "reset_total_amounts": [
+        1.9006002580630126,
+        1.9961026058415285
+      ],
+      "fractional_total_amount_changes": [
+        0.08593020907810404,
+        0.07218870289604454
+      ],
+      "amount_error_max": 4.440892098500626e-16,
+      "recipient_pulse_amount": -0.012863924521367122
+    },
+    {
+      "seed": 7,
+      "recipient": 23,
+      "surrounding_log_rms": 0.6527011632603047,
+      "reset_added_amounts": [
+        -0.11870051797476469,
+        -0.07455405598471616
+      ],
+      "initial_total_amounts": [
+        1.7502047941704457,
+        1.8617082985951434
+      ],
+      "reset_total_amounts": [
+        1.6315042761956815,
+        1.7871542426104272
+      ],
+      "fractional_total_amount_changes": [
+        -0.06782093065344723,
+        -0.0400460459036333
+      ],
+      "amount_error_max": 4.440892098500626e-16,
+      "recipient_pulse_amount": -0.00023732554954164665
+    },
+    {
+      "seed": 8,
+      "recipient": null,
+      "surrounding_log_rms": 0.0,
+      "reset_added_amounts": [
+        0.0,
+        0.0
+      ],
+      "initial_total_amounts": [
+        1.7384722272393391,
+        1.8356253019122661
+      ],
+      "reset_total_amounts": [
+        1.7384722272393391,
+        1.8356253019122661
+      ],
+      "fractional_total_amount_changes": [
+        0.0,
+        0.0
+      ],
+      "amount_error_max": 0.0
+    },
+    {
+      "seed": 8,
+      "recipient": 19,
+      "surrounding_log_rms": 0.9328334747621402,
+      "reset_added_amounts": [
+        0.19068342143455655,
+        0.18802463429040492
+      ],
+      "initial_total_amounts": [
+        1.7384722272393391,
+        1.8356253019122661
+      ],
+      "reset_total_amounts": [
+        1.9291556486738959,
+        2.0236499362026708
+      ],
+      "fractional_total_amount_changes": [
+        0.10968447953716132,
+        0.10243083601785719
+      ],
+      "amount_error_max": 4.440892098500626e-16,
+      "recipient_pulse_amount": -0.015435080466450432
+    },
+    {
+      "seed": 8,
+      "recipient": 20,
+      "surrounding_log_rms": 0.7080505654527701,
+      "reset_added_amounts": [
+        -0.12826667253288362,
+        -0.06878613151288124
+      ],
+      "initial_total_amounts": [
+        1.7384722272393391,
+        1.8356253019122661
+      ],
+      "reset_total_amounts": [
+        1.6102055547064558,
+        1.7668391703993849
+      ],
+      "fractional_total_amount_changes": [
+        -0.07378126065123781,
+        -0.03747286085086273
+      ],
+      "amount_error_max": 2.220446049250313e-16,
+      "recipient_pulse_amount": -0.0001712088693324053
+    },
+    {
+      "seed": 9,
+      "recipient": null,
+      "surrounding_log_rms": 0.0,
+      "reset_added_amounts": [
+        0.0,
+        0.0
+      ],
+      "initial_total_amounts": [
+        1.643498826858578,
+        1.7772427672383584
+      ],
+      "reset_total_amounts": [
+        1.643498826858578,
+        1.7772427672383584
+      ],
+      "fractional_total_amount_changes": [
+        0.0,
+        0.0
+      ],
+      "amount_error_max": 0.0
+    },
+    {
+      "seed": 9,
+      "recipient": 29,
+      "surrounding_log_rms": 0.9371473703025827,
+      "reset_added_amounts": [
+        0.1870163209577996,
+        0.18458903225352932
+      ],
+      "initial_total_amounts": [
+        1.643498826858578,
+        1.7772427672383584
+      ],
+      "reset_total_amounts": [
+        1.8305151478163773,
+        1.961831799491888
+      ],
+      "fractional_total_amount_changes": [
+        0.11379157557128712,
+        0.10386258740574905
+      ],
+      "amount_error_max": 2.220446049250313e-16,
+      "recipient_pulse_amount": -0.015253028335185633
+    },
+    {
+      "seed": 9,
+      "recipient": 30,
+      "surrounding_log_rms": 0.7106588147838483,
+      "reset_added_amounts": [
+        -0.12951710302546451,
+        -0.07116352253926005
+      ],
+      "initial_total_amounts": [
+        1.643498826858578,
+        1.7772427672383584
+      ],
+      "reset_total_amounts": [
+        1.5139817238331132,
+        1.7060792446990984
+      ],
+      "fractional_total_amount_changes": [
+        -0.07880571674822946,
+        -0.040041531664152114
+      ],
+      "amount_error_max": 2.220446049250313e-16,
+      "recipient_pulse_amount": -0.00016753339387478347
+    }
+  ],
+  "numerical": {
+    "full_mechanical_maxima": {
+      "chemical_log_max": 1.857342171963946e-05,
+      "polarity_abs_max": 2.9664247983892528e-06,
+      "relative_axis_max": 6.55468171961715e-08,
+      "relative_volume_max": 9.719962721366215e-07,
+      "relative_transport_max": 0.0023993913285989443,
+      "final_phi_abs_max": 1.6689300537109375e-06
+    },
+    "normalized_response_error_max": 2.413700142371572e-05,
+    "relative_auc_error_max": 1.4421505477590912e-05,
+    "recovery_time_error_max": 0.0,
+    "target_state_shift_error_max": 2.0979009907051704e-07,
+    "response_shift_error_max": 3.5323056497837957e-07,
+    "prefix_maxima": {
+      "chemical_log_max": 1.3480506849817424e-06,
+      "polarity_abs_max": 1.5876126603989182e-07,
+      "relative_axis_max": 1.1467901206430042e-07,
+      "relative_volume_max": 2.490933392884642e-07,
+      "relative_transport_max": 2.3150457219761767e-06
+    },
+    "prefix_phi_abs_max": 4.112720489501953e-06,
+    "recorded_independent_chemical_log_max": 2.2204460492503136e-16,
+    "reconstructed_graph_error_max": 1.7763568394002505e-15,
+    "weighted_mass_error_max": 8.326672684688674e-17
+  },
+  "quality_extrema": {
+    "max_volume_error": 0.011171210821109057,
+    "min_radius": 5.106883358087768,
+    "max_clipping": 0.0,
+    "boundary_max": 1.5124573593539026e-08,
+    "dilution_error_max": 4.440892098500626e-16
+  },
+  "new_moving_wall_seconds": 13259.03105815401,
+  "completion_utc_from_status_mtime": "2026-10-06T16:28:25.799942+00:00",
+  "original_summary_sha256": "ece688f96ebacd11ba50d442de471575054a62b49eff4e1be3008e2b282294c8",
+  "original_status_sha256": "b0942fc4856e7212c9e6357276271ba5ba9cc3152e9a9cac5c578fe54490ae7f",
+  "scope": "Three existing mature histories; 33 new and nine exact reused paths. Reset changes amounts, all other cells, chemistry-mediated mechanics and geometry; not neighbor-only topology, autonomous/committed/inherited identity, fresh carry zygote development, spatial convergence or general ledger promotion.",
+  "independent_review_scope": "Hashes, completed states/histories, nonchemical preparation arrays and retiming, recipient preservation, reset/pulse amounts, recorded native/GPU prefixes, weighted conservation/spectra, pilot/full snapshots, independent CPU state/response/AUC/recovery metrics and timestep discrepancies. No simulation rerun. Eight-step independent chemistry and four-step exact restart checks are verified from their hashed records; sparse histories cannot reconstruct every-step physical extrema. Extra late-minimum/ratio/early-energy measures are descriptive and do not replace declared acceptance criteria.",
+  "full_review": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context-review/2026-10-06T210547Z-final/assessment.json",
+  "full_review_sha256": "6dd2cf624d84b4c195beabe2a368b96171c654fb45e0cb396ea258a6364f8168",
+  "original_protocol": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/protocol.json",
+  "figure": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context-review/2026-10-06T210547Z-final/network-context.png",
+  "figure_sha256": "c72749f58ce54fa6261e2d6bdb358bb437c17184eaa2b7d32f227663e55f5982"
+}

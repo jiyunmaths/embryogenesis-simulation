@@ -1,0 +1,1326 @@
+{
+  "captured_utc": "2026-10-06T11:48:02.364273+00:00",
+  "logical_bytes_at_inventory": 50066594299,
+  "large_folders": [
+    {
+      "path": "outputs/phase-carry-exchange-response",
+      "bytes_at_inventory": 14284244379,
+      "active": false,
+      "active_protocol_path_count": 251,
+      "external_literal_referrer_count": 9,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/phase-carry-network-context",
+      "bytes_at_inventory": 3562054105,
+      "active": true,
+      "active_protocol_path_count": 42,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_live_run"
+    },
+    {
+      "path": "outputs/phase-carry-maintenance",
+      "bytes_at_inventory": 3559635673,
+      "active": false,
+      "active_protocol_path_count": 108,
+      "external_literal_referrer_count": 22,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/moving-initiation-controls",
+      "bytes_at_inventory": 3143843128,
+      "active": false,
+      "active_protocol_path_count": 56,
+      "external_literal_referrer_count": 19,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/polarity-conductance-controls",
+      "bytes_at_inventory": 3115845499,
+      "active": false,
+      "active_protocol_path_count": 32,
+      "external_literal_referrer_count": 18,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/phase-carry-polarity",
+      "bytes_at_inventory": 2834799151,
+      "active": false,
+      "active_protocol_path_count": 87,
+      "external_literal_referrer_count": 28,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/polarity-robustness",
+      "bytes_at_inventory": 2091214323,
+      "active": false,
+      "active_protocol_path_count": 50,
+      "external_literal_referrer_count": 56,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/moving-causal",
+      "bytes_at_inventory": 2069191223,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/development-refinement",
+      "bytes_at_inventory": 2000540323,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 31,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/exchange-response-histories",
+      "bytes_at_inventory": 1688807978,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 31,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/domain-conservative-extended",
+      "bytes_at_inventory": 1448342651,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 27,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/parameter-robustness-moving",
+      "bytes_at_inventory": 1424146431,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 18,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/exchange-response-histories-refined",
+      "bytes_at_inventory": 1414942821,
+      "active": false,
+      "active_protocol_path_count": 16,
+      "external_literal_referrer_count": 29,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/phase-carry-convergence",
+      "bytes_at_inventory": 895914177,
+      "active": false,
+      "active_protocol_path_count": 21,
+      "external_literal_referrer_count": 18,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/attribute-development",
+      "bytes_at_inventory": 779738802,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 60,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-exchange-response-moving",
+      "bytes_at_inventory": 498047950,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 56,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/geometry-precision",
+      "bytes_at_inventory": 470048495,
+      "active": false,
+      "active_protocol_path_count": 14,
+      "external_literal_referrer_count": 20,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/cell-response-moving-refined",
+      "bytes_at_inventory": 307089942,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 30,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-response",
+      "bytes_at_inventory": 300957539,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/moving-causal-smoke",
+      "bytes_at_inventory": 287241170,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-moving",
+      "bytes_at_inventory": 283903493,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-long",
+      "bytes_at_inventory": 260643519,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 28,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-survival-validation",
+      "bytes_at_inventory": 233080682,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 56,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-long-smoke",
+      "bytes_at_inventory": 229525257,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-exchange-response-refined",
+      "bytes_at_inventory": 216345322,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 13,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/domain-conservative",
+      "bytes_at_inventory": 214679813,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 16,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/phase-carry-formation",
+      "bytes_at_inventory": 153826763,
+      "active": false,
+      "active_protocol_path_count": 16,
+      "external_literal_referrer_count": 26,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/fertilization-cue",
+      "bytes_at_inventory": 136677158,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 12,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/shape-extended",
+      "bytes_at_inventory": 132030488,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/coupled-resolution",
+      "bytes_at_inventory": 122182125,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 10,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/signal-patch",
+      "bytes_at_inventory": 121794906,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/polarity-robustness-refined",
+      "bytes_at_inventory": 119271488,
+      "active": false,
+      "active_protocol_path_count": 12,
+      "external_literal_referrer_count": 28,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/gpu-backend-validation",
+      "bytes_at_inventory": 113330322,
+      "active": false,
+      "active_protocol_path_count": 16,
+      "external_literal_referrer_count": 39,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/refinement-confirmation",
+      "bytes_at_inventory": 83015811,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 6,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-exchange-moving",
+      "bytes_at_inventory": 80016782,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 22,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cutoff-dynamics",
+      "bytes_at_inventory": 77840851,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/shape-persistence",
+      "bytes_at_inventory": 74563316,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 16,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/gpu-adapter-smoke",
+      "bytes_at_inventory": 70864022,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response",
+      "bytes_at_inventory": 63396834,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 6,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/native-mechanics-validation",
+      "bytes_at_inventory": 56665543,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 6,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-mechanics-validation",
+      "bytes_at_inventory": 56664896,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-polarity-ablation",
+      "bytes_at_inventory": 53138371,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 20,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-survival",
+      "bytes_at_inventory": 52770234,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 47,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/completed-feedback-assessment-20260929T012311Z",
+      "bytes_at_inventory": 51812852,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-survival-smoke",
+      "bytes_at_inventory": 46559839,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/resident-gpu-coupled-benchmark",
+      "bytes_at_inventory": 46423970,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/interim-feedback-20260928T201929Z",
+      "bytes_at_inventory": 42211068,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/interim-feedback-20260928T201920Z",
+      "bytes_at_inventory": 42146355,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/signaling-timescales",
+      "bytes_at_inventory": 40479522,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 16,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/causal-signaling",
+      "bytes_at_inventory": 38006984,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 6,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/polarity-conductance-controls-interim",
+      "bytes_at_inventory": 36523206,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 0,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/interim-feedback-20260928T151647Z",
+      "bytes_at_inventory": 32412585,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/causal-signaling-confirmation",
+      "bytes_at_inventory": 30444082,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/phase-carry-maintenance-review",
+      "bytes_at_inventory": 30269446,
+      "active": false,
+      "active_protocol_path_count": 1,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/fast-polarity-validation",
+      "bytes_at_inventory": 26538194,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-exchange-moving-incomplete-preparation",
+      "bytes_at_inventory": 23338455,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-response-refinement",
+      "bytes_at_inventory": 23135694,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/moving-initiation-controls-interim",
+      "bytes_at_inventory": 21972918,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 0,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cleavage-resolution",
+      "bytes_at_inventory": 20631502,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 13,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/moving-domain-verified",
+      "bytes_at_inventory": 18915163,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/phase-carry-polarity-interim",
+      "bytes_at_inventory": 16273714,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 0,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-moving-refined-interim-20261001T020257Z",
+      "bytes_at_inventory": 16118855,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/geometry-chemistry-coupling",
+      "bytes_at_inventory": 15514322,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fate-memory",
+      "bytes_at_inventory": 14777076,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-common-environment",
+      "bytes_at_inventory": 12888305,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 15,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-exchange",
+      "bytes_at_inventory": 12182851,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 18,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/demo",
+      "bytes_at_inventory": 11618757,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/initial-prototype",
+      "bytes_at_inventory": 11528525,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/graph-polarity",
+      "bytes_at_inventory": 11488977,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/graph-no-polarity",
+      "bytes_at_inventory": 11402713,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-moving-refined-interim-20260930T212237Z",
+      "bytes_at_inventory": 11029537,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/progressive",
+      "bytes_at_inventory": 10707480,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/moving-domain",
+      "bytes_at_inventory": 10183327,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/nonlinear-bridge",
+      "bytes_at_inventory": 9793218,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/nonlinear-bridge-verified",
+      "bytes_at_inventory": 9793217,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 24,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/neighbor-context",
+      "bytes_at_inventory": 9443499,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 15,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/joint-fate-validation",
+      "bytes_at_inventory": 9376817,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 13,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/identity-interim-20261001T215218Z",
+      "bytes_at_inventory": 9175040,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/identity-interim-20261001T162647Z",
+      "bytes_at_inventory": 8179717,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-exchange",
+      "bytes_at_inventory": 7473460,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 21,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-development-parallel-smoke",
+      "bytes_at_inventory": 7388559,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/parameter-robustness",
+      "bytes_at_inventory": 7317607,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-development-smoke",
+      "bytes_at_inventory": 7268636,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-moving-interim-20260930T003007Z",
+      "bytes_at_inventory": 6990763,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-finite-reservoir",
+      "bytes_at_inventory": 4764206,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 14,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/attribute-persistence",
+      "bytes_at_inventory": 4102526,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 15,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fate-robustness",
+      "bytes_at_inventory": 3982717,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/live-conservative-smoke",
+      "bytes_at_inventory": 3895013,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/irregular-signaling",
+      "bytes_at_inventory": 3894799,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/dense-geometry-replay",
+      "bytes_at_inventory": 3880121,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cuda-kernel-cache",
+      "bytes_at_inventory": 3782368,
+      "active": false,
+      "active_protocol_path_count": 2,
+      "external_literal_referrer_count": 25,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/feedback-endpoint-bistability-seed-9",
+      "bytes_at_inventory": 3093796,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 27,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-endpoint-bistability",
+      "bytes_at_inventory": 3028902,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 36,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-endpoint-bistability-seed-8",
+      "bytes_at_inventory": 2993191,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 27,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/chemistry-accuracy",
+      "bytes_at_inventory": 1961261,
+      "active": false,
+      "active_protocol_path_count": 43,
+      "external_literal_referrer_count": 16,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/cell-surface-preview",
+      "bytes_at_inventory": 1954256,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/neighbor-context-delayed",
+      "bytes_at_inventory": 1463057,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 12,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/irregular-bridge",
+      "bytes_at_inventory": 1432907,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 22,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cell-response-refined",
+      "bytes_at_inventory": 1412366,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/parameter-robustness-reference",
+      "bytes_at_inventory": 1307450,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/phase-carry-polarity-review",
+      "bytes_at_inventory": 1033659,
+      "active": false,
+      "active_protocol_path_count": 1,
+      "external_literal_referrer_count": 7,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response-review",
+      "bytes_at_inventory": 960669,
+      "active": false,
+      "active_protocol_path_count": 1,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/geometry-replay",
+      "bytes_at_inventory": 724175,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/polarity-conductance-controls-review",
+      "bytes_at_inventory": 538390,
+      "active": false,
+      "active_protocol_path_count": 1,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/continuum-bridge1",
+      "bytes_at_inventory": 420496,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/continuum-bridge-verified",
+      "bytes_at_inventory": 395169,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/continuum-bridge",
+      "bytes_at_inventory": 390769,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 22,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/moving-initiation-controls-review",
+      "bytes_at_inventory": 367842,
+      "active": false,
+      "active_protocol_path_count": 1,
+      "external_literal_referrer_count": 6,
+      "disposition": "keep_active_protocol_dependencies"
+    },
+    {
+      "path": "outputs/graph-analysis",
+      "bytes_at_inventory": 293947,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-spectrum",
+      "bytes_at_inventory": 278762,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 21,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/screen",
+      "bytes_at_inventory": 266218,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 22,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cytokinesis-check",
+      "bytes_at_inventory": 263595,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cuda-precision-extended",
+      "bytes_at_inventory": 204135,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/graph-preflight",
+      "bytes_at_inventory": 123318,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/projection-audit",
+      "bytes_at_inventory": 119987,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/contact-cutoff-sensitivity",
+      "bytes_at_inventory": 111332,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/mechanics-kernel-cache",
+      "bytes_at_inventory": 91960,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 5,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cytokinesis-baseline",
+      "bytes_at_inventory": 42023,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cleavage-measurement",
+      "bytes_at_inventory": 41027,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/feedback-components",
+      "bytes_at_inventory": 36796,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/positive-skew-flux",
+      "bytes_at_inventory": 24319,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 10,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/skew-flux",
+      "bytes_at_inventory": 21956,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/skew-boundary-correction",
+      "bytes_at_inventory": 20288,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/torch-gpu-benchmark",
+      "bytes_at_inventory": 16344,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 4,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/geometry-transport-validation",
+      "bytes_at_inventory": 14461,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/skew-boundary",
+      "bytes_at_inventory": 12747,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cuda-spatial-bench",
+      "bytes_at_inventory": 7682,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fertilization-cue-preflight-protocol",
+      "bytes_at_inventory": 7083,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/native-mechanics-benchmark",
+      "bytes_at_inventory": 6113,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-polarity-validation-first-prototype",
+      "bytes_at_inventory": 5501,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/gpu-adapter-smoke-source",
+      "bytes_at_inventory": 5162,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-mechanics-validation-preflight",
+      "bytes_at_inventory": 5146,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-mechanics-benchmark",
+      "bytes_at_inventory": 3736,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/live-transport-validation-complete",
+      "bytes_at_inventory": 2939,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 11,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/cuda-precision-pilot",
+      "bytes_at_inventory": 2828,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-polarity-benchmark",
+      "bytes_at_inventory": 2481,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/fast-polarity-benchmark-v2",
+      "bytes_at_inventory": 2481,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/optimization-shutdown-20261002T163919Z",
+      "bytes_at_inventory": 1804,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/kernel-benchmark",
+      "bytes_at_inventory": 674,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 3,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    },
+    {
+      "path": "outputs/live-transport-validation",
+      "bytes_at_inventory": 0,
+      "active": false,
+      "active_protocol_path_count": 0,
+      "external_literal_referrer_count": 2,
+      "disposition": "keep_scientific_or_historical_records_pending_individual_review"
+    }
+  ],
+  "generated_viewers": {
+    "disposition": "retained; paired trajectories alone do not prove an exact historical viewer can be regenerated with current renderer code",
+    "literal_reference_scan_only": true,
+    "count": 37,
+    "potential_bytes": 1001098265,
+    "files": [
+      {
+        "path": "outputs/domain-conservative-extended/grid-40/viewer.html",
+        "bytes": 214447061,
+        "retained_trajectory": "outputs/domain-conservative-extended/grid-40/trajectory.json"
+      },
+      {
+        "path": "outputs/domain-conservative-extended/grid-48/viewer.html",
+        "bytes": 214596274,
+        "retained_trajectory": "outputs/domain-conservative-extended/grid-48/trajectory.json"
+      },
+      {
+        "path": "outputs/domain-conservative-extended/grid-56/viewer.html",
+        "bytes": 214593474,
+        "retained_trajectory": "outputs/domain-conservative-extended/grid-56/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-extended/no-feedback/viewer.html",
+        "bytes": 19499554,
+        "retained_trajectory": "outputs/shape-extended/no-feedback/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-extended/no-polarity-tension/viewer.html",
+        "bytes": 19495825,
+        "retained_trajectory": "outputs/shape-extended/no-polarity-tension/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-extended/full/viewer.html",
+        "bytes": 19458068,
+        "retained_trajectory": "outputs/shape-extended/full/trajectory.json"
+      },
+      {
+        "path": "outputs/refinement-confirmation/space-112/viewer.html",
+        "bytes": 5283368,
+        "retained_trajectory": "outputs/refinement-confirmation/space-112/trajectory.json"
+      },
+      {
+        "path": "outputs/demo/viewer.html",
+        "bytes": 3673868,
+        "retained_trajectory": "outputs/demo/trajectory.json"
+      },
+      {
+        "path": "outputs/initial-prototype/viewer.html",
+        "bytes": 3633472,
+        "retained_trajectory": "outputs/initial-prototype/trajectory.json"
+      },
+      {
+        "path": "outputs/signal-patch/uniform_default/viewer.html",
+        "bytes": 9748855,
+        "retained_trajectory": "outputs/signal-patch/uniform_default/trajectory.json"
+      },
+      {
+        "path": "outputs/signal-patch/patch_default/viewer.html",
+        "bytes": 9795675,
+        "retained_trajectory": "outputs/signal-patch/patch_default/trajectory.json"
+      },
+      {
+        "path": "outputs/signal-patch/patch_strong/viewer.html",
+        "bytes": 9786478,
+        "retained_trajectory": "outputs/signal-patch/patch_strong/trajectory.json"
+      },
+      {
+        "path": "outputs/signal-patch/patch_no_feedback/viewer.html",
+        "bytes": 9810451,
+        "retained_trajectory": "outputs/signal-patch/patch_no_feedback/trajectory.json"
+      },
+      {
+        "path": "outputs/signal-patch/uniform_strong/viewer.html",
+        "bytes": 9739073,
+        "retained_trajectory": "outputs/signal-patch/uniform_strong/trajectory.json"
+      },
+      {
+        "path": "outputs/live-conservative-smoke/viewer.html",
+        "bytes": 1427456,
+        "retained_trajectory": "outputs/live-conservative-smoke/trajectory.json"
+      },
+      {
+        "path": "outputs/graph-no-polarity/viewer.html",
+        "bytes": 3340001,
+        "retained_trajectory": "outputs/graph-no-polarity/trajectory.json"
+      },
+      {
+        "path": "outputs/coupled-resolution/space-88/viewer.html",
+        "bytes": 3379449,
+        "retained_trajectory": "outputs/coupled-resolution/space-88/trajectory.json"
+      },
+      {
+        "path": "outputs/coupled-resolution/time-0.015/viewer.html",
+        "bytes": 2325638,
+        "retained_trajectory": "outputs/coupled-resolution/time-0.015/trajectory.json"
+      },
+      {
+        "path": "outputs/coupled-resolution/time-0.0075/viewer.html",
+        "bytes": 2325548,
+        "retained_trajectory": "outputs/coupled-resolution/time-0.0075/trajectory.json"
+      },
+      {
+        "path": "outputs/coupled-resolution/space-72/viewer.html",
+        "bytes": 2325335,
+        "retained_trajectory": "outputs/coupled-resolution/space-72/trajectory.json"
+      },
+      {
+        "path": "outputs/coupled-resolution/space-56/viewer.html",
+        "bytes": 1429763,
+        "retained_trajectory": "outputs/coupled-resolution/space-56/trajectory.json"
+      },
+      {
+        "path": "outputs/graph-polarity/viewer.html",
+        "bytes": 3370294,
+        "retained_trajectory": "outputs/graph-polarity/trajectory.json"
+      },
+      {
+        "path": "outputs/domain-conservative/grid-40/viewer.html",
+        "bytes": 32064873,
+        "retained_trajectory": "outputs/domain-conservative/grid-40/trajectory.json"
+      },
+      {
+        "path": "outputs/domain-conservative/grid-48/viewer.html",
+        "bytes": 32066807,
+        "retained_trajectory": "outputs/domain-conservative/grid-48/trajectory.json"
+      },
+      {
+        "path": "outputs/domain-conservative/grid-56/viewer.html",
+        "bytes": 32065200,
+        "retained_trajectory": "outputs/domain-conservative/grid-56/trajectory.json"
+      },
+      {
+        "path": "outputs/development-refinement/space-88/viewer.html",
+        "bytes": 25474391,
+        "retained_trajectory": "outputs/development-refinement/space-88/trajectory.json"
+      },
+      {
+        "path": "outputs/development-refinement/time-0.00375/viewer.html",
+        "bytes": 17438139,
+        "retained_trajectory": "outputs/development-refinement/time-0.00375/trajectory.json"
+      },
+      {
+        "path": "outputs/development-refinement/time-0.015/viewer.html",
+        "bytes": 17377369,
+        "retained_trajectory": "outputs/development-refinement/time-0.015/trajectory.json"
+      },
+      {
+        "path": "outputs/development-refinement/space-72/viewer.html",
+        "bytes": 17409347,
+        "retained_trajectory": "outputs/development-refinement/space-72/trajectory.json"
+      },
+      {
+        "path": "outputs/development-refinement/space-56/viewer.html",
+        "bytes": 10750128,
+        "retained_trajectory": "outputs/development-refinement/space-56/trajectory.json"
+      },
+      {
+        "path": "outputs/cutoff-dynamics/cutoff-0.04/viewer.html",
+        "bytes": 1556142,
+        "retained_trajectory": "outputs/cutoff-dynamics/cutoff-0.04/trajectory.json"
+      },
+      {
+        "path": "outputs/cutoff-dynamics/cutoff-0.02/viewer.html",
+        "bytes": 1556623,
+        "retained_trajectory": "outputs/cutoff-dynamics/cutoff-0.02/trajectory.json"
+      },
+      {
+        "path": "outputs/cutoff-dynamics/cutoff-0.01/viewer.html",
+        "bytes": 1557479,
+        "retained_trajectory": "outputs/cutoff-dynamics/cutoff-0.01/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-persistence/no-feedback/viewer.html",
+        "bytes": 4946921,
+        "retained_trajectory": "outputs/shape-persistence/no-feedback/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-persistence/no-polarity-tension/viewer.html",
+        "bytes": 4952586,
+        "retained_trajectory": "outputs/shape-persistence/no-polarity-tension/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-persistence/development-no-feedback/viewer.html",
+        "bytes": 13450192,
+        "retained_trajectory": "outputs/shape-persistence/development-no-feedback/trajectory.json"
+      },
+      {
+        "path": "outputs/shape-persistence/full/viewer.html",
+        "bytes": 4947088,
+        "retained_trajectory": "outputs/shape-persistence/full/trajectory.json"
+      }
+    ]
+  },
+  "same_size_groups": {
+    "disposition": "retained; same size is not proof of duplicate content and required paths must be preserved",
+    "groups": 274,
+    "theoretical_redundant_bytes": 7125588836
+  },
+  "removed_file_count": 6,
+  "deleted_bytes": 33809723
+}

@@ -1,0 +1,8 @@
+{
+  "captured_utc": "2026-10-06T02:52:35.192837+00:00",
+  "reason": "Preserve reporting documents before recording the active carry exchange/response experiment.",
+  "sha256": {
+    "README.md": "577a87c0fff43ce8a589044c21d168bce6e134bc74e688e45c39595ccb857596",
+    "docs/plan.md": "55a00bb807c9468440c4a7be920f343419a82744bafac50de8b5fb3ddca58683"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "archived_utc": "2026-10-06T11:03:21.982095+00:00",
+  "purpose": "Reporting snapshots before completed carry-exchange/response review; scientific protocol/evidence unchanged.",
+  "files": {
+    "README.md": {
+      "original_sha256": "70346f93a456b2c40819229551ca7e5b6ca9e033fc464b7142a91dc164cd6314",
+      "snapshot_sha256": "70346f93a456b2c40819229551ca7e5b6ca9e033fc464b7142a91dc164cd6314"
+    },
+    "docs/plan.md": {
+      "original_sha256": "79b1777cc3f889c7d95beef229e7f6d56d0e0d32c96688a4b4c125e16c455248",
+      "snapshot_sha256": "79b1777cc3f889c7d95beef229e7f6d56d0e0d32c96688a4b4c125e16c455248"
+    }
+  }
+}

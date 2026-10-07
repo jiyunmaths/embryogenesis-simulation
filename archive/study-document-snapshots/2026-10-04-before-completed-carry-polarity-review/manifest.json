@@ -1,0 +1,36 @@
+{
+  "captured_utc": "2026-10-05T00:51:37.123034+00:00",
+  "scope": "Preserve pre-review documents and prior hash-bearing audit/reporting records; no scientific output or original ledger entry replaced.",
+  "files": [
+    {
+      "original": "README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/README.md",
+      "sha256": "8b9144ad527f324171dd7f48a43874cd3a16b15794d0bfd64142c0918756e4fa"
+    },
+    {
+      "original": "docs/plan.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/docs/plan.md",
+      "sha256": "86c539c09ae2f7d99fe7ec7510dc5bd68aa59a81975a69cf557f31b917369c1c"
+    },
+    {
+      "original": "docs/phase_carry_polarity.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/docs/phase_carry_polarity.md",
+      "sha256": "62798e8a52f701631a219b78da6e1a64b6346c6ab8f18916d41ecf427c9c713d"
+    },
+    {
+      "original": "docs/phase_carry_polarity_reporting.json",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/docs/phase_carry_polarity_reporting.json",
+      "sha256": "d9c08674e9261e0803ff9d7dcd2063e91d476906d0b32156c516cc798d54c0f5"
+    },
+    {
+      "original": "docs/initiation_reporting_verification.json",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/docs/initiation_reporting_verification.json",
+      "sha256": "6d1543d15307b263640790815710bc8409a7aae0ab782f741e79a74b9a348955"
+    },
+    {
+      "original": "docs/claim_precision_audit_verification.json",
+      "snapshot": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/docs/claim_precision_audit_verification.json",
+      "sha256": "b19c6b5fdb4128a6277b55053e7f4ce0572ba7c536f27150490d755278a47d73"
+    }
+  ]
+}

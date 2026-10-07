@@ -1,0 +1,51 @@
+{
+  "captured_utc": "2026-10-07T02:45:39.211038+00:00",
+  "passed": true,
+  "real_file_cli_restore": [
+    {
+      "path": "outputs/development-refinement/time-0.015/history.json",
+      "sha256": "c335a3f6e6eca72e0d98a2dc5b530e4b4176a04e46ce478fc262d08893295d7e",
+      "inode": 2367490,
+      "exact_original_hash": true,
+      "mode_and_mtime_preserved": true,
+      "independent_inode": true
+    },
+    {
+      "path": "outputs/domain-conservative-extended/grid-40/final_state.npz",
+      "sha256": "d77de9b25c473e5e901ccbfb366c51a1c7491b5514437a6d8652977854a78cbe",
+      "inode": 2367489,
+      "exact_original_hash": true,
+      "mode_and_mtime_preserved": true,
+      "independent_inode": true
+    },
+    {
+      "path": "outputs/domain-conservative-extended/grid-40/progress_state.npz",
+      "sha256": "d77de9b25c473e5e901ccbfb366c51a1c7491b5514437a6d8652977854a78cbe",
+      "inode": 2367487,
+      "exact_original_hash": true,
+      "mode_and_mtime_preserved": true,
+      "independent_inode": true
+    }
+  ],
+  "duplicate_restores_have_distinct_inodes": true,
+  "smoke_test_copies_removed_after_reverification": true,
+  "all_originals_archived": true,
+  "active_status": {
+    "state": "running",
+    "stage": "full",
+    "current_job": "seed-8_fine_sham_cell-20_amount",
+    "target_horizon": 60.0,
+    "completed": 31,
+    "total": 66,
+    "independent_histories": 3,
+    "new_histories": 0
+  },
+  "archive_manifest_sha256": "d80ffa2d41b1693aee1e06a2961e87910729e2b9f9166bcd946b295307126f6a",
+  "scripts_sha256": {
+    "audit_script.py": "a8dfcc3ff9548661b4628c7be31d5b454a71c73b67e5e27b710f391b7b7a6b86",
+    "compress_script.py": "fca702e48f4286ab6b9fb1e7de97e3659cafdfb91538330c8de9368717146ce3",
+    "manage_archive.py": "bd1aef7b7d786be340cfa1ac0804a40b9d8c535b4d757aa2a0d8f1571e37c451",
+    "restore_check.py": "efefbda1f2e71ded8a46a22ae15cad0f14eafb60083dfd0045e59d65a6e47d6a",
+    "postcheck_script.py": "687ff0104f66e3ac1a4ec7879b2200c9ac2241c6b162bddda80afa176d5d4a13"
+  }
+}

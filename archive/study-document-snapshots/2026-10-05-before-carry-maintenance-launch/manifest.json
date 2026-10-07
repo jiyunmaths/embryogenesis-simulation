@@ -1,0 +1,16 @@
+{
+  "captured_utc": "2026-10-05T18:00:23.139144+00:00",
+  "reason": "Preserve completed initiation assessment before adding active carry maintenance pipeline.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-carry-maintenance-launch/README.md",
+      "sha256": "98a8113164d508ff729b3e3b2469a287f48863293555aca4afe95d42a5534ad4"
+    },
+    {
+      "original_path": "docs/plan.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-carry-maintenance-launch/docs/plan.md",
+      "sha256": "d2b13a4e4c4935a786be493379dcff3083a8a617929939c761b44255748c2821"
+    }
+  ]
+}

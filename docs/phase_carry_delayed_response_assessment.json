@@ -1,0 +1,479 @@
+{
+  "reviewed_utc": "2026-10-07T11:00:06.147403+00:00",
+  "protocol_sha256": "d488e3268d154795d8229746ffd4a8adf0c9f689633eff51e68b00a14199442d",
+  "full_study_accepted": true,
+  "original_summary_sha256": "5c73a80d1a6adcd641030a7c9051b0d0d7d9d2380093aa0d3d937e3c8a0e8a57",
+  "original_status_sha256": "7ed8a7f3c790ce448fbf666b858bf08dab9514407511146453f6a9bb0bc4e60a",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "paths": 66,
+  "source_hashes_verified": 49,
+  "input_hashes_verified": 890,
+  "context_gates_verified": 66,
+  "prepared_states_verified": 66,
+  "immutable_paths_verified": 1811,
+  "pilot_reports": 3,
+  "full_reports": 3,
+  "full_mechanical_pairs": 33,
+  "full_response_pairs": 24,
+  "quality_extrema": {
+    "max_volume_error": 0.011017949303587682,
+    "min_radius": 5.1071471881421475,
+    "max_clipping": 0.0,
+    "boundary_max": 1.9263948658476693e-08,
+    "dilution_error_max": 4.440892098500626e-16
+  },
+  "minimum_whole_window_contrast": 1.3551274705897447,
+  "full_timestep_maxima": {
+    "chemical_log_max": 1.6859394283972709e-06,
+    "polarity_abs_max": 1.4673243745912112e-07,
+    "relative_axis_max": 2.5390484825749127e-08,
+    "relative_volume_max": 4.693893793650261e-07,
+    "relative_transport_max": 5.319010679599186e-07,
+    "final_phi_abs_max": 1.1920928955078125e-07
+  },
+  "max_normalized_response_error": 1.759281392943779e-05,
+  "max_relative_auc_error": 1.4159257333723474e-05,
+  "max_recovery_time_error": 0.0,
+  "max_response_effect_error": 4.1955341860411277e-07,
+  "effect_screen": 0.01,
+  "history_outcomes": {
+    "7": {
+      "recipients": 2,
+      "delayed_shifted_at_both_doses": 0
+    },
+    "8": {
+      "recipients": 2,
+      "delayed_shifted_at_both_doses": 1
+    },
+    "9": {
+      "recipients": 2,
+      "delayed_shifted_at_both_doses": 1
+    }
+  },
+  "recipients": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "state_shift_initial": 0.014767867471015838,
+      "state_shift_final": 0.011915860749349732,
+      "state_shift_late_min": 0.011915860749349732,
+      "state_shift_late_max": 0.012932938108031826,
+      "final_activator_reset_over_sham": 1.0124980616920662,
+      "final_inhibitor_reset_over_sham": 1.0114538666629125,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 0.009362602318077732,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9989850409289154,
+          "activator_response_area_reset_over_sham": 0.9505517303012492,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.2111282661362868,
+              "target_inhibitor_peak_gain": 1.495629818833201,
+              "target_activator_log_auc_per_log_pulse": 2.5489999598199957,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06397362706218328,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 5.25,
+              "final_log_rms_from_control": 7.543632739928777e-06,
+              "late_max_log_rms_from_control": 7.806680890670865e-06
+            },
+            "reset-cell-22": {
+              "target_activator_peak_gain": 1.2070989046687954,
+              "target_inhibitor_peak_gain": 1.5073379584502942,
+              "target_activator_log_auc_per_log_pulse": 2.4229563223447115,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06816087739711811,
+              "target_recovery_time": 3.9,
+              "network_recovery_time": 5.3999999999999995,
+              "final_log_rms_from_control": 3.8074893891959843e-06,
+              "late_max_log_rms_from_control": 3.95173983346994e-06
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.009588140785993687,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9990600376262102,
+          "activator_response_area_reset_over_sham": 0.9493067401791557,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.2111282661362868,
+              "target_inhibitor_peak_gain": 1.495629818833201,
+              "target_activator_log_auc_per_log_pulse": 2.5489999598199957,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06397362706218328,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 5.25,
+              "final_log_rms_from_control": 7.543632739928777e-06,
+              "late_max_log_rms_from_control": 7.806680890670865e-06
+            },
+            "reset-cell-22": {
+              "target_activator_peak_gain": 1.2068934176640866,
+              "target_inhibitor_peak_gain": 1.5075518136374253,
+              "target_activator_log_auc_per_log_pulse": 2.419782842573519,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06824350018124067,
+              "target_recovery_time": 3.9,
+              "network_recovery_time": 5.3999999999999995,
+              "final_log_rms_from_control": 3.749098364779245e-06,
+              "late_max_log_rms_from_control": 3.890940799182825e-06
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": false
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "state_shift_initial": 0.024846112229985184,
+      "state_shift_final": 0.022730333860738968,
+      "state_shift_late_min": 0.022730333860738968,
+      "state_shift_late_max": 0.023569517874934994,
+      "final_activator_reset_over_sham": 1.0250625174525123,
+      "final_inhibitor_reset_over_sham": 1.0207201622799424,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 5.171358082279728e-05,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9974931687857727,
+          "activator_response_area_reset_over_sham": 1.001061481975451,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0012639355872032848,
+              "target_activator_log_auc_per_log_pulse": 1.1581207230762758,
+              "other_cells_peak_log_rms_per_log_pulse": 0.000658078745294082,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 4.1795916553978785e-07,
+              "late_max_log_rms_from_control": 4.3626094558302475e-07
+            },
+            "reset-cell-23": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.001307729288012812,
+              "target_activator_log_auc_per_log_pulse": 1.1593500473492175,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0006685745064180916,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 4.2327685688298277e-07,
+              "late_max_log_rms_from_control": 4.40869485390716e-07
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.00010086092287603057,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9988983908277453,
+          "activator_response_area_reset_over_sham": 1.0019505745809314,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0012639355872032848,
+              "target_activator_log_auc_per_log_pulse": 1.1581207230762758,
+              "other_cells_peak_log_rms_per_log_pulse": 0.000658078745294082,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 4.1795916553978785e-07,
+              "late_max_log_rms_from_control": 4.3626094558302475e-07
+            },
+            "reset-cell-23": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0013109532847117552,
+              "target_activator_log_auc_per_log_pulse": 1.1603797239203582,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0006696155743828837,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 4.126475801881031e-07,
+              "late_max_log_rms_from_control": 4.292008132266782e-07
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": false
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "state_shift_initial": 0.13249953917164087,
+      "state_shift_final": 0.11896474535161086,
+      "state_shift_late_min": 0.11896474535161086,
+      "state_shift_late_max": 0.12396869535370794,
+      "final_activator_reset_over_sham": 0.8829423086748744,
+      "final_inhibitor_reset_over_sham": 0.8930041096135669,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 0.07266498439326963,
+          "above_effect_screen": true,
+          "early_squared_difference_fraction": 0.9995838747018512,
+          "activator_response_area_reset_over_sham": 1.3280303954023818,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.1664197402787289,
+              "target_inhibitor_peak_gain": 1.6451486706547205,
+              "target_activator_log_auc_per_log_pulse": 1.7583213249744751,
+              "other_cells_peak_log_rms_per_log_pulse": 0.20974072302953956,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 4.8,
+              "final_log_rms_from_control": 5.6488233282479636e-05,
+              "late_max_log_rms_from_control": 5.968782547808478e-05
+            },
+            "reset-cell-19": {
+              "target_activator_peak_gain": 1.2079051260042681,
+              "target_inhibitor_peak_gain": 1.516998434665303,
+              "target_activator_log_auc_per_log_pulse": 2.335104164450292,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06519025602488872,
+              "target_recovery_time": 3.75,
+              "network_recovery_time": 5.1,
+              "final_log_rms_from_control": 2.504057424652419e-06,
+              "late_max_log_rms_from_control": 2.842892223800295e-06
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.07314761349795752,
+          "above_effect_screen": true,
+          "early_squared_difference_fraction": 0.999584708216592,
+          "activator_response_area_reset_over_sham": 1.3331729039533153,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.1650326287155788,
+              "target_inhibitor_peak_gain": 1.6456514596715939,
+              "target_activator_log_auc_per_log_pulse": 1.7515388720592104,
+              "other_cells_peak_log_rms_per_log_pulse": 0.2103195101956973,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 4.8,
+              "final_log_rms_from_control": 4.8838360910578674e-05,
+              "late_max_log_rms_from_control": 5.160568426331506e-05
+            },
+            "reset-cell-19": {
+              "target_activator_peak_gain": 1.2079051260042681,
+              "target_inhibitor_peak_gain": 1.516998434665303,
+              "target_activator_log_auc_per_log_pulse": 2.335104164450292,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06519025602488872,
+              "target_recovery_time": 3.75,
+              "network_recovery_time": 5.1,
+              "final_log_rms_from_control": 2.504057424652419e-06,
+              "late_max_log_rms_from_control": 2.842892223800295e-06
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": true
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "state_shift_initial": 1.9398739044557687,
+      "state_shift_final": 2.0609829670641635,
+      "state_shift_late_min": 2.0609829670641635,
+      "state_shift_late_max": 2.078499870144617,
+      "final_activator_reset_over_sham": 0.06134390222423683,
+      "final_inhibitor_reset_over_sham": 0.43207783195767874,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 0.0064031650561354675,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9989909743347005,
+          "activator_response_area_reset_over_sham": 0.8701863125973773,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0006877228294557553,
+              "target_activator_log_auc_per_log_pulse": 1.1148374206229874,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0006669619429264953,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 8.47187651162066e-08,
+              "late_max_log_rms_from_control": 9.471099619291107e-08
+            },
+            "reset-cell-20": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 6.360843865651624e-06,
+              "target_activator_log_auc_per_log_pulse": 0.9701162641974888,
+              "other_cells_peak_log_rms_per_log_pulse": 5.812219536939699e-05,
+              "target_recovery_time": 2.25,
+              "network_recovery_time": 2.25,
+              "final_log_rms_from_control": 2.8513791631520977e-08,
+              "late_max_log_rms_from_control": 3.07079551895689e-08
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.007978990672935414,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9992122696655905,
+          "activator_response_area_reset_over_sham": 0.8456120791191983,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0007491033770532911,
+              "target_activator_log_auc_per_log_pulse": 1.1472355801823169,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0007022511594988458,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 7.001592450519558e-09,
+              "late_max_log_rms_from_control": 7.702811231337624e-09
+            },
+            "reset-cell-20": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 6.360843865651624e-06,
+              "target_activator_log_auc_per_log_pulse": 0.9701162641974888,
+              "other_cells_peak_log_rms_per_log_pulse": 5.812219536939699e-05,
+              "target_recovery_time": 2.25,
+              "network_recovery_time": 2.25,
+              "final_log_rms_from_control": 2.8513791631520977e-08,
+              "late_max_log_rms_from_control": 3.07079551895689e-08
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": false
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "state_shift_initial": 0.13380620250279646,
+      "state_shift_final": 0.12145688660109241,
+      "state_shift_late_min": 0.12145688660109241,
+      "state_shift_late_max": 0.12600358415406365,
+      "final_activator_reset_over_sham": 0.8806419678033931,
+      "final_inhibitor_reset_over_sham": 0.8908903356563083,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 0.07296194082706686,
+          "above_effect_screen": true,
+          "early_squared_difference_fraction": 0.9997885526815395,
+          "activator_response_area_reset_over_sham": 1.3254652039535209,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.167921959589723,
+              "target_inhibitor_peak_gain": 1.6435537658653891,
+              "target_activator_log_auc_per_log_pulse": 1.764092921835606,
+              "other_cells_peak_log_rms_per_log_pulse": 0.2121966341694858,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 4.8,
+              "final_log_rms_from_control": 5.222269112343315e-05,
+              "late_max_log_rms_from_control": 5.559682441104687e-05
+            },
+            "reset-cell-29": {
+              "target_activator_peak_gain": 1.2093898451773328,
+              "target_inhibitor_peak_gain": 1.5171105975988193,
+              "target_activator_log_auc_per_log_pulse": 2.338243784433794,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06294597719538764,
+              "target_recovery_time": 3.75,
+              "network_recovery_time": 4.95,
+              "final_log_rms_from_control": 4.957504454972502e-06,
+              "late_max_log_rms_from_control": 5.109951224943177e-06
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.07346616710699205,
+          "above_effect_screen": true,
+          "early_squared_difference_fraction": 0.9997874581400531,
+          "activator_response_area_reset_over_sham": 1.3310717999009332,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.1656900759583537,
+              "target_inhibitor_peak_gain": 1.6441507639426038,
+              "target_activator_log_auc_per_log_pulse": 1.7566624013879801,
+              "other_cells_peak_log_rms_per_log_pulse": 0.21278301609027644,
+              "target_recovery_time": 4.35,
+              "network_recovery_time": 4.8,
+              "final_log_rms_from_control": 4.508606469177079e-05,
+              "late_max_log_rms_from_control": 4.8001936192146684e-05
+            },
+            "reset-cell-29": {
+              "target_activator_peak_gain": 1.2093898451773328,
+              "target_inhibitor_peak_gain": 1.5171105975988193,
+              "target_activator_log_auc_per_log_pulse": 2.338243784433794,
+              "other_cells_peak_log_rms_per_log_pulse": 0.06294597719538764,
+              "target_recovery_time": 3.75,
+              "network_recovery_time": 4.95,
+              "final_log_rms_from_control": 4.957504454972502e-06,
+              "late_max_log_rms_from_control": 5.109951224943177e-06
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": true
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "state_shift_initial": 2.118113307003949,
+      "state_shift_final": 2.0922288882164835,
+      "state_shift_late_min": 2.0922288882164835,
+      "state_shift_late_max": 2.102175274336077,
+      "final_activator_reset_over_sham": 0.05898141166625044,
+      "final_inhibitor_reset_over_sham": 0.4223453377528784,
+      "doses": {
+        "fractional": {
+          "full_response_shift_rms": 0.0066453832732933475,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9990030464600659,
+          "activator_response_area_reset_over_sham": 0.8654770344733841,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0007066281864665977,
+              "target_activator_log_auc_per_log_pulse": 1.115976323200108,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0006451332039478553,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 1.654196981045368e-07,
+              "late_max_log_rms_from_control": 1.6803793803935918e-07
+            },
+            "reset-cell-30": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 3.832970776121071e-06,
+              "target_activator_log_auc_per_log_pulse": 0.9658518787457404,
+              "other_cells_peak_log_rms_per_log_pulse": 4.4671002277703836e-05,
+              "target_recovery_time": 2.25,
+              "network_recovery_time": 2.25,
+              "final_log_rms_from_control": 2.6387591905425453e-08,
+              "late_max_log_rms_from_control": 2.860797385906155e-08
+            }
+          }
+        },
+        "amount": {
+          "full_response_shift_rms": 0.008251087916751037,
+          "above_effect_screen": false,
+          "early_squared_difference_fraction": 0.9992177200878652,
+          "activator_response_area_reset_over_sham": 0.8405965969614416,
+          "contexts": {
+            "sham": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 0.0007706473494399346,
+              "target_activator_log_auc_per_log_pulse": 1.1490076003603478,
+              "other_cells_peak_log_rms_per_log_pulse": 0.0006798432667907969,
+              "target_recovery_time": 2.6999999999999997,
+              "network_recovery_time": 2.6999999999999997,
+              "final_log_rms_from_control": 9.232112125167058e-09,
+              "late_max_log_rms_from_control": 1.1326419352823835e-08
+            },
+            "reset-cell-30": {
+              "target_activator_peak_gain": 1.0,
+              "target_inhibitor_peak_gain": 3.832970776121071e-06,
+              "target_activator_log_auc_per_log_pulse": 0.9658518787457404,
+              "other_cells_peak_log_rms_per_log_pulse": 4.4671002277703836e-05,
+              "target_recovery_time": 2.25,
+              "network_recovery_time": 2.25,
+              "final_log_rms_from_control": 2.6387591905425453e-08,
+              "late_max_log_rms_from_control": 2.860797385906155e-08
+            }
+          }
+        }
+      },
+      "shifted_at_both_doses": false
+    }
+  ],
+  "fine_recovery_comparisons": 24,
+  "all_fine_pulses_recover": true,
+  "scope": "Three existing mature histories, six nested recipient comparisons; no new developmental histories. Backgrounds may differ in chemistry and physical context. Tested delayed moving response, not stationary equilibria, autonomous/inherited biological identity, neighbor-only context, spatial-versus-bulk-dose causation or general backend acceptance.",
+  "full_review": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response-review/2026-10-07T105523Z-final/assessment.json",
+  "full_review_sha256": "e2a075db8230840a7d9cf77e36483a656bec033413509a07ed51f54b15a89d9a",
+  "supplement": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response-review/2026-10-07T105523Z-final/supplement.json",
+  "supplement_sha256": "d1321a8ab0c092af354930314b628534f3db4bbd9a0fbfc9a2df2f211e9c7628",
+  "result_figure": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response-review/2026-10-07T105523Z-final/delayed-response.png",
+  "figure_sha256": "264748c59352e727d9af12f1702248600b77d258da9d75dc2e136a1982cce67a"
+}

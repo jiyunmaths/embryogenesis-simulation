@@ -1,0 +1,102 @@
+{
+  "verified_utc": "2026-10-06T02:52:35.192962+00:00",
+  "protocol_sha256": "c8fcbfc071b094b8cce292fdd06c079cff6c50176750b860b8276a4e6903ab27",
+  "launch": {
+    "launched_utc": "2026-10-06T02:51:08.321494+00:00",
+    "pid": 3055612,
+    "command": [
+      "/home/sji/miniforge3/envs/deeplearning/bin/python",
+      "-m",
+      "embryo.phase_carry_exchange_response",
+      "run",
+      "--output",
+      "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-exchange-response"
+    ],
+    "log": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-exchange-response/run.log",
+    "protocol_sha256": "c8fcbfc071b094b8cce292fdd06c079cff6c50176750b860b8276a4e6903ab27",
+    "independent_histories": 3,
+    "new_histories": 0,
+    "total_scientific_paths": 48,
+    "device": "GPU 1: dedicated GTX 1080 Ti",
+    "source_hashes_verified": 45,
+    "input_hashes_verified": 572,
+    "estimated_moving_seconds": 21391.94896767405,
+    "lock_protocol": "Separate launch serialization; science coordinator probe released before Popen."
+  },
+  "status_snapshot": {
+    "state": "running",
+    "stage": "formation",
+    "current_job": "seed-7_fine_unexchanged_formation_control",
+    "target_horizon": 6.0,
+    "completed": 0,
+    "total": 48
+  },
+  "independent_histories": 3,
+  "new_histories": 0,
+  "scientific_paths": 48,
+  "exchange_paths": 12,
+  "response_paths": 36,
+  "prepared_contexts": 12,
+  "all_prepared_contexts_pass": true,
+  "prefix_error_max": {
+    "chemical_log_max": 7.941890947752545e-07,
+    "polarity_abs_max": 1.0558146782031763e-07,
+    "relative_axis_max": 9.804854506079153e-08,
+    "relative_volume_max": 2.328602768386645e-07,
+    "relative_transport_max": 2.4819041751140415e-06
+  },
+  "prefix_phi_abs_max": 4.470348358154297e-06,
+  "independent_chemical_log_max": 0.0,
+  "amount_error_max": 2.220446049250313e-16,
+  "initial_exchange_amount_error_max": 2.220446049250313e-16,
+  "selection": {
+    "7": {
+      "selected_ids": [
+        22,
+        23
+      ],
+      "context_distance": 3.377694142321624,
+      "median_context_distance": 2.6861458270095753,
+      "initial_exchange_separation": 2.5380688595771743,
+      "amount_error_max": 2.220446049250313e-16
+    },
+    "8": {
+      "selected_ids": [
+        19,
+        20
+      ],
+      "context_distance": 3.3558809757309507,
+      "median_context_distance": 2.3450978016395077,
+      "initial_exchange_separation": 2.7084754661447907,
+      "amount_error_max": 0.0
+    },
+    "9": {
+      "selected_ids": [
+        29,
+        30
+      ],
+      "context_distance": 2.2399044327809374,
+      "median_context_distance": 2.2276180454301997,
+      "initial_exchange_separation": 2.7188480817192513,
+      "amount_error_max": 0.0
+    }
+  },
+  "tests": {
+    "new_cpu_checks": 10,
+    "new_cuda_checks": 2,
+    "commands": [
+      "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q tests/test_phase_carry_exchange_response.py",
+      "CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 EMBRYO_CUDA_TESTS=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q tests/test_phase_carry_exchange_response.py -k nonzero_inherited_carry_context_gate_on_gpu"
+    ]
+  },
+  "scope": "Startup verification and numerical preparation only; no exchange/response scientific outcome accepted yet.",
+  "sources_verified": 45,
+  "inputs_verified": 572,
+  "initial_spectrum_check_sha256": "86208ac5580d136fded465dcc73fe5bb0b164cc655a7b52b66f1219643a6a07a",
+  "initial_uniform_state_unstable_modes": {
+    "7": 0,
+    "8": 0,
+    "9": 0
+  },
+  "older_response_scope": "New t=390\u2013510 window and context-selected pairs. Original t=150\u2013270 response amplitudes are not retroactively accepted."
+}

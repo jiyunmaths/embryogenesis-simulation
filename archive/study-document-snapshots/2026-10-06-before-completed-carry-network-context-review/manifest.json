@@ -1,0 +1,41 @@
+{
+  "captured_utc": "2026-10-06T21:06:31.277170+00:00",
+  "scope": "Reporting snapshot before completed moving network-context review. Original scientific records and pinned protocol document remain unchanged.",
+  "files": [
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/README.md",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/README.md",
+      "sha256": "191d967a5f354c1a4948e98880ab7e72da270071cf71c55fd4e0ab9fb5fd386e"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/plan.md",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/plan.md",
+      "sha256": "0d818b4d2b7c6058ac4d7c562cb361475e0eb038d4f841c42fbe32e3bda46f6e"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/results_ledger.md",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/results_ledger.md",
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/results_ledger.json",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/results_ledger.json",
+      "sha256": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_network_context.md",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/phase_carry_network_context.md",
+      "sha256": "6da078c3fe334c8d3f704c42ce743b3af11b2a5d182abea24a3e3e37b3dff375"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_network_context_launch_verification.json",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/phase_carry_network_context_launch_verification.json",
+      "sha256": "78e10c279c2d928fa354af0580bab289fc779e42847c2cc174350fef4c0015f8"
+    },
+    {
+      "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_network_context_relaunch.md",
+      "snapshot": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/phase_carry_network_context_relaunch.md",
+      "sha256": "3063d2ddb1ad009f839a05528dc4c26394a9a90e30d393dfd700b0cc9f46d107"
+    }
+  ]
+}

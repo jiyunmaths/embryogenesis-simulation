@@ -1,0 +1,14 @@
+{
+  "archived_utc": "2026-10-06T11:41:27.956371+00:00",
+  "purpose": "Reporting snapshots before the validated moving network-context launch.",
+  "files": {
+    "README.md": {
+      "original_sha256": "a5e67dcb70d1bd5278601f02ad0c23e2b8aff2dc2efe5aa322b00e0d9d71d8a1",
+      "snapshot_sha256": "a5e67dcb70d1bd5278601f02ad0c23e2b8aff2dc2efe5aa322b00e0d9d71d8a1"
+    },
+    "docs/plan.md": {
+      "original_sha256": "b05e27062138321f50dc76f751bd9c427590291ed7d80c1631b41c9558fafb6e",
+      "snapshot_sha256": "b05e27062138321f50dc76f751bd9c427590291ed7d80c1631b41c9558fafb6e"
+    }
+  }
+}

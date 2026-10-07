@@ -1,0 +1,25 @@
+{
+  "scope": "Preserve pre-review documentation and the launch verification snapshot. Scientific sources, protocols, original results ledger and reporting rules remain at their recorded paths unchanged.",
+  "files": [
+    {
+      "original": "README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-05-before-completed-initiation-controls-review/README.md",
+      "sha256": "9704be268bd88450557b2727ab2416399b9a922711cdf76483e8c08a78355fd7"
+    },
+    {
+      "original": "docs/plan.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-05-before-completed-initiation-controls-review/docs/plan.md",
+      "sha256": "6e16db9dac48a02e46bfc4679da1f9595b34d1d62ed1cda1725404eaea9284e0"
+    },
+    {
+      "original": "docs/moving_initiation_controls.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-05-before-completed-initiation-controls-review/docs/moving_initiation_controls.md",
+      "sha256": "b1fbbbdf664edf8f3218fbd371796e50613e498e54331d83f876bfa938a221ff"
+    },
+    {
+      "original": "docs/moving_initiation_controls_verification.json",
+      "snapshot": "archive/study-document-snapshots/2026-10-05-before-completed-initiation-controls-review/docs/moving_initiation_controls_verification.json",
+      "sha256": "230836b4a0fb640452be00d429b5461f913fe931810f4ab5f7504881790ca3b1"
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "schema": 1,
+  "captured_utc": "2026-10-06T02:18:21.073033+00:00",
+  "accepted": true,
+  "protocol_sha256": "3a293494c46c6fbe12a540c9ce2109c3c1f488494206af0fbbe0c836975db573",
+  "original_summary_sha256": "e768a94bd0014642bd798eb954a40729f4ff972426a2a0507bb5709ca9eaa018",
+  "full_review": "outputs/phase-carry-maintenance-review/2026-10-06T021641Z-final/assessment.json",
+  "full_review_sha256": "e392d0fa1ad5c4337dd8732290e5ae2b5431cbec2b7b8a203a463da0cb5d08c3",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "new_moving_paths": 12,
+  "reused_initiation_paths": 12,
+  "new_pilot_pairs": 6,
+  "new_full_pairs": 6,
+  "total_pilot_pairs": 12,
+  "total_full_pairs": 12,
+  "new_endpoint_assays": 12,
+  "total_endpoint_assays": 24,
+  "all_new_whole_window_retained": true,
+  "new_endpoint_local_coexistence": 12,
+  "fine_results": [
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0_pattern",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011286111429613332,
+        "min_radius": 5.110670797421133,
+        "max_clipping": 0.0,
+        "boundary_max": 2.457501979691301e-10,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2095.7064621240133
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.2967001300124006,
+      "final_log_sd": 1.3040814313269555,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 44.21557262210842,
+      "positive_frozen_growth_integral": 0.7486521790572704,
+      "final_axis_ratio": 1.3562303234786526,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_log_sd": 1.181858402973253,
+      "whole_window_min_log_sd": 1.181858402973253,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.10232330037350712,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 3.6096915619026775,
+      "chemical_total_conductance_change_fraction": -0.15969824715912728,
+      "recomputed_graph_error_max": 1.5543122344752192e-15,
+      "weighted_mass_error_max": 1.1102230246251565e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0.35_pattern",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011278705768943298,
+        "min_radius": 5.11068355736435,
+        "max_clipping": 0.0,
+        "boundary_max": 1.0097879199477688e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2085.6910658560228
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.4415631486892697,
+      "final_log_sd": 1.4592015204446036,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 17.12470034868311,
+      "positive_frozen_growth_integral": 0.29693839190624893,
+      "final_axis_ratio": 1.3609250284765833,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_log_sd": 1.181858402973253,
+      "whole_window_min_log_sd": 1.181858402973253,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.3592720956809581,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.5782967686905494,
+      "chemical_total_conductance_change_fraction": -0.42784507237222624,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.249000902703301e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0_uniform",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011087486438443372,
+        "min_radius": 5.108138093856107,
+        "max_clipping": 0.0,
+        "boundary_max": 2.4188143155079445e-10,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2507.1149871150265
+      },
+      "persistent_contrast": false,
+      "late_min_log_sd": 1.8842676398687552e-06,
+      "final_log_sd": 1.8842676398687552e-06,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 63.159731270447296,
+      "positive_frozen_growth_integral": 1.2481760493102199,
+      "final_axis_ratio": 1.3561998302606737,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_log_sd": 0.000622077818715953,
+      "whole_window_min_log_sd": 1.8842676398687552e-06,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.07831920195750097,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 3.7554967232504497,
+      "chemical_total_conductance_change_fraction": -0.1450302185615716,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.3877787807814457e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-7_fine_chi-0.35_uniform",
+        "seed": 7,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011087486438443372,
+        "min_radius": 5.108138335630365,
+        "max_clipping": 0.0,
+        "boundary_max": 1.0162811703295915e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2481.4790301478934
+      },
+      "persistent_contrast": false,
+      "late_min_log_sd": 7.375850538356665e-09,
+      "final_log_sd": 8.06450739752004e-09,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 19.623987760668953,
+      "positive_frozen_growth_integral": 0.3974521596201658,
+      "final_axis_ratio": 1.3465783270773974,
+      "initial_axis_ratio": 1.349061815436943,
+      "initial_log_sd": 0.000622077818715953,
+      "whole_window_min_log_sd": 7.375850538356665e-09,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.3689314108445334,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.552958133940748,
+      "chemical_total_conductance_change_fraction": -0.43612758045611255,
+      "recomputed_graph_error_max": 1.5543122344752192e-15,
+      "weighted_mass_error_max": 1.3877787807814457e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0_pattern",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011601255499006258,
+        "min_radius": 5.106142917650868,
+        "max_clipping": 0.0,
+        "boundary_max": 1.6446243256140747e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2095.447298467974
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.3131920369809402,
+      "final_log_sd": 1.3204260356955948,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 44.51386135985949,
+      "positive_frozen_growth_integral": 0.7223376284517743,
+      "final_axis_ratio": 1.3873986508988054,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_log_sd": 1.2036175758415408,
+      "whole_window_min_log_sd": 1.2036175758415408,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.09488322754162981,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 3.653643552698008,
+      "chemical_total_conductance_change_fraction": -0.1586722443475791,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.249000902703301e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0.35_pattern",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011599292387407645,
+        "min_radius": 5.106146298176459,
+        "max_clipping": 0.0,
+        "boundary_max": 8.344058777254304e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2110.4012223639293
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.440931181184621,
+      "final_log_sd": 1.456938815761787,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 17.580330038245904,
+      "positive_frozen_growth_integral": 0.2931903053176908,
+      "final_axis_ratio": 1.3749193948303655,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_log_sd": 1.2036175758415408,
+      "whole_window_min_log_sd": 1.2036175758415408,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.3303001710085498,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.6587941070667576,
+      "chemical_total_conductance_change_fraction": -0.4193816464112199,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.3357370765021415e-16,
+      "constant_preservation_error_max": 7.771561172376096e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0_uniform",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011347632591513168,
+        "min_radius": 5.106579625361965,
+        "max_clipping": 0.0,
+        "boundary_max": 1.5874357384149107e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2523.4048153390177
+      },
+      "persistent_contrast": false,
+      "late_min_log_sd": 8.103624787047247e-07,
+      "final_log_sd": 8.103624787047247e-07,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 59.51963544879156,
+      "positive_frozen_growth_integral": 1.1279736006836485,
+      "final_axis_ratio": 1.3872525100610829,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_log_sd": 0.0011427021809333148,
+      "whole_window_min_log_sd": 8.103624787047247e-07,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.08004362607109128,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 3.7446270480654045,
+      "chemical_total_conductance_change_fraction": -0.14538390341018415,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.249000902703301e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-8_fine_chi-0.35_uniform",
+        "seed": 8,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011347632591513168,
+        "min_radius": 5.106579625361965,
+        "max_clipping": 0.0,
+        "boundary_max": 7.60974305791251e-09,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2523.909920323058
+      },
+      "persistent_contrast": false,
+      "late_min_log_sd": 7.890571552135043e-09,
+      "final_log_sd": 8.667724105170724e-09,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 18.32407862392202,
+      "positive_frozen_growth_integral": 0.35804544640670954,
+      "final_axis_ratio": 1.3776815984094963,
+      "initial_axis_ratio": 1.3798141009503881,
+      "initial_log_sd": 0.0011427021809333148,
+      "whole_window_min_log_sd": 7.890571552135043e-09,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.3780639155099004,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.529660122121547,
+      "chemical_total_conductance_change_fraction": -0.44321103454483246,
+      "recomputed_graph_error_max": 1.5543122344752192e-15,
+      "weighted_mass_error_max": 1.249000902703301e-16,
+      "constant_preservation_error_max": 8.881784197001252e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0_pattern",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011595131823610938,
+        "min_radius": 5.109160575105653,
+        "max_clipping": 0.0,
+        "boundary_max": 6.877545061234613e-11,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2088.7338491099654
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.4165202621935984,
+      "final_log_sd": 1.4238894816743826,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 145.1908613781263,
+      "positive_frozen_growth_integral": 5.288781811237247,
+      "final_axis_ratio": 1.4393673378665515,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_log_sd": 1.2896225380984343,
+      "whole_window_min_log_sd": 1.2896225380984343,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.03469078339810583,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 4.053078463005985,
+      "chemical_total_conductance_change_fraction": -0.18593920792325624,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.249000902703301e-16,
+      "constant_preservation_error_max": 7.771561172376096e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0.35_pattern",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "pattern",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/initial_states.npz"
+      },
+      "reused": false,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011592635715589439,
+        "min_radius": 5.109163648834602,
+        "max_clipping": 0.0,
+        "boundary_max": 2.614204963613531e-10,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2097.6642327519367
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.5473132484775125,
+      "final_log_sd": 1.5645418753451565,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 50.093520190403055,
+      "positive_frozen_growth_integral": 1.9707575912349116,
+      "final_axis_ratio": 1.402121095892035,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_log_sd": 1.2896225380984343,
+      "whole_window_min_log_sd": 1.2896225380984343,
+      "whole_window_retained": true,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.2414823282543499,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.953443156620292,
+      "chemical_total_conductance_change_fraction": -0.42471441869605586,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.1102230246251565e-16,
+      "constant_preservation_error_max": 7.771561172376096e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0_uniform",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0",
+          "ratio": 27.5,
+          "chi": 0.0
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.011429517553562696,
+        "min_radius": 5.109538728944298,
+        "max_clipping": 0.0,
+        "boundary_max": 7.185438355428175e-11,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2554.056018426898
+      },
+      "persistent_contrast": true,
+      "late_min_log_sd": 1.575210039318825,
+      "final_log_sd": 1.5831846195503334,
+      "onset_elapsed": 75.41626748614841,
+      "uniform_growth_crossing": 136.96753235088906,
+      "positive_frozen_growth_integral": 5.871379966393446,
+      "final_axis_ratio": 1.4378352658968965,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_log_sd": 0.0011079054629374004,
+      "whole_window_min_log_sd": 0.0011079054629374004,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.046029574453348765,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 3.9713338093152615,
+      "chemical_total_conductance_change_fraction": -0.20411669298762036,
+      "recomputed_graph_error_max": 1.5543122344752192e-15,
+      "weighted_mass_error_max": 1.6653345369377348e-16,
+      "constant_preservation_error_max": 6.661338147750939e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    },
+    {
+      "job": {
+        "key": "seed-9_fine_chi-0.35_uniform",
+        "seed": 9,
+        "level": "fine",
+        "dt": 0.001875,
+        "family": "uniform",
+        "arm": "phase_carry",
+        "point": {
+          "key": "polarity-0.35",
+          "ratio": 27.5,
+          "chi": 0.35
+        },
+        "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/fine-source.npz",
+        "chemical_file": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9/initial_states.npz"
+      },
+      "reused": true,
+      "quality": {
+        "volume": true,
+        "radius": true,
+        "clipping": true,
+        "boundary": true,
+        "amount_accounting": true
+      },
+      "audit": {
+        "max_volume_error": 0.01134461945904608,
+        "min_radius": 5.109538728944298,
+        "max_clipping": 0.0,
+        "boundary_max": 2.1889569323807478e-10,
+        "dilution_error_max": 4.440892098500626e-16,
+        "wall_seconds": 2498.4426039579557
+      },
+      "persistent_contrast": false,
+      "late_min_log_sd": 1.3206496452603557e-08,
+      "final_log_sd": 1.3631665465767617e-08,
+      "onset_elapsed": null,
+      "uniform_growth_crossing": 46.20620748021476,
+      "positive_frozen_growth_integral": 1.9409398270853238,
+      "final_axis_ratio": 1.4198757534567354,
+      "initial_axis_ratio": 1.4325142448880006,
+      "initial_log_sd": 0.0011079054629374004,
+      "whole_window_min_log_sd": 1.3206496452603557e-08,
+      "whole_window_retained": false,
+      "first_contrast_loss_elapsed": null,
+      "final_uniform_growth": -0.2870226063394199,
+      "final_unstable_modes": 0,
+      "final_largest_lambda": 2.792666508554616,
+      "chemical_total_conductance_change_fraction": -0.45538924433823214,
+      "recomputed_graph_error_max": 1.3322676295501878e-15,
+      "weighted_mass_error_max": 1.6653345369377348e-16,
+      "constant_preservation_error_max": 6.661338147750939e-16,
+      "symmetry_error_max": 4.440892098500626e-16
+    }
+  ],
+  "by_history": [
+    {
+      "seed": 9,
+      "qualified": true,
+      "late_contrast": {
+        "chi-0_pattern": true,
+        "chi-0_uniform": true,
+        "chi-0.35_pattern": true,
+        "chi-0.35_uniform": false
+      },
+      "maintenance_conclusion": "both_contrasts_maintain"
+    },
+    {
+      "seed": 7,
+      "qualified": true,
+      "late_contrast": {
+        "chi-0_pattern": true,
+        "chi-0_uniform": false,
+        "chi-0.35_pattern": true,
+        "chi-0.35_uniform": false
+      },
+      "maintenance_conclusion": "both_contrasts_maintain"
+    },
+    {
+      "seed": 8,
+      "qualified": true,
+      "late_contrast": {
+        "chi-0_pattern": true,
+        "chi-0_uniform": false,
+        "chi-0.35_pattern": true,
+        "chi-0.35_uniform": false
+      },
+      "maintenance_conclusion": "both_contrasts_maintain"
+    }
+  ],
+  "numerical": {
+    "new_full_maxima": {
+      "chemical_log_max": 3.510907400362678e-05,
+      "polarity_abs_max": 4.2281348703807065e-07,
+      "relative_axis_max": 3.8359428522483086e-08,
+      "relative_volume_max": 4.161505631206097e-07,
+      "relative_transport_max": 1.415703539230482e-06,
+      "growth_abs_max": 8.255701242632085e-07
+    },
+    "all_full_maxima": {
+      "chemical_log_max": 0.0004096314648225956,
+      "polarity_abs_max": 4.787812738177993e-06,
+      "relative_axis_max": 1.5527792207592483e-07,
+      "relative_volume_max": 7.554644960716672e-07,
+      "relative_transport_max": 4.922294688480524e-06,
+      "growth_abs_max": 2.6293597485960163e-06
+    },
+    "new_full_crossing_time_error_max": 0.0006511820582772998,
+    "new_full_loss_time_error_max": 0.0,
+    "endpoint_solver_log_error_max": 2.4500599357140305e-09
+  },
+  "quality_extrema": {
+    "max_volume_error": 0.011601258715841278,
+    "min_radius": 5.106142912111397,
+    "max_clipping": 0.0,
+    "max_boundary": 8.344058777254304e-09,
+    "max_amount_accounting_error": 4.440892098500626e-16
+  },
+  "independent_solver_scope": "Saved primary endpoint paths, endpoint metrics, RHS residuals and Jacobian spectra recomputed. DOP853/Radau discrepancies verified from hashed original records; the secondary solver paths were not saved and were not rerun.",
+  "scope": "Read-only final review. Mature nondividing continuations on three existing old-method developmental preparations. Accepted only for the tested parameter point, grid, timesteps and horizon. No scientific reruns, old-ledger promotion, biological identity, autonomous/inherited fate, full moving-system stability, fresh carry development, spatial convergence or general transport-closure acceptance.",
+  "next_priority": "Carry-corrected state-exchange and response/context tests on qualified developed states, with their own context/refinement gates. No new scientific jobs launched.",
+  "ledger_status": "Original 22-study ledger snapshot and original failures preserved; this new qualified continuation is reported separately.",
+  "figure_provenance": "outputs/phase-carry-maintenance-review/2026-10-06T021641Z-final/figure-provenance.json"
+}

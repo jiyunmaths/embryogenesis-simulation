@@ -1,0 +1,72 @@
+{
+  "verified_utc": "2026-10-05T01:11:09.678882+00:00",
+  "protocol": "outputs/moving-initiation-controls/protocol.json",
+  "protocol_sha256": "f25296cd2b58acbcbb5b06a0ec90ab9300c462e9e5a587266f22edad5fe60ddc",
+  "implementation_gate": "outputs/moving-initiation-controls/implementation-verification.json",
+  "implementation_gate_sha256": "12d6477c4a95eaa59320a401f8731a54fb1f840abc264ab3ca5b4bcfd470b514",
+  "actual_contexts": 4,
+  "arm_context_checks": 16,
+  "baseline_exact_steps_per_context": 16,
+  "cpu_reference_steps_per_arm_context": 8,
+  "restart_exact_steps_per_arm_context": 2,
+  "cpu_reference_log_max": 2.2204460492503136e-16,
+  "volume_conversion_amount_error_max": 4.440892098500626e-16,
+  "tests": {
+    "new_tests_distinct_passed": 22,
+    "cpu_cases": 17,
+    "gpu_cases": 5,
+    "existing_orchestration_cases_passed": 5,
+    "files": [
+      "tests/test_moving_initiation_controls.py",
+      "tests/test_phase_carry_polarity.py"
+    ],
+    "qualified_physical_gpu": 1
+  },
+  "pinned_sources": 39,
+  "pinned_inputs": 260,
+  "launched": {
+    "launched_utc": "2026-10-05T01:09:14.909421+00:00",
+    "pid": 2308467,
+    "command": [
+      "/home/sji/miniforge3/envs/deeplearning/bin/python",
+      "-u",
+      "-m",
+      "embryo.moving_initiation_controls",
+      "run",
+      "--output",
+      "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls"
+    ],
+    "physical_gpu": 1,
+    "environment": {
+      "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+      "CUDA_VISIBLE_DEVICES": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "MPLCONFIGDIR": "/tmp/embryo-mpl",
+      "PYTHONPATH": "/home/sji/Documents/Programming/Python/embryogenesis-simulation"
+    },
+    "endpoint_workers": 2
+  },
+  "status_snapshot": {
+    "state": "running",
+    "stage": "matched_pilot",
+    "current_job": "seed-7_coarse_dilution-off",
+    "completed": 0,
+    "total": 12
+  },
+  "independent_histories": 2,
+  "new_histories": 0,
+  "new_moving_paths": 12,
+  "reused_paths": 4,
+  "estimated_new_moving_hours": 7.3269133117059635,
+  "source_document_sha256": {
+    "embryo/gpu_initiation_controls.py": "f097f456b0259fde80aec02d9c41bd9af79c84da4462c98a07790d1f2468d685",
+    "embryo/moving_initiation_controls.py": "d60de79470dc29da44095cb57750e3c7707f29f8e9937272d8876d4603e101dc",
+    "tests/test_moving_initiation_controls.py": "c092918995dfccf70f77105d3f813babe6cf1168da8ec7acce1ebd8aaed16565",
+    "docs/moving_initiation_controls.md": "b1fbbbdf664edf8f3218fbd371796e50613e498e54331d83f876bfa938a221ff"
+  },
+  "original_scientific_sources_preserved": true,
+  "original_baseline_outputs_reused_read_only": true,
+  "scope": "Launch verification only; no new formation/rescue result yet. Changing volumes retained in fixed-conductance chemistry; dilution-off source is explicit. Original numerical limits/horizon preserved. PyTorch arrays and unchanged custom CUDA carry kernels; no new histories or backend/continuum/identity acceptance."
+}

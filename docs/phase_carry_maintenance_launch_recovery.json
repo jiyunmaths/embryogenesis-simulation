@@ -1,0 +1,123 @@
+{
+  "captured_utc": "2026-10-05T20:03:25.852667+00:00",
+  "state": "maintenance_pilot_running",
+  "scientific_maintenance_outcomes_accepted": false,
+  "completed_new_paths": 0,
+  "total_new_paths": 12,
+  "failure": {
+    "state": "stopped_before_scientific_launch",
+    "captured_utc": "2026-10-05T18:14:27.924036+00:00",
+    "error": "Unexpected preparation state: prepared",
+    "expected_source_sha256": {
+      "embryo/phase_carry_maintenance.py": "2a87d7ed4587b3acc13009c4190d1f9a22ac023af5a1b89fcd0a2c4255dc3afb",
+      "tests/test_phase_carry_maintenance.py": "e810e8d0df3916ecdd722cbe55711cff3d4013f67a6f37fc41b268aab5e7ad2c",
+      "docs/phase_carry_maintenance.md": "48a0a05b69c52b7eb2a67dae468e3a01fa7c203a2359f97d2c2e55cd4bbc9499",
+      "/tmp/embryo-prepare-carry-maintenance.py": "bf15408b3db223b21345abf1b794b171b8022e1d505ad166491311ef7247e8fb",
+      "/tmp/embryo-launch-carry-maintenance.py": "8c0c69721fca9ed8a93cbc54adfa2722aac6026c4d7dc5cfd5601cdff3ee5baf"
+    }
+  },
+  "verification_written_after_supervisor_failure_seconds": 3.462315,
+  "failure_archive": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch-recovery/2026-10-05T200032Z",
+  "recovery_verification_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch-recovery/2026-10-05T200032Z/recovery-verification.json",
+  "recovery_verification_sha256": "137a87676dc6f27cc49db2655dacaad0044ce74970b0b381b5c366702cb82e65",
+  "prelaunch_verification": {
+    "captured_utc": "2026-10-05T18:14:31.386351+00:00",
+    "passed": true,
+    "protocol_sha256": "3a293494c46c6fbe12a540c9ce2109c3c1f488494206af0fbbe0c836975db573",
+    "source_hashes_verified": 43,
+    "input_hashes_verified": 462,
+    "actual_developed_contexts": 12,
+    "cpu_chemical_log_max": 2.2204460492503128e-16,
+    "amount_accounting_max": 2.220446049250313e-16,
+    "native_carry_prefix_error_max": {
+      "chemical_log_max": 7.219768401459939e-07,
+      "polarity_abs_max": 2.613074440785401e-07,
+      "relative_axis_max": 2.1107322067948076e-07,
+      "relative_volume_max": 2.509239844794564e-07,
+      "relative_transport_max": 3.5543597509786387e-06
+    },
+    "native_carry_prefix_phi_abs_max": 3.993511199951172e-06,
+    "independent_float64_component_checks": 3,
+    "reference_pass": true,
+    "reused_pilot_pairs": 6,
+    "reused_full_pairs": 6,
+    "reused_moving_paths": 12,
+    "new_moving_paths": 12,
+    "independent_histories": 3,
+    "new_histories": 0,
+    "targeted_tests": {
+      "cpu_passed": 25,
+      "gpu_optin_skipped": 8,
+      "new_gpu_passed": 4,
+      "new_cpu_tests": 7
+    },
+    "reference_sha256": "f827ff5f1749382147655354a24cad387c9ed7e6d63bb796f3f461bb2f06c80d",
+    "implementation_sha256": "1fc82f667264b967bbe285da97af718d28e46592b47840cf2987d8d12c379c1a",
+    "preparation_script_sha256": "bf15408b3db223b21345abf1b794b171b8022e1d505ad166491311ef7247e8fb",
+    "scope": "Prelaunch qualification only; developed-state contexts and existing initiation comparisons pass. No new maintenance outcome yet."
+  },
+  "readiness_regressions_passed": 9,
+  "current_status": {
+    "state": "running",
+    "stage": "matched_maintenance_pilot",
+    "current_job": "seed-9_coarse_chi-0_pattern",
+    "completed": 0,
+    "total": 12,
+    "failed_pilot_contexts": []
+  },
+  "current_job_status": {
+    "state": "running",
+    "elapsed": 11.4,
+    "target_horizon": 60.0,
+    "audit": {
+      "max_volume_error": 0.0115951304010814,
+      "min_radius": 5.109160571289185,
+      "max_clipping": 0.0,
+      "boundary_max": 4.078060805712269e-11,
+      "dilution_error_max": 4.440892098500626e-16,
+      "wall_seconds": 63.67854904697742
+    },
+    "log_activator_sd": 1.312386807276321
+  },
+  "scientific_launch": {
+    "launched_utc": "2026-10-05T20:02:02.326510+00:00",
+    "pid": 2859520,
+    "command": [
+      "/home/sji/miniforge3/envs/deeplearning/bin/python",
+      "-u",
+      "-m",
+      "embryo.phase_carry_maintenance",
+      "run",
+      "--output",
+      "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance"
+    ],
+    "physical_gpu": 1,
+    "environment": {
+      "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+      "CUDA_VISIBLE_DEVICES": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "MPLCONFIGDIR": "/tmp/embryo-mpl",
+      "PYTHONPATH": "/home/sji/Documents/Programming/Python/embryogenesis-simulation"
+    },
+    "endpoint_workers": 2,
+    "protocol_sha256": "3a293494c46c6fbe12a540c9ce2109c3c1f488494206af0fbbe0c836975db573",
+    "launch_script_sha256": "8c0c69721fca9ed8a93cbc54adfa2722aac6026c4d7dc5cfd5601cdff3ee5baf"
+  },
+  "pipeline_script_sha256": "87b47845431ae477b0cf566e22e827bfdb2a641eb10fa8678a594962b076b09f",
+  "scientific_source_hashes_verified": 43,
+  "input_hashes_verified": 462,
+  "parent_evidence_hashes_verified": 192,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "reused_initiation_paths": 12,
+  "estimated_moving_seconds": 26695.60853241157,
+  "estimated_total_hours_from_actual_launch": [
+    7,
+    9
+  ],
+  "eta_scope": "Planning estimate from prior matched runtimes, conditional on passing pilot gates; not a fit to the short restarted pilot.",
+  "unchanged_protocol_sha256": "3a293494c46c6fbe12a540c9ce2109c3c1f488494206af0fbbe0c836975db573",
+  "scope": "Preparation passed, original supervisor failed before any scientific run, and the handoff was recovered. No new accepted maintenance result."
+}

@@ -1,0 +1,11 @@
+{
+  "reason": "Preserve completed reporting and old ledger before launching delayed moving response",
+  "sha256": {
+    "README.md": "c0b242618e3ef5d15942262ec8231c3e3a9ca7518ed898afb962374a72a8b88a",
+    "docs/plan.md": "291686d32f5fea34990ad3b81bf56f358203e70fc65aca5e60ca6d21dc08bb39",
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200",
+    "docs/phase_carry_network_context_assessment.md": "8103e9ae894b9b95552642221db04177b14692b7d9a85ff1d8ddb9c70466e0a5",
+    "docs/phase_carry_network_context_assessment.json": "8077b18c0b3d6ed0d2b85eef22e87f0047768ec4bbd97266351131a576503e30"
+  }
+}

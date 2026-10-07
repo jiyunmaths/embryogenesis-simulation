@@ -1,0 +1,545 @@
+{
+  "schema": 1,
+  "reviewed_utc": "2026-10-05T00:51:02.595976+00:00",
+  "review_completed_utc": "2026-10-05T00:53:41.296318+00:00",
+  "protocol": "outputs/phase-carry-polarity/protocol.json",
+  "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+  "original_summary": "outputs/phase-carry-polarity/summary.json",
+  "original_summary_sha256": "845874bc9c9b2ea82c835adf6dfcd2984a52d6c42cc0a56aaf8221fd87640928",
+  "full_review": "outputs/phase-carry-polarity-review/2026-10-05T005029Z/assessment.json",
+  "full_review_sha256": "2790e7d673bdc64eab71b8d6d0fce803885055b3c7abd1bd0bc443b50da2be91",
+  "review_script": "outputs/phase-carry-polarity-review/2026-10-05T005029Z/assessment_script.py",
+  "review_script_sha256": "a5b011985621b47c1f4bdcabe6bc9688e2d17f8c730a3b99438214b62ca67523",
+  "reporting_rule": "docs/phase_carry_polarity_reporting.json",
+  "reporting_rule_sha256": "d9c08674e9261e0803ff9d7dcd2063e91d476906d0b32156c516cc798d54c0f5",
+  "all_original_checks_pass": true,
+  "replication_unit": "developmental history",
+  "histories": [
+    7,
+    8,
+    9
+  ],
+  "new_histories": 0,
+  "new_moving_paths": 10,
+  "reused_paths": 2,
+  "unresolved_histories": [],
+  "duration": 240.0,
+  "late_window": 24.0,
+  "late_log_sd_min": 0.1,
+  "dts": [
+    0.00375,
+    0.001875
+  ],
+  "contrasts": [
+    0.0,
+    0.35
+  ],
+  "refinement_criteria": {
+    "chemical_log_max": 0.01,
+    "polarity_abs_max": 0.01,
+    "relative_axis_max": 0.01,
+    "relative_volume_max": 0.005,
+    "relative_transport_max": 0.01,
+    "growth_abs_max": 0.001,
+    "crossing_time_abs_max": 0.3,
+    "onset_time_abs_max": 0.3,
+    "same_late_contrast_required": true,
+    "same_crossing_presence_required": true
+  },
+  "by_history": [
+    {
+      "seed": 7,
+      "qualified": true,
+      "branches": {
+        "0.0": {
+          "persistent_contrast": false,
+          "late_min_log_sd": 1.8842676398687552e-06,
+          "final_log_sd": 1.8842676398687552e-06,
+          "onset_elapsed": null,
+          "uniform_growth_crossing": 63.159731270447296,
+          "positive_frozen_growth_integral": 1.2481760493102199,
+          "final_axis_ratio": 1.3561998302606737,
+          "initial_axis_ratio": 1.349061815436943
+        },
+        "0.35": {
+          "persistent_contrast": false,
+          "late_min_log_sd": 7.375850538356665e-09,
+          "final_log_sd": 8.06450739752004e-09,
+          "onset_elapsed": null,
+          "uniform_growth_crossing": 19.623987760668953,
+          "positive_frozen_growth_integral": 0.3974521596201658,
+          "final_axis_ratio": 1.3465783270773974,
+          "initial_axis_ratio": 1.349061815436943
+        }
+      },
+      "frozen_reference": {
+        "seed": 7,
+        "matched_available_initial_paths": 4,
+        "comparison_to_historical_native_operator_relative_l2": 1.619195987127747e-07,
+        "solver_log_error": 1.8376145048381268e-10,
+        "reference_pass": true,
+        "final_log_sd": 1.1845482001889456,
+        "late_min_log_sd": 1.1845482001889456,
+        "persistent_contrast": true,
+        "onset_elapsed": 177.6118047249404,
+        "wall_seconds": 1.163785077049397,
+        "saved_path": "outputs/phase-carry-polarity-review/2026-10-05T005029Z/frozen-actual-input-seed-7.npz",
+        "saved_path_sha256": "b2f49b47cfe6e8b8f7b3a469b3d870f233402e438347d30d450a6f11ce2603bd"
+      },
+      "polarity_suppression": false,
+      "moving_vs_frozen_failure_without_directional_tension": true,
+      "conclusion": "neither_initiates_no_successful_control"
+    },
+    {
+      "seed": 8,
+      "qualified": true,
+      "branches": {
+        "0.0": {
+          "persistent_contrast": false,
+          "late_min_log_sd": 8.103624787047247e-07,
+          "final_log_sd": 8.103624787047247e-07,
+          "onset_elapsed": null,
+          "uniform_growth_crossing": 59.51963544879156,
+          "positive_frozen_growth_integral": 1.1279736006836485,
+          "final_axis_ratio": 1.3872525100610829,
+          "initial_axis_ratio": 1.3798141009503881
+        },
+        "0.35": {
+          "persistent_contrast": false,
+          "late_min_log_sd": 7.890571552135043e-09,
+          "final_log_sd": 8.667724105170724e-09,
+          "onset_elapsed": null,
+          "uniform_growth_crossing": 18.32407862392202,
+          "positive_frozen_growth_integral": 0.35804544640670954,
+          "final_axis_ratio": 1.3776815984094963,
+          "initial_axis_ratio": 1.3798141009503881
+        }
+      },
+      "frozen_reference": {
+        "seed": 8,
+        "matched_available_initial_paths": 4,
+        "comparison_to_historical_native_operator_relative_l2": 2.300819019877977e-07,
+        "solver_log_error": 1.6240120360930572e-10,
+        "reference_pass": true,
+        "final_log_sd": 1.1902303945882187,
+        "late_min_log_sd": 1.1852155897640613,
+        "persistent_contrast": true,
+        "onset_elapsed": 156.6624505723582,
+        "wall_seconds": 1.6507448480697349,
+        "saved_path": "outputs/phase-carry-polarity-review/2026-10-05T005029Z/frozen-actual-input-seed-8.npz",
+        "saved_path_sha256": "0162d51a3e202b6e949f78709df56f818f7ea675b21975140bd1940b2947add3"
+      },
+      "polarity_suppression": false,
+      "moving_vs_frozen_failure_without_directional_tension": true,
+      "conclusion": "neither_initiates_no_successful_control"
+    },
+    {
+      "seed": 9,
+      "qualified": true,
+      "branches": {
+        "0.0": {
+          "persistent_contrast": true,
+          "late_min_log_sd": 1.575210039318825,
+          "final_log_sd": 1.5831846195503334,
+          "onset_elapsed": 75.41626748614841,
+          "uniform_growth_crossing": 136.96753235088906,
+          "positive_frozen_growth_integral": 5.871379966393446,
+          "final_axis_ratio": 1.4378352658968965,
+          "initial_axis_ratio": 1.4325142448880006
+        },
+        "0.35": {
+          "persistent_contrast": false,
+          "late_min_log_sd": 1.3206496452603557e-08,
+          "final_log_sd": 1.3631665465767617e-08,
+          "onset_elapsed": null,
+          "uniform_growth_crossing": 46.20620748021476,
+          "positive_frozen_growth_integral": 1.9409398270853238,
+          "final_axis_ratio": 1.4198757534567354,
+          "initial_axis_ratio": 1.4325142448880006
+        }
+      },
+      "frozen_reference": {
+        "seed": 9,
+        "matched_available_initial_paths": 4,
+        "comparison_to_historical_native_operator_relative_l2": 1.5243338313347306e-07,
+        "solver_log_error": 1.228122048426786e-10,
+        "reference_pass": true,
+        "final_log_sd": 1.470419288299082,
+        "late_min_log_sd": 1.4704192882971092,
+        "persistent_contrast": true,
+        "onset_elapsed": 58.024184950662786,
+        "wall_seconds": 1.4981311660958454,
+        "saved_path": "outputs/phase-carry-polarity-review/2026-10-05T005029Z/frozen-actual-input-seed-9.npz",
+        "saved_path_sha256": "63ba734845a0be22bf0b55eac39c9eadeefd39829742cdefcc8e7c5081b8460b"
+      },
+      "polarity_suppression": true,
+      "moving_vs_frozen_failure_without_directional_tension": false,
+      "conclusion": "suppression_supported_in_this_history"
+    }
+  ],
+  "full_refinement": [
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 7.559235671362157e-07,
+        "polarity_abs_max": 3.5755839817783186e-06,
+        "relative_axis_max": 7.71959423051527e-08,
+        "relative_volume_max": 7.346142406605694e-07,
+        "relative_transport_max": 4.313066570633914e-06,
+        "growth_abs_max": 2.6293597485960163e-06
+      },
+      "crossing_times": [
+        63.15944035368384,
+        63.159731270447296
+      ],
+      "crossing_time_error": 0.0002909167634541632,
+      "onset_times": [
+        null,
+        null
+      ],
+      "onset_time_error": 0.0,
+      "persistent_contrast": [
+        false,
+        false
+      ],
+      "horizon": 240.0,
+      "seed": 7,
+      "chi": 0.0,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-7_chi-0/full-coarse.json": "0a5084d5230b5bb0f2b70bb8c18d43bbfe09b6e53fe96d32aca2d264841a3a79",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-7_chi-0/full-fine.json": "e4b335a7adc7f9c0491cd81e30c20111aa5bf2c60576ddad6716a2f83e75c067"
+      }
+    },
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 7.541166521061864e-07,
+        "polarity_abs_max": 3.6016691791866673e-06,
+        "relative_axis_max": 1.539832085173387e-07,
+        "relative_volume_max": 7.364267581300155e-07,
+        "relative_transport_max": 4.194093744531143e-06,
+        "growth_abs_max": 2.5431906625072997e-06
+      },
+      "crossing_times": [
+        19.62370227510665,
+        19.623987760668953
+      ],
+      "crossing_time_error": 0.0002854855623048991,
+      "onset_times": [
+        null,
+        null
+      ],
+      "onset_time_error": 0.0,
+      "persistent_contrast": [
+        false,
+        false
+      ],
+      "horizon": 240.0,
+      "seed": 7,
+      "chi": 0.35,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-7_chi-0.35/full-coarse.json": "a9c58f41f0d51563d539deb915dd37007af4b1253df832cd40e3e98d492ff4ba",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-7_chi-0.35/full-fine.json": "f24adabc127ee22954b67bd9a5c1c828a9bcad431b7f51ee0ea841383c90e26e"
+      }
+    },
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 7.849598727740838e-07,
+        "polarity_abs_max": 3.5567452728226673e-06,
+        "relative_axis_max": 1.8941162416297175e-08,
+        "relative_volume_max": 7.381979694187635e-07,
+        "relative_transport_max": 4.066498820542761e-06,
+        "growth_abs_max": 2.4923030546020186e-06
+      },
+      "crossing_times": [
+        59.51933574465946,
+        59.51963544879156
+      ],
+      "crossing_time_error": 0.0002997041321037841,
+      "onset_times": [
+        null,
+        null
+      ],
+      "onset_time_error": 0.0,
+      "persistent_contrast": [
+        false,
+        false
+      ],
+      "horizon": 240.0,
+      "seed": 8,
+      "chi": 0.0,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-8_chi-0/full-coarse.json": "077bc4892173a86c03ac1938333fa2d3fcd126fd84debc78954fb9b5228f216b",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-8_chi-0/full-fine.json": "eb8f3db095c43ec3ee101a64fb8ae94fa82643dc08ceccd1b0b67f3991a4b621"
+      }
+    },
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 7.809333317174837e-07,
+        "polarity_abs_max": 3.5593396021139923e-06,
+        "relative_axis_max": 2.423944422957902e-08,
+        "relative_volume_max": 7.325722918283262e-07,
+        "relative_transport_max": 3.885069682674703e-06,
+        "growth_abs_max": 2.369936641599679e-06
+      },
+      "crossing_times": [
+        18.323699503570253,
+        18.32407862392202
+      ],
+      "crossing_time_error": 0.00037912035176645986,
+      "onset_times": [
+        null,
+        null
+      ],
+      "onset_time_error": 0.0,
+      "persistent_contrast": [
+        false,
+        false
+      ],
+      "horizon": 240.0,
+      "seed": 8,
+      "chi": 0.35,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-8_chi-0.35/full-coarse.json": "8622ba6ac514d5e301549e2ececa137c99ad72ef38881d8c645cbabe74032ecf",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-8_chi-0.35/full-fine.json": "0ce7cccf0222052b028e059a997f4e1f2ec7153b7164aeaad72e4069c62ccbb5"
+      }
+    },
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 0.0004096314648225956,
+        "polarity_abs_max": 4.787812738177993e-06,
+        "relative_axis_max": 5.514078371682274e-08,
+        "relative_volume_max": 7.554644960716672e-07,
+        "relative_transport_max": 4.922294688480524e-06,
+        "growth_abs_max": 2.1216747434493755e-06
+      },
+      "crossing_times": [
+        136.96654522183638,
+        136.96753235088906
+      ],
+      "crossing_time_error": 0.000987129052674618,
+      "onset_times": [
+        75.41536930034812,
+        75.41626748614841
+      ],
+      "onset_time_error": 0.0008981858002954368,
+      "persistent_contrast": [
+        true,
+        true
+      ],
+      "horizon": 240.0,
+      "seed": 9,
+      "chi": 0.0,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-9_chi-0/full-coarse.json": "842d1f8f8e447d7991312a8fe113a36cb3b0ca873456cd29b733d72c7a9232b3",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-9_chi-0/full-fine.json": "56c28f13900b8d0ad6e1459f26f5a968628584141089f6d162b66a2bda5f9968"
+      }
+    },
+    {
+      "passed": true,
+      "errors": {
+        "chemical_log_max": 7.750937512230102e-07,
+        "polarity_abs_max": 4.621186589878756e-06,
+        "relative_axis_max": 1.5527792207592483e-07,
+        "relative_volume_max": 7.532445531754917e-07,
+        "relative_transport_max": 4.589117535398054e-06,
+        "growth_abs_max": 1.972550148998664e-06
+      },
+      "crossing_times": [
+        46.20582334463192,
+        46.20620748021476
+      ],
+      "crossing_time_error": 0.000384135582834233,
+      "onset_times": [
+        null,
+        null
+      ],
+      "onset_time_error": 0.0,
+      "persistent_contrast": [
+        false,
+        false
+      ],
+      "horizon": 240.0,
+      "seed": 9,
+      "chi": 0.35,
+      "protocol_sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c",
+      "history_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-9_chi-0.35/full-coarse.json": "6bf6b7361284c01252e3612c5ebefe892134782bd56fe99337fd7ab2561d633b",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/pairs/seed-9_chi-0.35/full-fine.json": "6718c882fffd7677ae7a55f9745015acec156da32471741f19e52a8f4023a046"
+      }
+    }
+  ],
+  "physical_extrema": {
+    "max_volume_error": 0.01142951812285109,
+    "max_clipping": 0.0,
+    "boundary_max": 7.60974305791251e-09,
+    "dilution_error_max": 4.440892098500626e-16,
+    "min_radius": 5.106579625361965
+  },
+  "pilot_pairs_passed": 6,
+  "new_context_gates_passed": 10,
+  "positive_float64_component_checks_passed": 3,
+  "endpoint_assays": [
+    {
+      "job": "seed-9_coarse_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "coexistence",
+      "local_bistability": true,
+      "wall_seconds": 1.2758086130488664,
+      "max_solver_log_error": 2.9218183432538605e-10,
+      "max_rhs": 3.1687922952272633e-10
+    },
+    {
+      "job": "seed-9_fine_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "coexistence",
+      "local_bistability": true,
+      "wall_seconds": 1.2444386970018968,
+      "max_solver_log_error": 2.7232194281068083e-10,
+      "max_rhs": 3.168534612463247e-10
+    },
+    {
+      "job": "seed-9_coarse_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.0744130000239238,
+      "max_solver_log_error": 7.492364503782635e-10,
+      "max_rhs": 8.448242105885129e-13
+    },
+    {
+      "job": "seed-9_fine_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.0510286890203133,
+      "max_solver_log_error": 2.301452361754229e-10,
+      "max_rhs": 2.245426067304379e-13
+    },
+    {
+      "job": "seed-7_coarse_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.2329814500408247,
+      "max_solver_log_error": 5.35351874085903e-10,
+      "max_rhs": 3.613764842924641e-12
+    },
+    {
+      "job": "seed-7_fine_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.1953911470482126,
+      "max_solver_log_error": 2.1324153556321194e-10,
+      "max_rhs": 5.683875592410464e-12
+    },
+    {
+      "job": "seed-7_coarse_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.0020621090661734,
+      "max_solver_log_error": 7.19282411384081e-11,
+      "max_rhs": 2.6978419498391304e-12
+    },
+    {
+      "job": "seed-7_fine_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 0.9887051889672875,
+      "max_solver_log_error": 7.829159542587171e-11,
+      "max_rhs": 3.5144664956021643e-12
+    },
+    {
+      "job": "seed-8_coarse_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.1814959649927914,
+      "max_solver_log_error": 3.331008801566224e-10,
+      "max_rhs": 4.7197190600201116e-12
+    },
+    {
+      "job": "seed-8_fine_chi-0",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.1778160240501165,
+      "max_solver_log_error": 3.3792613146462933e-10,
+      "max_rhs": 4.3776815505935955e-12
+    },
+    {
+      "job": "seed-8_coarse_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.017955217976123,
+      "max_solver_log_error": 7.417177982640673e-11,
+      "max_rhs": 2.1541490813348217e-12
+    },
+    {
+      "job": "seed-8_fine_chi-0.35",
+      "numerical_pass": true,
+      "all_trials_settled": true,
+      "phase": "uniform_from_sampled_starts",
+      "local_bistability": false,
+      "wall_seconds": 1.001271361950785,
+      "max_solver_log_error": 7.111200517581899e-11,
+      "max_rhs": 2.5250745938620865e-12
+    }
+  ],
+  "polarity_suppression_histories": [
+    9
+  ],
+  "moving_vs_frozen_failure_without_directional_tension_histories": [
+    7,
+    8
+  ],
+  "followup_eligible_histories": [
+    7,
+    8
+  ],
+  "followup_status": "specified_not_launched",
+  "pinned_source_hashes_verified": 37,
+  "pinned_input_hashes_verified": 200,
+  "prior_document_snapshots": "archive/study-document-snapshots/2026-10-04-before-completed-carry-polarity-review/manifest.json",
+  "prior_document_snapshots_sha256": "5ed0510eacaab3f3a31b4d1056475854c4a1febee16f8dab021401f28572c298",
+  "unchanged_original_ledger": {
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200"
+  },
+  "source_document_sha256": {
+    "README.md": "9704be268bd88450557b2727ab2416399b9a922711cdf76483e8c08a78355fd7",
+    "docs/plan.md": "6e16db9dac48a02e46bfc4679da1f9595b34d1d62ed1cda1725404eaea9284e0",
+    "docs/phase_carry_polarity.md": "e2e19fe9471ddb25f080d305851d95c7617cab35c80923f8a9ddfbbbd1050bf6",
+    "docs/phase_carry_polarity_assessment.md": "92ad0a0aa90e517816d2493d5a1f1d68c8871a872db8acb92314872aba6814f3"
+  },
+  "limitations": "Completed carry continuation qualification on three existing mature t=150 states with two directional tension contrasts and two timesteps. Matched frozen references use each actual exported initial operator. Upstream development used no carry. No new histories, fresh zygote development, maintenance assay, autonomous/inherited identity, spatial or conductance-closure acceptance, full float64 backend, or new control runs.",
+  "endpoint_scope": "Two history-9 zero-contrast endpoints support local coexistence. Ten other endpoints settle uniformly from sampled preparations; alternative patterned basins are not excluded.",
+  "spectral_scope": "Crossings and positive-growth integrals are frozen-snapshot diagnostics about uniform chemistry, not causal attribution or full moving-system stability.",
+  "aggregate_wording": "Directional polarity mechanics suppresses initiation in 1 of 3 tested histories (history 9). Histories 7 and 8 fail even with directional polarity tension disabled, although matched frozen references form. The physical cause of their moving-versus-frozen restriction is unresolved.",
+  "old_trajectory_claims_broadly_revalidated": false,
+  "scientific_source_protocol_outputs_edited_by_review": false,
+  "comparison_metadata_note": "The parent comparator emits inherited free text naming history 9 on every pair. This compact assessment omits that text, uses each actual seed/chi identifier and preserved source hashes, and verifies all six numerical comparisons. Original reports remain unchanged."
+}

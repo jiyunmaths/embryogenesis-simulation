@@ -1,0 +1,26 @@
+{
+  "captured_utc": "2026-10-05T17:13:22.539410+00:00",
+  "reason": "Preserve documentation before completed polarity/conductance assessment. The pinned protocol document and launch verification remain unchanged at their original paths.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-completed-polarity-conductance-review/README.md",
+      "sha256": "b465c4960b6dbd1033afa1a7ddc9bcfda8b744ef3f1c30a80c626dc1e6613161"
+    },
+    {
+      "original_path": "docs/plan.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-completed-polarity-conductance-review/docs/plan.md",
+      "sha256": "aa945ee98da5d8414103e2fbf55c5ac5aca53e17c93fcaa1e1f9736ee154890e"
+    },
+    {
+      "original_path": "docs/polarity_conductance_controls.md",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-completed-polarity-conductance-review/docs/polarity_conductance_controls.md",
+      "sha256": "94e0f3562131bc8bea17401d211563b694953108ea763567df9ddd5e62366471"
+    },
+    {
+      "original_path": "docs/polarity_conductance_controls_verification.json",
+      "snapshot_path": "archive/study-document-snapshots/2026-10-05-before-completed-polarity-conductance-review/docs/polarity_conductance_controls_verification.json",
+      "sha256": "a6c4b88e164732ac6803c471f28a86e3c79f853aa52d81ca63953252013d21be"
+    }
+  ]
+}
