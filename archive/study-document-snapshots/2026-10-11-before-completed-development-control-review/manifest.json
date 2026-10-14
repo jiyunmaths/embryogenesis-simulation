@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-11T12:17:32.929042+00:00",
+  "purpose": "Preserve existing reporting before completed independent assessment; pinned scientific inputs and original production/review reports remain unchanged.",
+  "files": {
+    "README.md": {
+      "original_sha256": "a8dd0fc1f5186c4ebd77ec29e25014ef53a39aec9f1e2338bf2f8443f45ff201",
+      "copy": "archive/study-document-snapshots/2026-10-11-before-completed-development-control-review/README.md",
+      "copy_sha256": "a8dd0fc1f5186c4ebd77ec29e25014ef53a39aec9f1e2338bf2f8443f45ff201"
+    },
+    "docs/plan.md": {
+      "original_sha256": "2bc684f0e2b140ccf9bc202f10b9c23018d50d5510ff8678b64e8c7a88512bb5",
+      "copy": "archive/study-document-snapshots/2026-10-11-before-completed-development-control-review/docs/plan.md",
+      "copy_sha256": "2bc684f0e2b140ccf9bc202f10b9c23018d50d5510ff8678b64e8c7a88512bb5"
+    },
+    "docs/development_control_qualification_launch.md": {
+      "original_sha256": "2d09cac3ae4e15d2bcbf1857879f64b755f6cae5c487b6215c418f9fc80a053b",
+      "copy": "archive/study-document-snapshots/2026-10-11-before-completed-development-control-review/docs/development_control_qualification_launch.md",
+      "copy_sha256": "2d09cac3ae4e15d2bcbf1857879f64b755f6cae5c487b6215c418f9fc80a053b"
+    }
+  }
+}

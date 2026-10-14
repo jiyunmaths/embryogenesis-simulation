@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "gate_counts": {
+    "reference_raw_pass": 93,
+    "accuracy_pass": 279,
+    "order_pass": 93,
+    "resolved_orders": 93,
+    "raw_pairs_pass": 186,
+    "pulse_rows_pass": 432,
+    "contrast_rows_pass": 540
+  },
+  "maxima": {
+    "raw_reference": 6.421307929806364e-12,
+    "cpu_torch": 4.962696920074573e-14,
+    "production_reference": 7.250509717913803e-06,
+    "reference_normalized": 5.911439758703257e-11,
+    "normalized_response": 1.1410461325850099e-05,
+    "reference_signed_contrast": 2.7858826356919053e-11,
+    "signed_contrast": 4.066423212156778e-06,
+    "contrast_rms": 1.656556557552702e-07,
+    "relative_auc": 7.46910040705373e-06,
+    "order_min": 2.000555448241577,
+    "order_max": 2.0069930426781495,
+    "vector_identity": 1.1102230246251565e-16,
+    "native_log": 0.0
+  },
+  "history_outcomes": [
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    }
+  ]
+}

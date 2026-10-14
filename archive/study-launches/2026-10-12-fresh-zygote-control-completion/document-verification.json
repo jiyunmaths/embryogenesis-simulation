@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-12T03:05:24.536928+00:00",
+  "checks_passed": true,
+  "source_hashes_verified": 48,
+  "links_verified": 56,
+  "readme_science_unchanged": true,
+  "ledger_unchanged": true,
+  "manuscript_sections_and_manifest_unchanged": true,
+  "notebook_before_sha256": "f13e5a80a78bc4c052f515776746bbcb697227e1812756f86e0fc3c996505450",
+  "notebook_after_sha256": "9bd62dae42b7d8ef8809955da453962df7e171084fadee31da87beb339dffea4",
+  "launch_report_sha256": "23ce847c1a36e7f6ce6032cb7ba6bece0612ec9c5b02dc1a377de4a635facbe5"
+}

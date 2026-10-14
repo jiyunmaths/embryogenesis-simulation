@@ -1,0 +1,92 @@
+{
+  "accepted": "immediate",
+  "recipient_effect_ranges": [
+    {
+      "history": 7,
+      "cell": 22,
+      "min": 0.022332472745895973,
+      "max": 0.023113080899715945,
+      "all_above": true,
+      "all_below": false
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "min": 0.0023268845679774992,
+      "max": 0.002342677494425974,
+      "all_above": false,
+      "all_below": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "min": 0.043114112727365886,
+      "max": 0.05642498305158495,
+      "all_above": true,
+      "all_below": false
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "min": 0.04627528808924859,
+      "max": 0.09621911731904803,
+      "all_above": true,
+      "all_below": false
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "min": 0.044118809259574766,
+      "max": 0.055480180712225505,
+      "all_above": true,
+      "all_below": false
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "min": 0.04767650526812975,
+      "max": 0.09874613513763401,
+      "all_above": true,
+      "all_below": false
+    }
+  ],
+  "recovery": {
+    "target_recovery_time": {
+      "recovered": 48,
+      "logical_pulse_labels": 48,
+      "min": 0.44999999999999996,
+      "max": 5.3999999999999995
+    },
+    "network_recovery_time": {
+      "recovered": 48,
+      "logical_pulse_labels": 48,
+      "min": 0.44999999999999996,
+      "max": 5.55
+    }
+  },
+  "amount_diagnostic": {
+    "pairs": 24,
+    "maximum_initial_relative_amount_error": 5.551115123125783e-16,
+    "final_global_ratio_range": [
+      [
+        0.9204676450205279,
+        0.929116332498139
+      ],
+      [
+        1.087778945795022,
+        1.0856867272639237
+      ]
+    ],
+    "maximum_global_log_separation": [
+      0.10611988191103901,
+      0.11498428699307602
+    ],
+    "full_curves": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-response/independent_review.json"
+  },
+  "timing": {
+    "coordinator_wall_seconds": 284.5680688480061,
+    "cpu_verification_overlaps_gpu": true,
+    "workers": 8,
+    "gpu_production_seconds": 257.9340417800122
+  }
+}

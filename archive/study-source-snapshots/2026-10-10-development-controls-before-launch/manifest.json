@@ -1,0 +1,9 @@
+{
+  "new_files_sha256": {
+    "embryo/development_control_qualification.py": "a04d4e81f6e329b87971abe974292aad4048d056c1f65dcaff5ebfec9d982450",
+    "tests/test_development_control_qualification.py": "4fe0db8bfcdfb34116389de350f4ce0c986af627e8a8474bda72a2fb7359404c",
+    "docs/development_control_qualification.md": "f322c470f0c7c098a432a1ad065b526a77301d57e38438763378a14c34a54767"
+  },
+  "unchanged_parent_source_count": 30,
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88"
+}

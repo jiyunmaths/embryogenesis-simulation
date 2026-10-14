@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "utc": "2026-10-09T15:55:37.779736+00:00",
+  "protocol_sha256": "93c3cb3fe430029bad76b6e797478db05ac075b243c916a2f7f1684baf5add3f",
+  "state": {
+    "state": "running",
+    "stage": "gpu_and_cpu_production",
+    "level": "fine",
+    "cpu_total": 432
+  },
+  "actual_start_cases": 144,
+  "timestep_prefix_cases": 432,
+  "logical_starts": 144,
+  "distinct_physical_problems": 96,
+  "production_paths": 432,
+  "cpu_verification_paths": 432,
+  "reference_trajectories": 288,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "physical_gpu": 1,
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "qualified_gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "workers": 8,
+  "blas_threads": 1,
+  "preparation_audit_sha256": "6c43ebaac38eb2bb1493584cf707317609daf3c7128124f27e573e89040256a0",
+  "prefix_audit_sha256": "5209b1cffc9896c873fffb6927377202312529f5a3aae5c403a1154bd9e071e6",
+  "scientific_results_pending": true,
+  "initial_device_selection_failure": "Numeric CUDA index 1 selected GTX 1080; runtime guard stopped before stepping. Relaunched with GTX 1080 Ti UUID. Preserved failure log.",
+  "snapshot": "archive/study-document-snapshots/2026-10-09-before-pulse-time-recipient-launch"
+}

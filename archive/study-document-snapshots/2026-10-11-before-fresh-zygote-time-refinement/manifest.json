@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-11T23:53:10.047155+00:00",
+  "purpose": "Preserve working documents before diagnostic launch and lab-notebook update; not a mutable manuscript simulation pin.",
+  "files": {
+    "README.md": {
+      "sha256": "b695d9b020bf30f9b4d5050f978763e6b6642d9b3e29bbc4d4592a7ead4c7b37",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/README.md"
+    },
+    "docs/lab_notebook.md": {
+      "sha256": "cacef1a783ee98ec0aa2a84a0c6700a3375d845c00952728e21a79d81487a7b9",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/lab_notebook.md"
+    },
+    "docs/plan.md": {
+      "sha256": "7ae1fe9b238b24f88a86459de83c22247cba920795756313ab811ff05d264b31",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/plan.md"
+    },
+    "docs/results_ledger.md": {
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/results_ledger.md"
+    },
+    "docs/fresh_zygote_pilot.md": {
+      "sha256": "48f29141eec8a13a656319d7f65f26bd0eae566f50dba3e869772c8ca8cee369",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/fresh_zygote_pilot.md"
+    },
+    "docs/fresh_zygote_pilot_assessment.md": {
+      "sha256": "58624b0fc24aa18fecf0f13d4006e7dae591542ad5895e28fc65b66ec76b065f",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/fresh_zygote_pilot_assessment.md"
+    },
+    "docs/fresh_zygote_pilot_assessment.json": {
+      "sha256": "0f4a74cacdce60d65da403fecc00aeafabb2048e35b9577e3fed00c07efa3fd8",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/fresh_zygote_pilot_assessment.json"
+    },
+    "docs/fresh_zygote_time_refinement.md": {
+      "sha256": "2b9a381e001866cce1b4606b44300dda7c606d4480798ff44bfe8591aafd69e9",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/docs/fresh_zygote_time_refinement.md"
+    },
+    "manuscript/sections.md": {
+      "sha256": "e691711fb14cdc4b9d2e3c82bafc1f2fff5d92997fc6fdac1ae3f9b06f910e8a",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/manuscript/sections.md"
+    },
+    "manuscript/README.md": {
+      "sha256": "b2580a87cbc4e62db124db98cacb1b4bf226dae567fdae469370a5741bc3f828",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/manuscript/README.md"
+    },
+    "manuscript/references.bib": {
+      "sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345",
+      "snapshot": "archive/study-document-snapshots/2026-10-11-before-fresh-zygote-time-refinement/manuscript/references.bib"
+    }
+  }
+}

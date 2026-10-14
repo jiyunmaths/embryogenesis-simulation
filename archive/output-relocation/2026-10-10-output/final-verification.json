@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "utc": "2026-10-10T22:59:40.486256+00:00",
+  "full_manifest_sha256": "b13c05e24947894c2b3b49ca24cf4e40db8ab2a0d0f56a161d3622a18d4ec7c8",
+  "studies_manifest_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "source_pins_unchanged": 33,
+  "tracked_output_git_diff_empty": true,
+  "resumed_pid": 470605,
+  "all_prior_history_rows_reproduced": true,
+  "exact_prefix_rows": 54,
+  "exact_checkpoint_arrays": [
+    "gpu-t00.npz",
+    "gpu-t03.npz",
+    "gpu-t06.npz"
+  ],
+  "local_free_GiB": 68.74084091186523,
+  "net_freed_GiB": 37.38988494873047,
+  "artifacts_sha256": {
+    "archive/output-relocation/2026-10-10-output/report.md": "bbdff6c57b7aa55dd8bbcb7a7b51a5d94d13dbc7518288d0cfdc42a0f8cf9453",
+    "archive/output-relocation/2026-10-10-output/running-verification.json": "2578a749c5456e97e66de90712d9d24cbeeea35031299c2841e2d23868a47cb1",
+    "archive/output-relocation/2026-10-10-output/resume_worker.py": "ae81202b38f25939fd6682770dc2e910b785e36352b2f5093c0b6d2891c8486b",
+    "scripts/with_study_output_path_alias.py": "6b67a2f8fb2f1f2ad3074998440524d4f117775848baade19bf9d133d5dd50b9",
+    "docs/output_storage.md": "7d18885b90192a3dc1e13a22de83d02f393fa8f3d17dfa43196cecc430f02d6c"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "reason": "Before dated interim notebook update; science documents and frozen study records are not edited.",
+  "sha256": {
+    "docs/lab_notebook.md": "18044418a4bde673d9a2222557f6273ff96c4c79d00e2a641fb4ac80d456239e",
+    "README.md": "f4c1c9402ecbe1b94e689aa9bddd6c245d2b1d5858ad05ef9b8cc77c36f50fd6",
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "manuscript/sections.md": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80"
+  }
+}

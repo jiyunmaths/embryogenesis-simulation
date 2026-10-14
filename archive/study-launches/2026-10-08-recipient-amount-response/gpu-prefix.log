@@ -1,0 +1,4 @@
+coarse GPU prefix seconds 0.268588175997138 raw/normalized errors 9.992007221626415e-16 1.0800807049355545e-14
+fine GPU prefix seconds 0.3927111299999524 raw/normalized errors 8.881784197001256e-16 8.429898182900127e-15
+diagnostic GPU prefix seconds 0.7977792089950526 raw/normalized errors 6.661338147750937e-16 7.376289541793227e-15
+Actual GPU prefixes qualify: /home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-amount-response/gpu-prefix.json

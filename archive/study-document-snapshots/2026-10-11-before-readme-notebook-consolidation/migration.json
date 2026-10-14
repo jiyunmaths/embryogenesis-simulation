@@ -1,0 +1,38 @@
+{
+  "original_sha256": "92b10453a6fa7f80c2176eb4b4106a43a1e7e0d2a73e06b61f461b52aad7d46b",
+  "original_lines": 840,
+  "original_words": 15331,
+  "snapshot": "archive/study-document-snapshots/2026-10-11-before-readme-notebook-consolidation/README.md",
+  "imported_file": "docs/lab_notebook/2026-10-11-readme-status-history.md",
+  "imported_source_sections": [
+    {
+      "heading": "## Consolidated evidence and compute paths",
+      "sha256": "3bb5c7abe62554fe07ef2bdaabe5b0a9b58226c9cb3ff43caec9a4df8ff2f549",
+      "lines": 62,
+      "words": 3987
+    },
+    {
+      "heading": "## Cell identity as emergent attributes",
+      "sha256": "3290538f810132beb01ad5f586bf4b483aad3ae21f71712d42ef5e6fd3066c7f",
+      "lines": 24,
+      "words": 594
+    },
+    {
+      "heading": "### Signaling growth versus cleavage timescale",
+      "sha256": "73f97fe1f378472ebbd47844374477dd7037154851aeba96fbea97e57f953cea",
+      "lines": 108,
+      "words": 2134
+    },
+    {
+      "heading": "## What our current model and results can explain, and what remains missing",
+      "sha256": "ea00fe92456c80619ed1d1595e58c043c83df9b5c9c6fc0bc8016265379a3ba0",
+      "lines": 44,
+      "words": 1299
+    }
+  ],
+  "new_readme_sha256": "1791a75b3f7a2600c8be22f1fb5d242566999b3b6eb7d773b77f914eddc35e47",
+  "new_readme_lines": 209,
+  "new_readme_words": 2445,
+  "dedicated_run_documents": 55,
+  "catalog_studies": 31
+}

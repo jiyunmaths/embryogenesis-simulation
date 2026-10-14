@@ -1,0 +1,26 @@
+# Reciprocal shared-physical-context assay: independent design review
+
+Recommend the reciprocal two-by-two experiment. One canonical sham context would test chemical-state differences conditional on that context; the reciprocal context tests dependence on that choice and permits direct estimation of a physical-by-chemical interaction. The workload is modest for these 32-variable ODEs. Running all logical cases anew is simpler to audit than partially reusing old trajectories.
+
+For each of the six prespecified recipients, cross actual t510 sham versus recipient-specific redistributed concentration vectors C_S,C_R with sham versus recipient-specific redistributed physical contexts P_S,P_R. Each physical context consists of the exact saved Delta AND measured volume/capacity vector V, with unchanged cell-ID order. Preserve concentrations during transfer; do not rescale the chemicals to maintain amount. Record both initial species amounts in all four combinations and the resulting transplantation-induced amount changes.
+
+There are24 factorial context labels but21 unique controls because the sham-chemistry/sham-physics control is shared by two recipients in each history. Add48 logical pulse cases, giving69 logical cases per timestep. Twelve lower-concentration common-amount pulses duplicate the fractional pulse, so57 unique initial-value problems are expected. Three timesteps produce207 logical production and207 CPU verification paths; two reference methods produce138 logical reference trajectories. The independent units remain three developmental histories. Keep all labels and records even where arrays coincide.
+
+Use each crossed context's own chemical continuation as control. Native controls and fractional pulses have exactly matched original initial states, operator, volumes and doses, and provide continuity checks against the accepted frozen assay. Recomputed common-amount pulses generally do not have the old dose; do not compare those trajectories as numerical replicas without verifying exact equality.
+
+At each shared physical context, match the removed amount to .1*min(a_S*V_i,a_R*V_i). Compute the corresponding concentration factors once, canonically from the recipient concentration pair, and reuse those same float64 factors under both physical contexts. The amount removed differs between physical contexts in proportion to V_i; it is matched between chemical backgrounds within each physical context, not globally across all four arms. Independent source calculations satisfy this amount accounting to4.66e-15 relative error.
+
+Preserve the original60-unit window, .15 sampling, target two-species signed pulse/own-control log responses, normalization by actual absolute log pulse factor, both dose designs and recovery definition. The primary chemical contrast is B_P(t)=R_R,P(t)-R_S,P(t), with E_P=RMS(B_P) and operational screen E_P>.01 under each physical context. Physical contrasts H_C(t)=R_C,R(t)-R_C,S(t) and interaction I(t)=B_R(t)-B_S(t)=H_R(t)-H_S(t) remain continuous descriptive quantities under the root's chosen design. Use unscaled signed waveforms and their two-species time RMS, rather than differences between their RMS norms.
+
+Numerical qualification must directly compare contrast waveforms, including the four-term interaction, between independent solvers and timesteps. Individual raw chemical errors can be amplified by weak-pulse normalization and multiwave subtraction. Retain high-accuracy DOP853/Radau settings and existing raw, response, area, recovery and convergence checks. Primary chemical screen decisions must agree. No new statistical inference or equivalence claim follows from small physical/interaction norms.
+
+The native diagonal contrast obeys two exact vector identities:
+- R_R,R-R_S,S = B_S+H_R.
+- R_R,R-R_S,S = B_R+H_S.
+These provide useful implementation checks. Scalar RMS values do not add: cross terms encode reinforcement or cancellation, so mediated-fraction language is inappropriate.
+
+The intervention and pulse occur together at t510. Crossed controls can relax on their new operator; the response is a conditional transient response rather than a presumed equilibrium property. Report unperturbed control drift, late-window target and network chemical separation, across-cell contrast, and all recovery outcomes without making persistence or stationarity a positive-result gate.
+
+Use the term inherited chemical STATE (concentration levels and distribution), not arrangement alone. Shared physics does not match total chemical amount or recipient concentrations. At these actual starts, shared-context redistributed/sham total amounts span approximately.9218–1.0860 for activator and.9316–1.0821 for inhibitor. Switching physical contexts at fixed concentrations changes total amount by approximately−.0194% to+.0176%; these small but nonzero changes should be recorded. A positive conditional chemical-state effect therefore does not establish a distribution-only mechanism, local recipient-independent context sensitivity, autonomous identity, fate memory or a general biological mechanism.
+
+Source-only measurements, including all four amount vectors and canonical factors, are in /tmp/shared_context_design_measurements.py and .json. No new trajectories were integrated for this design review.

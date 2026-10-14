@@ -1,0 +1,1803 @@
+{
+  "reviewed_utc": "2026-10-08T13:27:10.780397+00:00",
+  "full_study_accepted": true,
+  "protocol_sha256": "91d42c7d7efcee42e3c14eff86d7ba2e5df9f45d645fc0bc0ab483d97e568e8d",
+  "original_summary_sha256": "04a5f1a8ee50674489700fa1cbd17070783e8544b1a1432c69b66a74773ee180",
+  "original_status_sha256": "414796b4c5e90b045026376135484200a1ebacea5772ac5fd31155cf0b43644c",
+  "counts": {
+    "backgrounds": 45,
+    "logical_starts": 93,
+    "production_paths": 279,
+    "cpu_paths": 279,
+    "reference_trajectories": 186,
+    "independent_histories": 3,
+    "new_histories": 0
+  },
+  "source_hashes_verified": 62,
+  "input_hashes_verified": 250,
+  "immutable_consumed_artifacts": 1162,
+  "gate_counts": {
+    "reference_raw_pass": 93,
+    "accuracy_pass": 279,
+    "order_pass": 93,
+    "resolved_orders": 93,
+    "raw_pairs_pass": 186,
+    "pulse_rows_pass": 432,
+    "contrast_rows_pass": 540
+  },
+  "maxima": {
+    "raw_reference": 6.421307929806364e-12,
+    "cpu_torch": 4.962696920074573e-14,
+    "production_reference": 7.250509717913803e-06,
+    "reference_normalized": 5.911439758703257e-11,
+    "normalized_response": 1.1410461325850099e-05,
+    "reference_signed_contrast": 2.7858826356919053e-11,
+    "signed_contrast": 4.066423212156778e-06,
+    "contrast_rms": 1.656556557552702e-07,
+    "relative_auc": 7.46910040705373e-06,
+    "order_min": 2.000555448241577,
+    "order_max": 2.0069930426781495,
+    "vector_identity": 1.1102230246251565e-16,
+    "native_log": 0.0
+  },
+  "maximum_dose_relative_error": 9.992007221626409e-16,
+  "fine_all_pulses_recovered": true,
+  "recovery_ranges": {
+    "target_recovery_time": [
+      0.44999999999999996,
+      5.3999999999999995
+    ],
+    "network_recovery_time": [
+      0.44999999999999996,
+      5.3999999999999995
+    ]
+  },
+  "history_outcomes": [
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    }
+  ],
+  "scientific_comparisons": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.006939178664615386,
+        "radau": 0.0069391786646331895,
+        "coarse": 0.006939165617899332,
+        "fine": 0.006939175395238616,
+        "diagnostic": 0.0069391778463341845
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 0.00924536956900003,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.208453990409821,
+          "target_inhibitor_peak_gain": 1.4922967248174828,
+          "target_activator_log_auc_per_log_pulse": 2.5571047803876064,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06416042788341372,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 6.698052474406022e-14,
+          "late_max_log_rms_from_control": 2.2334440088154983e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2083272985826412,
+          "target_inhibitor_peak_gain": 1.5029102406765023,
+          "target_activator_log_auc_per_log_pulse": 2.467994890505058,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06718630940474446,
+          "target_recovery_time": 4.05,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 5.905769895999712e-14,
+          "late_max_log_rms_from_control": 2.9091804514451686e-11
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.006966794866161326,
+        "radau": 0.00696679486615679,
+        "coarse": 0.006966782005095947,
+        "fine": 0.006966791643001595,
+        "diagnostic": 0.006966794059371398
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 0.009272118250143044,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2084456625196176,
+          "target_inhibitor_peak_gain": 1.4925006202111677,
+          "target_activator_log_auc_per_log_pulse": 2.554758968476837,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06416169962505679,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 4.810663310189399e-14,
+          "late_max_log_rms_from_control": 2.2353947739219945e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.208313593751135,
+          "target_inhibitor_peak_gain": 1.5031947906211118,
+          "target_activator_log_auc_per_log_pulse": 2.464890133661741,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06717705088506115,
+          "target_recovery_time": 4.05,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 6.318419742803558e-14,
+          "late_max_log_rms_from_control": 2.970826352833192e-11
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.0067102689224861015,
+        "radau": 0.00671026892252214,
+        "coarse": 0.006710255759795653,
+        "fine": 0.006710265624089677,
+        "diagnostic": 0.006710268096953115
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 0.00924536956900003,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2045644350069669,
+          "target_inhibitor_peak_gain": 1.4935343600693947,
+          "target_activator_log_auc_per_log_pulse": 2.5180348702422304,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0651826317268855,
+          "target_recovery_time": 4.2,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 7.886203265910861e-14,
+          "late_max_log_rms_from_control": 2.3250813930350286e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2044080462277822,
+          "target_inhibitor_peak_gain": 1.503776696809697,
+          "target_activator_log_auc_per_log_pulse": 2.432856549399894,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06819992065207012,
+          "target_recovery_time": 3.9,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 7.38687101384788e-14,
+          "late_max_log_rms_from_control": 3.0179396918565245e-11
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.0067368696257082816,
+        "radau": 0.006736869625675371,
+        "coarse": 0.006736856645929427,
+        "fine": 0.0067368663728173015,
+        "diagnostic": 0.006736868811485807
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 0.009272118250143044,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2045559829943218,
+          "target_inhibitor_peak_gain": 1.493733868347278,
+          "target_activator_log_auc_per_log_pulse": 2.5157632880301213,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06518066010493294,
+          "target_recovery_time": 4.2,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 8.624879657356402e-14,
+          "late_max_log_rms_from_control": 2.3274484944681994e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.204394197185973,
+          "target_inhibitor_peak_gain": 1.504054228313167,
+          "target_activator_log_auc_per_log_pulse": 2.4298235160039803,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06819058398961927,
+          "target_recovery_time": 3.9,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 9.468871006054398e-14,
+          "late_max_log_rms_from_control": 3.079637709420537e-11
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.0008971469071983275,
+        "radau": 0.000897146907209778,
+        "coarse": 0.0008971474574784615,
+        "fine": 0.0008971470445938269,
+        "diagnostic": 0.0008971469415194662
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 3.306940431595012e-05,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0012543175453737926,
+          "target_activator_log_auc_per_log_pulse": 1.1568625689306955,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006572595352956342,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 1.402074118114976e-15,
+          "late_max_log_rms_from_control": 6.9379485912388864e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0012405280139723372,
+          "target_activator_log_auc_per_log_pulse": 1.1386819299596642,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006476157445164088,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 2.718088443480019e-16,
+          "late_max_log_rms_from_control": 1.7728137482132447e-15
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.0008943594528390876,
+        "radau": 0.0008943594528260726,
+        "coarse": 0.0008943599979754719,
+        "fine": 0.000894359588952101,
+        "diagnostic": 0.0008943594868337207
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 2.997200659635953e-05,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0012554707624505448,
+          "target_activator_log_auc_per_log_pulse": 1.1584014002746024,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006586919628394476,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 3.953960245469171e-15,
+          "late_max_log_rms_from_control": 2.1739471910722997e-14
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.001241716774759882,
+          "target_activator_log_auc_per_log_pulse": 1.1402732207267503,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006494259118752335,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 3.179111898511634e-14,
+          "late_max_log_rms_from_control": 3.179111898511634e-14
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.0009056955751464503,
+        "radau": 0.0009056955751318904,
+        "coarse": 0.0009056961217268594,
+        "fine": 0.0009056957115984384,
+        "diagnostic": 0.0009056956092345236
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 3.306940431595012e-05,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0013083244779713422,
+          "target_activator_log_auc_per_log_pulse": 1.1748596339502184,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006758161540761078,
+          "target_recovery_time": 2.85,
+          "network_recovery_time": 2.85,
+          "final_log_rms_from_control": 7.895866554957789e-16,
+          "late_max_log_rms_from_control": 5.305776592405749e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0012937877929722927,
+          "target_activator_log_auc_per_log_pulse": 1.1564296092412725,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006658942377999385,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 2.070871399090012e-15,
+          "late_max_log_rms_from_control": 4.041378319206791e-15
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.0009028744806253435,
+        "radau": 0.0009028744806334925,
+        "coarse": 0.0009028750220197736,
+        "fine": 0.0009028746157763755,
+        "diagnostic": 0.0009028745143931269
+      },
+      "above_screen": false,
+      "parent_unmatched_fractional_rms": 2.997200659635953e-05,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0013095401888544346,
+          "target_activator_log_auc_per_log_pulse": 1.1764194730920787,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006772893052357178,
+          "target_recovery_time": 2.85,
+          "network_recovery_time": 2.85,
+          "final_log_rms_from_control": 1.1040449885918943e-15,
+          "late_max_log_rms_from_control": 1.0457421882970999e-14
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0012950411399653753,
+          "target_activator_log_auc_per_log_pulse": 1.1580427761542134,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006677557683532853,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 1.2168337942360839e-15,
+          "late_max_log_rms_from_control": 2.2701855556315336e-15
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.05313679708558622,
+        "radau": 0.05313679708518579,
+        "coarse": 0.05313663550502532,
+        "fine": 0.053136756568976526,
+        "diagnostic": 0.05313678694108313
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07019656852766686,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.163628010119828,
+          "target_inhibitor_peak_gain": 1.6403278983805143,
+          "target_activator_log_auc_per_log_pulse": 1.743693012625615,
+          "other_cells_peak_log_rms_per_log_pulse": 0.21368777179611412,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 1.3756473356719306e-13,
+          "late_max_log_rms_from_control": 3.945694596900924e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.1696210455988902,
+          "target_inhibitor_peak_gain": 1.5322664585135126,
+          "target_activator_log_auc_per_log_pulse": 2.078254277394523,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0752333452579163,
+          "target_recovery_time": 3.4499999999999997,
+          "network_recovery_time": 5.1,
+          "final_log_rms_from_control": 1.9391965883553367e-14,
+          "late_max_log_rms_from_control": 3.046560847928988e-11
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.055204651306623956,
+        "radau": 0.05520465130641745,
+        "coarse": 0.0552044856509682,
+        "fine": 0.05520460976164693,
+        "diagnostic": 0.05520464090395954
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07279261772973997,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.1635327820350219,
+          "target_inhibitor_peak_gain": 1.641178084858752,
+          "target_activator_log_auc_per_log_pulse": 1.7391145294228023,
+          "other_cells_peak_log_rms_per_log_pulse": 0.22079544711026705,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 6.47453440012438e-14,
+          "late_max_log_rms_from_control": 3.9002003641339683e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.1698883997557534,
+          "target_inhibitor_peak_gain": 1.5279360931227368,
+          "target_activator_log_auc_per_log_pulse": 2.1026028680161124,
+          "other_cells_peak_log_rms_per_log_pulse": 0.07621739996383989,
+          "target_recovery_time": 3.4499999999999997,
+          "network_recovery_time": 5.1,
+          "final_log_rms_from_control": 5.2759485191018615e-14,
+          "late_max_log_rms_from_control": 3.1843624909261475e-11
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.0669946173613624,
+        "radau": 0.06699461736133659,
+        "coarse": 0.06699446898581753,
+        "fine": 0.0669945801230913,
+        "diagnostic": 0.06699460803378342
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07019656852766686,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2009850200037668,
+          "target_inhibitor_peak_gain": 1.6443086332479224,
+          "target_activator_log_auc_per_log_pulse": 1.8153078320788594,
+          "other_cells_peak_log_rms_per_log_pulse": 0.20664668663379937,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 8.855318593391815e-14,
+          "late_max_log_rms_from_control": 3.624943923973139e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2049881874534103,
+          "target_inhibitor_peak_gain": 1.5181512094498857,
+          "target_activator_log_auc_per_log_pulse": 2.30908094079947,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06439329295361138,
+          "target_recovery_time": 3.75,
+          "network_recovery_time": 5.1,
+          "final_log_rms_from_control": 6.914355037181738e-14,
+          "late_max_log_rms_from_control": 2.325265975168403e-11
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.06969259626712315,
+        "radau": 0.0696925962671135,
+        "coarse": 0.06969244386220895,
+        "fine": 0.06969255801115942,
+        "diagnostic": 0.06969258668386116
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07279261772973997,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2009557720261792,
+          "target_inhibitor_peak_gain": 1.6456662024131932,
+          "target_activator_log_auc_per_log_pulse": 1.8099466582404247,
+          "other_cells_peak_log_rms_per_log_pulse": 0.21399385255109746,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 9.930244968347388e-14,
+          "late_max_log_rms_from_control": 3.5775521590864964e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2052306712976484,
+          "target_inhibitor_peak_gain": 1.5137054110931836,
+          "target_activator_log_auc_per_log_pulse": 2.3406080322527325,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06526659408377795,
+          "target_recovery_time": 3.75,
+          "network_recovery_time": 5.1,
+          "final_log_rms_from_control": 1.001886009556683e-13,
+          "late_max_log_rms_from_control": 2.4144404045351398e-11
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.09790579777822801,
+        "radau": 0.09790579777802605,
+        "coarse": 0.09790583652758353,
+        "fine": 0.09790580743797192,
+        "diagnostic": 0.09790580018975174
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.002319819066207545,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0006846436303747302,
+          "target_activator_log_auc_per_log_pulse": 1.1134309672266067,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006661377530413188,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 6.419257324152529e-16,
+          "late_max_log_rms_from_control": 3.23881729546963e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0051279898562646,
+          "target_inhibitor_peak_gain": 0.0009588211538803357,
+          "target_activator_log_auc_per_log_pulse": 3.4174235987809483,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0008115682130592074,
+          "target_recovery_time": 5.3999999999999995,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 2.1910901329509782e-16,
+          "late_max_log_rms_from_control": 9.953894145374343e-16
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.0920063859335928,
+        "radau": 0.09200638593353053,
+        "coarse": 0.0920064283672919,
+        "fine": 0.0920063965143712,
+        "diagnostic": 0.0920063885753703
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.001866381909986804,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.000656622944821538,
+          "target_activator_log_auc_per_log_pulse": 1.0099546760045253,
+          "other_cells_peak_log_rms_per_log_pulse": 0.000660600642263849,
+          "target_recovery_time": 2.4,
+          "network_recovery_time": 2.4,
+          "final_log_rms_from_control": 1.9955029658541814e-16,
+          "late_max_log_rms_from_control": 2.6542526673139795e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0009239896102348132,
+          "target_activator_log_auc_per_log_pulse": 3.125982632982408,
+          "other_cells_peak_log_rms_per_log_pulse": 0.000851001660566183,
+          "target_recovery_time": 5.1,
+          "network_recovery_time": 5.1,
+          "final_log_rms_from_control": 3.4502008935377833e-16,
+          "late_max_log_rms_from_control": 9.08640784128326e-16
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.05260827765247362,
+        "radau": 0.052608277652472134,
+        "coarse": 0.052608346493685246,
+        "fine": 0.052608294836836995,
+        "diagnostic": 0.05260828194532355
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.002319819066207545,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 2.3860753571386442e-05,
+          "target_activator_log_auc_per_log_pulse": 0.23297092612712697,
+          "other_cells_peak_log_rms_per_log_pulse": 4.673691122532067e-05,
+          "target_recovery_time": 0.6,
+          "network_recovery_time": 0.6,
+          "final_log_rms_from_control": 1.1084037315966951e-16,
+          "late_max_log_rms_from_control": 5.691387783760463e-16
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 8.02837293448927e-06,
+          "target_activator_log_auc_per_log_pulse": 1.112879316937283,
+          "other_cells_peak_log_rms_per_log_pulse": 5.5249603812405395e-05,
+          "target_recovery_time": 2.55,
+          "network_recovery_time": 2.55,
+          "final_log_rms_from_control": 1.8413536758595967e-16,
+          "late_max_log_rms_from_control": 5.127041341018217e-16
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.047396307623761354,
+        "radau": 0.04739630762377517,
+        "coarse": 0.04739637125882889,
+        "fine": 0.04739632350881098,
+        "diagnostic": 0.047396311592050384
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.001866381909986804,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 2.5671648242957806e-05,
+          "target_activator_log_auc_per_log_pulse": 0.21052178388138756,
+          "other_cells_peak_log_rms_per_log_pulse": 4.649501842669912e-05,
+          "target_recovery_time": 0.44999999999999996,
+          "network_recovery_time": 0.44999999999999996,
+          "final_log_rms_from_control": 1.7226635847223333e-16,
+          "late_max_log_rms_from_control": 5.096543898391164e-16
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 8.188620206187077e-06,
+          "target_activator_log_auc_per_log_pulse": 0.9698649412932868,
+          "other_cells_peak_log_rms_per_log_pulse": 5.8068442402112476e-05,
+          "target_recovery_time": 2.25,
+          "network_recovery_time": 2.25,
+          "final_log_rms_from_control": 0.0,
+          "late_max_log_rms_from_control": 1.1373332066095445e-16
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.054888854772702306,
+        "radau": 0.05488885477231392,
+        "coarse": 0.05488869238620209,
+        "fine": 0.05488881405662849,
+        "diagnostic": 0.05488884457859057
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07294619404573525,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.165134548225879,
+          "target_inhibitor_peak_gain": 1.6386776175022428,
+          "target_activator_log_auc_per_log_pulse": 1.7503728703242039,
+          "other_cells_peak_log_rms_per_log_pulse": 0.21613069322672054,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 5.1150059229027674e-14,
+          "late_max_log_rms_from_control": 2.4574082450106546e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.1710134340432665,
+          "target_inhibitor_peak_gain": 1.5276407650084223,
+          "target_activator_log_auc_per_log_pulse": 2.110161515138358,
+          "other_cells_peak_log_rms_per_log_pulse": 0.07404589464206325,
+          "target_recovery_time": 3.4499999999999997,
+          "network_recovery_time": 4.95,
+          "final_log_rms_from_control": 6.452636818518939e-14,
+          "late_max_log_rms_from_control": 1.8041084802979274e-11
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.054997383501720634,
+        "radau": 0.05499738350178053,
+        "coarse": 0.054997219976816114,
+        "fine": 0.05499734249286403,
+        "diagnostic": 0.054997373233690576
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07302218652570276,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.1650589719559876,
+          "target_inhibitor_peak_gain": 1.639789730111395,
+          "target_activator_log_auc_per_log_pulse": 1.7487206146253,
+          "other_cells_peak_log_rms_per_log_pulse": 0.2223341798744529,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 5.1169530753812775e-14,
+          "late_max_log_rms_from_control": 2.439933985442501e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.1711229300551391,
+          "target_inhibitor_peak_gain": 1.5272774867084817,
+          "target_activator_log_auc_per_log_pulse": 2.100222285970457,
+          "other_cells_peak_log_rms_per_log_pulse": 0.07391264928299719,
+          "target_recovery_time": 3.4499999999999997,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 6.541138285664579e-14,
+          "late_max_log_rms_from_control": 1.9569359836399742e-11
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.06951721067372471,
+        "radau": 0.06951721067372955,
+        "coarse": 0.06951706065299992,
+        "fine": 0.0695171730271072,
+        "diagnostic": 0.06951720124442148
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07294619404573525,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2028385227357576,
+          "target_inhibitor_peak_gain": 1.641885578231856,
+          "target_activator_log_auc_per_log_pulse": 1.8258049727457926,
+          "other_cells_peak_log_rms_per_log_pulse": 0.20941682728594208,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 6.598310161512689e-14,
+          "late_max_log_rms_from_control": 2.2556720298126938e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2065975668131657,
+          "target_inhibitor_peak_gain": 1.5137099883810488,
+          "target_activator_log_auc_per_log_pulse": 2.3576231899071503,
+          "other_cells_peak_log_rms_per_log_pulse": 0.06315088599085526,
+          "target_recovery_time": 3.9,
+          "network_recovery_time": 4.95,
+          "final_log_rms_from_control": 1.6459746535290065e-13,
+          "late_max_log_rms_from_control": 1.333282325930212e-11
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.06966196701516632,
+        "radau": 0.06966196701558104,
+        "coarse": 0.06966181650995058,
+        "fine": 0.06966192923805382,
+        "diagnostic": 0.0696619575523777
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.07302218652570276,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.2027833660752183,
+          "target_inhibitor_peak_gain": 1.6433492039456163,
+          "target_activator_log_auc_per_log_pulse": 1.823317030703838,
+          "other_cells_peak_log_rms_per_log_pulse": 0.21612941902673743,
+          "target_recovery_time": 4.35,
+          "network_recovery_time": 4.8,
+          "final_log_rms_from_control": 6.628448880221171e-14,
+          "late_max_log_rms_from_control": 2.2444239261506953e-11
+        },
+        "R": {
+          "target_activator_peak_gain": 1.2067293544036741,
+          "target_inhibitor_peak_gain": 1.5137552652000243,
+          "target_activator_log_auc_per_log_pulse": 2.3443697244816617,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0630440847873963,
+          "target_recovery_time": 3.75,
+          "network_recovery_time": 4.95,
+          "final_log_rms_from_control": 7.751194270723244e-14,
+          "late_max_log_rms_from_control": 1.4548492429425897e-11
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.09843141430942225,
+        "radau": 0.09843141430956856,
+        "coarse": 0.09843145246799334,
+        "fine": 0.09843142382162393,
+        "diagnostic": 0.09843141668407245
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.005571800975827772,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0007034593793306443,
+          "target_activator_log_auc_per_log_pulse": 1.1148825816894652,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006443588272362905,
+          "target_recovery_time": 2.6999999999999997,
+          "network_recovery_time": 2.6999999999999997,
+          "final_log_rms_from_control": 4.1938966639074187e-16,
+          "late_max_log_rms_from_control": 4.729798104395667e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.0057675899234175,
+          "target_inhibitor_peak_gain": 0.000986370112272061,
+          "target_activator_log_auc_per_log_pulse": 3.433715830802691,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0007994335400698653,
+          "target_recovery_time": 5.3999999999999995,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 5.791387273899144e-16,
+          "late_max_log_rms_from_control": 4.796589414525271e-15
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.10055304695628173,
+        "radau": 0.1005530469561928,
+        "coarse": 0.1005530900965535,
+        "fine": 0.10055305771267999,
+        "diagnostic": 0.10055304964181316
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.0024433631921842018,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.0,
+          "target_inhibitor_peak_gain": 0.0006785162622073385,
+          "target_activator_log_auc_per_log_pulse": 1.0240641281455214,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0006401836330528146,
+          "target_recovery_time": 2.55,
+          "network_recovery_time": 2.55,
+          "final_log_rms_from_control": 2.1044518565858304e-14,
+          "late_max_log_rms_from_control": 2.104505114290589e-14
+        },
+        "R": {
+          "target_activator_peak_gain": 1.004271715778014,
+          "target_inhibitor_peak_gain": 0.0009635818214228114,
+          "target_activator_log_auc_per_log_pulse": 3.3803489200287893,
+          "other_cells_peak_log_rms_per_log_pulse": 0.0008456850672907275,
+          "target_recovery_time": 5.3999999999999995,
+          "network_recovery_time": 5.3999999999999995,
+          "final_log_rms_from_control": 2.17991011483534e-14,
+          "late_max_log_rms_from_control": 2.17991011483534e-14
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "S",
+      "full_effects": {
+        "dop853": 0.04889593823956941,
+        "radau": 0.048895938239589945,
+        "coarse": 0.048896003967903584,
+        "fine": 0.04889595464681653,
+        "diagnostic": 0.04889594233827126
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.005571800975827772,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.000000000000001,
+          "target_inhibitor_peak_gain": 1.8870939197921895e-05,
+          "target_activator_log_auc_per_log_pulse": 0.20197108473026132,
+          "other_cells_peak_log_rms_per_log_pulse": 3.503428760129819e-05,
+          "target_recovery_time": 0.44999999999999996,
+          "network_recovery_time": 0.44999999999999996,
+          "final_log_rms_from_control": 1.4065816251334655e-16,
+          "late_max_log_rms_from_control": 5.363293558858406e-16
+        },
+        "R": {
+          "target_activator_peak_gain": 1.000000000000001,
+          "target_inhibitor_peak_gain": 5.358511698335517e-06,
+          "target_activator_log_auc_per_log_pulse": 0.9867433022227048,
+          "other_cells_peak_log_rms_per_log_pulse": 4.213772034441422e-05,
+          "target_recovery_time": 2.4,
+          "network_recovery_time": 2.4,
+          "final_log_rms_from_control": 1.962683611047657e-16,
+          "late_max_log_rms_from_control": 3.6545940534855487e-16
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "R",
+      "full_effects": {
+        "dop853": 0.04913049645171452,
+        "radau": 0.049130496451612125,
+        "coarse": 0.049130563308567826,
+        "fine": 0.04913051314093417,
+        "diagnostic": 0.04913050062088553
+      },
+      "above_screen": true,
+      "parent_unmatched_fractional_rms": 0.0024433631921842018,
+      "fine_pulse_metrics": {
+        "S": {
+          "target_activator_peak_gain": 1.000000000000001,
+          "target_inhibitor_peak_gain": 2.02097004094006e-05,
+          "target_activator_log_auc_per_log_pulse": 0.18578055940752525,
+          "other_cells_peak_log_rms_per_log_pulse": 3.490570783277685e-05,
+          "target_recovery_time": 0.44999999999999996,
+          "network_recovery_time": 0.44999999999999996,
+          "final_log_rms_from_control": 0.0,
+          "late_max_log_rms_from_control": 1.1392231262827618e-15
+        },
+        "R": {
+          "target_activator_peak_gain": 1.000000000000001,
+          "target_inhibitor_peak_gain": 5.257255477091732e-06,
+          "target_activator_log_auc_per_log_pulse": 0.9657934395233466,
+          "other_cells_peak_log_rms_per_log_pulse": 4.462651708667143e-05,
+          "target_recovery_time": 2.25,
+          "network_recovery_time": 2.25,
+          "final_log_rms_from_control": 1.2143981495011765e-16,
+          "late_max_log_rms_from_control": 1.917399961673962e-16
+        }
+      }
+    }
+  ],
+  "descriptive_contrasts": [
+    {
+      "key": "7_22_S_fractional_physical_sham_chemistry",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.00013058156130197303
+    },
+    {
+      "key": "7_22_S_fractional_physical_redistributed_chemistry",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0001615813094955024
+    },
+    {
+      "key": "7_22_S_fractional_interaction_difference_of_differences",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 5.489466520841631e-05
+    },
+    {
+      "key": "7_22_R_fractional_physical_sham_chemistry",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0001263182430504809
+    },
+    {
+      "key": "7_22_R_fractional_physical_redistributed_chemistry",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0001568218511475052
+    },
+    {
+      "key": "7_22_R_fractional_interaction_difference_of_differences",
+      "seed": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 5.408952535421123e-05
+    },
+    {
+      "key": "7_23_S_fractional_physical_sham_chemistry",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 7.503406676510165e-05
+    },
+    {
+      "key": "7_23_S_fractional_physical_redistributed_chemistry",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 7.7811403241722e-05
+    },
+    {
+      "key": "7_23_S_fractional_interaction_difference_of_differences",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 2.8544184241765827e-06
+    },
+    {
+      "key": "7_23_R_fractional_physical_sham_chemistry",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 7.575117296768964e-05
+    },
+    {
+      "key": "7_23_R_fractional_physical_redistributed_chemistry",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 7.856197657570603e-05
+    },
+    {
+      "key": "7_23_R_fractional_interaction_difference_of_differences",
+      "seed": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 2.8887717253892493e-06
+    },
+    {
+      "key": "8_19_S_fractional_physical_sham_chemistry",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0007475627586804593
+    },
+    {
+      "key": "8_19_S_fractional_physical_redistributed_chemistry",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0015600108401859047
+    },
+    {
+      "key": "8_19_S_fractional_interaction_difference_of_differences",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.0021549515634107516
+    },
+    {
+      "key": "8_19_R_fractional_physical_sham_chemistry",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0008659103524353703
+    },
+    {
+      "key": "8_19_R_fractional_physical_redistributed_chemistry",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.002069219612871023
+    },
+    {
+      "key": "8_19_R_fractional_interaction_difference_of_differences",
+      "seed": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.0027642858301225996
+    },
+    {
+      "key": "8_20_S_fractional_physical_sham_chemistry",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.005255112763575518
+    },
+    {
+      "key": "8_20_S_fractional_physical_redistributed_chemistry",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.011954594799208709
+    },
+    {
+      "key": "8_20_S_fractional_interaction_difference_of_differences",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.009881191828760388
+    },
+    {
+      "key": "8_20_R_fractional_physical_sham_chemistry",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0018377156333909085
+    },
+    {
+      "key": "8_20_R_fractional_physical_redistributed_chemistry",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.007514678203423834
+    },
+    {
+      "key": "8_20_R_fractional_interaction_difference_of_differences",
+      "seed": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.006440695215507906
+    },
+    {
+      "key": "9_29_S_fractional_physical_sham_chemistry",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0005635278984409765
+    },
+    {
+      "key": "9_29_S_fractional_physical_redistributed_chemistry",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0008922942421671813
+    },
+    {
+      "key": "9_29_S_fractional_interaction_difference_of_differences",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.0009145242039107221
+    },
+    {
+      "key": "9_29_R_fractional_physical_sham_chemistry",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0006939119569645912
+    },
+    {
+      "key": "9_29_R_fractional_physical_redistributed_chemistry",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0011207883463695497
+    },
+    {
+      "key": "9_29_R_fractional_interaction_difference_of_differences",
+      "seed": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.0012080677081622744
+    },
+    {
+      "key": "9_30_S_fractional_physical_sham_chemistry",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.004589687714680831
+    },
+    {
+      "key": "9_30_S_fractional_physical_redistributed_chemistry",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.002164267949337916
+    },
+    {
+      "key": "9_30_S_fractional_interaction_difference_of_differences",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "S",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.003855194138632789
+    },
+    {
+      "key": "9_30_R_fractional_physical_sham_chemistry",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "sham_chemistry",
+      "normalized_response_shift_rms": 0.0013684744622511258
+    },
+    {
+      "key": "9_30_R_fractional_physical_redistributed_chemistry",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "physical",
+      "condition": "redistributed_chemistry",
+      "normalized_response_shift_rms": 0.0011045380924367262
+    },
+    {
+      "key": "9_30_R_fractional_interaction_difference_of_differences",
+      "seed": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "matching_reference": "R",
+      "kind": "interaction",
+      "condition": "difference_of_differences",
+      "normalized_response_shift_rms": 0.0010500698258669664
+    }
+  ],
+  "baseline_descriptions": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.0160156391896111,
+        1.0146204814565105
+      ],
+      "late_target_log_rms": 0.015217205430401622,
+      "late_network_log_rms": 0.8209445115589203
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.0153493741242299,
+        1.0140161301605979
+      ],
+      "late_target_log_rms": 0.014590586817606674,
+      "late_network_log_rms": 0.8205927471894402
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.016015639189606,
+        1.0146204814564732
+      ],
+      "late_target_log_rms": 0.015217205430335431,
+      "late_network_log_rms": 0.820944511558905
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.0153493741243111,
+        1.0140161301606623
+      ],
+      "late_target_log_rms": 0.014590586817615913,
+      "late_network_log_rms": 0.8205927471894793
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.030037613042498,
+        1.0249266927462595
+      ],
+      "late_target_log_rms": 0.02722205927549138,
+      "late_network_log_rms": 0.6398403866961446
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.0299902497812063,
+        1.0248032761563712
+      ],
+      "late_target_log_rms": 0.02714264183350771,
+      "late_network_log_rms": 0.6418283589490312
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.030037613042461,
+        1.0249266927463194
+      ],
+      "late_target_log_rms": 0.02722205927549455,
+      "late_network_log_rms": 0.6398403866961541
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        1.0299902497811608,
+        1.0248032761565173
+      ],
+      "late_target_log_rms": 0.027142641833540763,
+      "late_network_log_rms": 0.6418283589490229
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8675017406183655,
+        0.8791314284111744
+      ],
+      "late_target_log_rms": 0.1356428400271378,
+      "late_network_log_rms": 0.9307170138386199
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8680669633299916,
+        0.8797044953806695
+      ],
+      "late_target_log_rms": 0.13499214491502545,
+      "late_network_log_rms": 0.9080145363778036
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8675017406184187,
+        0.8791314284112605
+      ],
+      "late_target_log_rms": 0.13564284002691354,
+      "late_network_log_rms": 0.9307170138384653
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8680669633299603,
+        0.8797044953806533
+      ],
+      "late_target_log_rms": 0.13499214491478945,
+      "late_network_log_rms": 0.9080145363776888
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.055363937458114514,
+        0.40378300451685467
+      ],
+      "late_target_log_rms": 2.1443718086751087,
+      "late_network_log_rms": 0.9785432675663213
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.06036226032498928,
+        0.37725804605253566
+      ],
+      "late_target_log_rms": 2.101396058006214,
+      "late_network_log_rms": 0.9729895484266222
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.05536393745811937,
+        0.40378300451691584
+      ],
+      "late_target_log_rms": 2.1443718086750176,
+      "late_network_log_rms": 0.9785432675662737
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.060362260324987156,
+        0.3772580460525088
+      ],
+      "late_target_log_rms": 2.101396058006227,
+      "late_network_log_rms": 0.9729895484266307
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8634179782559447,
+        0.8753205549157309
+      ],
+      "late_target_log_rms": 0.1401779962666033,
+      "late_network_log_rms": 0.9260834937610568
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8684137758808324,
+        0.879921059892933
+      ],
+      "late_target_log_rms": 0.1346659750867439,
+      "late_network_log_rms": 0.9146424474745793
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8634179782559844,
+        0.8753205549157744
+      ],
+      "late_target_log_rms": 0.14017799626633268,
+      "late_network_log_rms": 0.9260834937609241
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.8684137758808991,
+        0.879921059893025
+      ],
+      "late_target_log_rms": 0.13466597508634845,
+      "late_network_log_rms": 0.9146424474744693
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.05480390001329434,
+        0.4024687998740217
+      ],
+      "late_target_log_rms": 2.151921387834458,
+      "late_network_log_rms": 0.9780500996288102
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.04792249169413442,
+        0.36948218514415865
+      ],
+      "late_target_log_rms": 2.26073034176747,
+      "late_network_log_rms": 0.996244212504518
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "S",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.054803900013289567,
+        0.40246879987407735
+      ],
+      "late_target_log_rms": 2.151921387834478,
+      "late_network_log_rms": 0.9780500996287906
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "R",
+      "initial_species_ratios": [
+        1.0,
+        1.0
+      ],
+      "final_species_ratios": [
+        0.04792249169413221,
+        0.36948218514414777
+      ],
+      "late_target_log_rms": 2.2607303417674873,
+      "late_network_log_rms": 0.996244212504538
+    }
+  ],
+  "endpoint_reference_diagnostic": {
+    "post_run_descriptive": true,
+    "no_new_acceptance_threshold": true,
+    "pairs": 24,
+    "maximum_endpoint_log_discrepancy": 2.6068036618202073e-13,
+    "maximum_late_log_discrepancy": 6.53450626963126e-11,
+    "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/reference-endpoint-diagnostic.json",
+    "sha256": "0c6ac8d8eb32069916c20b49f86c1c79ae5b81b0b9d01504988076978c9ce3e2"
+  },
+  "recorded_metrics_compared": 6357,
+  "max_recorded_metric_difference": 2.220446049250313e-16,
+  "native_continuity_pairs": 225,
+  "native_continuity_max_log_error": 0.0,
+  "timing": {
+    "coordinator_wall_seconds": 287.7969229980008,
+    "cpu_verification_overlaps_gpu": true,
+    "workers": 4,
+    "gpu_production_seconds": 165.81574922800064
+  },
+  "independent_review": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/independent_review.json",
+  "independent_review_sha256": "68b13a76b00dbf936683fa46931f3860cf884cb00ed74af05f7874cb56bb88aa",
+  "review_archive": "archive/study-reviews/2026-10-08-recipient-state-response",
+  "prelaunch_snapshot": "archive/study-document-snapshots/2026-10-08-before-recipient-state-response-launch/manifest.json",
+  "scope": "Whole-surrounding-network chemical sensitivity despite identical initial recipient chemistry and shared physics. Immediate matching and pulse, freely evolving target and own control; unmatched surrounding amounts. Three existing mature histories, no new histories. Endpoint reference agreement is post-run descriptive. No settled response, autonomous identity, neighbor specificity, new development, ledger/manuscript promotion or next launch."
+}

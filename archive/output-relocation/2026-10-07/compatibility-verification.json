@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "manifest_sha256": "edcf6b433ed7d3db70adb89c8ca701ec49b0d73a5b981380c61a966bf89a3c02",
+  "source_root": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs",
+  "target_root": "/mnt/data/Documents/Python/embryogenesis-simulation/outputs",
+  "scientific_compatibility_sha256": "772a0102c7b82303ecfc012bc652db35db3fd0c16467f4968ae6baa73f0599c7",
+  "archive_compatibility_sha256": "62d297b59f824fbcd0605ff8a21f972bbedb0719d4f397829633adbe8fb6e7be",
+  "manuscript_ledger_guards_unchanged": 52,
+  "regular_files_verified": 8253,
+  "symlinks_verified": 14,
+  "scope": "Copied bytes, original evidence identities, archive guards and scientific documents passed; original copy may now be retired."
+}

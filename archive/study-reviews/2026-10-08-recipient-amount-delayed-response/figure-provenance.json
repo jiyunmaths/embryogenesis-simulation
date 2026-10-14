@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "no_new_integrations": true,
+  "no_new_acceptance_threshold": true,
+  "comparisons": 72,
+  "delayed_full_study_accepted": false,
+  "scope": "All72 scientific comparisons plotted; named initial-amount curves are descriptive. Delayed phase retains one failed order gate.",
+  "files_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/plot_results.py": "8360ab282e2b551f0bdcf9eb8a5405b7c266a34feb5d4855bdcd89f26d446585",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-response/independent_review.json": "9e13124b947f539b8139ca3248952a31647b7c68881f35e53bd420072c9e81db",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/independent_review.json": "0857f8aa737d8c9ab0551fb0b636b909e3f5bd753c9b3bd7f6a951fe47795862",
+    "docs/phase_carry_recipient_state_response_assessment.json": "8f0016d72685cda7ddd7372a3da26c319ee60b7aac7dbb8080169243945e7294",
+    "docs/phase_carry_recipient_delayed_response_assessment.json": "3eb3a28738321dac72197aa7497213f4b7e1b470f130b2a889aac10436eaa845",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/comparison-summary.csv": "9ed077069ec52c44fb282a0d8a8ff7464ac318053c7dd8d41a24ddc91737301c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/initial-amount-control.png": "4f56e0ea9b88a0d197c5f8f9d57403be7c2a794e859fa9e52546739386e5b790",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/initial-amount-control.svg": "94717bc0a409eb884be969b7b4d9ffdbb6d5cdb6da0371657f350b02eec7a0a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/amount-evolution.png": "6bcdf254ed7a68e3cdcaf5f319fe18ac3d3698db71136ac087966dbecdef9450",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/amount-evolution.svg": "30701fd6373d120294c2199e31ed0a5f4cd874dfe6e9ad0ed01d92ff9356acbd"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-12T11:42:16.993552+00:00",
+  "files": {
+    "README.md": {
+      "sha256": "c22b128e82bdc232ab22e093c456a9be1b0388b4131d1041a87f31567a60ec3f",
+      "snapshot": "archive/study-reviews/2026-10-12-fresh-zygote-controls/before-document-update/README.md"
+    },
+    "docs/lab_notebook.md": {
+      "sha256": "9bd62dae42b7d8ef8809955da453962df7e171084fadee31da87beb339dffea4",
+      "snapshot": "archive/study-reviews/2026-10-12-fresh-zygote-controls/before-document-update/docs/lab_notebook.md"
+    },
+    "docs/results_ledger.md": {
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+      "snapshot": "archive/study-reviews/2026-10-12-fresh-zygote-controls/before-document-update/docs/results_ledger.md"
+    },
+    "manuscript/sections.md": {
+      "sha256": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80",
+      "snapshot": "archive/study-reviews/2026-10-12-fresh-zygote-controls/before-document-update/manuscript/sections.md"
+    },
+    "manuscript/evidence_manifest.json": {
+      "sha256": "14bba99f4f81086496943be9430b87e392b7b705207a3160315b718e3621bb30",
+      "snapshot": "archive/study-reviews/2026-10-12-fresh-zygote-controls/before-document-update/manuscript/evidence_manifest.json"
+    }
+  },
+  "purpose": "Preserve current documents before completed control review; keep ledger/manuscript scientific snapshot unchanged."
+}

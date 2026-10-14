@@ -1,0 +1,79 @@
+{
+  "first_furrow": [
+    {
+      "case": "off_coarse",
+      "first_start": 2.145,
+      "first_abscission": 3.20625,
+      "first_duration": 1.0612499999999998,
+      "first_axis": [
+        0.5576078566801592,
+        -0.16719376826959526,
+        0.8130926896857281
+      ],
+      "time3_cells": 1,
+      "time3_edges": 0,
+      "time3_neck": 0.9964579343795776,
+      "time3_overlap": 0.0010637904491794196,
+      "time3_progress": 0.95
+    },
+    {
+      "case": "off_fine",
+      "first_start": 2.143125,
+      "first_abscission": 3.1912499999999997,
+      "first_duration": 1.0481249999999998,
+      "first_axis": [
+        0.5576078566801592,
+        -0.1671937682695951,
+        0.8130926896857282
+      ],
+      "time3_cells": 1,
+      "time3_edges": 0,
+      "time3_neck": 0.9939731955528259,
+      "time3_overlap": 0.0009877317478600987,
+      "time3_progress": 0.9520833333333334
+    },
+    {
+      "case": "off_half",
+      "first_start": 2.143125,
+      "first_abscission": 3.1846875,
+      "first_duration": 1.0415625,
+      "first_axis": [
+        0.5576078566801592,
+        -0.16719376826959523,
+        0.8130926896857281
+      ],
+      "time3_cells": 1,
+      "time3_edges": 0,
+      "time3_neck": 0.9924085736274719,
+      "time3_overlap": 0.000957444599133767,
+      "time3_progress": 0.9520833333333334
+    },
+    {
+      "case": "off_quarter",
+      "first_start": 2.143125,
+      "first_abscission": 3.181875,
+      "first_duration": 1.0387499999999998,
+      "first_axis": [
+        0.5576078566801592,
+        -0.16719376826959523,
+        0.8130926896857282
+      ],
+      "time3_cells": 1,
+      "time3_edges": 0,
+      "time3_neck": 0.9914669990539551,
+      "time3_overlap": 0.0009423746308721747,
+      "time3_progress": 0.9520833333333334
+    }
+  ],
+  "parent_clock_max": [
+    0.02812499999999929,
+    0.014999999999998792,
+    0.005625000000000213
+  ],
+  "angles_max": [
+    0.09107240590353752,
+    0.05058926767812855,
+    0.023661147899367442
+  ],
+  "figure": "docs/figures/development-time-diagnosis.png"
+}

@@ -1,0 +1,64 @@
+Verified 12/96 completed paths and saved prefix arrays
+Verified 24/96 completed paths and saved prefix arrays
+Verified 36/96 completed paths and saved prefix arrays
+Verified 48/96 completed paths and saved prefix arrays
+Verified 60/96 completed paths and saved prefix arrays
+Verified 72/96 completed paths and saved prefix arrays
+Verified 84/96 completed paths and saved prefix arrays
+Verified 96/96 completed paths and saved prefix arrays
+Reconstructed pilot/full gates: seed-7_cell-22_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-7_cell-22_matched-S_physics-S_chemistry-R_amountmatched
+Reconstructed pilot/full gates: seed-7_cell-23_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-7_cell-23_matched-S_physics-S_chemistry-R_amountmatched
+Reconstructed pilot/full gates: seed-8_cell-19_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-8_cell-19_matched-S_physics-S_chemistry-R_amountmatched
+Reconstructed pilot/full gates: seed-8_cell-20_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-8_cell-20_matched-S_physics-S_chemistry-R_amountmatched
+Reconstructed pilot/full gates: seed-9_cell-29_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-9_cell-29_matched-S_physics-S_chemistry-R_amountmatched
+Reconstructed pilot/full gates: seed-9_cell-30_matched-S_physics-S_chemistry-S_amountmatched
+Reconstructed pilot/full gates: seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched
+{
+  "passed": true,
+  "total_new_paths": 96,
+  "actual_start_gates_reconstructed": 96,
+  "history_outcomes": [
+    {
+      "history": 7,
+      "recipients": 2,
+      "above_screen_at_both_doses": 0
+    },
+    {
+      "history": 8,
+      "recipients": 2,
+      "above_screen_at_both_doses": 1
+    },
+    {
+      "history": 9,
+      "recipients": 2,
+      "above_screen_at_both_doses": 1
+    }
+  ],
+  "recovery": {
+    "fine_labels": 24,
+    "all_recover": true,
+    "target_range": [
+      2.25,
+      4.35
+    ],
+    "network_range": [
+      2.25,
+      4.95
+    ],
+    "maximum_late_network_log_RMS": 5.2575008483630706e-05
+  },
+  "quality": {
+    "maximum_recorded_volume_error": 0.01115298709957624,
+    "minimum_recorded_radius_grid_intervals": 5.107104432800413,
+    "maximum_recorded_boundary_occupancy": 2.3904926038653684e-08,
+    "maximum_recorded_dilution_amount_error": 4.440892098500626e-16,
+    "clipping": 0,
+    "whole_window_minimum_log_activator_SD": 1.3448057374893847
+  },
+  "coordinator_hours": 15.800197739730828
+}

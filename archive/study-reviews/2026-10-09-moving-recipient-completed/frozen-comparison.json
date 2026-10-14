@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "matching_reference": "S",
+  "initial_physics": "S",
+  "rows": [
+    {
+      "history": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "frozen_E": 0.009636477146706617,
+      "moving_E": 0.007576865247643545,
+      "fractional_E_change": -0.21373079266492834,
+      "same_screen_decision": true
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "dose": "amount",
+      "frozen_E": 0.009869121886031229,
+      "moving_E": 0.007746716003886428,
+      "fractional_E_change": -0.21505518998086925,
+      "same_screen_decision": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "frozen_E": 5.123177955788746e-05,
+      "moving_E": 4.909930818290522e-05,
+      "fractional_E_change": -0.04162399575780362,
+      "same_screen_decision": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "dose": "amount",
+      "frozen_E": 0.00010499155339856422,
+      "moving_E": 9.615850981603593e-05,
+      "fractional_E_change": -0.08413099241418676,
+      "same_screen_decision": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "frozen_E": 0.07315020766521173,
+      "moving_E": 0.06632652836392625,
+      "fractional_E_change": -0.09328311592108629,
+      "same_screen_decision": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "dose": "amount",
+      "frozen_E": 0.07364561192217536,
+      "moving_E": 0.06675774656176946,
+      "fractional_E_change": -0.09352716585048715,
+      "same_screen_decision": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "frozen_E": 0.0064930276970935966,
+      "moving_E": 0.006422597108242625,
+      "fractional_E_change": -0.01084711049091891,
+      "same_screen_decision": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "dose": "amount",
+      "frozen_E": 0.008096471014161414,
+      "moving_E": 0.008012526922621319,
+      "fractional_E_change": -0.010367985186789497,
+      "same_screen_decision": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "frozen_E": 0.07646866281480698,
+      "moving_E": 0.06786083800121595,
+      "fractional_E_change": -0.11256669721605561,
+      "same_screen_decision": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "dose": "amount",
+      "frozen_E": 0.07699052799155061,
+      "moving_E": 0.06831760070920563,
+      "fractional_E_change": -0.1126492765875926,
+      "same_screen_decision": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "frozen_E": 0.006543400903016356,
+      "moving_E": 0.006528561713959672,
+      "fractional_E_change": -0.002267809855551306,
+      "same_screen_decision": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "dose": "amount",
+      "frozen_E": 0.00815070602445631,
+      "moving_E": 0.008128165338472477,
+      "fractional_E_change": -0.002765488770690494,
+      "same_screen_decision": true
+    }
+  ],
+  "decisions_agree": 12,
+  "comparisons": 12,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "review_sha256": "ae17b028141f1ccbdfc2826efb0b5f967dfc4d277caf4fcfabb10203f4b07aaf",
+  "frozen_summary_sha256": "0cff5046c4be73b7ee7c36701d9715afc2f8a52a8a752a0f7fc94a37d6288a19",
+  "script_sha256": "de5cad3be1e79f1f32c6ce7d7a640dfdde90010add4d517ef2d147856b484d57",
+  "interpretation": "Descriptive matched-subset comparison, not a new moving-versus-frozen equivalence gate or isolation of geometry mediation. Both begin from the accepted t510 matched preparations; frozen physics remains fixed while the new study co-evolves mechanics, polarity, volumes, dilution and transport. Target chemistry is not rematched at t570."
+}

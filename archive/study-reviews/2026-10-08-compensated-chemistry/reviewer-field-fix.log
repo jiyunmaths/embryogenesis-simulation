@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-compensated-chemistry/independent_review.py", line 149, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-compensated-chemistry/independent_review.py", line 64, in main
+    assert p['trials']==[t for t in old['trials'] if t['matching_reference']=='S' and t['physics_label']=='S']
+                                                                                      ~^^^^^^^^^^^^^^^^^
+KeyError: 'physics_label'

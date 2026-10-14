@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "tests": 3,
+  "pytest_seconds": 4.24,
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase_carry_recipient_state_response_grouped.py"
+  ],
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_recipient_state_response_grouped.py": "bd37d7f711afaa042f88ea5355345e7eb36a640b27e1bbed3d73c29b69630006",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_recipient_state_response_grouped.py": "30cbe92d5f0d315d51672ef72ed6e90ad501e3fe2913df3b5a9a8c3738a6f26d"
+  },
+  "log_sha256": "8bb519b8af4260661e39dd09dfa5ef4030e71ffa1388f437a92d72e30bc00ef4",
+  "scope": "Exact mapping/operator isolation; original-vs-grouped all93 toy paths at all3dt; exact checkpoint/resume. Initial missing-import test failure retained separately; no acceptance threshold changed."
+}

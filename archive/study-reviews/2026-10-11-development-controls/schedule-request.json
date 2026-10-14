@@ -1,0 +1,28 @@
+{
+  "requested_at_utc": "2026-10-11T04:28:41.906854+00:00",
+  "authorization": "User explicitly requested scheduling the independent review after this job finishes.",
+  "coordinator_pid": 470605,
+  "coordinator_start_ticks": "25041469",
+  "study_root": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification",
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "poll_seconds": 30,
+  "timeout_seconds": 43200,
+  "review_argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-u",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls/review_saved_arrays.py"
+  ],
+  "review_source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls/review_saved_arrays.py": "dcb295982561dd8dd85e72e450573a33b45240a978bf929dea58b107928cad71",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls/after_completion.py": "62ddcb537bc8cf12def8987f82b92d110da4f996929fc91a50a1c8b19834f5fa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-space-refinement/review_saved_arrays.py": "46b1c0a88cbe4e74557356176079c2d9eea87b0899e5b9c6426bc91d9554fa57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-time-diagnosis/review_saved_arrays.py": "f49d8ef715fbdea47d75faea880217dcf608833b8f1c2fd3d4c1fce41301bc0a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-repeated-development-gpu/review_saved_arrays.py": "ad4016601d6176fcdffb0bcaa4d6a6c5b564579592fce0b30720b1ed8cccd41b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py": "6b67a2f8fb2f1f2ad3074998440524d4f117775848baade19bf9d133d5dd50b9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_output_path_alias.py": "461077d79e08bf3d19871a3ccebc31081207a563d71a1bd37bb7c1dfedf5068d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-10-output/studies-manifest.json": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6"
+  },
+  "cpu_only": true,
+  "automatic_scientific_pilot": false,
+  "production_reports_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "manifest_sha256": "edcf6b433ed7d3db70adb89c8ca701ec49b0d73a5b981380c61a966bf89a3c02",
+  "removed_original_copy": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs.relocation-original-2026-10-07",
+  "measured_freed_bytes": 85939224576,
+  "old_disk_free_bytes": 95816273920,
+  "new_disk_free_bytes": 391362457600,
+  "completed_utc": "2026-10-08T01:48:25.501682+00:00"
+}

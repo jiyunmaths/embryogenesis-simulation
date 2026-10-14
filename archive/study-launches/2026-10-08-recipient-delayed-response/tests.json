@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 8,
+  "seconds": 18.89,
+  "log_sha256": "5803ef923434cc0b2c6b93d063fe4131ceba2f3c5ec7c09ac8de1e3c69084c76",
+  "source_sha256": {
+    "embryo/phase_carry_recipient_delayed_response.py": "c3b3e71de68bab5fcfc5a261bfb82dd5c0e9b2278d643518bf830437136cd36a",
+    "tests/test_phase_carry_recipient_delayed_response.py": "ea94545ef834884f1e4f2d3eff1dad42e110abe6d12fea0ee430e2048db911a8",
+    "docs/phase_carry_recipient_delayed_response.md": "4a0f591c105ed10d378527dc9f1fb05a4d3a59f38bd8420722b4b83404e4e7e1"
+  },
+  "initial_failure": "Duplicate parent-context keyword; corrected before preparation. Failure record retained."
+}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": "718d460f9e870d714950b2830cb7fe66ebda78e74af96e332b6925d586446899",
+  "script_sha256": "14707a05934252e4a22647e51c289745f863bb7534ea325de826fa54dc2c1960",
+  "outputs_sha256": {
+    "shared-context-response.png": "6d97da3a6f4a1b602b508c2143129adbfcbc2dcc3b4c33c88933fdf44053bfcb",
+    "shared-context-response.svg": "5990025e9704af8d49a09c4d5e4068c47eca530b5a4f719d12ce34cca8b1111f",
+    "recipient-summary.csv": "c5df650005eca9c2a8e9aa69ccc77ec28b752d30e10d2577b69f0f5e69a8ecdc"
+  },
+  "matplotlib": "3.10.5",
+  "scope": "Fine full60 own-control-normalized signed two-species response contrasts, plus final unperturbed target activator ratios. Chemical screens shown only in primary panels; physical/interaction metrics descriptive. Three existing histories, no error bars or new replication."
+}

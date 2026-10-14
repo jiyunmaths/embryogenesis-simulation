@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-10-11T23:33:09.672556+00:00",
+  "checked_documents": {
+    "README.md": {
+      "sha256": "b695d9b020bf30f9b4d5050f978763e6b6642d9b3e29bbc4d4592a7ead4c7b37",
+      "local_links_checked": 29
+    },
+    "docs/lab_notebook.md": {
+      "sha256": "cacef1a783ee98ec0aa2a84a0c6700a3375d845c00952728e21a79d81487a7b9",
+      "local_links_checked": 21
+    },
+    "docs/fresh_zygote_pilot_assessment.md": {
+      "sha256": "58624b0fc24aa18fecf0f13d4006e7dae591542ad5895e28fc65b66ec76b065f",
+      "local_links_checked": 6
+    }
+  },
+  "local_links_valid": true,
+  "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "original_failed_status_preserved": true,
+  "review_and_assessment_json_hashes_match": true,
+  "user_manuscript_comments_preserved": true,
+  "diagnostic_figure_visually_checked": true,
+  "qualification_accepted": false,
+  "new_simulation_launched": false
+}

@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-12T11:48:41.104844+00:00",
+  "protocol_sha256": "44af9b2bfdd77176891e015e5024db2aeca6acca413f7d8dd63e5b8a86ffd926",
+  "final_status_sha256": "a2a215e0b4170e594415da203689c6322506bf73b2e7aa75375551bd9de606ca",
+  "original_failed_status_sha256": "e467fd5ad84037c04368f14da0ff2d31df28b22184e63a04736e38e451291016",
+  "original_failed_pair_sha256": "b133bbb9f5215f75809e94a543ac3f4b8059d2b7d1c3ffcbcdb7f39305035c95",
+  "independent_review_sha256": "fc0cd10b53eba4749f69a8341cbf71cc0575a15a202847c54b6619babac9d2f3",
+  "assessment_json_sha256": "e10e103410e6ae009df478ea87bf7bf0b4cd2bf6b299387251720e069ab14cde",
+  "assessment_markdown_sha256": "98d1eb895d915b3ea75a6bab8f04f231b5dfc503e9c8ca58c77b9d8b9e7be2fb",
+  "figure_sha256": {
+    "png": "e30c5348c3d09a3d0f85564bfffabc0f89045648b1b5d90e4b739093aa4a1517",
+    "svg": "f740b96374b015b7bd5f602f251aa43e08cf216aace1ef65b7a3c2bb973df999"
+  },
+  "figure_history_sha256": {
+    "output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-history.json": "20e63ae97b1f3b84e2b1537c1e44a1b86774969df69a2ed431d0665faf9edbc4",
+    "output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-history.json": "5be8859e3eed87808adf836b707c387274587123d0c42f1db63565eaf01aae9c",
+    "output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-history.json": "1fa8b9b144a2876d000fbebca117c8e5f1b90e405a519659b16a16ede7146901",
+    "output/studies/fresh-zygote-pilot/h1101_full_development_half/gpu-history.json": "ea461dac5483c90fe7645f0b3fe5f016df80c07b7c58455697a89e31e5dc6868",
+    "output/studies/fresh-zygote-pilot/h1102_off_development_half/gpu-history.json": "d6aa89d25ee8d55d79c0dd4ec0bc962b436f77abdceba041e6fe482da7a49d58",
+    "output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/gpu-history.json": "b4a9a8c7147b0ec8303d41d7fc3710acc0e83972b902dff6389b65b6861e57ca",
+    "output/studies/fresh-zygote-pilot/h1102_polarity_development_half/gpu-history.json": "ca5c7addc8d240e8f6f127f4d0d4ca62cf4853c0cdd66d01dd9594581d301619",
+    "output/studies/fresh-zygote-pilot/h1102_full_development_half/gpu-history.json": "0ebd8f28e776e69ec8803e42377b0c8de0f650bc9850c68c4773318a9656c5f6",
+    "output/studies/fresh-zygote-control-completion/h1103_off_development_half/gpu-history.json": "687b4de0b2310ef45ffa8c12a8aa49fec49594c2c84e1e13b8e5c9104c607e81",
+    "output/studies/fresh-zygote-control-completion/h1103_off_development_quarter/gpu-history.json": "61a189504fb7da0aa09b91234d6cd765806437237d7c043340641b7eba28fadf",
+    "output/studies/fresh-zygote-control-completion/h1103_tension_adhesion_development_half/gpu-history.json": "2f69adf43a16507cad106d73cfcece0ace9c7685b1f4a54797db2b5bc92eb1fd",
+    "output/studies/fresh-zygote-control-completion/h1103_tension_adhesion_development_quarter/gpu-history.json": "9765d1144399faea8656426db3221d2d1a19a437c62b4e8323a98427480dc143",
+    "output/studies/fresh-zygote-control-completion/h1103_polarity_development_half/gpu-history.json": "8019670560d903b061d657577a649156ce64a1774bd0173ac7fd5aa55a34f7d2",
+    "output/studies/fresh-zygote-control-completion/h1103_polarity_development_quarter/gpu-history.json": "1575da4461452cb844be32a9db5659d290a640d36c96beeb2a5e9544e602e8f4",
+    "output/studies/fresh-zygote-control-completion/h1103_full_development_half/gpu-history.json": "bc3cfe0e0a2dc59288474b351a5015372c942ec578156afd5fcbca383fc4775f",
+    "output/studies/fresh-zygote-control-completion/h1103_full_development_quarter/gpu-history.json": "063792fbe10c43f4b0f8126af25994d5986931157f1f54ccc08ba36d9f5729c2"
+  },
+  "new_simulation_launched": false
+}

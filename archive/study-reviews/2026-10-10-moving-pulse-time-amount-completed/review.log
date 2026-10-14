@@ -1,0 +1,231 @@
+Verified 12/48 completed paths and saved prefix arrays
+Verified 24/48 completed paths and saved prefix arrays
+Verified 36/48 completed paths and saved prefix arrays
+Verified 48/48 completed paths and saved prefix arrays
+Reconstructed pilot/full gates: seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S
+Reconstructed pilot/full gates: seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S
+Reconstructed pilot/full gates: seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S
+Reconstructed pilot/full gates: seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S
+Reconstructed pilot/full gates: seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S
+Reconstructed pilot/full gates: seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S
+Reconstructed pilot/full gates: seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S
+{
+  "passed": true,
+  "total_new_paths": 48,
+  "actual_start_gates_reconstructed": 48,
+  "history_outcomes": [
+    {
+      "history": 7,
+      "recipients": 2,
+      "above_screen": 1
+    },
+    {
+      "history": 8,
+      "recipients": 2,
+      "above_screen": 2
+    },
+    {
+      "history": 9,
+      "recipients": 2,
+      "above_screen": 2
+    }
+  ],
+  "recovery": {
+    "fine_labels": 12,
+    "all_recover": true,
+    "target_range": [
+      2.6999999999999997,
+      5.3999999999999995
+    ],
+    "network_range": [
+      2.6999999999999997,
+      5.3999999999999995
+    ],
+    "maximum_final_network_log_RMS": 5.0282475770308794e-05,
+    "maximum_late_network_log_RMS": 5.257486683706278e-05,
+    "fine_metrics": [
+      {
+        "history": 7,
+        "cell": 22,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.2088498189848664,
+        "target_inhibitor_peak_gain": 1.515552989069275,
+        "target_activator_log_auc_per_log_pulse": 2.3396963540216515,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06166752429307509,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 6.1645284834022645e-06,
+        "late_max_log_rms_from_control": 6.343646673347005e-06
+      },
+      {
+        "history": 7,
+        "cell": 22,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.2076576544417388,
+        "target_inhibitor_peak_gain": 1.5521132235342978,
+        "target_activator_log_auc_per_log_pulse": 2.1178812234314948,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06879661879902156,
+        "target_recovery_time": 3.4499999999999997,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 2.9477643018319926e-06,
+        "late_max_log_rms_from_control": 3.002462662745015e-06
+      },
+      {
+        "history": 7,
+        "cell": 23,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0011987057168689028,
+        "target_activator_log_auc_per_log_pulse": 1.1570343312399824,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006997548047969739,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 3.5990825241041876e-07,
+        "late_max_log_rms_from_control": 3.72097685344234e-07
+      },
+      {
+        "history": 7,
+        "cell": 23,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0011357562538522354,
+        "target_activator_log_auc_per_log_pulse": 1.1167966274062815,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006564760173541777,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 3.476945132088789e-07,
+        "late_max_log_rms_from_control": 3.596174360525435e-07
+      },
+      {
+        "history": 8,
+        "cell": 19,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.168603149092019,
+        "target_inhibitor_peak_gain": 1.653708642240276,
+        "target_activator_log_auc_per_log_pulse": 1.7765299266506291,
+        "other_cells_peak_log_rms_per_log_pulse": 0.20704372727382875,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.0282475770308794e-05,
+        "late_max_log_rms_from_control": 5.257486683706278e-05
+      },
+      {
+        "history": 8,
+        "cell": 19,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.17234514133401,
+        "target_inhibitor_peak_gain": 1.5823996991570213,
+        "target_activator_log_auc_per_log_pulse": 1.8593815210281723,
+        "other_cells_peak_log_rms_per_log_pulse": 0.07623092024494629,
+        "target_recovery_time": 3.15,
+        "network_recovery_time": 4.6499999999999995,
+        "final_log_rms_from_control": 4.8247982039144715e-06,
+        "late_max_log_rms_from_control": 5.696690204422613e-06
+      },
+      {
+        "history": 8,
+        "cell": 20,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006049800630333487,
+        "target_activator_log_auc_per_log_pulse": 1.1102451898492403,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006676508206687979,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.384920739983618e-07,
+        "late_max_log_rms_from_control": 1.520100205642954e-07
+      },
+      {
+        "history": 8,
+        "cell": 20,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0010665261986416,
+        "target_inhibitor_peak_gain": 0.0007723084424201799,
+        "target_activator_log_auc_per_log_pulse": 3.314579729702655,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007435910714873615,
+        "target_recovery_time": 5.25,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 4.198388144335954e-07,
+        "late_max_log_rms_from_control": 4.3669786946289994e-07
+      },
+      {
+        "history": 9,
+        "cell": 29,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.1692840118876686,
+        "target_inhibitor_peak_gain": 1.6525373165865995,
+        "target_activator_log_auc_per_log_pulse": 1.7777838342895467,
+        "other_cells_peak_log_rms_per_log_pulse": 0.21087080968787067,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.803814979732873e-05,
+        "late_max_log_rms_from_control": 5.056477114305426e-05
+      },
+      {
+        "history": 9,
+        "cell": 29,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.1730233693214005,
+        "target_inhibitor_peak_gain": 1.579469169749716,
+        "target_activator_log_auc_per_log_pulse": 1.870628270412718,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0767163837191115,
+        "target_recovery_time": 3.15,
+        "network_recovery_time": 4.6499999999999995,
+        "final_log_rms_from_control": 6.8432530132745944e-06,
+        "late_max_log_rms_from_control": 7.4106283637411135e-06
+      },
+      {
+        "history": 9,
+        "cell": 30,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006432474173374348,
+        "target_activator_log_auc_per_log_pulse": 1.1129450011109119,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006587720614368107,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.1262928792525467e-07,
+        "late_max_log_rms_from_control": 1.1438310054292753e-07
+      },
+      {
+        "history": 9,
+        "cell": 30,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.002168594388564,
+        "target_inhibitor_peak_gain": 0.0008268042067549319,
+        "target_activator_log_auc_per_log_pulse": 3.3600183949835856,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007476892321574607,
+        "target_recovery_time": 5.3999999999999995,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 4.835573072656732e-07,
+        "late_max_log_rms_from_control": 4.97826476398314e-07
+      }
+    ]
+  },
+  "quality": {
+    "maximum_recorded_volume_error": 0.01122294196225837,
+    "minimum_recorded_radius_grid_intervals": 5.106964250817138,
+    "maximum_recorded_boundary_occupancy": 2.3889198175197635e-08,
+    "maximum_recorded_dilution_amount_error": 4.440892098500626e-16,
+    "clipping": 0,
+    "whole_window_minimum_log_activator_SD": 1.3590493634450402
+  },
+  "coordinator_hours": 8.02893220021889
+}

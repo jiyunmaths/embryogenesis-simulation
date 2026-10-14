@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-10T03:56:09.694427+00:00",
+  "single_cleavage_qualified": true,
+  "repeated_development_qualified": false,
+  "new_scientific_histories": 0,
+  "reporting_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/independent_review.json": "739e0b98febc15d1dc79208854b02b48cff8e46e12e2ecbcfef916a77062ddd5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/review_saved_arrays.py": "c28e5ce568f0d6534612d3e4b3d4efafc6f165ff909101425d60a594cca0e20b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/write_report.py": "c2de1cbeeb1188601f7e2eccb607b6c3d66dbbaa42c3bf4fcef8520f33d84832",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/independent-review.log": "8637c59a1739d7472286615b30de948a67476221a6c99d2a142a65324c55ea13",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/review-before-active-due-check-fix.py": "5c50533f90332670fa829479170bc7efd82e68c41e4c5d40e277f3c4611df9a0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/independent-review-before-active-due-check-fix.log": "4484c4fdaad553590b33cc902383e4edd633b348bc20dc396a4012102135c122",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/replay_restarts_before_clock_check_fix.py": "89bdd6e598db16558e5358be67b8a3f2c91d852fc297253bc1addf1c3cb4184b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/restart-replay-before-clock-check-fix.log": "6e06e075d98d6a2b3b757df73e30e37b10d44ffe13761906fd0627ecaa021659",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_gpu_qualification_assessment.md": "322876fe134c748a38dcf7eee82f1f79c2eccc3e6cf8141258730dbb4513dfc9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_gpu_qualification_assessment.json": "68796977889bd38b050acd524f0cb6f0b2e388bd28d5d43f9851476ed6439753",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_gpu_qualification_launch.md": "62d2dc9b649212d370b599b4c23ff079cf27f4ed43a79511f90cf72333e1123a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/README.md": "de3b0e30daa79f49d7bbda493be2c352f9a074b4f78b6969c0192a41093ec44e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/plan.md": "767ab0f71c24d5138bd8eba91a91b14a2f941f6c02538db65a17927686803bb7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/backends.md": "5c62dc63a317e8892d69f2e8f15537c5986d7869beabb23314369a1a9d9233a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-10-before-development-gpu/backends-before-policy-update.md": "0de2fd98c03a097973479092bf27cf958e86cf8af7786d0124f49666105112dd"
+  }
+}

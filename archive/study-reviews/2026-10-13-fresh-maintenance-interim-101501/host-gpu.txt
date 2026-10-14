@@ -1,0 +1,1 @@
+GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e, NVIDIA GeForce GTX 1080 Ti, 2924, 95

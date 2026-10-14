@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-12T03:02:12.988090+00:00",
+  "files": {
+    "README.md": {
+      "sha256": "c22b128e82bdc232ab22e093c456a9be1b0388b4131d1041a87f31567a60ec3f",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-control-completion/README.md"
+    },
+    "docs/lab_notebook.md": {
+      "sha256": "f13e5a80a78bc4c052f515776746bbcb697227e1812756f86e0fc3c996505450",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-control-completion/docs/lab_notebook.md"
+    },
+    "docs/results_ledger.md": {
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-control-completion/docs/results_ledger.md"
+    },
+    "manuscript/sections.md": {
+      "sha256": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-control-completion/manuscript/sections.md"
+    },
+    "manuscript/evidence_manifest.json": {
+      "sha256": "14bba99f4f81086496943be9430b87e392b7b705207a3160315b718e3621bb30",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-control-completion/manuscript/evidence_manifest.json"
+    }
+  },
+  "purpose": "Preserve current documents and new registered coordinator sources before authorized six-path launch."
+}

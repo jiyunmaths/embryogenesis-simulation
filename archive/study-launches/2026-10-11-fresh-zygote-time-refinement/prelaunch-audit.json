@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "utc": "2026-10-11T23:53:24.117517+00:00",
+  "protocol_sha256": "54632a1f284affcbcec93cd0f1036d2d9c3788bd93ef5480df5fa1f14336c6c3",
+  "source_count": 43,
+  "input_count": 405,
+  "immutable_reference_evidence_count": 15,
+  "original_failure_retained": true,
+  "unchanged_model_and_limits": true,
+  "complete_initial_arrays_match": true,
+  "initial_rng_independently_reproduced": true,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 1,
+  "reused_numerical_paths": 1,
+  "test_log_sha256": "7370f55f937b48765162c1bfd650e3c6fecb99feba161e7bdfe4d986fcf1fa06",
+  "test_verification_sha256": "6ee3af9cb2518a98d66499a285cf573c84bd46ab4b2063a3925ca9e66d7f5ade",
+  "migration_record_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "runtime_binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693",
+  "audit_script_sha256": "bf243e28988df192a244c75dc5e5c96897033c27b6d2437503d308ba6844b3a0",
+  "post_cleavage_not_launched": true
+}

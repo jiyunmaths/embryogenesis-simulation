@@ -1,0 +1,412 @@
+{
+  "as_of_utc": "2026-10-11T15:47:44.758387+00:00",
+  "as_of_local": "2026-10-11T11:47:44.758387-04:00",
+  "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "provisional": true,
+  "independent_final_review_completed": false,
+  "registered_independent_histories": 3,
+  "fully_completed_independent_histories": 0,
+  "completed_paths": 6,
+  "total_paths": 24,
+  "completed_pairs": 3,
+  "total_pairs": 12,
+  "status": {
+    "state": "running_development",
+    "active": "h1101_full_development",
+    "completed": 6,
+    "total": 24,
+    "independent_histories": 3,
+    "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+    "seconds": 10690.931790794013
+  },
+  "active_progress": {
+    "state": "running",
+    "time": 6.75,
+    "cells": 4,
+    "events": 3,
+    "active_divisions": 0,
+    "seconds": 155.9728380430024,
+    "audit": {
+      "max_volume_error": 0.007966908783890614,
+      "min_radius": 13.560465609309343,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 6411,
+      "correction_magnitude_max": 0.000224233306517785,
+      "before_relative_volume_error_max": 0.0003920940737565104,
+      "after_relative_volume_error_max": 9.988083593537311e-08
+    }
+  },
+  "reports": [
+    {
+      "case": "h1101_off_development",
+      "level": "development",
+      "seed": 1101,
+      "branch": "off",
+      "passed": true,
+      "seconds": 1235.2964519669767,
+      "audit": {
+        "max_volume_error": 0.016596664833995578,
+        "min_radius": 8.49748407186777,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    },
+    {
+      "case": "h1101_off_development_half",
+      "level": "development_half",
+      "seed": 1101,
+      "branch": "off",
+      "passed": true,
+      "seconds": 2355.7869041899685,
+      "audit": {
+        "max_volume_error": 0.01659649182453171,
+        "min_radius": 8.497433569846716,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "level": "development",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "seconds": 1244.3330244389945,
+      "audit": {
+        "max_volume_error": 0.016618751720053226,
+        "min_radius": 8.497406869592215,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "level": "development_half",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "seconds": 2357.8798498819815,
+      "audit": {
+        "max_volume_error": 0.016616705737538595,
+        "min_radius": 8.497400408201303,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    },
+    {
+      "case": "h1101_polarity_development",
+      "level": "development",
+      "seed": 1101,
+      "branch": "polarity",
+      "passed": true,
+      "seconds": 1190.6288410589914,
+      "audit": {
+        "max_volume_error": 0.016447753481152683,
+        "min_radius": 8.496910558429947,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "level": "development_half",
+      "seed": 1101,
+      "branch": "polarity",
+      "passed": true,
+      "seconds": 2238.4856257489882,
+      "audit": {
+        "max_volume_error": 0.01644633538403306,
+        "min_radius": 8.496851543728994,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "events": 15,
+      "restart": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      }
+    }
+  ],
+  "endpoints": [
+    {
+      "case": "h1101_off_development",
+      "branch": "off",
+      "level": "development",
+      "log_activator_sd": 0.003585178407021043,
+      "axis_ratio": 1.3246786825990209,
+      "mean_polarity_magnitude": 0.07055574411312338,
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.3181812969012654,
+      "last_abscission": 12.221718749999999,
+      "boundary_peak": 1.0523838744891378e-11
+    },
+    {
+      "case": "h1101_off_development_half",
+      "branch": "off",
+      "level": "development_half",
+      "log_activator_sd": 0.003588514870726979,
+      "axis_ratio": 1.3244560276013122,
+      "mean_polarity_magnitude": 0.07054055579608057,
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.3181634275055121,
+      "last_abscission": 12.219140625,
+      "boundary_peak": 1.0512292425435277e-11
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "branch": "tension_adhesion",
+      "level": "development",
+      "log_activator_sd": 0.0036081310689840165,
+      "axis_ratio": 1.3245783780883669,
+      "mean_polarity_magnitude": 0.07055237507914572,
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31817716829079856,
+      "last_abscission": 12.221718749999999,
+      "boundary_peak": 1.0517290163769566e-11
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "branch": "tension_adhesion",
+      "level": "development_half",
+      "log_activator_sd": 0.003611015553754401,
+      "axis_ratio": 1.3244193035748917,
+      "mean_polarity_magnitude": 0.07053957907896358,
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31816267164366785,
+      "last_abscission": 12.219375,
+      "boundary_peak": 1.0509625288090962e-11
+    },
+    {
+      "case": "h1101_polarity_development",
+      "branch": "polarity",
+      "level": "development",
+      "log_activator_sd": 0.003538660773462791,
+      "axis_ratio": 1.327235265715068,
+      "mean_polarity_magnitude": 0.06714859895138223,
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.3143298117713549,
+      "last_abscission": 12.22125,
+      "boundary_peak": 1.3800388783125062e-11
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "branch": "polarity",
+      "level": "development_half",
+      "log_activator_sd": 0.0035414568624654746,
+      "axis_ratio": 1.327027726472003,
+      "mean_polarity_magnitude": 0.06713252462407501,
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.31430092397940435,
+      "last_abscission": 12.21890625,
+      "boundary_peak": 1.3801623038878219e-11
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 1101,
+      "branch": "off",
+      "passed": true,
+      "field_max": 0.003699210358535359,
+      "regular_spectrum_max": 0.008738701888246929,
+      "dense_spectrum_max": 0.009195927899257956,
+      "dense_peak": {
+        "relative_spectrum": 0.009195927899257956,
+        "time": 5.61,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_unmatched_count": 0,
+      "dense_unmatched_times": [
+        11.715
+      ],
+      "topology_mismatch_times": [
+        9.435,
+        9.6,
+        9.66,
+        11.895,
+        17.01,
+        17.475,
+        17.745,
+        17.805,
+        17.895
+      ],
+      "maturity_time_error": 0.0025781249999994316
+    },
+    {
+      "seed": 1101,
+      "branch": "polarity",
+      "passed": true,
+      "field_max": 0.0035792793422723492,
+      "regular_spectrum_max": 0.008733376527158804,
+      "dense_spectrum_max": 0.009461072333536389,
+      "dense_peak": {
+        "relative_spectrum": 0.009461072333536389,
+        "time": 8.61,
+        "cells": 4,
+        "edges": [
+          5,
+          6
+        ]
+      },
+      "regular_unmatched_count": 0,
+      "dense_unmatched_times": [],
+      "topology_mismatch_times": [
+        8.61,
+        12.24
+      ],
+      "maturity_time_error": 0.0023437499999996447
+    },
+    {
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "field_max": 0.003373273080956573,
+      "regular_spectrum_max": 0.006386176456815611,
+      "dense_spectrum_max": 0.006721896280188561,
+      "dense_peak": {
+        "relative_spectrum": 0.006721896280188561,
+        "time": 5.625,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_unmatched_count": 0,
+      "dense_unmatched_times": [
+        11.715
+      ],
+      "topology_mismatch_times": [
+        9.435,
+        9.66,
+        12.075,
+        13.41,
+        17.475,
+        17.745,
+        17.805,
+        17.895
+      ],
+      "maturity_time_error": 0.0023437499999996447
+    }
+  ],
+  "prefixes": [
+    {
+      "case": "h1101_off_development",
+      "passed": true
+    },
+    {
+      "case": "h1101_off_development_half",
+      "passed": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "passed": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "passed": true
+    },
+    {
+      "case": "h1101_polarity_development",
+      "passed": true
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "passed": true
+    },
+    {
+      "case": "h1101_full_development",
+      "passed": true
+    }
+  ],
+  "all_completed_paths_passed": true,
+  "all_completed_pairs_passed": true,
+  "source_pins_verified": 38,
+  "input_pins_verified": 382,
+  "completed_evidence_files_verified": 90,
+  "completed_input_sha256": {
+    "output/studies/fresh-zygote-pilot/protocol.json": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+    "output/studies/fresh-zygote-pilot/h1101_off_development/gpu-result.json": "86d1262119e5bcfd599de265b22389f21b06a58b2adf8c990222cbd1de8b7b16",
+    "output/studies/fresh-zygote-pilot/h1101_off_development/gpu-history.json": "78e75592ba4e3342a6e7dfb1c80b093fa11428e54aefcbd2d2e98ec0f988a870",
+    "output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-result.json": "f754744173a2840b1e9730de6f91b275293710b0baef134317fd02238090470c",
+    "output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-history.json": "20e63ae97b1f3b84e2b1537c1e44a1b86774969df69a2ed431d0665faf9edbc4",
+    "output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/gpu-result.json": "06912b4ff1637259dc48fd8bdfcbf9df0def14fd42471ce4d3edbc197823b48e",
+    "output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/gpu-history.json": "9d7d04ad35ab4e34ab9ba958602fa6595627589607b8b275406e598d5571fbf9",
+    "output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-result.json": "2e467e03c4d33d9b9710c9058835adae070d96ee0e08aa22b1baf233f7dc5652",
+    "output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-history.json": "5be8859e3eed87808adf836b707c387274587123d0c42f1db63565eaf01aae9c",
+    "output/studies/fresh-zygote-pilot/h1101_polarity_development/gpu-result.json": "a1cc9b9c3b7ca7cf5aa29862e7373184fb264e62c167603d80586d651f9ee315",
+    "output/studies/fresh-zygote-pilot/h1101_polarity_development/gpu-history.json": "31d4827fb6bbfc47ec908540e91bfaf19a9651ed86781182432dd8e3421756c1",
+    "output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-result.json": "e267b08acbd388338fe69e3c184ea14ad07327aaf5808f42fc91cb851f336966",
+    "output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-history.json": "1fa8b9b144a2876d000fbebca117c8e5f1b90e405a519659b16a16ede7146901",
+    "output/studies/fresh-zygote-pilot/time-h1101-off.json": "1f848047bf0eac8adafc5fab1327c6ddca7d9aeb8dc14926864205d56e70ce76",
+    "output/studies/fresh-zygote-pilot/time-h1101-polarity.json": "d02a51d169ce1db6bb496bee2ebc5da1b5d16df3bb23aa8706b8b2ac1d432159",
+    "output/studies/fresh-zygote-pilot/time-h1101-tension_adhesion.json": "4aaa28ab96c21607c8be3f375fda0f1ac5581ca9e25d74f1ca46c0ce2b40c8a0"
+  },
+  "estimate": {
+    "elapsed_hours": 3.0214221697222223,
+    "mean_path_seconds": {
+      "development": 1223.4194391549875,
+      "development_half": 2317.3841266069794
+    },
+    "remaining_counts": {
+      "development": 9,
+      "development_half": 9
+    },
+    "observed_overhead_seconds": 98.73627567109725,
+    "remaining_hours": 8.90763002245222,
+    "plausible_remaining_hours": [
+      8.0,
+      10.0
+    ],
+    "expected_finish_utc": "2026-10-12T00:42:12.226468+00:00",
+    "expected_finish_local": "2026-10-11T20:42:12.226468-04:00",
+    "scope": "Development stage through t18 only; conditional on no numerical failure or interruption. Independent review and separately qualified longer windows are excluded."
+  },
+  "scientific_scope": "Weak early chemical heterogeneity and elongation in one partially complete new history. Frozen endpoint linear modes are an instantaneous chemical diagnostic, not moving-system stability, persistent identities or polarity-specific suppression.",
+  "histories_with_completed_paths": [
+    1101
+  ]
+}

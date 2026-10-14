@@ -1,0 +1,347 @@
+{
+  "assessed_utc": "2026-10-12T02:54:18.731831+00:00",
+  "review_completed": true,
+  "scoped_refinement_accepted": true,
+  "original_cohort_accepted": false,
+  "qualification_scope": "History1103 feedback-off at grid120, dt0.000234375 versus dt0.0001171875, t0\u201318; inherited screens only.",
+  "protocol_sha256": "54632a1f284affcbcec93cd0f1036d2d9c3788bd93ef5480df5fa1f14336c6c3",
+  "execution_completed": true,
+  "finished_utc": "2026-10-12T01:10:14.996452+00:00",
+  "finished_local": "2026-10-11T21:10:14.996452-04:00",
+  "seconds": 4592.07371200301,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 1,
+  "reused_numerical_paths": 1,
+  "pair": {
+    "cases": [
+      "h1103_off_development_half",
+      "h1103_off_development_quarter"
+    ],
+    "errors": {
+      "concentration_wasserstein_max": 0.0004140544011641213,
+      "log_wasserstein_max": 0.000414386210221264,
+      "contrast_abs_max": 0.001010909786639854,
+      "relative_axis_max": 0.0004570377582941987,
+      "relative_total_volume_max": 5.911905980449106e-05,
+      "whole_amount_relative_max": 7.444928226352232e-06,
+      "mean_polarity_abs_max": 3.218434611982997e-06,
+      "cell_count_difference_max": 1.0,
+      "relative_spectrum_max": 0.0034003461897201136,
+      "unmatched_observations_max": 1
+    },
+    "peak_times": {
+      "concentration_wasserstein_max": 8.7,
+      "log_wasserstein_max": 8.7,
+      "contrast_abs_max": 8.7,
+      "relative_axis_max": 5.7,
+      "relative_total_volume_max": 6.0,
+      "whole_amount_relative_max": 13.049999999999999,
+      "mean_polarity_abs_max": 11.7,
+      "cell_count_difference_max": 8.7,
+      "relative_spectrum_max": 5.7
+    },
+    "unmatched_times": [
+      8.7
+    ],
+    "maturity_time_error": 0.0012890624999997158,
+    "field_checks": [
+      {
+        "time": 0,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.0,
+          "activator_density": 0.0,
+          "inhibitor_density": 0.0,
+          "polarity_density": 0.0
+        }
+      },
+      {
+        "time": 3,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.0005137381432523051,
+          "activator_density": 0.000513738013043303,
+          "inhibitor_density": 0.0005137376182609958,
+          "polarity_density": 0.0
+        }
+      },
+      {
+        "time": 6,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.0004465084315058147,
+          "activator_density": 0.00043556489713758996,
+          "inhibitor_density": 0.0004352233212386689,
+          "polarity_density": 0.00021233917780995226
+        }
+      },
+      {
+        "time": 9,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.001006651982061173,
+          "activator_density": 0.0010039723218098183,
+          "inhibitor_density": 0.0010036125161652929,
+          "polarity_density": 0.0001288030621397571
+        }
+      },
+      {
+        "time": 12,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.0004991264060836761,
+          "activator_density": 0.0004867290508912393,
+          "inhibitor_density": 0.0004848506954817294,
+          "polarity_density": 0.00010961259209389126
+        }
+      },
+      {
+        "time": 15,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.00028971655355027634,
+          "activator_density": 0.00028974652221406714,
+          "inhibitor_density": 0.00028973026164555584,
+          "polarity_density": 3.330549134388142e-05
+        }
+      },
+      {
+        "time": 18,
+        "probe": null,
+        "order": 3,
+        "errors": {
+          "occupancy": 0.0003068153589784619,
+          "activator_density": 0.0003068745346049828,
+          "inhibitor_density": 0.0003068290759354096,
+          "polarity_density": 2.9454208309664636e-05
+        }
+      }
+    ],
+    "dense": {
+      "peak": {
+        "time": 11.445,
+        "relative_spectrum": 0.004935951819669278,
+        "cells": 8,
+        "edges": [
+          18,
+          19
+        ]
+      },
+      "unmatched_times": [
+        5.955,
+        8.7,
+        8.745,
+        11.925
+      ],
+      "topology_mismatch_times": [
+        9.39,
+        9.495,
+        11.445,
+        15.915
+      ],
+      "conductance_peak": {
+        "time": 11.445,
+        "relative_conductance": 0.008596926841897163
+      }
+    },
+    "production_passed": true,
+    "field_max": 0.001006651982061173,
+    "diagnostic_spread": {
+      "occupancy": 0.0,
+      "activator_density": 0.0,
+      "inhibitor_density": 0.0,
+      "polarity_density": 0.0
+    },
+    "failed_gates": {},
+    "independently_passed": true
+  },
+  "paths": [
+    {
+      "case": "h1103_off_development_half",
+      "reused": true,
+      "seconds": 2337.8202636640053,
+      "audit": {
+        "max_volume_error": 0.01711206462031023,
+        "min_radius": 8.499549012734699,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.349724139901534e-12,
+      "graph_closure_max": 1.7741012271130377e-16,
+      "projection": {
+        "calls": 58849,
+        "correction_magnitude_max": 0.00013650697935506078,
+        "before_relative_volume_error_max": 0.0003858689296403206,
+        "after_relative_volume_error_max": 9.989503424456814e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.0030918097141869323
+    },
+    {
+      "case": "h1103_off_development_quarter",
+      "reused": false,
+      "seconds": 4570.548615928041,
+      "audit": {
+        "max_volume_error": 0.01711152149082562,
+        "min_radius": 8.49954792587202,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.347198816201381e-12,
+      "graph_closure_max": 1.8522426122110208e-16,
+      "projection": {
+        "calls": 117688,
+        "correction_magnitude_max": 6.826198075275264e-05,
+        "before_relative_volume_error_max": 0.00019300794943388766,
+        "after_relative_volume_error_max": 9.989810023647294e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.003093369219849361
+    }
+  ],
+  "endpoints": [
+    {
+      "case": "h1103_off_development_half",
+      "dt": 0.000234375,
+      "history": 1103,
+      "branch": "off",
+      "time": 18,
+      "cells": 16,
+      "axis_ratio": 1.2852486288116949,
+      "log_activator_sd": 0.0030918097141869323,
+      "chemistry_ranges": [
+        [
+          0.9925601560581949,
+          1.0040258326765472
+        ],
+        [
+          0.9964482601637503,
+          1.0030731061579818
+        ]
+      ],
+      "frozen_uniform_unstable_modes": 9,
+      "max_frozen_uniform_growth": 0.32164260368617725,
+      "active_furrows": 0
+    },
+    {
+      "case": "h1103_off_development_quarter",
+      "dt": 0.0001171875,
+      "history": 1103,
+      "branch": "off",
+      "time": 18,
+      "cells": 16,
+      "axis_ratio": 1.2851667979712451,
+      "log_activator_sd": 0.003093369219849361,
+      "chemistry_ranges": [
+        [
+          0.9925583941995626,
+          1.0040275896709911
+        ],
+        [
+          0.9964467164992444,
+          1.003074261427049
+        ]
+      ],
+      "frozen_uniform_unstable_modes": 9,
+      "max_frozen_uniform_growth": 0.32164235737543834,
+      "active_furrows": 0
+    }
+  ],
+  "original_dense_failure": {
+    "peak": {
+      "time": 11.43,
+      "relative_spectrum": 0.011835933577208017,
+      "cells": 8,
+      "edges": [
+        15,
+        17
+      ]
+    },
+    "unmatched_times": [
+      9.075,
+      11.88
+    ],
+    "topology_mismatch_times": [
+      9.45,
+      11.43,
+      11.475,
+      15.66,
+      16.005
+    ],
+    "conductance_peak": {
+      "time": 11.43,
+      "relative_conductance": 0.013766798515916754
+    }
+  },
+  "prior_failure_time_comparison": {
+    "time": 11.43,
+    "old_relative_spectrum": 0.011835933577208017,
+    "new_relative_spectrum": 0.0027154223363814976,
+    "old_edges": [
+      15,
+      17
+    ],
+    "new_edges": [
+      17,
+      17
+    ]
+  },
+  "new_peak_cutoff_edges": [
+    {
+      "cells": [
+        10,
+        13
+      ],
+      "margins": [
+        -7.55046614583357e-08,
+        2.5605704282406967e-07
+      ],
+      "conductance": [
+        0.0,
+        0.00820559636200387
+      ]
+    }
+  ],
+  "original_failure_retained": true,
+  "prior_dense_trace_hashes_verified": {
+    "output/studies/fresh-zygote-pilot/h1103_off_development/network.jsonl": "466d0502636ba376082ae1d14698348ac4996e0746bb5a784b7b8ce0196f88cc",
+    "output/studies/fresh-zygote-pilot/h1103_off_development_half/network.jsonl": "ee47e3059f4d3802a599f46f12fadc9bbe0cbb2dcf91cc7f280a40b39b80ce7a"
+  },
+  "source_hashes_verified": 43,
+  "input_hashes_verified": 405,
+  "independent_review": {
+    "path": "archive/study-reviews/2026-10-12-fresh-zygote-time-refinement/independent_review.json",
+    "sha256": "72959d212cb03932d8b586820e05718695d5295b77087246e0483d1f83f75bbb"
+  },
+  "review_scope": "Independent NumPy/SciPy saved-evidence review: both histories, all dense graphs/pressure/events, all seven density checkpoints per path and all six live checkpoint states checked. Recorded actual-start and eight-step restart checks verified through saved evidence; no fresh GPU stepping, full fine CPU ladder or full-horizon restart replay. One existing history; remaining controls and long windows untested.",
+  "biological_identity_qualified": false,
+  "general_developmental_convergence_accepted": false,
+  "general_continuum_qualified": false,
+  "post_cleavage_started": false,
+  "next_test": {
+    "history": 1103,
+    "branches": [
+      "tension_adhesion",
+      "polarity",
+      "full"
+    ],
+    "dts": [
+      0.000234375,
+      0.0001171875
+    ],
+    "grid": 120,
+    "duration": 18.0,
+    "new_numerical_paths": 6,
+    "new_independent_histories": 0,
+    "not_launched": true,
+    "policy": "Register a separate matched-control completion study. Retain the original unexecuted design and failed status; reuse accepted feedback-off paths read-only. No original pilot resumption or retrospective cohort acceptance. Long continuation remains separately gated."
+  }
+}

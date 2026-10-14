@@ -1,0 +1,20 @@
+{
+  "state": "running",
+  "time": 5.7,
+  "cells": 2,
+  "events": 1,
+  "active_divisions": 2,
+  "seconds": 63.86674858900369,
+  "audit": {
+    "max_volume_error": 0.006333742773944939,
+    "min_radius": 12.536012744237867,
+    "max_clipping": 0.0,
+    "dilution_amount_error": 4.440892098500626e-16
+  },
+  "projection": {
+    "calls": 4482,
+    "correction_magnitude_max": 0.0002248964935506973,
+    "before_relative_volume_error_max": 0.00038995551595699673,
+    "after_relative_volume_error_max": 9.761217922843457e-08
+  }
+}

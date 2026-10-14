@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "manifest_sha256": "b13c05e24947894c2b3b49ca24cf4e40db8ab2a0d0f56a161d3622a18d4ec7c8",
+  "checked_utc": "2026-10-10T22:54:45.303959+00:00",
+  "source_pins": 33,
+  "input_pins": 38,
+  "preserved_pins": 1774,
+  "completed_cases": [
+    "tension_adhesion_space88",
+    "tension_adhesion_space104",
+    "tension_adhesion_space120",
+    "tension_adhesion_time120_half",
+    "off120"
+  ],
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "baseline_reuse_original_provenance_preserved": true,
+  "older_plural_output_link_unchanged": true,
+  "alias_tests_passed": 11,
+  "scientific_sources_unchanged": true,
+  "new_scientific_histories": 0,
+  "scope": "Storage byte/path compatibility; no new numerical accuracy or scientific acceptance."
+}

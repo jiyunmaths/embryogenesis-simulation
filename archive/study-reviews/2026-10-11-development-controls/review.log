@@ -1,0 +1,47 @@
+Reviewed history, dense graph, events and pressure: tension_adhesion_space88
+Reviewed history, dense graph, events and pressure: tension_adhesion_space104
+Reviewed history, dense graph, events and pressure: tension_adhesion_space120
+Reviewed history, dense graph, events and pressure: tension_adhesion_time120_half
+Reviewed history, dense graph, events and pressure: polarity_space88
+Reviewed history, dense graph, events and pressure: polarity_space104
+Reviewed history, dense graph, events and pressure: polarity_space120
+Reviewed history, dense graph, events and pressure: polarity_time120_half
+Reviewed history, dense graph, events and pressure: full_space88
+Reviewed history, dense graph, events and pressure: full_space104
+Reviewed history, dense graph, events and pressure: full_space120
+Reviewed history, dense graph, events and pressure: full_time120_half
+Reviewed history, dense graph, events and pressure: off120
+Rebuilt independent spatial/native fields: tension_adhesion 0
+Rebuilt independent spatial/native fields: tension_adhesion 3
+Rebuilt independent spatial/native fields: tension_adhesion 6
+Rebuilt independent spatial/native fields: tension_adhesion 9
+Rebuilt independent spatial/native fields: tension_adhesion 12
+Rebuilt independent spatial/native fields: tension_adhesion 15
+Rebuilt independent spatial/native fields: tension_adhesion 18
+Rebuilt independent spatial/native fields: polarity 0
+Rebuilt independent spatial/native fields: polarity 3
+Rebuilt independent spatial/native fields: polarity 6
+Rebuilt independent spatial/native fields: polarity 9
+Rebuilt independent spatial/native fields: polarity 12
+Rebuilt independent spatial/native fields: polarity 15
+Rebuilt independent spatial/native fields: polarity 18
+Rebuilt independent spatial/native fields: full 0
+Rebuilt independent spatial/native fields: full 3
+Rebuilt independent spatial/native fields: full 6
+Rebuilt independent spatial/native fields: full 9
+Rebuilt independent spatial/native fields: full 12
+Rebuilt independent spatial/native fields: full 15
+Rebuilt independent spatial/native fields: full 18
+Verified replay evidence and bitwise final arrays: off120 2
+Verified replay evidence and bitwise final arrays: off120 4
+Verified replay evidence and bitwise final arrays: off120 8
+Verified replay evidence and bitwise final arrays: tension_adhesion_space120 2
+Verified replay evidence and bitwise final arrays: tension_adhesion_space120 4
+Verified replay evidence and bitwise final arrays: tension_adhesion_space120 8
+Verified replay evidence and bitwise final arrays: polarity_space120 2
+Verified replay evidence and bitwise final arrays: polarity_space120 4
+Verified replay evidence and bitwise final arrays: polarity_space120 8
+Verified replay evidence and bitwise final arrays: full_space120 2
+Verified replay evidence and bitwise final arrays: full_space120 4
+Verified replay evidence and bitwise final arrays: full_space120 8
+{"review_completed": true, "scoped_qualification_accepted": true, "preserved_count": 1774, "review_seconds": 1016.6990252719843}

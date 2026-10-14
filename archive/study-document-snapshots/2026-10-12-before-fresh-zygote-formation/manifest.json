@@ -1,0 +1,339 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/README.md",
+      "sha256": "f4c1c9402ecbe1b94e689aa9bddd6c245d2b1d5858ad05ef9b8cc77c36f50fd6"
+    },
+    {
+      "path": "docs/lab_notebook.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/docs/lab_notebook.md",
+      "sha256": "e1c551e1f4874e8674110bb0d17f3d50e1080fe2c6c4e27e1fdeb3619c4f23a6"
+    },
+    {
+      "path": "docs/results_ledger.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/docs/results_ledger.md",
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a"
+    },
+    {
+      "path": "manuscript/sections_intro_revision_2.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/sections_intro_revision_2.md",
+      "sha256": "9fb0a2b7b5e1aeabfaf9149dd955dec28438d3a3b4e9fa5096abc7b2c86bc319"
+    },
+    {
+      "path": "manuscript/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/introduction_methods.md",
+      "sha256": "1223ece38c8c9a5b37704d4ebd87dfcc1a5753b259b4e55f1988988790e579d9"
+    },
+    {
+      "path": "manuscript/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/sections.md",
+      "sha256": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80"
+    },
+    {
+      "path": "manuscript/sections_copy.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/sections_copy.md",
+      "sha256": "643401965c66531163776568e642c685c0a9e678076a28f8b5d3847517752240"
+    },
+    {
+      "path": "manuscript/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/README.md",
+      "sha256": "e35da6f37e2285fdf67f9270fb6f9d3828fdf30ab24c131f630bc8f8b1dac693"
+    },
+    {
+      "path": "manuscript/sections_backup_20261003.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/sections_backup_20261003.md",
+      "sha256": "643401965c66531163776568e642c685c0a9e678076a28f8b5d3847517752240"
+    },
+    {
+      "path": "manuscript/literature_review.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/literature_review.md",
+      "sha256": "294ae092d37b60975c6dd9fa46f05b9ef1f7eff4752c60f613017eebcd89dc18"
+    },
+    {
+      "path": "manuscript/sections_intro_revision.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/sections_intro_revision.md",
+      "sha256": "955e3c45ba80a83f1f025a0c5b762480f6970e1a99105328b6a7d6da8b910138"
+    },
+    {
+      "path": "manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+      "sha256": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7"
+    },
+    {
+      "path": "manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+      "sha256": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df"
+    },
+    {
+      "path": "manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+      "sha256": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556"
+    },
+    {
+      "path": "manuscript/archive/before-nutrition-assumption-2026-10-04/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-nutrition-assumption-2026-10-04/README.md",
+      "sha256": "64093edbf1f8be7d838cc59f039441bb26d83b37d3f035369e0d6923a46649dd"
+    },
+    {
+      "path": "manuscript/archive/before-intro-revision-2026-10-04/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-intro-revision-2026-10-04/sections.md",
+      "sha256": "dee610e9a62ba252697b5fde9bb38a22486ba35c203189cfe63fb06cc809559b"
+    },
+    {
+      "path": "manuscript/archive/before-literature-review/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-literature-review/sections.md",
+      "sha256": "2d9417203eac676b5b0c6166d1f56d5186fab61ec1de310c035614ed22dce5e8"
+    },
+    {
+      "path": "manuscript/archive/before-comment-resolution-2026-10-11/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-comment-resolution-2026-10-11/introduction_methods.md",
+      "sha256": "401a0699fd2ab774bbc88461a2138c8b51c47b9b9286441ed1d60ee21750a439"
+    },
+    {
+      "path": "manuscript/archive/before-comment-resolution-2026-10-11/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-comment-resolution-2026-10-11/sections.md",
+      "sha256": "e26ce7f5d41cd2b8fdbe535b40f4c6e459ff0cbb41ae27324aa92c3dff942145"
+    },
+    {
+      "path": "manuscript/archive/before-comment-resolution-2026-10-11/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-comment-resolution-2026-10-11/README.md",
+      "sha256": "ae2d1ba5ee9aa8a086a3f58c58ef81a2c7d10b027dfced3cdf62c99dc45a6a44"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-comments-round2-2026-10-11/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-comments-round2-2026-10-11/introduction_methods.md",
+      "sha256": "80504993d2bc2da56d97556759fca4bb1d71845ba0cc9dcfd31e5b7612103319"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-comments-round2-2026-10-11/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-comments-round2-2026-10-11/sections.md",
+      "sha256": "e691711fb14cdc4b9d2e3c82bafc1f2fff5d92997fc6fdac1ae3f9b06f910e8a"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-comments-round2-2026-10-11/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-comments-round2-2026-10-11/README.md",
+      "sha256": "b2580a87cbc4e62db124db98cacb1b4bf226dae567fdae469370a5741bc3f828"
+    },
+    {
+      "path": "manuscript/archive/before-consolidation-2026-10-03/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-consolidation-2026-10-03/introduction_methods.md",
+      "sha256": "520aee71376b49f92fc887704c585af69e4bf8a02341edcc6008c3e95c629b08"
+    },
+    {
+      "path": "manuscript/archive/before-consolidation-2026-10-03/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-consolidation-2026-10-03/sections.md",
+      "sha256": "95c76092cca5909aa7c45778cdce1021c4a537797f7e7e2d4a83b8b1e5b85901"
+    },
+    {
+      "path": "manuscript/archive/before-consolidation-2026-10-03/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-consolidation-2026-10-03/README.md",
+      "sha256": "68de72cb02ba14c3aafc595d1b1af24b263571b02e94879964ffcc59c5d0b0b8"
+    },
+    {
+      "path": "manuscript/archive/before-consolidation-2026-10-03/previous_README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-consolidation-2026-10-03/previous_README.md",
+      "sha256": "16bbf143ee10ac367ac9ba9330141de7ef64a2c5b460d36edc530ed2274a5fa7"
+    },
+    {
+      "path": "manuscript/archive/before-definitions-2026-10-03/project_README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-definitions-2026-10-03/project_README.md",
+      "sha256": "57ce1469a4a89399beafc95ba36dd5ce8dc0526f2502947a477a24329f75bbbb"
+    },
+    {
+      "path": "manuscript/archive/before-definitions-2026-10-03/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-definitions-2026-10-03/introduction_methods.md",
+      "sha256": "4678de1a07f5f6b72a68ee571341b851f317953a318b9e40eebb959e8d5b476a"
+    },
+    {
+      "path": "manuscript/archive/before-definitions-2026-10-03/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-definitions-2026-10-03/sections.md",
+      "sha256": "690e4edeb5de1a8490b66e97e959e9de4ad5a15c5368be753cece756f4e41742"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-edit-2026-10-04/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-edit-2026-10-04/introduction_methods.md",
+      "sha256": "37cb978cde8973f9271faf8e56878871680ea59713a9b26ed0db677482fb046c"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-edit-2026-10-04/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-edit-2026-10-04/sections.md",
+      "sha256": "90e2ac7678f97bec4bb014c4c4eb91c05896d2f44c085ef6a14b4edc89f838bf"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-edit-2026-10-04/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-edit-2026-10-04/README.md",
+      "sha256": "0045ebf01cdfa873e0f4905b4e5581e1a66480d34bd0ffe40a16d0f959fd7331"
+    },
+    {
+      "path": "manuscript/archive/before-component-results/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-component-results/introduction_methods.md",
+      "sha256": "30010c1491a56c867501e64a2f457a4254bef071f1a477daa9c680426a83fa82"
+    },
+    {
+      "path": "manuscript/archive/before-component-results/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-component-results/sections.md",
+      "sha256": "a545ac2907b18c5f5e5972e463f9faf0729f4720323c3dbe0effa5f28a0ad246"
+    },
+    {
+      "path": "manuscript/archive/before-component-results/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-component-results/README.md",
+      "sha256": "2eba1f234a0506733b19ddf3924fed9d2214934719f43a7d8a1c0513649af880"
+    },
+    {
+      "path": "manuscript/archive/before-restart-introduction-2026-10-11/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-restart-introduction-2026-10-11/introduction_methods.md",
+      "sha256": "592bef2a1f38745283ee5424a2e2217c25b4c0487ae72575c18aa022f5cec53e"
+    },
+    {
+      "path": "manuscript/archive/before-restart-introduction-2026-10-11/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-restart-introduction-2026-10-11/sections.md",
+      "sha256": "dc22cba85a472a0ef9c8f9b4a4a4da4087a372eaffe4fe9ddb964127f785076e"
+    },
+    {
+      "path": "manuscript/archive/before-restart-introduction-2026-10-11/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-restart-introduction-2026-10-11/README.md",
+      "sha256": "69d9feb11865c2a1e2d434c10bbc4f6d7e7c300ac7ac314325c3edfeeb6862a7"
+    },
+    {
+      "path": "manuscript/archive/before-mechanics-paragraph-2026-10-04/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-mechanics-paragraph-2026-10-04/introduction_methods.md",
+      "sha256": "12639667da748c269b1c4d505192da755206dd2c157cab31a92365e796ea2bd0"
+    },
+    {
+      "path": "manuscript/archive/before-mechanics-paragraph-2026-10-04/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-mechanics-paragraph-2026-10-04/sections.md",
+      "sha256": "691c8102067cf16ef286e7d3135a5b704c9ca7d685c10717bf9d32760e7e3d14"
+    },
+    {
+      "path": "manuscript/archive/before-mechanics-paragraph-2026-10-04/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-mechanics-paragraph-2026-10-04/README.md",
+      "sha256": "2f5e4f0da29f6d7358d05a8a1da19f05efc30a350a6a211151d18bc41d6452e3"
+    },
+    {
+      "path": "manuscript/archive/pre-o1/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/pre-o1/introduction_methods.md",
+      "sha256": "52cd047f235d332609414a9ec88312c2a941962e56b40b47182c40cdb2c70a50"
+    },
+    {
+      "path": "manuscript/archive/pre-o1/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/pre-o1/sections.md",
+      "sha256": "5944c76af8e590dd86e15707273c3213c09fb2496f2770c4aebe915afb479c6b"
+    },
+    {
+      "path": "manuscript/archive/pre-o1/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/pre-o1/README.md",
+      "sha256": "2766eabaa366b191db48e2ea16252f6085cc119b9d3c3c4dee3595b97b6a377f"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/introduction_methods.md",
+      "sha256": "47f30bface2a4f50ccf2e21a9d662e18626c8309fb994614a53c9ddd5a198192"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections.md",
+      "sha256": "b35c1fe5bb346df68c9f8e15d64eb434c1c0521a0a4069d34d0c1d5f0c327d2e"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections_copy.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections_copy.md",
+      "sha256": "643401965c66531163776568e642c685c0a9e678076a28f8b5d3847517752240"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/README.md",
+      "sha256": "493acebddb9501e2bc07b8897eb2dbe0812aefe97b26040d3fad05e4573fc879"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections_backup_20261003.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/sections_backup_20261003.md",
+      "sha256": "643401965c66531163776568e642c685c0a9e678076a28f8b5d3847517752240"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/literature_review.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/literature_review.md",
+      "sha256": "6b83cc5f0080042945f94d5e18949532435d0db5bdaf07bcb1b001c745932393"
+    },
+    {
+      "path": "manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/introduction_methods.md",
+      "sha256": "dda91469c3a07d02ae5294bff61c0fe53a2cdf0d9f7f3f9317c43258d3551dd7"
+    },
+    {
+      "path": "manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/sections.md",
+      "sha256": "1f17ca9438747afc4c960a03c8adab09e6acf5c17e6f87f2215c6e58523a386f"
+    },
+    {
+      "path": "manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-nutrition-assumption-2026-10-04/manuscript/README.md",
+      "sha256": "ab20d72a1c6475b428474bfe1a4df914e8a484e9f23c6b5459bb9d31dccb8247"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/introduction_methods.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/introduction_methods.md",
+      "sha256": "ab198ab3efc82a3464f603dea5c8234aa1c365926369226d0cdc4bc9eeeeaced"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/sections.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/sections.md",
+      "sha256": "4414383b49879e2fea4869817d6812490c84b66a77f229f993626a6a27d8d902"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/README.md",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/README.md",
+      "sha256": "3008d12a01f1b051ec2f592dc39fdb7389bc55e83a14fc1c4060f66463cef4b4"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/references.bib",
+      "sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    },
+    {
+      "path": "manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+      "sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0"
+    },
+    {
+      "path": "manuscript/archive/before-literature-review/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-literature-review/references.bib",
+      "sha256": "bfef5f9150a6f8e801efb6917ac79e91902f0ca92d6f255c6212fcc893f8a8e9"
+    },
+    {
+      "path": "manuscript/archive/before-comment-resolution-2026-10-11/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-comment-resolution-2026-10-11/references.bib",
+      "sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-comments-round2-2026-10-11/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-comments-round2-2026-10-11/references.bib",
+      "sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    },
+    {
+      "path": "manuscript/archive/before-consolidation-2026-10-03/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-consolidation-2026-10-03/references.bib",
+      "sha256": "ecd0850923a418f8b3f44cdfa39a481c64291627236825d0c51069750795f3a8"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-edit-2026-10-04/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-edit-2026-10-04/references.bib",
+      "sha256": "ecd0850923a418f8b3f44cdfa39a481c64291627236825d0c51069750795f3a8"
+    },
+    {
+      "path": "manuscript/archive/before-restart-introduction-2026-10-11/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-restart-introduction-2026-10-11/references.bib",
+      "sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    },
+    {
+      "path": "manuscript/archive/before-experimental-support-2026-10-07/manuscript/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-experimental-support-2026-10-07/manuscript/references.bib",
+      "sha256": "ecd0850923a418f8b3f44cdfa39a481c64291627236825d0c51069750795f3a8"
+    },
+    {
+      "path": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/references.bib",
+      "snapshot": "archive/study-document-snapshots/2026-10-12-before-fresh-zygote-formation/manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/references.bib",
+      "sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0"
+    }
+  ]
+}

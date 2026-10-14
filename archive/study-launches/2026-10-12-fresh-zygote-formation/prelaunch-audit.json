@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "utc": "2026-10-12T15:28:10.115426+00:00",
+  "protocol_sha256": "e193c41f6d018cf4cfc7ed88777e00f7e62e99aa89fb98e783baab0c8e199d06",
+  "source_count": 63,
+  "input_count": 523,
+  "losslessly_checked_start_arrays": 432,
+  "all24_complete_starts_preserved": true,
+  "only_metadata_change": "config.steps",
+  "model_couplings_and_compensation_unchanged": true,
+  "original_failures_retained": true,
+  "histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "independent_histories": 3,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 24,
+  "maintenance_extension_started": false,
+  "test_log_sha256": "e0a5880257238cdef6af115d9878416e27dc3e99b38f2701e01a00925270241f",
+  "test_verification_sha256": "1d31dea27aa8b6f04f5daaef53c1e48ec851b5c64ceea5c3917bd6f8766a6346",
+  "migration_record_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "runtime_binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693",
+  "audit_script_sha256": "19a51c358333591bc90967f8b296d96e0fc6790f506e7f9d5df218832a109dc9"
+}

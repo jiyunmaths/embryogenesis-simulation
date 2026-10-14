@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T16:36:07.013358+00:00",
+  "pid": 237994,
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.pulse_time_amount_response",
+    "run",
+    "--workers",
+    "8"
+  ],
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "physical_gpu": 1,
+  "qualified_gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "workers": 8,
+  "blas_threads": 1,
+  "protocol_sha256": "189179819f5371d83027027e7d4036b5cee2f9c0ff15e8e89e39e531b5efef26",
+  "script_sha256": "9414a0ea6f0d157b3b76ff19de086169a0027db754104253ac9a9bd11f98297a",
+  "preparation_audit_sha256": "3a287e3c30c3cffaa64ddb6a19e2b52832812d8337bc970a056138276bfc6213",
+  "prefix_audit_sha256": "2de5cb480ca26e630769dc3559e0d76aa44ace7c2e9dd1db9bac52fe7ad94a35",
+  "logical_starts": 336,
+  "distinct_physical_problems": 192,
+  "production_paths": 1008,
+  "cpu_paths": 1008,
+  "reference_trajectories": 672,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "scientific_results_pending": true,
+  "premature_audit_note": "Initial read-only prefix audit was attempted before qualification summary existed; failed without accepting results. Its log is preserved. The completed qualification and separate rerun both pass."
+}

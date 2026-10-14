@@ -1,0 +1,378 @@
+{
+  "passed": true,
+  "counts": {
+    "backgrounds": 168,
+    "logical_starts": 336,
+    "unique_physical_initial_value_problems": 192,
+    "distinct_pulse_problems": 96,
+    "production_paths": 1008,
+    "cpu_paths": 1008,
+    "reference_trajectories": 672,
+    "independent_histories": 3,
+    "new_histories": 0
+  },
+  "gate_counts": {
+    "reference_raw_pass": 336,
+    "accuracy_pass": 1008,
+    "order_pass": 336,
+    "resolved_orders": 336,
+    "raw_pairs_pass": 672,
+    "pulse_rows_pass": 1512,
+    "contrast_rows_pass": 2322,
+    "duplicate_checks_pass": 720
+  },
+  "maxima": {
+    "raw_reference": 4.808597964244917e-12,
+    "cpu_torch": 6.661338147750941e-16,
+    "production_reference": 7.209798254966318e-06,
+    "reference_normalized": 4.568333058684066e-11,
+    "normalized_response": 1.1472491179751843e-05,
+    "reference_signed_contrast": 1.9771517756339563e-11,
+    "signed_contrast": 4.1979973213202015e-06,
+    "contrast_rms": 2.2435254388997183e-07,
+    "relative_auc": 7.850033299172665e-06,
+    "recovery_time": 0.0,
+    "order_min": 2.000457811810992,
+    "order_max": 2.0075532932525433,
+    "vector_identity": 1.1102230246251565e-16,
+    "duplicate_log": 0.0
+  },
+  "history_outcomes": [
+    {
+      "history": 7,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "native",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "native",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "budget_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-08T20:56:12.674708+00:00",
+  "protocol_sha256": "f3234ec49000dab6725e31b0eda28a1cffbba53823a3c6a25a9fa14b2b3bd8bc",
+  "source_pin_count": 66,
+  "input_pin_count": 367,
+  "source_and_input_pins_unchanged": true,
+  "immediate_source_accepted": true,
+  "actual_gpu_prefix_qualified": true,
+  "preparation_audit_passed": true,
+  "tests": {
+    "passed": true,
+    "cases": 11,
+    "report": "archive/study-launches/2026-10-08-recipient-amount-response/tests.json",
+    "report_sha256": "92450da6d11ed15aace623bedcf7eb028646002aeed039aedc54e9ed5fbdf624",
+    "scope": "Both phase pipelines tested before preparation; same immutable runner/test source. Actual delayed arrays independently audited and CUDA-qualified."
+  },
+  "workers": 8,
+  "source_gate_count": 48,
+  "files_sha256": {
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/run_gpu_prefix.py": "ff4065c4cf4607be17f7cb92a3af019276a0651edf8e1ad598f5e61c22ecef25",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/gpu-prefix.json": "f7b7422bb9ff8e925c508cc5dd2cc4014f176c24e792dfd141babac927771f82",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/preparation-audit.json": "38488ddee56d18a5ad93d7bd6691f33cc879a27642a21044022a04a42b36e0b4",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/audit_inputs.py": "a503730c5e3ef10b2d60364aca5fccd90288306308681213c21345a5fe21bc17",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/audit-source-rate-check.json": "f9ec892749ecf9a6615798e8e7557c0e2b5a697b2882611f0b552dc5c9f5fc37",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/gpu-prefix.log": "2aaa3f117032b4a1c03e8e41776f5de2eec7a0c849976b0296e124cc84cc353d",
+    "archive/study-launches/2026-10-08-recipient-amount-delayed-response/prepare.log": "f364567b60fead16efe935aed86693228027ae5f25309bf2c82624f09ecf6628"
+  },
+  "scope": "Delayed phase of the same initially amount-matched experiment.144 logical starts,120 within-label distinct problems,118 physically distinct ignoring labels;432 GPU/CPU paths and288 reference solves. No new histories, rematching or continued amount clamp."
+}

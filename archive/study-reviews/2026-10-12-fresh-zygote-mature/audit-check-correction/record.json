@@ -1,0 +1,13 @@
+{
+  "reason": "Audit-only constant-state comparison accidentally included the per-step rounding diagnostic. Saved t18/t21 metadata differ only in time/step_number, while the only purported constant array changing is rounding. It is supplied anew by mechanics each step; it must be preserved at initial inheritance and restart, but is not a conserved state. Remove it only from the time-invariant comparison; keep its dtype/shape checks, exact initial byte comparison, restart archive equality, source/input pins and every registered tolerance unchanged. No production source or result changed.",
+  "files": [
+    {
+      "path": "archive/study-reviews/2026-10-12-fresh-zygote-mature/audit-check-correction/review_saved_evidence.py",
+      "sha256": "7619ffd79da2caf9bf576cc5077ca500885f9146674b6239334774610c0677f4"
+    },
+    {
+      "path": "archive/study-reviews/2026-10-12-fresh-zygote-mature/audit-check-correction/review.log",
+      "sha256": "a0f4fa0e447ec3f6b37cfc2efd5235b560ac2cac3e43a5912b57794075c6b121"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "superseded_before_run": true,
+  "reason": "Add strict evolved-state constructor guard, event-boundary fragmentation audit, coordinator lock and failure reporting before any qualification run.",
+  "prepared_protocol_sha256": "3195785294d308d8c8a366bd8d41fd8c1512fbe59310d34843b5328530759c03",
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/qualify_development_gpu.py": "80bbfb752c55fda20ca522e29921e1b388a6f29d4aefcd332011a439a4c53ac9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_gpu.py": "206e69631a53799ae62c38cde733cdb105484535ae5fae5c409d4e8a67813ce0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_reference.py": "75d98a3950c9ac2638d3d4b2e1eae3e9fcc8003efa68529a189e6e357c35ee66",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_development_kernels.cu": "afb406b026f3c106b8cd375fa18e72896284c0f0aebbfedb3455967f4e8f2f8b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_chemistry.py": "2cd3bfa3fc1ea9e880280e9690aa3b2abe893eda4787a59fc766965887ed9d11",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_moving.py": "f2dd90cc3c9a93364011482367c86558c1a930e093839fab2f5dee65e27495d2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": "39ad8daf28b79e1ecb3fd7b430d6f249bf14d5a8fb4e69aecb9bfd4f39071b79",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": "96dbf041fd896095263f3adfa5424d6efea84b56912a4859877c7b454f846807",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": "abb048cd98ec5fe315bb080c56b21a0e137750604ec8e21be2e5e8a37978213d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": "cde4e3658c50d91e77d8f9cac44699763dfebf942f69267f27e41d191a8f7784",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_development_gpu.py": "ce93fb8dd6e45c8e39dab552d0ffcc9f664cdeb6dd572eb25ec6d8b1af971b18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_gpu_qualification.md": "d2b94742fed90ac4c0e8de7d805eec15c7780916a3063d61e5d5f7b14e5a61c8"
+  }
+}

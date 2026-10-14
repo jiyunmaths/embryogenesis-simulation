@@ -1,0 +1,207 @@
+{
+  "post_run_descriptive": true,
+  "no_new_acceptance_threshold": true,
+  "rows": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 9.547918011776802e-14,
+      "late_max_raw_log_reference_difference": 5.566880290059965e-12
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 2.4136248555353816e-13,
+      "late_max_raw_log_reference_difference": 5.5488946770611375e-12
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.5565326805243483e-13,
+      "late_max_raw_log_reference_difference": 6.447287148582425e-12
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 2.6068036618202073e-13,
+      "late_max_raw_log_reference_difference": 6.539435659625715e-12
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.5609735726228482e-13,
+      "late_max_raw_log_reference_difference": 1.5609735726228482e-13
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.5698553568198482e-13,
+      "late_max_raw_log_reference_difference": 1.5698553568198482e-13
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 4.440892098500617e-15,
+      "late_max_raw_log_reference_difference": 4.507505479978237e-14
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.3999912340524203e-13,
+      "late_max_raw_log_reference_difference": 1.3999912340524203e-13
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 2.5601742947852833e-13,
+      "late_max_raw_log_reference_difference": 6.53450626963126e-11
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.1335377081423491e-13,
+      "late_max_raw_log_reference_difference": 6.426836840696135e-11
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 4.6185277824405446e-14,
+      "late_max_raw_log_reference_difference": 5.935740787953087e-11
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.0702549957385936e-13,
+      "late_max_raw_log_reference_difference": 6.025746568564831e-11
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 2.5490720645390343e-13,
+      "late_max_raw_log_reference_difference": 2.4112933871862847e-12
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.4499512701605595e-13,
+      "late_max_raw_log_reference_difference": 2.2621904349787777e-12
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.4854784069483491e-13,
+      "late_max_raw_log_reference_difference": 1.0961231922130178e-12
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 9.703349235224339e-14,
+      "late_max_raw_log_reference_difference": 1.1106671138356234e-12
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.2323475573338478e-13,
+      "late_max_raw_log_reference_difference": 4.948308429797736e-11
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.252331571777098e-13,
+      "late_max_raw_log_reference_difference": 4.898059735700728e-11
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.4099832412738493e-13,
+      "late_max_raw_log_reference_difference": 3.3589020454480985e-11
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.3866685577569167e-13,
+      "late_max_raw_log_reference_difference": 3.6472491694138454e-11
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "surrounding": "S",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 1.2212453270875977e-13,
+      "late_max_raw_log_reference_difference": 1.8107737531652697e-12
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "surrounding": "S",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.3800072196091647e-13,
+      "late_max_raw_log_reference_difference": 1.6155965454358328e-12
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "surrounding": "R",
+      "physics": "S",
+      "endpoint_max_raw_log_reference_difference": 2.4391599851017663e-13,
+      "late_max_raw_log_reference_difference": 5.446754158812501e-13
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "surrounding": "R",
+      "physics": "R",
+      "endpoint_max_raw_log_reference_difference": 1.3722356584367876e-13,
+      "late_max_raw_log_reference_difference": 5.605516051333987e-13
+    }
+  ],
+  "maximum_endpoint_raw_log_reference_difference": 2.6068036618202073e-13,
+  "maximum_late_raw_log_reference_difference": 6.53450626963126e-11,
+  "inputs_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/protocol.json": "91d42c7d7efcee42e3c14eff86d7ba2e5df9f45d645fc0bc0ab483d97e568e8d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/fine/paths.npz": "38bf64269da9184485eaf36ca7ec9072f9665670ee9de98a2adcd71b4b52013c"
+  },
+  "inputs_unchanged": true,
+  "script_sha256": "1958760e3a0ddbee8627f1a22419ec8261fbf9368583870731f1c6f4f96ca999",
+  "scope": "Alternative initial recipient reference pairs at fixed surrounding start and physical context. Descriptive endpoint/late comparison only; no equivalence, attractor uniqueness or new scientific replicate."
+}

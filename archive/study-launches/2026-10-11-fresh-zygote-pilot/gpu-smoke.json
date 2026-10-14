@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "passed": true,
+      "case": "h1101_off_development",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.3065876080072485,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_off_development/prefix-gpu.npz": "fbfbdab48f42917fb3591044a2d44fd5a656d1941e60c00e51a4ff9a2d8bb910",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_off_development/prefix-cpu.npz": "bc3dedd31a3cc7c8b5d05effd96d012077d0af8ac76f3ee12fdc3aa488a8cebc"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_off_development_half",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.223780103959143,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_off_development_half/prefix-gpu.npz": "d755d620c23c953c106347199e45a6c1cc98d53d42586d0ec722835f5720aba5",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_off_development_half/prefix-cpu.npz": "3ca0c986278b61c0838cab542823aeb4e41fce2983700b54d2dcf6b428e6131f"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_tension_adhesion_development",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.7201572420308366,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_tension_adhesion_development/prefix-gpu.npz": "0ff4d79e4cd48d63a0857290ee21ba891a72aa64f42eb6b0964661dcca4d0562",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_tension_adhesion_development/prefix-cpu.npz": "944e19700e10a1da84ce51c0f61606d085bbef5526f4b732bb1c3c330cab4e9b"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_tension_adhesion_development_half",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 4.078787898004521,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_tension_adhesion_development_half/prefix-gpu.npz": "d52b7ffcd3b59ae0a27a885eb0409da8d27a759e7a9b5c5724f734bdbce3f249",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_tension_adhesion_development_half/prefix-cpu.npz": "9d7cbeba1eb44555d3e249eb81e79f4b43a6ac073e6c2379cbd319ec24f33eb7"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_polarity_development",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.823093825019896,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_polarity_development/prefix-gpu.npz": "58c7ff5dfa51f4d117361054f1e24f0ad0bb91ed6ee037bd185abc6b817d8170",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_polarity_development/prefix-cpu.npz": "10078faba87f361bbc1a4583d6c76f4712f4e0d8ff775b8f41347225cba0219c"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_polarity_development_half",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.5467778440215625,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_polarity_development_half/prefix-gpu.npz": "83db0aa3c4d2166e885edbcb42b94b431fd911fc2dfe6bf1b3360938ac861ccc",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_polarity_development_half/prefix-cpu.npz": "e075309159fc5d4557fab5157de48a8afc730aa5b046d0b5718456dc7e00482e"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_full_development",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.58149275300093,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_full_development/prefix-gpu.npz": "213fdfa847d2a313d7318793b71dd6d9c771dbc2d2b492e3a1a0a06da0f62732",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_full_development/prefix-cpu.npz": "d7d3e4fcd21590819f0858dc8f1950a122038c785bfc8ef1d1dc6b1372c50e6b"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_full_development_half",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "exact_gpu_restart": true,
+      "seconds": 3.482084774004761,
+      "protocol_sha256": "d1e4fc6da62990a81731d7384e8c2ef5525410b4cd7e1d80184ec26d32314f6f",
+      "evidence_sha256": {
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_full_development_half/prefix-gpu.npz": "f6914246dde162de15b50476b32c4bf3d0733ff4d080ee88f6d5ed1f08377d70",
+        "/tmp/fresh-zygote-pilot-gpu-prefix-v1/h1101_full_development_half/prefix-cpu.npz": "0901d257407143f0dc2ac67962353fc6a76649ece0ad8ae678c8155cba047b1d"
+      }
+    }
+  ]
+}

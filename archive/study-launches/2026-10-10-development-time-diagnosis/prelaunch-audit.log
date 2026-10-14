@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "protocol_sha256": "469784ecd00709ace6ad426a4728fe6ddb428a343a2263d3ca40795a5d519571",
+  "source_count": 27,
+  "input_count": 38,
+  "preserved_count": 1592,
+  "initial_states": [
+    {
+      "case": "off_coarse",
+      "dt": 0.00375,
+      "initial_arrays_and_rng_match": true
+    },
+    {
+      "case": "off_fine",
+      "dt": 0.001875,
+      "initial_arrays_and_rng_match": true
+    },
+    {
+      "case": "off_half",
+      "dt": 0.0009375,
+      "initial_arrays_and_rng_match": true
+    },
+    {
+      "case": "off_quarter",
+      "dt": 0.00046875,
+      "initial_arrays_and_rng_match": true
+    }
+  ],
+  "instrumentation_gate_sha256": "eb7e9ec05824a37a390d3bc7ace5bf3170f375e3851bafe56e75d71af52353e4",
+  "test_log_sha256": "8c77e8738bc07cb51285b1e32dc25082f9ee0caf4b60a7a182ea43aa0c90d3e4",
+  "script_sha256": "610c51a1b30a5f08c8084dd0a3edce26f969dbf5ae9b755288e41da9474513ff",
+  "new_scientific_histories": 0
+}

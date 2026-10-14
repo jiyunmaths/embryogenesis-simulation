@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "total_paths": 48,
+  "distinct_initial_value_problems": 24,
+  "maximum_initial_amount_relative_error": 2.220446049250313e-16
+}

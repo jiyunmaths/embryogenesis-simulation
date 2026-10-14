@@ -1,0 +1,314 @@
+[
+  {
+    "history": 1101,
+    "branch": "off",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 11.7,
+      "first_sustained_onset_elapsed": 11.7,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.258904322965013,
+      "final_log_sd": 1.4084309155392294,
+      "sampled_transitions": [
+        {
+          "elapsed": 11.7,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.4084309155392294,
+    "initial_contrast": 0.003588514870726979,
+    "conductance_decline_percent": 42.882758312113545,
+    "initial_modes": 9,
+    "final_modes": 5,
+    "final_uniform_growth": 0.17110634508148692,
+    "final_axis_ratio": 1.4082758594955131
+  },
+  {
+    "history": 1101,
+    "branch": "tension_adhesion",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 11.7,
+      "first_sustained_onset_elapsed": 11.7,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.2732908607297095,
+      "final_log_sd": 1.3614604268636379,
+      "sampled_transitions": [
+        {
+          "elapsed": 11.7,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.3614604268636379,
+    "initial_contrast": 0.003611015553754401,
+    "conductance_decline_percent": 43.79662940972801,
+    "initial_modes": 9,
+    "final_modes": 5,
+    "final_uniform_growth": 0.16353358753648806,
+    "final_axis_ratio": 1.4087938321803826
+  },
+  {
+    "history": 1101,
+    "branch": "polarity",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.15,
+      "first_sustained_onset_elapsed": 12.15,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.2470244734625962,
+      "final_log_sd": 1.436361116843866,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.15,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.436361116843866,
+    "initial_contrast": 0.0035414568624654746,
+    "conductance_decline_percent": 49.94146618672236,
+    "initial_modes": 8,
+    "final_modes": 5,
+    "final_uniform_growth": 0.10632271157905304,
+    "final_axis_ratio": 1.4172700957346258
+  },
+  {
+    "history": 1101,
+    "branch": "full",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.15,
+      "first_sustained_onset_elapsed": 12.15,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.2585867668526929,
+      "final_log_sd": 1.454774625608696,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.15,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.454774625608696,
+    "initial_contrast": 0.003564137472713679,
+    "conductance_decline_percent": 50.84857369181257,
+    "initial_modes": 8,
+    "final_modes": 4,
+    "final_uniform_growth": 0.09551858115804013,
+    "final_axis_ratio": 1.4176215527522171
+  },
+  {
+    "history": 1102,
+    "branch": "off",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 13.799999999999999,
+      "first_sustained_onset_elapsed": 13.799999999999999,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3391771183737198,
+      "final_log_sd": 1.4187627404375045,
+      "sampled_transitions": [
+        {
+          "elapsed": 13.799999999999999,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.4187627404375045,
+    "initial_contrast": 0.0019419320713861118,
+    "conductance_decline_percent": 42.178493454861055,
+    "initial_modes": 9,
+    "final_modes": 5,
+    "final_uniform_growth": 0.17728310322785923,
+    "final_axis_ratio": 1.4006660480087323
+  },
+  {
+    "history": 1102,
+    "branch": "tension_adhesion",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 13.65,
+      "first_sustained_onset_elapsed": 13.65,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3538407486840762,
+      "final_log_sd": 1.4364444235884526,
+      "sampled_transitions": [
+        {
+          "elapsed": 13.65,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.4364444235884526,
+    "initial_contrast": 0.0019560725657752887,
+    "conductance_decline_percent": 43.09488338998744,
+    "initial_modes": 9,
+    "final_modes": 5,
+    "final_uniform_growth": 0.16900177356335977,
+    "final_axis_ratio": 1.4021790306422341
+  },
+  {
+    "history": 1102,
+    "branch": "polarity",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 14.399999999999999,
+      "first_sustained_onset_elapsed": 14.399999999999999,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3728668021117807,
+      "final_log_sd": 1.5013695630139159,
+      "sampled_transitions": [
+        {
+          "elapsed": 14.399999999999999,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.5013695630139159,
+    "initial_contrast": 0.001922705678641191,
+    "conductance_decline_percent": 49.108525886103685,
+    "initial_modes": 8,
+    "final_modes": 5,
+    "final_uniform_growth": 0.11629769357324804,
+    "final_axis_ratio": 1.4060898149148873
+  },
+  {
+    "history": 1102,
+    "branch": "full",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 14.25,
+      "first_sustained_onset_elapsed": 14.25,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3862939619932808,
+      "final_log_sd": 1.5191674066783294,
+      "sampled_transitions": [
+        {
+          "elapsed": 14.25,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.5191674066783294,
+    "initial_contrast": 0.0019364117512695258,
+    "conductance_decline_percent": 50.01378203501563,
+    "initial_modes": 8,
+    "final_modes": 5,
+    "final_uniform_growth": 0.10541073013680435,
+    "final_axis_ratio": 1.4068715818762245
+  },
+  {
+    "history": 1103,
+    "branch": "off",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.6,
+      "first_sustained_onset_elapsed": 12.6,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3145272239791015,
+      "final_log_sd": 1.4032442894291135,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.6,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.4032442894291135,
+    "initial_contrast": 0.0030918097141869323,
+    "conductance_decline_percent": 41.03454152845051,
+    "initial_modes": 9,
+    "final_modes": 6,
+    "final_uniform_growth": 0.2204791578425498,
+    "final_axis_ratio": 1.4083565871780526
+  },
+  {
+    "history": 1103,
+    "branch": "tension_adhesion",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.45,
+      "first_sustained_onset_elapsed": 12.45,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.3301445380176684,
+      "final_log_sd": 1.4218752592165282,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.45,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.4218752592165282,
+    "initial_contrast": 0.0031112813210923762,
+    "conductance_decline_percent": 41.89606510704169,
+    "initial_modes": 9,
+    "final_modes": 6,
+    "final_uniform_growth": 0.21536854365016023,
+    "final_axis_ratio": 1.4085426874293836
+  },
+  {
+    "history": 1103,
+    "branch": "polarity",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.9,
+      "first_sustained_onset_elapsed": 12.9,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.1751527520581868,
+      "final_log_sd": 1.3605132048770725,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.9,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.3605132048770725,
+    "initial_contrast": 0.0030062470560131335,
+    "conductance_decline_percent": 47.948093740572354,
+    "initial_modes": 9,
+    "final_modes": 5,
+    "final_uniform_growth": 0.16973709934095105,
+    "final_axis_ratio": 1.415840621208892
+  },
+  {
+    "history": 1103,
+    "branch": "full",
+    "primary": {
+      "threshold": 0.1,
+      "first_crossing_elapsed": 12.75,
+      "first_sustained_onset_elapsed": 12.75,
+      "sustained_formation": true,
+      "late_persistent": true,
+      "late_min_log_sd": 1.1868358228568532,
+      "final_log_sd": 1.376234076911926,
+      "sampled_transitions": [
+        {
+          "elapsed": 12.75,
+          "direction": "up"
+        }
+      ]
+    },
+    "final_contrast": 1.376234076911926,
+    "initial_contrast": 0.003024538896907933,
+    "conductance_decline_percent": 49.43261320849892,
+    "initial_modes": 9,
+    "final_modes": 4,
+    "final_uniform_growth": 0.1587548513231285,
+    "final_axis_ratio": 1.4142336847615453
+  }
+]

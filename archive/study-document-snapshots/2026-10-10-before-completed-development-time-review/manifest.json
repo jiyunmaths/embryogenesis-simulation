@@ -1,0 +1,8 @@
+{
+  "reporting_files_sha256": {
+    "README.md": "4e54351abf2eeb254199588371a04ae05bd7be94c203123686be40254ad4daff",
+    "docs/plan.md": "b9fbc18d14da1dab70fbdf59b907d6d86fa3f7d57b29647500ae3c97e2950303",
+    "docs/development_time_diagnosis_launch.md": "34b8435f5bed3768836df3a30128b0ce66b4b93c0e6a5e3d805bf011550ffc8e"
+  },
+  "purpose": "Preserve reporting before completed feedback-off timestep review; no model or original evidence changes."
+}

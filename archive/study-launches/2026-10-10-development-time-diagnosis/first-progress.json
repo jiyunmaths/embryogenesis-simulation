@@ -1,0 +1,51 @@
+{
+  "observed_utc": "2026-10-10T11:32:47.147698+00:00",
+  "status": {
+    "state": "running",
+    "case": "off_fine",
+    "completed": [
+      "off_coarse"
+    ],
+    "total": 4
+  },
+  "progress": {
+    "off_coarse": {
+      "state": "completed",
+      "time": 18.0,
+      "cells": 16,
+      "events": 15,
+      "seconds": 70.04360680701211,
+      "failure": null,
+      "audit": {
+        "max_volume_error": 0.016148282093776722,
+        "min_radius": 5.099106921926802,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    "off_fine": {
+      "state": "running",
+      "time": 4.95,
+      "cells": 2,
+      "events": 1,
+      "active_divisions": 0,
+      "seconds": 11.229124056990258,
+      "audit": {
+        "max_volume_error": 0.006409108626624249,
+        "min_radius": 10.256478381821966,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "projection": {
+        "calls": 559,
+        "correction_magnitude_max": 0.0008979463318530573,
+        "before_relative_volume_error_max": 0.0012719025882982349,
+        "after_relative_volume_error_max": 9.980089754613175e-08
+      }
+    }
+  },
+  "protocol_sha256": "469784ecd00709ace6ad426a4728fe6ddb428a343a2263d3ca40795a5d519571",
+  "source_count": 27,
+  "input_count": 38,
+  "source_input_pins_unchanged": true
+}

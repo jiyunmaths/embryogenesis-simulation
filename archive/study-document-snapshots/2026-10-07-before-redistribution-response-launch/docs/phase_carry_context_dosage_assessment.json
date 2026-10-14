@@ -1,0 +1,972 @@
+{
+  "reviewed_utc": "2026-10-07T21:19:51.622192+00:00",
+  "protocol_sha256": "547d648ebb819e8f892c523328832f57dea7694ccf21b22fcb0848cc3ed02a2a",
+  "full_study_accepted": true,
+  "original_summary_sha256": "7137d9b9a1557798d1ba54eed6141a789f8ee8a3d0eb1c122f3871c7144e0e38",
+  "original_status_sha256": "13ed4570586850051eb689120f4a4ed9a27d83d31f30fb9a94fc31f29fc040cb",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "paths": 42,
+  "new_paths": 24,
+  "reused_paths": 18,
+  "source_hashes_verified": 51,
+  "input_hashes_verified": 1073,
+  "context_gates_verified": 42,
+  "new_context_gates_verified": 24,
+  "reused_context_gates_verified": 18,
+  "prepared_states_verified": 42,
+  "immutable_paths_verified": 1492,
+  "pilot_reports": 3,
+  "full_reports": 3,
+  "full_mechanical_pairs": 21,
+  "full_recipient_comparisons": 6,
+  "full_factorial_contrasts": 36,
+  "quality_extrema": {
+    "max_volume_error": 0.011393229344595524,
+    "min_radius": 5.106883358087768,
+    "max_clipping": 0.0,
+    "boundary_max": 1.512853131657721e-08,
+    "dilution_error_max": 4.440892098500626e-16
+  },
+  "minimum_whole_window_contrast": 1.325287179166762,
+  "full_timestep_maxima": {
+    "chemical_log_max": 4.338393424601558e-05,
+    "polarity_abs_max": 3.118098619588061e-06,
+    "relative_axis_max": 4.992557167682321e-08,
+    "relative_volume_max": 9.715008136845782e-07,
+    "relative_transport_max": 5.306687172074917e-06,
+    "final_phi_abs_max": 1.7285346984863281e-06
+  },
+  "max_state_metric_error": 4.052169137924743e-06,
+  "max_relative_initial_amount_error": 3.8354969116965644e-16,
+  "max_initial_formula_log_error": 5.828670879282072e-16,
+  "graph_observations_verified": 16842,
+  "graph_diagnostic_maxima": {
+    "constant_error": 5.551115123125783e-16,
+    "mass_error": 8.326672684688674e-17,
+    "symmetry_error": 3.3306690738754696e-16,
+    "spectral_error": 0.0,
+    "growth_error": 1.6653345369377348e-15
+  },
+  "effect_screen": 0.01,
+  "history_outcomes": {
+    "7": {
+      "spatial_original_dose": 2,
+      "spatial_reference_dose": 2,
+      "dosage_original_distribution": 0,
+      "dosage_reference_distribution": 0,
+      "total_reset": 2,
+      "interaction": 0
+    },
+    "8": {
+      "spatial_original_dose": 2,
+      "spatial_reference_dose": 2,
+      "dosage_original_distribution": 0,
+      "dosage_reference_distribution": 0,
+      "total_reset": 2,
+      "interaction": 0
+    },
+    "9": {
+      "spatial_original_dose": 2,
+      "spatial_reference_dose": 2,
+      "dosage_original_distribution": 0,
+      "dosage_reference_distribution": 0,
+      "total_reset": 2,
+      "interaction": 0
+    }
+  },
+  "recipients": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 0.01549428997598115,
+          "effect_detected": true,
+          "full_log_rms": 0.01645071456602955,
+          "final_log_difference": [
+            0.015379418068316882,
+            0.014119245130074828
+          ],
+          "final_species_ratios": [
+            1.0154982899299196,
+            1.01421939245136
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 0.015490120484824519,
+          "effect_detected": true,
+          "full_log_rms": 0.016683825879617364,
+          "final_log_difference": [
+            0.01537541507021081,
+            0.014115545457162572
+          ],
+          "final_species_ratios": [
+            1.0154942249003245,
+            1.0142156401782878
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 9.587244201091008e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.01015246736497473,
+          "final_log_difference": [
+            9.29715299032019e-06,
+            8.563332147486225e-06
+          ],
+          "final_species_ratios": [
+            1.000009297196209,
+            1.000008563368813
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 5.417224498151563e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.009442664228369356,
+          "final_log_difference": [
+            5.294154884247226e-06,
+            4.863659235229689e-06
+          ],
+          "final_species_ratios": [
+            1.0000052941688984,
+            1.0000048636710628
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 0.015499706978475,
+          "effect_detected": true,
+          "full_log_rms": 0.01648851903223898,
+          "final_log_difference": [
+            0.01538471222320113,
+            0.014124108789310058
+          ],
+          "final_species_ratios": [
+            1.0155036661493824,
+            1.0142243252808705
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 4.1701171899340864e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.0008329563956031925,
+          "final_log_difference": [
+            -4.002998106072964e-06,
+            -3.6996729122565353e-06
+          ],
+          "final_species_ratios": [
+            0.9999959970099059,
+            0.9999963003339315
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 0.02881751051457764,
+        "redistributed": 0.025197891464992194,
+        "bulk": 0.05763983710487803
+      },
+      "final_target_concentrations": {
+        "sham": [
+          0.964947964920474,
+          0.9677686364947108
+        ],
+        "reset": [
+          0.979908196020127,
+          0.9815344923768361
+        ],
+        "redistributed": [
+          0.9799030082480974,
+          0.9815297185391467
+        ],
+        "bulk": [
+          0.9649569362310353,
+          0.9677769238544707
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.071961422919388,
+          1.0614123729908613
+        ],
+        "redistributed": [
+          1.071965116950488,
+          1.0614190705973798
+        ],
+        "bulk": [
+          0.9999950747013081,
+          0.9999908661994825
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.0859302090781042,
+          1.0721887028960446
+        ],
+        "redistributed": [
+          1.0,
+          1.0000000000000004
+        ],
+        "bulk": [
+          1.085930209078104,
+          1.0721887028960444
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 0.02520498179586816,
+          "effect_detected": true,
+          "full_log_rms": 0.025895099128099654,
+          "final_log_difference": [
+            0.026967560630619225,
+            0.02237139406238131
+          ],
+          "final_species_ratios": [
+            1.027334476140396,
+            1.0226235102518824
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 0.025205303697867235,
+          "effect_detected": true,
+          "full_log_rms": 0.025895190089732064,
+          "final_log_difference": [
+            0.02696753033278476,
+            0.022372241220274258
+          ],
+          "final_species_ratios": [
+            1.0273344450143864,
+            1.0226243765758274
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 7.04120120798533e-05,
+          "effect_detected": false,
+          "full_log_rms": 0.00992658905445466,
+          "final_log_difference": [
+            7.46153797379634e-05,
+            6.391132762750829e-05
+          ],
+          "final_species_ratios": [
+            1.0000746181635347,
+            1.00006391337
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 7.074335142661473e-05,
+          "effect_detected": false,
+          "full_log_rms": 0.00987716732649316,
+          "final_log_difference": [
+            7.458508190349988e-05,
+            6.475848552045527e-05
+          ],
+          "final_species_ratios": [
+            1.0000745878634398,
+            1.0000647605823965
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 0.025275706824836743,
+          "effect_detected": true,
+          "full_log_rms": 0.025792435452050125,
+          "final_log_difference": [
+            0.027042145712522725,
+            0.022436152547901766
+          ],
+          "final_species_ratios": [
+            1.0274111028240094,
+            1.0226897359459786
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 5.878827503089591e-07,
+          "effect_detected": false,
+          "full_log_rms": 0.00019835456211899225,
+          "final_log_difference": [
+            -3.029783446351075e-08,
+            8.471578929469814e-07
+          ],
+          "final_species_ratios": [
+            0.999999969702166,
+            1.0000008471582518
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 0.032475108000579164,
+        "redistributed": 0.0376671343123294,
+        "bulk": 0.06917452839144386
+      },
+      "final_target_concentrations": {
+        "sham": [
+          0.016508860377315228,
+          0.1778658419523749
+        ],
+        "reset": [
+          0.016961386446625034,
+          0.1819015709400834
+        ],
+        "redistributed": [
+          0.016960121427404072,
+          0.18188979165124414
+        ],
+        "bulk": [
+          0.016510092238158636,
+          0.17787720995774195
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9424176063856959,
+          0.9632398376873569
+        ],
+        "redistributed": [
+          0.942412381689303,
+          0.96323013895815
+        ],
+        "bulk": [
+          1.0000038030302694,
+          1.000007074087884
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9321790693465529,
+          0.9599539540963667
+        ],
+        "redistributed": [
+          1.0000000000000002,
+          1.0000000000000002
+        ],
+        "bulk": [
+          0.9321790693465528,
+          0.9599539540963665
+        ]
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 0.1354580156349788,
+          "effect_detected": true,
+          "full_log_rms": 0.13742101199387388,
+          "final_log_difference": [
+            -0.13870476381836216,
+            -0.12598988395334157
+          ],
+          "final_species_ratios": [
+            0.8704849891887138,
+            0.8816237652854508
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 0.1354641062625124,
+          "effect_detected": true,
+          "full_log_rms": 0.1382683095278804,
+          "final_log_difference": [
+            -0.13871007441140723,
+            -0.12599475642436353
+          ],
+          "final_species_ratios": [
+            0.8704803664094592,
+            0.8816194696096674
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 6.580359784105899e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.005184072761169234,
+          "final_log_difference": [
+            5.731780113427121e-06,
+            5.228698385262298e-06
+          ],
+          "final_species_ratios": [
+            1.00000573179654,
+            1.0000052287120549
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 2.450864843675807e-07,
+          "effect_detected": false,
+          "full_log_rms": 0.008482176720318578,
+          "final_log_difference": [
+            4.2118706834737285e-07,
+            3.5622736329829485e-07
+          ],
+          "final_species_ratios": [
+            1.0000004211871572,
+            1.0000003562274267
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 0.13545779764764787,
+          "effect_detected": true,
+          "full_log_rms": 0.13890577413808963,
+          "final_log_difference": [
+            -0.1387043426312938,
+            -0.12598952772597827
+          ],
+          "final_species_ratios": [
+            0.8704853558258117,
+            0.8816240793440161
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 6.364466858603615e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.0038886473887269606,
+          "final_log_difference": [
+            -5.310593045079748e-06,
+            -4.872471021964003e-06
+          ],
+          "final_species_ratios": [
+            0.9999946894210561,
+            0.9999951275408485
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 0.16445679326624432,
+        "redistributed": 0.15202871036150145,
+        "bulk": 0.03053474230224768
+      },
+      "final_target_concentrations": {
+        "sham": [
+          1.11942171656772,
+          1.1077223973322103
+        ],
+        "reset": [
+          0.9744402112655927,
+          0.9765947387167563
+        ],
+        "redistributed": [
+          0.9744398008440632,
+          0.9765943908270495
+        ],
+        "bulk": [
+          1.119428132865242,
+          1.1077281892936628
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.081569161841963,
+          1.0801895311654373
+        ],
+        "redistributed": [
+          1.081573655723838,
+          1.08019767672201
+        ],
+        "bulk": [
+          0.999996213815475,
+          0.9999931848965331
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.1096844795371614,
+          1.1024308360178572
+        ],
+        "redistributed": [
+          0.9999999999999999,
+          0.9999999999999997
+        ],
+        "bulk": [
+          1.1096844795371612,
+          1.1024308360178572
+        ]
+      }
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 1.9571964404726558,
+          "effect_detected": true,
+          "full_log_rms": 1.929423676689672,
+          "final_log_difference": [
+            -2.6090082318045287,
+            -0.848508000071307
+          ],
+          "final_species_ratios": [
+            0.07360750916122967,
+            0.42805311095985044
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 1.9572498430374736,
+          "effect_detected": true,
+          "full_log_rms": 1.9297024936324265,
+          "final_log_difference": [
+            -2.6090365333664067,
+            -0.8485241488043753
+          ],
+          "final_species_ratios": [
+            0.07360542598323319,
+            0.4280461985002364
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 0.0001946297552148356,
+          "effect_detected": false,
+          "full_log_rms": 0.011064297898859309,
+          "final_log_difference": [
+            0.00012844155003843838,
+            0.00010202578304974175
+          ],
+          "final_species_ratios": [
+            1.0001284497990075,
+            1.000102030987857
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 9.558057477031683e-05,
+          "effect_detected": false,
+          "full_log_rms": 0.010099364117181318,
+          "final_log_difference": [
+            0.00010013998816038594,
+            8.587704998141987e-05
+          ],
+          "final_species_ratios": [
+            1.0001001450023363,
+            1.0000858807375208
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 1.9571080743492,
+          "effect_detected": true,
+          "full_log_rms": 1.93010573300665,
+          "final_log_difference": [
+            -2.6089080918163683,
+            -0.8484221230213256
+          ],
+          "final_species_ratios": [
+            0.07361488058540659,
+            0.42808987247671776
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 0.0001358109875656524,
+          "effect_detected": false,
+          "full_log_rms": 0.004682226932875459,
+          "final_log_difference": [
+            -2.830156187805244e-05,
+            -1.6148733068321874e-05
+          ],
+          "final_species_ratios": [
+            0.9999716988386074,
+            0.9999838513973218
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 1.9943753340212107,
+        "redistributed": 1.9945378558632885,
+        "bulk": 0.07582800476448712
+      },
+      "final_target_concentrations": {
+        "sham": [
+          0.01111551836158325,
+          0.1397784492148503
+        ],
+        "reset": [
+          0.0008182675568328453,
+          0.05983773849937863
+        ],
+        "redistributed": [
+          0.0008181856196320561,
+          0.05983260003156013
+        ],
+        "bulk": [
+          0.011116946147682666,
+          0.1397927109481048
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9274964642785318,
+          0.9352407729248343
+        ],
+        "redistributed": [
+          0.9274914106230336,
+          0.9352317070364927
+        ],
+        "bulk": [
+          1.0000042921280259,
+          1.00000790026301
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9262187393487621,
+          0.9625271391491372
+        ],
+        "redistributed": [
+          0.9999999999999997,
+          1.0
+        ],
+        "bulk": [
+          0.9262187393487624,
+          0.9625271391491372
+        ]
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 0.13676778677125245,
+          "effect_detected": true,
+          "full_log_rms": 0.13816139382797432,
+          "final_log_difference": [
+            -0.14005393289082857,
+            -0.12725974433193893
+          ],
+          "final_species_ratios": [
+            0.8693113496603582,
+            0.8805049367254612
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 0.13677055690925563,
+          "effect_detected": true,
+          "full_log_rms": 0.13898226461714241,
+          "final_log_difference": [
+            -0.14005676827067615,
+            -0.12726224086994362
+          ],
+          "final_species_ratios": [
+            0.8693088848359705,
+            0.8805027385141673
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 6.565016574883467e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.005517443662213022,
+          "final_log_difference": [
+            6.630826854758798e-06,
+            5.969282231732542e-06
+          ],
+          "final_species_ratios": [
+            1.0000066308488387,
+            1.000005969300048
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 3.7947319565556245e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.008873487691018688,
+          "final_log_difference": [
+            3.7954470071752122e-06,
+            3.472744227048935e-06
+          ],
+          "final_species_ratios": [
+            1.0000037954542098,
+            1.0000034727502571
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 0.13676399229574449,
+          "effect_detected": true,
+          "full_log_rms": 0.13963501215591737,
+          "final_log_difference": [
+            -0.1400501374438214,
+            -0.12725627158771188
+          ],
+          "final_species_ratios": [
+            0.86931464909178,
+            0.8805079944992065
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 2.770529702625077e-06,
+          "effect_detected": false,
+          "full_log_rms": 0.003996352936277421,
+          "final_log_difference": [
+            -2.8353798475835856e-06,
+            -2.496538004683607e-06
+          ],
+          "final_species_ratios": [
+            0.9999971646241721,
+            0.9999975034651116
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 0.1610482315573203,
+        "redistributed": 0.1503931135542694,
+        "bulk": 0.032556756517463786
+      },
+      "final_target_concentrations": {
+        "sham": [
+          1.1138739464709355,
+          1.1026655361673097
+        ],
+        "reset": [
+          0.9683069389088574,
+          0.9709058198540701
+        ],
+        "redistributed": [
+          0.9683032637581586,
+          0.9709024481523437
+        ],
+        "bulk": [
+          1.1138813324007,
+          1.1026721183087476
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.0857897003966455,
+          1.081933399181537
+        ],
+        "redistributed": [
+          1.0857964340945627,
+          1.081945208966533
+        ],
+        "bulk": [
+          0.9999933595269946,
+          0.9999884472506847
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          1.113791575571287,
+          1.103862587405749
+        ],
+        "redistributed": [
+          0.9999999999999999,
+          1.0000000000000002
+        ],
+        "bulk": [
+          1.1137915755712873,
+          1.1038625874057488
+        ]
+      }
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "contrasts": {
+        "spatial_original_dose": {
+          "late_log_rms": 2.1238711047741456,
+          "effect_detected": true,
+          "full_log_rms": 2.081571447816613,
+          "final_log_difference": [
+            -2.862554303878511,
+            -0.8828272820520786
+          ],
+          "final_species_ratios": [
+            0.05712266511414234,
+            0.4136118596271721
+          ]
+        },
+        "spatial_reference_dose": {
+          "late_log_rms": 2.123882409719069,
+          "effect_detected": true,
+          "full_log_rms": 2.081907148359777,
+          "final_log_difference": [
+            -2.862566760955489,
+            -0.8828348448503522
+          ],
+          "final_species_ratios": [
+            0.057121953537137914,
+            0.41360873157594263
+          ]
+        },
+        "dosage_original_distribution": {
+          "late_log_rms": 0.00011616352277165063,
+          "effect_detected": false,
+          "full_log_rms": 0.011827136723638295,
+          "final_log_difference": [
+            0.00012226677803184316,
+            0.00010075104431117587
+          ],
+          "final_species_ratios": [
+            1.000122274252919,
+            1.000100756119868
+          ]
+        },
+        "dosage_reference_distribution": {
+          "late_log_rms": 0.00010453988584678274,
+          "effect_detected": false,
+          "full_log_rms": 0.010789972474347284,
+          "final_log_difference": [
+            0.00010980970105389787,
+            9.31882460375455e-05
+          ],
+          "final_species_ratios": [
+            1.0001098157303598,
+            1.000093192588197
+          ]
+        },
+        "total_reset": {
+          "late_log_rms": 2.123774884037121,
+          "effect_detected": true,
+          "full_log_rms": 2.0823262746748172,
+          "final_log_difference": [
+            -2.862444494177457,
+            -0.8827340938060411
+          ],
+          "final_species_ratios": [
+            0.057128938081331945,
+            0.4136504051868798
+          ]
+        },
+        "interaction": {
+          "late_log_rms": 1.1734762464390192e-05,
+          "effect_detected": false,
+          "full_log_rms": 0.005202758778779341,
+          "final_log_difference": [
+            -1.2457076977945292e-05,
+            -7.562798273630378e-06
+          ],
+          "final_species_ratios": [
+            0.9999875430006111,
+            0.9999924372303243
+          ]
+        }
+      },
+      "transient_peak_log_rms": {
+        "sham": 0.0,
+        "reset": 2.141939395338963,
+        "redistributed": 2.141880758050925,
+        "bulk": 0.0810929222731331
+      },
+      "final_target_concentrations": {
+        "sham": [
+          0.011311753011136808,
+          0.14158715051017848
+        ],
+        "reset": [
+          0.0006462284373645549,
+          0.05856758217779105
+        ],
+        "redistributed": [
+          0.0006461574791090588,
+          0.05856212462182724
+        ],
+        "bulk": [
+          0.011313136147285446,
+          0.14160141628208706
+        ]
+      },
+      "final_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9219658542367031,
+          0.9317953535383277
+        ],
+        "redistributed": [
+          0.9219582711710423,
+          0.9317820224473146
+        ],
+        "bulk": [
+          1.0000065994952856,
+          1.0000116420455654
+        ]
+      },
+      "initial_global_amount_ratios": {
+        "sham": [
+          1.0,
+          1.0
+        ],
+        "reset": [
+          0.9211942832517704,
+          0.9599584683358479
+        ],
+        "redistributed": [
+          0.9999999999999998,
+          1.0000000000000002
+        ],
+        "bulk": [
+          0.9211942832517707,
+          0.9599584683358479
+        ]
+      }
+    }
+  ],
+  "scope": "Three existing mature histories, six nested recipients; no fresh developmental histories. Initial species amounts or distribution are controlled, not their later values. No neighbor-only topology, geometry mediation, response behavior, autonomous or inherited biological identity, spatial convergence or population inference.",
+  "full_assessment": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage-review/2026-10-07T211547Z-final/assessment.json",
+  "full_assessment_sha256": "0bab09120d39a1316ed49f1fddfae31434b67ff1ce9267c979afa251b370b9ba",
+  "audit_provenance": {
+    "script_sha256": "35ab894a6375fa1561d8bba6f5da53cb60deea61287abf2fd1779b6ca9ae27c4",
+    "assessment_sha256": "0bab09120d39a1316ed49f1fddfae31434b67ff1ce9267c979afa251b370b9ba",
+    "plot_data_sha256": "ff82a7a71533a13e7bd801775e9a5a34f6c62cb2ab1c2e7225c5013c87afc113",
+    "recipient_csv_sha256": "6bf38cb5504d08e9d3f58cf962304e1d9ee9fa27873422cd689cd36bc3922c09"
+  },
+  "figure_provenance": {
+    "assessment_sha256": "0bab09120d39a1316ed49f1fddfae31434b67ff1ce9267c979afa251b370b9ba",
+    "plot_data_sha256": "ff82a7a71533a13e7bd801775e9a5a34f6c62cb2ab1c2e7225c5013c87afc113",
+    "script_sha256": "d6ff05bb63c433cf63179e40e7f4a0c643370a60b08f0bbbacc9908e68c8dd04",
+    "figures_sha256": {
+      "context-dosage.png": "e62be0e969aaedb7780a9b94581572a3c9f7f69ffe64613512c654cb636fde4e",
+      "context-dosage.svg": "d4618e814795151af2c88a4ca20490c67978dc0dc2011159fb32665534e4b146"
+    },
+    "primary_window": [
+      36,
+      60
+    ],
+    "effect_screen": 0.01,
+    "independent_histories": 3,
+    "new_histories": 0,
+    "scope": "Late effects at original dosage/distribution and two illustrative fine trajectories. Full factorial results are in the assessment."
+  },
+  "review_directory": "outputs/phase-carry-context-dosage-review/2026-10-07T211547Z-final",
+  "recommended_next": "Delayed negative pulses from amount-preserving redistribution endpoints with own moving controls and fractional/common-amount doses; no new simulation launched."
+}

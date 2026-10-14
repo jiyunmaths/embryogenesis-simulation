@@ -1,0 +1,10 @@
+{
+  "reason": "Before independent completed formation review. Frozen protocols, source, reports and original failures remain unchanged; manuscript and ledger are not edited.",
+  "sha256": {
+    "README.md": "f4c1c9402ecbe1b94e689aa9bddd6c245d2b1d5858ad05ef9b8cc77c36f50fd6",
+    "docs/lab_notebook.md": "a74637c9bee0f1c8ce3d009815922ca95d64c73d0d9d0fe028e7f1d2ede736d8",
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/plan.md": "7ae1fe9b238b24f88a86459de83c22247cba920795756313ab811ff05d264b31",
+    "manuscript/sections.md": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80"
+  }
+}

@@ -3,6 +3,8 @@ __pycache__/
 *.egg-info/
 .venv/
 outputs/
+# Also ignore the local outputs symlink after storage relocation.
+/outputs
 
 
 # Manuscript sources and compiled manuscript, including archive copies, stay local.
@@ -12,3 +14,20 @@ manuscript/
 
 # Local document-rendering scratch files.
 /tmp/
+
+# Small local frozen-chemistry studies; immutable summaries are reviewed separately.
+/output/studies/phase-carry-frozen-response/
+/output/studies/phase-carry-shared-context-response/
+/output/studies/phase-carry-recipient-state-response/
+/output/studies/phase-carry-recipient-state-response-grouped/
+/output/studies/phase-carry-recipient-delayed-response/
+/output/studies/phase-carry-recipient-amount-response/
+/output/studies/phase-carry-recipient-amount-delayed-response/
+/output/studies/compensated-chemistry-validation/
+/output/studies/compensated-recipient-amount-delayed-response/
+/output/studies/moving-recipient-amount-response/
+
+# Local links to data-drive studies, compiled kernels and PDF exports.
+/output/studies
+/output/kernel-cache
+/output/pdf

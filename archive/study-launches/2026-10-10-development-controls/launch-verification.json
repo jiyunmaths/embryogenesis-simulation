@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-10-10T21:22:25.936436+00:00",
+  "launched_pid": 458923,
+  "coordinator_alive_confirmed_by_host": true,
+  "designated_gpu_in_use_confirmed_by_host": true,
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "prelaunch_audit_passed": true,
+  "source_pins_verified": 33,
+  "preserved_pins_verified_before_launch": 1774,
+  "unchanged_runtime_binary": true,
+  "first_path_time": 5.7,
+  "first_path_physical_gates_pass": true,
+  "software_tests_passed": 40,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 12,
+  "full_restart_replays": 12,
+  "acceptance_pending": true,
+  "reporting_sha256": {
+    "README.md": "b2928a259646daaf5d05730b7a4b1e189f3d86f51377a9fa5109ad93e776eadf",
+    "docs/plan.md": "5f61965997da715d524ca1a8abb7579083fe76226f792d3c3268466604daf853",
+    "docs/development_control_qualification_launch.md": "b3867f6eb4f821ac8b0e820bae70a2dde11af6d0b7c9dda09f2b8d255d1dd271"
+  }
+}

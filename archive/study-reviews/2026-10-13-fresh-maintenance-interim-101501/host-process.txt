@@ -1,0 +1,2 @@
+    PID     ELAPSED STAT COMMAND
+ 740991    07:27:35 Rsl  /home/sji/miniforge3/envs/deeplearning/bin/python /home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py --record /home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-10-output/studies-manifest.json --record-sha256 8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6 -m embryo.fresh_zygote_maintenance run /home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance

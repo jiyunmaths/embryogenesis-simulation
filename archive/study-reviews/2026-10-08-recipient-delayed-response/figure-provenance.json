@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "no_new_integrations": true,
+  "no_new_acceptance_threshold": true,
+  "scope": "All primary reference/context/dose effects shown; panel D uses two named examples, not additional scientific tests.",
+  "files_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/plot_results.py": "bf3581872de782933e26d4f44a84bf7af862e940cb8d86fc0ca3b347a0120a9f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/independent_review.json": "6fb018fcbc776e1b0066142aac3cbd43cefbf7831065f683d5b35f580bf32c64",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/waveforms.npz": "b4c15b5fd9a30f16fcb0b63df599cdd5f8a318f78d7186ffd1e81d2863acc306",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/waveforms.npz": "9d8111a8848c395ab04b648de0a743ffdd93c9c98a36a33b56e9696100bab050",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/recipient-summary.csv": "2f92501e7384107fe586afeb6893baa524d3b425ce0100dedfcd263882e4b66b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/recipient-delayed-response.png": "d6862af0ec84fbb65d3d007825ac757e76a8db87aaab0f4957f3edd5050498a7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-delayed-response/recipient-delayed-response.svg": "f3e3ce992e856ba50062fe70eb19e72ab93b380acdac8f3fa94abc6360e2c77d"
+  }
+}

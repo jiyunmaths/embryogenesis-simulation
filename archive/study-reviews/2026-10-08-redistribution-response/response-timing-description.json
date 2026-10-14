@@ -1,0 +1,78 @@
+{
+  "scope": "Descriptive fraction of squared two-species normalized response difference accumulated in the first six units. Does not replace prespecified full60-unit RMS or add an acceptance criterion.",
+  "plot_data_sha256": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd",
+  "records": [
+    {
+      "history": 7,
+      "cell": 22,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9989734876867741
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9990492712599058
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9974844409499952
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.998896323744013
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9995837660365848
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.999584600354799
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.998993052899071
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9992137754240229
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9997884765433159
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9997873822166509
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "dose": "fractional",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9990030310918604
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "dose": "amount",
+      "first_six_units_fraction_of_full_squared_response_difference": 0.9992177200811113
+    }
+  ]
+}

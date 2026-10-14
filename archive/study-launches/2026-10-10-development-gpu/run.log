@@ -1,0 +1,17 @@
+axial_off_coarse 0.9037499999999999 {'max_volume_error': 0.012245321455037428, 'min_radius': 5.225322256726551, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_off_fine 0.901875 {'max_volume_error': 0.012208009653326024, 'min_radius': 5.225388051380621, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_tension_adhesion_coarse 0.9037499999999999 {'max_volume_error': 0.012368958034380984, 'min_radius': 5.225104231590036, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_tension_adhesion_fine 0.901875 {'max_volume_error': 0.012331489459004752, 'min_radius': 5.225170308803821, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_polarity_coarse 0.9037499999999999 {'max_volume_error': 0.012244573531241643, 'min_radius': 5.22532357559042, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_polarity_fine 0.901875 {'max_volume_error': 0.012207215433637675, 'min_radius': 5.2253894518458335, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_full_coarse 0.9037499999999999 {'max_volume_error': 0.012368194695877133, 'min_radius': 5.225105577748015, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+axial_full_fine 0.901875 {'max_volume_error': 0.012330669790762805, 'min_radius': 5.225171754263482, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_off_coarse 0.9037499999999999 {'max_volume_error': 0.01221150637618007, 'min_radius': 5.225381884016176, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_off_fine 0.901875 {'max_volume_error': 0.0121755903492331, 'min_radius': 5.225445215609576, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_tension_adhesion_coarse 0.9037499999999999 {'max_volume_error': 0.012334722629384731, 'min_radius': 5.225164607072133, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_tension_adhesion_fine 0.901875 {'max_volume_error': 0.012298653485368627, 'min_radius': 5.225228212584043, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_polarity_coarse 0.9037499999999999 {'max_volume_error': 0.01221211197616967, 'min_radius': 5.22494485704557, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_polarity_fine 0.901875 {'max_volume_error': 0.012176216272374751, 'min_radius': 5.225010315006756, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_full_coarse 0.9037499999999999 {'max_volume_error': 0.012335345489010274, 'min_radius': 5.2247240980021905, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+oblique_full_fine 0.901875 {'max_volume_error': 0.012299301735866353, 'min_radius': 5.224789819307319, 'max_clipping': 0.0, 'dilution_amount_error': 4.440892098500626e-16}
+{'passed': True, 'new_scientific_histories': 0, 'seconds': 1315.5715353470005}

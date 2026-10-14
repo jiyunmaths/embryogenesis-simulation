@@ -1,0 +1,48 @@
+{
+  "old_pid": 458923,
+  "worker_exited": true,
+  "signal": "SIGINT",
+  "utc": "2026-10-10T22:45:45.356520+00:00",
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.development_control_qualification",
+    "run",
+    "--output",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification"
+  ],
+  "status_before": {
+    "state": "running",
+    "stage": "production",
+    "case": "polarity_space88",
+    "completed": [
+      "tension_adhesion_space88",
+      "tension_adhesion_space104",
+      "tension_adhesion_space120",
+      "tension_adhesion_time120_half"
+    ],
+    "new_total": 12,
+    "replay_total": 12
+  },
+  "progress_before": {
+    "state": "running",
+    "time": 7.949999999999999,
+    "cells": 4,
+    "events": 3,
+    "active_divisions": 0,
+    "seconds": 101.65553233999526,
+    "audit": {
+      "max_volume_error": 0.007921628544854564,
+      "min_radius": 9.944321345819585,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 6349,
+      "correction_magnitude_max": 0.00022506599092317705,
+      "before_relative_volume_error_max": 0.0003910938186134638,
+      "after_relative_volume_error_max": 9.656692179227377e-08
+    }
+  },
+  "reason": "User-requested output storage migration. Completed paths will be reused; interrupted attempt preserved before restarting its unchanged job."
+}

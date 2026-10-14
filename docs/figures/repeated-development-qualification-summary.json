@@ -1,0 +1,20 @@
+{
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/summary.json": "c274085a240cbe90c14e5d79ce3b6db373b23b6dd6712961b47663f5cfc736dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/protocol.json": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-repeated-development-gpu/plot_summary.py": "2affb61dd9de41e1a73b8c4978b9b4185067ff2e7df119e533596eed933489b7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_coarse/gpu-history.json": "ed63a504e8730123e49da5ce2021e57f8c7e1543615126d5d45019003b6e2f7e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_fine/gpu-history.json": "5ef85b5bda32da792eef3f1ba2349dc721a137c72814f42152833b4203111f2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_coarse/gpu-history.json": "648be5906bf1720150a72fb40088e524b794352cb72f815a61c4c3dbf6f1312a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_fine/gpu-history.json": "7918f2844094fe854ab3ff6ac9da20dcb1589cade3c5e76c4da5f75c1bc7a039",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_coarse/gpu-history.json": "8d2452581efb834b63937b32bab5568054220fea26d03cfb82145a0f4df4e94b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_fine/gpu-history.json": "c6185514125dbcbfb3e508ecc2faa90c45619b8af1cc67c849be39b8b007834d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_coarse/gpu-history.json": "8ee843089e0c88c753c1785bc534a400acd41d4be424fef4ddcb29b96870afd3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_fine/gpu-history.json": "6e5a8f9b9c967ed8cf159976ad7e8dc023078f6463fadf9a95d45d03f5c4e67d"
+  },
+  "artifact_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/figures/repeated-development-qualification-summary.png": "de723181a987ed223737a3ef1bccb6fd5b112bcf595484e4eefbae30702d6f01",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/figures/repeated-development-qualification-summary.svg": "42046b65fdf8e24460599452f6f6273289015119a5f0a4bc3025e03ebf268319"
+  },
+  "scope": "Descriptive plot of unchanged production comparisons; independent review is separate."
+}

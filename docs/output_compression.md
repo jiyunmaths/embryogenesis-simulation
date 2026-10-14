@@ -1,5 +1,7 @@
 # Historical output compression — 6 October 2026
 
+**Storage update, 7 October 2026:** outputs now reside on the data drive through the original directory link. The commands below use the relocation-aware wrapper; the dated archive manifests and managers remain unchanged. See [output storage and migration evidence](output_storage.md).
+
 Large files from completed historical studies are held in a lossless archive to
 reduce local storage. This is a change in storage, not a change to the model or
 its scientific evidence. File selection and measured savings are recorded in the
@@ -25,17 +27,17 @@ must be available on `PATH`.
 
 ```bash
 # See the original file paths and which are currently archived.
-python archive/output-compression/2026-10-06/manage_archive.py list
+python scripts/relocated_output_archive.py 2026-10-06 list
 
 # Restore just one study, including its archived viewers and checkpoints.
-python archive/output-compression/2026-10-06/manage_archive.py restore outputs/domain-conservative-extended
+python scripts/relocated_output_archive.py 2026-10-06 restore outputs/domain-conservative-extended
 
 # Restore one original file instead.
-python archive/output-compression/2026-10-06/manage_archive.py restore outputs/domain-conservative-extended/grid-40/trajectory.json
+python scripts/relocated_output_archive.py 2026-10-06 restore outputs/domain-conservative-extended/grid-40/trajectory.json
 
 # Restore every archived original, or verify the compressed archive.
-python archive/output-compression/2026-10-06/manage_archive.py restore --all
-python archive/output-compression/2026-10-06/manage_archive.py verify
+python scripts/relocated_output_archive.py 2026-10-06 restore --all
+python scripts/relocated_output_archive.py 2026-10-06 verify
 ```
 
 Restore a study before rerunning its analysis, opening an archived viewer, or

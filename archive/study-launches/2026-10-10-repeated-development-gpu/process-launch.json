@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-10T04:14:12.485065+00:00",
+  "pid": 352461,
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.qualify_repeated_development",
+    "run",
+    "--output",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2",
+    "--workers",
+    "4"
+  ],
+  "cwd": "/home/sji/Documents/Programming/Python/embryogenesis-simulation",
+  "cpu_workers": 4,
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8",
+  "calibration_sha256": "7f88a70385d932b840b48cc1c832d9cd345a18db85b78a34d92a2e526315d1c8",
+  "prelaunch_audit_sha256": "651422032f8832ebb7f9bfdac112a801b419e4ea539f15140f42f83a82559548",
+  "launcher_sha256": "e16ee5d327809830faacbb64fb87c733dbb8270b94b18c76ad10712873de5784"
+}

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-10T12:41:46.391808+00:00",
+  "pid": 402431,
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.development_space_refinement",
+    "run",
+    "--output",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-space-refinement"
+  ],
+  "cwd": "/home/sji/Documents/Programming/Python/embryogenesis-simulation",
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "new_gpu_paths": 4,
+  "exact_reused_paths": 1,
+  "cpu_full_ladder_workers": 0,
+  "protocol_sha256": "e7551e52d7f2a68c6c2098453ece54046ed642bf4d58db276ea3c3a9d6f99dbe",
+  "prelaunch_audit_sha256": "e0b905c6ff0cf32e38108425ea35145def34ddadb282a4cef2cebefaa480feac",
+  "calibration_sha256": "091f7add2913567f29d5a0a6ffc3586305e102f6c899492c47779d95eccead67",
+  "launcher_sha256": "73261ebae0ee7e2f914fabc41f62bdc953864e3eb9017f45f6ca3474d746f3f7",
+  "new_scientific_histories": 0
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "evidence_hashes": 1660,
+  "ledger_manuscript_files_preserved": 61,
+  "gpu_duplicate_bitwise_checks": 144,
+  "physical_initial_value_problems": 96,
+  "review_source_and_arrays_verified": true,
+  "assessment_links_exist": true,
+  "simulation_sources_or_protocol_changed": false,
+  "new_simulation_launched": false
+}

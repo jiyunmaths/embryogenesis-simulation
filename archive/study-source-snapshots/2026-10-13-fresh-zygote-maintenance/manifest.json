@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_maintenance.py": "82872d888cb8eb997cd917e8cf2b22f197de32ac5ab5129c1bb06e607e9933e4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_fresh_zygote_maintenance.py": "57daa320b92411972fcb003a771347f0705a4cfb9e0b68daf1d8f10d39a4f59a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/fresh_zygote_maintenance.md": "e0073dc8cfc9d9816976677ca47e33d085868f07b534e06aefc557a36df0333f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-13-fresh-zygote-maintenance/launch.py": "c841e863abaa3cd52346ff65b547f8d5f163c4854bf3fb4253e4362ee7732bea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-13-fresh-zygote-maintenance/audit_prelaunch.py": "375256e5ef4ddea66c6ca8745fd165d8005a2ed5e14fdc95b5f882f4b42c9dde"
+  },
+  "purpose": "Frozen separately registered t78\u2013258 maintenance coordinator; production solver and kernels unchanged."
+}

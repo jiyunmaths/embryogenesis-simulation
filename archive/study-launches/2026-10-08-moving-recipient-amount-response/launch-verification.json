@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "state": "launching_full_study",
+  "utc": "2026-10-08T23:30:29.326178+00:00",
+  "protocol_sha256": "9f4e1868215a05744013c2118823a021ec37c809b1bc35aadda8004436f1a963",
+  "method": "compensated SSP-RK2 and error-free dilution, phase-carry CUDA v1",
+  "actual_start_gates": 24,
+  "qualification_audit_sha256": "322a343d2780c92c2d4406786e9e158e6c4667ab0b261577fa3e2006822fcfdc",
+  "physical_gpu": 1,
+  "native_prefix_workers": 4,
+  "native_threads_per_worker": 2,
+  "wait_paths": 24,
+  "response_paths": 72,
+  "total_new_paths": 96,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "scientific_assessment_pending": true,
+  "helper_sha256": "ac9d5faa156d239f24fc4b6bea5152c00805202f46707745ac09e5feab308eab"
+}

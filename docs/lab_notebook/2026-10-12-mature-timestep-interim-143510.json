@@ -1,0 +1,520 @@
+{
+  "observed_utc": "2026-10-12T14:35:10.287246+00:00",
+  "status": {
+    "state": "running_mature",
+    "active": "h1103_full_coarse",
+    "completed": 22,
+    "total": 24,
+    "pairs_completed": 11,
+    "pairs_total": 12,
+    "new_scientific_histories": 0,
+    "qualification_accepted": false,
+    "long_scientific_continuation_started": false,
+    "seconds": 7088.464928786969,
+    "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04"
+  },
+  "status_age_seconds": 97.87092399597168,
+  "results_count": 22,
+  "pairs_count": 11,
+  "prefixes_count": 23,
+  "means": {
+    "production_seconds": {
+      "coarse": 187.19854097044498,
+      "fine": 259.61222632263195
+    },
+    "prefix_seconds": 86.30643315728854,
+    "comparison_seconds": 5.067295052788475
+  },
+  "remaining_seconds": 499.78084922392475,
+  "estimated_finish_utc": "2026-10-12T14:43:30.068095+00:00",
+  "max_dense_spectrum": 9.809169535165751e-06,
+  "max_field": 7.375045708193634e-06,
+  "max_homologous_chemical_log": 1.0497831704847794e-06,
+  "max_homologous_transport": 1.3466762860514826e-05,
+  "topology_mismatch_count": 0,
+  "max_volume_error": 0.011606553388044505,
+  "min_radius": 8.511218524999505,
+  "all_exact_restart": true,
+  "all_lineage_cycle_rng_unchanged": true,
+  "all_passed": true,
+  "endpoints": [
+    {
+      "case": "h1101_off_coarse",
+      "seed": 1101,
+      "branch": "off",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.003588514870726979,
+      "final_log_sd": 0.020630728097675115,
+      "sd_ratio": 5.749099234886448,
+      "axis_start": 1.3244560276013122,
+      "axis_end": 1.3462870967654654,
+      "conductance_relative_change": -0.11071897701563105,
+      "activator_range": [
+        0.9595762213807195,
+        1.0530648772171218
+      ]
+    },
+    {
+      "case": "h1101_off_fine",
+      "seed": 1101,
+      "branch": "off",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.003588514870726979,
+      "final_log_sd": 0.020630478424121825,
+      "sd_ratio": 5.749029659153231,
+      "axis_start": 1.3244560276013122,
+      "axis_end": 1.346286044710113,
+      "conductance_relative_change": -0.110716016948888,
+      "activator_range": [
+        0.9595767643959411,
+        1.0530642473521898
+      ]
+    },
+    {
+      "case": "h1101_tension_adhesion_coarse",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.003611015553754401,
+      "final_log_sd": 0.02085923709329843,
+      "sd_ratio": 5.776556977610058,
+      "axis_start": 1.3244193035748917,
+      "axis_end": 1.3462502912667413,
+      "conductance_relative_change": -0.11073815909140927,
+      "activator_range": [
+        0.9591021513569344,
+        1.053662974935225
+      ]
+    },
+    {
+      "case": "h1101_tension_adhesion_fine",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.003611015553754401,
+      "final_log_sd": 0.020858928157306268,
+      "sd_ratio": 5.776471423840609,
+      "axis_start": 1.3244193035748917,
+      "axis_end": 1.3462492393000864,
+      "conductance_relative_change": -0.11073512894178072,
+      "activator_range": [
+        0.9591028177942775,
+        1.0536621876841263
+      ]
+    },
+    {
+      "case": "h1101_polarity_coarse",
+      "seed": 1101,
+      "branch": "polarity",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0035414568624654746,
+      "final_log_sd": 0.019627127364153847,
+      "sd_ratio": 5.542105445974549,
+      "axis_start": 1.327027726472003,
+      "axis_end": 1.3516407043639627,
+      "conductance_relative_change": -0.12861130220364714,
+      "activator_range": [
+        0.9602384926574806,
+        1.0502194766759896
+      ]
+    },
+    {
+      "case": "h1101_polarity_fine",
+      "seed": 1101,
+      "branch": "polarity",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0035414568624654746,
+      "final_log_sd": 0.019626755634444288,
+      "sd_ratio": 5.542000480779717,
+      "axis_start": 1.327027726472003,
+      "axis_end": 1.3516394223120736,
+      "conductance_relative_change": -0.12860807405554597,
+      "activator_range": [
+        0.9602393085679881,
+        1.050218515749543
+      ]
+    },
+    {
+      "case": "h1101_full_coarse",
+      "seed": 1101,
+      "branch": "full",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.003564137472713679,
+      "final_log_sd": 0.019844580680880106,
+      "sd_ratio": 5.567849397731213,
+      "axis_start": 1.3270011755556188,
+      "axis_end": 1.3516167873102005,
+      "conductance_relative_change": -0.12863120875129186,
+      "activator_range": [
+        0.9597753419818843,
+        1.0507846666600016
+      ]
+    },
+    {
+      "case": "h1101_full_fine",
+      "seed": 1101,
+      "branch": "full",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.003564137472713679,
+      "final_log_sd": 0.019844155543569404,
+      "sd_ratio": 5.567730115769179,
+      "axis_start": 1.3270011755556188,
+      "axis_end": 1.3516155031411683,
+      "conductance_relative_change": -0.12862794818162404,
+      "activator_range": [
+        0.9597762585679211,
+        1.0507835635645217
+      ]
+    },
+    {
+      "case": "h1102_off_coarse",
+      "seed": 1102,
+      "branch": "off",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0019419320713861118,
+      "final_log_sd": 0.011137580968292395,
+      "sd_ratio": 5.73530924814616,
+      "axis_start": 1.3206456699804798,
+      "axis_end": 1.3413742562819093,
+      "conductance_relative_change": -0.10987631879230397,
+      "activator_range": [
+        0.9791839811308801,
+        1.0194663360112821
+      ]
+    },
+    {
+      "case": "h1102_off_fine",
+      "seed": 1102,
+      "branch": "off",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0019419320713861118,
+      "final_log_sd": 0.011137437178283624,
+      "sd_ratio": 5.735235203327141,
+      "axis_start": 1.3206456699804798,
+      "axis_end": 1.3413732361212738,
+      "conductance_relative_change": -0.10987328264024243,
+      "activator_range": [
+        0.9791842455122164,
+        1.0194662224122848
+      ]
+    },
+    {
+      "case": "h1102_tension_adhesion_coarse",
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0019560725657752887,
+      "final_log_sd": 0.011280861852751473,
+      "sd_ratio": 5.767097831710711,
+      "axis_start": 1.3206126907066835,
+      "axis_end": 1.3413386064392352,
+      "conductance_relative_change": -0.10987996379982223,
+      "activator_range": [
+        0.9789180338647784,
+        1.0197236816290898
+      ]
+    },
+    {
+      "case": "h1102_tension_adhesion_fine",
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0019560725657752887,
+      "final_log_sd": 0.01128068530140118,
+      "sd_ratio": 5.767007573632671,
+      "axis_start": 1.3206126907066835,
+      "axis_end": 1.341337586178711,
+      "conductance_relative_change": -0.10987687633191823,
+      "activator_range": [
+        0.978918357756745,
+        1.019723508803325
+      ]
+    },
+    {
+      "case": "h1102_polarity_coarse",
+      "seed": 1102,
+      "branch": "polarity",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.001922705678641191,
+      "final_log_sd": 0.010716977485088477,
+      "sd_ratio": 5.573904318347022,
+      "axis_start": 1.322915787555235,
+      "axis_end": 1.3463797056435796,
+      "conductance_relative_change": -0.12792199357451095,
+      "activator_range": [
+        0.9795247345400244,
+        1.0185981378710944
+      ]
+    },
+    {
+      "case": "h1102_polarity_fine",
+      "seed": 1102,
+      "branch": "polarity",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.001922705678641191,
+      "final_log_sd": 0.01071676834656325,
+      "sd_ratio": 5.573795545315585,
+      "axis_start": 1.322915787555235,
+      "axis_end": 1.3463784698466483,
+      "conductance_relative_change": -0.12791885079133114,
+      "activator_range": [
+        0.9795251497524049,
+        1.0185978933481183
+      ]
+    },
+    {
+      "case": "h1102_full_coarse",
+      "seed": 1102,
+      "branch": "full",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0019364117512695258,
+      "final_log_sd": 0.010850849009933036,
+      "sd_ratio": 5.603585602503775,
+      "axis_start": 1.3229092485104295,
+      "axis_end": 1.3463720405542998,
+      "conductance_relative_change": -0.12792630089033996,
+      "activator_range": [
+        0.9792722623974225,
+        1.0188360191589114
+      ]
+    },
+    {
+      "case": "h1102_full_fine",
+      "seed": 1102,
+      "branch": "full",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0019364117512695258,
+      "final_log_sd": 0.010850609060896308,
+      "sd_ratio": 5.603461688239895,
+      "axis_start": 1.3229092485104295,
+      "axis_end": 1.3463708043408984,
+      "conductance_relative_change": -0.12792313857713078,
+      "activator_range": [
+        0.9792727354177041,
+        1.0188357232788516
+      ]
+    },
+    {
+      "case": "h1103_off_coarse",
+      "seed": 1103,
+      "branch": "off",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0030918097141869323,
+      "final_log_sd": 0.015628938569289742,
+      "sd_ratio": 5.054948400470939,
+      "axis_start": 1.2852486288116949,
+      "axis_end": 1.3175286774065373,
+      "conductance_relative_change": -0.09558823061630117,
+      "activator_range": [
+        0.9609913963632026,
+        1.0204319714519197
+      ]
+    },
+    {
+      "case": "h1103_off_fine",
+      "seed": 1103,
+      "branch": "off",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0030918097141869323,
+      "final_log_sd": 0.015628814329910094,
+      "sd_ratio": 5.054908217086082,
+      "axis_start": 1.2852486288116949,
+      "axis_end": 1.3175271684449716,
+      "conductance_relative_change": -0.09558633235404357,
+      "activator_range": [
+        0.9609917115782586,
+        1.020431974841416
+      ]
+    },
+    {
+      "case": "h1103_tension_adhesion_coarse",
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0031112813210923762,
+      "final_log_sd": 0.015803788070863148,
+      "sd_ratio": 5.079511120940491,
+      "axis_start": 1.2851246436509762,
+      "axis_end": 1.3173897196432849,
+      "conductance_relative_change": -0.09562128225327726,
+      "activator_range": [
+        0.9605786118582148,
+        1.0206245254016375
+      ]
+    },
+    {
+      "case": "h1103_tension_adhesion_fine",
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0031112813210923762,
+      "final_log_sd": 0.01580365840681681,
+      "sd_ratio": 5.07946944549139,
+      "axis_start": 1.2851246436509762,
+      "axis_end": 1.3173882114665287,
+      "conductance_relative_change": -0.09561925861913156,
+      "activator_range": [
+        0.9605788988551085,
+        1.0206245244071541
+      ]
+    },
+    {
+      "case": "h1103_polarity_coarse",
+      "seed": 1103,
+      "branch": "polarity",
+      "level": "coarse",
+      "time": 24.0,
+      "initial_log_sd": 0.0030062470560131335,
+      "final_log_sd": 0.014966025432103664,
+      "sd_ratio": 4.9783085532403035,
+      "axis_start": 1.287549033314623,
+      "axis_end": 1.3236825711565492,
+      "conductance_relative_change": -0.11361629692414421,
+      "activator_range": [
+        0.9620103357900114,
+        1.0212930051905345
+      ]
+    },
+    {
+      "case": "h1103_polarity_fine",
+      "seed": 1103,
+      "branch": "polarity",
+      "level": "fine",
+      "time": 24.0,
+      "initial_log_sd": 0.0030062470560131335,
+      "final_log_sd": 0.014965830367293988,
+      "sd_ratio": 4.978243666753584,
+      "axis_start": 1.287549033314623,
+      "axis_end": 1.323680990779845,
+      "conductance_relative_change": -0.11361378785561216,
+      "activator_range": [
+        0.9620108156244738,
+        1.0212927541180645
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 1101,
+      "branch": "full",
+      "passed": true,
+      "dense": 7.828290774928634e-06,
+      "field": 6.466859676573565e-06
+    },
+    {
+      "seed": 1101,
+      "branch": "off",
+      "passed": true,
+      "dense": 8.72577997955114e-06,
+      "field": 7.251501163482415e-06
+    },
+    {
+      "seed": 1101,
+      "branch": "polarity",
+      "passed": true,
+      "dense": 7.840615061136367e-06,
+      "field": 6.469368933082899e-06
+    },
+    {
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "dense": 8.731044065409069e-06,
+      "field": 7.249409713888887e-06
+    },
+    {
+      "seed": 1102,
+      "branch": "full",
+      "passed": true,
+      "dense": 7.87513005352453e-06,
+      "field": 6.538740098039802e-06
+    },
+    {
+      "seed": 1102,
+      "branch": "off",
+      "passed": true,
+      "dense": 8.859673064573195e-06,
+      "field": 7.333032213791377e-06
+    },
+    {
+      "seed": 1102,
+      "branch": "polarity",
+      "passed": true,
+      "dense": 7.91993379210157e-06,
+      "field": 6.539846373242485e-06
+    },
+    {
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "dense": 8.890420324712505e-06,
+      "field": 7.334245421697624e-06
+    },
+    {
+      "seed": 1103,
+      "branch": "off",
+      "passed": true,
+      "dense": 9.809169535165751e-06,
+      "field": 7.375045708193634e-06
+    },
+    {
+      "seed": 1103,
+      "branch": "polarity",
+      "passed": true,
+      "dense": 8.290182836979211e-06,
+      "field": 6.354383629570274e-06
+    },
+    {
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "passed": true,
+      "dense": 9.797848428717833e-06,
+      "field": 7.369921201090173e-06
+    }
+  ],
+  "observed_local": "2026-10-12T10:35:10.287246-04:00",
+  "active_progress": {
+    "state": "running",
+    "time": 21.0,
+    "elapsed": 3.0,
+    "cells": 16,
+    "seconds": 68.6947225779877,
+    "audit": {
+      "max_volume_error": 0.011526492241560105,
+      "min_radius": 8.512333907877936,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    }
+  },
+  "estimated_finish_local": "2026-10-12T10:43:30.068095-04:00",
+  "timing_method": "Mean completed coarse/fine path and non-reused prefix runtimes plus observed comparison overhead; subtract current-stage progress; add30 seconds for final immutable verification. Range8\u201312 minutes is provisional and conditional on gates.",
+  "source_pins_verified": 58,
+  "new_scientific_histories": 0,
+  "registered_histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "independent_final_review_pending": true,
+  "qualification_accepted": false
+}

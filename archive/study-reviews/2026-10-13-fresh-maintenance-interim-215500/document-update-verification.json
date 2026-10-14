@@ -1,0 +1,14 @@
+{
+  "scientific_documents_unchanged": true,
+  "only_existing_document_changed": "docs/lab_notebook.md",
+  "checks": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/README.md": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/lab_notebook.md": false,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/results_ledger.md": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/plan.md": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.tex": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/main.tex": true,
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/references.bib": true
+  }
+}

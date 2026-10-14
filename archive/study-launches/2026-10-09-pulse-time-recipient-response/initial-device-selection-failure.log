@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/pulse_time_recipient_response.py", line 262, in <module>
+    result=prepare(args.output) if args.action=='prepare' else assess(args.output) if args.action=='assess' else run(args.output,args.workers,args.action=='qualify')
+                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/pulse_time_recipient_response.py", line 223, in run
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);p=read(root/'protocol.json');verify(p);frozen.runtime_check(p);torch.set_num_threads(1)
+                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py", line 323, in runtime_check
+    raise ValueError('Requested qualified CUDA device unavailable; no CPU fallback')
+ValueError: Requested qualified CUDA device unavailable; no CPU fallback

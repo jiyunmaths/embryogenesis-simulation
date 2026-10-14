@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-11T12:48:55.676778+00:00",
+  "passed": true,
+  "source_count": 38,
+  "input_count": 382,
+  "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "preserved_ledger_manuscript_and_accepted_report_count": 67,
+  "link_count": 13,
+  "status": {
+    "state": "running_development",
+    "active": "h1101_off_development",
+    "completed": 0,
+    "total": 24,
+    "independent_histories": 3,
+    "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+    "seconds": 3.7984202429652214
+  },
+  "first_progress": {
+    "state": "running",
+    "time": 5.7,
+    "cells": 2,
+    "events": 1,
+    "active_divisions": 2,
+    "seconds": 113.4499306929647,
+    "audit": {
+      "max_volume_error": 0.006337595939897023,
+      "min_radius": 17.09454073748431,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 5213,
+      "correction_magnitude_max": 0.00022441290515205845,
+      "before_relative_volume_error_max": 0.00039202722753650665,
+      "after_relative_volume_error_max": 9.950673041103641e-08
+    }
+  },
+  "actual_start_passed": true,
+  "reporting_sha256": {
+    "README.md": "92b10453a6fa7f80c2176eb4b4106a43a1e7e0d2a73e06b61f461b52aad7d46b",
+    "docs/plan.md": "7ae1fe9b238b24f88a86459de83c22247cba920795756313ab811ff05d264b31",
+    "docs/backends.md": "64c414a9d8ace8c0fc5da86f794001936bcc89af2f224b420f3f1ec583dbac29",
+    "docs/fresh_zygote_pilot_launch.md": "d9b6f9d0f1ff9418f0faf23b2a1261ddf4dcdef815995452fb098300510ec50b"
+  }
+}

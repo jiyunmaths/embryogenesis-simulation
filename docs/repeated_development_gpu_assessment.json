@@ -1,0 +1,1364 @@
+{
+  "review_completed": true,
+  "passed": false,
+  "qualification_accepted": false,
+  "state": "completed_with_unresolved_checks",
+  "new_scientific_histories": 0,
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8",
+  "independent_review": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-repeated-development-gpu/independent_review.json",
+  "independent_review_sha256": "06cdb0004cc4798dc7fe546a4bfd61afdf0ee19f3ee335621d4c30550d05a38f",
+  "independent_review_script_sha256": "ad4016601d6176fcdffb0bcaa4d6a6c5b564579592fce0b30720b1ed8cccd41b",
+  "review_scope": {
+    "history_paths": 20,
+    "saved_observation_rows": 2420,
+    "checkpoint_arrays": 140,
+    "mixed_count_restart_samples": 48,
+    "full_restart_replay_performed": false,
+    "native_backend_time_field_comparisons": 56,
+    "spatial_failed_field_witnesses": 8,
+    "preserved_evidence_pins": 1289
+  },
+  "counts": {
+    "individual_runtime_event_paths_passed": 20,
+    "backend_comparisons_passed": 4,
+    "backend_comparisons_total": 4,
+    "time_comparisons_passed": 0,
+    "time_comparisons_total": 4,
+    "space_comparisons_passed": 0,
+    "space_comparisons_total": 8,
+    "production_spatial_trend_checks_passed": 4
+  },
+  "backend_rows": [
+    {
+      "cases": [
+        "off_coarse",
+        "off_coarse"
+      ],
+      "arms": [
+        "gpu",
+        "cpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 7.435722190734176e-10,
+        "log_wasserstein_max": 7.444375749163783e-10,
+        "contrast_abs_max": 4.039906289273615e-10,
+        "relative_axis_max": 2.0218815510730792e-10,
+        "relative_total_volume_max": 3.064792863938237e-10,
+        "whole_amount_relative_max": 1.6041146189138544e-10,
+        "mean_polarity_abs_max": 8.070508689355364e-10,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 8.594831592451595e-07,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 18.0,
+        "log_wasserstein_max": 18.0,
+        "contrast_abs_max": 8.7,
+        "relative_axis_max": 14.1,
+        "relative_total_volume_max": 16.95,
+        "whole_amount_relative_max": 10.2,
+        "mean_polarity_abs_max": 4.05,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 7.8
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.0,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 3.163005655226282e-18,
+            "activator_density": 4.515099945214174e-16,
+            "inhibitor_density": 4.531937057641157e-16,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 2.989927931106905e-09,
+            "activator_density": 2.990008859596969e-09,
+            "inhibitor_density": 2.9897386250412395e-09,
+            "polarity_density": 7.565091911056161e-10
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 8.89411543855564e-09,
+            "activator_density": 8.893785633578204e-09,
+            "inhibitor_density": 8.89545951600996e-09,
+            "polarity_density": 1.3509314914040295e-09
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 1.1929887865477874e-08,
+            "activator_density": 1.193272454618701e-08,
+            "inhibitor_density": 1.1929591253095524e-08,
+            "polarity_density": 1.4222550888973458e-09
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 1.28267450894951e-08,
+            "activator_density": 1.282935573381712e-08,
+            "inhibitor_density": 1.2827396751768757e-08,
+            "polarity_density": 1.8620815472921547e-09
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 1.2721359343284893e-08,
+            "activator_density": 1.2745883365044692e-08,
+            "inhibitor_density": 1.2732826222915786e-08,
+            "polarity_density": 1.639714045910153e-09
+          }
+        }
+      ],
+      "production_field_max": 1.282935573381712e-08,
+      "production_passed": true,
+      "independent_phase_abs_max": 5.960464477539063e-08,
+      "independently_checked_failures": {},
+      "independently_checked_passed": true
+    },
+    {
+      "cases": [
+        "tension_adhesion_coarse",
+        "tension_adhesion_coarse"
+      ],
+      "arms": [
+        "gpu",
+        "cpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 7.241619232901816e-10,
+        "log_wasserstein_max": 7.240301684210922e-10,
+        "contrast_abs_max": 4.299484600810144e-10,
+        "relative_axis_max": 3.235137713275549e-10,
+        "relative_total_volume_max": 4.053199997855472e-10,
+        "whole_amount_relative_max": 1.1827383517015733e-10,
+        "mean_polarity_abs_max": 1.1255348106981554e-09,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 7.671021638245e-07,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 17.4,
+        "log_wasserstein_max": 17.4,
+        "contrast_abs_max": 12.15,
+        "relative_axis_max": 15.75,
+        "relative_total_volume_max": 12.15,
+        "whole_amount_relative_max": 7.5,
+        "mean_polarity_abs_max": 10.95,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 4.35
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.0,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 7.0716150593785375e-09,
+            "activator_density": 7.071615058989613e-09,
+            "inhibitor_density": 7.071615059377615e-09,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 8.786174651070023e-09,
+            "activator_density": 8.784288369387153e-09,
+            "inhibitor_density": 8.78126005105072e-09,
+            "polarity_density": 5.689655471886813e-10
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 1.048444238874842e-08,
+            "activator_density": 1.0485990511138755e-08,
+            "inhibitor_density": 1.0486209892713552e-08,
+            "polarity_density": 1.2693302020471062e-09
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 1.496673940742654e-08,
+            "activator_density": 1.4969701343813597e-08,
+            "inhibitor_density": 1.496919167377288e-08,
+            "polarity_density": 1.453630148974727e-09
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 1.6029817285404112e-08,
+            "activator_density": 1.6033499949896303e-08,
+            "inhibitor_density": 1.603498893342382e-08,
+            "polarity_density": 2.1967063664396646e-09
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 1.6305825096594963e-08,
+            "activator_density": 1.6298933688779632e-08,
+            "inhibitor_density": 1.629824830866513e-08,
+            "polarity_density": 1.6856526013524768e-09
+          }
+        }
+      ],
+      "production_field_max": 1.6305825096594963e-08,
+      "production_passed": true,
+      "independent_phase_abs_max": 5.960464477539063e-08,
+      "independently_checked_failures": {},
+      "independently_checked_passed": true
+    },
+    {
+      "cases": [
+        "polarity_coarse",
+        "polarity_coarse"
+      ],
+      "arms": [
+        "gpu",
+        "cpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 6.406468237403113e-10,
+        "log_wasserstein_max": 6.408370732374333e-10,
+        "contrast_abs_max": 3.9555086810139084e-10,
+        "relative_axis_max": 2.6908786310286814e-10,
+        "relative_total_volume_max": 3.230410383636695e-10,
+        "whole_amount_relative_max": 1.925024584181756e-10,
+        "mean_polarity_abs_max": 9.748177882853808e-10,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 6.469980572697169e-07,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 16.2,
+        "log_wasserstein_max": 16.2,
+        "contrast_abs_max": 16.05,
+        "relative_axis_max": 17.4,
+        "relative_total_volume_max": 12.299999999999999,
+        "whole_amount_relative_max": 10.35,
+        "mean_polarity_abs_max": 8.549999999999999,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 5.1
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.0,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 3.163005655226282e-18,
+            "activator_density": 4.515099945214174e-16,
+            "inhibitor_density": 4.531937057641157e-16,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 6.5071529670202295e-09,
+            "activator_density": 6.50675708913032e-09,
+            "inhibitor_density": 6.507227181665833e-09,
+            "polarity_density": 3.890807901171493e-10
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 8.511582195581083e-09,
+            "activator_density": 8.513970255217325e-09,
+            "inhibitor_density": 8.517753667927597e-09,
+            "polarity_density": 1.2921037649993354e-09
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 1.2136892908586506e-08,
+            "activator_density": 1.213008413482319e-08,
+            "inhibitor_density": 1.213029185761861e-08,
+            "polarity_density": 1.285520717624698e-09
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 1.4093406245758928e-08,
+            "activator_density": 1.4091994361191228e-08,
+            "inhibitor_density": 1.4091423349251733e-08,
+            "polarity_density": 1.9797542702030452e-09
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 1.4276498536652103e-08,
+            "activator_density": 1.427616589017192e-08,
+            "inhibitor_density": 1.4275460827509974e-08,
+            "polarity_density": 1.7279140044386583e-09
+          }
+        }
+      ],
+      "production_field_max": 1.4276498536652103e-08,
+      "production_passed": true,
+      "independent_phase_abs_max": 5.960464477539063e-08,
+      "independently_checked_failures": {},
+      "independently_checked_passed": true
+    },
+    {
+      "cases": [
+        "full_coarse",
+        "full_coarse"
+      ],
+      "arms": [
+        "gpu",
+        "cpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 7.590836302875028e-10,
+        "log_wasserstein_max": 7.587399918984006e-10,
+        "contrast_abs_max": 3.678431582769537e-10,
+        "relative_axis_max": 5.225212484916142e-10,
+        "relative_total_volume_max": 3.774009993406935e-10,
+        "whole_amount_relative_max": 1.1000678146189102e-10,
+        "mean_polarity_abs_max": 9.173993377031148e-10,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 9.87464068065018e-07,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 18.0,
+        "log_wasserstein_max": 18.0,
+        "contrast_abs_max": 17.25,
+        "relative_axis_max": 15.0,
+        "relative_total_volume_max": 17.25,
+        "whole_amount_relative_max": 9.9,
+        "mean_polarity_abs_max": 7.949999999999999,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 5.55
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.0,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 7.0716150593785375e-09,
+            "activator_density": 7.071615058989613e-09,
+            "inhibitor_density": 7.071615059377615e-09,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 9.14404114540226e-09,
+            "activator_density": 9.140812764644647e-09,
+            "inhibitor_density": 9.141958814117063e-09,
+            "polarity_density": 4.1470228237965355e-10
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 1.0717503020395978e-08,
+            "activator_density": 1.0717639561215785e-08,
+            "inhibitor_density": 1.0717547549695827e-08,
+            "polarity_density": 1.4041460811929422e-09
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 1.3625075487428189e-08,
+            "activator_density": 1.3633360402400178e-08,
+            "inhibitor_density": 1.3629359711538696e-08,
+            "polarity_density": 1.4010556615670858e-09
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 1.5264663236129945e-08,
+            "activator_density": 1.526239155944535e-08,
+            "inhibitor_density": 1.5257510242597687e-08,
+            "polarity_density": 2.2307230252990263e-09
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 1.41844051792199e-08,
+            "activator_density": 1.4188874785479002e-08,
+            "inhibitor_density": 1.4179575414797727e-08,
+            "polarity_density": 1.7457907314051586e-09
+          }
+        }
+      ],
+      "production_field_max": 1.5264663236129945e-08,
+      "production_passed": true,
+      "independent_phase_abs_max": 5.960464477539063e-08,
+      "independently_checked_failures": {},
+      "independently_checked_passed": true
+    }
+  ],
+  "time_rows": [
+    {
+      "cases": [
+        "off_coarse",
+        "off_fine"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006518382176184442,
+        "log_wasserstein_max": 0.0006477308167867207,
+        "contrast_abs_max": 0.0008402282211711286,
+        "relative_axis_max": 0.008158956016479424,
+        "relative_total_volume_max": 0.000633722989407115,
+        "whole_amount_relative_max": 0.00013093922511120404,
+        "mean_polarity_abs_max": 5.2294682061148755e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.050339701291357696,
+        "unmatched_observations_max": 3
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 11.85,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.050339701291357696
+      },
+      "maturity_time_error": 0.02812499999999929,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.014293206497178272,
+            "activator_density": 0.014293209394124928,
+            "inhibitor_density": 0.014293200318957294,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.026265434661066667,
+            "activator_density": 0.0262268618260252,
+            "inhibitor_density": 0.026226331722048454,
+            "polarity_density": 0.002290593297171825
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.036697714450465824,
+            "activator_density": 0.036673783009177334,
+            "inhibitor_density": 0.036672185673597216,
+            "polarity_density": 0.002021843137177994
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.03951039450223334,
+            "activator_density": 0.039391784906068726,
+            "inhibitor_density": 0.03938585789217895,
+            "polarity_density": 0.0030773157488875862
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.004111615264549771,
+            "activator_density": 0.004111060155252103,
+            "inhibitor_density": 0.004111461631295104,
+            "polarity_density": 0.00047931454853400646
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.003955526226375534,
+            "activator_density": 0.003952985260893433,
+            "inhibitor_density": 0.0039543007404619895,
+            "polarity_density": 0.00040928874326581153
+          }
+        }
+      ],
+      "production_field_max": 0.03951039450223334,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.050339701291357696,
+        "field_max": 0.03951039450223334
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "tension_adhesion_coarse",
+        "tension_adhesion_fine"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006520257916790762,
+        "log_wasserstein_max": 0.0006479115288193934,
+        "contrast_abs_max": 0.0008401885604399007,
+        "relative_axis_max": 0.00815903121620809,
+        "relative_total_volume_max": 0.0006337816920689576,
+        "whole_amount_relative_max": 0.0001313427520783783,
+        "mean_polarity_abs_max": 5.236112410349626e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.05032984396253653,
+        "unmatched_observations_max": 3
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 11.85,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.05032984396253653
+      },
+      "maturity_time_error": 0.02812499999999929,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.014293797680562334,
+            "activator_density": 0.014293799621230938,
+            "inhibitor_density": 0.014293787875965466,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.02626622363391363,
+            "activator_density": 0.026227641859511378,
+            "inhibitor_density": 0.026227112792765257,
+            "polarity_density": 0.002290471878864771
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.036699275527648276,
+            "activator_density": 0.03667526475305382,
+            "inhibitor_density": 0.036673654763163276,
+            "polarity_density": 0.002021848486627448
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.03951253171904307,
+            "activator_density": 0.039393560569394484,
+            "inhibitor_density": 0.039387627293319585,
+            "polarity_density": 0.003077287732702534
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.00411276648960437,
+            "activator_density": 0.0041122132499651996,
+            "inhibitor_density": 0.0041126193745362255,
+            "polarity_density": 0.00047967483161810194
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.0039569729338743125,
+            "activator_density": 0.003954423713350894,
+            "inhibitor_density": 0.0039557431610046006,
+            "polarity_density": 0.0004094034018328534
+          }
+        }
+      ],
+      "production_field_max": 0.03951253171904307,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.05032984396253653,
+        "field_max": 0.03951253171904307
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "polarity_coarse",
+        "polarity_fine"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006518629217646796,
+        "log_wasserstein_max": 0.0006477549152175434,
+        "contrast_abs_max": 0.00084029539117879,
+        "relative_axis_max": 0.008077592734787808,
+        "relative_total_volume_max": 0.0006337730381043016,
+        "whole_amount_relative_max": 0.00012108135427313371,
+        "mean_polarity_abs_max": 4.642559643461356e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.04855673969288687,
+        "unmatched_observations_max": 3
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 12.0,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.04855673969288687
+      },
+      "maturity_time_error": 0.02624999999999922,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.014293206497178272,
+            "activator_density": 0.014293209394124928,
+            "inhibitor_density": 0.014293200318957294,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.02626523664054582,
+            "activator_density": 0.02622663428019224,
+            "inhibitor_density": 0.02622609798415183,
+            "polarity_density": 0.0022900906692530283
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.03604008607400207,
+            "activator_density": 0.03601675187844982,
+            "inhibitor_density": 0.036014839199412896,
+            "polarity_density": 0.001998630752592741
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.03689036232787372,
+            "activator_density": 0.0367828928444225,
+            "inhibitor_density": 0.036776921591585465,
+            "polarity_density": 0.0028006757194464055
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.004117950726180855,
+            "activator_density": 0.0041182246014858865,
+            "inhibitor_density": 0.0041182471499451164,
+            "polarity_density": 0.0004539948327616188
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.0039770929856137865,
+            "activator_density": 0.003976324414489839,
+            "inhibitor_density": 0.003976936447069039,
+            "polarity_density": 0.0003844828055503812
+          }
+        }
+      ],
+      "production_field_max": 0.03689036232787372,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.04855673969288687,
+        "field_max": 0.03689036232787372
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "full_coarse",
+        "full_fine"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.000652047494480784,
+        "log_wasserstein_max": 0.0006479326380375846,
+        "contrast_abs_max": 0.0008402546903406484,
+        "relative_axis_max": 0.008769916242716835,
+        "relative_total_volume_max": 0.0006338295611807432,
+        "whole_amount_relative_max": 0.00013197229748729278,
+        "mean_polarity_abs_max": 5.315281019343706e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.051366180192104705,
+        "unmatched_observations_max": 3
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 11.85,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.051366180192104705
+      },
+      "maturity_time_error": 0.02999999999999936,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.014293797680562334,
+            "activator_density": 0.014293799621230938,
+            "inhibitor_density": 0.014293787875965466,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.026265995715239573,
+            "activator_density": 0.026227384429444812,
+            "inhibitor_density": 0.026226849245400956,
+            "polarity_density": 0.0022899642318927375
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.04075168228769787,
+            "activator_density": 0.040724846996701106,
+            "inhibitor_density": 0.04072279784008645,
+            "polarity_density": 0.0020878388857392934
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.04078519474440334,
+            "activator_density": 0.040664221644760946,
+            "inhibitor_density": 0.04065825669883233,
+            "polarity_density": 0.003094596149143478
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.0041691565855716565,
+            "activator_density": 0.004169124867971066,
+            "inhibitor_density": 0.004169217028437956,
+            "polarity_density": 0.0004680405299211855
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.004012644824211821,
+            "activator_density": 0.004011418793089465,
+            "inhibitor_density": 0.004012048778146566,
+            "polarity_density": 0.00039314408571117075
+          }
+        }
+      ],
+      "production_field_max": 0.04078519474440334,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.051366180192104705,
+        "field_max": 0.04078519474440334
+      },
+      "independently_checked_passed": false
+    }
+  ],
+  "space_rows": [
+    {
+      "cases": [
+        "off_fine",
+        "off_space88"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006490590393430124,
+        "log_wasserstein_max": 0.0006453007958816901,
+        "contrast_abs_max": 0.0008401931098286284,
+        "relative_axis_max": 0.009249615463137073,
+        "relative_total_volume_max": 0.000624450901308693,
+        "whole_amount_relative_max": 0.00012027621551680134,
+        "mean_polarity_abs_max": 0.0002236356746733013,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.11402793840081189,
+        "unmatched_observations_max": 2
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.549999999999999,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 11.85,
+        "mean_polarity_abs_max": 9.15,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 4.5
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.11402793840081189
+      },
+      "maturity_time_error": 0.005625000000000213,
+      "field_checks": [
+        {
+          "time": 6,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.033221225080748734,
+            "activator_density": 0.03321762034962088,
+            "inhibitor_density": 0.03321315009138486,
+            "polarity_density": 0.0024772554707380772
+          }
+        }
+      ],
+      "production_field_max": 0.033221225080748734,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.11402793840081189,
+        "field_max": 0.033221225080748734
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "off_space88",
+        "off_space104"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006039500401124454,
+        "log_wasserstein_max": 0.0006008646498466057,
+        "contrast_abs_max": 0.0004333464895039116,
+        "relative_axis_max": 0.004520667916190657,
+        "relative_total_volume_max": 0.00037691974686993035,
+        "whole_amount_relative_max": 9.874320809166726e-05,
+        "mean_polarity_abs_max": 4.4934977659585504e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.043577884150429555,
+        "unmatched_observations_max": 1
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 11.85,
+        "relative_axis_max": 11.549999999999999,
+        "relative_total_volume_max": 11.85,
+        "whole_amount_relative_max": 12.0,
+        "mean_polarity_abs_max": 6.1499999999999995,
+        "cell_count_difference_max": 6.3,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.003750000000000142,
+      "field_checks": [
+        {
+          "time": 9,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.025306460647517588,
+            "activator_density": 0.0252903706517139,
+            "inhibitor_density": 0.025290686994904134,
+            "polarity_density": 0.001312425544513726
+          }
+        }
+      ],
+      "production_field_max": 0.025306460647517588,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "field_max": 0.025306460647517588
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "tension_adhesion_fine",
+        "tension_adhesion_space88"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006492053083919768,
+        "log_wasserstein_max": 0.0006453838914656461,
+        "contrast_abs_max": 0.0008401483476347039,
+        "relative_axis_max": 0.009248950939668155,
+        "relative_total_volume_max": 0.0006244874506977638,
+        "whole_amount_relative_max": 0.0001205678969056212,
+        "mean_polarity_abs_max": 0.00022381337786228043,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.11400035331688615,
+        "unmatched_observations_max": 2
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.549999999999999,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 11.85,
+        "mean_polarity_abs_max": 9.15,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 4.5
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.11400035331688615
+      },
+      "maturity_time_error": 0.005625000000000213,
+      "field_checks": [
+        {
+          "time": 6,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.03321915730283101,
+            "activator_density": 0.03321556074153081,
+            "inhibitor_density": 0.03321109485124423,
+            "polarity_density": 0.002477544412420743
+          }
+        }
+      ],
+      "production_field_max": 0.03321915730283101,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.11400035331688615,
+        "field_max": 0.03321915730283101
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "tension_adhesion_space88",
+        "tension_adhesion_space104"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006039792690849785,
+        "log_wasserstein_max": 0.0006008932049646107,
+        "contrast_abs_max": 0.0004347256824231427,
+        "relative_axis_max": 0.004521586766779828,
+        "relative_total_volume_max": 0.0003780653006322243,
+        "whole_amount_relative_max": 9.90699262146677e-05,
+        "mean_polarity_abs_max": 4.497124085038227e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.043574089223430854,
+        "unmatched_observations_max": 1
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 11.85,
+        "relative_axis_max": 11.549999999999999,
+        "relative_total_volume_max": 11.85,
+        "whole_amount_relative_max": 12.0,
+        "mean_polarity_abs_max": 6.1499999999999995,
+        "cell_count_difference_max": 6.3,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.003750000000000142,
+      "field_checks": [
+        {
+          "time": 9,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.02530782099403838,
+            "activator_density": 0.025291685183703054,
+            "inhibitor_density": 0.025291998570770878,
+            "polarity_density": 0.0013125399997305411
+          }
+        }
+      ],
+      "production_field_max": 0.02530782099403838,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "field_max": 0.02530782099403838
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "polarity_fine",
+        "polarity_space88"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006491608504005503,
+        "log_wasserstein_max": 0.0006453433820758243,
+        "contrast_abs_max": 0.0008402534812213966,
+        "relative_axis_max": 0.00920600384196768,
+        "relative_total_volume_max": 0.0006244978191637385,
+        "whole_amount_relative_max": 0.00011866172945418363,
+        "mean_polarity_abs_max": 0.00020929434070838257,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.11410091219182462,
+        "unmatched_observations_max": 2
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.549999999999999,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 11.85,
+        "mean_polarity_abs_max": 9.15,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 4.5
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.11410091219182462
+      },
+      "maturity_time_error": 0.007500000000000284,
+      "field_checks": [
+        {
+          "time": 6,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.03321346188893339,
+            "activator_density": 0.03320977486025016,
+            "inhibitor_density": 0.03320531980739656,
+            "polarity_density": 0.002475924613650029
+          }
+        }
+      ],
+      "production_field_max": 0.03321346188893339,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.11410091219182462,
+        "field_max": 0.03321346188893339
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "polarity_space88",
+        "polarity_space104"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006039599003969155,
+        "log_wasserstein_max": 0.0006008750239853555,
+        "contrast_abs_max": 0.0003817917630698387,
+        "relative_axis_max": 0.004113112251396656,
+        "relative_total_volume_max": 0.0003456953877480906,
+        "whole_amount_relative_max": 9.450335000882326e-05,
+        "mean_polarity_abs_max": 4.580887252093294e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.04059009973302392,
+        "unmatched_observations_max": 1
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 11.85,
+        "relative_axis_max": 11.549999999999999,
+        "relative_total_volume_max": 11.85,
+        "whole_amount_relative_max": 12.0,
+        "mean_polarity_abs_max": 12.6,
+        "cell_count_difference_max": 6.3,
+        "relative_spectrum_max": 8.85
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.003750000000000142,
+      "field_checks": [
+        {
+          "time": 9,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.025236793649239874,
+            "activator_density": 0.02522053092290547,
+            "inhibitor_density": 0.02522078985709041,
+            "polarity_density": 0.0012253891505056033
+          }
+        }
+      ],
+      "production_field_max": 0.025236793649239874,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "field_max": 0.025236793649239874
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "full_fine",
+        "full_space88"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006493064267117567,
+        "log_wasserstein_max": 0.0006454264525561667,
+        "contrast_abs_max": 0.0008402090371257732,
+        "relative_axis_max": 0.00920526825211998,
+        "relative_total_volume_max": 0.0006245340339341432,
+        "whole_amount_relative_max": 0.0001189513510153617,
+        "mean_polarity_abs_max": 0.000209459246691481,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.11407388905409084,
+        "unmatched_observations_max": 2
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.549999999999999,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 11.85,
+        "mean_polarity_abs_max": 9.15,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 4.5
+      },
+      "failed_history_gates": {
+        "relative_spectrum_max": 0.11407388905409084
+      },
+      "maturity_time_error": 0.007500000000000284,
+      "field_checks": [
+        {
+          "time": 6,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.03321140265414071,
+            "activator_density": 0.03320772362460693,
+            "inhibitor_density": 0.033203272938683026,
+            "polarity_density": 0.002476205504027055
+          }
+        }
+      ],
+      "production_field_max": 0.03321140265414071,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "relative_spectrum_max": 0.11407388905409084,
+        "field_max": 0.03321140265414071
+      },
+      "independently_checked_passed": false
+    },
+    {
+      "cases": [
+        "full_space88",
+        "full_space104"
+      ],
+      "arms": [
+        "gpu",
+        "gpu"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006039890391775788,
+        "log_wasserstein_max": 0.0006009034885371037,
+        "contrast_abs_max": 0.00038295269828990657,
+        "relative_axis_max": 0.004113942595181941,
+        "relative_total_volume_max": 0.00034671348976555993,
+        "whole_amount_relative_max": 9.481508909647829e-05,
+        "mean_polarity_abs_max": 4.578332259161421e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.04058203926898403,
+        "unmatched_observations_max": 1
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 11.85,
+        "relative_axis_max": 11.549999999999999,
+        "relative_total_volume_max": 11.85,
+        "whole_amount_relative_max": 12.0,
+        "mean_polarity_abs_max": 12.6,
+        "cell_count_difference_max": 6.3,
+        "relative_spectrum_max": 8.85
+      },
+      "failed_history_gates": {},
+      "maturity_time_error": 0.003750000000000142,
+      "field_checks": [
+        {
+          "time": 9,
+          "probe": 112,
+          "order": 3,
+          "errors": {
+            "occupancy": 0.02523811907115598,
+            "activator_density": 0.025221809717724045,
+            "inhibitor_density": 0.025222065478668874,
+            "polarity_density": 0.0012255139394363014
+          }
+        }
+      ],
+      "production_field_max": 0.02523811907115598,
+      "production_passed": false,
+      "independently_checked_failures": {
+        "field_max": 0.02523811907115598
+      },
+      "independently_checked_passed": false
+    }
+  ],
+  "spatial_trend_rows": [
+    {
+      "branch": "off",
+      "passed": true
+    },
+    {
+      "branch": "tension_adhesion",
+      "passed": true
+    },
+    {
+      "branch": "polarity",
+      "passed": true
+    },
+    {
+      "branch": "full",
+      "passed": true
+    }
+  ],
+  "production_seconds": 6574.781762530998,
+  "physical_extrema": {
+    "maximum_cell_volume_error": 0.016173180559885814,
+    "minimum_radius_in_grid_spacings": 5.09882667742229,
+    "maximum_boundary_occupancy": 7.778390778701016e-12,
+    "maximum_clipping": 0.0
+  },
+  "interpretation": "Same-discretization GPU/CPU agreement passes; shared temporal and spatial sensitivities during repeated cleavage prevent developmental accuracy acceptance. No new independent history or cell-identity conclusion.",
+  "next_test": "Prospective feedback-off timestep ladder with per-furrow and contact-conductance diagnostics; establish temporal accuracy before repeating spatial qualification and fresh-zygote pilot."
+}

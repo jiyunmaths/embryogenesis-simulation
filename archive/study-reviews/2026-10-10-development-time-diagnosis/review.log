@@ -1,0 +1,12 @@
+Reviewed histories, every-call logs, dense spectra and old reproduction: off_coarse
+Reviewed histories, every-call logs, dense spectra and old reproduction: off_fine
+Reviewed histories, every-call logs, dense spectra and old reproduction: off_half
+Reviewed histories, every-call logs, dense spectra and old reproduction: off_quarter
+Independently reconstructed four native checkpoint fields at 0
+Independently reconstructed four native checkpoint fields at 3
+Independently reconstructed four native checkpoint fields at 6
+Independently reconstructed four native checkpoint fields at 9
+Independently reconstructed four native checkpoint fields at 12
+Independently reconstructed four native checkpoint fields at 15
+Independently reconstructed four native checkpoint fields at 18
+{"review_completed": true, "temporal_screen_passed": true, "full_development_qualified": false, "preserved_count": 1592, "review_seconds": 34.54246084601618}

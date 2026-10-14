@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+  "response_reconstruction_sha256": "f32e1f6580976372a18f48d4867ff9ab0269242fba300ba676746ce5a8bf7a14",
+  "plot_data_sha256": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd",
+  "script_sha256": "980c122a04db32a8d4757928ba806662b8d6334ff71af371d87a1c6787700225",
+  "files_sha256": {
+    "redistribution-response.png": "1770f4dd491d49bfcc789c185fef9026fa5d023040ee2354ae88c78bcbbdab61",
+    "redistribution-response.svg": "0f99500dd79e4c7f06ca37266b4ef66193deca94a418d2fa99dd84f5427dd9d5"
+  },
+  "scope": "Fine dt=0.001875. Panel A uses both species over 60 units; panel B uses own-control final activator ratios; panels C/D display the first eight units of fractional-pulse two-species responses. All effects are computed over the full prespecified window. Original amounts matched at t450, not at challenge time t510."
+}

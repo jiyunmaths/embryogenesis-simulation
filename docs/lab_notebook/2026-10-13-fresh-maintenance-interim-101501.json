@@ -1,0 +1,582 @@
+{
+  "observed_utc": "2026-10-13T10:15:01.438949+00:00",
+  "observed_local": "2026-10-13T06:15:01.438949-04:00",
+  "protocol_sha256": "78f7a98bdb2a3d0ecdaa825f94898d9111b664ba197654014d2ecc02ed656bfd",
+  "state": "running_maintenance",
+  "completed_paths": 6,
+  "total_paths": 24,
+  "completed_pairs": 3,
+  "total_pairs": 12,
+  "completed_history_contexts": [
+    [
+      1101,
+      "off"
+    ],
+    [
+      1101,
+      "polarity"
+    ],
+    [
+      1101,
+      "tension_adhesion"
+    ]
+  ],
+  "independent_histories_planned": 3,
+  "independent_histories_with_completed_pairs": [
+    1101
+  ],
+  "new_scientific_histories": 0,
+  "prefixes_checked": 7,
+  "completed": [
+    {
+      "case": "h1101_off_coarse",
+      "history": 1101,
+      "branch": "off",
+      "level": "coarse",
+      "seconds": 2907.131777471979,
+      "audit": {
+        "max_volume_error": 0.010646532521959795,
+        "min_radius": 8.514296020023444,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 3.3306690738754696e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.4084335522397968,
+        "minimum_log_sd": 1.4084335522397968,
+        "final_log_sd": 1.6023388617434513,
+        "late_min_log_sd": 1.5883070547936573,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.6186626082569515,
+        "final_undirected_conductance": 2.602218670277292,
+        "conductance_fractional_change": -0.28088939147307335,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 1,
+        "minimum_growing_modes": 1,
+        "first_sampled_zero_growing_modes_elapsed": null,
+        "zero_mode_episode_starts_elapsed": [],
+        "final_frozen_uniform_max_growth": 0.008499995162384977,
+        "initial_axis_ratio": 1.4082781804674465,
+        "final_axis_ratio": 1.4312391078908018,
+        "relative_axis_change": 0.016304255609310037,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 1.1657341758564144e-15,
+        "max_amount_conservation_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "case": "h1101_off_fine",
+      "history": 1101,
+      "branch": "off",
+      "level": "fine",
+      "seconds": 5053.20220988302,
+      "audit": {
+        "max_volume_error": 0.010646536520684258,
+        "min_radius": 8.514296009305665,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.4084309155392294,
+        "minimum_log_sd": 1.4084309155392294,
+        "final_log_sd": 1.6023378728032065,
+        "late_min_log_sd": 1.5883059948192642,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.6186840861408576,
+        "final_undirected_conductance": 2.6022255364585174,
+        "conductance_fractional_change": -0.2808917621671533,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 1,
+        "minimum_growing_modes": 1,
+        "first_sampled_zero_growing_modes_elapsed": null,
+        "zero_mode_episode_starts_elapsed": [],
+        "final_frozen_uniform_max_growth": 0.008501729471503516,
+        "initial_axis_ratio": 1.4082758594955131,
+        "final_axis_ratio": 1.431237173664013,
+        "relative_axis_change": 0.016304557103411055,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 1.3322676295501878e-15,
+        "max_amount_conservation_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "case": "h1101_tension_adhesion_coarse",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "coarse",
+      "seconds": 2902.7042881770176,
+      "audit": {
+        "max_volume_error": 0.011892758093243527,
+        "min_radius": 8.510725885776463,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.3614611519924722,
+        "minimum_log_sd": 1.3614611519924722,
+        "final_log_sd": 1.6346028134779296,
+        "late_min_log_sd": 1.6194360179585696,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.560903102807152,
+        "final_undirected_conductance": 2.5550533948411256,
+        "conductance_fractional_change": -0.28247039555024367,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 1,
+        "minimum_growing_modes": 1,
+        "first_sampled_zero_growing_modes_elapsed": null,
+        "zero_mode_episode_starts_elapsed": [],
+        "final_frozen_uniform_max_growth": 0.002862880531577794,
+        "initial_axis_ratio": 1.408796160026158,
+        "final_axis_ratio": 1.4342578352956452,
+        "relative_axis_change": 0.018073356523781614,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 1.1102230246251565e-15,
+        "max_amount_conservation_error": 1.682681771697503e-16
+      }
+    },
+    {
+      "case": "h1101_tension_adhesion_fine",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "fine",
+      "seconds": 5058.869668415049,
+      "audit": {
+        "max_volume_error": 0.011892765021553897,
+        "min_radius": 8.510725855945754,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.3614604268636379,
+        "minimum_log_sd": 1.3614604268636379,
+        "final_log_sd": 1.6346017804438548,
+        "late_min_log_sd": 1.6194349124309437,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.5609244118275143,
+        "final_undirected_conductance": 2.555060046390748,
+        "conductance_fractional_change": -0.28247282141002916,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 1,
+        "minimum_growing_modes": 1,
+        "first_sampled_zero_growing_modes_elapsed": null,
+        "zero_mode_episode_starts_elapsed": [],
+        "final_frozen_uniform_max_growth": 0.002864654998437466,
+        "initial_axis_ratio": 1.4087938321803826,
+        "final_axis_ratio": 1.4342558632510425,
+        "relative_axis_change": 0.018073638944920978,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 1.3322676295501878e-15,
+        "max_amount_conservation_error": 1.7867651802561113e-16
+      }
+    },
+    {
+      "case": "h1101_polarity_coarse",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "coarse",
+      "seconds": 2901.659102996986,
+      "audit": {
+        "max_volume_error": 0.010593026259075211,
+        "min_radius": 8.513185590706087,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 3.3306690738754696e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.436359701724708,
+        "minimum_log_sd": 1.436359701724708,
+        "final_log_sd": 1.720886282815199,
+        "late_min_log_sd": 1.697279791912539,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.001511866264087,
+        "final_undirected_conductance": 1.8358620709845748,
+        "conductance_fractional_change": -0.38835421854599217,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 0,
+        "minimum_growing_modes": 0,
+        "first_sampled_zero_growing_modes_elapsed": 55.949999999999996,
+        "zero_mode_episode_starts_elapsed": [
+          55.949999999999996
+        ],
+        "final_frozen_uniform_max_growth": -0.17265856043836791,
+        "initial_axis_ratio": 1.417271519432481,
+        "final_axis_ratio": 1.437432477715163,
+        "relative_axis_change": 0.014225191155153638,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 9.992007221626409e-16,
+        "max_amount_conservation_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "case": "h1101_polarity_fine",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "fine",
+      "seconds": 5069.518032532011,
+      "audit": {
+        "max_volume_error": 0.010593027860937854,
+        "min_radius": 8.51318558417517,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "measurement": {
+        "rows": 1201,
+        "physical_end": 258.0,
+        "maintenance_elapsed": 180.0,
+        "total_elapsed_since_t18": 240.0,
+        "initial_log_sd": 1.436361116843866,
+        "minimum_log_sd": 1.436361116843866,
+        "final_log_sd": 1.7208862440660277,
+        "late_min_log_sd": 1.6972797985189099,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": true,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 3.0015174469770196,
+        "final_undirected_conductance": 1.8358637197818015,
+        "conductance_fractional_change": -0.38835480645605014,
+        "initial_growing_modes": 5,
+        "final_growing_modes": 0,
+        "minimum_growing_modes": 0,
+        "first_sampled_zero_growing_modes_elapsed": 55.949999999999996,
+        "zero_mode_episode_starts_elapsed": [
+          55.949999999999996
+        ],
+        "final_frozen_uniform_max_growth": -0.17265691513971504,
+        "initial_axis_ratio": 1.4172700957346258,
+        "final_axis_ratio": 1.437431584178001,
+        "relative_axis_change": 0.014225579516602194,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 9.020562075079397e-16,
+        "max_amount_conservation_error": 1.6653345369377348e-16
+      }
+    }
+  ],
+  "active": [
+    {
+      "case": "h1101_full_coarse",
+      "history": 1101,
+      "branch": "full",
+      "level": "coarse",
+      "progress": {
+        "state": "running",
+        "time": 221.54999999999998,
+        "elapsed": 143.54999999999998,
+        "cells": 16,
+        "seconds": 2265.954724098032,
+        "audit": {
+          "max_volume_error": 0.011741520245334147,
+          "min_radius": 8.509879176433072,
+          "max_clipping": 0.0,
+          "dilution_amount_error": 3.3306690738754696e-16
+        }
+      },
+      "measurement": {
+        "rows": 958,
+        "physical_end": 221.54999999999998,
+        "maintenance_elapsed": 143.54999999999998,
+        "total_elapsed_since_t18": 203.54999999999998,
+        "initial_log_sd": 1.4547734204765304,
+        "minimum_log_sd": 1.4547734204765304,
+        "final_log_sd": 1.7176649078551467,
+        "late_min_log_sd": null,
+        "outcomes": [
+          {
+            "threshold": 0.05,
+            "continuous_retention_so_far": true,
+            "late_persistent": null,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.1,
+            "continuous_retention_so_far": true,
+            "late_persistent": null,
+            "sampled_transitions": []
+          },
+          {
+            "threshold": 0.2,
+            "continuous_retention_so_far": true,
+            "late_persistent": null,
+            "sampled_transitions": []
+          }
+        ],
+        "initial_undirected_conductance": 2.9472729081489897,
+        "final_undirected_conductance": 1.922360608640457,
+        "conductance_fractional_change": -0.34774937084201696,
+        "initial_growing_modes": 4,
+        "final_growing_modes": 0,
+        "minimum_growing_modes": 0,
+        "first_sampled_zero_growing_modes_elapsed": 47.1,
+        "zero_mode_episode_starts_elapsed": [
+          47.1
+        ],
+        "final_frozen_uniform_max_growth": -0.14822801380208528,
+        "initial_axis_ratio": 1.4176229836405791,
+        "final_axis_ratio": 1.4372751125794958,
+        "relative_axis_change": 0.013862733015549855,
+        "max_conductance_asymmetry": 5.551115123125783e-17,
+        "max_constant_error": 1.1102230246251565e-15,
+        "max_amount_conservation_error": 1.3877787807814457e-16
+      }
+    }
+  ],
+  "paired_reports": [
+    {
+      "history": 1101,
+      "branch": "off",
+      "field_max": 6.242688349863235e-06,
+      "dense_peak": {
+        "time": 121.17,
+        "elapsed": 43.17,
+        "relative_spectrum": 0.0009968676784023053,
+        "edges": [
+          39,
+          38
+        ]
+      },
+      "homologous_errors": {
+        "chemical_log_max": 2.5587181523889996e-05,
+        "polarity_abs_max": 1.1773134740312302e-06,
+        "relative_volume_max": 6.952463271758802e-09,
+        "relative_transport_max": 7.3552359517063035e-06,
+        "unmatched_observations_max": 0
+      },
+      "growth_abs_max": 2.8005477776815724e-06,
+      "topology_mismatch_times": [
+        121.17
+      ]
+    },
+    {
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "field_max": 7.241150282715131e-06,
+      "dense_peak": {
+        "time": 78.195,
+        "elapsed": 0.19499999999999318,
+        "relative_spectrum": 6.739155208681896e-06,
+        "edges": [
+          38,
+          38
+        ]
+      },
+      "homologous_errors": {
+        "chemical_log_max": 0.00010461751003107418,
+        "polarity_abs_max": 4.123306094517762e-06,
+        "relative_volume_max": 3.85621065968067e-07,
+        "relative_transport_max": 7.364193627306182e-06,
+        "unmatched_observations_max": 0
+      },
+      "growth_abs_max": 2.843597581403401e-06,
+      "topology_mismatch_times": []
+    },
+    {
+      "history": 1101,
+      "branch": "polarity",
+      "field_max": 5.974466514622076e-06,
+      "dense_peak": {
+        "time": 78.06,
+        "elapsed": 0.060000000000002274,
+        "relative_spectrum": 3.326203185692923e-06,
+        "edges": [
+          38,
+          38
+        ]
+      },
+      "homologous_errors": {
+        "chemical_log_max": 5.96899041101171e-06,
+        "polarity_abs_max": 3.980127094259378e-07,
+        "relative_volume_max": 4.762769068022976e-09,
+        "relative_transport_max": 4.756063488955012e-06,
+        "unmatched_observations_max": 0
+      },
+      "growth_abs_max": 1.6810128382616085e-06,
+      "topology_mismatch_times": []
+    }
+  ],
+  "elapsed_wall_hours": 7.4919436325,
+  "mean_path_seconds": {
+    "coarse": 2903.831722881994,
+    "fine": 5060.529970276693
+  },
+  "mean_prefix_seconds": 84.7009998660069,
+  "estimated_remaining_hours": 19.801422637604183,
+  "estimated_completion_local": "2026-10-14T02:03:06.560444-04:00",
+  "estimated_total_hours": 27.293366270104187,
+  "conditional_remaining_range_hours": [
+    20,
+    23
+  ],
+  "external_free_gib": 166.75448608398438,
+  "scientific_accepted": false,
+  "independent_final_review_pending": true,
+  "scope": "Read-only interim reconstruction of saved regular chemistry, spectra, geometry and maintenance outcomes; completed production comparison reports/prefix/restart records checked without rerunning them. Dense-spectrum/native-field gates are committed production reports, not independently reconstructed here. Active data are a timestamped prefix of the trajectory. No final qualification, full source/input rehash, checkpoint-native-field review, biological identity or whole-system stability claim.",
+  "consumed_file_snapshots_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/protocol.json": "78f7a98bdb2a3d0ecdaa825f94898d9111b664ba197654014d2ecc02ed656bfd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/status.json": "def7204a5564e865ff842c2327ab7f83d79a81389ce9dbc670fa8d2316bef6b7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-13-fresh-zygote-maintenance/process-launch.json": "4e9a928fedc53265b0bb884cf2d1c73805f6e92bc7003352f5040d269cf79640",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_coarse/actual-start-prefix.json": "cd2786994e62b882745f5e3992ef49057e31b680eb0f331dfd339d8668cb96e3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_coarse/gpu-history.json": "638eac22a6f5a3510887dc13edcb93fddb89fbbbaefa13ed1bc685e126a24d08",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_coarse/gpu-result.json": "4c52703dd1e20805d9b7cdd61ce3282e87b8accf63174c53c6397dde777fb573",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_fine/actual-start-prefix.json": "55eac7aab266f4abfcff19155f089ec3071f0bc85335438ab1d3161a0f8e18fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_fine/gpu-history.json": "65996eb4fdad45a3c761748756675097f079ebf14ed0cb88896a6d46a63b9f6c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_off_fine/gpu-result.json": "b6cdef387baefa8c900dbbf35b3223dd3c9b22f9254236feb50df581949fe217",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_coarse/actual-start-prefix.json": "e8c0c531e963a711a29e54efab3fb52a1d1c73586af4261fbf7efe80a9f550e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_coarse/gpu-history.json": "b7f0c249f66662fc6c1657227dd66704dabb4d5c219a801661ba9315ff38871d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_coarse/gpu-result.json": "15e635ed41ba34d37eefe132b5a03cd22ab543091a7b7e2e103df2dac803c1c8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_fine/actual-start-prefix.json": "35d2e46093aaaec50dbf9c501800f0af45d1a868d6baf4ba502eec9ec691b200",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_fine/gpu-history.json": "6ff0ee7e076327fd79bd7a6305efb46b3822ff13a1f26564a89f87377df92883",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_tension_adhesion_fine/gpu-result.json": "0bec2a252e399383df911a96c163e9328bb6c027a959261a2688064df736e73a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_coarse/actual-start-prefix.json": "3c9bc4959e5f55d037ae917c7f327b83486ce28e140bf0104e63021148243ca5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_coarse/gpu-history.json": "cfdc57b0511c6ea0ff2a27da1277e06b2f96728e372d54b72192ee7e14a7f7bf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_coarse/gpu-result.json": "6f6c3ac765765c6b3ede5aa1112bb9438ee5926f596bc44a69036f7056a8ca91",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_fine/actual-start-prefix.json": "4fdc6d1cdf45fedd6df81cb25fd8b01baa9175a7856fa934dd0062ca78ef66af",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_fine/gpu-history.json": "dc469008f85a7862db9018c74c14c8bf261aad7cd949bb3f792e2a34ddab093e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_polarity_fine/gpu-result.json": "f2c7264f02483ace174209bdd17676ea0fb32207d1adbb63a6fbafb659f267cb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_full_coarse/actual-start-prefix.json": "067e53af6c7687eb5db6d753f2d93e76aa7ab31f8e2575d1eb0dec37ef78a042",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_full_coarse/gpu-history.json": "71564725bd0f88b0839cc6f5be3d936bafa2ace3cb188385ee5ee31a94a1c53a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/h1101_full_coarse/gpu-progress.json": "f137e0d98658aed7627bba33d6c77d60a40220e7cfb74d2325b7a6df6c880206",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/time-h1101-off.json": "b9ec9fb96ccfe1e815f3ca0dcdccfa6a4e9c419dce281c100c58ffa281b76858",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/time-h1101-tension_adhesion.json": "db088af4334fa9aff2fd072a26542b7954e95a15a6367cf1fa93bfeef14908dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance/time-h1101-polarity.json": "bee7c4cc5a293ddd1e00b3e475da1429568d925312c260f0688ce507495b556d"
+  },
+  "completed_unattributed_coordinator_overhead_seconds": 143.96799444092903,
+  "mean_overhead_seconds_per_completed_pair": 47.98933148030968,
+  "eta_method": "Mean completed180-unit runtime separately for each timestep; subtract active path wall time, add unstarted prefixes, and spread observed unattributed coordinator overhead across remaining pairs. Overhead includes restores/cleanup/comparisons/bookkeeping and is not isolated comparison runtime. Forecast conditional on stable speed and no gate failures; no final review included.",
+  "assessment_script": "archive/study-reviews/2026-10-13-fresh-maintenance-interim-101501/observe_readonly.py",
+  "assessment_script_sha256": "8340e376239e11ef94da5bde45cdf35580f1aaf132455efabe6d9a08d4477792",
+  "host_process_observation": "    PID     ELAPSED STAT COMMAND\n 740991    07:27:35 Rsl  /home/sji/miniforge3/envs/deeplearning/bin/python /home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py --record /home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-10-output/studies-manifest.json --record-sha256 8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6 -m embryo.fresh_zygote_maintenance run /home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-maintenance\n",
+  "host_gpu_observation": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e, NVIDIA GeForce GTX 1080 Ti, 2924, 95\n",
+  "host_observation_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-13-fresh-maintenance-interim-101501/host-process.txt": "e62622336eb4594e1986057937b657ef09331dc4426852d3a669a82d144893de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-13-fresh-maintenance-interim-101501/host-gpu.txt": "074442d5597e6b65525edb108975df545eebf4c04787a110b665351dc8dad741"
+  }
+}

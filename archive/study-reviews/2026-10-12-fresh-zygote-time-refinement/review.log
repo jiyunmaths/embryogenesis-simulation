@@ -1,0 +1,15 @@
+Reviewed history, dense graph, events and pressure: h1103_off_development_half
+Reviewed history, dense graph, events and pressure: h1103_off_development_quarter
+Independently rebuilt both checkpoint fields: 0
+Independently rebuilt both checkpoint fields: 3
+Independently rebuilt both checkpoint fields: 6
+Independently rebuilt both checkpoint fields: 9
+Independently rebuilt both checkpoint fields: 12
+Independently rebuilt both checkpoint fields: 15
+Independently rebuilt both checkpoint fields: 18
+{
+  "review_completed": true,
+  "scoped_refinement_accepted": true,
+  "original_cohort_accepted": false,
+  "seconds": 34.63102232996607
+}

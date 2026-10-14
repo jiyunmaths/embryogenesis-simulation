@@ -1,0 +1,33 @@
+Reviewed history, dense graph, events and pressure: h1101_off_development
+Reviewed history, dense graph, events and pressure: h1101_off_development_half
+Reviewed history, dense graph, events and pressure: h1101_tension_adhesion_development
+Reviewed history, dense graph, events and pressure: h1101_tension_adhesion_development_half
+Reviewed history, dense graph, events and pressure: h1101_polarity_development
+Reviewed history, dense graph, events and pressure: h1101_polarity_development_half
+Reviewed history, dense graph, events and pressure: h1101_full_development
+Reviewed history, dense graph, events and pressure: h1101_full_development_half
+Reviewed history, dense graph, events and pressure: h1102_off_development
+Reviewed history, dense graph, events and pressure: h1102_off_development_half
+Reviewed history, dense graph, events and pressure: h1102_tension_adhesion_development
+Reviewed history, dense graph, events and pressure: h1102_tension_adhesion_development_half
+Reviewed history, dense graph, events and pressure: h1102_polarity_development
+Reviewed history, dense graph, events and pressure: h1102_polarity_development_half
+Reviewed history, dense graph, events and pressure: h1102_full_development
+Reviewed history, dense graph, events and pressure: h1102_full_development_half
+Reviewed history, dense graph, events and pressure: h1103_off_development
+Reviewed history, dense graph, events and pressure: h1103_off_development_half
+Reviewed failed-pair fields and saved arrays: 0
+Reviewed failed-pair fields and saved arrays: 3
+Reviewed failed-pair fields and saved arrays: 6
+Reviewed failed-pair fields and saved arrays: 9
+Reviewed failed-pair fields and saved arrays: 12
+Reviewed failed-pair fields and saved arrays: 15
+Reviewed failed-pair fields and saved arrays: 18
+{
+  "review_completed": true,
+  "qualification_accepted": false,
+  "completed_paths": 18,
+  "passed_pairs": 8,
+  "numerical_stop_confirmed": true,
+  "seconds": 221.11647134303348
+}

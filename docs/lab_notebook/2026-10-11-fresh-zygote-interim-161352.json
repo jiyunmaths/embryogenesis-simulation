@@ -1,0 +1,1605 @@
+{
+  "as_of_utc": "2026-10-11T20:13:52.527161+00:00",
+  "as_of_local": "2026-10-11T16:13:52.527161-04:00",
+  "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "provisional": true,
+  "independent_final_review_completed": false,
+  "scope": "Three newly seeded zygote histories, four matched mechanical controls, two developmental timesteps at grid120 through t18. This stage measures development and numerical reproducibility; no long-window initiation/maintenance, biological identity, 32-cell or continuum acceptance.",
+  "registered_independent_histories": 3,
+  "fully_completed_independent_histories": [
+    1101
+  ],
+  "completed_paths": 15,
+  "total_paths": 24,
+  "completed_pairs": 7,
+  "total_pairs": 12,
+  "status": {
+    "state": "running_development",
+    "active": "h1102_full_development_half",
+    "completed": 15,
+    "total": 24,
+    "independent_histories": 3,
+    "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+    "seconds": 25821.09725017898
+  },
+  "active_progress": {
+    "state": "running",
+    "time": 12.0,
+    "cells": 12,
+    "events": 11,
+    "active_divisions": 4,
+    "seconds": 977.1728866350022,
+    "audit": {
+      "max_volume_error": 0.015986948825750136,
+      "min_radius": 8.505864417224844,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 56530,
+      "correction_magnitude_max": 0.00013593590190479028,
+      "before_relative_volume_error_max": 0.0003839114642986141,
+      "after_relative_volume_error_max": 9.935924083492864e-08
+    }
+  },
+  "active_progress_age_seconds": 20.47064518928528,
+  "reports": [
+    {
+      "case": "h1101_full_development",
+      "history": 1101,
+      "branch": "full",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1201.1407805720228,
+      "audit": {
+        "max_volume_error": 0.01646938797719555,
+        "min_radius": 8.496835733114661,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.6450287232980827e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.379367627063477e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "06dd215efc5f41c7c40a3787a36172da08def3f085a298af6d2239cf93aba5cb"
+    },
+    {
+      "case": "h1101_full_development_half",
+      "history": 1101,
+      "branch": "full",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2244.19729097205,
+      "audit": {
+        "max_volume_error": 0.016466333006376677,
+        "min_radius": 8.496809434248538,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 2.124180831231115e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.3790625759402264e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "a8290d9889df209f6a737b05944636c79784293562b96ee540bcac40408c2448"
+    },
+    {
+      "case": "h1101_off_development",
+      "history": 1101,
+      "branch": "off",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1235.2964519669767,
+      "audit": {
+        "max_volume_error": 0.016596664833995578,
+        "min_radius": 8.49748407186777,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 4.3525605342153995e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.0523838744891378e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "86d1262119e5bcfd599de265b22389f21b06a58b2adf8c990222cbd1de8b7b16"
+    },
+    {
+      "case": "h1101_off_development_half",
+      "history": 1101,
+      "branch": "off",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2355.7869041899685,
+      "audit": {
+        "max_volume_error": 0.01659649182453171,
+        "min_radius": 8.497433569846716,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.6502778577585104e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.0512292425435277e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "f754744173a2840b1e9730de6f91b275293710b0baef134317fd02238090470c"
+    },
+    {
+      "case": "h1101_polarity_development",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1190.6288410589914,
+      "audit": {
+        "max_volume_error": 0.016447753481152683,
+        "min_radius": 8.496910558429947,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 4.3525605342153995e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.3800388783125062e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "a1cc9b9c3b7ca7cf5aa29862e7373184fb264e62c167603d80586d651f9ee315"
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2238.4856257489882,
+      "audit": {
+        "max_volume_error": 0.01644633538403306,
+        "min_radius": 8.496851543728994,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.6502778577585104e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.3801623038878219e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "e267b08acbd388338fe69e3c184ea14ad07327aaf5808f42fc91cb851f336966"
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1244.3330244389945,
+      "audit": {
+        "max_volume_error": 0.016618751720053226,
+        "min_radius": 8.497406869592215,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 2.1026180796468452e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.0517290163769566e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "06912b4ff1637259dc48fd8bdfcbf9df0def14fd42471ce4d3edbc197823b48e"
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2357.8798498819815,
+      "audit": {
+        "max_volume_error": 0.016616705737538595,
+        "min_radius": 8.497400408201303,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 2.124180831231115e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 1.0509625288090962e-11,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "2e467e03c4d33d9b9710c9058835adae070d96ee0e08aa22b1baf233f7dc5652"
+    },
+    {
+      "case": "h1102_full_development",
+      "history": 1102,
+      "branch": "full",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1172.0536692150054,
+      "audit": {
+        "max_volume_error": 0.01600743807341687,
+        "min_radius": 8.502817469720375,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 5.106981504354735e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 6.749990648889648e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "05fad98afebdbfc01f36f79af16e479597329de841f0a9618c86018d555f3ba3"
+    },
+    {
+      "case": "h1102_off_development",
+      "history": 1102,
+      "branch": "off",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1208.2030873720068,
+      "audit": {
+        "max_volume_error": 0.016126035852219944,
+        "min_radius": 8.504048710308982,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.152249572480059e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 5.310038433264941e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "0b5a138a5d523b0303eedaf3f03c1c3c3a9e70c77b78710f8dbb88dc86d966eb"
+    },
+    {
+      "case": "h1102_off_development_half",
+      "history": 1102,
+      "branch": "off",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2298.560826363042,
+      "audit": {
+        "max_volume_error": 0.01613056373997035,
+        "min_radius": 8.504042785091888,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 5.253032453467199e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 5.307401653581456e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "4e57e9f4f9baba058579aba3ed7e00e8e2d455140053792bb98bac70e8ec4f22"
+    },
+    {
+      "case": "h1102_polarity_development",
+      "history": 1102,
+      "branch": "polarity",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1181.313860505994,
+      "audit": {
+        "max_volume_error": 0.01598412148646733,
+        "min_radius": 8.502901478265157,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.152249572480059e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 6.751277054767302e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "29ec4ad1c1d104d90a2efd99cda4e4048e37ee2aee1d0cf67893e3d6c751061e"
+    },
+    {
+      "case": "h1102_polarity_development_half",
+      "history": 1102,
+      "branch": "polarity",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2214.543536174984,
+      "audit": {
+        "max_volume_error": 0.01598213390402503,
+        "min_radius": 8.5029011786587,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 5.253032453467199e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 6.75517584577956e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "f556a0dad5edf82439016fb58bfa1c05f4512b20beb51d85876bf2c4e33998bc"
+    },
+    {
+      "case": "h1102_tension_adhesion_development",
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "level": "development",
+      "passed": true,
+      "failure": null,
+      "seconds": 1208.256042989029,
+      "audit": {
+        "max_volume_error": 0.016151044976103757,
+        "min_radius": 8.503945778961677,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 5.106981504354735e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 5.308493987270235e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "c5dbf1ce057e78a8cb3c0cd12a551c079f5fae655712e2a311252c85b333009e"
+    },
+    {
+      "case": "h1102_tension_adhesion_development_half",
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "level": "development_half",
+      "passed": true,
+      "failure": null,
+      "seconds": 2309.3151984229917,
+      "audit": {
+        "max_volume_error": 0.016151714426502872,
+        "min_radius": 8.50397537798256,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "final_cells": 16,
+      "final_time": 18.0,
+      "events": 15,
+      "exact_restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "event_maxima": {
+        "amount_relative_jump": 2.220446049250313e-16,
+        "target_relative_jump": 0.0,
+        "volume_relative_jump": 3.44360318038639e-10,
+        "effective_occupancy_absolute_jump": 3.3306690738754696e-16
+      },
+      "boundary_peak": 5.309366227918e-13,
+      "all_nondividing_cells_connected": true,
+      "result_sha256": "d84cea0dec75c6e4d2e11907f22a42061f64fd46f2d7cf43a3442e2935c5316e"
+    }
+  ],
+  "pairs": [
+    {
+      "history": 1101,
+      "branch": "full",
+      "cases": [
+        "h1101_full_development",
+        "h1101_full_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.0032708401079289476,
+      "regular_spectrum_max": 0.006385693352402396,
+      "dense_spectrum_max": 0.008829078299862797,
+      "dense_peak": {
+        "relative_spectrum": 0.008829078299862797,
+        "time": 8.61,
+        "cells": 4,
+        "edges": [
+          5,
+          6
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 8.963178551778604e-05,
+        "log_wasserstein_max": 8.965194766839777e-05,
+        "contrast_abs_max": 3.480498357438322e-05,
+        "relative_axis_max": 0.0014450730355932695,
+        "relative_total_volume_max": 8.181865457279613e-05,
+        "whole_amount_relative_max": 1.4686138318342756e-05,
+        "mean_polarity_abs_max": 3.7653249209486286e-06,
+        "relative_spectrum_max": 0.006385693352402396,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [],
+      "topology_mismatch_times": [
+        8.61,
+        12.24,
+        17.115
+      ],
+      "maturity_time_error": 0.002109374999999858,
+      "result_sha256": "8ddeb874a31a89b0b7303035e97660e0aa8ad32a046be252ea71d004073d2bb3"
+    },
+    {
+      "history": 1101,
+      "branch": "off",
+      "cases": [
+        "h1101_off_development",
+        "h1101_off_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.003699210358535359,
+      "regular_spectrum_max": 0.008738701888246929,
+      "dense_spectrum_max": 0.009195927899257956,
+      "dense_peak": {
+        "relative_spectrum": 0.009195927899257956,
+        "time": 5.61,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 9.10110221272928e-05,
+        "log_wasserstein_max": 9.103038242040722e-05,
+        "contrast_abs_max": 3.4275735264906746e-05,
+        "relative_axis_max": 0.001675398512004378,
+        "relative_total_volume_max": 8.259746289285275e-05,
+        "whole_amount_relative_max": 1.5948097997542376e-05,
+        "mean_polarity_abs_max": 2.7640119551429194e-06,
+        "relative_spectrum_max": 0.008738701888246929,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [
+        11.715
+      ],
+      "topology_mismatch_times": [
+        9.435,
+        9.6,
+        9.66,
+        11.895,
+        17.01,
+        17.475,
+        17.745,
+        17.805,
+        17.895
+      ],
+      "maturity_time_error": 0.0025781249999994316,
+      "result_sha256": "1f848047bf0eac8adafc5fab1327c6ddca7d9aeb8dc14926864205d56e70ce76"
+    },
+    {
+      "history": 1101,
+      "branch": "polarity",
+      "cases": [
+        "h1101_polarity_development",
+        "h1101_polarity_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.0035792793422723492,
+      "regular_spectrum_max": 0.008733376527158804,
+      "dense_spectrum_max": 0.009461072333536389,
+      "dense_peak": {
+        "relative_spectrum": 0.009461072333536389,
+        "time": 8.61,
+        "cells": 4,
+        "edges": [
+          5,
+          6
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 9.690360885710509e-05,
+        "log_wasserstein_max": 9.692427226826742e-05,
+        "contrast_abs_max": 3.657992228999797e-05,
+        "relative_axis_max": 0.0016813097146322065,
+        "relative_total_volume_max": 8.839925649217761e-05,
+        "whole_amount_relative_max": 1.6132451178485496e-05,
+        "mean_polarity_abs_max": 3.8876179741543235e-06,
+        "relative_spectrum_max": 0.008733376527158804,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [],
+      "topology_mismatch_times": [
+        8.61,
+        12.24
+      ],
+      "maturity_time_error": 0.0023437499999996447,
+      "result_sha256": "d02a51d169ce1db6bb496bee2ebc5da1b5d16df3bb23aa8706b8b2ac1d432159"
+    },
+    {
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "cases": [
+        "h1101_tension_adhesion_development",
+        "h1101_tension_adhesion_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.003373273080956573,
+      "regular_spectrum_max": 0.006386176456815611,
+      "dense_spectrum_max": 0.006721896280188561,
+      "dense_peak": {
+        "relative_spectrum": 0.006721896280188561,
+        "time": 5.625,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 7.37494037619294e-05,
+        "log_wasserstein_max": 7.376425514796103e-05,
+        "contrast_abs_max": 2.6444281576444052e-05,
+        "relative_axis_max": 0.0013778804128670163,
+        "relative_total_volume_max": 6.63650527463755e-05,
+        "whole_amount_relative_max": 1.3877439629217392e-05,
+        "mean_polarity_abs_max": 2.289287594181005e-06,
+        "relative_spectrum_max": 0.006386176456815611,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [
+        11.715
+      ],
+      "topology_mismatch_times": [
+        9.435,
+        9.66,
+        12.075,
+        13.41,
+        17.475,
+        17.745,
+        17.805,
+        17.895
+      ],
+      "maturity_time_error": 0.0023437499999996447,
+      "result_sha256": "4aaa28ab96c21607c8be3f375fda0f1ac5581ca9e25d74f1ca46c0ce2b40c8a0"
+    },
+    {
+      "history": 1102,
+      "branch": "off",
+      "cases": [
+        "h1102_off_development",
+        "h1102_off_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.004367755753930219,
+      "regular_spectrum_max": 0.007319873674945965,
+      "dense_spectrum_max": 0.007512206252558818,
+      "dense_peak": {
+        "relative_spectrum": 0.007512206252558818,
+        "time": 5.895,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 3.916955967753744e-05,
+        "log_wasserstein_max": 3.913482108010548e-05,
+        "contrast_abs_max": 3.499869314332882e-05,
+        "relative_axis_max": 0.0013805922343304022,
+        "relative_total_volume_max": 3.046811338180966e-05,
+        "whole_amount_relative_max": 1.535413430175936e-05,
+        "mean_polarity_abs_max": 4.383616780058832e-06,
+        "relative_spectrum_max": 0.007319873674945965,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [],
+      "topology_mismatch_times": [
+        9.84,
+        9.855,
+        11.475,
+        11.865,
+        12.18,
+        12.69,
+        16.995,
+        17.085,
+        17.19,
+        17.295,
+        17.385,
+        17.895
+      ],
+      "maturity_time_error": 0.0023437499999996447,
+      "result_sha256": "d8250e2ad2fde5c3f07c61d3ab81de9e04943ff0faaef0eda322fa999125e5b9"
+    },
+    {
+      "history": 1102,
+      "branch": "polarity",
+      "cases": [
+        "h1102_polarity_development",
+        "h1102_polarity_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.004887527201608122,
+      "regular_spectrum_max": 0.0073175260414314785,
+      "dense_spectrum_max": 0.00924390129274638,
+      "dense_peak": {
+        "relative_spectrum": 0.00924390129274638,
+        "time": 8.73,
+        "cells": 4,
+        "edges": [
+          5,
+          6
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 3.791456123105649e-05,
+        "log_wasserstein_max": 3.787964932146073e-05,
+        "contrast_abs_max": 3.672918352954843e-05,
+        "relative_axis_max": 0.0016746213317206937,
+        "relative_total_volume_max": 2.8766538435087696e-05,
+        "whole_amount_relative_max": 1.5569602795695303e-05,
+        "mean_polarity_abs_max": 5.950451156679109e-06,
+        "relative_spectrum_max": 0.0073175260414314785,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [
+        8.895
+      ],
+      "topology_mismatch_times": [
+        8.73,
+        9.465,
+        12.375,
+        13.14,
+        17.325,
+        17.34,
+        17.52,
+        17.535
+      ],
+      "maturity_time_error": 0.002109374999999858,
+      "result_sha256": "feb84abc96f2df1f06c84eceea292791234d8c12b535d90a4c9aee67efd5c5fe"
+    },
+    {
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "cases": [
+        "h1102_tension_adhesion_development",
+        "h1102_tension_adhesion_development_half"
+      ],
+      "passed": true,
+      "field_max": 0.004368536553331231,
+      "regular_spectrum_max": 0.00731153925831647,
+      "dense_spectrum_max": 0.007508268544313962,
+      "dense_peak": {
+        "relative_spectrum": 0.007508268544313962,
+        "time": 5.895,
+        "cells": 2,
+        "edges": [
+          1,
+          1
+        ]
+      },
+      "regular_errors": {
+        "concentration_wasserstein_max": 4.1918275243745474e-05,
+        "log_wasserstein_max": 4.188036165631357e-05,
+        "contrast_abs_max": 4.8261522532712375e-05,
+        "relative_axis_max": 0.0013801274678486575,
+        "relative_total_volume_max": 3.300468659661604e-05,
+        "whole_amount_relative_max": 1.6398799616901272e-05,
+        "mean_polarity_abs_max": 4.2397498013709055e-06,
+        "relative_spectrum_max": 0.00731153925831647,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "regular_unmatched_times": [],
+      "dense_unmatched_times": [
+        8.895
+      ],
+      "topology_mismatch_times": [
+        9.84,
+        9.855,
+        11.475,
+        11.865,
+        12.18,
+        12.51,
+        12.69,
+        13.395,
+        16.995,
+        17.085,
+        17.385,
+        17.895,
+        17.91
+      ],
+      "maturity_time_error": 0.0023437499999996447,
+      "result_sha256": "0b510d6b6654544939878ae4428517f653f382ca2b97b45e1b1dfda00560e6eb"
+    }
+  ],
+  "prefixes": [
+    {
+      "case": "h1101_full_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.5177302220254205,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_full_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.5320331280236132,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_off_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.2874978079926223,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_off_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.2629309140029363,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_polarity_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.2605821290053427,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.3074816440348513,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.332248176971916,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.457479714998044,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_full_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.2618843060336076,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_full_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.5385221840115264,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_off_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.0215161700034514,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_off_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.2787893500062637,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_polarity_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 3.3306690738754696e-16,
+        "chemical_log_max": 8.881784197001256e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.5470195249654353,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_polarity_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 6.661338147750941e-16,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 7.771561172376096e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.284406983992085,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_tension_adhesion_development",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.332267629550187e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.3052620270173065,
+      "exact_gpu_restart": true
+    },
+    {
+      "case": "h1102_tension_adhesion_development_half",
+      "passed": true,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 2.220446049250313e-16,
+        "chemical_log_max": 1.5543122344752203e-15,
+        "polarity_abs_max": 0.0,
+        "relative_volume_max": 9.992007221626409e-16,
+        "relative_transport_max": 0.0
+      },
+      "seconds": 3.3124046390294097,
+      "exact_gpu_restart": true
+    }
+  ],
+  "endpoints": [
+    {
+      "case": "h1101_full_development",
+      "history": 1101,
+      "branch": "full",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.327141810409428,
+      "log_activator_sd": 0.003561390727674644,
+      "activator_range": [
+        0.994001576924109,
+        1.008703066890353
+      ],
+      "inhibitor_range": [
+        0.9978672877585527,
+        1.004100841264805
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.3143241358472739,
+      "spectral_gap": 1.0897539763619237,
+      "last_abscission": 12.22125
+    },
+    {
+      "case": "h1101_full_development_half",
+      "history": 1101,
+      "branch": "full",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3270011755556188,
+      "log_activator_sd": 0.003564137472713679,
+      "activator_range": [
+        0.9939963676375984,
+        1.0087079180372729
+      ],
+      "inhibitor_range": [
+        0.9978638570315611,
+        1.0041030374423863
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.31429879789616777,
+      "spectral_gap": 1.0905236120496016,
+      "last_abscission": 12.219140625
+    },
+    {
+      "case": "h1101_off_development",
+      "history": 1101,
+      "branch": "off",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3246786825990209,
+      "log_activator_sd": 0.003585178407021043,
+      "activator_range": [
+        0.994283607914949,
+        1.008676753808276
+      ],
+      "inhibitor_range": [
+        0.9978300975137586,
+        1.0039544687141726
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.3181812969012654,
+      "spectral_gap": 1.2549552861499333,
+      "last_abscission": 12.221718749999999
+    },
+    {
+      "case": "h1101_off_development_half",
+      "history": 1101,
+      "branch": "off",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3244560276013122,
+      "log_activator_sd": 0.003588514870726979,
+      "activator_range": [
+        0.9942783429844028,
+        1.0086814984407642
+      ],
+      "inhibitor_range": [
+        0.9978253191727786,
+        1.0039564767510833
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.3181634275055121,
+      "spectral_gap": 1.256068099307608,
+      "last_abscission": 12.219140625
+    },
+    {
+      "case": "h1101_polarity_development",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.327235265715068,
+      "log_activator_sd": 0.003538660773462791,
+      "activator_range": [
+        0.9940480042954672,
+        1.0086461777139417
+      ],
+      "inhibitor_range": [
+        0.9978818551880398,
+        1.0040770969716057
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.3143298117713549,
+      "spectral_gap": 1.089673502175334,
+      "last_abscission": 12.22125
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "history": 1101,
+      "branch": "polarity",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.327027726472003,
+      "log_activator_sd": 0.0035414568624654746,
+      "activator_range": [
+        0.9940424506476503,
+        1.0086507740403863
+      ],
+      "inhibitor_range": [
+        0.9978786114763212,
+        1.0040793062918734
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.31430092397940435,
+      "spectral_gap": 1.0905677110840655,
+      "last_abscission": 12.21890625
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3245783780883669,
+      "log_activator_sd": 0.0036081310689840165,
+      "activator_range": [
+        0.9942388989833322,
+        1.0087337654935404
+      ],
+      "inhibitor_range": [
+        0.99781459666742,
+        1.0039773969900203
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31817716829079856,
+      "spectral_gap": 1.2550395617295267,
+      "last_abscission": 12.221718749999999
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3244193035748917,
+      "log_activator_sd": 0.003611015553754401,
+      "activator_range": [
+        0.9942346279062054,
+        1.0087374883489002
+      ],
+      "inhibitor_range": [
+        0.9978107584267414,
+        1.0039786454653388
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31816267164366785,
+      "spectral_gap": 1.2558262666045894,
+      "last_abscission": 12.219375
+    },
+    {
+      "case": "h1102_full_development",
+      "history": 1102,
+      "branch": "full",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3231341045267933,
+      "log_activator_sd": 0.0019355996674345758,
+      "activator_range": [
+        0.9956887336131182,
+        1.0029195787035283
+      ],
+      "inhibitor_range": [
+        0.9977140212228399,
+        1.0014757035601745
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.31457757137568976,
+      "spectral_gap": 1.1471965893615195,
+      "last_abscission": 12.324375
+    },
+    {
+      "case": "h1102_off_development",
+      "history": 1102,
+      "branch": "off",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3208372325119688,
+      "log_activator_sd": 0.0019401796109236023,
+      "activator_range": [
+        0.9955086017556931,
+        1.0028553975744496
+      ],
+      "inhibitor_range": [
+        0.9976671778734444,
+        1.0015527489866844
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31839674039185084,
+      "spectral_gap": 1.3222420768845642,
+      "last_abscission": 12.324375
+    },
+    {
+      "case": "h1102_off_development_half",
+      "history": 1102,
+      "branch": "off",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3206456699804798,
+      "log_activator_sd": 0.0019419320713861118,
+      "activator_range": [
+        0.995503570681984,
+        1.002858960012171
+      ],
+      "inhibitor_range": [
+        0.9976628131623572,
+        1.0015527658597279
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31838556088045067,
+      "spectral_gap": 1.3230436777520493,
+      "last_abscission": 12.32203125
+    },
+    {
+      "case": "h1102_polarity_development",
+      "history": 1102,
+      "branch": "polarity",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3231699843732252,
+      "log_activator_sd": 0.001921694819559116,
+      "activator_range": [
+        0.9957182926737697,
+        1.0029009898651753
+      ],
+      "inhibitor_range": [
+        0.9977312764279159,
+        1.0014689616072725
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.3145856593070402,
+      "spectral_gap": 1.147319790687987,
+      "last_abscission": 12.32390625
+    },
+    {
+      "case": "h1102_polarity_development_half",
+      "history": 1102,
+      "branch": "polarity",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.322915787555235,
+      "log_activator_sd": 0.001922705678641191,
+      "activator_range": [
+        0.9957130721496613,
+        1.0028982282353929
+      ],
+      "inhibitor_range": [
+        0.9977264904798682,
+        1.0014682545673284
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 8,
+      "maximum_frozen_uniform_spatial_growth": 0.31455316714406933,
+      "spectral_gap": 1.1481373011697817,
+      "last_abscission": 12.321796875
+    },
+    {
+      "case": "h1102_tension_adhesion_development",
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "level": "development",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3208030342458137,
+      "log_activator_sd": 0.0019544135830705674,
+      "activator_range": [
+        0.9954795216554782,
+        1.00288205748652
+      ],
+      "inhibitor_range": [
+        0.997650808594478,
+        1.0015501352763734
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.3183945448093439,
+      "spectral_gap": 1.32216909423784,
+      "last_abscission": 12.32484375
+    },
+    {
+      "case": "h1102_tension_adhesion_development_half",
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "level": "development_half",
+      "time": 18.0,
+      "cells": 16,
+      "axis_ratio": 1.3206126907066835,
+      "log_activator_sd": 0.0019560725657752887,
+      "activator_range": [
+        0.9954737739324406,
+        1.0028830336704846
+      ],
+      "inhibitor_range": [
+        0.9976458584573838,
+        1.0015509405047192
+      ],
+      "active_dividing_ids": [],
+      "frozen_uniform_spatial_unstable_modes": 9,
+      "maximum_frozen_uniform_spatial_growth": 0.31838272991851824,
+      "spectral_gap": 1.3228906674352372,
+      "last_abscission": 12.3225
+    }
+  ],
+  "frozen_uniform_band": [
+    4.325028624825873,
+    42.038607738810484
+  ],
+  "verification": {
+    "source_pins_unchanged": 38,
+    "input_pins_unchanged": 382,
+    "completed_json_trace_hashes_verified": 75,
+    "completed_npz_hashes_rechecked": false,
+    "completed_npz_note": "Recorded coordinator evidence hashes retained; full saved-array/hash review is pending. No GPU simulation was run during this interim assessment.",
+    "historical_preservation_scan": "A separate read-only scan at approximately 16:12 EDT checked all 1,774 entries: 1,769 unchanged, five authorized non-input manuscript edits.",
+    "authorized_manuscript_record": "archive/study-document-snapshots/2026-10-11-authorized-restart-introduction-edit/record.json",
+    "authorized_manuscript_record_sha256": "101185615be2d13ccc973df661204c297e167dc86107e26993528d52fa248e9f",
+    "manuscript_exceptions": [
+      {
+        "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/README.md",
+        "expected_sha256": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556",
+        "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+        "edited_sha256": "ae2d1ba5ee9aa8a086a3f58c58ef81a2c7d10b027dfced3cdf62c99dc45a6a44"
+      },
+      {
+        "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/introduction_methods.md",
+        "expected_sha256": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7",
+        "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+        "edited_sha256": "401a0699fd2ab774bbc88461a2138c8b51c47b9b9286441ed1d60ee21750a439"
+      },
+      {
+        "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md",
+        "expected_sha256": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df",
+        "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+        "edited_sha256": "1f4dd089410abc855fe2400034039dd016459590fb5bb4c2556b68b167d8925e"
+      },
+      {
+        "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.tex",
+        "expected_sha256": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb",
+        "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.tex",
+        "edited_sha256": "0acfa699a476e1c868031668ad5809cd1226305160d21ac89b610e58a843a3f5"
+      },
+      {
+        "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/references.bib",
+        "expected_sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+        "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+        "edited_sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+      }
+    ],
+    "original_manuscript_archives_verified": true,
+    "coordinator_final_preservation_check_expected_to_flag_edits": true,
+    "disposition": "Do not change the frozen coordinator or preservation manifest. Reconcile the authorized non-input editorial revisions explicitly in final review; numerical acceptance remains pending."
+  },
+  "runtime": {
+    "coordinator_pid": 527626,
+    "host_alive_checked_utc": "2026-10-11T20:10:43+00:00",
+    "dedicated_gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+    "gpu_utilization_at_host_check_percent": 94,
+    "gpu_memory_at_host_check_MiB": 2796,
+    "external_free_space_GiB_approx": 301,
+    "elapsed_seconds": 26844.888585,
+    "mean_seconds_by_level": {
+      "development": 1205.1532197648776,
+      "development_half": 2288.3956045362866
+    },
+    "measured_overhead_seconds": 187.2500633026866,
+    "remaining_paths": 9,
+    "remaining_whole_paths": 8,
+    "active_seconds_estimated": 997.6435318242875,
+    "remaining_overhead_seconds": 112.35003798161196,
+    "estimated_remaining_seconds": 15377.297407898268,
+    "practical_range_hours": [
+      4,
+      5
+    ],
+    "central_completion_local": "2026-10-11T20:30:09.824569-04:00",
+    "eta_scope": "Remaining t0\u201318 developmental paths and automatic pair comparisons only. Excludes historical-document reconciliation, independent final review, and separately gated 60/240-unit continuations. Assumes no numerical stop or hardware interruption."
+  },
+  "evidence_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development/gpu-history.json": "b5e3b222dc502915de3354a5535ef9ea0430545972ed3e97cbaf083a89f20fd4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development/gpu-lineage.json": "1060942f8c970903d1cce117f3fdf8da51695c83633cec7550818de0c64da9fd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development/gpu-events.json": "191013f065bb4f895bdd3cc39cedfa5c857ff0be800129e5239bbad5a5ac19c9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development/projection.jsonl": "ba13d3af8484cf641c22ea0256e23c575cfc0a10d0b4d47cf6cbe43c38f9c1cc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development/network.jsonl": "a8d6416dba5a6f1d5103b7af62674e5da93cad275a67f0b5e5ce6edc617fae08",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development_half/gpu-history.json": "ea461dac5483c90fe7645f0b3fe5f016df80c07b7c58455697a89e31e5dc6868",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development_half/gpu-lineage.json": "05772b2886f82fbca9d89adef8ef7ee4f907dbee1aea606fe33f86c25585b7d9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development_half/gpu-events.json": "ece88ff12984a19b567daa24293860d0849920219533024afdaba1c84631a261",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development_half/projection.jsonl": "c67b6d96b5cd3b95bd88a4133ee2844ab85c813ede74365a67d2629400ab74de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_full_development_half/network.jsonl": "9928637b39e3409eb622bd1bc4ee085165a07ae0f4fe1eaac62e15083e240bfa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development/gpu-history.json": "78e75592ba4e3342a6e7dfb1c80b093fa11428e54aefcbd2d2e98ec0f988a870",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development/gpu-lineage.json": "e938feb2f27c6c2d8fe917ad4592e8d6b8309657ee3c56f178614ac355b63d96",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development/gpu-events.json": "eb53fba70f98515a5ad1ca674db39a257409865627abb874e2e07351287c0607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development/projection.jsonl": "5cb2d714bb125615e573af6c280fa0cf9208f9a5c6609558dabf2e75262d6e43",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development/network.jsonl": "746080e4fe77746109b0606488d5034dbdc39aa56d23f9e82515af08f9128e30",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-history.json": "20e63ae97b1f3b84e2b1537c1e44a1b86774969df69a2ed431d0665faf9edbc4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-lineage.json": "5d35b89fb1280795305b28081af5686edb9ad052cb5d6a624e88ed7382b4e292",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development_half/gpu-events.json": "5d72ab1db5068844df410ec47fc22c082961bcdf65e8b51a80c9c6621ad7a2e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development_half/projection.jsonl": "28b6e7f9510a7ff84bde97c5070c31201713bd121f8139d3e49d786df7ea464d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_off_development_half/network.jsonl": "55a18be6363179f1e996e68c6c74770bc50c19534db3c32df72520ab98f40ce4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development/gpu-history.json": "31d4827fb6bbfc47ec908540e91bfaf19a9651ed86781182432dd8e3421756c1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development/gpu-lineage.json": "2a8ff9d10a02379cf32b69387f01efa4953c2bc077724a57529dfff47ba25e96",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development/gpu-events.json": "32f37e0ce7d73d2426db8d94b1094fcd753d1f37515a511984d63ab44ee75da5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development/projection.jsonl": "ffe9f4c9825fd8c060f29322be7f772c19ec66f0b18302077300fdc24ff7b2df",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development/network.jsonl": "0c5968edb8e640e4dc494422f72a9e4bce7b982272de458891d3352f06035a8e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-history.json": "1fa8b9b144a2876d000fbebca117c8e5f1b90e405a519659b16a16ede7146901",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-lineage.json": "7f9d404c4437b397172d106774ca7526b9ca4c0bd1419ed2f340ebe570014696",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development_half/gpu-events.json": "22af4beaa87a39026d045b95bc0f7e2fd2594688cdfefcc98b5a149f2164ffe7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development_half/projection.jsonl": "805a0b73511ef66154684dc335758454e392277651395fefff6640cf17660693",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_polarity_development_half/network.jsonl": "c3f77ec1e1319aac89a7ff2c7d4b597a6c688284ab68cc366965998a2542003b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/gpu-history.json": "9d7d04ad35ab4e34ab9ba958602fa6595627589607b8b275406e598d5571fbf9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/gpu-lineage.json": "03fce3ece3a6776b33856ea1ef62588a941843c1a98a982e8d9c3a87357bc65a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/gpu-events.json": "5f9cfb3f963e6f8c3ca2db17d5c10c4b949dec3869ae2ac8c8d7bbb60dff82b0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/projection.jsonl": "fb0b899c5a7a2ebcf5b5ff7acf1481bb476fc49d971aff798566d9db10eedae1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development/network.jsonl": "3304b43add3f5af8e32cb614c3327067f46a35e6efd7930de8f9ea52709bf3d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-history.json": "5be8859e3eed87808adf836b707c387274587123d0c42f1db63565eaf01aae9c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-lineage.json": "aca8c1d80dc139988dfd17df8874b7bbf196e12e7c786afeba5ffac4ce8447c6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/gpu-events.json": "6969a15a23e7ca879ccd5d4f9536b08b646fdcb66f8a0289095ca46c7530db73",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/projection.jsonl": "faa64b41e9ee525ca9747098d5b36f5f033af90edad58674bd16f92e4579154d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1101_tension_adhesion_development_half/network.jsonl": "1d3b2e8a9183e1dbfc0197ba22078e517819ada947cf2b3bf67a7202092e6c15",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_full_development/gpu-history.json": "2503d5f2ee31222b0b5f2bc26fc88b4f561f12d4c5a37cefa1a32ac8c9f84ee3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_full_development/gpu-lineage.json": "8ba5f574c235929fe09702d65647e89f84e26668fb1b0640aa143d6d71c1a5a2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_full_development/gpu-events.json": "7847678d871c23f3c76e430ea035c40c7044a2ded37e68e12e7766f71b4856e6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_full_development/projection.jsonl": "4ab6290298cb8f493f8167c89de66415ee4e546292cba4bd13f39c96e8ddc73f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_full_development/network.jsonl": "2794686b50cf05f3a918ca6002b33f90132f623c24c11730827e4defed752476",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development/gpu-history.json": "8df776791dec07e5bb2d10cc3891ed17790dfe4c6eb6679308952bca8d09beca",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development/gpu-lineage.json": "bce9af7487950db3bc0705bc4f65839934d648a43d5c12d61172d64f85440e96",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development/gpu-events.json": "96cdddcb469d4f97e85a31941c0262c70809911c7906395c324a46391fef2fd7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development/projection.jsonl": "32e0222419329857883898b9f7c37da7fa16f98011ddca64d9e185f4146fce7a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development/network.jsonl": "4fbca46eb50b773d3c316cb3d384e61cbd32f7b0cd0650deca8e14fab752677d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development_half/gpu-history.json": "d6aa89d25ee8d55d79c0dd4ec0bc962b436f77abdceba041e6fe482da7a49d58",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development_half/gpu-lineage.json": "79021e652a74cd84782709437fbae36ac55586461fbf5aea9ef3066e7d9159e0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development_half/gpu-events.json": "fb7fc8df3044d9facdbfc695f5bc5d78126d77ff1dc520ba56710cb84b825b0f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development_half/projection.jsonl": "abfd60f1b0560ca908a1f17bd0e9ded0a941174e3c988a69fe3ae84500130dc6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_off_development_half/network.jsonl": "b27cdc776d82c61ec77b82e21f53e2b87475152f5d15269f01aba161e5406af4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development/gpu-history.json": "7fd8f0da0bfbfc7e0058ed0a302828437ab10ea6c1c8fcf894677dda608e7e49",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development/gpu-lineage.json": "0d72dc7a1205d0a8e6c8c032862696c3a5c6c1914af9a18e761431cb653068fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development/gpu-events.json": "06182ccec82c3ef853ef3f2c27a146cefa6008ed649ed818c152b47a64cc4ee0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development/projection.jsonl": "7f655833736366e426cda92321d31efc6f2cc9b11d87428216f43157ef4ef1be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development/network.jsonl": "8de1740aee8f7e4dc4447a1d8019e2ab9bfd6786b0c1d282a7752e9eed82713e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development_half/gpu-history.json": "ca5c7addc8d240e8f6f127f4d0d4ca62cf4853c0cdd66d01dd9594581d301619",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development_half/gpu-lineage.json": "114ccd6439c1fc6debbcd155038f2d1b91aa392f48aebd2a8bc5e4664aec6f63",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development_half/gpu-events.json": "391ac3ba5f7825c2f647125bcfb797d363875e9ee3a169905db33d48fe9a189b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development_half/projection.jsonl": "e762bf8984938c93c9dd264fdaa093644c0970c2b753148698f67125ab46c958",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_polarity_development_half/network.jsonl": "ee142a16159b0feb5fe43b9350e9849ee58bb28104f7558f884f33bdd1bf1906",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development/gpu-history.json": "43d91fd6b5644e5abd82a6f98bdcc01b8bbb93e680d145fc362a159c187f284a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development/gpu-lineage.json": "905fdbb35d0a82296d069f1f50bac335db5181beac38172cfc8083316e551cba",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development/gpu-events.json": "a64d1cedd5a1a09767ac637c0197816a831acae8235248ea2ef9a1eb1a4148e5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development/projection.jsonl": "a1ab9b316d6bb0b769ab1acc4d529962cef57da529cc0d260854dc38e857f1dd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development/network.jsonl": "e1aa2aff170a58b337857e83c03dd75e98db887092b9fb6ee4953e5fe216e9ff",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/gpu-history.json": "b4a9a8c7147b0ec8303d41d7fc3710acc0e83972b902dff6389b65b6861e57ca",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/gpu-lineage.json": "ce1faca745b194a019224e41adbb7fa9b71af0429369ec19730ed16237b7ca6a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/gpu-events.json": "a7a2406b182d6fd2825fd8689a83cbf98b5b9177dd4a9cda7ad67ff2e353c173",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/projection.jsonl": "f42fc19187398a5a6cd134345a25fceccde9c89d06802ecd3ea6be1b753f333b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-pilot/h1102_tension_adhesion_development_half/network.jsonl": "933b3fb7473b2e5f17a07d4c3feb2d6d238999406cf985b17e095a28e30d23c3"
+  }
+}

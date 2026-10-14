@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-10T00:26:37.300676+00:00",
+  "authorization": "Rewrite the introduction section: make it more organized.",
+  "scope": "Introduction-only organization and wording; no numerical update or new literature claims.",
+  "changed_noninput_manuscript_files": [
+    {
+      "path": "manuscript/README.md",
+      "before": "3008d12a01f1b051ec2f592dc39fdb7389bc55e83a14fc1c4060f66463cef4b4",
+      "after": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556"
+    },
+    {
+      "path": "manuscript/introduction_methods.md",
+      "before": "ab198ab3efc82a3464f603dea5c8234aa1c365926369226d0cdc4bc9eeeeaced",
+      "after": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7"
+    },
+    {
+      "path": "manuscript/sections.md",
+      "before": "4414383b49879e2fea4869817d6812490c84b66a77f229f993626a6a27d8d902",
+      "after": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df"
+    },
+    {
+      "path": "manuscript/sections.tex",
+      "before": "cfcd232bba0d1e7bbc5767e98440b81cc382338a3e90342c68e3b46a39d83262",
+      "after": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb"
+    },
+    {
+      "path": "manuscript/main.pdf",
+      "before": "8e90238617f1e3f67d139a699cfc1d5ae404cd1a58a76509019d9a7159b1940b",
+      "after": "17cbb829a1c6963871582d16de0bb981eea07917fd55231109985c325b0d971d"
+    }
+  ],
+  "source_input_protocol_unchanged": true,
+  "scientific_study": "moving-pulse-time-amount-response",
+  "prior_manuscript_archive": "manuscript/archive/before-introduction-reorganization-2026-10-09",
+  "numerical_results_and_ledger_unchanged": true,
+  "previous_noninput_pdf_exception_original_bytes_now_preserved": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/main.pdf"
+}

@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-09T18:08:31.474700+00:00",
+  "pid": 248266,
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.moving_pulse_time_amount_response",
+    "run",
+    "--workers",
+    "4"
+  ],
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "physical_gpu": 1,
+  "qualified_gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "native_prefix_workers": 4,
+  "native_threads_per_worker": 2,
+  "gpu_workers": 1,
+  "blas_threads": 1,
+  "protocol_sha256": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb",
+  "script_sha256": "cdcfa0986b4a6f8e37fdb6b889b59569e9436c4b3a614ea40f3a47da042d12b6",
+  "preparation_audit_sha256": "66e5eb0bd9fcda76585eea3053125f2c58e5b072ac9360486adaf7c640a16514",
+  "qualification_audit_required_before_production": "archive/study-launches/2026-10-09-moving-pulse-time-amount-response/qualification-audit.json",
+  "all_context_pilot_required_before_full": true,
+  "total_paths": 48,
+  "logical_starts": 24,
+  "distinct_initial_value_problems": 24,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "start": 570.0,
+  "end": 630.0,
+  "estimated_hours": 7.217787562283871,
+  "scientific_results_pending": true
+}

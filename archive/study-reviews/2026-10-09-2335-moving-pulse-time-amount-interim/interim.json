@@ -1,0 +1,1047 @@
+{
+  "observed_utc": "2026-10-09T23:35:57.198853+00:00",
+  "protocol_sha256": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb",
+  "status_snapshot": {
+    "state": "running",
+    "stage": "full",
+    "horizon": 60.0,
+    "active_job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+    "completed": 30,
+    "total": 48
+  },
+  "independent_histories": 3,
+  "new_histories": 0,
+  "qualification_passed": 48,
+  "qualification_seconds": 1326.3502394149837,
+  "independent_prefix_audit_passed": true,
+  "source_pins_verified": 83,
+  "input_pins_verified": 908,
+  "pilot_paths_verified": 48,
+  "pilot_context_pairs_passed": 12,
+  "pilot_signed_contrast_pairs_passed": 6,
+  "pilot_response_rows": [
+    {
+      "history": 7,
+      "cell": 22,
+      "pilot_rms_response_contrast": 0.060652815240338324,
+      "above_pilot_screen": true,
+      "timestep_signed_error": 1.6378238747449814e-06
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "pilot_rms_response_contrast": 0.0071393484936760655,
+      "above_pilot_screen": false,
+      "timestep_signed_error": 5.486033639590104e-07
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "pilot_rms_response_contrast": 0.12111784319477664,
+      "above_pilot_screen": true,
+      "timestep_signed_error": 2.37158895258216e-06
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "pilot_rms_response_contrast": 0.29674446212288746,
+      "above_pilot_screen": true,
+      "timestep_signed_error": 6.682116253375892e-07
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "pilot_rms_response_contrast": 0.12550446436760815,
+      "above_pilot_screen": true,
+      "timestep_signed_error": 2.472750971010962e-06
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "pilot_rms_response_contrast": 0.3014414912295079,
+      "above_pilot_screen": true,
+      "timestep_signed_error": 6.690542494747209e-07
+    }
+  ],
+  "pilot_max_normalized_response_error": 1.7000775952400278e-05,
+  "pilot_max_signed_contrast_error": 2.472750971010962e-06,
+  "pilot_mechanical_maxima": {
+    "chemical_log_max": 5.153956865006687e-06,
+    "polarity_abs_max": 3.4012460329788108e-06,
+    "relative_axis_max": 6.801418073187904e-08,
+    "relative_volume_max": 9.753869673057025e-07,
+    "relative_transport_max": 6.934537965091757e-06,
+    "final_phi_abs_max": 1.9669532775878906e-06
+  },
+  "completed_paths": 30,
+  "total_paths": 48,
+  "completed_path_details": [
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 454.2640742989897,
+      "final_log_activator_sd": 1.6988058538232755,
+      "whole_window_min_log_activator_sd": 1.6724726967369479
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 454.56042939200415,
+      "final_log_activator_sd": 1.6988106470308497,
+      "whole_window_min_log_activator_sd": 1.6688419124953444
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 623.5474536319962,
+      "final_log_activator_sd": 1.6988062764289442,
+      "whole_window_min_log_activator_sd": 1.6724726967369479
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 629.8869662969955,
+      "final_log_activator_sd": 1.6988110697698604,
+      "whole_window_min_log_activator_sd": 1.6688420041922485
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 456.9888431020372,
+      "final_log_activator_sd": 1.4175740918140671,
+      "whole_window_min_log_activator_sd": 1.3900760553768758
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 461.39730100298766,
+      "final_log_activator_sd": 1.4175762788650135,
+      "whole_window_min_log_activator_sd": 1.3896845323924065
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 629.8583381620119,
+      "final_log_activator_sd": 1.4175743622317802,
+      "whole_window_min_log_activator_sd": 1.3900760470262783
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 628.476678956009,
+      "final_log_activator_sd": 1.4175765476429922,
+      "whole_window_min_log_activator_sd": 1.3896845231566273
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 450.50320975799696,
+      "final_log_activator_sd": 1.698778252372804,
+      "whole_window_min_log_activator_sd": 1.6724425881298668
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 450.2029352200043,
+      "final_log_activator_sd": 1.6987780209179753,
+      "whole_window_min_log_activator_sd": 1.6746872740196141
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 625.5729255580227,
+      "final_log_activator_sd": 1.6987786755506264,
+      "whole_window_min_log_activator_sd": 1.6724425881298668
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 624.7370293159911,
+      "final_log_activator_sd": 1.698778444204505,
+      "whole_window_min_log_activator_sd": 1.6746876838813076
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 451.4456808879622,
+      "final_log_activator_sd": 1.8009969098781522,
+      "whole_window_min_log_activator_sd": 1.759815841996981
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 454.264295276982,
+      "final_log_activator_sd": 1.800996702874618,
+      "whole_window_min_log_activator_sd": 1.762038471692845
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 622.5996818039857,
+      "final_log_activator_sd": 1.8009974249531482,
+      "whole_window_min_log_activator_sd": 1.7598164223561423
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 620.2326235939981,
+      "final_log_activator_sd": 1.8009972176972386,
+      "whole_window_min_log_activator_sd": 1.7620390390919185
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 451.2133246739977,
+      "final_log_activator_sd": 1.800382952863583,
+      "whole_window_min_log_activator_sd": 1.7703061914855909
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 453.6201245250122,
+      "final_log_activator_sd": 1.8003521534253637,
+      "whole_window_min_log_activator_sd": 1.7665132010914455
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 629.6148337569903,
+      "final_log_activator_sd": 1.8003834250340651,
+      "whole_window_min_log_activator_sd": 1.7703061914855909
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 621.9837469969934,
+      "final_log_activator_sd": 1.8003526042051916,
+      "whole_window_min_log_activator_sd": 1.7665132010914455
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 451.30078311200486,
+      "final_log_activator_sd": 1.390900186232778,
+      "whole_window_min_log_activator_sd": 1.3593974597186995
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 453.7673807850224,
+      "final_log_activator_sd": 1.3909036500348613,
+      "whole_window_min_log_activator_sd": 1.359049727088335
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 623.910249839013,
+      "final_log_activator_sd": 1.390900326637584,
+      "whole_window_min_log_activator_sd": 1.3593970964302768
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 623.8164877259696,
+      "final_log_activator_sd": 1.3909037878292527,
+      "whole_window_min_log_activator_sd": 1.3590493634450402
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 452.80337662200327,
+      "final_log_activator_sd": 1.8003594858613565,
+      "whole_window_min_log_activator_sd": 1.7702799738188653
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 454.34540322999237,
+      "final_log_activator_sd": 1.8003595485879866,
+      "whole_window_min_log_activator_sd": 1.7727535302282726
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "wall_seconds": 620.6843543669966,
+      "final_log_activator_sd": 1.8003599580874345,
+      "whole_window_min_log_activator_sd": 1.7702799738188653
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "wall_seconds": 620.6482615140267,
+      "final_log_activator_sd": 1.8003600207512882,
+      "whole_window_min_log_activator_sd": 1.7727539968212367
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "wall_seconds": 456.59284804802155,
+      "final_log_activator_sd": 2.334825844858015,
+      "whole_window_min_log_activator_sd": 1.920906530141482
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "wall_seconds": 449.9577698959911,
+      "final_log_activator_sd": 2.3348254935112847,
+      "whole_window_min_log_activator_sd": 1.932863956154871
+    }
+  ],
+  "completed_full_context_pairs": [
+    {
+      "context": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S",
+      "normalized_response_error": 9.75879267216737e-06,
+      "relative_auc_error": 1.2974024976575294e-06,
+      "recovery_times": {
+        "coarse": {
+          "target": 3.4499999999999997,
+          "network": 4.8
+        },
+        "fine": {
+          "target": 3.4499999999999997,
+          "network": 4.8
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 3.0302895871422067e-06,
+          "polarity_abs_max": 2.7728992803028457e-06,
+          "relative_axis_max": 4.923040552995417e-08,
+          "relative_volume_max": 8.334196517356673e-07,
+          "relative_transport_max": 3.792609247292214e-06,
+          "final_phi_abs_max": 1.3113021850585938e-06
+        },
+        {
+          "chemical_log_max": 3.0121402608661935e-06,
+          "polarity_abs_max": 2.7748140961746798e-06,
+          "relative_axis_max": 6.115956852070781e-08,
+          "relative_volume_max": 8.334875339910397e-07,
+          "relative_transport_max": 3.831922738111173e-06,
+          "final_phi_abs_max": 1.3113021850585938e-06
+        }
+      ]
+    },
+    {
+      "context": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S",
+      "normalized_response_error": 8.298566397993036e-06,
+      "relative_auc_error": 8.890232345848403e-07,
+      "recovery_times": {
+        "coarse": {
+          "target": 3.75,
+          "network": 4.8
+        },
+        "fine": {
+          "target": 3.75,
+          "network": 4.8
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 1.1945545008206067e-06,
+          "polarity_abs_max": 1.0146552677919862e-09,
+          "relative_axis_max": 2.608212534838117e-09,
+          "relative_volume_max": 5.399151015161863e-09,
+          "relative_transport_max": 1.2417181539768882e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        },
+        {
+          "chemical_log_max": 1.239576837173997e-06,
+          "polarity_abs_max": 6.567582524780874e-08,
+          "relative_axis_max": 2.2102559449344028e-08,
+          "relative_volume_max": 3.8559124515558096e-07,
+          "relative_transport_max": 2.0600602962968305e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "context": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S",
+      "normalized_response_error": 4.6589548119046423e-07,
+      "relative_auc_error": 6.631076487906284e-07,
+      "recovery_times": {
+        "coarse": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        },
+        "fine": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 4.24327928513064e-06,
+          "polarity_abs_max": 8.205150892593403e-07,
+          "relative_axis_max": 3.984701624215603e-08,
+          "relative_volume_max": 6.972889092793366e-07,
+          "relative_transport_max": 1.4935340919742337e-06,
+          "final_phi_abs_max": 4.76837158203125e-07
+        },
+        {
+          "chemical_log_max": 4.242368274398813e-06,
+          "polarity_abs_max": 8.205341626077098e-07,
+          "relative_axis_max": 3.983785734629208e-08,
+          "relative_volume_max": 6.9727077622872e-07,
+          "relative_transport_max": 1.4991646841479281e-06,
+          "final_phi_abs_max": 4.76837158203125e-07
+        }
+      ]
+    },
+    {
+      "context": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S",
+      "normalized_response_error": 2.5577460970501497e-07,
+      "relative_auc_error": 3.526937968345578e-07,
+      "recovery_times": {
+        "coarse": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        },
+        "fine": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 1.198054791575972e-06,
+          "polarity_abs_max": 9.494322671804722e-10,
+          "relative_axis_max": 2.6480055925759416e-09,
+          "relative_volume_max": 5.775221967319055e-09,
+          "relative_transport_max": 1.196858320530381e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        },
+        {
+          "chemical_log_max": 1.1967380213499628e-06,
+          "polarity_abs_max": 5.82246414992417e-09,
+          "relative_axis_max": 2.981067837026785e-09,
+          "relative_volume_max": 6.319383016872848e-09,
+          "relative_transport_max": 1.1855565820349312e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "context": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S",
+      "normalized_response_error": 1.2225869937123056e-05,
+      "relative_auc_error": 5.477424007471754e-06,
+      "recovery_times": {
+        "coarse": {
+          "target": 3.15,
+          "network": 4.6499999999999995
+        },
+        "fine": {
+          "target": 3.15,
+          "network": 4.6499999999999995
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 3.892197991012989e-06,
+          "polarity_abs_max": 3.356698338716213e-06,
+          "relative_axis_max": 5.0045821931021806e-08,
+          "relative_volume_max": 9.753869673057025e-07,
+          "relative_transport_max": 6.7434021801896e-06,
+          "final_phi_abs_max": 1.6093254089355469e-06
+        },
+        {
+          "chemical_log_max": 4.193492406477367e-06,
+          "polarity_abs_max": 3.4012460329788108e-06,
+          "relative_axis_max": 6.801418073187904e-08,
+          "relative_volume_max": 9.704657686349094e-07,
+          "relative_transport_max": 6.934537965091757e-06,
+          "final_phi_abs_max": 1.6689300537109375e-06
+        }
+      ]
+    },
+    {
+      "context": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S",
+      "normalized_response_error": 1.6774177468402342e-05,
+      "relative_auc_error": 1.368431923709501e-05,
+      "recovery_times": {
+        "coarse": {
+          "target": 4.35,
+          "network": 4.8
+        },
+        "fine": {
+          "target": 4.35,
+          "network": 4.8
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 1.451219327513525e-06,
+          "polarity_abs_max": 1.0640495429203867e-09,
+          "relative_axis_max": 2.842794111224123e-09,
+          "relative_volume_max": 6.243063843669461e-09,
+          "relative_transport_max": 1.2512573445538947e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        },
+        {
+          "chemical_log_max": 1.3918577056811855e-06,
+          "polarity_abs_max": 1.3442160404653763e-07,
+          "relative_axis_max": 2.4028330214420635e-08,
+          "relative_volume_max": 4.74834516928091e-07,
+          "relative_transport_max": 4.90440675209659e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "context": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S",
+      "normalized_response_error": 1.962194137956332e-07,
+      "relative_auc_error": 3.9974144550036783e-07,
+      "recovery_times": {
+        "coarse": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        },
+        "fine": {
+          "target": 2.6999999999999997,
+          "network": 2.6999999999999997
+        }
+      },
+      "mechanical_errors": [
+        {
+          "chemical_log_max": 1.453613732263096e-06,
+          "polarity_abs_max": 1.152691842150333e-09,
+          "relative_axis_max": 2.7403319613483745e-09,
+          "relative_volume_max": 5.399465985433949e-09,
+          "relative_transport_max": 1.2511069144228644e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        },
+        {
+          "chemical_log_max": 1.452032570915786e-06,
+          "polarity_abs_max": 4.161803129117819e-09,
+          "relative_axis_max": 2.671010412846897e-09,
+          "relative_volume_max": 5.833448835090849e-09,
+          "relative_transport_max": 1.3136573719993642e-07,
+          "final_phi_abs_max": 5.960464477539063e-08
+        }
+      ]
+    }
+  ],
+  "full_response_rows": [
+    {
+      "history": 7,
+      "cell": 22,
+      "moving_effects": {
+        "coarse": 0.019185309119001584,
+        "fine": 0.019185342187070003
+      },
+      "above_screen": true,
+      "frozen_effect": 0.019203052941872533,
+      "frozen_above_screen": true,
+      "classification_agrees_with_frozen": true,
+      "descriptive_relative_rms_change": -0.0009222884952794219,
+      "signed_timestep_error": 1.6378238747449814e-06,
+      "rms_timestep_error": 3.306806841893439e-08,
+      "numerical_gates_pass": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "moving_effects": {
+        "coarse": 0.0022577549192981335,
+        "fine": 0.00225771593194582
+      },
+      "above_screen": false,
+      "frozen_effect": 0.0023050111024886266,
+      "frozen_above_screen": false,
+      "classification_agrees_with_frozen": true,
+      "descriptive_relative_rms_change": -0.020518413335078534,
+      "signed_timestep_error": 5.486033639590104e-07,
+      "rms_timestep_error": 3.898735231357142e-08,
+      "numerical_gates_pass": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "moving_effects": {
+        "coarse": 0.038317494857038926,
+        "fine": 0.03831773153613396
+      },
+      "above_screen": true,
+      "frozen_effect": 0.03759297956354951,
+      "frozen_above_screen": true,
+      "classification_agrees_with_frozen": true,
+      "descriptive_relative_rms_change": 0.019278918058603933,
+      "signed_timestep_error": 2.37158895258216e-06,
+      "rms_timestep_error": 2.3667909503088946e-07,
+      "numerical_gates_pass": true
+    }
+  ],
+  "completed_fine_pulse_recovery": [
+    {
+      "history": 7,
+      "cell": 22,
+      "chemical_origin": "R",
+      "target": 3.4499999999999997,
+      "network": 4.8,
+      "final_network_log_rms": 2.9477643018319926e-06
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "chemical_origin": "S",
+      "target": 3.75,
+      "network": 4.8,
+      "final_network_log_rms": 6.1645284834022645e-06
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "chemical_origin": "R",
+      "target": 2.6999999999999997,
+      "network": 2.6999999999999997,
+      "final_network_log_rms": 3.476945132088789e-07
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "chemical_origin": "S",
+      "target": 2.6999999999999997,
+      "network": 2.6999999999999997,
+      "final_network_log_rms": 3.5990825241041876e-07
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "chemical_origin": "R",
+      "target": 3.15,
+      "network": 4.6499999999999995,
+      "final_network_log_rms": 4.8247982039144715e-06
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "chemical_origin": "S",
+      "target": 4.35,
+      "network": 4.8,
+      "final_network_log_rms": 5.0282475770308794e-05
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "chemical_origin": "S",
+      "target": 2.6999999999999997,
+      "network": 2.6999999999999997,
+      "final_network_log_rms": 1.384920739983618e-07
+    }
+  ],
+  "full_max_normalized_response_error": 1.6774177468402342e-05,
+  "full_max_raw_chemical_error": 4.24327928513064e-06,
+  "full_max_relative_auc_error": 1.368431923709501e-05,
+  "full_mechanical_maxima": {
+    "chemical_log_max": 4.24327928513064e-06,
+    "polarity_abs_max": 3.4012460329788108e-06,
+    "relative_axis_max": 6.801418073187904e-08,
+    "relative_volume_max": 9.753869673057025e-07,
+    "relative_transport_max": 6.934537965091757e-06,
+    "final_phi_abs_max": 1.6689300537109375e-06
+  },
+  "quality_extrema": {
+    "maximum_volume_error": 0.01122294196225837,
+    "minimum_radius_grid_intervals": 5.106964250817138,
+    "maximum_boundary_occupancy": 2.388918218798608e-08,
+    "maximum_dilution_amount_error": 4.440892098500626e-16,
+    "maximum_clipping": 0.0
+  },
+  "simulated_work_fraction": 0.6645833333333333,
+  "trajectory_progress": [
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 60.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 12.0
+    },
+    {
+      "job": "seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional",
+      "level": "coarse",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_fine_control",
+      "level": "fine",
+      "elapsed": 6.0
+    },
+    {
+      "job": "seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional",
+      "level": "fine",
+      "elapsed": 6.0
+    }
+  ],
+  "timing_calibration": {
+    "coarse": 1.001717498559727,
+    "fine": 1.005825399592033
+  },
+  "remaining_integrator_seconds": 8805.793384054778,
+  "additional_overhead_allowance_seconds": 390.0,
+  "estimated_remaining_hours": 2.554387051126327,
+  "estimated_completion_utc": "2026-10-10T02:09:12.992237+00:00",
+  "estimated_completion_local": "2026-10-09T22:09:12.992237-04:00",
+  "eta_assumptions": "Single existing GPU worker, current speed retained, pilot-rate estimates calibrated against measured full paths; all jobs retain 6-unit pilot progress. Explicit overhead allowance is heuristic, not a confidence interval.",
+  "elapsed_wall_hours": 5.457145598055555,
+  "source_script_sha256": "ac0ee530aed2669285dcabe8e64fad624376f483a0eb2a8b4482c4617c21667b",
+  "evidence_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/protocol.json": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-moving-pulse-time-amount-response/process-launch.json": "2edcc3e66e52b025bbcc6053002ab2b4d2a1c5504bce48a5c720e70e7d22f697",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/qualification.json": "dda1356dac8dd94c158f7d3e3e3dc9bbbd5008e68eb298f2f4f8140fdf081263",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-moving-pulse-time-amount-response/qualification-audit.json": "8bbcc2619818f5dd2ff6b44afa2c5d47bb51384a76d47bdbdd7bfcbb9a1d4619",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pilot-gate.json": "7643e3b3502cda1ad895d0b2aefe0cba48070db3254d8be1365bf63cf4b594a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "6b7a15660be8f655f0157417fbe381bb17d739a69a4751ae00c417a215356888",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "62611f2c1b619ad579884a37798f4b513644c5156d40fa6baf0cf8297a4b605b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "c8125017e9147d7598550d9047a50c7632ea686443223e887e10a4d133867e19",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "2c1a639199a784ec0524cc81439b3b726e77714b7d30ed6308caef4e7382e952",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "01eb23070759e1b684cbaa8e4c0d8143249f90ce4359452bfbe88a123a90ac9e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "8eeb48752dc4791f8c4cc81d347224df6382c11f839c36c0c4d46f69d8d75d24",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "04a0259b7f3ba701531637a476774680f8866c822fde9f84b593ec6735dfd745",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "19277ed197e9dc2839952a6feebb05951884aa197bc200bd7391cbcf88a249b5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "250b277858dfcc33d685fc51299c92f6cade27efdaf109a60e2ab067d34213e4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "647cebfa13087cc27004ece33471bf21124b8b762e7aa9ea4da765bc59835a4f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "3cd60d8e6873aaf46544dc947dbab8fbc099c0bb3e79fdee38a3aa76bd927723",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "76cd0ce7dc636e382542e03f8396ba90a63cc2527c58709e19c93d6059926610",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "3220f1ce7f49cb45bad21b193b508ca1dc126c961be0e57b64af12b4f149e783",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "ffdfccaa4f5065f2b6d7134e2a7d0751f2d067adb7bd516d6377cb855e288fd0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "64403290ebfeb78f3d7bc059840ca4be0729e0c9e997d97bdd54e3ade9781b68",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "ddc33f840fe0c12acf393f821e343ab691580d5e639df6c1f50e9fb8fd984aa6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "d7b6a7eb8be9a16b8d6374f2fa6d7cd81c3a7b1573ba774b30fc0508001ccee2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "d3f06df56d0ff5fab55f31eee90f5ca01f46c528166e5949d7ac2f6e4c9fed8f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "56d09b0a748fe59f157f6d49cacef847c7c623e0c0f0fba23775e05119f33fcd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "f9393dc967f7ea3acc36a7732d678c2edf2018c0982597faeb5a9842793f2460",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "5e4c2a0ff443dd88723579c45789e9f0bef3a79986646944cba84bf046f38b55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "fef96f20d68f83fb7dc918c269eeef2f199fe2808b92dbbe76f1f012c778d021",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "f567c851ff663ec3647f43546615c137b2007122e3ac13ee43713d8a2d043ae1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "ea11216bea91bf42756d38a957c00e045165993ec7d0139f027c73255ef7fdb3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "8992bdb86a0577a4cc517001371b9674d4a9f3fa77bf772b6e1b90b233b5dcb6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "aa5f566f9b3015c3305f80363c180ade52c1cf3b34beef9bfe6229ca610bf4c0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "de82c5a1f4515026a8f5bd829132c81c5a98ade101cb24f97e92e01b59704998",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "f531599852b8d3ae749b61996c3bb2aee205b9716214564676d1b123199d5fe3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "389ad912c2de5e3c7f76876dc0edf25fc81ede8f8aa025ca983dbc7707821ac6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "f0d222e3894dc8ea193d14822c88ecfa0919dfc61c029d53b8603f4113d50b93",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "eb689477042b422a036d5f7cee5c0381e43392b4fce2883174dcbe4807c19084",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "5205a4b262ca521662711c001c8978ccd85d1809d284eeed7e799ee9f327c292",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "27b02ba9d8e9fc3fc50c32520a5006412a2fb3833bdac4a15a6d387d9d0c01aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "99bc3c917f30e9919e25aca347c75c2ddee49348e1e46bf148510ff296ae3653",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "2fff07ac9bba162cd9d422a216254df5328db13397a4bf9f1d87b7f7e3473163",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "d496ab1e29b6620a2ed2beba1272024b99d36392928680667230a3296228c744",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "132da135c4fd9c9c4478a8379205e3ab5568cf29311d1751f61f47653305058d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "d45939c8d7b6006dfba20c18a081aacd7d42319fdf9caee60914ba5368f0463c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "2ae2484a396607490dda90b337829441c7a8aee8005774f32940b411891043aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "76f4d1c7d674cf8f4960fc1cb3d34802d4fd37f5963323006fa48055ffa5db55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "2967feb16ca92336c1a31f2698147d8d9946bda0d1e6cd3b32a2ac643bd34cfd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "73a0e518282aac99b25395fc2de3f371e2cba313f69b7ed42f9ee7907b4f62d2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "a7b9b287b3359d30edbf8bc8523cbe70f45234b066a813e9e938a0664e147165",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "46dd4e6e45709b33e93a5cab2a519f2d3ad2dac59d02e69c71040dd6dcf565ba",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "d78179100b0887a0a5b829455d78d5090f4e329044dab592c266f2510e1c8c75",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "ab67b4c83fe67154f82876c34d029490156ae707921c349625c95562ae15ea12",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "14dbdf93c8014e9e4e649c890d3ab9aca8ed5fc6d80f57aa00ebe6a642e6d80f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "596119835981613ad3bda8129aa03a1edd70cbac32f63a2aaf465c89f5c43392",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "37f0e41e08538616d9be5142b1ca15dd0c9c95f8e589ac87646671e8010fa80b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-29_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "5fd77e45c5ea5d00be8b6432cfd04bb85f9c042800eb669cd40fdd7cabaeaaa4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S/response-pilot.json": "92fc8951c1c373086c77959e59b5916f7e51c4eca06f9905d784b77c8805182b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/pilot-history.json": "9baf49138d0c72a72b998d104df2a83034dbf395c51fa6f233bd273cab9ebe76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/pilot-history.json": "5b7a60b721079b9760e52ef235421dd312672bb60d4c3effefe2c3a481d7be91",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/pilot-history.json": "20dc69063403bca6c34f928bdee7b5fd8c98c63d95b924bf75dcd2e3bd02dbe0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/pilot-history.json": "1bba1962d2990eea0773d8062bfcc6455f82de3012588931a05fb951955f9f38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S/response-pilot.json": "377cf0fa4708a3b69e43a9fd07a1a748bc1ddd4d910972d5bb79d6d69bc9c460",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/pilot-history.json": "1728c4a01fddf26c268083a4a1e4d638bf5073481257c96058f386072ed30401",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/pilot-history.json": "ad07a1a6affb6729a85ef6c2dfb613559aecc853e1f24bf040689312e8ecd3be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/pilot-history.json": "55a5843d5f40f2d647420160f419f3889056be4d932796894bce9d1eeacc1ba7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-9_cell-30_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/pilot-history.json": "ac30e94950cff679355dbd8f8f18f550356e8b8996d4e13fb18697da11d08575",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-7_cell-22_pilot.json": "aee0f1afef36b896ea2fbc1044fd49e03e8d4b494399cbd07dc24260350642e4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-7_cell-23_pilot.json": "c081a93660fa01071e1a0cc997fd3153e9a89f43fe57672263a0fee6b3dcf639",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-8_cell-19_pilot.json": "3dd895872ab78b39b18cb33d36150fd40aa05faf6ba5ddcbcf83dde2bf17aafb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-8_cell-20_pilot.json": "29024add18433c373d969fc77cafbb501d18430ae9b26eeb23580a66de020e71",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-9_cell-29_pilot.json": "f0e9d31a1ec0e6164369690dcf5c17460ae730a8268c509c544b78c073256f9e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/contrasts/history-9_cell-30_pilot.json": "4c72195f44c4372424d2c7dadc31b688f5f9f20f892576b079faf028d4fd2666",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/result.json": "5df43d5771e6789a4825012b8649c51c1109d37170b3099c874665cf95e48b67",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/history.json": "a12d7a81a3a927587cbf7aecf1e5af6349adbcd6d90998223781a9a0bef3a3be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/result.json": "79ad2382581c9ed3b0b515bfc84013c319fc2ad28284b7884fa1040073135803",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/history.json": "4b1be00cb79ebdedbf8995921d639af8e8280fa6e2fbcf57b92589c278020811",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/result.json": "574dd949963f74964b86c14caa9734299cf27cd8a5b4f0de54e6dbef2d7d2aa3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/history.json": "d141531d173bd40f54cce8ebd10cc14db825fee419fd34d58f83fba906ef71d9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/result.json": "fb04a81f38e9618b765211ab72f43ff232a6112716bd25aa547bf74437b21959",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/history.json": "7fd07b9e633a2e976564470c28d5ee422c354fd47ab18f25317435916c8d371a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/result.json": "aaf1ec3d63c84c3e8cb24bd77b214af30ce599b89c9b05efc10a701d31698642",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/history.json": "47b1bdd89eaede0641997684112e9af0a1e03d42470fae3adfc2ab394178655f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/result.json": "798c2825a943d0695c7675d709313c98da371c83c5420eae23b20eb094418cf2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/history.json": "c236b7a8f1f7a2569d61fade27e971e492319b1b2f861b7b97ee46a12babeb25",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/result.json": "67d76e12b8c23dd83d7bdda3a97a1e2a08434596a2c577569611c7a244a3b144",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/history.json": "6c62a1658f43c9de045721d6893625735a739568518e96a59afdf27821b83767",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/result.json": "cbcfb0e768e6549c2c31ca4c28ddb47384e1b2b5135789cb701968be274c235a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/history.json": "faf328d4e4f6227e6e67d5d8e6c32483e18a9addb3620d182fff8d769e37afa9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/result.json": "030c04da0221f627082b8113a4e29e8105438063638b1c6eca11e070a1855c00",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/history.json": "a8995ba993e8ae2be4e299b11de25875ea8fec7a40da3d9b8271679686ca6350",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/result.json": "e62a79e23ebdf2a4c5258d579b11db5f4f0bb52891e10b97808002a05dc9aa12",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/history.json": "77e37bedbc9058157a95b0bc5b5eac054d1063897d43666c2896de209ed409c7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/result.json": "4e2dc5cc3d09a9540277143a6402ad2d26db8bee0cc81f06e001ffcd69342c83",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/history.json": "50e4f69fcd4fa8f1f1441cba0aee04a1c456885eab9300f3ebd569c81492ca15",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/result.json": "b2a0abc9071ec951f1458f1ec8c7e013400562632f96f0501e12d4d619ecc92a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/history.json": "ee7b6e03d63b57ab4337bb596e310e7e67c399eb0ffb70a7c3e2b1375ad2eb96",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/result.json": "6f353820f94bb284bf8a2a369116b955a9d2500396dbd06499fd5e33032b147d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/history.json": "bdca9ec3cb88397d4a8accdd7e208bc594fe7c8ad4dfea1ca1e36b5229c8e730",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/result.json": "44755542f75fd8c3a5ba9146b71c4d8e09079628448f9e3dc3c051715f45e2ca",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/history.json": "25231b38b9195f4d6ea249ab7b5983f58bcc1acb6142025da321387896d0899c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/result.json": "a90afdee421848c2fd158f78d3240c6211365fd11e3efc4aeb0ca489b4de29de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/history.json": "ecc188023a894ada2f7571a4fc4526a72ae4a5d0b9273f44e6aa1d451b795986",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/result.json": "e89f4285cf63765f3e3aeed0ad23476ebac9e1c81bef3d6e1a8c22463abd7508",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/history.json": "ffab2b2f431564517d7f26c9fbc2e38f695cb5ad77c3c18e1e41934fda959e04",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/result.json": "c45227f6bf3ce3b351ddc216524f36b8af0636d1d42594677b984cf684ce4607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/history.json": "27b2003a56cf6df561ecbc5712a8a9684e2451883df1e149e7368a68e30d8b03",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/result.json": "56726e8dedd56314b9de18747ab74ad0aa7ee167895ddc8eac7ccf4d9c10ebdd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/history.json": "afd1bd82771bcf99ec270115d64a72c372b9e3918811cb5fe5660021c8eaad62",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/result.json": "b5f2224ccd11d802cd2ec66250aa461b334d6d90f0f0017996b0fff1d3360d27",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/history.json": "aff1c1774bb334ec79946c4b48d53e4bdbaedccb80d3c741463bf02a931f2d39",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/result.json": "d3b920c3e70f2b4d8e71eedb3f5b5963f297e479b39f5210ecaecce35cc91747",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/history.json": "a48a2453e994a3e6fcbf3a13041da2e92f3ffb51fad9c73be7b2c324a09e4d1f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/result.json": "5b70f5cf30b928751fd66be385af6dd0da69e1d06022d22170abf70bbacd5a5d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/history.json": "9f9bd1a114fdaedd19dc20ad47f67a09c6f11ae9ec0e175e2b3b15b4d6552389",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/result.json": "46a58ddaab1c594689dff8ca8398ac6eef541858d86e23b08ec9182af1f8580d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/history.json": "49b8247fabe4ee1befe52e4cea793930c4afa457d12161468e8b8ad31fd0c9c1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/result.json": "df47e378cd9dd70c43380aa708ed2810a3764f9ca1a4e7e89dd06ce3e925d9a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_control/history.json": "fe898e8fea2ea6b3939808c1b897abccd96c111da9a5074df02ab9ac94ccb56f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/result.json": "65dbdd4fa716229c7741872c4bff93e86be2e01d380d3fbcadf48044e3f38c7c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S_fine_fractional/history.json": "105c913392e5a7e4d6215358b0e5fc61a590b490d31be5e959af95c320075329",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/result.json": "7d44cc072fb1c1e437c8b63b18ef2307312f82a4ddf1f5fc1547752f58d7aaff",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_control/history.json": "9b795db2980e24836f35893a52af9fb91fd48b5864b3e28a307b0aecc811f46c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/result.json": "aa233edcebde72495612cbfec5510fb6e79c4284459c1d73b5e2cee998475552",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_coarse_fractional/history.json": "874dbecbf902ce778e2d16ae6659b522a06c0f93f113c9302ffea81e272c052c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/result.json": "b3e7cb570c496c968233850ff099f85c660d1241a57a261001c5763d651f872e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_control/history.json": "9636747542c1f0410e3ee809e06de4115d90f513028ee3030b306016b688eaad",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/result.json": "bb2655150b47e89fcbf1ccf0c0439e5db7a395c2e869a7e2e840f64d73ddabc2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S_fine_fractional/history.json": "92c6e939ba2f0832154e93db69b4faabe724df20b36aca0348a79083205e54ac",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/result.json": "1639e02ecb3fee9c5c26299ad910041fc43693241f66faa047721e111adc1ae7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_control/history.json": "32e0d7e1bbd4a8e5dc683dccd0e88e163ec7c962103446e69641b6d3c2c25f7a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/result.json": "017d0d140894d3e764668ca71be3d197b6229d1cc1093f0f802253165ef88e78",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/seed-8_cell-20_at570_match-S_budget-S_chemistry-R_physics-S_coarse_fractional/history.json": "d81ffb32fe778fc62f6ad78e18f52908125ef25fe4c7d18c0f5b230c5e4275f6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-22_at570_match-S_budget-S_chemistry-R_physics-S/response-full.json": "9a8d2d7913208d94fae4dc609f1511762d6faf2b3a8895767c0cc3a689bd5468",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-22_at570_match-S_budget-S_chemistry-S_physics-S/response-full.json": "c391f35e18f0e6870fbdce27c156c31e7fdeef8fcc31bfec7754fed3ade447ad",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-23_at570_match-S_budget-S_chemistry-R_physics-S/response-full.json": "04d236d95b934dd16b0b0b54b5433ff70df7d6b91a2bd4ab90650ac54a8635f2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-7_cell-23_at570_match-S_budget-S_chemistry-S_physics-S/response-full.json": "f358904794491c5b75f9be75c31daadfc1defedc5aea6fefa32876f48a520846",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-19_at570_match-S_budget-S_chemistry-R_physics-S/response-full.json": "4c8399c335bad7d635754057088dddc648d31a74809eaa5fd27eaa0d1b8645d9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-19_at570_match-S_budget-S_chemistry-S_physics-S/response-full.json": "3ea32d96845a2e966bdd34a0d2da134ca5f7418a7bd63c423ba348824ae1e5d2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/pairs/seed-8_cell-20_at570_match-S_budget-S_chemistry-S_physics-S/response-full.json": "840db5d01f0dbbc1ffa2c762e7dc5920256358abf86734ae26b612247c469701",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-09-pulse-time-amount-completed/independent_review.json": "439b377ca6ee4ddbb16ea9630b0046bc58d3c4df52d9fcf2e00456c66379ac4e"
+  },
+  "full_scientific_conclusion_pending": true,
+  "scope": "Independent literal interim response reconstruction from all stable pilot chemistry histories; completed path checks and live-status quality snapshots. No full-horizon S/R classification until both complete controls and pulses at both timesteps exist; no new histories or identity acceptance."
+}

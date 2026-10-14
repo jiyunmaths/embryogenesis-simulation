@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-11T18:48:22.547947+00:00",
+  "authorization": "User explicitly requested introduction refinements to mechanical attribution, mature reset confounding, the missing control and the coexistence explanation.",
+  "parent_preservation_manifest": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-10-before-development-controls/manifest.json",
+  "parent_preservation_manifest_sha256": "c6c68c1ca6b92aa469dab4b83a344d6591f692592cef85b6b04714cdf0e4a28b",
+  "non_input_document_relocations": [
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/README.md",
+      "expected_sha256": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+      "edited_sha256": "ae2d1ba5ee9aa8a086a3f58c58ef81a2c7d10b027dfced3cdf62c99dc45a6a44"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/introduction_methods.md",
+      "expected_sha256": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+      "edited_sha256": "401a0699fd2ab774bbc88461a2138c8b51c47b9b9286441ed1d60ee21750a439"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md",
+      "expected_sha256": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+      "edited_sha256": "1f4dd089410abc855fe2400034039dd016459590fb5bb4c2556b68b167d8925e"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.tex",
+      "expected_sha256": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.tex",
+      "edited_sha256": "0acfa699a476e1c868031668ad5809cd1226305160d21ac89b610e58a843a3f5"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/references.bib",
+      "expected_sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+      "edited_sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    }
+  ],
+  "source_and_input_pins_unchanged": true,
+  "original_numerical_evidence_unchanged": true
+}

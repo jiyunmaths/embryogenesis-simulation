@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "restored_files": [
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-23_neg10/source.npz",
+      "sha256": "2e85f73f61a611f1542dd520ba20b9a86554e2ecddbf03c7d5e57a298d0e2b0b",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-22_neg10/source.npz",
+      "sha256": "7d16cc1a81c0dd402b93e5fc76334a1d058af5ad4cab1084e890cd56033dc1fe",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-8_fine_fresh_exchange_response_cell-19_neg10/source.npz",
+      "sha256": "9a316bd688683caa51f0164cb3b73732449dba5028cc7b2762db3dc68bf62b74",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-8_fine_fresh_exchange_response_cell-20_neg10/source.npz",
+      "sha256": "fb928536a47f582fb40702083aefb4459f5463b4e36764fa211bd3d71b4e8d8c",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-9_fine_fresh_exchange_response_cell-29_neg10/source.npz",
+      "sha256": "6e71ff7e0a77fdfba08a3faf4fa7b26c5894e917a53c9b7396f73e25eb42c28c",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/phase-carry-exchange-response/seed-9_fine_fresh_exchange_response_cell-30_neg10/source.npz",
+      "sha256": "3c560de626dba4e70fab8928f36692b5f54f07e1a211d7f16823934e10f4549d",
+      "byte_exact": true,
+      "independent_restored_file": true
+    },
+    {
+      "path": "outputs/cell-exchange-response-refined/fresh_exchange/fresh_exchange_control/history.json",
+      "sha256": "40aabd4284b8ad4776b897fadbad247eb468e95fd319ca455ac83bbe350f6fab",
+      "byte_exact": true,
+      "independent_restored_file": true
+    }
+  ],
+  "restored_bytes": 330433596,
+  "purpose": "Real blob/reference round-trip plus preservation of unregistered ancestor source dependencies; restored copies retained in place.",
+  "effective_saving_bytes": 4980676075
+}

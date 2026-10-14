@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "logical_cases": 144,
+  "unique_initial_value_problems": 120,
+  "unique_physical_initial_value_problems": 118,
+  "actual_start_prefix_coverage": 144
+}

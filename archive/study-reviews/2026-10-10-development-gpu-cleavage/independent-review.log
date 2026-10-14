@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "backend_cases": 16,
+  "timestep_pairs": 8,
+  "source_pins": 23,
+  "input_pins": 19,
+  "previous_evidence_pins": 1052,
+  "consumed_pins": 1285
+}

@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "counts": {
+    "backgrounds": 72,
+    "logical_starts": 144,
+    "unique_physical_initial_value_problems": 96,
+    "distinct_pulse_problems": 48,
+    "production_paths": 432,
+    "cpu_paths": 432,
+    "reference_trajectories": 288,
+    "independent_histories": 3,
+    "new_histories": 0
+  },
+  "gate_counts": {
+    "reference_raw_pass": 144,
+    "accuracy_pass": 432,
+    "order_pass": 144,
+    "resolved_orders": 144,
+    "raw_pairs_pass": 288,
+    "pulse_rows_pass": 648,
+    "contrast_rows_pass": 1026,
+    "duplicate_checks_pass": 240
+  },
+  "maxima": {
+    "raw_reference": 4.808597964244917e-12,
+    "cpu_torch": 6.661338147750941e-16,
+    "production_reference": 7.209798254966318e-06,
+    "reference_normalized": 4.568333058684066e-11,
+    "normalized_response": 1.1472491179751843e-05,
+    "reference_signed_contrast": 1.9771517756339563e-11,
+    "signed_contrast": 4.1979973213202015e-06,
+    "contrast_rms": 2.2435254388997183e-07,
+    "relative_auc": 7.850033299172665e-06,
+    "recovery_time": 0.0,
+    "order_min": 2.000561817424919,
+    "order_max": 2.0067167018690864,
+    "vector_identity": 1.1102230246251565e-16,
+    "duplicate_log": 0.0
+  },
+  "history_outcomes": [
+    {
+      "history": 7,
+      "matching_reference": "native",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "native",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 7,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "native",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "native",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 8,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "native",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "native",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "S",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "physics": "S",
+      "above_screen": 2,
+      "recipients": 2
+    },
+    {
+      "history": 9,
+      "matching_reference": "R",
+      "physics": "R",
+      "above_screen": 2,
+      "recipients": 2
+    }
+  ]
+}

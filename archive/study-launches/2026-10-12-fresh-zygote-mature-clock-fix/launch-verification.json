@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-12T12:37:39.162200+00:00",
+  "passed": true,
+  "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+  "source_pins_checked": 58,
+  "links_checked": 16,
+  "software_checks": 66,
+  "independent_prelaunch_audit_passed": true,
+  "first_prefix_passed": true,
+  "first_prefix_reused_with_provenance": true,
+  "production_advanced_past_start": true,
+  "latest_first_trajectory_progress": {
+    "state": "running",
+    "time": 23.4,
+    "elapsed": 5.3999999999999995,
+    "cells": 16,
+    "seconds": 154.76006452197907,
+    "audit": {
+      "max_volume_error": 0.01136934597201944,
+      "min_radius": 8.512276822980242,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    }
+  },
+  "original_attempt_still_failed": true,
+  "original_source_unchanged": true,
+  "claim_ledger_and_manuscript_unchanged": true,
+  "operational_notebook_updated": true,
+  "long_scientific_continuation_started": false,
+  "qualification_accepted": false
+}

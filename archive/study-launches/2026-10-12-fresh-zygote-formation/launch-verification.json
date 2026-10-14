@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "utc": "2026-10-12T15:33:44.221840+00:00",
+  "pid": 675358,
+  "protocol_sha256": "e193c41f6d018cf4cfc7ed88777e00f7e62e99aa89fb98e783baab0c8e199d06",
+  "prelaunch_audit_sha256": "cf37c39ba896426d05d903f0ad5459cb144a17a92bca28630753246c548b61e4",
+  "test_verification_sha256": "1d31dea27aa8b6f04f5daaef53c1e48ec851b5c64ceea5c3917bd6f8766a6346",
+  "passed_software_checks": 82,
+  "independent_inherited_arrays_checked": 432,
+  "source_count": 63,
+  "input_count": 523,
+  "first_prefix_passed": true,
+  "first_prefix_errors": {
+    "phase_abs_max": 3.3881317890172014e-21,
+    "effective_phase_abs_max": 6.661338147750939e-16,
+    "chemical_log_max": 4.71177985628106e-10,
+    "polarity_abs_max": 4.477353210408097e-10,
+    "relative_volume_max": 1.4432899320127035e-15,
+    "relative_transport_max": 6.454803252878995e-07
+  },
+  "first_production_snapshot": {
+    "state": "running",
+    "time": 25.5,
+    "elapsed": 7.5,
+    "cells": 16,
+    "seconds": 129.0364577070577,
+    "audit": {
+      "max_volume_error": 0.01136934597201944,
+      "min_radius": 8.512276822980242,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    }
+  },
+  "coordinator_snapshot": {
+    "state": "running_formation",
+    "active": "h1101_off_coarse",
+    "completed": 0,
+    "total": 24,
+    "pairs_completed": 0,
+    "pairs_total": 12,
+    "independent_histories": 3,
+    "new_scientific_histories": 0,
+    "qualification_accepted": false,
+    "scientific_accepted": false,
+    "maintenance_extension_started": false,
+    "seconds": 93.1532811819925,
+    "protocol_sha256": "e193c41f6d018cf4cfc7ed88777e00f7e62e99aa89fb98e783baab0c8e199d06"
+  },
+  "only_existing_document_change": [
+    "docs/lab_notebook.md"
+  ],
+  "readme_ledger_manuscript_unchanged": true,
+  "all_production_sources_unchanged": true,
+  "maintenance_extension_started": false,
+  "scientific_accepted": false,
+  "registered_histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "new_independent_histories": 0,
+  "scientific_units": "Three existing developmental histories; four nested contexts and two timesteps each.",
+  "documents_sha256": {
+    "docs/fresh_zygote_formation.md": "4c4626f67d99eb602b511ba8e487a5370883d0fc3185a14f8ad8697e88e7f6f5",
+    "docs/fresh_zygote_formation_launch.md": "80d3c717723869665d9200f1b96271732a9b3094a48e9512cbcdd47b23b3cf67",
+    "docs/lab_notebook.md": "18044418a4bde673d9a2222557f6273ff96c4c79d00e2a641fb4ac80d456239e"
+  }
+}

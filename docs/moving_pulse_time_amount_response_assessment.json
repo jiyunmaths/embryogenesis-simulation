@@ -1,0 +1,469 @@
+{
+  "study": "moving-pulse-time-amount-response",
+  "full_study_accepted": true,
+  "accepted_at_tested_scope": true,
+  "utc": "2026-10-10T03:09:16.511064+00:00",
+  "protocol_sha256": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb",
+  "independent_review": "archive/study-reviews/2026-10-10-moving-pulse-time-amount-completed/independent_review.json",
+  "independent_review_sha256": "980cf36ac4a1f821b3d49b32fcd41d718c8baa19c805cd4d449e45cf82a11f25",
+  "independent_script_sha256": "6f62e26f78f123d2de79ae5a6da71d06644ab1f76b72034c441b3ac75e7cbb61",
+  "waveform_sha256": "402902574de75a11f94d4da648509c55518afeaa7322ec5c506f3278c45d4f83",
+  "csv_sha256": "54a04a890aa334457501ebdcde9b83e57555f3953d10df6388a8db73ca5df99e",
+  "counts": {
+    "new_moving_paths": 48,
+    "logical_starts": 24,
+    "distinct_initial_value_problems": 24,
+    "independent_histories": 3,
+    "new_histories": 0,
+    "actual_start_prefixes": 48,
+    "pilot_context_reports": 12,
+    "full_context_reports": 12,
+    "pilot_signed_comparisons": 6,
+    "full_signed_comparisons": 6
+  },
+  "source_pins": 83,
+  "input_pins": 908,
+  "consumed_hashes": 1645,
+  "full_mechanical_maxima": {
+    "chemical_log_max": 5.153956865006687e-06,
+    "polarity_abs_max": 3.4012460329788108e-06,
+    "relative_axis_max": 6.801418073187904e-08,
+    "relative_volume_max": 9.753869673057025e-07,
+    "relative_transport_max": 6.934537965091759e-06,
+    "final_phi_abs_max": 1.7881393432617188e-06
+  },
+  "full_response_maxima": {
+    "normalized_response_error": 1.700077595240268e-05,
+    "relative_auc_error": 1.368431923709501e-05,
+    "recovery_time": 0.0,
+    "signed_waveform": 2.472750971010962e-06,
+    "contrast_rms": 2.561141626417074e-07
+  },
+  "history_outcomes": [
+    {
+      "history": 7,
+      "recipients": 2,
+      "above_screen": 1
+    },
+    {
+      "history": 8,
+      "recipients": 2,
+      "above_screen": 2
+    },
+    {
+      "history": 9,
+      "recipients": 2,
+      "above_screen": 2
+    }
+  ],
+  "frozen_comparisons": [
+    {
+      "history": 7,
+      "cell": 22,
+      "moving_fine_E": 0.019185342187070003,
+      "frozen_fine_E": 0.019203052941872533,
+      "relative_E_change": -0.0009222884952794219,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 0.0001547590173002044,
+      "moving_minus_frozen_signed_max": 0.0008349521930994946
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "moving_fine_E": 0.00225771593194582,
+      "frozen_fine_E": 0.0023050111024886266,
+      "relative_E_change": -0.020518413335078534,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 5.174729238789025e-05,
+      "moving_minus_frozen_signed_max": 0.00046528281797447724
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "moving_fine_E": 0.03831773153613396,
+      "frozen_fine_E": 0.03759297956354951,
+      "relative_E_change": 0.019278918058603933,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 0.0007658946405545943,
+      "moving_minus_frozen_signed_max": 0.005273190427901975
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "moving_fine_E": 0.0938805246459012,
+      "frozen_fine_E": 0.09413987983267902,
+      "relative_E_change": -0.0027549980649942407,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 0.0003107247821646713,
+      "moving_minus_frozen_signed_max": 0.002143117867814903
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "moving_fine_E": 0.03970070164098941,
+      "frozen_fine_E": 0.038933326717067285,
+      "relative_E_change": 0.019709975710494154,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 0.0008106865378716289,
+      "moving_minus_frozen_signed_max": 0.00559874309075209
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "moving_fine_E": 0.09536931169913873,
+      "frozen_fine_E": 0.09560905396147555,
+      "relative_E_change": -0.002507526770774482,
+      "same_classification": true,
+      "moving_minus_frozen_signed_RMS": 0.0002868184850909304,
+      "moving_minus_frozen_signed_max": 0.0019822491441947587
+    }
+  ],
+  "recovery": {
+    "fine_labels": 12,
+    "all_recover": true,
+    "target_range": [
+      2.6999999999999997,
+      5.3999999999999995
+    ],
+    "network_range": [
+      2.6999999999999997,
+      5.3999999999999995
+    ],
+    "maximum_final_network_log_RMS": 5.0282475770308794e-05,
+    "maximum_late_network_log_RMS": 5.257486683706278e-05,
+    "fine_metrics": [
+      {
+        "history": 7,
+        "cell": 22,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.2088498189848664,
+        "target_inhibitor_peak_gain": 1.515552989069275,
+        "target_activator_log_auc_per_log_pulse": 2.3396963540216515,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06166752429307509,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 6.1645284834022645e-06,
+        "late_max_log_rms_from_control": 6.343646673347005e-06
+      },
+      {
+        "history": 7,
+        "cell": 22,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.2076576544417388,
+        "target_inhibitor_peak_gain": 1.5521132235342978,
+        "target_activator_log_auc_per_log_pulse": 2.1178812234314948,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06879661879902156,
+        "target_recovery_time": 3.4499999999999997,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 2.9477643018319926e-06,
+        "late_max_log_rms_from_control": 3.002462662745015e-06
+      },
+      {
+        "history": 7,
+        "cell": 23,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0011987057168689028,
+        "target_activator_log_auc_per_log_pulse": 1.1570343312399824,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006997548047969739,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 3.5990825241041876e-07,
+        "late_max_log_rms_from_control": 3.72097685344234e-07
+      },
+      {
+        "history": 7,
+        "cell": 23,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0011357562538522354,
+        "target_activator_log_auc_per_log_pulse": 1.1167966274062815,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006564760173541777,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 3.476945132088789e-07,
+        "late_max_log_rms_from_control": 3.596174360525435e-07
+      },
+      {
+        "history": 8,
+        "cell": 19,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.168603149092019,
+        "target_inhibitor_peak_gain": 1.653708642240276,
+        "target_activator_log_auc_per_log_pulse": 1.7765299266506291,
+        "other_cells_peak_log_rms_per_log_pulse": 0.20704372727382875,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.0282475770308794e-05,
+        "late_max_log_rms_from_control": 5.257486683706278e-05
+      },
+      {
+        "history": 8,
+        "cell": 19,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.17234514133401,
+        "target_inhibitor_peak_gain": 1.5823996991570213,
+        "target_activator_log_auc_per_log_pulse": 1.8593815210281723,
+        "other_cells_peak_log_rms_per_log_pulse": 0.07623092024494629,
+        "target_recovery_time": 3.15,
+        "network_recovery_time": 4.6499999999999995,
+        "final_log_rms_from_control": 4.8247982039144715e-06,
+        "late_max_log_rms_from_control": 5.696690204422613e-06
+      },
+      {
+        "history": 8,
+        "cell": 20,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006049800630333487,
+        "target_activator_log_auc_per_log_pulse": 1.1102451898492403,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006676508206687979,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.384920739983618e-07,
+        "late_max_log_rms_from_control": 1.520100205642954e-07
+      },
+      {
+        "history": 8,
+        "cell": 20,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0010665261986416,
+        "target_inhibitor_peak_gain": 0.0007723084424201799,
+        "target_activator_log_auc_per_log_pulse": 3.314579729702655,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007435910714873615,
+        "target_recovery_time": 5.25,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 4.198388144335954e-07,
+        "late_max_log_rms_from_control": 4.3669786946289994e-07
+      },
+      {
+        "history": 9,
+        "cell": 29,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.1692840118876686,
+        "target_inhibitor_peak_gain": 1.6525373165865995,
+        "target_activator_log_auc_per_log_pulse": 1.7777838342895467,
+        "other_cells_peak_log_rms_per_log_pulse": 0.21087080968787067,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.803814979732873e-05,
+        "late_max_log_rms_from_control": 5.056477114305426e-05
+      },
+      {
+        "history": 9,
+        "cell": 29,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.1730233693214005,
+        "target_inhibitor_peak_gain": 1.579469169749716,
+        "target_activator_log_auc_per_log_pulse": 1.870628270412718,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0767163837191115,
+        "target_recovery_time": 3.15,
+        "network_recovery_time": 4.6499999999999995,
+        "final_log_rms_from_control": 6.8432530132745944e-06,
+        "late_max_log_rms_from_control": 7.4106283637411135e-06
+      },
+      {
+        "history": 9,
+        "cell": 30,
+        "allocation": "S",
+        "level": "fine",
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006432474173374348,
+        "target_activator_log_auc_per_log_pulse": 1.1129450011109119,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006587720614368107,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.1262928792525467e-07,
+        "late_max_log_rms_from_control": 1.1438310054292753e-07
+      },
+      {
+        "history": 9,
+        "cell": 30,
+        "allocation": "R",
+        "level": "fine",
+        "target_activator_peak_gain": 1.002168594388564,
+        "target_inhibitor_peak_gain": 0.0008268042067549319,
+        "target_activator_log_auc_per_log_pulse": 3.3600183949835856,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007476892321574607,
+        "target_recovery_time": 5.3999999999999995,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 4.835573072656732e-07,
+        "late_max_log_rms_from_control": 4.97826476398314e-07
+      }
+    ]
+  },
+  "quality": {
+    "maximum_recorded_volume_error": 0.01122294196225837,
+    "minimum_recorded_radius_grid_intervals": 5.106964250817138,
+    "maximum_recorded_boundary_occupancy": 2.3889198175197635e-08,
+    "maximum_recorded_dilution_amount_error": 4.440892098500626e-16,
+    "clipping": 0,
+    "whole_window_minimum_log_activator_SD": 1.3590493634450402
+  },
+  "initial_budget_relative_error_max": 2.220446049250313e-16,
+  "allocations": [
+    {
+      "history": 7,
+      "cell": 22,
+      "initial_amount_relative_error": 1.1102230246251565e-16,
+      "final_global_amount_R_over_S": [
+        1.0737835057985394,
+        1.064840904287184
+      ],
+      "maximum_later_global_amount_relative_separation": 0.09687900012076689,
+      "total_conductance_fractional_change": {
+        "S": -0.054445190597202764,
+        "R": -0.0665016113258966
+      },
+      "axis_ratio_fractional_change": {
+        "S": -0.0015293995490935908,
+        "R": 4.396141508755669e-05
+      }
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "initial_amount_relative_error": 2.220446049250313e-16,
+      "final_global_amount_R_over_S": [
+        0.9401018143525067,
+        0.9591227504802662
+      ],
+      "maximum_later_global_amount_relative_separation": 0.07386940214086946,
+      "total_conductance_fractional_change": {
+        "S": -0.05444880113780581,
+        "R": -0.05476311416248303
+      },
+      "axis_ratio_fractional_change": {
+        "S": -0.0015296054175440998,
+        "R": -0.0010021946369064283
+      }
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "initial_amount_relative_error": 2.220446049250313e-16,
+      "final_global_amount_R_over_S": [
+        1.0842273358085501,
+        1.0855309641147495
+      ],
+      "maximum_later_global_amount_relative_separation": 0.12397537181843932,
+      "total_conductance_fractional_change": {
+        "S": -0.05036185495692902,
+        "R": -0.07198490325881346
+      },
+      "axis_ratio_fractional_change": {
+        "S": 0.0016834162644747686,
+        "R": 0.00034269686969379265
+      }
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "initial_amount_relative_error": 2.220446049250313e-16,
+      "final_global_amount_R_over_S": [
+        0.9261301752324018,
+        0.9331915956055925
+      ],
+      "maximum_later_global_amount_relative_separation": 0.09496905089807861,
+      "total_conductance_fractional_change": {
+        "S": -0.05036606232625618,
+        "R": -0.04220846079941731
+      },
+      "axis_ratio_fractional_change": {
+        "S": 0.0016833680601084922,
+        "R": 0.0007405161789864056
+      }
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "initial_amount_relative_error": 2.220446049250313e-16,
+      "final_global_amount_R_over_S": [
+        1.08855845572971,
+        1.0871702341555352
+      ],
+      "maximum_later_global_amount_relative_separation": 0.12560837189770613,
+      "total_conductance_fractional_change": {
+        "S": -0.04988259755932489,
+        "R": -0.07066499300426021
+      },
+      "axis_ratio_fractional_change": {
+        "S": -0.0009118641438553565,
+        "R": -0.0016947086616141416
+      }
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "initial_amount_relative_error": 2.220446049250313e-16,
+      "final_global_amount_R_over_S": [
+        0.9205860930605266,
+        0.9295047661593264
+      ],
+      "maximum_later_global_amount_relative_separation": 0.09857740424015737,
+      "total_conductance_fractional_change": {
+        "S": -0.0498872975436051,
+        "R": -0.04228853730166671
+      },
+      "axis_ratio_fractional_change": {
+        "S": -0.0009122342850591547,
+        "R": -0.0018687385197081463
+      }
+    }
+  ],
+  "coordinator_hours": 8.02893220021889,
+  "method": "compensated SSP-RK2 and error-free dilution, phase-carry CUDA v1",
+  "scope": "Primary S local reference, S surrounding-amount reference and S actual endpoint physics; all six recipients nested in three existing mature histories. Immediate t570 reset/pulse with same physical fields/carry and exact accepted initial concentrations. Initial matched local chemistry and both surrounding/global species amounts only; subsequent chemistry, mechanics, polarity, contacts, volumes, conservative transport and dilution co-evolve freely to t630. Own moving controls and two timesteps, all-prefix/pilot gates before full continuation. No settling, new development, nearest-neighbor specificity, inherited/autonomous identity, spatial convergence or extension to reciprocal references. Chemical correction zero at explicit reset, mandatory thereafter. Moving splitting remains first order; no second-order moving claim.",
+  "limitations": "Saved-array reconstruction plus committed eight-step independent chemistry and four-step exact restart records; unsaved branches are not independently rerun. Native references cover 0.6 units, not the entire trajectory. Per-step audit extrema are checked against saved observations. Two timesteps qualify the tested moving paths without assigning order two. No fresh development, spatial convergence, continuously clamped budgets, settled response, nearest-neighbor specificity, autonomous/inherited identity or reciprocal-reference extension. RMS changes are descriptive rather than additive causal fractions.",
+  "ledger_and_current_manuscript_unchanged_by_review": true,
+  "authorized_prior_editorial_exceptions": [
+    {
+      "path": "manuscript/README.md",
+      "before": "3008d12a01f1b051ec2f592dc39fdb7389bc55e83a14fc1c4060f66463cef4b4",
+      "after": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556",
+      "original": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/README.md",
+      "authorization": "Rewrite the introduction section: make it more organized."
+    },
+    {
+      "path": "manuscript/introduction_methods.md",
+      "before": "ab198ab3efc82a3464f603dea5c8234aa1c365926369226d0cdc4bc9eeeeaced",
+      "after": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7",
+      "original": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/introduction_methods.md",
+      "authorization": "Rewrite the introduction section: make it more organized."
+    },
+    {
+      "path": "manuscript/sections.md",
+      "before": "4414383b49879e2fea4869817d6812490c84b66a77f229f993626a6a27d8d902",
+      "after": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df",
+      "original": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/sections.md",
+      "authorization": "Rewrite the introduction section: make it more organized."
+    },
+    {
+      "path": "manuscript/sections.tex",
+      "before": "cfcd232bba0d1e7bbc5767e98440b81cc382338a3e90342c68e3b46a39d83262",
+      "after": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb",
+      "original": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/sections.tex",
+      "authorization": "Rewrite the introduction section: make it more organized."
+    },
+    {
+      "path": "manuscript/main.pdf",
+      "before": "8e90238617f1e3f67d139a699cfc1d5ae404cd1a58a76509019d9a7159b1940b",
+      "after": "17cbb829a1c6963871582d16de0bb981eea07917fd55231109985c325b0d971d",
+      "original": "manuscript/archive/before-introduction-reorganization-2026-10-09/manuscript/main.pdf",
+      "authorization": "Rewrite the introduction section: make it more organized."
+    }
+  ],
+  "coordinator_exited": true,
+  "gpu_compute_jobs_observed_at_review": 0,
+  "next_priority": "Qualify cleavage and changing cell count with the current method, then fresh independent zygote histories with matched feedback/polarity controls; no launch in this review."
+}

@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "count": 24,
+    "errors": []
+  },
+  "input_sha256": {
+    "count": 18,
+    "errors": []
+  },
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8",
+  "protocol_matches_first_pair": true,
+  "checked_at_utc": "2026-10-10T04:23:43.133203+00:00",
+  "passed": true
+}

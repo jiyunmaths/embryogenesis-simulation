@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "full_cases": 36,
+  "prefix_cases": 144,
+  "original_inputs_exact": true,
+  "pins_verified": true,
+  "protocol_sha256": "3bbbcdd4164e1d5579e47430e734d91724f4c2d6c64d35b5ed1f462d250ebe72"
+}

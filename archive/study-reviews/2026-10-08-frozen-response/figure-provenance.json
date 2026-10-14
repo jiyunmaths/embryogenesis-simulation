@@ -1,0 +1,11 @@
+{
+  "input_sha256": "b74061f04406cbbf984d896f12b13aa3a70708f5c61f2522bb630bd3c01d89a1",
+  "script_sha256": "7727829deac936370a5a8a7b0341fd17d8eb39b56eb60c60274bf593f5927c65",
+  "outputs_sha256": {
+    "frozen-response.png": "2b0b3babd55d4cff3341bc408114890c8a90feb0a9afd7d90ec51b5134ce9c50",
+    "frozen-response.svg": "9c42430791c0f61e5037b1db47e17790376ea31d79d10f77f42e54ca9d1f045b",
+    "recipient-summary.csv": "f8434f34521ced9e228d7a56f641773215657f720fdd91e9c4b520732b10c4e9"
+  },
+  "matplotlib": "3.10.5",
+  "scope": "Fine dt full60 target two-species own-control-normalized response differences, plus final unperturbed activator ratios. Six recipients are nested in three histories; no statistical error bars or independently replicated dose interpretation."
+}

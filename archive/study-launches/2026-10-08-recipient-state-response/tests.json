@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-10-08T13:06:46.363587+00:00",
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase_carry_recipient_state_response.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "tests": 13,
+  "pytest_seconds": 16.36,
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_recipient_state_response.py": "002f8f2545bd51e3d9394d14d8c1119cb081c011076552be1b09b3bfdf32b6f3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_recipient_state_response.py": "96e9b157660d8643f0a47d6e95b695b4335423d386be2fbc1fd60096273bb3a2"
+  },
+  "log_sha256": "53c61df86760f780da71a8143f82f23a2b11088c3a6bef27b01acba6f01d6b68",
+  "scope": "Includes full93-start CPU fixture with concurrent reference/verification orchestration,279 production+279 verification paths,186reference integrations. Actual scientific CUDA starts require separate qualification."
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "protocol_sha256": "93c3cb3fe430029bad76b6e797478db05ac075b243c916a2f7f1684baf5add3f",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "parent_noninput_export_exception_preserved": true,
+  "contexts": 72,
+  "logical_starts": 144,
+  "paired_matching_checks": 24,
+  "max_pulse_amount_relative_error": 8.881784197001252e-16,
+  "script_sha256": "b30b8c9ba6515c65204203d8ce458ca984f27af9fb8a8a549279a89eccbf11ca"
+}

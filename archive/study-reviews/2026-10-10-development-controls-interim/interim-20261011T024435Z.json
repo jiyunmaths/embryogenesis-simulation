@@ -1,0 +1,915 @@
+{
+  "utc": "2026-10-11T02:44:35.806313+00:00",
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "source_pins_verified": true,
+  "source_pins_count": 33,
+  "status": {
+    "state": "running",
+    "stage": "full_restart_replay",
+    "case": "tension_adhesion_space120",
+    "live_stage": 2,
+    "completed": [
+      "tension_adhesion_space88",
+      "tension_adhesion_space104",
+      "tension_adhesion_space120",
+      "tension_adhesion_time120_half",
+      "polarity_space88",
+      "polarity_space104",
+      "polarity_space120",
+      "polarity_time120_half",
+      "full_space88",
+      "full_space104",
+      "full_space120",
+      "full_time120_half",
+      "off120"
+    ],
+    "replays_completed": 3,
+    "replay_total": 12
+  },
+  "paths": [
+    {
+      "case": "tension_adhesion_space88",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 542.019879228028,
+      "audit": {
+        "max_volume_error": 0.0161683431513574,
+        "min_radius": 6.233136838104457,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004360621488359836,
+        "axis_ratio": 1.2819389804740806,
+        "boundary_occupancy": 4.248783182919658e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "tension_adhesion_space104",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 835.3174304999993,
+      "audit": {
+        "max_volume_error": 0.01613068534849338,
+        "min_radius": 7.366417345001159,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004308019596731951,
+        "axis_ratio": 1.2808356366496487,
+        "boundary_occupancy": 3.879353002028685e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 1241.5075290449895,
+      "audit": {
+        "max_volume_error": 0.016146283324169453,
+        "min_radius": 8.499462435529122,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.00434482578701919,
+        "axis_ratio": 1.280928231252017,
+        "boundary_occupancy": 3.6291319342046657e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "tension_adhesion_time120_half",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 2327.6077034400078,
+      "audit": {
+        "max_volume_error": 0.016149978709108948,
+        "min_radius": 8.499417174386847,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.00435043450700303,
+        "axis_ratio": 1.280798910015588,
+        "boundary_occupancy": 3.6187246775509774e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "polarity_space88",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 525.9235006169765,
+      "audit": {
+        "max_volume_error": 0.016006816858328277,
+        "min_radius": 6.233097446356041,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004179076727944433,
+        "axis_ratio": 1.2811367987305682,
+        "boundary_occupancy": 5.4421476006205616e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "polarity_space104",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 804.323912072985,
+      "audit": {
+        "max_volume_error": 0.015962860493214714,
+        "min_radius": 7.366348607673277,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004130753984647867,
+        "axis_ratio": 1.2802864897394994,
+        "boundary_occupancy": 4.9702668196427435e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "polarity_space120",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 1193.4015253289836,
+      "audit": {
+        "max_volume_error": 0.015981381123913896,
+        "min_radius": 8.499444469110145,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004166896057626089,
+        "axis_ratio": 1.2803356593006774,
+        "boundary_occupancy": 4.651370434649582e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "polarity_time120_half",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 2226.436141076003,
+      "audit": {
+        "max_volume_error": 0.01598514010833063,
+        "min_radius": 8.499392995511988,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.0041721968209414125,
+        "axis_ratio": 1.2801542707430438,
+        "boundary_occupancy": 4.639788553362223e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "full_space88",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 522.1113855509902,
+      "audit": {
+        "max_volume_error": 0.016031839463474418,
+        "min_radius": 6.233067919305483,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004205581668753002,
+        "axis_ratio": 1.2810819110101315,
+        "boundary_occupancy": 5.441019162999439e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "full_space104",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 798.5912625019846,
+      "audit": {
+        "max_volume_error": 0.015986410477404234,
+        "min_radius": 7.366291385063812,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004155439278288801,
+        "axis_ratio": 1.2802590061449313,
+        "boundary_occupancy": 4.9648839726967875e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "full_space120",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 1189.3116109220136,
+      "audit": {
+        "max_volume_error": 0.01600560520863037,
+        "min_radius": 8.499353494192112,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004193021844548577,
+        "axis_ratio": 1.2802419467521566,
+        "boundary_occupancy": 4.647661595857944e-12,
+        "dividing_ids": []
+      }
+    },
+    {
+      "case": "full_time120_half",
+      "state": "completed",
+      "reported_passed": true,
+      "seconds": 2239.0060725240037,
+      "audit": {
+        "max_volume_error": 0.0160083899128588,
+        "min_radius": 8.499314722638081,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "events": 15,
+      "cells": 16,
+      "time": 18.0,
+      "history_rows": 121,
+      "runtime_summary_rechecked": true,
+      "small_evidence_hashes_verified": true,
+      "whole_checkpoint_hashes_rechecked": false,
+      "restart_steps": {
+        "2": 8,
+        "4": 8,
+        "8": 8
+      },
+      "independent_chemical_log_max": 0.0,
+      "endpoint": {
+        "log_activator_sd": 0.004197765587030469,
+        "axis_ratio": 1.2800940581732612,
+        "boundary_occupancy": 4.637640098337226e-12,
+        "dividing_ids": []
+      }
+    }
+  ],
+  "partial_diagnostics": [
+    {
+      "kind": "space",
+      "cases": [
+        "tension_adhesion_space88",
+        "tension_adhesion_space104"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.00043326691715842166,
+        "log_wasserstein_max": 0.000430784078462385,
+        "contrast_abs_max": 0.000625471892450652,
+        "relative_axis_max": 0.003934326713527447,
+        "relative_total_volume_max": 0.00035916520499990057,
+        "whole_amount_relative_max": 7.863800145480049e-05,
+        "mean_polarity_abs_max": 4.6417031652803845e-05,
+        "relative_spectrum_max": 0.03774691236237814,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 2
+      },
+      "unmatched_times": [
+        6.0,
+        12.15
+      ],
+      "maturity_difference": 0.003750000000000142,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "tension_adhesion_space88",
+          "tension_adhesion_space104"
+        ],
+        "peak": {
+          "relative_spectrum": 0.03780346345311721,
+          "time": 8.865,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          6.285,
+          9.24,
+          11.79,
+          11.805,
+          11.82,
+          11.91,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          10.005,
+          11.67,
+          11.685,
+          11.7,
+          11.985,
+          12.27
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "space",
+      "cases": [
+        "tension_adhesion_space104",
+        "tension_adhesion_space120"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0002558355655928483,
+        "log_wasserstein_max": 0.00025577561815385256,
+        "contrast_abs_max": 0.00013471797233127357,
+        "relative_axis_max": 0.0010605741840777894,
+        "relative_total_volume_max": 9.131617505420131e-05,
+        "whole_amount_relative_max": 2.7855136883747633e-05,
+        "mean_polarity_abs_max": 3.14308597236274e-05,
+        "relative_spectrum_max": 0.014096774881750738,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        12.15
+      ],
+      "maturity_difference": 0.001875000000000071,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "tension_adhesion_space104",
+          "tension_adhesion_space120"
+        ],
+        "peak": {
+          "relative_spectrum": 0.014738770780522348,
+          "time": 8.775,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          11.82,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.225,
+          9.78,
+          9.975,
+          10.005,
+          11.985,
+          12.27
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "time",
+      "cases": [
+        "tension_adhesion_space120",
+        "tension_adhesion_time120_half"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0004345939695987399,
+        "log_wasserstein_max": 0.00043215384019928125,
+        "contrast_abs_max": 0.0006127387650338586,
+        "relative_axis_max": 0.0009350444013371817,
+        "relative_total_volume_max": 8.278617065071714e-05,
+        "whole_amount_relative_max": 1.5410728271492147e-05,
+        "mean_polarity_abs_max": 4.8353095629642825e-06,
+        "relative_spectrum_max": 0.007653573950212192,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        6.0
+      ],
+      "maturity_difference": 0.002343750000001421,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "tension_adhesion_space120",
+          "tension_adhesion_time120_half"
+        ],
+        "peak": {
+          "relative_spectrum": 0.007653573950212192,
+          "time": 11.7,
+          "cells": 8,
+          "edges": [
+            16,
+            17
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          11.805,
+          11.91
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.225,
+          9.75,
+          11.7
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "space",
+      "cases": [
+        "polarity_space88",
+        "polarity_space104"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0004332828632968164,
+        "log_wasserstein_max": 0.0004308036780424962,
+        "contrast_abs_max": 0.0006252140123413837,
+        "relative_axis_max": 0.0036993367329773985,
+        "relative_total_volume_max": 0.00037077528810824933,
+        "whole_amount_relative_max": 8.057497377578215e-05,
+        "mean_polarity_abs_max": 4.534165858258225e-05,
+        "relative_spectrum_max": 0.0389651880781392,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 2
+      },
+      "unmatched_times": [
+        6.0,
+        12.15
+      ],
+      "maturity_difference": 0.004687500000001066,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "polarity_space88",
+          "polarity_space104"
+        ],
+        "peak": {
+          "relative_spectrum": 0.03903938024857561,
+          "time": 8.865,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          6.285,
+          9.24,
+          11.79,
+          11.805,
+          11.82,
+          11.91,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.99,
+          11.7,
+          11.715,
+          11.895,
+          11.97
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "space",
+      "cases": [
+        "polarity_space104",
+        "polarity_space120"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0002567722174696987,
+        "log_wasserstein_max": 0.000256702282171403,
+        "contrast_abs_max": 0.00011740812199584035,
+        "relative_axis_max": 0.0010241787611460218,
+        "relative_total_volume_max": 7.950344405149856e-05,
+        "whole_amount_relative_max": 2.6812646797935713e-05,
+        "mean_polarity_abs_max": 2.8344204813830346e-05,
+        "relative_spectrum_max": 0.014522364153600127,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        12.15
+      ],
+      "maturity_difference": 0.001875000000000071,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "polarity_space104",
+          "polarity_space120"
+        ],
+        "peak": {
+          "relative_spectrum": 0.015297030363618416,
+          "time": 8.775,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          11.82,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.765,
+          9.96,
+          9.99,
+          11.73,
+          11.97,
+          12.27
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "time",
+      "cases": [
+        "polarity_space120",
+        "polarity_time120_half"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0004340765180135232,
+        "log_wasserstein_max": 0.00043163435187434777,
+        "contrast_abs_max": 0.0006140817622436322,
+        "relative_axis_max": 0.000993715445493537,
+        "relative_total_volume_max": 9.283548048077961e-05,
+        "whole_amount_relative_max": 1.5574087055991725e-05,
+        "mean_polarity_abs_max": 4.559665555114881e-06,
+        "relative_spectrum_max": 0.006745230764106282,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        6.0
+      ],
+      "maturity_difference": 0.002343750000001421,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "polarity_space120",
+          "polarity_time120_half"
+        ],
+        "peak": {
+          "relative_spectrum": 0.006745230764106282,
+          "time": 11.55,
+          "cells": 8,
+          "edges": [
+            16,
+            16
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          11.805,
+          11.91
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          12.24
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "space",
+      "cases": [
+        "full_space88",
+        "full_space104"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0004342981629862512,
+        "log_wasserstein_max": 0.0004318262206975442,
+        "contrast_abs_max": 0.0006208981099462711,
+        "relative_axis_max": 0.003652794089758382,
+        "relative_total_volume_max": 0.00035949115721412017,
+        "whole_amount_relative_max": 8.024575125675781e-05,
+        "mean_polarity_abs_max": 4.534631929677764e-05,
+        "relative_spectrum_max": 0.03835448354372452,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 2
+      },
+      "unmatched_times": [
+        6.0,
+        12.15
+      ],
+      "maturity_difference": 0.003750000000000142,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "full_space88",
+          "full_space104"
+        ],
+        "peak": {
+          "relative_spectrum": 0.0384058797372687,
+          "time": 8.865,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          6.285,
+          9.24,
+          11.79,
+          11.805,
+          11.82,
+          11.91,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.99,
+          11.7,
+          11.715,
+          11.97
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "space",
+      "cases": [
+        "full_space104",
+        "full_space120"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.00025632308515843454,
+        "log_wasserstein_max": 0.0002562546888900419,
+        "contrast_abs_max": 0.00013513460473479942,
+        "relative_axis_max": 0.001172758095366655,
+        "relative_total_volume_max": 9.245591751061433e-05,
+        "whole_amount_relative_max": 2.9307697627434237e-05,
+        "mean_polarity_abs_max": 2.8604069154050595e-05,
+        "relative_spectrum_max": 0.015123261235616888,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        12.15
+      ],
+      "maturity_difference": 0.001875000000000071,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "full_space104",
+          "full_space120"
+        ],
+        "peak": {
+          "relative_spectrum": 0.015893568521196784,
+          "time": 8.775,
+          "cells": 4,
+          "edges": [
+            6,
+            6
+          ]
+        },
+        "unmatched_times": [
+          11.82,
+          11.925,
+          12.15
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          9.765,
+          9.96,
+          9.99,
+          11.73,
+          11.97,
+          12.27
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    },
+    {
+      "kind": "time",
+      "cases": [
+        "full_space120",
+        "full_time120_half"
+      ],
+      "observation_errors": {
+        "concentration_wasserstein_max": 0.0004345937820590544,
+        "log_wasserstein_max": 0.0004321534612222735,
+        "contrast_abs_max": 0.0006126964034336045,
+        "relative_axis_max": 0.0008881075211697453,
+        "relative_total_volume_max": 8.276883377966726e-05,
+        "whole_amount_relative_max": 1.4267062531381214e-05,
+        "mean_polarity_abs_max": 4.1356221414820765e-06,
+        "relative_spectrum_max": 0.006171909421673613,
+        "cell_count_difference_max": 1.0,
+        "unmatched_observations_max": 1
+      },
+      "unmatched_times": [
+        6.0
+      ],
+      "maturity_difference": 0.002109374999999858,
+      "observation_only_failures": {},
+      "dense_spectrum": {
+        "cases": [
+          "full_space120",
+          "full_time120_half"
+        ],
+        "peak": {
+          "relative_spectrum": 0.006171909421673613,
+          "time": 11.55,
+          "cells": 8,
+          "edges": [
+            16,
+            16
+          ]
+        },
+        "unmatched_times": [
+          6.0,
+          11.805,
+          11.91
+        ],
+        "topology_mismatch_times": [
+          9.21,
+          12.24
+        ]
+      },
+      "field_errors_assessed": false,
+      "full_comparison_accepted": false
+    }
+  ],
+  "production_completed": 12,
+  "production_total": 12,
+  "full_replays_completed": 3,
+  "refinement_reports_present": [
+    "tension_adhesion-refinement.json",
+    "polarity-refinement.json",
+    "full-refinement.json"
+  ],
+  "qualification_accepted": false,
+  "new_independent_scientific_histories": 0,
+  "note": "Interim read-only observation checks exclude field reconstruction and full checkpoint hash review."
+}

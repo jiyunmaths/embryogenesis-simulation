@@ -1,0 +1,188 @@
+{
+  "passed": false,
+  "cases": [
+    "off_coarse",
+    "off_fine"
+  ],
+  "arms": [
+    "gpu",
+    "gpu"
+  ],
+  "errors": {
+    "concentration_wasserstein_max": 0.0006518382176184444,
+    "log_wasserstein_max": 0.0006477308167867208,
+    "contrast_abs_max": 0.0008402282211711286,
+    "relative_axis_max": 0.008158956016479424,
+    "relative_total_volume_max": 0.000633722989407115,
+    "whole_amount_relative_max": 0.00013093922511120404,
+    "mean_polarity_abs_max": 5.2294682061148755e-05,
+    "relative_spectrum_max": 0.05033970129135743,
+    "cell_count_difference_max": 1.0,
+    "unmatched_observations_max": 3
+  },
+  "unmatched_times": [
+    6.0,
+    6.3,
+    12.15
+  ],
+  "maturity_time_error": 0.02812499999999929,
+  "fields": [
+    {
+      "time": 0,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.0,
+        "activator_density": 0.0,
+        "inhibitor_density": 0.0,
+        "polarity_density": 0.0
+      },
+      "phase_ranges": [
+        [
+          1.366706062134217e-22,
+          0.9999959468841553
+        ],
+        [
+          1.366706062134217e-22,
+          0.9999959468841553
+        ]
+      ]
+    },
+    {
+      "time": 3,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.014293206497178272,
+        "activator_density": 0.014293209394124928,
+        "inhibitor_density": 0.014293200318957294,
+        "polarity_density": 0.0
+      },
+      "phase_ranges": [
+        [
+          2.0981463658212612e-24,
+          0.9999513030052185
+        ],
+        [
+          2.124367707880355e-24,
+          0.999946653842926
+        ]
+      ]
+    },
+    {
+      "time": 6,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.026265434661066667,
+        "activator_density": 0.0262268618260252,
+        "inhibitor_density": 0.026226331722048454,
+        "polarity_density": 0.002290593297171825
+      },
+      "phase_ranges": [
+        [
+          1.0374672009489204e-22,
+          0.9988466501235962
+        ],
+        [
+          8.470272169686848e-23,
+          0.9987937211990356
+        ]
+      ]
+    },
+    {
+      "time": 9,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.036697714450465824,
+        "activator_density": 0.036673783009177334,
+        "inhibitor_density": 0.036672185673597216,
+        "polarity_density": 0.002021843137177994
+      },
+      "phase_ranges": [
+        [
+          9.940683022381123e-23,
+          0.9963971972465515
+        ],
+        [
+          8.651329631387002e-23,
+          0.9963557720184326
+        ]
+      ]
+    },
+    {
+      "time": 12,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.03951039450223334,
+        "activator_density": 0.039391784906068726,
+        "inhibitor_density": 0.03938585789217895,
+        "polarity_density": 0.0030773157488875862
+      },
+      "phase_ranges": [
+        [
+          3.687710919048479e-22,
+          0.9931263327598572
+        ],
+        [
+          3.0809660637535556e-22,
+          0.9925556778907776
+        ]
+      ]
+    },
+    {
+      "time": 15,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.004111615264549771,
+        "activator_density": 0.004111060155252103,
+        "inhibitor_density": 0.004111461631295104,
+        "polarity_density": 0.00047931454853400646
+      },
+      "phase_ranges": [
+        [
+          1.1227089809634964e-18,
+          0.9558563232421875
+        ],
+        [
+          1.0923689266732405e-18,
+          0.9558829665184021
+        ]
+      ]
+    },
+    {
+      "time": 18,
+      "probe": null,
+      "order": 3,
+      "errors": {
+        "occupancy": 0.003955526226375534,
+        "activator_density": 0.003952985260893433,
+        "inhibitor_density": 0.0039543007404619895,
+        "polarity_density": 0.00040928874326581153
+      },
+      "phase_ranges": [
+        [
+          2.7078054619955997e-20,
+          0.9605269432067871
+        ],
+        [
+          2.6513237280011464e-20,
+          0.9605584740638733
+        ]
+      ]
+    }
+  ],
+  "field_max": 0.03951039450223334,
+  "diagnostic_spread": {
+    "occupancy": 0.0,
+    "activator_density": 0.0,
+    "inhibitor_density": 0.0,
+    "polarity_density": 0.0
+  },
+  "provisional": true,
+  "independent_review_pending": true,
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8"
+}

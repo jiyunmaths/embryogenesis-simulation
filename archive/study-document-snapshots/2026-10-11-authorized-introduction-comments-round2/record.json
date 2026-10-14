@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-12T00:08:06.947504+00:00",
+  "authorization": "User reported further inline comments and modifications in the Introduction of sections.md; resolved them while retaining unannotated user text.",
+  "scope": "Six Introduction paragraphs, manuscript guide, regenerated Markdown/HTML/LaTeX and editorial-only evidence annotations.",
+  "parent_preservation_manifest": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-10-before-development-controls/manifest.json",
+  "parent_preservation_manifest_sha256": "c6c68c1ca6b92aa469dab4b83a344d6591f692592cef85b6b04714cdf0e4a28b",
+  "previous_authorized_record": "archive/study-document-snapshots/2026-10-11-authorized-comment-resolution/record.json",
+  "annotated_source_archive": "manuscript/archive/before-introduction-comments-round2-2026-10-11",
+  "annotated_source_sha256": "e691711fb14cdc4b9d2e3c82bafc1f2fff5d92997fc6fdac1ae3f9b06f910e8a",
+  "non_input_document_relocations": [
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/README.md",
+      "expected_sha256": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+      "edited_sha256": "e35da6f37e2285fdf67f9270fb6f9d3828fdf30ab24c131f630bc8f8b1dac693"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/introduction_methods.md",
+      "expected_sha256": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+      "edited_sha256": "1223ece38c8c9a5b37704d4ebd87dfcc1a5753b259b4e55f1988988790e579d9"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md",
+      "expected_sha256": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+      "edited_sha256": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.tex",
+      "expected_sha256": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.tex",
+      "edited_sha256": "9f6f9edb0192aa4695778e6224c3abd79020cefe7f5350f1c90d506979847575"
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/references.bib",
+      "expected_sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+      "edited_sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345"
+    }
+  ],
+  "source_and_input_pins_unchanged": true,
+  "original_numerical_evidence_unchanged": true,
+  "original_preservation_manifest_unchanged": true,
+  "active_study_uses_no_current_manuscript_inputs": true
+}

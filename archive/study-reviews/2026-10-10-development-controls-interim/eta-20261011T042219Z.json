@@ -1,0 +1,231 @@
+{
+  "utc": "2026-10-11T04:22:19.956013+00:00",
+  "status": {
+    "state": "running",
+    "stage": "full_restart_replay",
+    "case": "full_space120",
+    "live_stage": 4,
+    "completed": [
+      "tension_adhesion_space88",
+      "tension_adhesion_space104",
+      "tension_adhesion_space120",
+      "tension_adhesion_time120_half",
+      "polarity_space88",
+      "polarity_space104",
+      "polarity_space120",
+      "polarity_time120_half",
+      "full_space88",
+      "full_space104",
+      "full_space120",
+      "full_time120_half",
+      "off120"
+    ],
+    "replays_completed": 10,
+    "replay_total": 12
+  },
+  "active": {
+    "state": "running",
+    "time": 12.6,
+    "start": 8.893125,
+    "checked_observations": 25,
+    "seconds": 282.5499167200178
+  },
+  "completed_replays": [
+    {
+      "case": "full_space120",
+      "stage": 2,
+      "passed": true,
+      "seconds": 947.7237261340488,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.01600560520863037,
+        "min_radius": 8.499353494192112,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "off120",
+      "stage": 2,
+      "passed": true,
+      "seconds": 1000.9953177699936,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016121538388706225,
+        "min_radius": 8.49955580563082,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "off120",
+      "stage": 4,
+      "passed": true,
+      "seconds": 889.4190685389913,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016121538388706225,
+        "min_radius": 8.49955580563082,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "off120",
+      "stage": 8,
+      "passed": true,
+      "seconds": 679.6967179769999,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016121538388706225,
+        "min_radius": 8.49955580563082,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 2,
+      "passed": true,
+      "seconds": 961.7559489340056,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.015981381123913896,
+        "min_radius": 8.499444469110145,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 4,
+      "passed": true,
+      "seconds": 842.4285979170236,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.015981381123913896,
+        "min_radius": 8.499444469110145,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 8,
+      "passed": true,
+      "seconds": 642.4962430630112,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.015981381123913896,
+        "min_radius": 8.499444469110145,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 2,
+      "passed": true,
+      "seconds": 1011.2238523749984,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016146283324169453,
+        "min_radius": 8.499462435529122,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 4,
+      "passed": true,
+      "seconds": 892.929322328011,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016146283324169453,
+        "min_radius": 8.499462435529122,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 8,
+      "passed": true,
+      "seconds": 682.7098369099549,
+      "complete_state_bitwise_equal": true,
+      "final_cells": 16,
+      "final_events": 15,
+      "audit": {
+        "max_volume_error": 0.016146283324169453,
+        "min_radius": 8.499462435529122,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      }
+    }
+  ],
+  "refinements": [
+    {
+      "branch": "full",
+      "passed": true,
+      "trend": true,
+      "space_field_max": 0.00830186850166018,
+      "space_spectrum_max": 0.015123261235616888,
+      "time_field_max": 0.004106100847709437,
+      "dense_time_spectrum_max": 0.006171909421673613,
+      "report_sha256": "5cfe8ad1b382ed10e45d0555291d18f8067394ef51dfdd81c020ce9466424528"
+    },
+    {
+      "branch": "polarity",
+      "passed": true,
+      "trend": true,
+      "space_field_max": 0.008103765475661547,
+      "space_spectrum_max": 0.014522364153600127,
+      "time_field_max": 0.004479291147679751,
+      "dense_time_spectrum_max": 0.006745230764106282,
+      "report_sha256": "255491c1b0c46cbf691de189f3ab7360b88ce2ad29899a22fdcd4c6e78814239"
+    },
+    {
+      "branch": "tension_adhesion",
+      "passed": true,
+      "trend": true,
+      "space_field_max": 0.008215109155177492,
+      "space_spectrum_max": 0.014096774881750738,
+      "time_field_max": 0.00440397096428811,
+      "dense_time_spectrum_max": 0.007653573950212192,
+      "report_sha256": "5af3600596a6893df4604d92aa17f4b120c1f928952d489e7447cc77ba216708"
+    }
+  ],
+  "eta_basis": {
+    "full_to_polarity_stage2_runtime_ratio": 0.9854097884026505,
+    "expected_full_stage4_seconds": 830.1373864177557,
+    "expected_full_stage8_seconds": 633.1220869262197,
+    "remaining_replay_seconds": 1180.7095566239577,
+    "remaining_minutes_with_final_guard_allowance": 21.678492610399296,
+    "range_minutes": [
+      20,
+      30
+    ],
+    "independent_review_additional": true
+  },
+  "qualification_accepted": false,
+  "new_independent_scientific_histories": 0
+}

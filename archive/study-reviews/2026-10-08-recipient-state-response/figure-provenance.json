@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source": "Accepted raw-array audit and its saved fine response waveforms.",
+  "no_new_integrations": true,
+  "no_new_acceptance_threshold": true,
+  "endpoint_panel": "All four reference/physical-context combinations shown; overlapping endpoint markers are retained.",
+  "files_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/independent_review.json": "68b13a76b00dbf936683fa46931f3860cf884cb00ed74af05f7874cb56bb88aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/waveforms.npz": "9d8111a8848c395ab04b648de0a743ffdd93c9c98a36a33b56e9696100bab050",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/plot_results.py": "de4d6402dcc039e107f215e0f7c5425b8ac0c17937549bd957fdb906effaecf0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-summary.csv": "5bf1192881cb31da55ca35d1e98fbd84d363658ff21aa2177ae609a485c53f51",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-state-response.png": "2609c7d51e9fc6349b235d6ae77037f7bcc3baac554e7ac1d8fb26846958a0b1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-state-response.svg": "1ba89612f0a7871b7305de049742da28262dd968b2f53e7f6217a01e11cb21f5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "protocol_sha256": "189179819f5371d83027027e7d4036b5cee2f9c0ff15e8e89e39e531b5efef26",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "parent_noninput_export_exception_preserved": true,
+  "contexts": 168,
+  "logical_starts": 336,
+  "paired_matching_checks": 72,
+  "paired_budget_checks": 48,
+  "distinct_physical_problems": 192,
+  "max_pulse_amount_relative_error": 8.881784197001252e-16,
+  "max_budget_relative_error": 3.3306690738754696e-16,
+  "max_allocation_fraction_relative_error": 6.661338147750939e-16,
+  "max_paired_budget_relative_error": 4.440892098500626e-16,
+  "script_sha256": "131f317661aab1612b1c4ea1e7a179f8dca6899c46c5b5c82b2c22a2c9fe2e8b"
+}

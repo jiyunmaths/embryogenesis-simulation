@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "case": "polarity_space88",
+  "exact_history_rows": 54,
+  "exact_checkpoint_arrays": [
+    "gpu-t03.npz",
+    "gpu-t00.npz",
+    "gpu-t06.npz"
+  ],
+  "original_attempt_hashes_unchanged": true
+}

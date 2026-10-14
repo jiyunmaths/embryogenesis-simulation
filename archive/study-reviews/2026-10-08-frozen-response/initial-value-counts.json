@@ -1,0 +1,67 @@
+{
+  "logical_reference_cases": 33,
+  "unique_context_initial_value_problems": 27,
+  "duplicate_pairs": [
+    [
+      "seed-7_fine_sham_cell-22_fractional",
+      "seed-7_fine_sham_cell-22_amount"
+    ],
+    [
+      "seed-7_fine_sham_cell-23_fractional",
+      "seed-7_fine_sham_cell-23_amount"
+    ],
+    [
+      "seed-8_fine_redistributed-cell-19_cell-19_fractional",
+      "seed-8_fine_redistributed-cell-19_cell-19_amount"
+    ],
+    [
+      "seed-8_fine_redistributed-cell-20_cell-20_fractional",
+      "seed-8_fine_redistributed-cell-20_cell-20_amount"
+    ],
+    [
+      "seed-9_fine_redistributed-cell-29_cell-29_fractional",
+      "seed-9_fine_redistributed-cell-29_cell-29_amount"
+    ],
+    [
+      "seed-9_fine_redistributed-cell-30_cell-30_fractional",
+      "seed-9_fine_redistributed-cell-30_cell-30_amount"
+    ]
+  ],
+  "meaning": "Each context has one exact fixed operator and volume vector. Two dose-design labels coincide in the minimum-amount background for each recipient. Preserve all33 logical reference cases; neither solver/dose duplication nor refinement adds independent histories.",
+  "inputs_sha256": {
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/source.npz": "5705115523d9d17e0d2ae1512a434436cc8dce19f7ffd51099551d09ffa31c3d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/source.npz": "3588256310dc02da8dcad18606367b3582102a80b8edea488f548aff45dc0953",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/source.npz": "4ec977d4a7427ea90206ae7e58a24a7f62e8ee12747e438ce9e13ee3b6bb08e2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/source.npz": "8787f19e3d3c0854cad230704cc90dada60359414412514e32ab0dafb08d8e54",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/source.npz": "011e3513e2dad3dad98976cf3081fdb53187dd51db01f7de0067b2b72235c090",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/source.npz": "7d149ad8ea87db27746eca2484e20df9836132b0f2f315b4496409a86ea5b5c3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/source.npz": "43c590e0615fb65c67e845d850da106561e69569256112624efd220452400772",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/source.npz": "1f7468ae22f341bb64827ab0c70c9baba07c6f9f6954e2c7a52ec70b1403965a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/source.npz": "2d01ffa5600937bde96ade97eeec6274317c066da3d0e19fd7c30d99f8df01d8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/source.npz": "05e085c76b650bfcc01d11b94cea2a7fc1718698f1bf9c8eccef1f753c466dc3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/source.npz": "55634fc58b3c91b4a8781eab31f330a4368ec9753a975f08fdd008c8ddd9de90",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/source.npz": "c0b4db84fd64d4aa1c69cc7f05e806161bc799e1158587c8bb0daf0424570f5b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/source.npz": "e71c786f3148b17bd4501ec591fd12546ccd1f9fe9ee772333e8cdf9a53f2100",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/source.npz": "5cdfb2c31fc8329c8c46400a57cf1785be91f01a15b4f2638281f61a97eb4dbe",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/source.npz": "42b8e56396797d16af4fd8a03649267bd06878af097aeb7c895e0c8a78a1dc90",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/source.npz": "71052d09fd15d6ba2595943b79f7ce455cfcb1f58978ff6fa508401c0c9f5457",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/source.npz": "a0b7ea3f81a2278658ac6daac496e0d33567c0446546ab52eb50a5bf51b19601",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/source.npz": "c79f127201cc039a66d14e13cfa30ff04f5fe5629e60f20be9667b634fa354e2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/source.npz": "da33ce7dcfffe25e991ba2834cfead1f5ed60514a159d0ddb18c4e50ab823753",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/source.npz": "2e4707e75cecd536798c0dc5d7084f66a7f80eff2bd54c2267740505118b7813",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/source.npz": "98a85f8aef4fb77cc98b055f8cb37bf188deb41299cb44c6372153b99770bf63",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5"
+  }
+}

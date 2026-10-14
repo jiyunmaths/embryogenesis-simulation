@@ -1,0 +1,42 @@
+{
+  "assessed_utc": "2026-10-12T12:32:47.021850+00:00",
+  "state": "failed_scheduling",
+  "physical_time": 18.0,
+  "elapsed": 0.0,
+  "failure": {
+    "type": "ValueError",
+    "message": "duration and dt must be positive and finite",
+    "time": 18.0,
+    "elapsed": 0.0
+  },
+  "actual_start_prefix_passed": true,
+  "prefix_errors": {
+    "phase_abs_max": 3.3881317890172014e-21,
+    "effective_phase_abs_max": 6.661338147750939e-16,
+    "chemical_log_max": 4.71177985628106e-10,
+    "polarity_abs_max": 4.477353210408097e-10,
+    "relative_volume_max": 1.4432899320127035e-15,
+    "relative_transport_max": 6.454803252878995e-07
+  },
+  "physical_audit": {
+    "max_volume_error": 0.01136934597201944,
+    "min_radius": 8.512276822980242,
+    "max_clipping": 0.0,
+    "dilution_amount_error": 0.0
+  },
+  "six_unit_paths_completed": 0,
+  "unexecuted_six_unit_paths": 23,
+  "scientific_histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "new_scientific_histories": 0,
+  "qualification_accepted": false,
+  "original_protocol_sha256": "f6c099718c3d368646912660fb91fc2ce1280ce11130fb105cf07790f9811131",
+  "original_failed_status_sha256": "5e8fe3b1239f26f00a2d2f355b5fc66096c0443fc4b6a1f71e0bf390b906e776",
+  "original_result_sha256": "ea2a8f33f39f170f17c9c37b935326a517a5cadbd06fc1ba084d80eb950c0da0",
+  "cause": "Original coordinator evaluates _steps(0, dt) while scheduling the initial checkpoint; the resolver only accepts positive durations.",
+  "correction": "Separate process-local elapsed-zero scheduler adapter; unchanged solvers, integrators, state bytes and thresholds. New output root, original attempt retained.",
+  "follow_up_design": "docs/fresh_zygote_mature_clock_fix.md"
+}

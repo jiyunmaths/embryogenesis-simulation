@@ -1,0 +1,794 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-08T20:48:47.300982+00:00",
+  "finished_utc": "2026-10-08T20:48:58.101204+00:00",
+  "protocol_sha256": "d28b0446af6ef1e115a6f11d0ec0f5ebd7608a7e537449dd2faf8eced2f2051c",
+  "script_sha256": "aee460279c84f4c887556bbcc3d3ee2c7854d7558f03dc866d74655634e32220",
+  "runtime": {
+    "torch": "2.7.1+cu118",
+    "torch_cuda": "11.8",
+    "expected_gpu_name": "NVIDIA GeForce GTX 1080 Ti",
+    "numpy": "2.4.0",
+    "scipy": "1.16.3"
+  },
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce GTX 1080 Ti",
+  "levels": [
+    {
+      "level": {
+        "level": "coarse",
+        "dt": 0.00375
+      },
+      "horizon": 0.6,
+      "logical_paths": 96,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 9.992007221626415e-16,
+      "normalized_response_error": 1.0800807049355545e-14,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.2929289784620567e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21496517118621e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1627553797822284e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1239391911080266e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.231413737323743e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1619835995529015e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214961151497516e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149511022757795e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161215839012269e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949846123063e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376161414216093e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949186642886e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149492180467044e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214957131808822e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118232490514e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215978132737202e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.231413737323743e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215206352507875e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.478383410708397e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215978132737202e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.216492652890087e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215334982546096e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215334982546096e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092454433e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215077722469654e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949108133341e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149490885059556e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092432391e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161212070554118e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118193849098e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.610100569846879e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.218036213348741e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161597709438238e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.479292119539796e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 1.0800807049355545e-14
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614690794000167e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.10747454623105e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149492180467044e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092431912e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092454433e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.3587875580312978e-15
+        }
+      ],
+      "gpu_wall_seconds": 0.268588175997138,
+      "serial_cpu_wall_seconds": 1.2555265090049943,
+      "estimated_full_gpu_seconds": 26.858817599713802,
+      "passed": true
+    },
+    {
+      "level": {
+        "level": "fine",
+        "dt": 0.001875
+      },
+      "horizon": 0.6,
+      "logical_paths": 96,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 8.881784197001256e-16,
+      "normalized_response_error": 8.429898182900127e-15,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215463612584317e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1619835995529015e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1632698999351133e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429576609767312e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494928085434e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.322423662200012e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.2391917053541986e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161235937455741e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909537554e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161213326706835e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215045564960098e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.221123334266049e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.247878382216053e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215045564960098e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614690794000167e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.107475048676803e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215334982546096e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429898182900127e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949098319649e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268687872922551e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149490924621e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161211819354242e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376160916661854e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161215839012269e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.4246461376005388e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214950097353606e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1074745462003823e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614690794000167e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.3466662515699144e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.221123334266049e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1694441417697295e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215334982546096e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949186642886e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949846123063e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118222676824e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214950097353606e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118507273925e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161211819814259e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215013407450543e-15
+        }
+      ],
+      "gpu_wall_seconds": 0.3927111299999524,
+      "serial_cpu_wall_seconds": 2.5461470750014996,
+      "estimated_full_gpu_seconds": 39.27111299999524,
+      "passed": true
+    },
+    {
+      "level": {
+        "level": "diagnostic",
+        "dt": 0.0009375
+      },
+      "horizon": 0.6,
+      "logical_paths": 96,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 6.661338147750937e-16,
+      "normalized_response_error": 7.376289541793227e-15,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21496517118621e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.239646059769898e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215142037488764e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-S_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.239646059769898e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-S_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.216492652890087e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-S_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.217007173042971e-15
+        },
+        {
+          "trial": "seed-7_cell-22_matched-R_physics-R_chemistry-R_amountmatched_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.217007173042971e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149521071979534e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268734601803624e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-S_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214950599814693e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949104207864e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-S_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949155239068e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-S_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614690794000167e-15
+        },
+        {
+          "trial": "seed-7_cell-23_matched-R_physics-R_chemistry-R_amountmatched_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949469277248e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1613404493617955e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215463612584317e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_cell-19_matched-S_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215045564960098e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.688080455877503e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-S_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215142037488764e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-S_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.2728025267623685e-15
+        },
+        {
+          "trial": "seed-8_cell-19_matched-R_physics-R_chemistry-R_amountmatched_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.107474671830988e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614690794000167e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909635691e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494928085434e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-S_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949094394171e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949098319649e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-S_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1074755511378897e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-S_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.322424392338779e-15
+        },
+        {
+          "trial": "seed-8_cell-20_matched-R_physics-R_chemistry-R_amountmatched_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909537554e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.231413737323743e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214981249940988e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-S_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215045564960098e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376289541793227e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-S_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.239646059769898e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-S_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161219858700963e-15
+        },
+        {
+          "trial": "seed-9_cell-29_matched-R_physics-R_chemistry-R_amountmatched_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215463612584317e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949343661976e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215334982546096e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118232490514e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-S_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161211944938846e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214950599814693e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-S_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909635691e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-S_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.3224236386394816e-15
+        },
+        {
+          "trial": "seed-9_cell-30_matched-R_physics-R_chemistry-R_amountmatched_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161211944938846e-15
+        }
+      ],
+      "gpu_wall_seconds": 0.7977792089950526,
+      "serial_cpu_wall_seconds": 5.191940511998837,
+      "estimated_full_gpu_seconds": 79.77792089950526,
+      "passed": true
+    }
+  ],
+  "estimated_full_gpu_seconds": 145.9078514992143,
+  "scope": "All 96 logical paths at three timesteps through .6 units. Unchanged float64 PyTorch stages checked on CUDA and compared with NumPy/SciPy; no full-window scientific outcome or mechanics stepping."
+}

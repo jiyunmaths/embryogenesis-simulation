@@ -1,0 +1,17 @@
+Reviewing 20 histories and recorded runtime/event gates
+Reconstructing all native checkpoints and restart samples
+Native fields and checkpoint schema reviewed: off
+Native fields and checkpoint schema reviewed: tension_adhesion
+Native fields and checkpoint schema reviewed: polarity
+Native fields and checkpoint schema reviewed: full
+Reconstructing one failed spatial-field witness per pair
+Spatial failure independently reproduced: ['off_fine', 'off_space88'] 6
+Spatial failure independently reproduced: ['off_space88', 'off_space104'] 9
+Spatial failure independently reproduced: ['tension_adhesion_fine', 'tension_adhesion_space88'] 6
+Spatial failure independently reproduced: ['tension_adhesion_space88', 'tension_adhesion_space104'] 9
+Spatial failure independently reproduced: ['polarity_fine', 'polarity_space88'] 6
+Spatial failure independently reproduced: ['polarity_space88', 'polarity_space104'] 9
+Spatial failure independently reproduced: ['full_fine', 'full_space88'] 6
+Spatial failure independently reproduced: ['full_space88', 'full_space104'] 9
+Checking preserved accepted evidence
+{"review_completed": true, "qualification_accepted": false, "preserved_count": 1289, "review_seconds": 98.83360987500055}

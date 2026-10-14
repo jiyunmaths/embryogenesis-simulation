@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-12T12:19:43.658055+00:00",
+  "pid": 654752,
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py",
+    "--record",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-10-output/studies-manifest.json",
+    "--record-sha256",
+    "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+    "-m",
+    "embryo.fresh_zygote_mature_qualification",
+    "run",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-qualification"
+  ],
+  "cwd": "/home/sji/Documents/Programming/Python/embryogenesis-simulation",
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "branches": [
+    "off",
+    "tension_adhesion",
+    "polarity",
+    "full"
+  ],
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 24,
+  "physical_window": [
+    18,
+    24
+  ],
+  "long_scientific_continuation_started": false,
+  "protocol_sha256": "f6c099718c3d368646912660fb91fc2ce1280ce11130fb105cf07790f9811131",
+  "prelaunch_audit_sha256": "3422f5d76fd87962f6a416fd427ca3ce9b32186f55aa512ce9bb68b9915e8e2a",
+  "launcher_sha256": "aa8742d292befd7f46f65bae89b518fd5cf3f671561c337039381037673156e7",
+  "availability_before_launch": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e, 8, 0",
+  "external_free_bytes": 306706624512
+}

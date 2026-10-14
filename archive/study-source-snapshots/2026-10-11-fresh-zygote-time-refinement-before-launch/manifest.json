@@ -1,0 +1,178 @@
+{
+  "utc": "2026-10-11T23:53:19.845750+00:00",
+  "protocol_sha256": "54632a1f284affcbcec93cd0f1036d2d9c3788bd93ef5480df5fa1f14336c6c3",
+  "files": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/qualify_repeated_development.py": {
+      "sha256": "cfa07b8d2b24d7b1c94f403892310dac0846fafc4b726046f81b8adfe117c87f",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/qualify_repeated_development.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/qualify_development_gpu.py": {
+      "sha256": "227a8ca4d7b71ab17b98717aad6ae85afd30690d17e88c96c7914aff4ad08650",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/qualify_development_gpu.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_gpu.py": {
+      "sha256": "fba99c04be537ae717fa812c00f899360e6bdda64128428d31278b8285942a2b",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/development_gpu.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_reference.py": {
+      "sha256": "df59cdf08c3c1b37b2ba55f6e59a1197903ff067055155ade5e5f5861491514f",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/development_reference.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_development_kernels.cu": {
+      "sha256": "afb406b026f3c106b8cd375fa18e72896284c0f0aebbfedb3455967f4e8f2f8b",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/gpu_development_kernels.cu"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": {
+      "sha256": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/gpu_backend.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": {
+      "sha256": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/gpu_precision_control.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": {
+      "sha256": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/gpu_precision_kernels.cu"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": {
+      "sha256": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/gpu_kernels.cu"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": {
+      "sha256": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/cuda_spatial_bench.cu"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": {
+      "sha256": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/cuda_mechanics.cu"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_moving.py": {
+      "sha256": "f2dd90cc3c9a93364011482367c86558c1a930e093839fab2f5dee65e27495d2",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/compensated_moving.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_chemistry.py": {
+      "sha256": "2cd3bfa3fc1ea9e880280e9690aa3b2abe893eda4787a59fc766965887ed9d11",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/compensated_chemistry.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": {
+      "sha256": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/attribute_development.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": {
+      "sha256": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/model.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": {
+      "sha256": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/transport.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": {
+      "sha256": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/signaling.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": {
+      "sha256": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/polarity.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": {
+      "sha256": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/cell_response_moving.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/shape.py": {
+      "sha256": "f60888429c9e208a1c3770c900bce29492d4cde53157cdd6a4a07de969b87a28",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/shape.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cleavage_measurement.py": {
+      "sha256": "231b85133bb8ca166eda8e49b4476219f3b8f80acde7b820c52c205d4a6a3b3a",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/cleavage_measurement.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": {
+      "sha256": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/resolution.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/repeated_development_gpu.md": {
+      "sha256": "adc3a1e8d489f4e4b7d19411e5dfbc978204024d320c89c5bb5d45c8ee62776b",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/repeated_development_gpu.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_repeated_development_gpu.py": {
+      "sha256": "7fa68dd2f0c4ae7302041209e8e26f960773b7178196e2eb4f3ddda6f858be85",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_repeated_development_gpu.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_time_diagnosis.py": {
+      "sha256": "e34e1beb8cfd888377f28ac96958ca7ce30c7026a0381d466a913ac7516550d9",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/development_time_diagnosis.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_time_diagnosis.md": {
+      "sha256": "3b98701ad51d657a952840d4bbef9fa88378c945628cd2e976f539089cb93e4c",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/development_time_diagnosis.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_development_time_diagnosis.py": {
+      "sha256": "5f81e70d98c4cd8dc32c638cd2181d63cc4c28d2f7ae4bf82422539c55f72c68",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_development_time_diagnosis.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_space_refinement.py": {
+      "sha256": "2e2c29055adae42e938446482aef5c80a8aa2020033bab65c246fb140ef17eb4",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/development_space_refinement.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_space_refinement.md": {
+      "sha256": "008c0c1ad8f525e3459f9d8ada192e9e751b8282c388e747921dd34ce05cefed",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/development_space_refinement.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_development_space_refinement.py": {
+      "sha256": "accd8b5bf1612a7459c5de0762105cee540688a90d3611abd91b03a0b16b1d13",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_development_space_refinement.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_control_qualification.py": {
+      "sha256": "a04d4e81f6e329b87971abe974292aad4048d056c1f65dcaff5ebfec9d982450",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/development_control_qualification.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/development_control_qualification.md": {
+      "sha256": "f322c470f0c7c098a432a1ad065b526a77301d57e38438763378a14c34a54767",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/development_control_qualification.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_development_control_qualification.py": {
+      "sha256": "4fe0db8bfcdfb34116389de350f4ce0c986af627e8a8474bda72a2fb7359404c",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_development_control_qualification.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_pilot.py": {
+      "sha256": "60780a11a67a5e4f49da3133824ca019d8f4e3a47e211107469fd753e95bb657",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/fresh_zygote_pilot.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/fresh_zygote_pilot.md": {
+      "sha256": "48f29141eec8a13a656319d7f65f26bd0eae566f50dba3e869772c8ca8cee369",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/fresh_zygote_pilot.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_fresh_zygote_pilot.py": {
+      "sha256": "444075a01ee4cc9fd29702506f0d8e51342452b4c772e21f26606ff79ff496f9",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_fresh_zygote_pilot.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py": {
+      "sha256": "6b67a2f8fb2f1f2ad3074998440524d4f117775848baade19bf9d133d5dd50b9",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/scripts/with_study_output_path_alias.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_output_path_alias.py": {
+      "sha256": "461077d79e08bf3d19871a3ccebc31081207a563d71a1bd37bb7c1dfedf5068d",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/scripts/with_output_path_alias.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_time_refinement.py": {
+      "sha256": "5adff2535d44f2d099e0889b1b68a42f793796025c483d98f0b39320098c7316",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/embryo/fresh_zygote_time_refinement.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/fresh_zygote_time_refinement.md": {
+      "sha256": "2b9a381e001866cce1b4606b44300dda7c606d4480798ff44bfe8591aafd69e9",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/docs/fresh_zygote_time_refinement.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_fresh_zygote_time_refinement.py": {
+      "sha256": "58d5de18f15ef0ba6f320860179834c737ed3c42a83672b5089acfa6f3fcaf33",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/tests/test_fresh_zygote_time_refinement.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-11-fresh-zygote-time-refinement/audit_prelaunch.py": {
+      "sha256": "bf243e28988df192a244c75dc5e5c96897033c27b6d2437503d308ba6844b3a0",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/archive/study-launches/2026-10-11-fresh-zygote-time-refinement/audit_prelaunch.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-11-fresh-zygote-time-refinement/launch.py": {
+      "sha256": "df1d3a232710b15675fefc40b5abd5d9eff12b5c1124d4f98dd8964ae746795d",
+      "snapshot": "archive/study-source-snapshots/2026-10-11-fresh-zygote-time-refinement-before-launch/archive/study-launches/2026-10-11-fresh-zygote-time-refinement/launch.py"
+    }
+  }
+}

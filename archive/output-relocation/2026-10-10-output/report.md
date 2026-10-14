@@ -1,0 +1,24 @@
+# Additional output relocation — 10 October 2026
+
+Moved the large `output/studies`, `output/kernel-cache` and `output/pdf` trees to `/mnt/data/Documents/Python/embryogenesis-simulation/output/`, with repository subdirectory links retaining ordinary file access. Net local space recovered is approximately **37.39 GiB**; the local filesystem now has about **69 GiB free**. The older plural `outputs` link is unchanged. Small figures/presentation folders stay physical locally, preserving all six tracked output artifacts with no Git diff. Verified copies of those folders also exist on the data drive.
+
+Before cutover, all **14,960 regular files** (40,137,951,896 bytes), three existing symlinks and 5,500 directories passed exact source/destination byte and stable metadata comparisons. File permissions, owners, modification times and internal symlink targets were preserved. The stopped source tree copied successfully using `rsync -aH` in 125.30 seconds. No writable descriptors remained under the source. The original copy was retained until all 33 active-study source pins, 38 input pins and 1,774 preserved evidence hashes passed, with original accepted baseline provenance verified. Only that exact verified backup was removed. Restoring small tracked folders reduces the gross 37.44-GiB recovery to the net figure above.
+
+The full cutover [manifest](manifest.json) is SHA-256 `b13c05e24947894c2b3b49ca24cf4e40db8ab2a0d0f56a161d3622a18d4ec7c8`. The final Git-preserving [layout](layout.json) keeps `output` physical and links its three large subdirectories. A verified [study-subtree manifest](studies-manifest.json), SHA-256 `8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6`, permits original canonical study names through the narrow external launcher. All eleven path-alias checks pass. Existing scientific sources/protocols and the older relocation launcher remain unchanged.
+
+## Running study
+
+Coordinator **458923** was gracefully interrupted with SIGINT at the user-requested storage operation; its unfinished `polarity_space88` path had 54 saved observations through t=7.95 and valid checkpoints at t=0/3/6. Four completed tension/adhesion trajectories are verified and reused, as is the accepted feedback-off candidate. The interrupted attempt is preserved byte-for-byte under `output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88` before restarting the same unfinished job from its unchanged initial checkpoint.
+
+The unchanged coordinator resumes through external storage orchestration as PID **470605**, at **18:56 America/New_York (22:56 UTC)** on the same qualified GTX 1080 Ti. The original protocol SHA remains `c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88`; model, kernels, initial states, random streams and numerical limits are unchanged. The current remaining execution uses the original production/refinement/replay methods and skips only verified completed cases. Prior completed production runtime of 4,946.45 seconds is recorded separately from the remaining coordinator's timing.
+
+Independent observation confirms the resumed process/GPU activity and progressing output. **54/54** original saved observations match exactly, and complete arrays match at all currently available original checkpoints: gpu-t00.npz, gpu-t03.npz, gpu-t06.npz. The current [running verification](running-verification.json) records that observation. The worker also checks the full preserved prefix when the repeated path finishes. No new numerical or scientific outcome is accepted by this storage operation.
+
+## Evidence
+
+- [Interruption](interruption.json), [writer check](open-writer-check.json), [transfer](initial-copy.json) and [transfer log](initial-copy.log).
+- [Complete copy verification](verification.log), [cutover](cutover.json), [scientific/path compatibility](compatibility-verification.json) and [retirement](retirement.json).
+- [Final layout](layout.json), [alias checks](path-alias-final-tests.log), [resume record](resume.json), [preserved interrupted-attempt hashes](interrupted-attempt.json), [current resume log](resume.log) and [running verification](running-verification.json).
+- [Resumption source](resume_worker.py), [source/destination verifier](migrate.py), [tracked-layout operation](preserve_tracked_layout.py), [storage instructions](../../../docs/output_storage.md) and [original study launch](../../../docs/development_control_qualification_launch.md).
+
+Two early compatibility invocations stopped before producing an acceptance record: one ran before cutover finished, and one encountered a temporary operation-script name that shadowed the standard library. Their logs are retained. The script was renamed, and the complete subsequent compatibility check passed before retirement.

@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "gate_counts": {
+    "reference_raw_pass": 144,
+    "accuracy_pass": 432,
+    "order_pass": 144,
+    "resolved_orders": 96,
+    "raw_pairs_pass": 288,
+    "pulse_rows_pass": 864,
+    "contrast_rows_pass": 1080
+  },
+  "maxima": {
+    "raw_reference": 4.46720438419422e-12,
+    "cpu_torch": 9.992007221626415e-16,
+    "production_reference": 1.2021752208470285e-06,
+    "reference_normalized": 4.2400148678154854e-11,
+    "normalized_response": 1.1463291290700169e-05,
+    "reference_signed_contrast": 3.528616288051012e-11,
+    "signed_contrast": 4.469008531016172e-06,
+    "contrast_rms": 2.3487147174372502e-07,
+    "relative_auc": 7.70921996551266e-06,
+    "order_min": 2.0004506361207794,
+    "order_max": 2.002677777883633,
+    "vector_identity": 1.1102230246251565e-16,
+    "duplicate_log": 0.0
+  },
+  "history_outcomes": [
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 7,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 0,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 8,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "S",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "dose": "fractional",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "S",
+      "above_screen": 1,
+      "recipients": 2
+    },
+    {
+      "seed": 9,
+      "matching_reference": "R",
+      "dose": "amount",
+      "physics": "R",
+      "above_screen": 1,
+      "recipients": 2
+    }
+  ]
+}
+{
+  "passed": true,
+  "diagnosed_control": {
+    "new_order": {
+      "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60_control",
+      "errors": [
+        1.4432899320127045e-15,
+        1.4432899320127045e-15,
+        1.4432899320127045e-15
+      ],
+      "reference_noise": 1.554312234475218e-15,
+      "order_resolved": false,
+      "orders": null,
+      "passed": true
+    },
+    "stored_max_log_relaxation": 1.567634910770844e-13,
+    "old_fine_log_relaxation": 0.0,
+    "resolved_relaxation": true
+  },
+  "all_48_scientific_decisions_agree_with_original": true,
+  "maximum_effect_difference": 4.597433544972773e-13
+}

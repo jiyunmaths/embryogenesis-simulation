@@ -1,0 +1,34 @@
+tension_adhesion_space88 new 542.019879228028
+tension_adhesion_space104 new 835.3174304999993
+tension_adhesion_space120 new 1241.5075290449895
+tension_adhesion_time120_half new 2327.6077034400078
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_control_qualification.py", line 369, in <module>
+    main()
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_control_qualification.py", line 364, in main
+    args = parser.parse_args(); result = globals()[args.action](args.output)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_control_qualification.py", line 316, in run
+    report = execute_path(root, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_control_qualification.py", line 158, in execute_path
+    return td.run_path(root, job)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_time_diagnosis.py", line 218, in run_path
+    with projection_trace(sim,pressure,extrema):sim.step()
+                                                ^^^^^^^^^^
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_gpu.py", line 225, in step
+    u,e=chemical.TorchStepper(delta,c.dt,c.signal_beta,c.signal_da,c.signal_dh)(torch.stack((self.activator,self.inhibitor)),self.chemical_correction)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_chemistry.py", line 116, in __call__
+    first_rhs=self.rhs(values);first=values+self.dt*first_rhs
+              ^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_chemistry.py", line 105, in rhs
+    return torch.stack((fa,fb))
+           ^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

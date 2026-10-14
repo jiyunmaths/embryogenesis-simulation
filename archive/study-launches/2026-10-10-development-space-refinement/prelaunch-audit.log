@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-10T12:41:10.114603+00:00",
+  "protocol_sha256": "e7551e52d7f2a68c6c2098453ece54046ed642bf4d58db276ea3c3a9d6f99dbe",
+  "source_count": 30,
+  "input_count": 29,
+  "preserved_count": 1684,
+  "initial_states": [
+    {
+      "case": "off72",
+      "grid": 72,
+      "dt": 0.00046875,
+      "reused": true,
+      "analytic_phase_exact": true,
+      "common_arrays_metadata_rng_exact": true,
+      "initial_relative_volume_error": 1.7681030639593587e-08
+    },
+    {
+      "case": "off88",
+      "grid": 88,
+      "dt": 0.00046875,
+      "reused": false,
+      "analytic_phase_exact": true,
+      "common_arrays_metadata_rng_exact": true,
+      "initial_relative_volume_error": 7.388815115305647e-10
+    },
+    {
+      "case": "off104",
+      "grid": 104,
+      "dt": 0.00046875,
+      "reused": false,
+      "analytic_phase_exact": true,
+      "common_arrays_metadata_rng_exact": true,
+      "initial_relative_volume_error": 4.0871217521498693e-10
+    },
+    {
+      "case": "off120",
+      "grid": 120,
+      "dt": 0.00046875,
+      "reused": false,
+      "analytic_phase_exact": true,
+      "common_arrays_metadata_rng_exact": true,
+      "initial_relative_volume_error": 9.459804051203946e-10
+    },
+    {
+      "case": "off120_half",
+      "grid": 120,
+      "dt": 0.000234375,
+      "reused": false,
+      "analytic_phase_exact": true,
+      "common_arrays_metadata_rng_exact": true,
+      "initial_relative_volume_error": 9.459804051203946e-10
+    }
+  ],
+  "calibration_rows": 48,
+  "calibration_max": 0.0004260123874500019,
+  "calibration_sha256": "091f7add2913567f29d5a0a6ffc3586305e102f6c899492c47779d95eccead67",
+  "inherited_instrumentation_gate_sha256": "eb7e9ec05824a37a390d3bc7ace5bf3170f375e3851bafe56e75d71af52353e4",
+  "test_log_sha256": "404fcbb85c4a68fe69e265f4a50525d28b73c27ba06f2b92f2c29a7b432703cd",
+  "script_sha256": "71083880c89335faf99828325e2c5f68e940d360a619535a1bfa1a236534ed34",
+  "new_scientific_histories": 0
+}

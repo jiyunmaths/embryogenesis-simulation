@@ -1,0 +1,15 @@
+{
+  "state": "completed_provisional",
+  "active": "h1103_full_fine",
+  "completed": 24,
+  "total": 24,
+  "pairs_completed": 12,
+  "pairs_total": 12,
+  "new_scientific_histories": 0,
+  "qualification_accepted": false,
+  "long_scientific_continuation_started": false,
+  "seconds": 7674.131771559012,
+  "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+  "mature_screens_passed": true,
+  "independent_review_pending": true
+}

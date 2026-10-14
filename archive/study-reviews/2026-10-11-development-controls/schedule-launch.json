@@ -1,0 +1,13 @@
+{
+  "pid": 497463,
+  "utc": "2026-10-11T04:28:41.928831+00:00",
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-u",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls/after_completion.py"
+  ],
+  "request_sha256": "839de9c7801b7d592a95441bba1b5d8e5eed27adbfc73420746c8921e1c85660",
+  "poll_seconds": 30,
+  "trigger": "Terminal completed study status, complete summary with all twelve replay cases, and original coordinator exit.",
+  "reports_directory": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls"
+}

@@ -1,0 +1,25 @@
+{
+  "schematic": true,
+  "observed_results_inferred": false,
+  "gpu_used": false,
+  "source_sha256": {
+    "README.md": "908e477625e128635b2d7b69e6b6dd0c5bc8f712443284c6a4b471db5ea3c4ee",
+    "docs/model.md": "407b4b9780ad12c5fc629302b2d9c2aa6df0d1f51579131c0b7ebabfe6df18ec",
+    "docs/attribute_development.md": "19f0db0d806eff502f51d6328196209b6094a742e1e9cecf4cf0bbea78727a6e",
+    "docs/live_transport.md": "f0444a2318165aef7a1d6ba11d41fb9f5045b5886828f4ec65bcf761e88ce5b3",
+    "docs/graph_signaling.md": "e84b5eeae1ea1cfbc0a4b49c89f5cf83e51510e4bf065bb37bd0f8b566eabab3",
+    "docs/cytokinesis.md": "44e7bd4bd8308c7d9c91b007f243d6948bba606b6396d691d1e9bb1634db6f95",
+    "docs/compensated_chemistry.md": "5854a63428513dedc0e86b30def789fb899107f7c3a3056bc78ad7dd6a842f25",
+    "docs/moving_recipient_amount_response.md": "f16c917d50b3db22d42f56e6fdc78fe391f9a161fb0325552669e463e983b723",
+    "docs/phase_carry_polarity_assessment.md": "92ad0a0aa90e517816d2493d5a1f1d68c8871a872db8acb92314872aba6814f3",
+    "docs/attribute_common_environment.md": "ba3bceb3f090e29f09b52cbb358fc5c21d5f0286f18c0c54a68ff4f72570770a",
+    "docs/attribute_finite_reservoir.md": "71ec52f73ce8e4c6f1572799115136224a7eeea83c2dba96f339b41e4e865f9f"
+  },
+  "generator_sha256": "ef526717d7511dba341b91821f1f93896884aec95a9534d6dd0cd737dd1b1302",
+  "text_inside_panels": true,
+  "outputs": {
+    "docs/images/study-methods-overview.svg": "dbd90b036a4130bf41127e3a1858853d4db8ba247d8920b7baed8d62e0ce1398",
+    "docs/images/study-methods-overview.png": "c6ce46f19c8c4d50e500b9bba6398bf41f049e0f541ef5918b674f347829f94f",
+    "output/pdf/study-methods-overview.pdf": "e90f160d7a57768bda151fc29936a827d572dea056ec30d25d8919ee67f50492"
+  }
+}

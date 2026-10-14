@@ -1,0 +1,8 @@
+{
+  "reporting_files_sha256": {
+    "README.md": "e7435dfea3f41cd1063fd609602df76d604a90d7ba43897486a5c39153d07a6b",
+    "docs/plan.md": "1ce7331e3844673afb18ba473a79df5e3e725d3d528cd2e0f20c18125e2078bf",
+    "docs/development_space_refinement_launch.md": "b35c2f45bbfb2f92f22d6b26a1059fad819311cca1c4d1c4ab9cdd86013ae5f7"
+  },
+  "purpose": "Preserve reporting before completed feedback-off spatial/time review; original protocols, solvers, evidence, ledger and manuscript remain unchanged."
+}

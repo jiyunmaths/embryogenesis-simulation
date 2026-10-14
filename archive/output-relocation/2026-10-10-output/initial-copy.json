@@ -1,0 +1,15 @@
+{
+  "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output",
+  "destination": "/mnt/data/Documents/Python/embryogenesis-simulation/output",
+  "created_destination_empty": true,
+  "initial_rsync_exit_code": 0,
+  "seconds": 125.30061903598835,
+  "argv": [
+    "rsync",
+    "-aH",
+    "--stats",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/output/"
+  ],
+  "utc": "2026-10-10T22:48:41.021000+00:00"
+}

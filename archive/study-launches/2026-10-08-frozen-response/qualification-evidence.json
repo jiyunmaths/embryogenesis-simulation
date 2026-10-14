@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-08T12:11:59.293530+00:00",
+  "scope": "Independent read-only pre-launch input and numerical diagnostics. Initial weaker reference setup fails normalized1e-8 screen; tighter references qualify unchanged screen before protocol freezing. No new scientific outcome.",
+  "files_sha256": {
+    "archive/study-launches/2026-10-08-frozen-response/frozen-redistribution-input-storage-review.py": "31cd44eb63559c0ef6865004fa2d754c45b23b53d17d16b50f91cada496cb48c",
+    "archive/study-launches/2026-10-08-frozen-response/frozen-redistribution-input-storage-review.json": "0c2f4cf9f10d378baebd95e0d1e8d0066cb4685ae391d444122b80bdaf4212d9",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_design_audit.py": "578a7bd5aecf6516db27ec50480d130ef9cca1443419f4f4ad1e86ebfafc96b9",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_design_audit.json": "a66af024d42616695411db72ea919680b3b0c286e91b5b6fb53c5becaa92608b",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_design_review.md": "6bec6e46d88856218f8cdb91ea0f2777ddacfcbd3804f867995604599bd1c291",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe.py": "ef4e82e1367a25c32284157128206771f59c6e1d225577874d8b57625ed4d417",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe.json": "a57eefd8ad1dfde43b52f7a190bfed12232bf661f7f68dec44044e6e3f1fe81d",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe.npz": "df873a38e009cc02ed660c7fc6b7e7a774b7de3149b36767006e7911ad2c76ab",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe_tight.py": "a98fc96dc34c05c76c430d06326485e142a9f67e5e107081eaf468a43d288f92",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe_tight.json": "cedd5569862468a755e64a8c078c41da86c761852e308952b9d6c06d78f32525",
+    "archive/study-launches/2026-10-08-frozen-response/frozen_response_reference_probe_tight.npz": "d7d7af9fc057efd948d845c1a25c14ca54bc89ccd4de055639df209cc61732de"
+  }
+}

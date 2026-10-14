@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "protocol_sha256": "c7d7727b5a54229d74b2c1c2bb9e6cac8211dff2788d33b7b5139397341f8b25",
+  "summary_sha256": "8fc4240cf4dd8374c2dc9f39288a1ecb5ebb46433435560cf84aa38865624c28",
+  "actual_context_timestep_cases": 1008,
+  "rows": [
+    {
+      "level": "coarse",
+      "logical_starts": 336,
+      "raw_log_error": 2.2204460492503136e-16,
+      "normalized_response_error": 2.2391917053541986e-15,
+      "restart_bitwise_identical": true,
+      "passed": true
+    },
+    {
+      "level": "fine",
+      "logical_starts": 336,
+      "raw_log_error": 2.2204460492503136e-16,
+      "normalized_response_error": 3.2270703988928153e-15,
+      "restart_bitwise_identical": true,
+      "passed": true
+    },
+    {
+      "level": "diagnostic",
+      "logical_starts": 336,
+      "raw_log_error": 2.2204460492503136e-16,
+      "normalized_response_error": 2.2391917053541986e-15,
+      "restart_bitwise_identical": true,
+      "passed": true
+    }
+  ],
+  "contexts": 168,
+  "logical_starts": 336,
+  "paired_matching_checks": 72,
+  "paired_budget_checks": 48,
+  "distinct_physical_problems": 192,
+  "max_pulse_amount_relative_error": 8.881784197001252e-16,
+  "max_budget_relative_error": 3.3306690738754696e-16,
+  "max_allocation_fraction_relative_error": 6.661338147750939e-16,
+  "max_paired_budget_relative_error": 4.440892098500626e-16,
+  "script_sha256": "131f317661aab1612b1c4ea1e7a179f8dca6899c46c5b5c82b2c22a2c9fe2e8b"
+}

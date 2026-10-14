@@ -1,0 +1,145 @@
+{
+  "verified_at_utc": "2026-10-10T21:02:40.356260+00:00",
+  "unchanged_consumed_pins": 1764,
+  "preserved_evidence_pins": 1684,
+  "links_checked": [
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "../archive/study-reviews/2026-10-10-development-space-refinement/independent_review.json"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "development_space_refinement.md"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "../archive/study-reviews/2026-10-10-development-space-refinement/review_saved_arrays.py"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "../archive/study-reviews/2026-10-10-development-space-refinement/review.log"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "development_space_refinement_assessment.json"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "figures/development-space-refinement-summary.json"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "figures/development-space-refinement-summary.png"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "development_space_refinement_launch.md"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "../output/studies/development-space-refinement/summary.json"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "../archive/study-document-snapshots/2026-10-10-before-completed-development-space-review/manifest.json"
+    },
+    {
+      "document": "docs/development_space_refinement_assessment.md",
+      "target": "development_time_diagnosis_assessment.md"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "development_space_refinement_assessment.md"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-reviews/2026-10-10-development-space-refinement/independent_review.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "development_space_refinement.md"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../output/studies/development-space-refinement/protocol.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../output/studies/development-space-refinement/status.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-launches/2026-10-10-development-space-refinement/tests.log"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-launches/2026-10-10-development-space-refinement/prelaunch-audit.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../output/studies/development-space-refinement/calibration.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-launches/2026-10-10-development-space-refinement/process-launch.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-launches/2026-10-10-development-space-refinement/run.log"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "../archive/study-document-snapshots/2026-10-10-before-development-space-refinement/manifest.json"
+    },
+    {
+      "document": "docs/development_space_refinement_launch.md",
+      "target": "development_time_diagnosis_assessment.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/development_space_refinement_assessment.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/development_space_refinement.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/development_space_refinement_launch.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/figures/development-space-refinement-summary.png"
+    },
+    {
+      "document": "docs/plan.md",
+      "target": "development_space_refinement_assessment.md"
+    },
+    {
+      "document": "docs/plan.md",
+      "target": "development_space_refinement.md"
+    },
+    {
+      "document": "docs/plan.md",
+      "target": "development_space_refinement_launch.md"
+    }
+  ],
+  "artifacts_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-space-refinement/independent_review.json": "a07c6ee27a5d3235c7fa47777853788e6257504f0aaf75559b1c8fa6a6301e3d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-space-refinement/review_saved_arrays.py": "46b1c0a88cbe4e74557356176079c2d9eea87b0899e5b9c6426bc91d9554fa57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-space-refinement/review.log": "cb9e50a2448f767c1c2d66978493383f0689be9bd0d41714cdc63d97cfeb5775",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-space-refinement/plot_summary.py": "815ec5ecdb0c6056cc18dad1cadb47710e6bc41c42ab5a4a12a8d0bd3f137f2d",
+    "docs/development_space_refinement_assessment.md": "3e8f2f04eecefefb7d7308fa7dab33f04d0573c9ba2965524f4d2ff23f8dfb8c",
+    "docs/development_space_refinement_assessment.json": "6220f3114c8edd427812fb529b49cab1b07cfe60c2d674e166292c52e738ad45",
+    "docs/figures/development-space-refinement-summary.png": "430250df1af1eb6970e369d5f3d119273806e56270faa492b8a7e0904da851e1",
+    "docs/figures/development-space-refinement-summary.svg": "8d114a1e152c60310528a38e31f0b4572d7ba573cf50b5748147048cac706588",
+    "docs/figures/development-space-refinement-summary.json": "20769b6d23a9fe5d42d0010ecc61040269e70fb32304c3ae2ce3f74aebaade68",
+    "README.md": "59b4846e3bb99270b9581529d0dfc101fa64db046239e01037886eac412e78cc",
+    "docs/plan.md": "f5a090c43d1c22508d2e0d2b4a041bd07fefad26d2fea6a28d721efabbbc0c22",
+    "docs/development_space_refinement_launch.md": "e1b7e6bfa44fb96ec40b77861218ebda99fd9daeefbb20c129fb668be32cdce5"
+  },
+  "new_jobs_launched": false,
+  "scoped_screen_accepted": true,
+  "full_development_qualified": false,
+  "verification_seconds": 23.176716412010137
+}

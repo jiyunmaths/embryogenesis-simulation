@@ -1,0 +1,54 @@
+{
+  "observed_utc": "2026-10-11T23:54:46.047926+00:00",
+  "passed": true,
+  "pid": 592640,
+  "protocol_sha256": "54632a1f284affcbcec93cd0f1036d2d9c3788bd93ef5480df5fa1f14336c6c3",
+  "source_hashes_verified": 43,
+  "prelaunch_audit_sha256": "db88bdabbe2e7eb020f50c5028b9d14812d1441812d6ca5df0d41fd687ebf4a5",
+  "actual_start_prefix_sha256": "6187efaaaea7994a25159c50e1f04b1b6a1fdc7c2a1ee7521effa68dd1891001",
+  "actual_start_prefix_passed": true,
+  "exact_gpu_restart": true,
+  "coordinator_status": {
+    "state": "running_development",
+    "active": "h1103_off_development_quarter",
+    "completed": 0,
+    "total": 1,
+    "new_scientific_histories": 0,
+    "reused_paths": 1,
+    "post_cleavage_started": false,
+    "qualification_accepted": false,
+    "seconds": 3.9294486889848486,
+    "protocol_sha256": "54632a1f284affcbcec93cd0f1036d2d9c3788bd93ef5480df5fa1f14336c6c3"
+  },
+  "progress_snapshot": {
+    "state": "running",
+    "time": 1.3499999999999999,
+    "cells": 1,
+    "events": 0,
+    "active_divisions": 0,
+    "seconds": 55.987403141043615,
+    "audit": {
+      "max_volume_error": 0.00414177322165632,
+      "min_radius": 21.5536249654437,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 0,
+      "correction_magnitude_max": 0.0,
+      "before_relative_volume_error_max": 0.0,
+      "after_relative_volume_error_max": 0.0
+    }
+  },
+  "original_failed_status_preserved": true,
+  "original_failed_comparison_preserved": true,
+  "user_manuscript_comments_preserved": true,
+  "new_scientific_histories": 0,
+  "new_gpu_paths": 1,
+  "qualification_accepted": false,
+  "post_cleavage_started": false,
+  "estimated_total_hours": [
+    1.5,
+    2.0
+  ]
+}

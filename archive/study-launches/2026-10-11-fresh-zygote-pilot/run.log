@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py", line 27, in <module>
+    main()
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_study_output_path_alias.py", line 21, in main
+    return base.main(argv)
+           ^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/scripts/with_output_path_alias.py", line 121, in main
+    runpy.run_module(args.module, run_name='__main__', alter_sys=True)
+  File "<frozen runpy>", line 226, in run_module
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_pilot.py", line 334, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_pilot.py", line 331, in main
+    else: run(args.root)
+          ^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_pilot.py", line 300, in run
+    if not result['passed']: raise RuntimeError('Developmental timestep gate failed: '+str(pair))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Developmental timestep gate failed: {'seed': 1103, 'branch': 'off', 'cases': ['h1103_off_development', 'h1103_off_development_half']}

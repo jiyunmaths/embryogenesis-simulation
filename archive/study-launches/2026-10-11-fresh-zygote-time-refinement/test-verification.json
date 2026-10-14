@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-11T23:52:47.981323+00:00",
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_fresh_zygote_time_refinement.py",
+    "tests/test_fresh_zygote_pilot.py"
+  ],
+  "exit_code": 0,
+  "log_sha256": "7370f55f937b48765162c1bfd650e3c6fecb99feba161e7bdfe4d986fcf1fa06"
+}

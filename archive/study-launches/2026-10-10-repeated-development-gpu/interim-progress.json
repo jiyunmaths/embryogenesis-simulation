@@ -1,0 +1,141 @@
+{
+  "observed_at_utc": "2026-10-10T04:23:43.133203+00:00",
+  "status": {
+    "state": "running",
+    "case": "off_space104",
+    "completed_gpu": [
+      "off_coarse",
+      "off_fine",
+      "off_space88"
+    ],
+    "total_gpu": 16,
+    "total_cpu": 4
+  },
+  "progress": {
+    "full_coarse/cpu-progress.json": {
+      "state": "running",
+      "time": 6.8999999999999995,
+      "cells": 4,
+      "active_divisions": 0,
+      "events": 3,
+      "audit": {
+        "max_volume_error": 0.008042174790457657,
+        "min_radius": 8.135984436011084,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "seconds": 551.5612727029948,
+      "seconds_per_step": 0.2997615616103323,
+      "estimated_remaining_seconds": 887.2942248793703
+    },
+    "off_coarse/cpu-progress.json": {
+      "state": "running",
+      "time": 7.5,
+      "cells": 4,
+      "active_divisions": 0,
+      "events": 3,
+      "audit": {
+        "max_volume_error": 0.008033357033593536,
+        "min_radius": 8.135997398960477,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "seconds": 566.5596362960059,
+      "seconds_per_step": 0.2832798184470012,
+      "estimated_remaining_seconds": 793.1834949906042
+    },
+    "off_coarse/gpu-progress.json": {
+      "state": "completed",
+      "time": 18.0,
+      "cells": 16,
+      "events": 15,
+      "seconds": 82.42525248599122,
+      "audit": {
+        "max_volume_error": 0.016148282093776722,
+        "min_radius": 5.099106921926802,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "failure": null
+    },
+    "off_fine/gpu-progress.json": {
+      "state": "completed",
+      "time": 18.0,
+      "cells": 16,
+      "events": 15,
+      "seconds": 129.86438421500497,
+      "audit": {
+        "max_volume_error": 0.01614436168718869,
+        "min_radius": 5.098950441576925,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "failure": null
+    },
+    "off_space104/gpu-progress.json": {
+      "state": "running",
+      "time": 12.75,
+      "cells": 16,
+      "active_divisions": 0,
+      "events": 15,
+      "audit": {
+        "max_volume_error": 0.0160713179256875,
+        "min_radius": 7.3667216849434505,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "seconds": 155.0134472679929,
+      "seconds_per_step": 0.02279609535661995,
+      "estimated_remaining_seconds": 63.8290683688863
+    },
+    "off_space88/gpu-progress.json": {
+      "state": "completed",
+      "time": 18.0,
+      "cells": 16,
+      "events": 15,
+      "seconds": 198.5689822480199,
+      "audit": {
+        "max_volume_error": 0.016142758831421578,
+        "min_radius": 6.233397955282419,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "failure": null
+    },
+    "polarity_coarse/cpu-progress.json": {
+      "state": "running",
+      "time": 6.8999999999999995,
+      "cells": 4,
+      "active_divisions": 0,
+      "events": 3,
+      "audit": {
+        "max_volume_error": 0.008033443938724294,
+        "min_radius": 8.136002599571528,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "seconds": 554.4559163659869,
+      "seconds_per_step": 0.3013347377201053,
+      "estimated_remaining_seconds": 891.9508285982415
+    },
+    "tension_adhesion_coarse/cpu-progress.json": {
+      "state": "running",
+      "time": 7.05,
+      "cells": 4,
+      "active_divisions": 0,
+      "events": 3,
+      "audit": {
+        "max_volume_error": 0.008042089528984109,
+        "min_radius": 8.135979235887383,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "seconds": 565.7778392700129,
+      "seconds_per_step": 0.30094565957075015,
+      "estimated_remaining_seconds": 878.7613296369851
+    }
+  },
+  "provisional": true,
+  "independent_review_pending": true,
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8"
+}

@@ -1,0 +1,21 @@
+{
+  "verified_utc": "2026-10-12T11:49:30.220334+00:00",
+  "checks_passed": true,
+  "assessment_provenance_hashes_verified": true,
+  "original_failure_and_production_records_unchanged": true,
+  "source_hashes_verified": 48,
+  "new_document_links_verified": 54,
+  "ledger_and_manuscript_unchanged": true,
+  "figure_visually_inspected": true,
+  "new_simulation_launched": false,
+  "document_updates": {
+    "README.md": {
+      "before_sha256": "c22b128e82bdc232ab22e093c456a9be1b0388b4131d1041a87f31567a60ec3f",
+      "after_sha256": "c15f208179447f2fa0e164b93a67158ebe72cf37c1b708b7b80c14fb0a43c4f3"
+    },
+    "docs/lab_notebook.md": {
+      "before_sha256": "9bd62dae42b7d8ef8809955da453962df7e171084fadee31da87beb339dffea4",
+      "after_sha256": "d4871038907de39ba63d85bd22df5402b6d6b79868ad9fa668f30545c4ce42c6"
+    }
+  }
+}

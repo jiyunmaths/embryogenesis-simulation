@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-10-08T21:10:42.759803+00:00",
+  "provenance_verified": true,
+  "immediate_phase_accepted": true,
+  "delayed_phase_accepted": false,
+  "unaccepted_delayed_parent_blocked": true,
+  "all_source_and_input_pins_unchanged": true,
+  "all_report_figure_diagnostic_hashes_verified": true,
+  "ledger_manuscript_and_accepted_parents_unchanged": true,
+  "original_failed_order_gate_retained": true,
+  "tests_prelaunch_passed": 11,
+  "git_diff_check_passed": true
+}

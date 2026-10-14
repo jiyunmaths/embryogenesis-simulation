@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-09-moving-recipient-completed/independent_review.py", line 347, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-09-moving-recipient-completed/independent_review.py", line 142, in main
+    for file,expected in guard_manifest['unchanged_guards'].items():pin(file,expected)
+                                                                    ^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-09-moving-recipient-completed/independent_review.py", line 33, in pin
+    assert expected is None or value == expected, name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /home/sji/Documents/Programming/Python/embryogenesis-simulation/output/pdf/embryogenesis_o1.pdf

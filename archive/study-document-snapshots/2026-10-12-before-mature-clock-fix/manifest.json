@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-12T12:32:47.031494+00:00",
+  "files": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/README.md": {
+      "sha256": "c15f208179447f2fa0e164b93a67158ebe72cf37c1b708b7b80c14fb0a43c4f3",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/README.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/lab_notebook.md": {
+      "sha256": "f6ce1d88d17e20ad1b221c818b14a716ab29d99811532168801b9c1c848bae30",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/docs/lab_notebook.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/results_ledger.md": {
+      "sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/docs/results_ledger.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md": {
+      "sha256": "58a1ee5652de8dda17a843b1688c69db2676151e5c9a72c83f8cf0c85f9fba80",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/manuscript/sections.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/evidence_manifest.json": {
+      "sha256": "14bba99f4f81086496943be9430b87e392b7b705207a3160315b718e3621bb30",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/manuscript/evidence_manifest.json"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_mature_qualification.py": {
+      "sha256": "62c03a594208b6cddd4a1275019271a663f0d8f8def96e5068827151d8aadfaa",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/embryo/fresh_zygote_mature_qualification.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fresh_zygote_mature_clock_fix.py": {
+      "sha256": "cfa7bba938ee23ccbadd563d8c07f24c11445fd3d83adda1eee6d884d6c068a3",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/embryo/fresh_zygote_mature_clock_fix.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/fresh_zygote_mature_clock_fix.md": {
+      "sha256": "5ea5d78782c7a8fc83b6696ea4a1523fcb0656472c480b7a397c2a000f3aeaa2",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/docs/fresh_zygote_mature_clock_fix.md"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_fresh_zygote_mature_clock_fix.py": {
+      "sha256": "eaf57f99532fb5840078811c3d716eb32c2001e1321f2a3bba9fb0eb01f237f4",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/tests/test_fresh_zygote_mature_clock_fix.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-12-fresh-zygote-mature-clock-fix/audit_prelaunch.py": {
+      "sha256": "ec117c0a7d7f8552b7c98590191d5411d950c44c546c04764e2397d3c19b0a4a",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/archive/study-launches/2026-10-12-fresh-zygote-mature-clock-fix/audit_prelaunch.py"
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-12-fresh-zygote-mature-clock-fix/launch.py": {
+      "sha256": "d8e664a64cefd4e6927597593ec7ca42d89a8f0e752866f9eee43100519a97e7",
+      "backup": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-12-before-mature-clock-fix/files/archive/study-launches/2026-10-12-fresh-zygote-mature-clock-fix/launch.py"
+    }
+  }
+}

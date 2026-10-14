@@ -1,0 +1,39 @@
+{
+  "reviewed_utc": "2026-10-08T11:55:36.173380+00:00",
+  "passed": true,
+  "protocol_sha256": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+  "original_summary_sha256": "d343f6beae538e58a538bd9532dcaeba0bf35b57714f6a9de7146a49668fa4de",
+  "original_status_sha256": "545e9071e0fbd9d9fa178d74d3589c5e4c2bf85e568b0545a19b5eae51b09072",
+  "files_sha256": {
+    "archive/study-reviews/2026-10-08-redistribution-response/numerical_verification.json": "2b4d43fbefa5a7679573d30f92ab3b899d007613f5590a2f74c4ab1b84d36e2b",
+    "archive/study-reviews/2026-10-08-redistribution-response/figure-provenance.json": "f5e01b06850f1e37e880838d83642557caa653f87911835faa8400ab66d759d9",
+    "archive/study-reviews/2026-10-08-redistribution-response/finalize_review_script.py": "c27de5b5ab8a627d905b78e9471e48073872b6d0bfcc1468954d6ee42047e502",
+    "archive/study-reviews/2026-10-08-redistribution-response/numerical_verification_script.py": "252cd0f88b4e58adfe67c81a963923b6788f6df41afe3be94120cf02bf260d03",
+    "archive/study-reviews/2026-10-08-redistribution-response/provenance_verification_script.py": "6cb33f9e68a7e6fc8b6330fad1539b02c0e9a1fb7564aabbd4c3da1e4b0d67ea",
+    "archive/study-reviews/2026-10-08-redistribution-response/plot_results.py": "980c122a04db32a8d4757928ba806662b8d6334ff71af371d87a1c6787700225",
+    "archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction.json": "f32e1f6580976372a18f48d4867ff9ab0269242fba300ba676746ce5a8bf7a14",
+    "archive/study-reviews/2026-10-08-redistribution-response/response-timing-description.json": "d47b37e1eba5d430bbd979c8fee0bf8f85fdf34988d8039ac3039e92292cc3f8",
+    "archive/study-reviews/2026-10-08-redistribution-response/provenance_verification.json": "58da6681a31aaf1929785c2a86052b73e7d5021f0c934d026616a2b68210b4f0",
+    "archive/study-reviews/2026-10-08-redistribution-response/provenance_initial_script.py": "cb2a5a0513d2095798d8e568a12b56fe37af55a01ce78c7e6ea43306d5cea520",
+    "archive/study-reviews/2026-10-08-redistribution-response/recipient-summary.csv": "8e55ca5e11997cf395af8b7463ffcd9e56a43569e9f3cbe00af57f9f93374758",
+    "archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.svg": "0f99500dd79e4c7f06ca37266b4ef66193deca94a418d2fa99dd84f5427dd9d5",
+    "archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction_script.py": "61919efedc57b1a96bdf061d861cd6eb2468edf12f8ebed084033d9e3e0eba70",
+    "archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.png": "1770f4dd491d49bfcc789c185fef9026fa5d023040ee2354ae88c78bcbbdab61",
+    "archive/study-reviews/2026-10-08-redistribution-response/plot-data.json": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd",
+    "docs/phase_carry_redistribution_response_assessment.json": "f10d53a9907ec81f874eb1cea8e03a992138c59d0941b8a3c389dc3ba06fdc8b",
+    "docs/phase_carry_redistribution_response_assessment.md": "5aa8e0f0e5164b521cccf8064539fac1f05d1e1729c4ea843b5a31ae531fa550",
+    "README.md": "76eec87ed9a8e43dc4eb36d6171f56b036d2ff5b87ebfd1726196705608a35c5",
+    "docs/plan.md": "3a3e5d0a802ca1255ddaae37355f5cfad67cf556787df7819301c5816f63403a"
+  },
+  "unchanged_ledger_and_manuscript_guards": {
+    "docs/results_ledger.md": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+    "docs/results_ledger.json": "1a4ec13e4ab944a96ea084cf41d30acd1bd7cbb9a50d5ac5596d1cd3fd6df200",
+    "manuscript/sections.md": "4414383b49879e2fea4869817d6812490c84b66a77f229f993626a6a27d8d902",
+    "manuscript/references.bib": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+    "manuscript/evidence_manifest.json": "91c69a4b00ebb3d6869f8fb82dd839256d85043f7d6a6474f09bb2683b2ff96a",
+    "manuscript/build_validation.json": "c8db77045a2bfefbbcb498f311dee1d318e78cacc1ad603cb4892459c3eccff3",
+    "manuscript/experimental_support_verification.json": "321f408f7f404c21585ed330d0434eaa55756c776e63b7fc5e8c46475e318950",
+    "output/pdf/embryogenesis_o1.pdf": "8e90238617f1e3f67d139a699cfc1d5ae404cd1a58a76509019d9a7159b1940b"
+  },
+  "scope": "Independent completed-study review and reporting update only. Source/input/runtime/physical/response audits pass. No simulations, threshold changes, scientific-source or output writes, ledger refresh, or manuscript results promotion."
+}

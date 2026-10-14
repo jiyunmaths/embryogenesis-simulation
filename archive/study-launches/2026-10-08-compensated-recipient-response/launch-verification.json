@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "state": "launched",
+  "method": "float64 SSP-RK2 increment with Kahan accumulation v1",
+  "protocol_sha256": "b6b2fb3133bcbac14fd94ffd245a478aab1b978f804b41ba25b2fd6f60254119",
+  "backend_qualification_sha256": "de3e73a98033d594c28dc0d00e22db36e9924332ace674b16579098b37a4476c",
+  "preparation_audit_sha256": "1827fbc5267739f381ff6580d3f3f673f0db56199833cefaee153653a29deffb",
+  "physical_gpu": 1,
+  "logical_device": "cuda:0",
+  "workers": 8,
+  "cpu_threads_per_worker": 1,
+  "production_paths": 432,
+  "cpu_paths": 432,
+  "new_reference_trajectories": 288,
+  "independent_histories": 3,
+  "new_histories": 0,
+  "actual_start_prefix_coverage": 144,
+  "exact_original_inputs": true,
+  "original_failed_study_preserved": true,
+  "scientific_acceptance_pending": true
+}

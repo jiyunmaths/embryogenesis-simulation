@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/audit.py", line 158, in <module>
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=('prepare','prefix'));main(parser.parse_args().action)
+                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/audit.py", line 118, in main
+    pref=ROOT/'prefix';q=read(pref/'protocol.json');summary=read(pref/'summary.json')
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/audit.py", line 26, in read
+    def read(file):return json.loads(pin(file).read_text())
+                                     ^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/audit.py", line 21, in pin
+    if value is None:value=sha(file);PINS[name]=value
+                           ^^^^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/audit.py", line 14, in sha
+    with Path(file).open('rb') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'output/studies/pulse-time-amount-response/prefix/summary.json'

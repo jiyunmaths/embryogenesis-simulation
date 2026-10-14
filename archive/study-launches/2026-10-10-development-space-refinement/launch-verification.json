@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "source_count": 30,
+  "input_count": 29,
+  "reused_baseline_readonly": true,
+  "runtime_binary_unchanged": true,
+  "local_links_checked": 11,
+  "artifact_sha256": {
+    "archive/study-launches/2026-10-10-development-space-refinement/audit_prelaunch.py": "71083880c89335faf99828325e2c5f68e940d360a619535a1bfa1a236534ed34",
+    "archive/study-launches/2026-10-10-development-space-refinement/prelaunch-audit.json": "e0b905c6ff0cf32e38108425ea35145def34ddadb282a4cef2cebefaa480feac",
+    "archive/study-launches/2026-10-10-development-space-refinement/launch.py": "73261ebae0ee7e2f914fabc41f62bdc953864e3eb9017f45f6ca3474d746f3f7",
+    "archive/study-launches/2026-10-10-development-space-refinement/process-launch.json": "f1fa0520e1fe2e3d9ee4fdcd96f442e9796669692ff40585265a0671ef1c3d75",
+    "archive/study-launches/2026-10-10-development-space-refinement/first-progress.json": "b729b2ac1156e3f9923e65cd28a4a5d92bdc6a65c5f85a3943d0d330f6c5b8bf",
+    "archive/study-launches/2026-10-10-development-space-refinement/tests.log": "404fcbb85c4a68fe69e265f4a50525d28b73c27ba06f2b92f2c29a7b432703cd",
+    "output/studies/development-space-refinement/protocol.json": "e7551e52d7f2a68c6c2098453ece54046ed642bf4d58db276ea3c3a9d6f99dbe",
+    "output/studies/development-space-refinement/calibration.json": "091f7add2913567f29d5a0a6ffc3586305e102f6c899492c47779d95eccead67",
+    "docs/development_space_refinement.md": "008c0c1ad8f525e3459f9d8ada192e9e751b8282c388e747921dd34ce05cefed",
+    "docs/development_space_refinement_launch.md": "b35c2f45bbfb2f92f22d6b26a1059fad819311cca1c4d1c4ab9cdd86013ae5f7",
+    "README.md": "e7435dfea3f41cd1063fd609602df76d604a90d7ba43897486a5c39153d07a6b",
+    "docs/plan.md": "1ce7331e3844673afb18ba473a79df5e3e725d3d528cd2e0f20c18125e2078bf"
+  }
+}

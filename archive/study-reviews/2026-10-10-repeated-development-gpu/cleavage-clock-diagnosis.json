@@ -1,0 +1,412 @@
+{
+  "branches": [
+    {
+      "branch": "off",
+      "lineage_and_partition_correspondence": true,
+      "maximum_axis_angle_degrees": 0.09107240589553368,
+      "parents": [
+        {
+          "parent": 0,
+          "axis_angle_degrees": 0.0,
+          "division_start_time_difference": 0.001875000000000071,
+          "abscission_time_difference": 0.015000000000000124
+        },
+        {
+          "parent": 2,
+          "axis_angle_degrees": 0.000139580894274623,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 1,
+          "axis_angle_degrees": 0.00019211235087102284,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.020624999999999893
+        },
+        {
+          "parent": 3,
+          "axis_angle_degrees": 0.009600625062228724,
+          "division_start_time_difference": 0.022499999999999964,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 4,
+          "axis_angle_degrees": 0.011583884879730862,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 5,
+          "axis_angle_degrees": 0.011334897371513929,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.024374999999999147
+        },
+        {
+          "parent": 6,
+          "axis_angle_degrees": 0.011508435890570896,
+          "division_start_time_difference": 0.020624999999999005,
+          "abscission_time_difference": 0.01875000000000071
+        },
+        {
+          "parent": 8,
+          "axis_angle_degrees": 0.07647296574676642,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 7,
+          "axis_angle_degrees": 0.08228639875375757,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 9,
+          "axis_angle_degrees": 0.0635115710288711,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 13,
+          "axis_angle_degrees": 0.08454952000395533,
+          "division_start_time_difference": 0.020624999999999005,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 14,
+          "axis_angle_degrees": 0.04284966191451768,
+          "division_start_time_difference": 0.01875000000000071,
+          "abscission_time_difference": 0.01875000000000071
+        },
+        {
+          "parent": 10,
+          "axis_angle_degrees": 0.09107240589553368,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 11,
+          "axis_angle_degrees": 0.08402343348662461,
+          "division_start_time_difference": 0.024375000000000924,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 12,
+          "axis_angle_degrees": 0.06271245068022464,
+          "division_start_time_difference": 0.024375000000000924,
+          "abscission_time_difference": 0.02812499999999929
+        }
+      ]
+    },
+    {
+      "branch": "tension_adhesion",
+      "lineage_and_partition_correspondence": true,
+      "maximum_axis_angle_degrees": 0.0913112999801322,
+      "parents": [
+        {
+          "parent": 0,
+          "axis_angle_degrees": 0.0,
+          "division_start_time_difference": 0.001875000000000071,
+          "abscission_time_difference": 0.015000000000000124
+        },
+        {
+          "parent": 2,
+          "axis_angle_degrees": 0.00013904982333818152,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 1,
+          "axis_angle_degrees": 0.00019119955341593802,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.020624999999999893
+        },
+        {
+          "parent": 3,
+          "axis_angle_degrees": 0.009596573065890417,
+          "division_start_time_difference": 0.022499999999999964,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 4,
+          "axis_angle_degrees": 0.011578496360184636,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 5,
+          "axis_angle_degrees": 0.011331753861147143,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.024374999999999147
+        },
+        {
+          "parent": 6,
+          "axis_angle_degrees": 0.01150572695529924,
+          "division_start_time_difference": 0.020624999999999005,
+          "abscission_time_difference": 0.01875000000000071
+        },
+        {
+          "parent": 8,
+          "axis_angle_degrees": 0.0766625796742762,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 7,
+          "axis_angle_degrees": 0.08252825743076093,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 9,
+          "axis_angle_degrees": 0.06367526374069568,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 13,
+          "axis_angle_degrees": 0.08475874431332782,
+          "division_start_time_difference": 0.020624999999999005,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 14,
+          "axis_angle_degrees": 0.042934044427050004,
+          "division_start_time_difference": 0.01875000000000071,
+          "abscission_time_difference": 0.01875000000000071
+        },
+        {
+          "parent": 10,
+          "axis_angle_degrees": 0.0913112999801322,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 11,
+          "axis_angle_degrees": 0.0842138248167568,
+          "division_start_time_difference": 0.024375000000000924,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 12,
+          "axis_angle_degrees": 0.06277218518806608,
+          "division_start_time_difference": 0.024375000000000924,
+          "abscission_time_difference": 0.02812499999999929
+        }
+      ]
+    },
+    {
+      "branch": "polarity",
+      "lineage_and_partition_correspondence": true,
+      "maximum_axis_angle_degrees": 0.09102152444298785,
+      "parents": [
+        {
+          "parent": 0,
+          "axis_angle_degrees": 0.0,
+          "division_start_time_difference": 0.001875000000000071,
+          "abscission_time_difference": 0.015000000000000124
+        },
+        {
+          "parent": 2,
+          "axis_angle_degrees": 0.00013820324920569123,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 1,
+          "axis_angle_degrees": 0.00019010991411865964,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.018749999999999822
+        },
+        {
+          "parent": 3,
+          "axis_angle_degrees": 0.009936700153488342,
+          "division_start_time_difference": 0.022499999999999964,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 4,
+          "axis_angle_degrees": 0.0119252039572355,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 5,
+          "axis_angle_degrees": 0.011823481948998972,
+          "division_start_time_difference": 0.01875000000000071,
+          "abscission_time_difference": 0.022499999999999076
+        },
+        {
+          "parent": 6,
+          "axis_angle_degrees": 0.011959034411943022,
+          "division_start_time_difference": 0.018749999999998934,
+          "abscission_time_difference": 0.01687500000000064
+        },
+        {
+          "parent": 8,
+          "axis_angle_degrees": 0.0777102567467328,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 7,
+          "axis_angle_degrees": 0.07766342427326241,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 9,
+          "axis_angle_degrees": 0.06833064977733395,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 13,
+          "axis_angle_degrees": 0.06760979228883982,
+          "division_start_time_difference": 0.018749999999998934,
+          "abscission_time_difference": 0.01687500000000064
+        },
+        {
+          "parent": 14,
+          "axis_angle_degrees": 0.039948047218798625,
+          "division_start_time_difference": 0.01687500000000064,
+          "abscission_time_difference": 0.01687500000000064
+        },
+        {
+          "parent": 10,
+          "axis_angle_degrees": 0.09102152444298785,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 11,
+          "axis_angle_degrees": 0.0723389384012006,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 12,
+          "axis_angle_degrees": 0.05876149482934652,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        }
+      ]
+    },
+    {
+      "branch": "full",
+      "lineage_and_partition_correspondence": true,
+      "maximum_axis_angle_degrees": 0.09572300412594653,
+      "parents": [
+        {
+          "parent": 0,
+          "axis_angle_degrees": 0.0,
+          "division_start_time_difference": 0.001875000000000071,
+          "abscission_time_difference": 0.015000000000000124
+        },
+        {
+          "parent": 2,
+          "axis_angle_degrees": 0.00013769068879135478,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 1,
+          "axis_angle_degrees": 0.0001891951612309983,
+          "division_start_time_difference": 0.01499999999999968,
+          "abscission_time_difference": 0.022499999999999964
+        },
+        {
+          "parent": 3,
+          "axis_angle_degrees": 0.008928231646505922,
+          "division_start_time_difference": 0.022499999999999964,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 4,
+          "axis_angle_degrees": 0.01083661302330166,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 5,
+          "axis_angle_degrees": 0.0104167701989195,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 6,
+          "axis_angle_degrees": 0.01061516604169327,
+          "division_start_time_difference": 0.022499999999999076,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 8,
+          "axis_angle_degrees": 0.06839570186767843,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 7,
+          "axis_angle_degrees": 0.08120427194919233,
+          "division_start_time_difference": 0.02624999999999922,
+          "abscission_time_difference": 0.024375000000000924
+        },
+        {
+          "parent": 9,
+          "axis_angle_degrees": 0.06005181428550409,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.022500000000000853
+        },
+        {
+          "parent": 13,
+          "axis_angle_degrees": 0.09224178090871848,
+          "division_start_time_difference": 0.022499999999999076,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 14,
+          "axis_angle_degrees": 0.04867599762382836,
+          "division_start_time_difference": 0.02062500000000078,
+          "abscission_time_difference": 0.02062500000000078
+        },
+        {
+          "parent": 10,
+          "axis_angle_degrees": 0.09449920688724299,
+          "division_start_time_difference": 0.022500000000000853,
+          "abscission_time_difference": 0.02624999999999922
+        },
+        {
+          "parent": 11,
+          "axis_angle_degrees": 0.09572300412594653,
+          "division_start_time_difference": 0.026250000000000995,
+          "abscission_time_difference": 0.026250000000000995
+        },
+        {
+          "parent": 12,
+          "axis_angle_degrees": 0.060884456858965624,
+          "division_start_time_difference": 0.026250000000000995,
+          "abscission_time_difference": 0.02999999999999936
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_coarse/gpu-lineage.json": "5c6d7cc284e37ae55540ce3716cb7caee0af4fa80d7e2f8ea30c4f5d1fce5aeb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_coarse/gpu-events.json": "85c76bf45be0f05136bfa5b7e6e213d8121e4c23cfcad3eac46f12de655ce5ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_fine/gpu-lineage.json": "1058ae17e08a902b974ea5ce17a19c97efb7fde7f43761d3b6f5cd86b72868aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/off_fine/gpu-events.json": "9b304124a338e2a1fd70f65a644c4c82da86569c89b6358854cf7261ed143bda",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_coarse/gpu-lineage.json": "1fca717f35d809e56ecd8c06341e223814a8cb6ea4568125acb823192fd4a6db",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_coarse/gpu-events.json": "7a55770c9d8f47363607f50f03f0a205b28eb34706c6e2a02cce11f4511bbebd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_fine/gpu-lineage.json": "b1e96e210ffb323d5839ffe70575270ce162c37444e52ceb8655c5745da39858",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/tension_adhesion_fine/gpu-events.json": "93191df526d70bf6075cc0d6f750f2081e92fbeecbfc415c0118dc39628ba168",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_coarse/gpu-lineage.json": "dc0e3d0882abb222bd9f19ef8bd70a1e2933bafeb6d7e0487b7de8b660a50025",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_coarse/gpu-events.json": "848f7d538e221906b602b1adae6bd18ec3ca5b5e59d824d999ffd9bcb07ee7a3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_fine/gpu-lineage.json": "4c35cc6942a617b22c417f48a9c12aca22c840f2e865a738c30b049df7523cf8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/polarity_fine/gpu-events.json": "5cd8c58ffc22c48f4ac0050ef77fcf1adb193808bb828ccae0198931603ec318",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_coarse/gpu-lineage.json": "495736d0fea07c6a4e517270ca573c742c4a97114e9ffad012af9985716883b0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_coarse/gpu-events.json": "dbfb31d284789ad3030dc72894ea66601d97992a84eedb78393d6bec8154e410",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_fine/gpu-lineage.json": "c61f0e400f3bf1084efcf8f82fa3f237f3ccaea897957a428da302305f0d4078",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/full_fine/gpu-events.json": "59a6bb0224330609c35481f55abd799783e51e39db35797e131231f057fd67de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-repeated-development-gpu/diagnose_cleavage.py": "d901ba18f4575715cd7b9c28b18e7511125be1d79f50118042026ee313879815"
+  },
+  "interpretation": "Descriptive raw same-parent differences; no causal attribution or time/spatial alignment."
+}

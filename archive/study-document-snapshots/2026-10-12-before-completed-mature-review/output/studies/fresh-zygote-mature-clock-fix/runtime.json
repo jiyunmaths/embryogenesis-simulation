@@ -1,0 +1,6 @@
+{
+  "gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "torch": "2.7.1+cu118",
+  "binary": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/kernel-cache/development/development-621e1ba4a65679920aa7.so",
+  "binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693"
+}

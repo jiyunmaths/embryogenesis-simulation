@@ -1,0 +1,32 @@
+tension_adhesion_space88 verified completed path reused after migration
+tension_adhesion_space88 new 542.019879228028
+tension_adhesion_space104 verified completed path reused after migration
+tension_adhesion_space104 new 835.3174304999993
+tension_adhesion_space120 verified completed path reused after migration
+tension_adhesion_space120 new 1241.5075290449895
+tension_adhesion_time120_half verified completed path reused after migration
+tension_adhesion_time120_half new 2327.6077034400078
+polarity_space88 new 525.9235006169765
+polarity_space104 new 804.323912072985
+polarity_space120 new 1193.4015253289836
+polarity_time120_half new 2226.436141076003
+full_space88 new 522.1113855509902
+full_space104 new 798.5912625019846
+full_space120 new 1189.3116109220136
+full_time120_half new 2239.0060725240037
+off120 reused 1246.9906060310022
+tension_adhesion refinement True
+polarity refinement True
+full refinement True
+off120 full restart 2 True 1000.9953177699936
+off120 full restart 4 True 889.4190685389913
+off120 full restart 8 True 679.6967179769999
+tension_adhesion_space120 full restart 2 True 1011.2238523749984
+tension_adhesion_space120 full restart 4 True 892.929322328011
+tension_adhesion_space120 full restart 8 True 682.7098369099549
+polarity_space120 full restart 2 True 961.7559489340056
+polarity_space120 full restart 4 True 842.4285979170236
+polarity_space120 full restart 8 True 642.4962430630112
+full_space120 full restart 2 True 947.7237261340488
+full_space120 full restart 4 True 841.2013324929867
+full_space120 full restart 8 True 641.8555804829812

@@ -1,0 +1,582 @@
+{
+  "reviewed_utc": "2026-10-08T11:55:36.144754+00:00",
+  "protocol_sha256": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+  "full_study_accepted": true,
+  "original_summary_sha256": "d343f6beae538e58a538bd9532dcaeba0bf35b57714f6a9de7146a49668fa4de",
+  "original_status_sha256": "545e9071e0fbd9d9fa178d74d3589c5e4c2bf85e568b0545a19b5eae51b09072",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "paths": 66,
+  "new_paths": 48,
+  "reused_paths": 18,
+  "source_hashes_verified": 53,
+  "input_hashes_verified": 2412,
+  "runtime_binaries_verified": 2,
+  "prepared_states_verified": 66,
+  "context_gates_verified": 66,
+  "immutable_paths_verified": 3091,
+  "pilot_reports": 3,
+  "full_reports": 3,
+  "full_mechanical_pairs": 33,
+  "full_response_pairs": 24,
+  "quality_extrema": {
+    "max_volume_error": 0.011018003775113416,
+    "min_radius": 5.107147094377688,
+    "max_clipping": 0.0,
+    "max_boundary": 1.9268412643214106e-08,
+    "max_dilution_error": 4.440892098500626e-16
+  },
+  "minimum_whole_window_contrast": 1.3550865366297622,
+  "full_timestep_maxima": {
+    "chemical_log_max": 0.0003781241267820363,
+    "polarity_abs_max": 1.4673243745912112e-07,
+    "relative_axis_max": 2.5390484825749127e-08,
+    "relative_volume_max": 4.693893793650261e-07,
+    "relative_transport_max": 5.319010679599186e-07,
+    "final_phi_abs_max": 1.1920928955078125e-07
+  },
+  "max_normalized_response_error": 1.758616974270051e-05,
+  "max_relative_auc_error": 1.4149656805351185e-05,
+  "max_recovery_time_error": 0.0,
+  "max_response_effect_error": 4.212906001416217e-07,
+  "max_pulse_amount_relative_error": 4.218847493575595e-15,
+  "effect_screen": 0.01,
+  "history_outcomes": [
+    {
+      "history": 7,
+      "recipients": 2,
+      "fractional_above_screen": 0,
+      "amount_above_screen": 0,
+      "both_doses_above_screen": 0
+    },
+    {
+      "history": 8,
+      "recipients": 2,
+      "fractional_above_screen": 1,
+      "amount_above_screen": 1,
+      "both_doses_above_screen": 1
+    },
+    {
+      "history": 9,
+      "recipients": 2,
+      "fractional_above_screen": 1,
+      "amount_above_screen": 1,
+      "both_doses_above_screen": 1
+    }
+  ],
+  "recipients": [
+    {
+      "history": 7,
+      "cell": 22,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0093520550713506,
+            "raw_log_response_shift_rms": 0.0009853373447778887,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0006479449286493997
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.009577565593833196,
+            "raw_log_response_shift_rms": 0.001184014128047935,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.00042243440616680436
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.009352072630163645,
+            "raw_log_response_shift_rms": 0.0009853391947834851,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0006479273698363555
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.009577582806026028,
+            "raw_log_response_shift_rms": 0.0011840145270236838,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0004224171939739719
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          1.0154982899299196,
+          1.01421939245136
+        ],
+        "final_species_ratios": [
+          1.0124940041515242,
+          1.0114501480542153
+        ],
+        "late_two_species_state_log_rms": 0.012411982269540113,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.12980104602702436,
+            0.13018047179312234
+          ],
+          "redistributed": [
+            0.13180751390090048,
+            0.13202632396423883
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7440381872527158,
+            1.8493267787430974
+          ],
+          "redistributed": [
+            1.8695480993644744,
+            1.962910710724345
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.071965116950488,
+          1.06141907059738
+        ],
+        "final_aggregate_amount_ratios": [
+          1.072341218040595,
+          1.0622153209482015
+        ]
+      }
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 5.163825431343596e-05,
+            "raw_log_response_shift_rms": 5.440633102133395e-06,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009948361745686564
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00010065295622963573,
+            "raw_log_response_shift_rms": 0.00019660522710237337,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009899347043770365
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 5.164222633958311e-05,
+            "raw_log_response_shift_rms": 5.44105159685677e-06,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009948357773660417
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.0001006528520619906,
+            "raw_log_response_shift_rms": 0.00019660519045273784,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.00989934714793801
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          1.0273344761403955,
+          1.0226235102518824
+        ],
+        "final_species_ratios": [
+          1.0249906192726566,
+          1.0206580308349884
+        ],
+        "late_two_species_state_log_rms": 0.023083749468630003,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.0022553658320664982,
+            0.024299226806857525
+          ],
+          "redistributed": [
+            0.0023170135728448507,
+            0.02484894449734849
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7440381872527158,
+            1.8493267787430974
+          ],
+          "redistributed": [
+            1.6436031818059265,
+            1.781327290067742
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.942412381689303,
+          0.9632301389581501
+        ],
+        "final_aggregate_amount_ratios": [
+          0.9411728489848683,
+          0.961034806513611
+        ]
+      }
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0726632928594919,
+            "raw_log_response_shift_rms": 0.0076558420050717255,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.0626632928594919
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.07314593519561702,
+            "raw_log_response_shift_rms": 0.008386342165392264,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06314593519561702
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07266371415009204,
+            "raw_log_response_shift_rms": 0.007655886392466599,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06266371415009205
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.0731463506928081,
+            "raw_log_response_shift_rms": 0.008386367942052116,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.0631463506928081
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": true,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.8704849891887138,
+          0.8816237652854508
+        ],
+        "final_species_ratios": [
+          0.8829415558448033,
+          0.8930034271896579
+        ],
+        "late_two_species_state_log_rms": 0.12143541094337716,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.15241634489081812,
+            0.1508234086013073
+          ],
+          "redistributed": [
+            0.13272686380216817,
+            0.13302033700695068
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7318612392254837,
+            1.822582526154049
+          ],
+          "redistributed": [
+            1.8731354917155227,
+            1.9687494103857355
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.081573655723838,
+          1.0801976767220098
+        ],
+        "final_aggregate_amount_ratios": [
+          1.0818683751969749,
+          1.0808611878870116
+        ]
+      }
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006403129741322762,
+            "raw_log_response_shift_rms": 0.0006746370513697299,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003596870258677238
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.007978945596008348,
+            "raw_log_response_shift_rms": 0.006177890253565369,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.002021054403991652
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0064031914381518,
+            "raw_log_response_shift_rms": 0.000674643551779452,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0035968085618482
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.007979022562964868,
+            "raw_log_response_shift_rms": 0.006177884463454338,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0020209774370351322
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.0736075091612297,
+          0.4280531109598504
+        ],
+        "final_species_ratios": [
+          0.06133830163841029,
+          0.4320444381885242
+        ],
+        "late_two_species_state_log_rms": 2.06972935617417,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.001497970049604922,
+            0.018837081968910045
+          ],
+          "redistributed": [
+            0.00011026347217816148,
+            0.008063390593315328
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7318612392254837,
+            1.822582526154049
+          ],
+          "redistributed": [
+            1.6062864237725991,
+            1.7045369671499342
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.9274914106230336,
+          0.9352317070364926
+        ],
+        "final_aggregate_amount_ratios": [
+          0.9269715404967203,
+          0.9345332821359306
+        ]
+      }
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07296451081268623,
+            "raw_log_response_shift_rms": 0.007687578483945663,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06296451081268624
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.07346874339850201,
+            "raw_log_response_shift_rms": 0.00843970109429157,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06346874339850202
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07296491808289647,
+            "raw_log_response_shift_rms": 0.007687621394145025,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06296491808289648
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.073469151509408,
+            "raw_log_response_shift_rms": 0.00843972620554079,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.063469151509408
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": true,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.8693113496603582,
+          0.8805049367254612
+        ],
+        "final_species_ratios": [
+          0.8806392592899117,
+          0.8908878301399219
+        ],
+        "late_two_species_state_log_rms": 0.12370169385291639,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.15116090638930987,
+            0.14963984247893897
+          ],
+          "redistributed": [
+            0.1314564309034672,
+            0.13180929504893485
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.6352189340399077,
+            1.7614084037788023
+          ],
+          "redistributed": [
+            1.775514887544444,
+            1.9057473835018635
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.085796434094563,
+          1.081945208966533
+        ],
+        "final_aggregate_amount_ratios": [
+          1.0862087762479595,
+          1.0826515781316286
+        ]
+      }
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006645381088000517,
+            "raw_log_response_shift_rms": 0.0007001607781744959,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003354618911999483
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00825106714101174,
+            "raw_log_response_shift_rms": 0.006278039985733709,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0017489328589882606
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006645432167359139,
+            "raw_log_response_shift_rms": 0.0007001661599220598,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003354567832640861
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00825114628319589,
+            "raw_log_response_shift_rms": 0.006278033744871113,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0017488537168041107
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.05712266511414232,
+          0.4136118596271722
+        ],
+        "final_species_ratios": [
+          0.05897573389709047,
+          0.4223104402552907
+        ],
+        "late_two_species_state_log_rms": 2.0972472549405388,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.001531332506671746,
+            0.019167409851487884
+          ],
+          "redistributed": [
+            8.747512495180173e-05,
+            0.007927988662764833
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.6352189340399077,
+            1.7614084037788023
+          ],
+          "redistributed": [
+            1.5076036214135882,
+            1.6412486848287087
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.9219582711710425,
+          0.9317820224473147
+        ],
+        "final_aggregate_amount_ratios": [
+          0.921399371360333,
+          0.9308904222159531
+        ]
+      }
+    }
+  ],
+  "all_target_recovered": true,
+  "all_network_recovered": true,
+  "target_recovery_interval": [
+    2.25,
+    4.35
+  ],
+  "network_recovery_interval": [
+    2.25,
+    5.4
+  ],
+  "numerical_audit_limitations": [
+    "Every-step physical maxima are cumulative audits embedded in checkpoints and cross-checked against path result records; only stored 0.15-unit histories can be independently resampled without rerunning.",
+    "Checkpoint endpoint field volumes recomputed on CPU are diagnostic; GPU/CPU rounding differences do not replace actual recorded GPU volumes used in dose matching.",
+    "Only one timestep halving, three inherited mature histories, and 60-unit followup; no spatial convergence, stationarity, autonomous identity, challenge-time amount matching, or mechanical mediation claim."
+  ],
+  "historical_document_guard_scope": {
+    "frozen_science_source_input_runtime_mismatches": [],
+    "historical_document_differences": [
+      {
+        "path": "manuscript/introduction_methods.md",
+        "historical_sha256": "47f30bface2a4f50ccf2e21a9d662e18626c8309fb994614a53c9ddd5a198192",
+        "current_sha256": "ab198ab3efc82a3464f603dea5c8234aa1c365926369226d0cdc4bc9eeeeaced",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      },
+      {
+        "path": "manuscript/references.bib",
+        "historical_sha256": "ecd0850923a418f8b3f44cdfa39a481c64291627236825d0c51069750795f3a8",
+        "current_sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      },
+      {
+        "path": "manuscript/sections.tex",
+        "historical_sha256": "a58721ba3a895ddeef24dfd3f19d38b8ecceb962699759211d6f88a7d74668a7",
+        "current_sha256": "cfcd232bba0d1e7bbc5767e98440b81cc382338a3e90342c68e3b46a39d83262",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      },
+      {
+        "path": "manuscript/sections.md",
+        "historical_sha256": "b35c1fe5bb346df68c9f8e15d64eb434c1c0521a0a4069d34d0c1d5f0c327d2e",
+        "current_sha256": "4414383b49879e2fea4869817d6812490c84b66a77f229f993626a6a27d8d902",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      },
+      {
+        "path": "manuscript/README.md",
+        "historical_sha256": "493acebddb9501e2bc07b8897eb2dbe0812aefe97b26040d3fad05e4573fc879",
+        "current_sha256": "3008d12a01f1b051ec2f592dc39fdb7389bc55e83a14fc1c4060f66463cef4b4",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      },
+      {
+        "path": "manuscript/literature_review.md",
+        "historical_sha256": "6b83cc5f0080042945f94d5e18949532435d0db5bdaf07bcb1b001c745932393",
+        "current_sha256": "294ae092d37b60975c6dd9fa46f05b9ef1f7eff4752c60f613017eebcd89dc18",
+        "scope": "Historical launch document snapshot; user-authorized manuscript edit is outside current science/protocol hash pins."
+      }
+    ],
+    "historical_differences_are_scientific_failures": false
+  },
+  "initial_amount_matching_time": 450.0,
+  "challenge_time": 510.0,
+  "horizon": 570.0,
+  "review_archive": "archive/study-reviews/2026-10-08-redistribution-response",
+  "pre_review_reporting_snapshot": "archive/study-document-snapshots/2026-10-08-before-completed-redistribution-response-review",
+  "scope": "Selective delayed responses after redistribution at matched initial t450 amounts in three existing mature histories. Challenge-time quantities/geometry differ. No new histories, divisions, autonomous/inherited identity, nearest-neighbor isolation, unique mechanical mediation, full behavioral dosage factorial, fresh carry zygote development, general spatial/transport validation, or wholesale ledger/manuscript revalidation."
+}

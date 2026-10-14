@@ -1,0 +1,33 @@
+Reviewed history, dense graph, events and pressure: h1101_off_development
+Reviewed history, dense graph, events and pressure: h1101_off_development_half
+Reviewed history, dense graph, events and pressure: h1101_tension_adhesion_development
+Reviewed history, dense graph, events and pressure: h1101_tension_adhesion_development_half
+Reviewed history, dense graph, events and pressure: h1101_polarity_development
+Reviewed history, dense graph, events and pressure: h1101_polarity_development_half
+Reviewed history, dense graph, events and pressure: h1101_full_development
+Reviewed history, dense graph, events and pressure: h1101_full_development_half
+Reviewed history, dense graph, events and pressure: h1102_off_development
+Reviewed history, dense graph, events and pressure: h1102_off_development_half
+Reviewed history, dense graph, events and pressure: h1102_tension_adhesion_development
+Reviewed history, dense graph, events and pressure: h1102_tension_adhesion_development_half
+Reviewed history, dense graph, events and pressure: h1102_polarity_development
+Reviewed history, dense graph, events and pressure: h1102_polarity_development_half
+Reviewed history, dense graph, events and pressure: h1102_full_development
+Reviewed history, dense graph, events and pressure: h1102_full_development_half
+Reviewed history, dense graph, events and pressure: h1103_off_development
+Reviewed history, dense graph, events and pressure: h1103_off_development_half
+Reviewed failed-pair fields and saved arrays: 0
+Reviewed failed-pair fields and saved arrays: 3
+Reviewed failed-pair fields and saved arrays: 6
+Reviewed failed-pair fields and saved arrays: 9
+Reviewed failed-pair fields and saved arrays: 12
+Reviewed failed-pair fields and saved arrays: 15
+Reviewed failed-pair fields and saved arrays: 18
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-fresh-zygote-stopped/review_saved_evidence.py", line 215, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-fresh-zygote-stopped/review_saved_evidence.py", line 192, in main
+    assert actual==entry['edited_sha256'] and expected==entry['expected_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

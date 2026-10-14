@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-10-output/verify_compatibility.py", line 16, in <module>
+    from embryo import development_control_qualification as c
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/__init__.py", line 3, in <module>
+    from .model import Config, Simulation
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py", line 8, in <module>
+    from scipy.ndimage import laplace
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/scipy/ndimage/__init__.py", line 157, in <module>
+    from ._support_alternative_backends import *
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/scipy/ndimage/_support_alternative_backends.py", line 2, in <module>
+    from scipy._lib._array_api import (
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/scipy/_lib/_array_api.py", line 25, in <module>
+    from scipy._lib.array_api_compat import (
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/scipy/_lib/array_api_compat/numpy/__init__.py", line 4, in <module>
+    from numpy import *  # noqa: F403  # pyright: ignore[reportWildcardImportFromLibrary]
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/numpy/f2py/__init__.py", line 19, in <module>
+    from . import diagnose, f2py2e
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/numpy/f2py/f2py2e.py", line 21, in <module>
+    from . import (
+  File "/home/sji/miniforge3/envs/deeplearning/lib/python3.12/site-packages/numpy/f2py/capi_maps.py", line 136, in <module>
+    f2cmap_default = copy.deepcopy(f2cmap_all)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'copy' has no attribute 'deepcopy'

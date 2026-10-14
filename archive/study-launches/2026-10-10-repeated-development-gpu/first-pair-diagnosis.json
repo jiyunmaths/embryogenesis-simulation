@@ -1,0 +1,141 @@
+{
+  "provisional": true,
+  "full_acceptance_pending": true,
+  "first_timestep_pair_passed": false,
+  "spectrum_peak": {
+    "time": 11.549999999999999,
+    "cells": 8,
+    "relative_spectrum_error": 0.05033970129135743,
+    "edge_counts": [
+      16,
+      16
+    ]
+  },
+  "field_peaks": {
+    "occupancy": {
+      "time": 12,
+      "value": 0.03951039450223334
+    },
+    "activator_density": {
+      "time": 12,
+      "value": 0.039391784906068726
+    },
+    "inhibitor_density": {
+      "time": 12,
+      "value": 0.03938585789217895
+    },
+    "polarity_density": {
+      "time": 12,
+      "value": 0.0030773157488875862
+    }
+  },
+  "parent_axis_angle_max": 0.09107240590353752,
+  "parent_records": [
+    {
+      "parent": 0,
+      "same_parent": true,
+      "axis_angle_degrees": 8.537736462515939e-07,
+      "start_time_difference": 0.001875000000000071,
+      "abscission_time_difference": 0.015000000000000124
+    },
+    {
+      "parent": 1,
+      "same_parent": true,
+      "axis_angle_degrees": 0.00019211804221755982,
+      "start_time_difference": 0.01499999999999968,
+      "abscission_time_difference": 0.020624999999999893
+    },
+    {
+      "parent": 2,
+      "same_parent": true,
+      "axis_angle_degrees": 0.00013958350538635474,
+      "start_time_difference": 0.01499999999999968,
+      "abscission_time_difference": 0.02062500000000078
+    },
+    {
+      "parent": 3,
+      "same_parent": true,
+      "axis_angle_degrees": 0.009600625062228724,
+      "start_time_difference": 0.022499999999999964,
+      "abscission_time_difference": 0.02624999999999922
+    },
+    {
+      "parent": 4,
+      "same_parent": true,
+      "axis_angle_degrees": 0.011583884911193946,
+      "start_time_difference": 0.02062500000000078,
+      "abscission_time_difference": 0.02062500000000078
+    },
+    {
+      "parent": 5,
+      "same_parent": true,
+      "axis_angle_degrees": 0.011334897371513929,
+      "start_time_difference": 0.02062500000000078,
+      "abscission_time_difference": 0.024374999999999147
+    },
+    {
+      "parent": 6,
+      "same_parent": true,
+      "axis_angle_degrees": 0.011508435953909602,
+      "start_time_difference": 0.020624999999999005,
+      "abscission_time_difference": 0.01875000000000071
+    },
+    {
+      "parent": 7,
+      "same_parent": true,
+      "axis_angle_degrees": 0.08228639875818679,
+      "start_time_difference": 0.02624999999999922,
+      "abscission_time_difference": 0.024375000000000924
+    },
+    {
+      "parent": 8,
+      "same_parent": true,
+      "axis_angle_degrees": 0.07647296574676642,
+      "start_time_difference": 0.02624999999999922,
+      "abscission_time_difference": 0.02624999999999922
+    },
+    {
+      "parent": 9,
+      "same_parent": true,
+      "axis_angle_degrees": 0.0635115710288711,
+      "start_time_difference": 0.022500000000000853,
+      "abscission_time_difference": 0.022500000000000853
+    },
+    {
+      "parent": 10,
+      "same_parent": true,
+      "axis_angle_degrees": 0.09107240590353752,
+      "start_time_difference": 0.022500000000000853,
+      "abscission_time_difference": 0.02624999999999922
+    },
+    {
+      "parent": 11,
+      "same_parent": true,
+      "axis_angle_degrees": 0.08402343348662461,
+      "start_time_difference": 0.024375000000000924,
+      "abscission_time_difference": 0.024375000000000924
+    },
+    {
+      "parent": 12,
+      "same_parent": true,
+      "axis_angle_degrees": 0.06271245068603633,
+      "start_time_difference": 0.024375000000000924,
+      "abscission_time_difference": 0.02812499999999929
+    },
+    {
+      "parent": 13,
+      "same_parent": true,
+      "axis_angle_degrees": 0.084549519995334,
+      "start_time_difference": 0.020624999999999005,
+      "abscission_time_difference": 0.022500000000000853
+    },
+    {
+      "parent": 14,
+      "same_parent": true,
+      "axis_angle_degrees": 0.04284966191451768,
+      "start_time_difference": 0.01875000000000071,
+      "abscission_time_difference": 0.01875000000000071
+    }
+  ],
+  "interpretation": "Descriptive fixed-time diagnosis; no time alignment, altered gates, rerun or mechanism attribution."
+}

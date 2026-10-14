@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-10-10T22:59:40.483712+00:00",
+  "resumed_pid": 470605,
+  "gpu_progress": {
+    "state": "running",
+    "time": 9.0,
+    "cells": 5,
+    "events": 4,
+    "active_divisions": 3,
+    "seconds": 133.35184422097518,
+    "audit": {
+      "max_volume_error": 0.00965821408227574,
+      "min_radius": 7.886746191757658,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 12879,
+      "correction_magnitude_max": 0.00022506599092317705,
+      "before_relative_volume_error_max": 0.0004332030920263241,
+      "after_relative_volume_error_max": 9.868671668744611e-08
+    }
+  },
+  "exact_history_prefix_rows": 54,
+  "prior_history_rows": 54,
+  "all_prior_history_rows_reproduced": true,
+  "exact_checkpoint_arrays": [
+    "gpu-t00.npz",
+    "gpu-t03.npz",
+    "gpu-t06.npz"
+  ],
+  "same_protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "scope": "Independent saved-array/history reproduction check after storage resumption; no new scientific acceptance."
+}

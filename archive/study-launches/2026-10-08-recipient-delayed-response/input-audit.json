@@ -1,0 +1,2079 @@
+{
+  "passed": true,
+  "protocol_sha256": "93091c6fe2a4c13975c592a82a4fefef4d2ef5b2a7a9e8a5df568d5c40e8a6c6",
+  "contexts": 45,
+  "logical_cases": 141,
+  "controls": 45,
+  "pulses": 96,
+  "unique_initial_value_problems": 117,
+  "source_checks": [
+    {
+      "context": "seed-7_chemistry-sham_physics-sham_native_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4011014570768494e-13,
+        "diagnostic": 2.731148640577512e-13,
+        "dop853": 1.239008895481598e-13,
+        "radau": 1.239008895481598e-13
+      },
+      "preceding_max_log_drift": 2.1360690993790294e-13,
+      "challenge_max_log_rate": 5.567636076820833e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 9.015010959955865e-14,
+        "diagnostic": 2.873257187729492e-13,
+        "dop853": 7.083222897108248e-14,
+        "radau": 7.083222897108248e-14
+      },
+      "preceding_max_log_drift": 1.167843599596383e-11,
+      "challenge_max_log_rate": 5.558847221326252e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_control",
+      "endpoint_errors": {
+        "coarse": 1.3899992268307927e-13,
+        "diagnostic": 2.887690087050449e-13,
+        "dop853": 1.2123635428907444e-13,
+        "radau": 1.2168044349892455e-13
+      },
+      "preceding_max_log_drift": 8.595346656651656e-13,
+      "challenge_max_log_rate": 5.6042609072510117e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.4299672557173039e-13,
+        "diagnostic": 1.6142642778048474e-13,
+        "dop853": 1.296740492762267e-13,
+        "radau": 1.2889689315898898e-13
+      },
+      "preceding_max_log_drift": 6.471267965914174e-12,
+      "challenge_max_log_rate": 5.489469509413495e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.4277468096678493e-13,
+        "diagnostic": 1.8329782136563013e-13,
+        "dop853": 1.2723155862203484e-13,
+        "radau": 1.2723155862203484e-13
+      },
+      "preceding_max_log_drift": 5.729861030106849e-12,
+      "challenge_max_log_rate": 5.6304584867139016e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4155343563971748e-13,
+        "diagnostic": 1.7230661342180945e-13,
+        "dop853": 1.266764471097384e-13,
+        "radau": 1.266764471097384e-13
+      },
+      "preceding_max_log_drift": 6.173284106106665e-12,
+      "challenge_max_log_rate": 5.2326237928454574e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.4299672557170994e-13,
+        "diagnostic": 1.940669847044962e-13,
+        "dop853": 1.2834178164665987e-13,
+        "radau": 1.2878587085650985e-13
+      },
+      "preceding_max_log_drift": 6.122879980826483e-12,
+      "challenge_max_log_rate": 5.580702594235084e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4477308241110994e-13,
+        "diagnostic": 1.73527858748927e-13,
+        "dop853": 1.301181384860599e-13,
+        "radau": 1.301181384860599e-13
+      },
+      "preceding_max_log_drift": 2.6900703886671163e-13,
+      "challenge_max_log_rate": 5.5520598015710884e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 8.093525849517718e-14,
+        "diagnostic": 2.623457007189589e-13,
+        "dop853": 6.694644838489919e-14,
+        "radau": 6.594724766273647e-14
+      },
+      "preceding_max_log_drift": 2.846611835138496e-13,
+      "challenge_max_log_rate": 5.570941648754796e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4788170688005992e-13,
+        "diagnostic": 1.6298074001498626e-13,
+        "dop853": 1.334488075599349e-13,
+        "radau": 1.334488075599349e-13
+      },
+      "preceding_max_log_drift": 5.320188734005166e-13,
+      "challenge_max_log_rate": 5.464212021438562e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.267874694122009e-13,
+        "diagnostic": 1.5432100042288484e-13,
+        "dop853": 1.140199046290101e-13,
+        "radau": 1.1357581541915996e-13
+      },
+      "preceding_max_log_drift": 1.2112533198661192e-13,
+      "challenge_max_log_rate": 5.580758364311067e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.3744561044858494e-13,
+        "diagnostic": 2.7278179715043817e-13,
+        "dop853": 1.2323475573338478e-13,
+        "radau": 1.2279066652353477e-13
+      },
+      "preceding_max_log_drift": 2.7455815398983893e-13,
+      "challenge_max_log_rate": 5.5755859840790793e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 8.115730310010224e-14,
+        "diagnostic": 2.5435209494165573e-13,
+        "dop853": 6.683542608243666e-14,
+        "radau": 6.661338147751161e-14
+      },
+      "preceding_max_log_drift": 2.842170943039997e-13,
+      "challenge_max_log_rate": 5.5683101222319954e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60",
+      "parent_control": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 8.115730310010224e-14,
+        "diagnostic": 2.7688962234155236e-13,
+        "dop853": 5.806466418789738e-14,
+        "radau": 5.81756864903599e-14
+      },
+      "preceding_max_log_drift": 5.46007683510801e-13,
+      "challenge_max_log_rate": 5.5675957756025603e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60",
+      "parent_control": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_control",
+      "endpoint_errors": {
+        "coarse": 7.993605777300808e-14,
+        "diagnostic": 2.5424107263912854e-13,
+        "dop853": 6.594724766273213e-14,
+        "radau": 6.572520305780711e-14
+      },
+      "preceding_max_log_drift": 1.7286172493415182e-13,
+      "challenge_max_log_rate": 5.6596941261822273e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-sham_native_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4055423491753495e-13,
+        "diagnostic": 1.5931700403372266e-13,
+        "dop853": 1.2545520178263481e-13,
+        "radau": 1.2634338020233484e-13
+      },
+      "preceding_max_log_drift": 2.563504963859815e-13,
+      "challenge_max_log_rate": 5.3267490764401144e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 8.393286066165831e-14,
+        "diagnostic": 2.9287683389607343e-13,
+        "dop853": 6.816769371198229e-14,
+        "radau": 6.750155989720725e-14
+      },
+      "preceding_max_log_drift": 5.023803595476011e-11,
+      "challenge_max_log_rate": 5.542423715054895e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_control",
+      "endpoint_errors": {
+        "coarse": 8.815170815524132e-14,
+        "diagnostic": 2.8133051444005425e-13,
+        "dop853": 6.41708908233361e-14,
+        "radau": 6.428191312579863e-14
+      },
+      "preceding_max_log_drift": 2.9529712008936313e-12,
+      "challenge_max_log_rate": 5.5599444331016515e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.3922196728798494e-13,
+        "diagnostic": 2.779998453661006e-13,
+        "dop853": 1.239008895481598e-13,
+        "radau": 1.2456702336293481e-13
+      },
+      "preceding_max_log_drift": 6.033040733837058e-11,
+      "challenge_max_log_rate": 5.559721514306335e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.4321877017665544e-13,
+        "diagnostic": 1.567634910770598e-13,
+        "dop853": 1.2845280394913887e-13,
+        "radau": 1.2878587085652646e-13
+      },
+      "preceding_max_log_drift": 6.51843023980874e-11,
+      "challenge_max_log_rate": 5.247245358881987e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 7.904787935330802e-14,
+        "diagnostic": 2.911004770566737e-13,
+        "dop853": 6.394884621840697e-14,
+        "radau": 6.350475700855693e-14
+      },
+      "preceding_max_log_drift": 1.075561861790575e-11,
+      "challenge_max_log_rate": 5.596782228954372e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.3966605649785444e-13,
+        "diagnostic": 1.5942802633615978e-13,
+        "dop853": 1.2589929099250068e-13,
+        "radau": 1.2589929099250068e-13
+      },
+      "preceding_max_log_drift": 6.711942112988104e-11,
+      "challenge_max_log_rate": 5.096361749484417e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4344081478155993e-13,
+        "diagnostic": 1.6697754290363748e-13,
+        "dop853": 1.2878587085650985e-13,
+        "radau": 1.2922996006635987e-13
+      },
+      "preceding_max_log_drift": 2.807754029277415e-13,
+      "challenge_max_log_rate": 5.203964222524373e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 9.015010959955865e-14,
+        "diagnostic": 2.8088642523012517e-13,
+        "dop853": 8.548717289613339e-14,
+        "radau": 8.526512829120839e-14
+      },
+      "preceding_max_log_drift": 3.0713209753277498e-12,
+      "challenge_max_log_rate": 5.583695743628103e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_control",
+      "endpoint_errors": {
+        "coarse": 1.3145040611562717e-13,
+        "diagnostic": 2.7378099787252614e-13,
+        "dop853": 1.1657341758564823e-13,
+        "radau": 1.1657341758564823e-13
+      },
+      "preceding_max_log_drift": 7.229328247123038e-12,
+      "challenge_max_log_rate": 5.521805047008985e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 2.0872192862952725e-14,
+        "diagnostic": 1.4344081478155993e-13,
+        "dop853": 3.419486915845541e-14,
+        "radau": 3.4638958368305484e-14
+      },
+      "preceding_max_log_drift": 1.2870815524487722e-12,
+      "challenge_max_log_rate": 5.574402123326093e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.419975248495676e-13,
+        "diagnostic": 1.5543122344750982e-13,
+        "dop853": 1.267874694122009e-13,
+        "radau": 1.274536032269761e-13
+      },
+      "preceding_max_log_drift": 2.3512303215483923e-12,
+      "challenge_max_log_rate": 5.326749076441152e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.3766765505352888e-13,
+        "diagnostic": 2.779998453661006e-13,
+        "dop853": 1.2478906796787537e-13,
+        "radau": 1.2567724638757562e-13
+      },
+      "preceding_max_log_drift": 2.1884716261435033e-12,
+      "challenge_max_log_rate": 5.5784870722255e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60",
+      "parent_control": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 8.260059303210824e-14,
+        "diagnostic": 2.8443913890892467e-13,
+        "dop853": 6.350475700855693e-14,
+        "radau": 6.328271240363192e-14
+      },
+      "preceding_max_log_drift": 8.297140752199223e-12,
+      "challenge_max_log_rate": 5.5063738265701874e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60",
+      "parent_control": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_control",
+      "endpoint_errors": {
+        "coarse": 1.332267629550099e-13,
+        "diagnostic": 7.327471962525764e-14,
+        "dop853": 1.2123635428905975e-13,
+        "radau": 1.196820420545847e-13
+      },
+      "preceding_max_log_drift": 2.0961010704925152e-13,
+      "challenge_max_log_rate": 5.584816699922692e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-sham_native_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 6.905587213168235e-14,
+        "diagnostic": 2.8022029141535023e-13,
+        "dop853": 6.261657858885687e-14,
+        "radau": 6.239453398393185e-14
+      },
+      "preceding_max_log_drift": 1.3933298959046686e-13,
+      "challenge_max_log_rate": 5.674025904424822e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.4599432773821874e-13,
+        "diagnostic": 1.7452705947105939e-13,
+        "dop853": 1.3133938381316465e-13,
+        "radau": 1.30784272300852e-13
+      },
+      "preceding_max_log_drift": 2.871758386687896e-11,
+      "challenge_max_log_rate": 5.610668561231254e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_control",
+      "endpoint_errors": {
+        "coarse": 6.616929226765715e-14,
+        "diagnostic": 2.7866597918087547e-13,
+        "dop853": 6.328271240363192e-14,
+        "radau": 6.283862319378189e-14
+      },
+      "preceding_max_log_drift": 8.406608742458152e-13,
+      "challenge_max_log_rate": 5.705032525942827e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.2656542480727585e-13,
+        "diagnostic": 2.704503287986516e-13,
+        "dop853": 1.1357581541915996e-13,
+        "radau": 1.1224354778960962e-13
+      },
+      "preceding_max_log_drift": 3.658806591100615e-11,
+      "challenge_max_log_rate": 5.728342811906235e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 8.426592756905293e-14,
+        "diagnostic": 2.742250870824513e-13,
+        "dop853": 6.106226635438548e-14,
+        "radau": 5.961897642237269e-14
+      },
+      "preceding_max_log_drift": 4.9456438942939106e-11,
+      "challenge_max_log_rate": 5.715393449824223e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.4643841694806888e-13,
+        "diagnostic": 1.6453505224943467e-13,
+        "dop853": 1.3133938381316465e-13,
+        "radau": 1.30784272300852e-13
+      },
+      "preceding_max_log_drift": 6.403100272202628e-12,
+      "challenge_max_log_rate": 5.5735647886784575e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 8.515410598875313e-14,
+        "diagnostic": 2.750022431996891e-13,
+        "dop853": 6.195044477408565e-14,
+        "radau": 6.250555628639827e-14
+      },
+      "preceding_max_log_drift": 4.979261447477892e-11,
+      "challenge_max_log_rate": 5.713043336885194e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_control",
+      "endpoint_errors": {
+        "coarse": 6.927791673660737e-14,
+        "diagnostic": 2.835509604892248e-13,
+        "dop853": 6.394884621840697e-14,
+        "radau": 6.439293542825701e-14
+      },
+      "preceding_max_log_drift": 1.8240964294592986e-13,
+      "challenge_max_log_rate": 5.6630663473054277e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.3244960683778993e-13,
+        "diagnostic": 9.681144774731833e-14,
+        "dop853": 1.2234657731369972e-13,
+        "radau": 1.2279066652354986e-13
+      },
+      "preceding_max_log_drift": 7.726042028369449e-13,
+      "challenge_max_log_rate": 5.708269751267126e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_control",
+      "endpoint_errors": {
+        "coarse": 1.3056222769592694e-13,
+        "diagnostic": 2.8854696410011984e-13,
+        "dop853": 1.2090328738168687e-13,
+        "radau": 1.2090328738168687e-13
+      },
+      "preceding_max_log_drift": 5.0450754684889096e-12,
+      "challenge_max_log_rate": 5.645761013351752e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_control",
+      "endpoint_errors": {
+        "coarse": 1.2734258092451356e-13,
+        "diagnostic": 2.610134330894084e-13,
+        "dop853": 1.1857181902997374e-13,
+        "radau": 1.1668443988811077e-13
+      },
+      "preceding_max_log_drift": 6.170619570868523e-13,
+      "challenge_max_log_rate": 5.704346802071668e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 6.694644838489919e-14,
+        "diagnostic": 2.802202914154288e-13,
+        "dop853": 5.873079800267251e-14,
+        "radau": 5.850875339774747e-14
+      },
+      "preceding_max_log_drift": 1.691535800317458e-12,
+      "challenge_max_log_rate": 5.655343787148035e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_control",
+      "endpoint_errors": {
+        "coarse": 1.3655743202888494e-13,
+        "diagnostic": 1.0280665208028421e-13,
+        "dop853": 1.2612133559740983e-13,
+        "radau": 1.250111125727848e-13
+      },
+      "preceding_max_log_drift": 4.001243780749865e-13,
+      "challenge_max_log_rate": 5.590772600444124e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60",
+      "parent_control": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_control",
+      "endpoint_errors": {
+        "coarse": 1.447730824111309e-13,
+        "diagnostic": 1.496580637194599e-13,
+        "dop853": 1.3256062914025248e-13,
+        "radau": 1.330047183501026e-13
+      },
+      "preceding_max_log_drift": 5.940581360146642e-12,
+      "challenge_max_log_rate": 5.663107950996793e-14,
+      "descriptive_settling_screen": true
+    },
+    {
+      "context": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60",
+      "parent_control": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_control",
+      "endpoint_errors": {
+        "coarse": 5.118128143522103e-14,
+        "diagnostic": 2.7378099787252614e-13,
+        "dop853": 3.230749001659258e-14,
+        "radau": 3.2529534621517617e-14
+      },
+      "preceding_max_log_drift": 8.748557434046616e-14,
+      "challenge_max_log_rate": 5.731040048688502e-14,
+      "descriptive_settling_screen": true
+    }
+  ],
+  "source_gate_count": 45,
+  "descriptively_settled_backgrounds": 45,
+  "paired_context_checks": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        1.0160156391896111,
+        1.0146204814565105
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.073032965961512,
+        1.063155765690185
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        1.0153493741242299,
+        1.0140161301605979
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0721200391621482,
+        1.0617453119244642
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        1.016015639189606,
+        1.0146204814564732
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0730329659614508,
+        1.0631557656900723
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 22,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        1.0153493741243111,
+        1.0140161301606623
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0721200391621442,
+        1.0617453119244677
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        1.030037613042498,
+        1.0249266927462595
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9425542705041201,
+        0.9634451670095786
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        1.0299902497812063,
+        1.0248032761563712
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9423499723491563,
+        0.9632011254058306
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        1.030037613042461,
+        1.0249266927463194
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.942554270504151,
+        0.9634451670096237
+      ]
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        1.0299902497811608,
+        1.0248032761565173
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9423499723492278,
+        0.9632011254059476
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        0.8675017406183655,
+        0.8791314284111744
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0837606393637704,
+        1.084318173699258
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        0.8680669633299916,
+        0.8797044953806695
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0808685040034365,
+        1.0789753909234192
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        0.8675017406184187,
+        0.8791314284112605
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.083760639363839,
+        1.084318173699398
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        0.8680669633299603,
+        0.8797044953806533
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0808685040034396,
+        1.0789753909234696
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        0.055363937458114514,
+        0.40378300451685467
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9270539032928671,
+        0.9344061627125997
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        0.06036226032498928,
+        0.37725804605253566
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9260020613518964,
+        0.9325021709883257
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        0.05536393745811937,
+        0.40378300451691584
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9270539032929144,
+        0.934406162712703
+      ]
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        0.060362260324987156,
+        0.3772580460525088
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.926002061351882,
+        0.9325021709883088
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        0.8634179782559447,
+        0.8753205549157309
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0877789457949598,
+        1.0856867272638577
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        0.8684137758808324,
+        0.879921059892933
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.085365724613807,
+        1.0812260656960038
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        0.8634179782559844,
+        0.8753205549157744
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0877789457949947,
+        1.0856867272638835
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        0.8684137758808991,
+        0.879921059893025
+      ],
+      "surrounding_global_species_amount_ratio": [
+        1.0853657246138673,
+        1.0812260656960728
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "S",
+      "target_species_ratio": [
+        0.05480390001329434,
+        0.4024687998740217
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9218449714615461,
+        0.9315380836393998
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "S",
+      "physics": "R",
+      "target_species_ratio": [
+        0.04792249169413442,
+        0.36948218514415865
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.9204676450204796,
+        0.9291163324980597
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "S",
+      "target_species_ratio": [
+        0.054803900013289567,
+        0.40246879987407735
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.921844971461695,
+        0.9315380836396117
+      ]
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "matching_reference": "R",
+      "physics": "R",
+      "target_species_ratio": [
+        0.04792249169413221,
+        0.36948218514414777
+      ],
+      "surrounding_global_species_amount_ratio": [
+        0.920467645020544,
+        0.9291163324981451
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_native_wait-60_control",
+      "source_sha256": "c0d7b7754f16892502ddfa206d652feabceaec9fdef5765c802998b255d9e1a3",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_native_wait-60_cell-22_fractional",
+      "source_sha256": "d8345638398f6751c929c01f8830053feac13b824bef231a70209a6c1e8ed0b3",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_native_wait-60_cell-22_amount",
+      "source_sha256": "d8345638398f6751c929c01f8830053feac13b824bef231a70209a6c1e8ed0b3",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_native_wait-60_cell-23_fractional",
+      "source_sha256": "44df05bcbc907354e3c6c5261901561e516938ccd099897c55858b6130b626f9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_native_wait-60_cell-23_amount",
+      "source_sha256": "44df05bcbc907354e3c6c5261901561e516938ccd099897c55858b6130b626f9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_control",
+      "source_sha256": "649e06d4f55b9ca06faec64d6a492b8532ba6f31b3c1e58f07f6cb00aa5ab872",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_cell-22_fractional",
+      "source_sha256": "ba41dd94b31130052caeb2a9d1fb1b389804a8d36ea30a9fdc65f0e97a2b3eea",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_cell-22_amount",
+      "source_sha256": "4a859ee947a151b59977337d3b19af4e22e17ebf1217b234154e8a9824fe6850",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_control",
+      "source_sha256": "536f295e20c02508ee808994d639e89dfb9b2e87a823f652323c2f8d9fee6210",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_cell-22_fractional",
+      "source_sha256": "370685b76141f66f91c7222c98ab0e61c438b02f82b7107a38eeebb96ff69dd3",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_cell-22_amount",
+      "source_sha256": "370685b76141f66f91c7222c98ab0e61c438b02f82b7107a38eeebb96ff69dd3",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_control",
+      "source_sha256": "a62f6d231becc3835c11da7e331a20cff5d0aa21437d33625d20a6eefd6d7d23",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_cell-22_fractional",
+      "source_sha256": "d70b23d50252a784a8490f1a12e1be55076f3478433b81ecd053765f243e759f",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_cell-22_amount",
+      "source_sha256": "4ce313b238201accfcc19e7092155442acd0bf2873dd74cca116ddda2e4f53c9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_control",
+      "source_sha256": "07a7f600a1e93ccbf3d4a311bade7d0dcee8ba5b5b41380aafb6c76665ac805b",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_cell-22_fractional",
+      "source_sha256": "6850325af9de44492a9311aeaff336f59c0650cf326921ddffcc2d27926a9889",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_cell-22_amount",
+      "source_sha256": "6850325af9de44492a9311aeaff336f59c0650cf326921ddffcc2d27926a9889",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_control",
+      "source_sha256": "48c64b1be7dd53062122643679d26b0a8981ef349358b095f6a153587f6d0dec",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_cell-22_fractional",
+      "source_sha256": "085083abbb306d56fa3a7a469711e56b50e3cf6d8026f9d91774e65a10ed251a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_cell-22_amount",
+      "source_sha256": "dfc6b59c913c0f41a8794b82d8008c41b5a7df64001f6aa0bf4e7b802b5e9eca",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_control",
+      "source_sha256": "d41fa1775b1f3a09d40787633e6961b27a1dee3f6a1c2283ce5304cce5189c80",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_cell-22_fractional",
+      "source_sha256": "e86d89b0b08f5055fd8db973c344547291707fa22007d4b67e9cf5ab0a0aa4aa",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_cell-22_amount",
+      "source_sha256": "e86d89b0b08f5055fd8db973c344547291707fa22007d4b67e9cf5ab0a0aa4aa",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_control",
+      "source_sha256": "0c55ca8c06933f687adeabbc3acbb8a4a062fc47d7090a15d23a03c484fabef2",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_cell-22_fractional",
+      "source_sha256": "68acf24d3aa55ff27a6df7d5e0bc9e3d0996f5164e5b18a5dcc91a3651420542",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_cell-22_amount",
+      "source_sha256": "2af152acfe5ce7b7df060dd418d436d73ca27697f79003d96301d6167ddc930b",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_control",
+      "source_sha256": "b7fa2d3b3821260e68a23cbbc4c960026b813fa6da98df550906bce536ef5aaf",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_cell-23_fractional",
+      "source_sha256": "8fb2b191bcae28e4a0d8a23f75f7d78fc25c9fb938fb1ba209ee94ccb59dd01e",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_cell-23_amount",
+      "source_sha256": "05e4940a1fd6e50eaf89510815239c7541acc62d9bc1235b5c0f0006c48dc8c9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_control",
+      "source_sha256": "68a47ffcbc0b575bd2fd77f7fd297424333730c14d9f883e9fb4567ce90c7440",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_cell-23_fractional",
+      "source_sha256": "650d3e40ceab456c2735b3720c19e5518427a5cbfa12858f0f6d630d9100cb3e",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_cell-23_amount",
+      "source_sha256": "650d3e40ceab456c2735b3720c19e5518427a5cbfa12858f0f6d630d9100cb3e",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_control",
+      "source_sha256": "23a8ae9cd2d1fd8a22af8051e7a6f454d374b4f09468919b7d47ac08a3b5cddd",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_cell-23_fractional",
+      "source_sha256": "ff0bc5ee665e9b5c93d8a49aeef242d403e12cd12137d1afa1573286f1728ae1",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_cell-23_amount",
+      "source_sha256": "dd422f2b145b3671eec388c13a14fc1d67c90ab9ff52f68c2b1c24d59cf4b565",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_control",
+      "source_sha256": "66a8cc1ede84991ab0c884ee5bad19b1d843a2c9f0616e83e60248f3a86de142",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_cell-23_fractional",
+      "source_sha256": "08f2f77d104cfef6b0d096a1af445d001fe3c3dd29b2d79378cbfdf38279f646",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_cell-23_amount",
+      "source_sha256": "08f2f77d104cfef6b0d096a1af445d001fe3c3dd29b2d79378cbfdf38279f646",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_control",
+      "source_sha256": "6b1b552620e68d2def7f5cd0253cba3b15c26ee03f391d43cfc5d24053aaaea6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_cell-23_fractional",
+      "source_sha256": "48a980e2408733f6d0b2da3b888138ec779819ff8043860194771e1a88a1339c",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_cell-23_amount",
+      "source_sha256": "e5856337ad0a15f500da62b5f8c2c437b83392b4332e5181e974c59997c70e56",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_control",
+      "source_sha256": "94094a7dbec1090aee9a3ce7d73ffb2fbe95fae6da6a094b06967994376ee527",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_cell-23_fractional",
+      "source_sha256": "fdfd8a0acd8ed0d710d60fee00e388cb44c677441c53ef380dff2953dca89454",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_cell-23_amount",
+      "source_sha256": "fdfd8a0acd8ed0d710d60fee00e388cb44c677441c53ef380dff2953dca89454",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_control",
+      "source_sha256": "fd6ac722ff755d093de0988e7548402e5eaf9561cf0bcc31c78e607ddc9ec69d",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_cell-23_fractional",
+      "source_sha256": "0a18da37e0bce9823c0090416320c4df521ea2c111457ab366675d080047ec8f",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_cell-23_amount",
+      "source_sha256": "60eefe05eb43b350e0f6f5ba630525b675286c5d88aead2073584b4dfe40a465",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_native_wait-60_control",
+      "source_sha256": "780443a283684d5d24fc5c69d6a2d07c8b9085944beb6c9aba9b2c3b34bae338",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_native_wait-60_cell-19_fractional",
+      "source_sha256": "6e54b850b17b8c60de1fd18deae78090668cfbe167054fa3fca1f62229445d06",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_native_wait-60_cell-19_amount",
+      "source_sha256": "403c0fde2cd95c7da6ed5f4bcd3165f7ee9e93d110bb131edfbfed562111cf8e",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_native_wait-60_cell-20_fractional",
+      "source_sha256": "c4e564a2ede2a403ef2b4b39909dc6496a2534ecb3b7e9d18f8c64647f1d6f84",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_native_wait-60_cell-20_amount",
+      "source_sha256": "648a0450395c240d0c0e64f6a17b9f20d1c8c55a76821c6a0906c400fcc5af88",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_control",
+      "source_sha256": "61004700dca15519f74fe5458689cc4a2f9b8f31127ffaa30e153462fcb123cf",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_cell-19_fractional",
+      "source_sha256": "2833ca571c86c1663bb6925b59730ed7fd2dcefbbac9e0c4ef599b61b4670d4a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_cell-19_amount",
+      "source_sha256": "2833ca571c86c1663bb6925b59730ed7fd2dcefbbac9e0c4ef599b61b4670d4a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_control",
+      "source_sha256": "4980d44bc09adc5b26e2cbf45d138217ef09a5666bf4a914913c750ed8b11b82",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_cell-19_fractional",
+      "source_sha256": "be8f1e575be9ca68f64b2a1e414170c406a718cc259243caa7473fabf765f6c8",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_cell-19_amount",
+      "source_sha256": "cf564bc2f44ec6d7361106d3c8f3a76bfa273412072d8becc15e3eb44044acc6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_control",
+      "source_sha256": "230b472f5a004d7658e7e597f08e4e2ad98cea578a4e1197cc8047052a37e949",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_cell-19_fractional",
+      "source_sha256": "9cd640c03c9f401ced765f1edbded3450bbeb1e4fe851cfee29f0095a7645822",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_cell-19_amount",
+      "source_sha256": "9cd640c03c9f401ced765f1edbded3450bbeb1e4fe851cfee29f0095a7645822",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_control",
+      "source_sha256": "a98684cc23a6612ac8be9a15341fa7baf52f01ec0ab0e6828e18c9e35b50eed8",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_cell-19_fractional",
+      "source_sha256": "7a7d80a6dcc863549ed7bafa47be52d1613fc6de8825bbec9596a0738ca26274",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_cell-19_amount",
+      "source_sha256": "f8137578d958b41661e324a1d571e6a231aef2042666de13e8924e0bbc1b9285",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_control",
+      "source_sha256": "ef84adeb2ccfedce0e5fd2846c51d26c80450f0a335d48cf585a2ef8ac191be2",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_cell-19_fractional",
+      "source_sha256": "8cc95238db3cac0c6d96dbbda4f97da58fb506089b063cbb277a1f3c22d4c137",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_cell-19_amount",
+      "source_sha256": "8cc95238db3cac0c6d96dbbda4f97da58fb506089b063cbb277a1f3c22d4c137",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_control",
+      "source_sha256": "fcef44d7e3421bf83fb2d9002a0fa8ca316fa6226b7c31ecb18af5909719d502",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_cell-19_fractional",
+      "source_sha256": "78c36597b4ee2e22b570c7ba3f4715ab71ebb831c6e8a9c39597e6c21bfab742",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_cell-19_amount",
+      "source_sha256": "5a1358a04b659f8735fe7fb28fe4bcfbfa4f38bc4170f5d073b9cfd3bbc2e4d7",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_control",
+      "source_sha256": "cb86b12fb0732df6fd5b371e30f6f474596cdf9ffb71dedc9fb0728bb85b77da",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_cell-19_fractional",
+      "source_sha256": "0251316d88293b26eb81adba220fc7bf1bfff0486bc0e4949b889c79a3458879",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_cell-19_amount",
+      "source_sha256": "0251316d88293b26eb81adba220fc7bf1bfff0486bc0e4949b889c79a3458879",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_control",
+      "source_sha256": "4186c9aec5f1ecc8399fd79dec24002cf8fd2110c69d543876c57ba4389a8f0a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_cell-20_fractional",
+      "source_sha256": "8a0042632d8f1271e778fc6d2f87a28da0aaec5e91527980e2ebe12fe27471c5",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_cell-20_amount",
+      "source_sha256": "8a0042632d8f1271e778fc6d2f87a28da0aaec5e91527980e2ebe12fe27471c5",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_control",
+      "source_sha256": "fce26ce51a8be9d8da857c4e6b302bed35dc81c9693fd8a88344b02f3f2f3c89",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_cell-20_fractional",
+      "source_sha256": "c90912d760837afb9672721ec80665df73148ab3543e8c47f6c6f5645b717df2",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_cell-20_amount",
+      "source_sha256": "e83a2101cc5fbe16df871e920754ffb91097540bc65ea3e41b1cb43bbde83877",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_control",
+      "source_sha256": "0026dc70877eca703e20ec45d2ad29832666b37ba8cd9ba9b7bd3c7573e1408c",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_cell-20_fractional",
+      "source_sha256": "490c513b0223d2c7e345d5451ab0023f04cae3269b404b93ebb616b00f8581a6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_cell-20_amount",
+      "source_sha256": "490c513b0223d2c7e345d5451ab0023f04cae3269b404b93ebb616b00f8581a6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_control",
+      "source_sha256": "9f245009478211c3f323df51dbca718f589215e0b0f2a3e79f5b5d6c184cb467",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_cell-20_fractional",
+      "source_sha256": "9034f36c2ced003e4b9d99bdfffa06a1bf6df3bef002f189d4d6e3d9fce0d89d",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_cell-20_amount",
+      "source_sha256": "3f8d9fa1db2b6e9596e90024d09846d19c7ce40575d1f6f4a3c50ec1ebcddcb7",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_control",
+      "source_sha256": "8d8a02e4cbfa84178a56c5c2f4c75ab4037e3f7b643823844b3d341a9af5a6db",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_cell-20_fractional",
+      "source_sha256": "d89ce1988f1fe4e99b865fc30dd19891f42a4b72bc82a9b1c4a7ce13248a45b6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_cell-20_amount",
+      "source_sha256": "d89ce1988f1fe4e99b865fc30dd19891f42a4b72bc82a9b1c4a7ce13248a45b6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_control",
+      "source_sha256": "9295e6bc59beae9c2eb14b76be4cee15bb8dec04fd4abfca59c8df1a7ac7e74a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_cell-20_fractional",
+      "source_sha256": "07469818c391e390fad405297fa00b28523981ab7d21f53b7cfa25032c49e043",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_cell-20_amount",
+      "source_sha256": "c8e7c2c069e3974b356f125af2734e64afd135203128924c8d72c46a964e7f80",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_control",
+      "source_sha256": "ba2098cf562e583472e1268380b5250037c6acebb0ea1629f8c879eb240b3fe6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_cell-20_fractional",
+      "source_sha256": "b4c4fd2a2f5098258377045e31909f03f6bcf05cae4954b75c7d534efe28281d",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_cell-20_amount",
+      "source_sha256": "b4c4fd2a2f5098258377045e31909f03f6bcf05cae4954b75c7d534efe28281d",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_native_wait-60_control",
+      "source_sha256": "300b21a6bb5d56fe1c317b70e7ba7557b162a874a18d00c865afb3f5846c15f9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_native_wait-60_cell-29_fractional",
+      "source_sha256": "d621325a95e63c77dd76f95df5b6a282e2385121250e647170cd8161f435a94f",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_native_wait-60_cell-29_amount",
+      "source_sha256": "950d40a9314a4a67e6cfb53721a1ef3400ca018019abf1501a11fe1f9918b1c6",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_native_wait-60_cell-30_fractional",
+      "source_sha256": "ea14a054c88f8241b405a36835f6413fc56188383528eff27e1b92e872e6fab5",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_native_wait-60_cell-30_amount",
+      "source_sha256": "525d830a6e23afa21d775f640ba136d1f71369495d1bc5e4f9eab2c4775b6c32",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_control",
+      "source_sha256": "a2ee80503f7f3a2fb8bbd16238c57cfdb59658abfeb9d51575e4c6594b7639b1",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_cell-29_fractional",
+      "source_sha256": "841dc81101631e1039abda796741999dd0437b3745fd8223d61f5f1f76d8c0b4",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_cell-29_amount",
+      "source_sha256": "841dc81101631e1039abda796741999dd0437b3745fd8223d61f5f1f76d8c0b4",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_control",
+      "source_sha256": "250520e140f5780d19f386427ab9b307373ab0e25f859609f214ce6dfc70fb47",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_cell-29_fractional",
+      "source_sha256": "2ca5367eb87626d8c559350994b77121cb4360cf4a4366a6701f22d4db03f2f7",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_cell-29_amount",
+      "source_sha256": "33e8d7ec2af96cd9545aed61d4a9baaffadee043c11ffc2ef4d4b4142caa7da5",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_control",
+      "source_sha256": "73302bcc30eb3c2b139818c4dad916693078f85485700cac68b98d318c675b24",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_cell-29_fractional",
+      "source_sha256": "e166f677fca249b16df3ed40697fbcd21aa277bbfe3a891072758fcb8f8911fd",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_cell-29_amount",
+      "source_sha256": "e166f677fca249b16df3ed40697fbcd21aa277bbfe3a891072758fcb8f8911fd",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_control",
+      "source_sha256": "fee27facd1b9bf3d0b2d10cbce8057ad6aa5d6ceb647588a14b19cd0897ca8a1",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_cell-29_fractional",
+      "source_sha256": "99b4172b07c146c569356cb2cedfe2f9fa8fa5edf0bc799cae767e245bb3d392",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_cell-29_amount",
+      "source_sha256": "9fd6e7460228b8b5e8b54c98e4fc2806743828889dd75359cd5faa614010b66f",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_control",
+      "source_sha256": "837926b31606a7011d8c775326f4dcf7014095f7066b554adbb50f167a0d527c",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_cell-29_fractional",
+      "source_sha256": "0fa11d5c4cfb0c8c1aeda8e34920c1368ed61ac72f365d1e07f99f6209307eda",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_cell-29_amount",
+      "source_sha256": "0fa11d5c4cfb0c8c1aeda8e34920c1368ed61ac72f365d1e07f99f6209307eda",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_control",
+      "source_sha256": "83f39d4fb2a8ed63c501f3809869213eb0c5ca8475d2cbffa0efd872a1588032",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_cell-29_fractional",
+      "source_sha256": "9e5f0486b38c34c0447c0f067d072a3a4fe551d0f988df1c28089df36743ea02",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_cell-29_amount",
+      "source_sha256": "38b680360da36bf9581fa1423b20e0e98794fed157455bbbb9b285d1f144cc68",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_control",
+      "source_sha256": "9ddead6b1b9df7d110f13222972983069729b0ad09019ac5ad56871dfdada593",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_cell-29_fractional",
+      "source_sha256": "14dc7bcbccf9740703ae6a704941d2592da8e11005519ff0614445cb7e391804",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_cell-29_amount",
+      "source_sha256": "14dc7bcbccf9740703ae6a704941d2592da8e11005519ff0614445cb7e391804",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_control",
+      "source_sha256": "66a1cf98bd758b93a2dd7545e1c8aaf30b91196b434e1e6dd1d9399ce5dfc5e8",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_cell-30_fractional",
+      "source_sha256": "3d4304e0965698682baf326f1d0c7d77f6e123489b2743d90854b5e2ec3eb0fb",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_cell-30_amount",
+      "source_sha256": "3d4304e0965698682baf326f1d0c7d77f6e123489b2743d90854b5e2ec3eb0fb",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_control",
+      "source_sha256": "57c0e1a5421ce20d1fe1f727224a716577a519f9544b0b5f125ce4170547488d",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_cell-30_fractional",
+      "source_sha256": "773f141cd0562573da0d710ba79dbb609fc6bedc40f83116633862b3af3f67be",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_cell-30_amount",
+      "source_sha256": "dccdf4e61ca825901a482fdca556137ec0262357906793794dc0e5fe3dc14db5",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_control",
+      "source_sha256": "cc0d91a71111c83147ce71436b4263c878bb0e00e6c7e5778173c4ab5944a94a",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_cell-30_fractional",
+      "source_sha256": "a8c1efc5c0544c21527713b4f415a1c3630cc6d15f913434ba2a70f22913c609",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_cell-30_amount",
+      "source_sha256": "a8c1efc5c0544c21527713b4f415a1c3630cc6d15f913434ba2a70f22913c609",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_control",
+      "source_sha256": "8aa924dd58295da19e01816dfe9c4bf54a14c9d0100e277530d59f2355f8f0e8",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_cell-30_fractional",
+      "source_sha256": "428c5faa04ce699761dd927a0f4e31671e3021853cf6ef6c1f94b4bbe21b8c68",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_cell-30_amount",
+      "source_sha256": "8c08e59afb296952f027b60ef37104761f2ba5e116ae255547a292f6a9745f51",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_control",
+      "source_sha256": "47372c79e9f5e782290eef4530070a4ecd68a3ec2a9ec31c82a5af1350d26305",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_cell-30_fractional",
+      "source_sha256": "fe13f7c7a120c02042330f1a93d09e99739d5787f573c1d4adab1d6c09d3dc38",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_cell-30_amount",
+      "source_sha256": "fe13f7c7a120c02042330f1a93d09e99739d5787f573c1d4adab1d6c09d3dc38",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_control",
+      "source_sha256": "52acfa498b133ee140b9e42d89b73599b2ea7a98cfe581de998e6adac0832324",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_cell-30_fractional",
+      "source_sha256": "8d83e70a3250f3bd067be44d1bd538f86aec1a155e0cccfe1dac632bc7d89eb0",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_cell-30_amount",
+      "source_sha256": "97774ba92c8486535f9dc2276a0a2916686e033fbdf3a1a4d2f27968b6d6d3f9",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_control",
+      "source_sha256": "b41db3f6243157629bd261acb18e1f8159773797bce92271ed9ea0286f6eb892",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_cell-30_fractional",
+      "source_sha256": "b7efa174c7be34b898b2a75569533509d95480d13ed28c5c7f3abaf974f44a6f",
+      "exact_preparation": true
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_cell-30_amount",
+      "source_sha256": "b7efa174c7be34b898b2a75569533509d95480d13ed28c5c7f3abaf974f44a6f",
+      "exact_preparation": true
+    }
+  ],
+  "maximum_pulse_relative_amount_error": 1.709743457922741e-14,
+  "inputs_unchanged": true,
+  "inputs_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_moving.py": "2cd9a4946d7f093675a4b625892c905f5932860111a251f73aa9ad4fb2db700f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": "39ad8daf28b79e1ecb3fd7b430d6f249bf14d5a8fb4e69aecb9bfd4f39071b79",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": "96dbf041fd896095263f3adfa5424d6efea84b56912a4859877c7b454f846807",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": "abb048cd98ec5fe315bb080c56b21a0e137750604ec8e21be2e5e8a37978213d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": "cde4e3658c50d91e77d8f9cac44699763dfebf942f69267f27e41d191a8f7784",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": "7eb638e84a66d06e910af1dea69b0e9202b1753cc87683bd0554790444350d57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/benchmark_gpu_backend.py": "c628f5b18d21232ff79b004b810010fff33d1549867e4cc8551f5555878227e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/validate_gpu_backend.py": "584608cc2b85f38b4fa041a0d776e9078004e5415fdcd5bf8a70b6440d708d98",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_response_runner.py": "1ff752551042cd4d6ed2463929e15f51897577273fe9b09ed3f6785ffd156e38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_long.py": "b6405a02033266bf8c33e308fcc29a2b5b78721eae13b212f1e0d23694b61a41",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_survival_validation.py": "d86acec93a06f7ad4cbbc94c4e2d8d295dfe863074a6c55413edf0f0dd6d4019",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/neighbor_context.py": "a6b7a2f17133a16dca157016415a4fadee81c86746c0e0dfde0019fdbe690d55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness.py": "38ebbffe4e9a9f5490a098a4a62507c051f9a05391f7a91cf0fa27fa8d4679ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": "7e62bf8c2471b786e0cb04ee8ac785abd5d9b036a86b3f4de7b017b967903221",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_endpoint_bistability.py": "074fda2b22f24e3e3a21012deee519f053f466cec05ddfdd0c09f83889a1d9c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness.py": "ba54be6325c4faad6dacae8fb41d57c7e583d709de053c65f5071dad7781fa5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/geometry_precision.py": "e41e13eca2d9d498d2d3adcd47571c33b14a983bcbf3d2b094b9979fd9bbe1f4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_polarity.c": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_reference.py": "d4aca7e3059be7b07f1928f4e48766c13deafcf6e82e3b9e2935fb3d6d9e3ce8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness_refinement.py": "fa79709c6b7ef072ea467cf0683b9dfa112132bd78a1625e41987a6a503658b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation.py": "fe3e52bf39b041cfa3af3f666ef2ce6f08479670943be4eeed194030e216cca6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_convergence.py": "d119fa7dcd567939d0343cffbee8ed54710a33d4eb0ab319c3ad97db9470e752",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/mechanics_float64_reference.py": "544596a5b8db0cd355c36327c11bfd1cb1d2bfebd08c53259cd25e80c869f64a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_polarity.py": "a381607dcfcda1b22b37d711757e0ab73561deaf837be7c330007fa399c6d468",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/moving_initiation_controls.py": "d60de79470dc29da44095cb57750e3c7707f29f8e9937272d8876d4603e101dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_initiation_controls.py": "f097f456b0259fde80aec02d9c41bd9af79c84da4462c98a07790d1f2468d685",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_conductance_controls.py": "e55de53bc80a99a5f71c936ed19aa2e5186d34071ee2e2b39f824443554f94df",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_polarity_conductance_controls.py": "d59ecaac8fca92ebd15a599f000704d703379a380f61be8f7a2f6847c29ad607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_maintenance.py": "2a87d7ed4587b3acc13009c4190d1f9a22ac023af5a1b89fcd0a2c4255dc3afb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_maintenance.py": "e810e8d0df3916ecdd722cbe55711cff3d4013f67a6f37fc41b268aab5e7ad2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_exchange_response.py": "8d8362846cb564b1a23e9f6f87e54fd1ce703b7f89c71201fd73086ea7954b3d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_exchange_response.py": "ea4321e0db7bc6ca84d8a02829d8367b1db3de35875a2b2ac5070ccb5a0ffadd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_network_context.py": "771af7bfead3b16ba47dbe495afd26fc5247a267e8893ec3e0fd3ebdc998c22c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_network_context.py": "2ec96e8b8a8b6b045b8e2aa4d8270b6739ed689fcc9045cde5c1fdbc41a81b76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": "4ee8a7d79ce9c3b77c032e41067556295757794560b10e5674db6e8489056e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_delayed_response.py": "f9f59fd08254bf32d0d1d5d94f2ddc82f214223a2cb3accff6b234ea5c12d11d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_context_dosage.py": "d355dbb1de45a4e02827d02f494333e4cc9c1a9e9c0cf9163455e05386bffa31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_context_dosage.py": "989e4e86818aef66f2057de14b23650b20850ab080b6c1a2c1766630e332a987",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": "e0632a9048e7049c516187c37e48c997116db9ec24804bdb544b82cc63aac254",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_redistribution_response.py": "13bf5b08aae36985c8d9eb4292ccd57d227135c981532c2876cd4e4febcc2bf4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py": "53958aacd35948f5764f6a37fcd7f5fe5ce9c504bb21d07549af1adf2d56d13c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_frozen_response.py": "7e5836790be762c149e02d982d9afefc2d9e62787c567fcd47bc02a18f384e48",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": "7ad6d1f1617100c69793dbc59c2557a9a3e94854109ff83c16368d96c56d71ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_shared_context_response.py": "ea63ff96ff9d54dffa758cdedeeb0e701b1647d8a08246ce8a7df32b173c820d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_shared_context_response.py": "4db847d4be6072c970c3e1cbf3edca519b1f3d701e28c7588b01b21b1684844b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_recipient_state_response.py": "002f8f2545bd51e3d9394d14d8c1119cb081c011076552be1b09b3bfdf32b6f3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_recipient_state_response.py": "96e9b157660d8643f0a47d6e95b695b4335423d386be2fbc1fd60096273bb3a2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_recipient_state_response_grouped.py": "bd37d7f711afaa042f88ea5355345e7eb36a640b27e1bbed3d73c29b69630006",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_recipient_state_response_grouped.py": "30cbe92d5f0d315d51672ef72ed6e90ad501e3fe2913df3b5a9a8c3738a6f26d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_recipient_delayed_response.py": "c3b3e71de68bab5fcfc5a261bfb82dd5c0e9b2278d643518bf830437136cd36a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_recipient_delayed_response.py": "ea94545ef834884f1e4f2d3eff1dad42e110abe6d12fea0ee430e2048db911a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/protocol.json": "91d42c7d7efcee42e3c14eff86d7ba2e5df9f45d645fc0bc0ab483d97e568e8d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/summary.json": "04a5f1a8ee50674489700fa1cbd17070783e8544b1a1432c69b66a74773ee180",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/status.json": "414796b4c5e90b045026376135484200a1ebacea5772ac5fd31155cf0b43644c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response_assessment.json": "8f0016d72685cda7ddd7372a3da26c319ee60b7aac7dbb8080169243945e7294",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/independent_review.json": "68b13a76b00dbf936683fa46931f3860cf884cb00ed74af05f7874cb56bb88aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/review-provenance.json": "0e209f3219b865a4ad6a8286188f10bf4d7522e1ddb62a60130378b72be1b831",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-08-before-recipient-state-response-launch/manifest.json": "e99849b2449f724f996f59a950ae8a8586cb306e6eb559658c64e5ca91fcfa01",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/audit_inputs.py": "91fb9a6bd163b3bdc4452fa88cfdb5ca7ce931d21ffeae0b52aabfc914ef5aad",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/gpu-prefix.json": "127b5bde1ce7dfd73013f0a1583fc941302b1ca487ca0e43950b2a743f725eb8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/input-audit.json": "ff3e6b039c17fd66afe899875069ef6b70fd5a2062a061199d1aed3f920e028c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/run_gpu_prefix.py": "d7d4ce4d541a791ad705169391be6d98cbfac3ea24688de1892f7c3c416bde7a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/tests.json": "14eb8c4379ac921237f60333d7972803f9e7c659db19c1d69c5ab2cecf8e3806",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response/tests.log": "53c61df86760f780da71a8143f82f23a2b11088c3a6bef27b01acba6f01d6b68",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/audit_inputs.py": "2a864bed7de838f64fd0bd53521584d9959842db2ff55093a669135f20132b77",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/gpu-prefix.json": "9911bbb602291fbefee8e4ce08cf6feb8b3c3ec7f76bd6e289f8b472758118f3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/input-audit.json": "8408344694bb8d536ea3bcab1687edc9ec7766a3e45f767c308cd5a677c2b1ff",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/run_gpu_prefix.py": "1d062b4e27e058ae23f669a89838645a273956704e350c4fe3371cb8255e6c43",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/tests-initial-missing-import.log": "46c69358c5ff20f849150be9fcef510930351eea68686d7d2c45957a0f2e3cc5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/tests.json": "97a45c275b150f48bb8e2870f45689348557596173c858365faccfc2ad4450d4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-state-response-grouped/tests.log": "8bb519b8af4260661e39dd09dfa5ef4030e71ffa1388f437a92d72e30bc00ef4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/figure-provenance.json": "b8c2654244819e7e082c6f1a656b11c7f80ef0557c4e9cf5daf220f77cbb1efb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/independent-review.log": "e1a8b8bfff5c5d5747a3d1a23af6570c0b7428191266803f01859b67f1dd915c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/independent_review.py": "56b03c35a4146c7b66c6cb45d63f042dd9469541f1d9dcd7932e09a028a379de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/plot_results.py": "de4d6402dcc039e107f215e0f7c5425b8ac0c17937549bd957fdb906effaecf0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-state-response.png": "2609c7d51e9fc6349b235d6ae77037f7bcc3baac554e7ac1d8fb26846958a0b1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-state-response.svg": "1ba89612f0a7871b7305de049742da28262dd968b2f53e7f6217a01e11cb21f5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/recipient-summary.csv": "5bf1192881cb31da55ca35d1e98fbd84d363658ff21aa2177ae609a485c53f51",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/reference-endpoint-diagnostic.json": "0c6ac8d8eb32069916c20b49f86c1c79ae5b81b0b9d01504988076978c9ce3e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/reference_endpoint_diagnostic.py": "1958760e3a0ddbee8627f1a22419ec8261fbf9368583870731f1c6f4f96ca999",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/verify_review.py": "45bd8e87186100ab571275a7e6bf4d0fc210bbc9dbfca7a6720ae247c8e8b981",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/waveforms.npz": "9d8111a8848c395ab04b648de0a743ffdd93c9c98a36a33b56e9696100bab050",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-state-response/write_assessment.py": "d8b84eee605c1f13d4a5abb477a720aca1f1b485d9856f9b7b9ad3fbb129d8fb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response.md": "266250f1e3e3808ccdd9ca85ec60009565f5181b1ec0ae5ff3cd1cddd33cc30a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response_assessment.md": "52f80014e9126b5c8cad4d9be0117416fd27a3674fb76bd2795f77448737a76b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response_grouped.md": "5a7b86582ce75dc97be14a8434d33f54ca79ae7a4a6edc63425b5ea054fba7e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response_launch.md": "804b142cdddc78d80184fddf90b168447af61ea8b0de80c3b60529cb3e85346b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_state_response_launch_verification.json": "038b16e591db2456b39e80388b957b85a94cda9d00d89e34e135d0fdbb1cd5c5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/coarse/paths.npz": "b4fc3ef54f2f334cfe41d60c035d9c3a09cb20c129c7edf2ba1e6c188d3e21cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/coarse/result.json": "e46d71523338eb7fc70932d39dfc98c150d8a0ce90174a92f901965f78621408",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/fine/paths.npz": "38bf64269da9184485eaf36ca7ec9072f9665670ee9de98a2adcd71b4b52013c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/fine/result.json": "4a96ae442dbb7dff10c4d9deae4624ff97f24b7deb1adc2df1702cf5cf14c2aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/diagnostic/paths.npz": "83c49d3eb4a99bf516b3a8c46baf8c1ad0809f4af399ceb2a3ddb8cd8e9c1c0a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/production/diagnostic/result.json": "969dca4f63c3fd60e3bbb5af5ac0aee22b0885eb822562022177c41fd44fb917",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-sham_native.npz": "27006d0a02d193b79e7eed6437223fbc4ee8e87c1811aa7fcdbf65448ddd026a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_native_control/paths.npz": "1539f8a35869fc7ed3a356c7997e55aa5f6b9500a52908e994aa8ed3fc565887",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_native_control/result.json": "07987a63ba1ccc5dc379af150919fec9d2b5680148b2064079876bb3a8a0409f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S.npz": "b0091e7f01b5cd0f1088dbfdca54b314f7cea7a6ea641c2f0623a7e65aecf65d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_control/paths.npz": "779b60c0fc8c49592361e1849e041f1c82a0748940a35bb2aab0b73d85592b5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_control/result.json": "06cb1906fb9ce7499c552e5d7040516ee979a6f59a05586dd59134e587e2e85d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-redistributed-cell-22_native.npz": "3a1f9de0351ad4a2efb4df2e9da06198958f3a3f9cee87a46bac62c3b1e3ecf8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-22_native_control/paths.npz": "0c073f93a4dbfed953e74909abff1c8e0e49e1d10dcac7c970461ec9481946b8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-22_native_control/result.json": "1881bca298c4d98f51743b9efb0383c91e8f1d28b5249baa4477ea84660fc99c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S.npz": "c7ba95bb2140112f0bd1927096304e7af1bb413b235fdaa14c18b2767c54c65e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_control/paths.npz": "ca583122605e0e9989750283e135ec6db02b70a04480cd13b3257c7efc2bfd77",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_control/result.json": "22c5ecf679bb94beeaaae57b2f503298ffed37eae92d267302ebdd81cfd7f285",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-sham_cell-22_matched-R.npz": "63cb72f3b5e11580c651e7e818c6bdf455b32dae0541874b3fa02d7eb51a8773",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_control/paths.npz": "c8b517d4f98f9778377fe96c13da61d991a1f4b70bdd4a94a73690e51639348a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_control/result.json": "c298deb7380c2d8e0b09eb8168d3e967a62b1d2203fc1a253162fb20f652e85e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-22_physics-sham_native.npz": "2687eac93bbc6e7b84526109262f2e2e54dbac2b0db2346b10974f7ac0c01549",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-sham_native_control/paths.npz": "76dc704b0998e437660f5c77955e06151b3a69e4f9b65e9a9ef0fee791ded69e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-sham_native_control/result.json": "df5bc4ff35a16f08a6b384037463014ada1429a610998d27342d8c3b3677d81c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R.npz": "694157235e8911f254cd00570be85c14a4f72e7623cc50f6c674603523920c53",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_control/paths.npz": "a2f71bde48845f68731dd8b918be14ad302895e3e9134919c44d466238d0af63",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_control/result.json": "d766b3500937596e4c54c88e90dc922c9ac780cf1181088777d6a0256604802c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native.npz": "73cdb358f18356685e649d9e5e7fb1d4548f247bded9226dc13eb8d062e606c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_control/paths.npz": "6dc923a57b69c9c63d7439fa2834b5320a911f8e05086d6c19752c1df123835a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_control/result.json": "8bf7d1fb9cf6641a15fc54a9301c95216b3c861d1b2807cbaf27da56e6e7e540",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S.npz": "3bad36593e51e73db852dd2d9b34d1fd27a3a25336ae8d29301088258f390f98",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_control/paths.npz": "ce71926cc268016ce8e1174c2c3df26d3fce1f27c5eb4717b5bb9c97dd00d6d7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_control/result.json": "32686b87d3eb073c9537b0db59360a459c29996dd43719f32a85d8fff48aaa72",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-redistributed-cell-23_native.npz": "1a80d9010341a49764ecc6d43144704e8b92cafac320d15f97d84b0621949d28",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-23_native_control/paths.npz": "5711fd9de7baa088f888bbb8dac3184ae093837eaca09dbe7e6a4f1be83c80a6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-23_native_control/result.json": "16b8d52e179d478e228b03f8368743965eba804a3e0d8f545fd7c4be6d6df374",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S.npz": "b245f62a478559a4ed286629f39c04c2fa3af6e9ce09f2c147ff713c8f61bbe5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_control/paths.npz": "d4f7fca84cdb5b896d2a5415f85975d93243870e5c17e8006649320c438d2c55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_control/result.json": "8116188f5e4306247347b95284f261a2e12b907a39dc8342d9c8393980e2c19f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-sham_cell-23_matched-R.npz": "f61136c1f998bd9d5a996683e25220f16f0adc4ce6a2444b75a2fd15b67fd4ef",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_control/paths.npz": "e51139a20376b694da0435c71442c2361a10b442e3e4753a23805021898c2a7b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_control/result.json": "5e34dc57ff9899ae657f113bbba0daff38a83870e0f8560b0cbf4ed24eccd1cd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-23_physics-sham_native.npz": "38144bae80a48d20e9558aac74ae92ee6bf7c88b11e4026d14d98114203c8244",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-sham_native_control/paths.npz": "6ad8a1c67e49654ee7a26c624ea103aefe351d25643ddd7328f01baecac7492c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-sham_native_control/result.json": "6e1ae9a8ce88534c34441ca10ea10fb22aa3f641b2e12822ef038d254ffa543f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R.npz": "58072cfce178493d40fd0fb89a5d7e08485786e9d5d84ad5df396447583b655b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_control/paths.npz": "b705fa62163de78b2a956d2ee8e89922a86b06e7238c8225f4b6df9646cd10e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_control/result.json": "4ca2de138fd19e163a747f7fc363717500f7e19cfd35efb396467ed2c281773e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native.npz": "4ceabd440d101964c4268479538557fe1820fb5f634c6513e40f3b6a941e6570",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_control/paths.npz": "da74bb932b2d604be78719f755e18a91a081467f8d81993edaa8b17113d1ea54",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_control/result.json": "9a8b4f5840ad47ecc4981511116529b931d24c76e5a3c257281bd456b9096082",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-sham_native.npz": "b148069d8792259fddffe96e6f117249224eb24f9c0ac3ddfe723d34b0e67461",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_native_control/paths.npz": "ad8fd2d1f4878b305a501c52719b09455c8205bc30ccebb59592d93775ac754e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_native_control/result.json": "ea8488bfbf3fc3f7b2e8906da3c59518b572dab386a4b3b499f078af6051fc1c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S.npz": "b9ee789da799ee03b9bf7f3888673db59623fde67922e191d9daf6d5bd554148",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_control/paths.npz": "441c743ac53dde2f0f413098044edb50a96ea8594898f1d02ba9e005334489ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_control/result.json": "1bee78b7a89ec44cff3bf8d8d11dd8cfdf2cf491e1e37fcf8142c191e277ef04",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-redistributed-cell-19_native.npz": "ea2c61879e790d2e79d7c3bc26e1d9ce5e7636531e7ce972aa22fd6db215e6af",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-19_native_control/paths.npz": "a7df6821cdb3bc9fd116ce66060b81c1ac88195b19bdebaa7d99c0babc8b0e83",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-19_native_control/result.json": "a0ffcaabe3ec40081b1046914a167f12840f2dc3421b51643405218fc697f3aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S.npz": "ca77a27d8b3ef1f254c1db778396ed7433bce7ba58290abc2e83dee6ecbc43ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_control/paths.npz": "ff02a8de4d6dd318a2c03eba1979ff87c71ea32339247350c6a4d21b201c8759",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_control/result.json": "2d521627369182450516f8e17bde7f62f27ff9b4ab70a703bc9eb0c77a4a7379",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-sham_cell-19_matched-R.npz": "87cea48fa6fc468ea46fea6c7db16dc1d4a17c2d033cd95ca9bbce0611d71b01",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_control/paths.npz": "2db6c137df6fe9ff66a0794f6e19aa616e09dfe8b631efb20fb5a410a70fb09b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_control/result.json": "56680ae44c590f59cbec919da3ea9e02d5027fc4add07940c8629b921833316a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-19_physics-sham_native.npz": "c35ded5169d478b9863091606b0545ed2f2712e824ef92006604dfd5b6b06ca5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-sham_native_control/paths.npz": "430c859037053f2210cd6ecdb19fd3eda49d8f4a04f42f00d95a61a3a4f5fd27",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-sham_native_control/result.json": "21e918d5c2da0faaec0922c98971be95ba8944d60cf0bf24ffe76b6537fa5287",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R.npz": "9af36bf1594a0e47e33cb20e455cf2550a1555f4736c2d599644721062b25b1e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_control/paths.npz": "f412b7d11030458f098af49ac32eba59f7b6bf25e671cd554c547e6de90e63b8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_control/result.json": "986decd8cf39efff1cca646f2aa3ce3cc16622b9f91d078b3292ad8ab2aff4b0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native.npz": "5fc314347524fb427337ac46da19578d71407cd44f9257d28cf41a211db43532",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_control/paths.npz": "173e60bcd41f78105dfbfe4d3d84f2d67d1373d59c2075b824b6077a606d00ae",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_control/result.json": "e5d2858ce192b9719b47ecba79a87fd0bdbb8a1e39b599a6cb92f2936f4bace9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S.npz": "39839b88cb8d5c1606d6c174f0ccf54b2bc90b3e3ed43a7c9bcbac2222bc0674",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_control/paths.npz": "092b20c73d6bc18c82767c35dbffd15dbd0abbae95b709dff8f371b46e6fbb80",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_control/result.json": "024fe2e000b344645255020f0b69fd5c389edb587321b9ceb2a018f715011c3b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-redistributed-cell-20_native.npz": "b10dd4644d11934dd91016a54a40622abe2b4eb4ce515f7ef5f1fd670bb0a9ac",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-20_native_control/paths.npz": "19e0a1ef6a2b70040707c4bc75691de7a6bc7e6da43af10a51928875370dc445",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-20_native_control/result.json": "5c5746f7f35348c5b8ab8382840efb042215bf5ef03ad163f1c10bdd72a77787",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S.npz": "1f675b91f4435d4f4f339259d75f69d31519df2910149b44cbbe6360509615be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_control/paths.npz": "395f5593d694b19f4b5f854b1f1f3606e35fa1d02cca2416d1c8dd4e6b6d40e6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_control/result.json": "db4bdc0b40b49981fe8de972ba9c237d9840c5af3abb950b8ca3cf29ae0e33d0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-sham_cell-20_matched-R.npz": "92c09ef3e50ce1595d82c362b30936b1814b7c79e6536f8352b9836d5b6e396d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_control/paths.npz": "0f2c8f8b8860a54db1c472f8462203822d9bbfa0038e3e3e531108ea4b9ba843",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_control/result.json": "897bdde86ecfacfc6e7d981df7327abfd7b4c31bc072fbf16ccb8903b1a2053d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-20_physics-sham_native.npz": "ebe2c81d7a40e0ed28d951c07f42cd330ea7c18195100edd1202bd9f16e487a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-sham_native_control/paths.npz": "68deb1bc8215beef636016b6cc45e46376d4190571f0445a724fc57c54413cc7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-sham_native_control/result.json": "b0e268984ee9696e25cad46370224a2da34000866a219de2e7a9e2eb2d1c5428",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R.npz": "7c64015434267669e71a42dff40e6f0023be299b5a010e9161197cac3009be53",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_control/paths.npz": "7d15930212c09104a3f610a013ac3d9625f373cea813cf48889778bc8eb1779a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_control/result.json": "0f62de255dc2d5a97c5e479e124bd3b82be764ff5831ffe1ff50d15271f143ab",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native.npz": "1f8d3ab2fe3722d6a92cf3898e396a8c8e9eeb20f9a60524602556e032a12523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_control/paths.npz": "694d72abe6c25ff45ca95aeac325b10e351979f13cef9ff6f0379a2722db489c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_control/result.json": "d8c06e6a020bd62f48e07821f5decf356fd50b3dacec93e28f53f6f352cc212e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-sham_native.npz": "e54319ae840ecd550e5399a104beb3fbe08c0d0ffeeefd36074f8da59124b56b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_native_control/paths.npz": "3e0d136537a3d4dac483ae9871dffb161011ed30ab6ae31e499db67dcdbd2d44",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_native_control/result.json": "33f327315b3ef7b5c98586ea15cb8bb6e892d0bde99e3dc1cb13a9a049194f7f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S.npz": "78b323e3f4b9abc06f10384f005b47e4f98e487b7f58453be74ab085b7a7d7ce",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_control/paths.npz": "8e3d5e4af518bfa7950f7d25c3cf0b7ae21f0fd2584b2c43ed38006c8240a19a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_control/result.json": "899b590b0529f39080f500344b71d13291fdd51af01a0dff53727e6af2c80025",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-redistributed-cell-29_native.npz": "0208048183ba2bf44bdc36f905de77499461e07c04f250a63ec2e9b824c32f40",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-29_native_control/paths.npz": "e75e36923aa0eba8f76bd338c5185599d3b72eb87c9c2773a058883c5b5b2863",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-29_native_control/result.json": "0efce1e1fe305c50c6012e86d3f1115b77efa426f7d53191d6713df9b3ff0154",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S.npz": "cf65e3e2b9fc602bde17d8d7d4994eb3002dea0718b944582eede68e8a658343",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_control/paths.npz": "cc6c2bcf3cb1a812d6b58c70d3f2d7b5254544ada8b3885f49d904039635c013",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_control/result.json": "b6bbbd64c72fdfc70d8027d633a923769f0948ccf84d92e467834f8a9b9bdcab",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-sham_cell-29_matched-R.npz": "688c8357408f8396c887921c84e8198602efacf71ddebebe1bccecf8485fc6d4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_control/paths.npz": "cb5a476e8f7aaa73a3c1cda6c972d0b3feca710ec3d671cfa93e528975ae6b1c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_control/result.json": "4a6fa0d3737f5aeb996791f6ffe9355eb4e5aee19c7c008c75e3d7a945fc605f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-29_physics-sham_native.npz": "de61be82c86fb50e11ac62e8cbad5bd0e4308052969712841effdfd646e8e8cb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-sham_native_control/paths.npz": "0a3c6337b52cbace8ca70131e1fd8ed663f4e10fca82d1290d4bd4234c21dd13",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-sham_native_control/result.json": "1bb06b000db465480f33d34a7fa018f7fbbf9b13f4fb7d6f27c592a2e79313b3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R.npz": "417bb9b1a5ee387e10fa927566fee851a1a98f32795b13c2dc092177a60bfa7a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_control/paths.npz": "e9dfec50bbe310c5ae20601d8e677f79028d7b6941eb76b3caac0729bd0df649",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_control/result.json": "bd3e9f11e7d446ea5071fb737398882b1022dd706f5f300b0995319b1a03e4cc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native.npz": "5b119063a550097337f23361835ee8c8756fdf3837ad5c3973b942eac306dfa1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_control/paths.npz": "e16cd80e5c3e5e20278934ffaae3c978d21c9d655dae2edfd475c346855fbbc9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_control/result.json": "ca7fa64d7bfba96b8d342bf669c1e5e5ff3231eeca2915008afd62d0600c12d0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S.npz": "26b8e07664fd916b1b40d861b93ad3061c28c62e0c8b5ee06f80d68df59b9f71",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_control/paths.npz": "86b0e1d5dc62f9a6f644edf3406d8fcaf634b3dea6b4ae4bdc4a823085695e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_control/result.json": "74b5ffa3d1fd465bb0c97ff758da9f45b80200cd6e318ec802f3e518c214a52a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-redistributed-cell-30_native.npz": "e251428d7ca814b9656beb28f49ecc6994b486dca4ae261205a169331f11ad22",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-30_native_control/paths.npz": "831c97db973cb91a1246aea6a5197856ed194988a4a91c88d4928b2373018986",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-30_native_control/result.json": "832d6b152599ea1cc80b366afe7a91d29bc80ee5984d40ae71b7bcfd6c0c982d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S.npz": "04b48c9f598c9ee1e8e92e0791551f7a7b2a77e5ec8c5f47b9bf20a0074c4889",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_control/paths.npz": "434228ee734c3b79c93fa77c0c5a5253241340de713d19fba3215ded1fcfa8f5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_control/result.json": "b019dbc36189f84695ae20d2bebcebc45dfa50c453099b6c4a18664a44cd685b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-sham_cell-30_matched-R.npz": "1ab623c6ee63460d26182c1109e17fa18fee2a12638c7aa2ea5349e53e9dfc1d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_control/paths.npz": "0d2986ef15afa2bc1e72010e435ad424257c9a4af9c0cc0d532028de44a82e2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_control/result.json": "aabe5cbcc8630a3f1fa8b7912223288b0c93301c6c258ffcebfcc556fb42055a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-30_physics-sham_native.npz": "1c66c607c3da226af73aee01a9ce80bc4428ee4aee52af59c84fe252871a3757",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-sham_native_control/paths.npz": "ec47cde64904cc9991acc24cc1bcfef07e1ab69544b5bd2db7a704530e7a33d1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-sham_native_control/result.json": "b47f31443ed542aee30c3f97db45cf7b3492f7e039a4cf5be033e37bc108f127",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R.npz": "38123aee32ee28bffdbb28b9af8d85311286ea6a0b6cfcdcdf077a0799b79679",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_control/paths.npz": "af3ae00c5ab59ba8e17a6a22ddd1936d80fc171f0ec2a1b9460f1c1ebc154f76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_control/result.json": "c653516e65d96bdf0b9be6ad5ea9a16757e941437960d4c6db9aeea837f93b91",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/contexts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native.npz": "3d4f6cbd7f64042e4e3c125a7e7ef9c5e895e9c13522b422ce9287693bdbe590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_control/paths.npz": "a4c7a6ac0ed39064808c9fc19235c98c7bae2bdc9dd798e670b7094a16c71868",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/references/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_control/result.json": "bb082de6c2434735fa0166b86e08fcb277a8906f3286ad25234d3db5f76e8ec2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-sham_native_wait-60.npz": "e4f36efadd12229fae4709ef35ed8df1b22c9390eaf35b0ed8fb993596241177",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60.npz": "165791d6a719a7579d2596d61fb814cc3e4ceadfaa7b0f16317649a35ac44ea0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60.npz": "458c530883adfdd8a28c604ccb256d088b35ecc3fe12e4b3970bdfcee7b45375",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60.npz": "ccf78e71a1f0e8abd174a9de47c48ddb31d23f2236cf1e4094e0ee104e27861a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60.npz": "94f3675d8dce17dcdce6f8bdb5ebd27709e1e25ec66af22f0c6b416ef50f6db9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60.npz": "1c4705b58e60057bf6d3990e1203dd5d89224a573df7373ff65a89027e0044d6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60.npz": "c3358641fff9dca773aa573931f5180aed4e269e5536bb651ca23d9e91e7811c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60.npz": "6d1043b24f14cece5d670ee18e14158a95e9d64c2b9811a17d69dce5050e937e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60.npz": "da244bb6304710874c4670037b9aadb22a2fcda387442fdc2f3c09fdde0cf4e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60.npz": "57e225d8e64caf187ac05a8843f365f1be3d26296eed8aac4b61ecd47d74bde3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60.npz": "7380a3ad377f2cd1745c08c5601935b29ff82562f155ee9c516c9af87d4a4919",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60.npz": "6af9beeac990f0bb7612338401da674d2924c80c65a164bcd31a90954ee64b94",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60.npz": "b02367abf40e6f14c0d6f9e3ec5c13b2c2217280eedea9498fece55e5b7acdb1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60.npz": "9e81c11c50d967f6b68dbaf98acc0f448e114e0a623b60199efd95f3d9599b89",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60.npz": "d49d134e0976e75d7914eec0a3ae72d22da744317303e1d147b235bede440843",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-sham_native_wait-60.npz": "d28327fe660661a658600b0410f505b5c237c44d6640a52dabbf2ca5d2f1c9f4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60.npz": "b2693b654f6731e92a6dc24149275436c1448983e59954844c68de397961ae37",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60.npz": "58b42a98149a8757f78d86df1a72f29ad641065192e4d512d63465670a603aeb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60.npz": "d6bafe199b8022868fb1d9d1139cfae724dd9838a1431042104eebfa24cf9a4c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60.npz": "a0e056560459b2c84693e8fb9406ce1b5a355d5ddb3d27c38a612539a7036430",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60.npz": "6b3fbbd2aed78fe8a6eadf2e834d84edf8ba3b1f14896976f9b1990ad07e93be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60.npz": "256c6d273990441802fa497f89741890c64dad24705a21c3a13ea117b026d0de",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60.npz": "5e0dfaa37521ed1aeb0a83c780ee17c9787214f700ec30b2cf7292e245831b58",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60.npz": "ac71c78654b486ecbbb6d5b474c808ad0db3ffc6c1d5ccd0093973657a6db5b9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60.npz": "d2996956a389a54719e5ccad31a77941abc508f0ddcb4c403acc45fb7a77d176",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60.npz": "bb201eb76df7f3d378534501418185272859336b6ea4a08af739d6d77f1915dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60.npz": "8e71e5fd771b4d23e9735feb16ed6f83990b5e093d721b3c4db1a630f6968e2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60.npz": "3d4f36153306097f39ef42a7a4db691d3bc1dc4545144326f9f4cba2db8df634",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60.npz": "0c2f9d9f75cba5047c75faa4869c0bf50cc281a21d2dfc25524cd4f162e1ed0c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60.npz": "890f818d160863b78b1d7d9180f2d060573094f41665b3928b673ca37dca6bec",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-sham_native_wait-60.npz": "eb1a17b1e7c4ac35bf01b6ce4599aa0058dcb65ab52fdc56b6a452b4b2d2dafc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60.npz": "e1f8e19952102fc9694515562a5a75237c2c28da73c83e2621dd6f0ec626f892",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60.npz": "698d17183c7641bb6b3a618785a580d2b3867fcf9067bedc2390d3f829d6761d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60.npz": "96f5fa6ec7606f14fa4a09ec1f03b65b896d4a3b92d4168e9dec074321cf8568",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60.npz": "62d94c05a287352c7cea72eb006d8de9ad03ddd8e16daae7eef462c9bb83ec24",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60.npz": "e94e54b03d72adf096f373795ad672d5c1f1f2bfa43652b898eaab506626d5a9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60.npz": "26358b42cdfd668064d6320a8b1983edf076e436537266b2184b1e3732b609d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60.npz": "499ba90b3c1d1c0c56505b69d3a33857e6d72a6a8c710cca186957d9614318e3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60.npz": "622d033bf292fbda37ed39cc44ffb5afad313fdd03a385f36235e7e54ebdb82a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60.npz": "c9b8eab71fa71a69f77e7e3763090f2560a4f8fac65ab0c6d4f1a950bbc035ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60.npz": "0af0b07e7dc6e64385d3428bf62baebc95a19f58f496f9c17946a53e2319175a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60.npz": "4ed92096fa8bec9ea7eaaff6b343841e617c0f199ec89a3e83ddaaf0ca2a2891",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60.npz": "0f5712ec34e66ff1b6a0fa480602d5ddaff100247f6e208c7010a9800e0beab5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60.npz": "497b829fd84f50512dd71f3101bd5cac6ddf76f2c68bdee3bf58d97eea7792f2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/contexts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60.npz": "f22d31a5a7898f3ef58c7f4dc1e741f7b5627042c276da94bed0ef6f7b3c0ead",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_native_wait-60_control.npz": "c0d7b7754f16892502ddfa206d652feabceaec9fdef5765c802998b255d9e1a3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_native_wait-60_cell-22_fractional.npz": "d8345638398f6751c929c01f8830053feac13b824bef231a70209a6c1e8ed0b3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_native_wait-60_cell-22_amount.npz": "d8345638398f6751c929c01f8830053feac13b824bef231a70209a6c1e8ed0b3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_native_wait-60_cell-23_fractional.npz": "44df05bcbc907354e3c6c5261901561e516938ccd099897c55858b6130b626f9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_native_wait-60_cell-23_amount.npz": "44df05bcbc907354e3c6c5261901561e516938ccd099897c55858b6130b626f9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_control.npz": "649e06d4f55b9ca06faec64d6a492b8532ba6f31b3c1e58f07f6cb00aa5ab872",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_cell-22_fractional.npz": "ba41dd94b31130052caeb2a9d1fb1b389804a8d36ea30a9fdc65f0e97a2b3eea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_wait-60_cell-22_amount.npz": "4a859ee947a151b59977337d3b19af4e22e17ebf1217b234154e8a9824fe6850",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_control.npz": "536f295e20c02508ee808994d639e89dfb9b2e87a823f652323c2f8d9fee6210",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_cell-22_fractional.npz": "370685b76141f66f91c7222c98ab0e61c438b02f82b7107a38eeebb96ff69dd3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_native_wait-60_cell-22_amount.npz": "370685b76141f66f91c7222c98ab0e61c438b02f82b7107a38eeebb96ff69dd3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_control.npz": "a62f6d231becc3835c11da7e331a20cff5d0aa21437d33625d20a6eefd6d7d23",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_cell-22_fractional.npz": "d70b23d50252a784a8490f1a12e1be55076f3478433b81ecd053765f243e759f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_wait-60_cell-22_amount.npz": "4ce313b238201accfcc19e7092155442acd0bf2873dd74cca116ddda2e4f53c9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_control.npz": "07a7f600a1e93ccbf3d4a311bade7d0dcee8ba5b5b41380aafb6c76665ac805b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_cell-22_fractional.npz": "6850325af9de44492a9311aeaff336f59c0650cf326921ddffcc2d27926a9889",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-22_matched-R_wait-60_cell-22_amount.npz": "6850325af9de44492a9311aeaff336f59c0650cf326921ddffcc2d27926a9889",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_control.npz": "48c64b1be7dd53062122643679d26b0a8981ef349358b095f6a153587f6d0dec",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_cell-22_fractional.npz": "085083abbb306d56fa3a7a469711e56b50e3cf6d8026f9d91774e65a10ed251a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-sham_native_wait-60_cell-22_amount.npz": "dfc6b59c913c0f41a8794b82d8008c41b5a7df64001f6aa0bf4e7b802b5e9eca",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_control.npz": "d41fa1775b1f3a09d40787633e6961b27a1dee3f6a1c2283ce5304cce5189c80",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_cell-22_fractional.npz": "e86d89b0b08f5055fd8db973c344547291707fa22007d4b67e9cf5ab0a0aa4aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_wait-60_cell-22_amount.npz": "e86d89b0b08f5055fd8db973c344547291707fa22007d4b67e9cf5ab0a0aa4aa",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_control.npz": "0c55ca8c06933f687adeabbc3acbb8a4a062fc47d7090a15d23a03c484fabef2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_cell-22_fractional.npz": "68acf24d3aa55ff27a6df7d5e0bc9e3d0996f5164e5b18a5dcc91a3651420542",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_wait-60_cell-22_amount.npz": "2af152acfe5ce7b7df060dd418d436d73ca27697f79003d96301d6167ddc930b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_control.npz": "b7fa2d3b3821260e68a23cbbc4c960026b813fa6da98df550906bce536ef5aaf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_cell-23_fractional.npz": "8fb2b191bcae28e4a0d8a23f75f7d78fc25c9fb938fb1ba209ee94ccb59dd01e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_wait-60_cell-23_amount.npz": "05e4940a1fd6e50eaf89510815239c7541acc62d9bc1235b5c0f0006c48dc8c9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_control.npz": "68a47ffcbc0b575bd2fd77f7fd297424333730c14d9f883e9fb4567ce90c7440",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_cell-23_fractional.npz": "650d3e40ceab456c2735b3720c19e5518427a5cbfa12858f0f6d630d9100cb3e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_native_wait-60_cell-23_amount.npz": "650d3e40ceab456c2735b3720c19e5518427a5cbfa12858f0f6d630d9100cb3e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_control.npz": "23a8ae9cd2d1fd8a22af8051e7a6f454d374b4f09468919b7d47ac08a3b5cddd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_cell-23_fractional.npz": "ff0bc5ee665e9b5c93d8a49aeef242d403e12cd12137d1afa1573286f1728ae1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_wait-60_cell-23_amount.npz": "dd422f2b145b3671eec388c13a14fc1d67c90ab9ff52f68c2b1c24d59cf4b565",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_control.npz": "66a8cc1ede84991ab0c884ee5bad19b1d843a2c9f0616e83e60248f3a86de142",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_cell-23_fractional.npz": "08f2f77d104cfef6b0d096a1af445d001fe3c3dd29b2d79378cbfdf38279f646",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-sham_cell-23_matched-R_wait-60_cell-23_amount.npz": "08f2f77d104cfef6b0d096a1af445d001fe3c3dd29b2d79378cbfdf38279f646",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_control.npz": "6b1b552620e68d2def7f5cd0253cba3b15c26ee03f391d43cfc5d24053aaaea6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_cell-23_fractional.npz": "48a980e2408733f6d0b2da3b888138ec779819ff8043860194771e1a88a1339c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-sham_native_wait-60_cell-23_amount.npz": "e5856337ad0a15f500da62b5f8c2c437b83392b4332e5181e974c59997c70e56",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_control.npz": "94094a7dbec1090aee9a3ce7d73ffb2fbe95fae6da6a094b06967994376ee527",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_cell-23_fractional.npz": "fdfd8a0acd8ed0d710d60fee00e388cb44c677441c53ef380dff2953dca89454",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_wait-60_cell-23_amount.npz": "fdfd8a0acd8ed0d710d60fee00e388cb44c677441c53ef380dff2953dca89454",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_control.npz": "fd6ac722ff755d093de0988e7548402e5eaf9561cf0bcc31c78e607ddc9ec69d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_cell-23_fractional.npz": "0a18da37e0bce9823c0090416320c4df521ea2c111457ab366675d080047ec8f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_wait-60_cell-23_amount.npz": "60eefe05eb43b350e0f6f5ba630525b675286c5d88aead2073584b4dfe40a465",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_native_wait-60_control.npz": "780443a283684d5d24fc5c69d6a2d07c8b9085944beb6c9aba9b2c3b34bae338",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_native_wait-60_cell-19_fractional.npz": "6e54b850b17b8c60de1fd18deae78090668cfbe167054fa3fca1f62229445d06",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_native_wait-60_cell-19_amount.npz": "403c0fde2cd95c7da6ed5f4bcd3165f7ee9e93d110bb131edfbfed562111cf8e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_native_wait-60_cell-20_fractional.npz": "c4e564a2ede2a403ef2b4b39909dc6496a2534ecb3b7e9d18f8c64647f1d6f84",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_native_wait-60_cell-20_amount.npz": "648a0450395c240d0c0e64f6a17b9f20d1c8c55a76821c6a0906c400fcc5af88",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_control.npz": "61004700dca15519f74fe5458689cc4a2f9b8f31127ffaa30e153462fcb123cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_cell-19_fractional.npz": "2833ca571c86c1663bb6925b59730ed7fd2dcefbbac9e0c4ef599b61b4670d4a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_wait-60_cell-19_amount.npz": "2833ca571c86c1663bb6925b59730ed7fd2dcefbbac9e0c4ef599b61b4670d4a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_control.npz": "4980d44bc09adc5b26e2cbf45d138217ef09a5666bf4a914913c750ed8b11b82",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_cell-19_fractional.npz": "be8f1e575be9ca68f64b2a1e414170c406a718cc259243caa7473fabf765f6c8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_native_wait-60_cell-19_amount.npz": "cf564bc2f44ec6d7361106d3c8f3a76bfa273412072d8becc15e3eb44044acc6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_control.npz": "230b472f5a004d7658e7e597f08e4e2ad98cea578a4e1197cc8047052a37e949",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_cell-19_fractional.npz": "9cd640c03c9f401ced765f1edbded3450bbeb1e4fe851cfee29f0095a7645822",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_wait-60_cell-19_amount.npz": "9cd640c03c9f401ced765f1edbded3450bbeb1e4fe851cfee29f0095a7645822",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_control.npz": "a98684cc23a6612ac8be9a15341fa7baf52f01ec0ab0e6828e18c9e35b50eed8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_cell-19_fractional.npz": "7a7d80a6dcc863549ed7bafa47be52d1613fc6de8825bbec9596a0738ca26274",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-19_matched-R_wait-60_cell-19_amount.npz": "f8137578d958b41661e324a1d571e6a231aef2042666de13e8924e0bbc1b9285",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_control.npz": "ef84adeb2ccfedce0e5fd2846c51d26c80450f0a335d48cf585a2ef8ac191be2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_cell-19_fractional.npz": "8cc95238db3cac0c6d96dbbda4f97da58fb506089b063cbb277a1f3c22d4c137",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-sham_native_wait-60_cell-19_amount.npz": "8cc95238db3cac0c6d96dbbda4f97da58fb506089b063cbb277a1f3c22d4c137",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_control.npz": "fcef44d7e3421bf83fb2d9002a0fa8ca316fa6226b7c31ecb18af5909719d502",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_cell-19_fractional.npz": "78c36597b4ee2e22b570c7ba3f4715ab71ebb831c6e8a9c39597e6c21bfab742",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_wait-60_cell-19_amount.npz": "5a1358a04b659f8735fe7fb28fe4bcfbfa4f38bc4170f5d073b9cfd3bbc2e4d7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_control.npz": "cb86b12fb0732df6fd5b371e30f6f474596cdf9ffb71dedc9fb0728bb85b77da",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_cell-19_fractional.npz": "0251316d88293b26eb81adba220fc7bf1bfff0486bc0e4949b889c79a3458879",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_wait-60_cell-19_amount.npz": "0251316d88293b26eb81adba220fc7bf1bfff0486bc0e4949b889c79a3458879",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_control.npz": "4186c9aec5f1ecc8399fd79dec24002cf8fd2110c69d543876c57ba4389a8f0a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_cell-20_fractional.npz": "8a0042632d8f1271e778fc6d2f87a28da0aaec5e91527980e2ebe12fe27471c5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_wait-60_cell-20_amount.npz": "8a0042632d8f1271e778fc6d2f87a28da0aaec5e91527980e2ebe12fe27471c5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_control.npz": "fce26ce51a8be9d8da857c4e6b302bed35dc81c9693fd8a88344b02f3f2f3c89",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_cell-20_fractional.npz": "c90912d760837afb9672721ec80665df73148ab3543e8c47f6c6f5645b717df2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_native_wait-60_cell-20_amount.npz": "e83a2101cc5fbe16df871e920754ffb91097540bc65ea3e41b1cb43bbde83877",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_control.npz": "0026dc70877eca703e20ec45d2ad29832666b37ba8cd9ba9b7bd3c7573e1408c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_cell-20_fractional.npz": "490c513b0223d2c7e345d5451ab0023f04cae3269b404b93ebb616b00f8581a6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_wait-60_cell-20_amount.npz": "490c513b0223d2c7e345d5451ab0023f04cae3269b404b93ebb616b00f8581a6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_control.npz": "9f245009478211c3f323df51dbca718f589215e0b0f2a3e79f5b5d6c184cb467",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_cell-20_fractional.npz": "9034f36c2ced003e4b9d99bdfffa06a1bf6df3bef002f189d4d6e3d9fce0d89d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-sham_cell-20_matched-R_wait-60_cell-20_amount.npz": "3f8d9fa1db2b6e9596e90024d09846d19c7ce40575d1f6f4a3c50ec1ebcddcb7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_control.npz": "8d8a02e4cbfa84178a56c5c2f4c75ab4037e3f7b643823844b3d341a9af5a6db",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_cell-20_fractional.npz": "d89ce1988f1fe4e99b865fc30dd19891f42a4b72bc82a9b1c4a7ce13248a45b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-sham_native_wait-60_cell-20_amount.npz": "d89ce1988f1fe4e99b865fc30dd19891f42a4b72bc82a9b1c4a7ce13248a45b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_control.npz": "9295e6bc59beae9c2eb14b76be4cee15bb8dec04fd4abfca59c8df1a7ac7e74a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_cell-20_fractional.npz": "07469818c391e390fad405297fa00b28523981ab7d21f53b7cfa25032c49e043",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_wait-60_cell-20_amount.npz": "c8e7c2c069e3974b356f125af2734e64afd135203128924c8d72c46a964e7f80",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_control.npz": "ba2098cf562e583472e1268380b5250037c6acebb0ea1629f8c879eb240b3fe6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_cell-20_fractional.npz": "b4c4fd2a2f5098258377045e31909f03f6bcf05cae4954b75c7d534efe28281d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_wait-60_cell-20_amount.npz": "b4c4fd2a2f5098258377045e31909f03f6bcf05cae4954b75c7d534efe28281d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_native_wait-60_control.npz": "300b21a6bb5d56fe1c317b70e7ba7557b162a874a18d00c865afb3f5846c15f9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_native_wait-60_cell-29_fractional.npz": "d621325a95e63c77dd76f95df5b6a282e2385121250e647170cd8161f435a94f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_native_wait-60_cell-29_amount.npz": "950d40a9314a4a67e6cfb53721a1ef3400ca018019abf1501a11fe1f9918b1c6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_native_wait-60_cell-30_fractional.npz": "ea14a054c88f8241b405a36835f6413fc56188383528eff27e1b92e872e6fab5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_native_wait-60_cell-30_amount.npz": "525d830a6e23afa21d775f640ba136d1f71369495d1bc5e4f9eab2c4775b6c32",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_control.npz": "a2ee80503f7f3a2fb8bbd16238c57cfdb59658abfeb9d51575e4c6594b7639b1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_cell-29_fractional.npz": "841dc81101631e1039abda796741999dd0437b3745fd8223d61f5f1f76d8c0b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_wait-60_cell-29_amount.npz": "841dc81101631e1039abda796741999dd0437b3745fd8223d61f5f1f76d8c0b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_control.npz": "250520e140f5780d19f386427ab9b307373ab0e25f859609f214ce6dfc70fb47",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_cell-29_fractional.npz": "2ca5367eb87626d8c559350994b77121cb4360cf4a4366a6701f22d4db03f2f7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_native_wait-60_cell-29_amount.npz": "33e8d7ec2af96cd9545aed61d4a9baaffadee043c11ffc2ef4d4b4142caa7da5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_control.npz": "73302bcc30eb3c2b139818c4dad916693078f85485700cac68b98d318c675b24",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_cell-29_fractional.npz": "e166f677fca249b16df3ed40697fbcd21aa277bbfe3a891072758fcb8f8911fd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_wait-60_cell-29_amount.npz": "e166f677fca249b16df3ed40697fbcd21aa277bbfe3a891072758fcb8f8911fd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_control.npz": "fee27facd1b9bf3d0b2d10cbce8057ad6aa5d6ceb647588a14b19cd0897ca8a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_cell-29_fractional.npz": "99b4172b07c146c569356cb2cedfe2f9fa8fa5edf0bc799cae767e245bb3d392",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-29_matched-R_wait-60_cell-29_amount.npz": "9fd6e7460228b8b5e8b54c98e4fc2806743828889dd75359cd5faa614010b66f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_control.npz": "837926b31606a7011d8c775326f4dcf7014095f7066b554adbb50f167a0d527c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_cell-29_fractional.npz": "0fa11d5c4cfb0c8c1aeda8e34920c1368ed61ac72f365d1e07f99f6209307eda",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-sham_native_wait-60_cell-29_amount.npz": "0fa11d5c4cfb0c8c1aeda8e34920c1368ed61ac72f365d1e07f99f6209307eda",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_control.npz": "83f39d4fb2a8ed63c501f3809869213eb0c5ca8475d2cbffa0efd872a1588032",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_cell-29_fractional.npz": "9e5f0486b38c34c0447c0f067d072a3a4fe551d0f988df1c28089df36743ea02",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_wait-60_cell-29_amount.npz": "38b680360da36bf9581fa1423b20e0e98794fed157455bbbb9b285d1f144cc68",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_control.npz": "9ddead6b1b9df7d110f13222972983069729b0ad09019ac5ad56871dfdada593",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_cell-29_fractional.npz": "14dc7bcbccf9740703ae6a704941d2592da8e11005519ff0614445cb7e391804",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_wait-60_cell-29_amount.npz": "14dc7bcbccf9740703ae6a704941d2592da8e11005519ff0614445cb7e391804",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_control.npz": "66a1cf98bd758b93a2dd7545e1c8aaf30b91196b434e1e6dd1d9399ce5dfc5e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_cell-30_fractional.npz": "3d4304e0965698682baf326f1d0c7d77f6e123489b2743d90854b5e2ec3eb0fb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_wait-60_cell-30_amount.npz": "3d4304e0965698682baf326f1d0c7d77f6e123489b2743d90854b5e2ec3eb0fb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_control.npz": "57c0e1a5421ce20d1fe1f727224a716577a519f9544b0b5f125ce4170547488d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_cell-30_fractional.npz": "773f141cd0562573da0d710ba79dbb609fc6bedc40f83116633862b3af3f67be",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_native_wait-60_cell-30_amount.npz": "dccdf4e61ca825901a482fdca556137ec0262357906793794dc0e5fe3dc14db5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_control.npz": "cc0d91a71111c83147ce71436b4263c878bb0e00e6c7e5778173c4ab5944a94a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_cell-30_fractional.npz": "a8c1efc5c0544c21527713b4f415a1c3630cc6d15f913434ba2a70f22913c609",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_wait-60_cell-30_amount.npz": "a8c1efc5c0544c21527713b4f415a1c3630cc6d15f913434ba2a70f22913c609",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_control.npz": "8aa924dd58295da19e01816dfe9c4bf54a14c9d0100e277530d59f2355f8f0e8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_cell-30_fractional.npz": "428c5faa04ce699761dd927a0f4e31671e3021853cf6ef6c1f94b4bbe21b8c68",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-sham_cell-30_matched-R_wait-60_cell-30_amount.npz": "8c08e59afb296952f027b60ef37104761f2ba5e116ae255547a292f6a9745f51",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_control.npz": "47372c79e9f5e782290eef4530070a4ecd68a3ec2a9ec31c82a5af1350d26305",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_cell-30_fractional.npz": "fe13f7c7a120c02042330f1a93d09e99739d5787f573c1d4adab1d6c09d3dc38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-sham_native_wait-60_cell-30_amount.npz": "fe13f7c7a120c02042330f1a93d09e99739d5787f573c1d4adab1d6c09d3dc38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_control.npz": "52acfa498b133ee140b9e42d89b73599b2ea7a98cfe581de998e6adac0832324",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_cell-30_fractional.npz": "8d83e70a3250f3bd067be44d1bd538f86aec1a155e0cccfe1dac632bc7d89eb0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_wait-60_cell-30_amount.npz": "97774ba92c8486535f9dc2276a0a2916686e033fbdf3a1a4d2f27968b6d6d3f9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_control.npz": "b41db3f6243157629bd261acb18e1f8159773797bce92271ed9ea0286f6eb892",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_cell-30_fractional.npz": "b7efa174c7be34b898b2a75569533509d95480d13ed28c5c7f3abaf974f44a6f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/starts/seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_wait-60_cell-30_amount.npz": "b7efa174c7be34b898b2a75569533509d95480d13ed28c5c7f3abaf974f44a6f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_recipient_delayed_response.md": "4a0f591c105ed10d378527dc9f1fb05a4d3a59f38bd8420722b4b83404e4e7e1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/protocol.json": "93091c6fe2a4c13975c592a82a4fefef4d2ef5b2a7a9e8a5df568d5c40e8a6c6"
+  },
+  "script_sha256": "046d2d81ac15bdc51e69ebc4e33a4a99a5003824fc8b57f600f70f2141df5fb4",
+  "scope": "Actual unpulsed t570 states preserved exactly, no rematching; both delayed doses checked; whole-network amounts and target states unmatched."
+}

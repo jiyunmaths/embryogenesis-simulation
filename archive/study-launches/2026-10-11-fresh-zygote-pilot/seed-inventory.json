@@ -1,0 +1,1478 @@
+{
+  "proposed_histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "used_seed_or_history_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "input_count": 361,
+  "files": [
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-repeated-development-gpu/process-launch.json",
+      "sha256": "11748dfde43a3d379ad82b61ee4230e400bb4c7f3654295cab34f60cdd8be3de"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-repeated-development-gpu/prelaunch-audit.json",
+      "sha256": "651422032f8832ebb7f9bfdac112a801b419e4ea539f15140f42f83a82559548"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-time-diagnosis/process-launch.json",
+      "sha256": "80cb04177552e58e69419ac8638d669ed86648e69552fa293ae3e4e46b27499f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-time-diagnosis/prelaunch-audit.json",
+      "sha256": "57f6b05e92dff9d6137b68bfd697c1cfdd5fd088cbe84b38ba3996050773ae64"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-space-refinement/launch-verification.json",
+      "sha256": "5a23b6e6e2a2eeea995064a19d70bd8d98be4ef7e9ab6a366f5919186ba2667c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-space-refinement/process-launch.json",
+      "sha256": "f1fa0520e1fe2e3d9ee4fdcd96f442e9796669692ff40585265a0671ef1c3d75"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-space-refinement/prelaunch-audit.json",
+      "sha256": "e0b905c6ff0cf32e38108425ea35145def34ddadb282a4cef2cebefaa480feac"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/launch-verification.json",
+      "sha256": "cd470d22a6d6d988664246496cc593a19c36d9e246639d684286ff6b8c45ebc0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-amount-response/process-launch.json",
+      "sha256": "684c18d848de9f20fcec08dfcb8dc7eb980278efc1651fccc7f617cedfb2aa76"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-pulse-time-recipient-response/launch-verification.json",
+      "sha256": "8ecb9b716797c6499a6db4f71dce094c140bb47cbddc0d848d7c23c48ea9a146"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-moving-recipient-amount-response/launch-verification.json",
+      "sha256": "0100644d441adc1bc31e477367f1c6d1f8fc1492ea4ff2b9f9459062646bc16f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-controls/launch-verification.json",
+      "sha256": "0f1c0e2606d2278d7460ca93b298932c35a4c8ee52eb4918183aaa979e463e2f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-controls/process-launch.json",
+      "sha256": "5f96a49e53582d11ded3fd0620edf855ac351c80227d453b04fab4b14c7e3995"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-controls/prelaunch-audit.json",
+      "sha256": "d5a658dd7082ffb38bf2d082ad08e33ecc9b1755b9d0d8083506bf2e41c2c753"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-moving-pulse-time-amount-response/launch-verification.json",
+      "sha256": "1ad5d8e4afd7416785cc9397b1951d9b99b02d40fce448c16341a7244c4a57a6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-09-moving-pulse-time-amount-response/process-launch.json",
+      "sha256": "2edcc3e66e52b025bbcc6053002ab2b4d2a1c5504bce48a5c720e70e7d22f697"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-amount-delayed-response/launch-verification.json",
+      "sha256": "c34331f89c8a29a4a0bb53d3ec3d89d11f653c3feb9a0cfc7470a352aaba02b1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-10-development-gpu/process-launch.json",
+      "sha256": "352911eec1c4c82e5108b894a9d5469dfb73dbc0a058a3c4bccdb0e991fb29df"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-recipient-amount-response/launch-verification.json",
+      "sha256": "25f934ccdeb2bf595f29ab6df17290c92f8715d7d6023b82ae6ded73e8805d9b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-launches/2026-10-08-compensated-recipient-response/launch-verification.json",
+      "sha256": "3b6668166c0e3a43137d3448ddcf3c49eea787ff076da439a704baf4283ead23"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/pulse-time-recipient-response/prefix/protocol.json",
+      "sha256": "cd759915ce4643aa19c0d57eb441ce8ebce12488d3f3eefc1d37e6a50ed49637"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-04-before-initiation-reporting-addendum/docs/phase_carry_polarity_launch_verification.json",
+      "sha256": "e8eeec3513e00254aeaa041a107e33ab3a5817c7a9b58f8fce56a0c946bbbad1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fate-memory/protocol.json",
+      "sha256": "fdc587b5ffaf6571c9e8ae93226849e52e32141203c4b1180fb81b23c13af99d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-common-environment/protocol.json",
+      "sha256": "f9a61194bfb29ffbd82f5fca88090175b7d79078c8f17a871fd9b62d971dbbb7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival-smoke/protocol.json",
+      "sha256": "57d7f19645d3e39475a7af13358261b4c602ff42df488528b04c09f0b4824c71"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-06-before-completed-carry-network-context-review/docs/phase_carry_network_context_launch_verification.json",
+      "sha256": "78e10c279c2d928fa354af0580bab289fc779e42847c2cc174350fef4c0015f8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-04-before-phase-carry-assessment/docs/phase_carry_formation_launch_verification.json",
+      "sha256": "8e6129a5192095e06e9a197e05d030927129128a9ac722e8361b43520b97be2a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-04-before-phase-carry-polarity/docs/phase_carry_convergence_launch_verification.json",
+      "sha256": "1511365bbaf54a95b40b35046aa650a773a235583d822fab248622efe00c2c82"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fate-robustness/protocol.json",
+      "sha256": "bf1a0b79299846abcd2444c16a8456158bc9a92de48f21a79b131fbab2770912"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-source-snapshots/2026-10-10-repeated-development-before-launch/prelaunch-audit.json",
+      "sha256": "2eaee1f5c85bb628a2d591027c710ff3105b2f08b459d625ae2690d75e549f76"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-11-development-controls/schedule-launch.json",
+      "sha256": "ae8f93f797e27d294b1cede924ca8fe7ca0f8bd9b5a1f0a52668efc807308a27"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-exchange/launcher.json",
+      "sha256": "0d85ee72d6980025503a4d8d3ca6a1907371d9238e4e80728bc5c1ae6d015281"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-exchange/protocol.json",
+      "sha256": "aaa68129c4674033e37e00e23ea7957bc022233968a4b45ea0263a39710b2038"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-polarity-ablation/protocol.json",
+      "sha256": "c55c9f68121db4e0c6128fe3fef489581c30a4bf4fc3e15a03d48a520348e82c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7_coarse_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "07c6961d0eb4b0b42f7e8284b0402876d907aca0354044913aeb2b81c8dd584d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-convergence/phase_carry_coarse/endpoint/protocol.json",
+      "sha256": "0187175d3993921b5cd1a8050001213a0ecaaa873262be1de9625d439720f568"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201929Z/outputs/feedback-survival-validation/refined/protocol.json",
+      "sha256": "88407af36f52ef62bb6939db454185a0674c3b460cee4bc28045428452e42147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/pulse-time-recipient-response/protocol.json",
+      "sha256": "93c3cb3fe430029bad76b6e797478db05ac075b243c916a2f7f1684baf5add3f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving/launcher.json",
+      "sha256": "f27c144a7fb917395e1082d54e8e46000e5000d13cb375fbe6ff3bc4f058b147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-long/launcher.json",
+      "sha256": "0a42146ed14d8ba8a11ccdedb38fcb100d2b632001f2a52a750b97188c504bef"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-convergence/protocol.json",
+      "sha256": "89f3753ee84baabfce58dfe271a31f7c68c77fd7b116d8c2da719d757bb1d195"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-convergence/launch.json",
+      "sha256": "18d0ad4f574c814a5cee07dea5c2057f27b73727c0888c7dfbabd9afbd211807"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-causal/parallel-workers/no_feedback/protocol.json",
+      "sha256": "e450b369da6f97c5515bcdf593474d29db7c75315b5716d59f9d2fcc45f84d0a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fertilization-cue/launcher.json",
+      "sha256": "13692d011d91984a9451101c028e17dbfde975b8413ea33d7de7a575aef6814a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201929Z/outputs/feedback-survival-validation/seed-8/survival/protocol.json",
+      "sha256": "919b918dc6ad91728a880cfb19c989be9bfba8b72416ba8b17eed32a3831bf9f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving-refined-interim-20261001T020257Z/protocol.json",
+      "sha256": "a6f14b18d594ccd33ea815426bc62a0f7a3c591824d4fd96c28db76d17de3611"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fertilization-cue/protocol.json",
+      "sha256": "54e36639d75ff2d0d45cf96dba402468af17bafdf63c8a0b0f9ea53c076e649f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201929Z/outputs/feedback-survival-validation/protocol.json",
+      "sha256": "f75981f6034ed805bbedaa93b442591bdea8b36d213f03ac95a1dd39d231735b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-causal/parallel-workers/no_self_activation/protocol.json",
+      "sha256": "6e686354039539ca52fae37206f0281835f06b5c4f9eaa808f517de2937fa419"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response-grouped/protocol.json",
+      "sha256": "91d42c7d7efcee42e3c14eff86d7ba2e5df9f45d645fc0bc0ab483d97e568e8d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving/protocol.json",
+      "sha256": "c21b5888bccca517a51ab8b21db9f61855fdf8ff9289a416d52b4c1bacadd8b8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-long/protocol.json",
+      "sha256": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/protocol.json",
+      "sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-endpoint-bistability/protocol.json",
+      "sha256": "c2628bbd5ffca3ee2bd5d563925f698b042163e44c6695da832ead3c7f203d09"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-gpu-cleavage-qualification-v2/protocol.json",
+      "sha256": "e4315b596344d458929f11e1fdb5bed3d2cf2fbacad1355805e80ed6222da0d2"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-causal/parallel-workers/no_signal_to_fate/protocol.json",
+      "sha256": "9ed041347fa8c2fa266056e270cd21635132bec5e3bf6d5b6281e1383c17ce43"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/contact-cutoff-sensitivity/protocol.json",
+      "sha256": "a6fae2b617dbcf869f1bc994ff8c67d4c39cf2d04470b658911408885dcb020b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-causal/protocol.json",
+      "sha256": "65881bac7108f6e43b92ed3512bcb1b6290c6f60117d8983b47692b1fe1c9379"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-transport-validation/protocol.json",
+      "sha256": "6a93430cea8b4f052e9d42f91b3cd2f64d9cc5912a70993333246e19e04b5806"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/skew-boundary-correction/protocol.json",
+      "sha256": "cd4e5a58d1208538fb188fead94e0e4b1f8ddf392073d9bccab9da27de6a1063"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201929Z/outputs/feedback-long/protocol.json",
+      "sha256": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/joint-fate-validation/protocol.json",
+      "sha256": "e894466d6ac72bb168a9e8c9301d8167c2a4843830f1d30294c6fbaab70e08fe"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival/launcher.json",
+      "sha256": "1661e14f0cc697ec5b3dce0d203829b586cfb47f0cbc18853f7fc9dd500aac74"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/dense-geometry-replay/protocol.json",
+      "sha256": "e99c5284177009b32b0e41bc67d52812abced1cdc66f3bd4b54d98b033ef230d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival/protocol.json",
+      "sha256": "9aeeea4102694193c741d5e02f4b8de0b5122adc85e47aafc52d9729e1c644e9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9_coarse_chi-0_fixed-conductances/endpoint/protocol.json",
+      "sha256": "b6f32c6bc1663f03ff556194a4c78fc3e47a4f51dafc8ceff80c05f23e5a94cb"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.7_uniform/endpoint/protocol.json",
+      "sha256": "08a94885fc00476296c51de17fa766cb5e1b05cb0086887117de0396fab72414"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-development-parallel-smoke/protocol.json",
+      "sha256": "28ba12adeef86f1ab84622837a98b856af31d1be978282ae8b4818788a2a27a3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T215218Z/cell-exchange-response-moving/unexchanged/protocol.json",
+      "sha256": "0a8605f6b17871a6891deb3bb2c490a57d65257e81a5a028e04498a629fd9c4d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T215218Z/cell-exchange-response-moving/protocol.json",
+      "sha256": "9e450b80069cc0a2b299f47665fac41628d8b37ef008d80988adbd9e0e8682e0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9_coarse_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "9987587a91fde73689f6ad89603d5a48753d3493deec4bfcde953b35d077929d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/positive-skew-flux/protocol.json",
+      "sha256": "7b10399ac1ed88277848235c688a44d8427205c6b502d0fc067f3bbc73f425f2"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-extended/full/protocol.json",
+      "sha256": "381cfb5bfb9de1bf38db6cb05ccfa2eab5cf5184c795d5c58b8dbf46e720f231"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival-validation/refined/protocol.json",
+      "sha256": "88407af36f52ef62bb6939db454185a0674c3b460cee4bc28045428452e42147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/compensated-recipient-amount-delayed-response/protocol.json",
+      "sha256": "b6b2fb3133bcbac14fd94ffd245a478aab1b978f804b41ba25b2fd6f60254119"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-state-response/protocol.json",
+      "sha256": "0dec74211a532ff4fcef1c806fdcf0ff50673e215b4451c8477a00029e564eab"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T215218Z/fertilization-cue/protocol.json",
+      "sha256": "2b9576103376fc4657a1c988eee795842f1362c7a760d15f98dd242eff795632"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/launch-status-snapshot.json",
+      "sha256": "9514e9c09fc47d149bf31d4e2563a86e71d6ad95641077d52e3a9316dcebdfb6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8_fine_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "cbee97fae64cf88f04365e49f8e73368ef4b23de6603d243fc0dc147ccb7f7f6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival-validation/seed-8/survival/protocol.json",
+      "sha256": "919b918dc6ad91728a880cfb19c989be9bfba8b72416ba8b17eed32a3831bf9f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-extended/no-polarity-tension/protocol.json",
+      "sha256": "a7001f7d2781174a00da175f1bb9f8443ae35280708948d6581cd02c9799c64b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0_pattern/endpoint/protocol.json",
+      "sha256": "a84d63c1ae00a5fad0d864b6eb8502063853e26f3796e69ce9376afb8e7a9dba"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7_fine_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "67fa997564c3be5a84a0c57e13d8f86a13f9c331b7c2c0ec2ea16973afe80670"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-extended/no-feedback/protocol.json",
+      "sha256": "46b8a71863481794244d31d6e4bb04cb4e12a3b40b5e868a0ece5af928817bc2"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_fine/endpoint/protocol.json",
+      "sha256": "b89e676a43de312c66feaaaf918319e64fb3e13878a660f24760b822dd3315c9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-7_fine_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "468a23a74484048b2a99e13cf0d4f03b65746c1b3c852aad08b5d9604e1db8c1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9_fine_chi-0_fixed-conductances/endpoint/protocol.json",
+      "sha256": "8aef4a98689798be250c9473375605c8cca9e531dcce7851f4e7b1b559c59ead"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/prelaunch-verification.json",
+      "sha256": "4b1d21f285f248ea798a8a3583a6a47d578947224121a41b047e0717c4d232cf"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T151647Z/outputs/feedback-long/protocol.json",
+      "sha256": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9_fine_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "148dd13460ffe94af8f14384c70f376c2f93b400ff01a82866f64eb2ac26c6f5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival-validation/seed-9/survival/protocol.json",
+      "sha256": "d4755b16b28866bdfd194e6a3065585b1f136e40629ff7b8e3bee3aeb21eec0a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-survival-validation/protocol.json",
+      "sha256": "f75981f6034ed805bbedaa93b442591bdea8b36d213f03ac95a1dd39d231735b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-development-smoke/protocol.json",
+      "sha256": "2bf0952d58a37d87f1c716e56bc132bb85cd3f8b2dc283c7a156e42e3cbef48c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/phase_carry_finer/endpoint/protocol.json",
+      "sha256": "1403aac15b16e562774893aa68a72c3c94e2416efdf464f92dcdef463870cfbd"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-endpoint-bistability-seed-8/protocol.json",
+      "sha256": "e9a02e1d6f2193f608e176dfbf55da273cfbdfa8e37e3f60122c6ff24990cc6d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/protocol.json",
+      "sha256": "3b4b684e5411b47fb5e72988841d62afdcab5b706c6f2a8379b4d627d2f5c92c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-formation/launch.json",
+      "sha256": "ef3a007ce450fb5b1585b1bd96c191a7a9ccf5ceea6f209ea0410a26e5a8c479"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-8_coarse_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "656804ff2616b9df7d0606cd34080e5b469dca11e78164fb1586254598c13e73"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/protocol.json",
+      "sha256": "bc6b748601c96c357c47d12a6a77912fd0613b4b7eb3f448505bb7d8e1899934"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/launch.json",
+      "sha256": "497e92bdeb84418b3f3923d0e42bc259493bff2296aad6480454aa94dc880fc5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9_fine_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "6d260459a274cdcd23c4e2059c30fe84d2255cd61dd1a38f3af8a92b12a301b4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.35_uniform/endpoint/protocol.json",
+      "sha256": "f5f7f665f91ea146a815567b6054337b304c9a71a81bf720b64119d635075d17"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-components/protocol.json",
+      "sha256": "0b7390bea82e443fcc7c09019f37c4ef5b388f55385c339a8cf116e6bebbaf5a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/protocol.json",
+      "sha256": "9d71021970087974546b1e0fdaa6a8f955dcf7355ed38e61b31c504040794808"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/launch.json",
+      "sha256": "5cd691d941adb579c9a1b101eae3839d10ca1304b735c3097df6e194b838ce79"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-causal-smoke/protocol.json",
+      "sha256": "66bf7387f7fe59af45353a883ef981ab464646ad83f53b4b638f75aaf54c9b8b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/native-mechanics-validation/protocol.json",
+      "sha256": "b8700bf70efd7d71101d6e7004865f98fd14c245f6ff278558b9845592d24b4c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/native-mechanics-validation/launch.json",
+      "sha256": "2d6a0f91949443968f308fb79997490edeb6750f07e17450b785d80fa970cc68"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-exchange/protocol.json",
+      "sha256": "e493d8ab55a635cb1c68d59ad23416631081962bb72ea18661f0755d224a3b82"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-polarity-validation-first-prototype/protocol.json",
+      "sha256": "07f640577dfc8898342232c459f80213535c3ad94abfeaf22e3d7a9fc74c2f55"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/gpu-validation/protocol.json",
+      "sha256": "3d222b48c8adfc79a16b44e528d6b6543b96cfa12cbde0c0a1e40bec042fd55d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-conductance-controls/seed-9_coarse_chi-0.35_fixed-conductances/endpoint/protocol.json",
+      "sha256": "b8eec7ceb353e12b53a04e165ed97492eaaae9e3609f7e2f23e3db6e28e72142"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-spectrum/protocol.json",
+      "sha256": "a2aec4fa96174cf1d277291a0dc0d949fa14eac5ff05f1de9eb1f5d52f4a1e8a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-delayed-response/protocol.json",
+      "sha256": "93091c6fe2a4c13975c592a82a4fefef4d2ef5b2a7a9e8a5df568d5c40e8a6c6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/signal-patch/uniform_strong/protocol.json",
+      "sha256": "5f54c82254b9fd847569e73e15b2a311cbafc1bf577dd10c1cb1e3089f25adc0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T151647Z/outputs/feedback-survival-validation/refined/protocol.json",
+      "sha256": "88407af36f52ef62bb6939db454185a0674c3b460cee4bc28045428452e42147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/domain-conservative/protocol.json",
+      "sha256": "82dc24e6b6ae140a9989785c0dbf3ebde2843b7edbff2de442f95d8bd5bd78d4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/skew-flux/protocol.json",
+      "sha256": "5d479f12bc9c978701596380fb54d44be3be2c8359b5b585f26e9ffffb81e075"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-8-formation-unexchanged/seed-8/formation-source/protocol.json",
+      "sha256": "845beb2ddf341f6255db7b0c6a2187ff9d892b5cfcd8e47bc570901dfbf8eea9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/signal-patch/patch_strong/protocol.json",
+      "sha256": "a8654f4bfc630a74e5218dcf7f8e968dd6d0b931259596af95f19ec853f23c86"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0_pattern/endpoint/protocol.json",
+      "sha256": "92053fd163790930f090e9bd435b1b1e8759371791abadb7d67ea1ad4817b083"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-reference/protocol.json",
+      "sha256": "2958f6705a7716271bf99e2c7c99c6089a3ba155690b5bc826ea70dfd019a8e4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9_coarse_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "baea46da0f15103eab170ea87438c5e11b98f8e108e4638b27528a1ad4adae08"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/causal-signaling/protocol.json",
+      "sha256": "ec8aaf2f7b8954d9021db12ec755b594d4ce3a235472f7927116054f9c5b7a50"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-8-formation-fresh_exchange/seed-8/formation-source/protocol.json",
+      "sha256": "845beb2ddf341f6255db7b0c6a2187ff9d892b5cfcd8e47bc570901dfbf8eea9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/signal-patch/uniform_default/protocol.json",
+      "sha256": "9176c6ec030e1db8c1b9fbfeaae9d4e7bb30aea2860d2739747bb70a6871fb8d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-recipient-amount-response/protocol.json",
+      "sha256": "9f4e1868215a05744013c2118823a021ec37c809b1bc35aadda8004436f1a963"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/response-source/unexchanged/protocol.json",
+      "sha256": "4b08e6f0b675b78fca7051f596de3d8bb214c02f46664150663c6ee98e96ac1d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T151647Z/outputs/feedback-survival-validation/protocol.json",
+      "sha256": "f75981f6034ed805bbedaa93b442591bdea8b36d213f03ac95a1dd39d231735b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/causal-signaling-confirmation/protocol.json",
+      "sha256": "9a1fe42738837b4e6a73c1cc155e3a5886bd73e9f9b6c8f7584b9c1e5545fc94"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification/protocol.json",
+      "sha256": "d82c1ddefb4f19bb6325d1765dd7bcde81daeb835cc2199e1797b2823c2b71c3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/response-source/fresh_exchange/protocol.json",
+      "sha256": "005ded6f31457488413808b1711515b2622a11e8c59d7e9311c066ff808f2655"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/formation-source/protocol.json",
+      "sha256": "845beb2ddf341f6255db7b0c6a2187ff9d892b5cfcd8e47bc570901dfbf8eea9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.7_pattern/endpoint/protocol.json",
+      "sha256": "4f3306ca1df02c6f4b22d27d733acdb1879331619d4c0aa176e0722f757dabd8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-9-response-fresh_exchange/seed-9/formation-source/protocol.json",
+      "sha256": "28c94eb907da09ecf4b710db2f3030ac4790a65b69184857df93c3d70c94c1d4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/formation/protocol.json",
+      "sha256": "ccac1f746fa9052fb1c7a7ae17204fc2385ebef68f46e601a67da54e90ff3001"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/launch-verification.json",
+      "sha256": "47330076bbea9b476691179b0abba711a05cab9502ac5ddf46b70beedd530d4a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/signal-patch/patch_no_feedback/protocol.json",
+      "sha256": "d79e0746041ecd3f012b95a93139afc56b8038a4d775770d64c110fa08f9722e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/signal-patch/patch_default/protocol.json",
+      "sha256": "cbe80d2e3bfbfe3dc953f6c5acbd302a2eeeed92f6a122b2574fe98c2e35b5ad"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8_fine_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "7eb8223dd9251a88a00b58bf16f94d8fd3db25dae51e35168e9c648d834f3184"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-8-formation-relaxed_exchange/seed-8/formation-source/protocol.json",
+      "sha256": "845beb2ddf341f6255db7b0c6a2187ff9d892b5cfcd8e47bc570901dfbf8eea9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-8-response-unexchanged/seed-8/formation-source/protocol.json",
+      "sha256": "4b08e6f0b675b78fca7051f596de3d8bb214c02f46664150663c6ee98e96ac1d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-8-response-fresh_exchange/seed-8/formation-source/protocol.json",
+      "sha256": "005ded6f31457488413808b1711515b2622a11e8c59d7e9311c066ff808f2655"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/moving-pulse-time-amount-response/protocol.json",
+      "sha256": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/unexchanged/protocol.json",
+      "sha256": "980d2ff7dd417382042f407eb7d3f0433dafb622b884a1ba6b4940114b289657"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-9-formation-relaxed_exchange/seed-9/formation-source/protocol.json",
+      "sha256": "b16d6646cdd0e333a5701e7f23a8cc3d8f003306d1a0dbbf1e804f1c4e038d7f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/response/protocol.json",
+      "sha256": "88308bd8e45a2f03383af7c5f672726c4760abe8e84a40e89802d6258a3c0ab9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-9-formation-unexchanged/seed-9/formation-source/protocol.json",
+      "sha256": "b16d6646cdd0e333a5701e7f23a8cc3d8f003306d1a0dbbf1e804f1c4e038d7f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7_coarse_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "c75b89f253d6f3afa1cbab17718f73f2cc937b0618a0e8af5735920a7dc14d1d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/response/unexchanged/protocol.json",
+      "sha256": "143fc72e68f76090d7dbc74d31110d1b4ad11ffd5c9293c51c2b39d532df44ee"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.35_uniform/endpoint/protocol.json",
+      "sha256": "9589be01f1b19bea6ffb5c26e02f8de1a20d75ead77e672f24f9b913de8fe49d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-8/response/fresh_exchange/protocol.json",
+      "sha256": "a588e6df0e9bcd67541b46328eb06388eae2df7ff20048dc742f7e126d2eda05"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/response-source/unexchanged/protocol.json",
+      "sha256": "298e769435fb5b07f723243a9d40a360522f86d2bb3b8ba7dafe3451bfdb9fac"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response-source/unexchanged/protocol.json",
+      "sha256": "dea81ecb357c9e7415452a4220f9ea40e27dcb80cc75688aacea450929f1f6a4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/native-launch.json",
+      "sha256": "822426ab69ad51294f503c3c3e3ac8a913d90f6faf22bdddcf37e28f7f55f18b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/response-source/fresh_exchange/protocol.json",
+      "sha256": "28c94eb907da09ecf4b710db2f3030ac4790a65b69184857df93c3d70c94c1d4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/launcher.json",
+      "sha256": "fe7861f0baf4ee384b8d54858264126b38875e1ec69c5062bb5ec946d483e710"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/protocol.json",
+      "sha256": "d5d4010d5260db493e54c74b019121625273bec53416b2179b7d85158434a640"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/formation-source/protocol.json",
+      "sha256": "b16d6646cdd0e333a5701e7f23a8cc3d8f003306d1a0dbbf1e804f1c4e038d7f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response-source/relaxed_exchange/protocol.json",
+      "sha256": "acab57c8880233d907f3ad9fc330b2bc779215863bd3ec1408f439a4c1760a73"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response-source/fresh_exchange/protocol.json",
+      "sha256": "0f7ae8792b3c7176b5e4429a86b60eba5ab741ba6aae2014b7357884bbb00316"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-9-formation-fresh_exchange/seed-9/formation-source/protocol.json",
+      "sha256": "b16d6646cdd0e333a5701e7f23a8cc3d8f003306d1a0dbbf1e804f1c4e038d7f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-9_fine_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "b56aa0eb0be039a5126945f641f7eae1e3ba48fb8450c7a1982a867a262f1536"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/formation/protocol.json",
+      "sha256": "3ea3c0d561388e00057648ee48d2cdd88d77a2236aae982630950828b12445b5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/formation-source/protocol.json",
+      "sha256": "9dfdfc2749a2b7bef5bfb8ca9b91c6876250742178220a2f62208d2730babd9a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/backend-checks/seed-9-response-unexchanged/seed-9/formation-source/protocol.json",
+      "sha256": "298e769435fb5b07f723243a9d40a360522f86d2bb3b8ba7dafe3451bfdb9fac"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/response/unexchanged/protocol.json",
+      "sha256": "063ab2a829aa4df330b1608d3dd2a154cdfc606b72c480a8ead3cba12e7c97c7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/response/protocol.json",
+      "sha256": "ebcc1b16bc5b894ef7d213d72991517714e2d59879570d40b9afb535224a6c7e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/relaxed_exchange/protocol.json",
+      "sha256": "8cfb215f8bb2905a5f7d6b8b0499e755e322d10a066d39166494a01789d5cdef"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-moving/fresh_exchange/protocol.json",
+      "sha256": "0143a59ff84fba2eda470e937aa35d289f9479bd2e3fbfa392f0ef7aceeed59f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_fine_polarity-0.7_uniform/endpoint/protocol.json",
+      "sha256": "1b38483314103d03c18b07c2cd9188c5cfa86b1eb214c36f500f4b2c97d38723"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/formation/protocol.json",
+      "sha256": "679a64bc2695e35ae13f16ffb80af198cfa46489f7d97d45fd6c7febb679c6e7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories-refined/seed-9/response/fresh_exchange/protocol.json",
+      "sha256": "3e538f3733f4e7dbc7f04f03885c124c8f2ca376f0a4d87298a3b9023df635b1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201920Z/outputs/feedback-long/protocol.json",
+      "sha256": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/development-refinement/protocol.json",
+      "sha256": "e4deea5036c8d35540b71642c4da6ceef3bfc56944ff9d6f772efaac2b57e996"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0_uniform/endpoint/protocol.json",
+      "sha256": "087b847818d4f5b5b87c86ce456d11c0281290663cda9ec07ebf046d1c53cae4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-finite-reservoir/protocol.json",
+      "sha256": "c7f8ec8eee0e531543e138252e311580794bb69f8bfb6aafd0bfd9b8b4050160"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cutoff-dynamics/protocol.json",
+      "sha256": "f7666abd459fd147c43c432358352bc7e8983bcb71ba921df0eee4d4903d72bd"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-mechanics-validation-preflight/protocol.json",
+      "sha256": "1f3e9c99a3d51677f57f02c3199833d3939fe6b31f47dd451f7db3a444c36729"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/coupled-resolution/protocol.json",
+      "sha256": "3575fcbabbfd2cc90068382bddd5df984ba24eae332d9f8e3c9a44517fd9c0fd"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cleavage-measurement/protocol.json",
+      "sha256": "24a07b48fc1fb1f8f63a917c6ea326c4fe515bf8a989b98a539f325198474160"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-persistence/protocol.json",
+      "sha256": "d57193b874de49edbbe8183923b7f217e312e9c19fd0ce764df1d2b26f2b0b68"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-survival/protocol.json",
+      "sha256": "9aeeea4102694193c741d5e02f4b8de0b5122adc85e47aafc52d9729e1c644e9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-survival-validation/refined/protocol.json",
+      "sha256": "88407af36f52ef62bb6939db454185a0674c3b460cee4bc28045428452e42147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-shared-context-response/protocol.json",
+      "sha256": "72b8b9e2102b725a564f6f5ea1e93a3cd36a235c735ac42a22554b9e1a64102e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-persistence/development-no-feedback/protocol.json",
+      "sha256": "5e66f3e706ab4ab123c9b408315dcafb8f8ca40972b04ec0b7b3613dfeaa2458"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-persistence/full/protocol.json",
+      "sha256": "3df58b06a0bfb741958f7fff94b2a441a35caf9728d0d0e7ab4ef92a116da877"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_coarse_dilution-off/endpoint/protocol.json",
+      "sha256": "d70955ffef01932269370205418e64edd2e9a2a6e4edb311e7a15f06b3f994f3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201920Z/outputs/feedback-survival-validation/refined/protocol.json",
+      "sha256": "88407af36f52ef62bb6939db454185a0674c3b460cee4bc28045428452e42147"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-polarity-ablation/protocol.json",
+      "sha256": "c55c9f68121db4e0c6128fe3fef489581c30a4bf4fc3e15a03d48a520348e82c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response/unexchanged/protocol.json",
+      "sha256": "338f0b5f1ffc6c00e85a9c3f7677dfca4c3476840be247bf6f1066d29db62e75"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.7_pattern/endpoint/protocol.json",
+      "sha256": "0df7dbfe1e35e067faa9272c168d2dc098f46e518065d92f558671abf4e5013b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-persistence/no-polarity-tension/protocol.json",
+      "sha256": "0a7dbde198255359a5cf8f06dc358379a5b4a889abab47f8c54302cfa53c9d39"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-survival-validation/seed-8/survival/protocol.json",
+      "sha256": "919b918dc6ad91728a880cfb19c989be9bfba8b72416ba8b17eed32a3831bf9f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_fine_combined/endpoint/protocol.json",
+      "sha256": "368ff31c0a9570815b6244551cec8cf226d375acd472c767757f81f36cdb0f4e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_fine_dilution-off/endpoint/protocol.json",
+      "sha256": "db2e10b69b121fa38ee0a2dbbf641817712d327c8f76ddd6113b42904cdea1e0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/pipeline-launch.json",
+      "sha256": "87bf6aad37f74f905ed8baf833c8b0210c516e886f8d5e73c78d820673320759"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/shape-persistence/no-feedback/protocol.json",
+      "sha256": "ab1e6b218bc06fb9a81e273140a3cef6490b2c3beab02ef55b55f6dcc633db22"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-survival-validation/protocol.json",
+      "sha256": "f75981f6034ed805bbedaa93b442591bdea8b36d213f03ac95a1dd39d231735b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-survival-validation/seed-9/survival/protocol.json",
+      "sha256": "d4755b16b28866bdfd194e6a3065585b1f136e40629ff7b8e3bee3aeb21eec0a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/protocol.json",
+      "sha256": "f25296cd2b58acbcbb5b06a0ec90ab9300c462e9e5a587266f22edad5fe60ddc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/launch.json",
+      "sha256": "af76a274993adcc93e382efce58155b6c953649f03808ad3d34df503e8c69e8c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201920Z/outputs/feedback-survival-validation/seed-8/survival/protocol.json",
+      "sha256": "919b918dc6ad91728a880cfb19c989be9bfba8b72416ba8b17eed32a3831bf9f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_coarse_fixed-conductances/endpoint/protocol.json",
+      "sha256": "33ab3df0b9ddb17d460ced8b0655cca346163243f8ea9ffa77e68b66da699c8c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_coarse_combined/endpoint/protocol.json",
+      "sha256": "16aceec82699693a20bcab614208cb94cb6622cd9137d55fc2d3bd642efaa4eb"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/completed-feedback-assessment-20260929T012311Z/outputs/feedback-long/protocol.json",
+      "sha256": "aae6d2b9e7d6354a2e404ca1aa6dc5beaed4653c4c48569b613ffb7c628112b3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response/relaxed_exchange/protocol.json",
+      "sha256": "d418e54603131b2a419942a0ab202ce65e37eafe8e6f5cf27fc2b6aad26ef759"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_fine_fixed-conductances/endpoint/protocol.json",
+      "sha256": "d23cb0def0de253c5ebed128973b9793baa4c9408c1dd7978cb569e95095584d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/interim-feedback-20260928T201920Z/outputs/feedback-survival-validation/protocol.json",
+      "sha256": "f75981f6034ed805bbedaa93b442591bdea8b36d213f03ac95a1dd39d231735b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.35_uniform/endpoint/protocol.json",
+      "sha256": "0a6eace6d83286f71f62bbad79bf9ca855ae00f64c7c6e15ddda0e3daf21204c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_fine_combined/endpoint/protocol.json",
+      "sha256": "d7c596ca7203abaa28185bad9bd6b018b72ff823ce1781245ee1c565375a37b1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-amount-delayed-response/protocol.json",
+      "sha256": "f3234ec49000dab6725e31b0eda28a1cffbba53823a3c6a25a9fa14b2b3bd8bc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_coarse_dilution-off/endpoint/protocol.json",
+      "sha256": "40f611f61a65597d2d79fe9bfcf86bed58a81b043c1abd5f1025a8aac6b741a3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_fine_fixed-conductances/endpoint/protocol.json",
+      "sha256": "d193115d345b301a3d84766534ff2feb5f5b96df5642226d92fad0bad7904f1d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/pulse-time-amount-response/prefix/protocol.json",
+      "sha256": "c7d7727b5a54229d74b2c1c2bb9e6cac8211dff2788d33b7b5139397341f8b25"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8_coarse_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "df4a3838a17105a5ef70455225a201ea4f52e0f62560083a16a75b1ee38b8c4f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-8_coarse_fixed-conductances/endpoint/protocol.json",
+      "sha256": "b51d48cc3f64b704711a5670439bf1adff51aba6c92abe85b17b774ae5298176"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_fine_dilution-off/endpoint/protocol.json",
+      "sha256": "b28f40e32d6611a6f0e294778baf95ee368cdd13412d0d8cefa61f46a3fe49c1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-8/response/fresh_exchange/protocol.json",
+      "sha256": "b63f6bb5186cee6293ddf6132b9b419f041bf4a88d1623f01606a0f7a3d1213f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_fine_polarity-0.35_uniform/endpoint/protocol.json",
+      "sha256": "5db50bff6fba3aa1863c20e06ba86e0b1f93622ead234967ecd35d3f1397ce2b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/moving-initiation-controls/seed-7_coarse_combined/endpoint/protocol.json",
+      "sha256": "e9437ec4fa9f5b70d4f90aacfbac26f930f1db4f38169fc85b5406809b317137"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-moving/launcher.json",
+      "sha256": "d0fd31b7360bbbfc46bb293eb42001bc37d568d7eec5b2a1122cc6a630545a56"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-moving/protocol.json",
+      "sha256": "e3847b8abc8d458c38ed3cbfa7a61fb25ecb38f82157a4f311d29c96143cddee"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8_fine_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "69a6e3dc42fb70d218bb80e37c2bc82502e934c72bb7cbf44a9d46978c3d7ad9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-response/protocol.json",
+      "sha256": "8698c78e6f9278213a3d5259406d860ce6091dfd7aa0274bbfe58cc3c2266467"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-exchange-response/prelaunch-spectrum-check.json",
+      "sha256": "86208ac5580d136fded465dcc73fe5bb0b164cc655a7b52b66f1219643a6a07a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-exchange-response/protocol.json",
+      "sha256": "c8fcbfc071b094b8cce292fdd06c079cff6c50176750b860b8276a4e6903ab27"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-exchange-response/launch.json",
+      "sha256": "aeb57fd319692eba79101d330f500b90458082f0008ef7dd46d1b214835901e9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_fine_polarity-0_uniform/endpoint/protocol.json",
+      "sha256": "31d2f99cee658f337124393616d766f0febd3bf914a08f9097bcb93744c6574e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch-recovery/2026-10-05T200032Z/08-phase_carry_maintenance_launch_verification.json",
+      "sha256": "9c2929e1bd826453ef5c0f0957ae2d1b47418b32ac3d62aa289d288092224a26"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch-recovery/2026-10-05T200032Z/06-prelaunch-verification.json",
+      "sha256": "35bf4d11f93073fcd191b191f2ba3a094782415b3d92cfce329586cb1506f531"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch-recovery/2026-10-05T200032Z/03-pipeline-launch.json",
+      "sha256": "61118df97403b190410f79a6a042587201587a42ef985c07ecee85022fe127fd"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/prelaunch-verification.json",
+      "sha256": "35bf4d11f93073fcd191b191f2ba3a094782415b3d92cfce329586cb1506f531"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response-source/unexchanged/protocol.json",
+      "sha256": "0fdc0df564413459abaafb79e9f2a2768b45fbd5b6da254bc72c21eddc3df1d4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/protocol.json",
+      "sha256": "3a293494c46c6fbe12a540c9ce2109c3c1f488494206af0fbbe0c836975db573"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response-source/relaxed_exchange/protocol.json",
+      "sha256": "4c5813c1b322030bccfd3bc2998e746ee4c1f0fd4104d8ddbe477b4058bb657a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response-source/fresh_exchange/protocol.json",
+      "sha256": "acf0c69a710907fe82426894e8de6386f4fd8bb8afc4bc9d61069756042fcad7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/formation-source/protocol.json",
+      "sha256": "df7be549983425fce81f81d3404a7fdf91617cf81a595601b443e64b87a300d4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T162647Z/cell-exchange-moving/protocol.json",
+      "sha256": "587d414201cc9335ca6d316b2c9d75d5b19f81b35ca2c6ba8d3c3bb4e7efd83a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.35_pattern/endpoint/protocol.json",
+      "sha256": "4bc9387ccfbd0ba735560db6fc895af212c9964b778790e1e02df0f4ed603d28"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-precision/protocol.json",
+      "sha256": "d1517575345fd395c8c0bfcab436a646b893d1ff2c77a57aa7c7f4f457fa06c9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-precision/launch.json",
+      "sha256": "468bc5def3f1557f86d69a568e2bfd5ec0ef8d98bfe91fc8b22e69d52312cdf5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T162647Z/cell-exchange-response-moving/unexchanged/protocol.json",
+      "sha256": "0a8605f6b17871a6891deb3bb2c490a57d65257e81a5a028e04498a629fd9c4d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T162647Z/cell-exchange-response-moving/protocol.json",
+      "sha256": "9e450b80069cc0a2b299f47665fac41628d8b37ef008d80988adbd9e0e8682e0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/formation/protocol.json",
+      "sha256": "f2fa2950f4ebbc49af5808e6f5f073c25d0385459c4f3f3aa618b6a3eaac7afa"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/identity-interim-20261001T162647Z/fertilization-cue/protocol.json",
+      "sha256": "2b9576103376fc4657a1c988eee795842f1362c7a760d15f98dd242eff795632"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7_coarse_chi-0_pattern/endpoint/protocol.json",
+      "sha256": "47f4843b325f72b200bc8ea2ba20b60d9602ea1858b0284cf44395da60f21675"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/launch.json",
+      "sha256": "0c2b0b26e717c96f298912290f96e556a306501b5fb04883e52ae31bceb1bf25"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/neighbor-context/protocol.json",
+      "sha256": "e07261e777fcdf38afcba55d015d19c0b02d68f31f39c88854344baec3cb5db8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/neighbor-context/launch.json",
+      "sha256": "b4dc5a2579471b38e9b04671d0ad034d7eb23c12f019d2db1b7ea4853b2a0c4d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.35_pattern/endpoint/protocol.json",
+      "sha256": "2df3c70c45968377bffd90b2540778ab9cb10e5c635966601b2e87f8d8bca6e3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-8_coarse_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "161a333f309ddb91078e9dd24cdaefe8ed51d6a51a8a20a677c13b52271556d5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response/unexchanged/protocol.json",
+      "sha256": "54a8d2100a42ac113407d2e2f6e4590ea92fbf9bc6ad00eb29cfce90f4f989cf"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/protocol.json",
+      "sha256": "d488e3268d154795d8229746ffd4a8adf0c9f689633eff51e68b00a14199442d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.7_uniform/endpoint/protocol.json",
+      "sha256": "ed7a99717e9ce002bb47f5f317c074bb06b7f0a8d6feeccc65813506de78c125"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/launch.json",
+      "sha256": "78286aea8a6b10204c5b85cc0db8ba44c8874492af5f02b93aeb7b2af8b30274"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/protocol.json",
+      "sha256": "15c65f0b82747f7b26dd15a8c812ab96f951a59ef9a8cd7f15cedc8120cad5d8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response/relaxed_exchange/protocol.json",
+      "sha256": "84b4727ccd0c734e50a9b109950c7e9b60730f9c3f7995b5ce1f5df96dc15add"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/launch.json",
+      "sha256": "cd20bcfe261a8edaa004c0cc907bc2b4ca33bd0a80ac92b96847cf26faa34e90"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0_uniform/endpoint/protocol.json",
+      "sha256": "a9102b11c5a33400bbad01df4f8ff6cc5a0e0f75ee8aff93db2345be83f61170"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-maintenance/seed-7_fine_chi-0.35_pattern/endpoint/protocol.json",
+      "sha256": "771544b88b056b862ea372fe77da85c0d157807911c093177b1e241304882bd2"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-9_coarse_polarity-0.7_uniform/endpoint/protocol.json",
+      "sha256": "f017631d7629971fddf4794ac7b971bd85b7a434a09c9100641b98c158c0aa15"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0.35_pattern/endpoint/protocol.json",
+      "sha256": "e0ad204bfb74691cc808bb73f2e433a7f6dc20e9019169cd8c1b30f3d2454bcc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0.7_pattern/endpoint/protocol.json",
+      "sha256": "657f773da29af2b63ddb004eb42bd8f23ce222cb8fca50b3742ea611fbcf6761"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/projection-audit/protocol.json",
+      "sha256": "a69c47dfdeff5d4c8eec966e0de34ce3758229401343a0d1f4fd0f35a1eeb91c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/skew-boundary/protocol.json",
+      "sha256": "6f6e3fe0a8476df221491bc806e17d285736398b4150ed977e8b088dbf858c97"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/refinement-confirmation/protocol.json",
+      "sha256": "86f21a5253241fa85563b5c7949216f2966b36b982c23c801b7a7b2348d2da53"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-7_coarse_polarity-0_pattern/endpoint/protocol.json",
+      "sha256": "d2963da17ee7f16a0d3f7d890a09b1a34119a0c790321584da053745380300a1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness/seed-8_coarse_polarity-0_uniform/endpoint/protocol.json",
+      "sha256": "6bb5f7a3664d7c4e5a5964ef14111a566e1af17722f28736b3585bbb30846cca"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/attribute-development/protocol.json",
+      "sha256": "4f620bc5fe0783cc20a8ae4b16bc425979164a207ffa09a1129703d11e07ae7f"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/gpu-adapter-smoke/protocol.json",
+      "sha256": "d51a29a68096dad629f8f9b613d30ba6d6b72dfb51ea4b9dac90e03f636a51d1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/seed-9/response/fresh_exchange/protocol.json",
+      "sha256": "adac6b48001ad2631a6bdd67d6c37a8f20f6e6bd6ebac2151d0612073d8b03b6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/protocol.json",
+      "sha256": "abcbd9c498d3875ca0eaf10efbfa9836311c91158f9757a4734ed8b2c251e5d8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/exchange-response-histories/launch.json",
+      "sha256": "a46c8ac4c4716f3201517c689be33ab7cfbc82e8ff2eb36c9aa81ad0586df7a6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/pulse-time-amount-response/protocol.json",
+      "sha256": "189179819f5371d83027027e7d4036b5cee2f9c0ff15e8e89e39e531b5efef26"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/chemistry-accuracy/protocol.json",
+      "sha256": "4527453eea34bf4176c48ee93e7b6722e9b93a3f4397e4feede139b75d53f35c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/launch.json",
+      "sha256": "e79296b27569c515c4273704ed39bdf319d7b95ce21b45c78693fb5ffd063815"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-gpu-cleavage-qualification/protocol.json",
+      "sha256": "3195785294d308d8c8a366bd8d41fd8c1512fbe59310d34843b5328530759c03"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-response-refinement/protocol.json",
+      "sha256": "51c1edc370dff966c308ef907940e26fb4fdfa72d23d800435773f128a894e30"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-refined/protocol.json",
+      "sha256": "10f930d5de576de9a73bf15c10517679fcd4a06db39a32c3cdb384b20a8730ae"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/gpu-adapter-smoke-source/protocol.json",
+      "sha256": "a17032260903ae2c66b1b6da88c25f769651182551f3bd6277fb5f8764a5953c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-refined/unexchanged/protocol.json",
+      "sha256": "d32e9b5af37022ddad6b20fdadd257f70e59b130bf7cdb1a411daa46ea06047e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-7_coarse_chi-0.35/endpoint/protocol.json",
+      "sha256": "5723869845ea7b7f0505b10b2b14bf9df1fcfe11de9cf60233fd650686b22cb7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness-refined/launch.json",
+      "sha256": "b11046870c6b309e650ade86ce25cd5dfa1c3be9a0633794c184d54fb156ff16"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-refined/protocol.json",
+      "sha256": "4d4f980acfac1cfafe6902ab9a3480e006b57d83de082a28e900d9244c8db2d6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-refined/launch.json",
+      "sha256": "215a425d7f9841b8245732e6079c6a1d7b218d4c34730624b9fc285f2577ad6c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-exchange-response-refined/fresh_exchange/protocol.json",
+      "sha256": "6e47a19b09919109d5f51211617e5f26bbcd3d617700f8e84b4a41208847a431"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving-refined-interim-20260930T212237Z/protocol.json",
+      "sha256": "a6f14b18d594ccd33ea815426bc62a0f7a3c591824d4fd96c28db76d17de3611"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/gpu-backend-validation/protocol.json",
+      "sha256": "67e4835feeb770e5cc03faa64c707542881dfb5bd12025f3bbcb1f496b4cf6f8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/gpu-backend-validation/launch.json",
+      "sha256": "300e50b44f2fe2bf9d377a2b5eb65ceb11a5e620249210b2d753e7fcba205eae"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cuda-precision-extended/protocol.json",
+      "sha256": "e447092b6eb5e552b39c59871a9574dfe8079b6331a8c7758b70c90e3b1f263e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/domain-conservative-extended/protocol.json",
+      "sha256": "3d2fabb50edebf62230aef1c82ec234c7f82d4b7bc28fab6e5c8f75bd42ef8e3"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-8_fine_chi-0/endpoint/protocol.json",
+      "sha256": "f5a28c9103c9877990725f6c9d93d299531bd50036ed7117d61828c4a0519c72"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness-refined/seed-9_finer_polarity-0_uniform/endpoint/protocol.json",
+      "sha256": "7a020140eac300b7610adb2532d8d26274f04cb46534c9d3a83d304e89f19c25"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/polarity-robustness-refined/protocol.json",
+      "sha256": "bfe15953b20128c1ddb71e5cf19ed1654e0507f362d8cb3d67ce50b02710d583"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response/seed-8/protocol.json",
+      "sha256": "7bc64082494b1f1d26c868a06233824403a3994371777959d03f54f3df862ff7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-polarity-validation/launcher.json",
+      "sha256": "d70dbf5d8b26b5aa4d2b12adfabff9209783a430767e98adfa759b461e0c6b7d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response/seed-7/protocol.json",
+      "sha256": "1abbcc9a87e68005828931b13c442690fd58039c100b89ca41af1020b85405dc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-polarity-validation/protocol.json",
+      "sha256": "7c480a9409fd30ad81f213958a0e0e1277eff9c9424c74b19b73201015e89d26"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/neighbor-context-delayed/protocol.json",
+      "sha256": "9e012f0a13c4b9535b8ae956d68b0d094885b5e30900dc09340366ae85e2c64a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-mechanics-validation/launcher.json",
+      "sha256": "159154eafac57c9557341b9db75d596a50fc5aa1c4ae0c34e88dc116844450c0"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response/seed-9/protocol.json",
+      "sha256": "3b49808b75b8f6e983db2539433edc32c776e8960570d00b70c623affbb5ad22"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-8_coarse_chi-0/endpoint/protocol.json",
+      "sha256": "a4c7b80706373d0333a18f967785eda55ede0e3e64ee3ec9a483a8442029a489"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_baseline_uniform/endpoint/protocol.json",
+      "sha256": "d5136421899a936f56bb1dbbfca477e2be2e51f9ebd633bd12d6cad1c6ecc8b6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-amount-response/protocol.json",
+      "sha256": "d28b0446af6ef1e115a6f11d0ec0f5ebd7608a7e537449dd2faf8eced2f2051c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving-refined/launcher.json",
+      "sha256": "c2ac8787f0a1b23aa22cdfa27fb197883eadd1839595821635b3550faca1666a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-time-diagnosis/protocol.json",
+      "sha256": "469784ecd00709ace6ad426a4728fe6ddb428a343a2263d3ca40795a5d519571"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fast-mechanics-validation/protocol.json",
+      "sha256": "e7383beb4ab600e6435139d89fab02fbd5c7a4459c56412ffe675131073af723"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving-refined/protocol.json",
+      "sha256": "0d909a6cf511db7cbd4ef1c18e1959c9903fb1a0666f30c1263013ad33764b93"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/compensated-chemistry-validation/prefix/protocol.json",
+      "sha256": "7dfe8d3902353579d45042d7f402e65815374e99a2cbe794989c26ce66cdb0f6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-endpoint-bistability-seed-9/protocol.json",
+      "sha256": "c33873b37d1f9ab9dbf124a68188fa5207d52a1e1c097bcbb9f9833bf80b23fc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/compensated-chemistry-validation/protocol.json",
+      "sha256": "3bbbcdd4164e1d5579e47430e734d91724f4c2d6c64d35b5ed1f462d250ebe72"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/repeated-development-gpu-qualification-v2/protocol.json",
+      "sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-7_fine_chi-0.35/endpoint/protocol.json",
+      "sha256": "840321c059bdcb6021e7f8c5163f24c7f3757c2337b6aa2f488914a948d10df2"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-space-refinement/protocol.json",
+      "sha256": "e7551e52d7f2a68c6c2098453ece54046ed642bf4d58db276ea3c3a9d6f99dbe"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_polarity_ablation_pattern/endpoint/protocol.json",
+      "sha256": "d27d59237eb6227f80f544bd3f701261719898700fa328c91a07a3f7a758ec6a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-9_fine_chi-0.35/endpoint/protocol.json",
+      "sha256": "ed1949250c37e36db4cfe7ff5f047a67f2e9222896f0ed537c6f7ee8e9075941"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cell-response-moving-interim-20260930T003007Z/outputs/cell-response-moving/protocol.json",
+      "sha256": "c21b5888bccca517a51ab8b21db9f61855fdf8ff9289a416d52b4c1bacadd8b8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json",
+      "sha256": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/launch.json",
+      "sha256": "13d6f195d771b3dc1ca3d5054c181ed67f00588f665e591bd5edc55568d17826"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json",
+      "sha256": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_initiation_challenge_uniform/endpoint/protocol.json",
+      "sha256": "443ac9d8e23ffdbe23342d1f76f08554d7da795d0b013ee29691344a56dc21ed"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-8_fine_chi-0.35/endpoint/protocol.json",
+      "sha256": "0335e9637906929a1b9a7437e4172aa7b982785908042d255263cd7375cb656e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-9_coarse_chi-0.35/endpoint/protocol.json",
+      "sha256": "79fb5a031088b3ee32cc69348c41c4dca7fbaeaaf12b1a1cccf3759416121d67"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness/protocol.json",
+      "sha256": "43ed6925844afc43dcd5d72b38e72143e0d5aec83b6425023e84ce78e3c68d9d"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_polarity_ablation_pattern/endpoint/protocol.json",
+      "sha256": "6bfc03d8f337bc7a4ab10511a44aa96b23dd284a75493f0f9a7d0b08fe478648"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-8_coarse_chi-0.35/endpoint/protocol.json",
+      "sha256": "c77a31d92e608ed1db2c54d2fcbbc5589b9b742f0345fbe3984c4048be288fe5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_baseline_pattern/endpoint/protocol.json",
+      "sha256": "fa863c1049cd378270327c44623ea43185e7c48382767d855ff78f476ceb06cc"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_baseline_pattern/endpoint/protocol.json",
+      "sha256": "89db8139d39967689b6c4bbf779103fefb819df42908725e3a09e68b93067c7e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_baseline_uniform/endpoint/protocol.json",
+      "sha256": "6146b3e0bba84f7954aee3e21bfb83fd86053e788aa153e7a012edb76a303a21"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-7_coarse_chi-0/endpoint/protocol.json",
+      "sha256": "b475b24cb2f669aba6f6c1f269873499c49fa2ff81eae0bd8b9b24cb220b4cd4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_polarity_ablation_uniform/endpoint/protocol.json",
+      "sha256": "9c3826320295359544d07b67b63153bce936069b6b86527da7c9523a1f2fc5f8"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/protocol.json",
+      "sha256": "d12009d95fd46ea7ae808c92c24348f524433543232d78f59ac7c5bff82909d7"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/launch.json",
+      "sha256": "2579933f6451f420a1fa08e1161229444915b29dc9d695719cfa634cf6cd8e25"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/cleavage-resolution/protocol.json",
+      "sha256": "8730357002a43364e554e176fe41d5e48e1ab59445425d0a4f7901f7083a62c6"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/protocol.json",
+      "sha256": "7d31576dcde9ddc809aaefac438dbaea7841124bcc0177f7b33132330b31b20c"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_baseline_uniform/endpoint/protocol.json",
+      "sha256": "b159cdb603818c96a8e9d709139b583c0ac64bd818da09af86377c450a2c13c9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_initiation_challenge_uniform/endpoint/protocol.json",
+      "sha256": "5866a71dcd68f28c2dfa9890aae4768880c3cf9612d00a72b62b267368180f13"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_polarity_ablation_uniform/endpoint/protocol.json",
+      "sha256": "408988b78c17d337837d1b0088fbff5e4a1e8f08b67801366887628c46ef7fe4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-chemistry-coupling/protocol.json",
+      "sha256": "bf42d74d3ed4359bf8c118bc3908b20073c69f0182aa774ca87c1f81f33d3d9b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-chemistry-coupling/launch.json",
+      "sha256": "5b552e0357c89c70fada3a05e01dd8bb9896825a3b1b9093874e0ce42fbe37ed"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-polarity/seed-7_fine_chi-0/endpoint/protocol.json",
+      "sha256": "7c87b445baf8640fb344ef7824230ae31687391ed12fc066f3dbe1df4aa011b5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_baseline_pattern/endpoint/protocol.json",
+      "sha256": "f4f1926deab05411e38572cd1f8a8718f2a3a713f650194ecc68c0d082a0bc3e"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_initiation_challenge_uniform/endpoint/protocol.json",
+      "sha256": "c85def1281d441c9f6c6c70d2056bce7a96f874bd1a3a284455864ef277969e4"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_polarity_ablation_uniform/endpoint/protocol.json",
+      "sha256": "4091a16ab4691846126e2c244fcc86a3f12c37c23e49cfb307594b263e616b48"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_polarity_ablation_pattern/endpoint/protocol.json",
+      "sha256": "ceff7e2c62641d5cdc0bed6e524c90e3ae019cf7df51b0c518ec0ae04011d87a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-7_initiation_challenge_pattern/endpoint/protocol.json",
+      "sha256": "9925406c8968d2bb21375c532fdf31fffdd68377ba67d2643a5fd1ce14918ae5"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-9_initiation_challenge_pattern/endpoint/protocol.json",
+      "sha256": "8fcb8133d2bac913ad051708286d1d1917b589981eee73df0c78cf0f0a30070a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/fertilization-cue-preflight-protocol/protocol.json",
+      "sha256": "1b6c9a174671646200f431f49fc596d8baf54dd1b41a6aac0f6ec5dec24d099b"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/parameter-robustness-moving/seed-8_initiation_challenge_pattern/endpoint/protocol.json",
+      "sha256": "a2e1193e63093953d4275856784cc622dc28bbdb239ba4ebb3da566aa06cb529"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/feedback-long-smoke/protocol.json",
+      "sha256": "470ff3be266980c9f7be30ec4cb02e4711573f7f260625c437cbcf2c7e2b77e9"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/relaunch/2026-10-06T121057Z/before-launch.json",
+      "sha256": "6f7d1ce515e95f59a3f12c4296c445536f18edc2734e0541d951c9785e7140af"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/protocol.json",
+      "sha256": "155d8dfd673cb3d68630297e6e9a2fdb531607140f9a9340fc06fb6556466278"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/launch.json",
+      "sha256": "6f7d1ce515e95f59a3f12c4296c445536f18edc2734e0541d951c9785e7140af"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/relaunch/2026-10-06T121057Z/launch.json",
+      "sha256": "e9441c03f26a7de1096a81c9a81670cae83fd2a660683a99d39d6b25e764c351"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-network-context/relaunch/2026-10-06T120835Z/before-launch.json",
+      "sha256": "6f7d1ce515e95f59a3f12c4296c445536f18edc2734e0541d951c9785e7140af"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/geometry-replay/protocol.json",
+      "sha256": "f735a7caa94f5748cf88d6679c935635193651d1c2d92244d770641875ac7660"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/protocol.json",
+      "sha256": "547d648ebb819e8f892c523328832f57dea7694ccf21b22fcb0848cc3ed02a2a"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/launch.json",
+      "sha256": "f687d95eccf9a21ddb307d970733df5d8451b211768eb590ffb5ac0cee3c6942"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/prelaunch-protocol-drafts/physical-gate-directory-fix/protocol.json",
+      "sha256": "3fd33ca6c1a7f7b21294d65527938b309780b19baebf88281e1b2c0a4e625033"
+    },
+    {
+      "path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-context-dosage/prelaunch-protocol-drafts/protocol.json",
+      "sha256": "d6ce4612a134c379576c1e34a70da9325df3e8ff3a74b30490e984da4838186b"
+    }
+  ],
+  "all_proposed_unused": true,
+  "scope": "Seed/history fields in existing protocol and launch JSON under outputs, output/studies and archive; no claim about absent undocumented external runs."
+}

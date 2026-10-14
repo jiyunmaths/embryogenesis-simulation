@@ -1,0 +1,442 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-10-08T12:44:11.022601+00:00",
+  "parent_protocol_sha256": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+  "source_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_shared_context_response.py",
+  "source_sha256": "ea63ff96ff9d54dffa758cdedeeb0e701b1647d8a08246ce8a7df32b173c820d",
+  "helper_source_sha256": {
+    "accepted_parent": "d9f82c5ebab637e3996d01b5a7264ee469ba7d72272e512d2b63f1620815bbb6",
+    "design": "b6bfdb6264e321203414efd71ce947a9fc0e2ce4307d62a46d80f21706e06639",
+    "transferred_context": "548eedf4480d1df812a7b57c2db115db3c2935da9cb03d11413c37a19a5094b6",
+    "shared_pulse": "868c2e130c088d73f0467fabbf89edc82169107393489314faf09bdca5d60530"
+  },
+  "actual_parent_contexts": 9,
+  "shared_contexts": 21,
+  "logical_trials": 69,
+  "factorials": 6,
+  "unique_initial_value_problems": 57,
+  "max_pulse_amount_relative_error": 4.6629367034256575e-15,
+  "all_arrays_match_literal_source_or_recipient_only_pulse": true,
+  "checks": [
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-22_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-22_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-23_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-sham_cell-23_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 5.551115123125783e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_amount",
+      "factor": 0.9015261758767698,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 1.1102230246251565e-16
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_amount",
+      "factor": 0.9015261758767698,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_amount",
+      "factor": 0.9026607182738662,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 8.881784197001252e-16
+    },
+    {
+      "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_amount",
+      "factor": 0.9026607182738662,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-19_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 9.992007221626409e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-19_amount",
+      "factor": 0.9129515010811287,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 7.771561172376096e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-20_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-sham_cell-20_amount",
+      "factor": 0.992639249083877,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.6629367034256575e-15
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 9.992007221626409e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_amount",
+      "factor": 0.9129515010811287,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 7.771561172376096e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_amount",
+      "factor": 0.992639249083877,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.6629367034256575e-15
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-29_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-29_amount",
+      "factor": 0.9130688650339642,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-30_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-sham_cell-30_amount",
+      "factor": 0.9942877334885858,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.6629367034256575e-15
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 7.771561172376096e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 7.771561172376096e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 2.220446049250313e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_amount",
+      "factor": 0.9130688650339642,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 8.881784197001252e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 7.771561172376096e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-16
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_amount",
+      "factor": 0.9942877334885858,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 4.440892098500626e-15
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_control",
+      "factor": 1.0,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 0.0
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_fractional",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    },
+    {
+      "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_amount",
+      "factor": 0.9,
+      "literal_array_equality": true,
+      "pulse_amount_relative_error": 6.661338147750939e-16
+    }
+  ],
+  "phases_loaded_or_copied": false,
+  "integrations_performed": 0,
+  "output_files_written": 0,
+  "script_path": "/tmp/shared-context-helper-preparation-review.py",
+  "script_sha256": "3a67ffd6d9f2711acc11c1a8ce67dfdf8913da3ede6cd7f29a37d890bada7b81",
+  "scope": "Calls read-only accepted-parent/design/assignment/pulse helpers; validates against literal independent NumPy source selection and recipient-only canonical dosing. No prepare/run/production or new scientific evidence."
+}

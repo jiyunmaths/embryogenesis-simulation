@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-12T12:32:47.020809+00:00",
+  "exit_code": 0,
+  "passed_tests": 66,
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_fresh_zygote_mature_clock_fix.py",
+    "tests/test_fresh_zygote_mature_qualification.py",
+    "tests/test_fresh_zygote_control_completion.py",
+    "tests/test_fresh_zygote_pilot.py",
+    "tests/test_development_gpu.py",
+    "tests/test_study_output_path_alias.py"
+  ],
+  "log_sha256": "d24eb01446173ce71e9f8d3afa53b9ccfecdebb3782c7880c649ff8ddaf1de65",
+  "scope": "Includes real coordinator-loop smoke test at the registered coarse clock: elapsed-zero checkpoint, six-unit horizon, 401 dense records, 41 observations, three checkpoints and exact eight-step clock replay. No scientific GPU solver steps in software suite."
+}

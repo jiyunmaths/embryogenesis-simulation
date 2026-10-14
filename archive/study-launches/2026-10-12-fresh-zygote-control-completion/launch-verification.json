@@ -1,0 +1,61 @@
+{
+  "observed_utc": "2026-10-12T03:04:48.509201+00:00",
+  "passed": true,
+  "pid": 611722,
+  "pid_alive_verified_on_host": true,
+  "protocol_sha256": "44af9b2bfdd77176891e015e5024db2aeca6acca413f7d8dd63e5b8a86ffd926",
+  "source_hashes_verified": 48,
+  "prelaunch_audit_sha256": "851ff6d7f1b863219dd0e49c8dd57d3f8a6304d3d270b678031263fafcd2b0e3",
+  "actual_start_prefix_sha256": "86a0a084126b31fe39a306a2c370b8a7201d555402cb50c15b64ab6358da6314",
+  "actual_start_prefix_passed": true,
+  "exact_gpu_restart": true,
+  "coordinator_status": {
+    "state": "running_development",
+    "active": "h1103_tension_adhesion_development_half",
+    "completed": 0,
+    "total": 6,
+    "pairs_completed": 0,
+    "pairs_total": 3,
+    "new_scientific_histories": 0,
+    "reused_paths": 2,
+    "post_cleavage_started": false,
+    "qualification_accepted": false,
+    "original_pilot_remains_failed": true,
+    "seconds": 4.247072412981652,
+    "protocol_sha256": "44af9b2bfdd77176891e015e5024db2aeca6acca413f7d8dd63e5b8a86ffd926"
+  },
+  "progress_snapshot": {
+    "state": "running",
+    "time": 2.25,
+    "cells": 1,
+    "events": 0,
+    "active_divisions": 1,
+    "seconds": 54.25315279903589,
+    "audit": {
+      "max_volume_error": 0.004188460488347756,
+      "min_radius": 21.5532881385288,
+      "max_clipping": 0.0,
+      "dilution_amount_error": 4.440892098500626e-16
+    },
+    "projection": {
+      "calls": 1067,
+      "correction_magnitude_max": 3.8875525984093984e-05,
+      "before_relative_volume_error_max": 5.185288509179653e-05,
+      "after_relative_volume_error_max": 9.892617791606995e-08
+    }
+  },
+  "runtime_binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693",
+  "original_failed_status_preserved": true,
+  "original_failed_comparison_preserved": true,
+  "user_manuscript_comments_preserved": true,
+  "ledger_unchanged": true,
+  "new_scientific_histories": 0,
+  "new_gpu_paths": 6,
+  "reused_paths": 2,
+  "qualification_accepted": false,
+  "post_cleavage_started": false,
+  "estimated_total_hours": [
+    6,
+    8
+  ]
+}

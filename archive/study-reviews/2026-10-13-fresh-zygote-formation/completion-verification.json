@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-13T02:15:42.459873+00:00",
+  "scoped_formation_timestep_accepted": true,
+  "source_pins_rechecked": 63,
+  "production_core_records_unchanged": true,
+  "manuscript_ledger_and_plan_unchanged": true,
+  "independent_histories": 3,
+  "numerical_paths": 24,
+  "pairs": 12,
+  "checkpoints": 144,
+  "maintenance_extension_started": false,
+  "assessment_writer_paths": "Canonical workspace paths verified against the audited relocation wrapper; physical symlink targets do not serve as dictionary keys.",
+  "sha256": {
+    "README.md": "9015b6da1e5b278d4aa3838677b99c51fe8f720784a501d7a5362ecd65109ccc",
+    "docs/lab_notebook.md": "7264c0d6b85ef63c44f002bd612590755f89ae67318282e09326724111dca962",
+    "docs/fresh_zygote_formation_assessment.md": "fb406334971fa0c9b091d855dd6108db41da4915c601a5715edf8ab9796da5a9",
+    "docs/fresh_zygote_formation_assessment.json": "9c2e5255f2ed8097eda38303da0b61cbc1c62507ebc55aca91bb33c603d1d36d",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/review.log": "f427af7cb43bf78f1460176706dc68023625c01c60c84cdfc8d504edcbcfefec",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/review_saved_evidence.py": "220cc4852f4dcfbe136807bf051243900bba72c4e247fbd19e7e93a3850f3bda",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/formation.svg": "06f69d5388b0595897aec672d8369c4889b31f30d40e931fea5c4cba2d1ad9c6",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/formation.png": "e369b866fb32ed676073810d86234a7f606a58973679297b709206ec8906b63e",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/scope.md": "eed8d43f4c47af93a1e40878c48aff6138d3f7e9b3aa998ba7965fb883951ebb",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/record_assessment.py": "b93887c38df0befde246ce6de3838ac672c343735695e6fc50e8e0cf3302127e",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/independent_review.json": "8bb00ae1d377bcc631baf87031f55fb9c6015b728cac49961c05e020d0fcaf99",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/descriptive_fine_results.json": "6c626d8aa4ebb5660f9b2c9974134a2d5968d51ba2288bcf066d218aa41cb009",
+    "archive/study-reviews/2026-10-13-fresh-zygote-formation/plot_formation.py": "6f0fed80999c7b62ca4c983b94ad20c29f5f9af5c20ac8f4b2892976e8ff6f82"
+  }
+}

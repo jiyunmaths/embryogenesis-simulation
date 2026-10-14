@@ -1,0 +1,13 @@
+{
+  "source": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs",
+  "destination": "/mnt/data/Documents/Python/embryogenesis-simulation/outputs",
+  "created_destination_empty": true,
+  "source_device": 2082,
+  "destination_device": 2064,
+  "started_utc": "2026-10-08T01:29:39.025761+00:00",
+  "started_local": "2026-10-07T21:29:39.025761-04:00",
+  "initial_logical_bytes": 85909765047,
+  "stage": "initial_copy_finished",
+  "existing_worker_pid": 229767,
+  "initial_rsync_exit_code": 0
+}

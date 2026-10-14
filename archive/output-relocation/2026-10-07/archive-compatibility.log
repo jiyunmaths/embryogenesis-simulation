@@ -1,0 +1,93 @@
+Checking all 2482 protected guards and idempotent restore of outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-23_neg10/source.npz
+Guard hashes: 128 files, 0.361 GiB; elapsed 2.4s
+Guard hashes: 256 files, 2.152 GiB; elapsed 11.7s
+Guard hashes: 384 files, 4.688 GiB; elapsed 24.6s
+Guard hashes: 512 files, 6.966 GiB; elapsed 37.2s
+Guard hashes: 640 files, 9.549 GiB; elapsed 51.7s
+Guard hashes: 768 files, 12.920 GiB; elapsed 69.7s
+Guard hashes: 896 files, 16.990 GiB; elapsed 90.7s
+Guard hashes: 1024 files, 20.269 GiB; elapsed 108.7s
+Guard hashes: 1152 files, 22.859 GiB; elapsed 122.9s
+Guard hashes: 1280 files, 25.466 GiB; elapsed 137.7s
+Guard hashes: 1408 files, 27.349 GiB; elapsed 148.3s
+Guard hashes: 1536 files, 28.837 GiB; elapsed 155.9s
+Guard hashes: 1664 files, 31.393 GiB; elapsed 169.3s
+Guard hashes: 1792 files, 33.899 GiB; elapsed 183.3s
+Guard hashes: 1920 files, 36.478 GiB; elapsed 197.8s
+Guard hashes: 2048 files, 39.033 GiB; elapsed 212.3s
+Guard hashes: 2176 files, 40.895 GiB; elapsed 222.3s
+Guard hashes: 2304 files, 42.347 GiB; elapsed 230.5s
+Restored 0 independent files; recoveries remain available
+Guard hashes: 2432 files, 43.114 GiB; elapsed 234.8s
+Guard hashes: 2560 files, 43.636 GiB; elapsed 236.0s
+Guard hashes: 2688 files, 45.450 GiB; elapsed 240.4s
+Guard hashes: 2816 files, 48.077 GiB; elapsed 246.5s
+Guard hashes: 2944 files, 50.519 GiB; elapsed 251.9s
+Guard hashes: 3072 files, 53.177 GiB; elapsed 258.1s
+Guard hashes: 3200 files, 56.564 GiB; elapsed 266.7s
+Guard hashes: 3328 files, 60.642 GiB; elapsed 276.8s
+Guard hashes: 3456 files, 63.757 GiB; elapsed 284.1s
+Guard hashes: 3584 files, 66.334 GiB; elapsed 290.2s
+Guard hashes: 3712 files, 68.941 GiB; elapsed 296.1s
+Guard hashes: 3840 files, 70.607 GiB; elapsed 299.9s
+Guard hashes: 3968 files, 72.359 GiB; elapsed 304.0s
+Guard hashes: 4096 files, 74.864 GiB; elapsed 309.6s
+Guard hashes: 4224 files, 77.421 GiB; elapsed 315.5s
+Guard hashes: 4352 files, 79.999 GiB; elapsed 321.3s
+Guard hashes: 4480 files, 82.508 GiB; elapsed 327.0s
+Guard hashes: 4608 files, 84.217 GiB; elapsed 330.9s
+Guard hashes: 4736 files, 85.669 GiB; elapsed 334.3s
+Verified 1 unique blobs for 1 original files
+{
+  "passed": true,
+  "verified_utc": "2026-10-08T01:47:59.923517+00:00",
+  "manifest_sha256": "edcf6b433ed7d3db70adb89c8ca701ec49b0d73a5b981380c61a966bf89a3c02",
+  "wrapper_sha256": "055fe9b85abf4a23c210038b3dc8cfaf332bc880fd8c6e342de0e67996909bc1",
+  "verified_protected_pins": 2482,
+  "relocated_protected_pins": 2416,
+  "all_protected_historical_inode_stats_match": true,
+  "actual_idempotent_restore": {
+    "manager": "2026-10-07-redistribution-launch",
+    "path": "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-23_neg10/source.npz",
+    "files_written": 0,
+    "stat_and_sha256_unchanged": true
+  },
+  "actual_recoveries_verified": [
+    {
+      "manager": "2026-10-07-redistribution-launch",
+      "codec": "zstd",
+      "path": "outputs/cell-exchange-response-refined/fresh_exchange/fresh_exchange_control/history.json"
+    },
+    {
+      "manager": "2026-10-07-redistribution-launch",
+      "codec": "reference",
+      "path": "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-23_neg10/source.npz"
+    },
+    {
+      "manager": "2026-10-06",
+      "codec": "zstd",
+      "path": "outputs/development-refinement/time-0.015/history.json"
+    }
+  ],
+  "previous_roundtrip_files_unchanged": [
+    "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-23_neg10/source.npz",
+    "outputs/phase-carry-exchange-response/seed-7_fine_fresh_exchange_response_cell-22_neg10/source.npz",
+    "outputs/phase-carry-exchange-response/seed-8_fine_fresh_exchange_response_cell-19_neg10/source.npz",
+    "outputs/phase-carry-exchange-response/seed-8_fine_fresh_exchange_response_cell-20_neg10/source.npz",
+    "outputs/phase-carry-exchange-response/seed-9_fine_fresh_exchange_response_cell-29_neg10/source.npz",
+    "outputs/phase-carry-exchange-response/seed-9_fine_fresh_exchange_response_cell-30_neg10/source.npz",
+    "outputs/cell-exchange-response-refined/fresh_exchange/fresh_exchange_control/history.json"
+  ],
+  "frozen_archive_files_sha256": {
+    "archive/output-compression/2026-10-06/manage_archive.py": "bd1aef7b7d786be340cfa1ac0804a40b9d8c535b4d757aa2a0d8f1571e37c451",
+    "archive/output-compression/2026-10-06/manifest.json": "d80ffa2d41b1693aee1e06a2961e87910729e2b9f9166bcd946b295307126f6a",
+    "archive/output-compression/2026-10-07-redistribution-launch/manage_archive.py": "67a2babfaae811fc46a79898169f9b9000ab5c1a553a9e05cdc945976bb32e77",
+    "archive/output-compression/2026-10-07-redistribution-launch/manifest.json": "5fa6f96db15555f73cf2a0cc9377fd912023dafe45061239d7874ae7a8c22f4b"
+  },
+  "frozen_archive_files_unchanged": true,
+  "fixture_script": "archive/output-relocation/2026-10-07/archive_fixture_smoke.py",
+  "fixture_result": "archive/output-relocation/2026-10-07/archive-fixture-smoke.json",
+  "fixture_log": "archive/output-relocation/2026-10-07/archive-fixture-smoke.log",
+  "elapsed_seconds": 338.35266885600004,
+  "scope": "Read-only real archive guard/recovery checks and idempotent restore of an existing verified file; no output data or original archive records changed."
+}

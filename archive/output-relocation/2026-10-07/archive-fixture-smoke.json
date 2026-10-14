@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "fixture_root": "/tmp/relocated-archive-check-hw_2xgc8",
+  "wrapper_sha256": "055fe9b85abf4a23c210038b3dc8cfaf332bc880fd8c6e342de0e67996909bc1",
+  "results": [
+    {
+      "manager": "2026-10-06",
+      "passed": true,
+      "checks": [
+        "blob verify/restore",
+        "mode/mtime preservation",
+        "idempotence",
+        "unchanged original manifest",
+        "path traversal rejected",
+        "nested symlink rejected",
+        "changed root alias rejected",
+        "changed original overwrite rejected"
+      ]
+    },
+    {
+      "manager": "2026-10-07-redistribution-launch",
+      "passed": true,
+      "checks": [
+        "blob verify/restore",
+        "mode/mtime preservation",
+        "idempotence",
+        "unchanged original manifest",
+        "path traversal rejected",
+        "nested symlink rejected",
+        "changed root alias rejected",
+        "changed original overwrite rejected",
+        "independent reference restore",
+        "historical inode projection",
+        "mutated None-valued pin rejected"
+      ]
+    }
+  ]
+}

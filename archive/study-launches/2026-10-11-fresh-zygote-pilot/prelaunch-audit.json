@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "utc": "2026-10-11T12:46:09.396344+00:00",
+  "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "independent_histories": 3,
+  "new_numerical_paths": 24,
+  "rows": [
+    {
+      "case": "h1101_off_development",
+      "seed": 1101,
+      "branch": "off",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_off_development_half",
+      "seed": 1101,
+      "branch": "off",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_tension_adhesion_development_half",
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_polarity_development",
+      "seed": 1101,
+      "branch": "polarity",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_polarity_development_half",
+      "seed": 1101,
+      "branch": "polarity",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_full_development",
+      "seed": 1101,
+      "branch": "full",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1101_full_development_half",
+      "seed": 1101,
+      "branch": "full",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_off_development",
+      "seed": 1102,
+      "branch": "off",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_off_development_half",
+      "seed": 1102,
+      "branch": "off",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_tension_adhesion_development",
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_tension_adhesion_development_half",
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_polarity_development",
+      "seed": 1102,
+      "branch": "polarity",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_polarity_development_half",
+      "seed": 1102,
+      "branch": "polarity",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_full_development",
+      "seed": 1102,
+      "branch": "full",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1102_full_development_half",
+      "seed": 1102,
+      "branch": "full",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_off_development",
+      "seed": 1103,
+      "branch": "off",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_off_development_half",
+      "seed": 1103,
+      "branch": "off",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_tension_adhesion_development",
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_tension_adhesion_development_half",
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_polarity_development",
+      "seed": 1103,
+      "branch": "polarity",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_polarity_development_half",
+      "seed": 1103,
+      "branch": "polarity",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_full_development",
+      "seed": 1103,
+      "branch": "full",
+      "dt": 0.00046875,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    },
+    {
+      "case": "h1103_full_development_half",
+      "seed": 1103,
+      "branch": "full",
+      "dt": 0.000234375,
+      "analytic_phase_exact": true,
+      "initial_rng_independently_reproduced": true,
+      "matched_within_history": true
+    }
+  ],
+  "source_count": 38,
+  "input_count": 382,
+  "preserved_count": 1774,
+  "seed_inventory_count": 361,
+  "test_log_sha256": "2afd254f0bd71d73de314faa2573d296cf7bd87449752692bfc93409c85bd7dc",
+  "gpu_smoke_sha256": "b035ea4cd59fa953c108b0bf25a6500dba1aef8e906f9061ade858d6969745c7",
+  "migration_record_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "runtime_binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693",
+  "audit_script_sha256": "aeae3c4c489efd88ca6f8119b6992992b75b6d1b70fd6fb4e559554d0c612e95",
+  "post_cleavage_not_launched": true
+}

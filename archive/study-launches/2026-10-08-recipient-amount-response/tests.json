@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 11,
+  "seconds": 25.88,
+  "log_sha256": "4742b8a3e5b7f9905baffe3b815892fe77018c39e00bd66bb67e7c86a58ca88a",
+  "source_sha256": {
+    "embryo/phase_carry_recipient_amount_response.py": "4d2b23b0a5f7b671746d3bc59ee6a815759cae96674d39fa8408671ce9038b63",
+    "tests/test_phase_carry_recipient_amount_response.py": "661c99d4196020cc9dfeb864c5668ebc91ad916d3ad730f96344550a96a27155",
+    "docs/phase_carry_recipient_amount_response.md": "d044cabcd6f1f5861b8d2c4f2cf287fd7080672ee7c2fd0234db288d8e70364c"
+  },
+  "post_test_change": "Added reporting-only exact count ignoring context labels; numerical/tested preparation functions unchanged. Exact count is independently audited before launch."
+}

@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-11T02:44:54.611578+00:00",
+  "status": {
+    "state": "running",
+    "stage": "full_restart_replay",
+    "case": "tension_adhesion_space120",
+    "live_stage": 2,
+    "completed": [
+      "tension_adhesion_space88",
+      "tension_adhesion_space104",
+      "tension_adhesion_space120",
+      "tension_adhesion_time120_half",
+      "polarity_space88",
+      "polarity_space104",
+      "polarity_space120",
+      "polarity_time120_half",
+      "full_space88",
+      "full_space104",
+      "full_space120",
+      "full_time120_half",
+      "off120"
+    ],
+    "replays_completed": 3,
+    "replay_total": 12
+  },
+  "active": {
+    "state": "running",
+    "time": 12.75,
+    "start": 6.00046875,
+    "checked_observations": 45,
+    "seconds": 435.62002191797365
+  },
+  "reference_stage_seconds": {
+    "4": 889.4190685389913,
+    "8": 679.6967179769999,
+    "2": 1000.9953177699936
+  },
+  "remaining_replays": [
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 2,
+      "remaining_seconds_proxy": 560.9738718449535
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 4,
+      "remaining_seconds_proxy": 885.5082506049661
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 8,
+      "remaining_seconds_proxy": 676.7080591901706
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 2,
+      "remaining_seconds_proxy": 957.9778173919792
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 4,
+      "remaining_seconds_proxy": 851.1965269967134
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 8,
+      "remaining_seconds_proxy": 650.4869371683857
+    },
+    {
+      "case": "full_space120",
+      "stage": 2,
+      "remaining_seconds_proxy": 954.6947251604447
+    },
+    {
+      "case": "full_space120",
+      "stage": 4,
+      "remaining_seconds_proxy": 848.2793856448394
+    },
+    {
+      "case": "full_space120",
+      "stage": 8,
+      "remaining_seconds_proxy": 648.2576490039204
+    }
+  ],
+  "estimated_remaining_minutes": 117.23472038343955,
+  "estimated_finish_utc": "2026-10-11T04:42:08.694801+00:00",
+  "range_remaining_minutes": [
+    105,
+    135
+  ],
+  "note": "Measured off120 full-replay times scaled by completed candidate production times; include final provenance checks in uncertainty. Independent review additional."
+}

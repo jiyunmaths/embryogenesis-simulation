@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "utc": "2026-10-10T03:12:30.434856+00:00",
+  "consumed_evidence_hashes_rechecked": 1645,
+  "current_ledger_manuscript_guards_unchanged": 61,
+  "original_status_unchanged": true,
+  "local_links_checked": 52,
+  "reporting_sha256": {
+    "docs/moving_pulse_time_amount_response_assessment.md": "f51614490f9fef3884bff3ce0b48728ca8d42831f320306ded281a11eeaec59b",
+    "docs/moving_pulse_time_amount_response_assessment.json": "b4a84f250c62a2892a4553c1a161a06d01c441cd1d296d4611fc58d3fe8fa580",
+    "README.md": "1c077b2cf45c88c6a72825857b177a3c5010b528ed2f7825e6e3819a061acca3",
+    "docs/plan.md": "3ae07b4e4f6c4fa29e40508648fc5eb4f23c7af5e431fb178f1f5910933b1048",
+    "docs/moving_pulse_time_amount_response_launch.md": "54ad510be8a789c0b1bdf7b14b73382ebb34a0f43ca62e2b88fce39e95a962e7",
+    "docs/moving_pulse_time_amount_response_interim.md": "bf1bc1a6d00309e9ce1d5535c56e26901fd1e0031670bc0c6574980e52dceea7"
+  },
+  "independent_review_sha256": "980cf36ac4a1f821b3d49b32fcd41d718c8baa19c805cd4d449e45cf82a11f25",
+  "original_protocol_sha256": "c8ff06dc8d6af2bb52d7eab4873288c742bc6de42fafe63e95063c9a55775edb",
+  "new_jobs_launched": 0
+}

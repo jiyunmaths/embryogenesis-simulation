@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "protocol_sha256": "db11e64f667ee63d3ab7f97eed65d1b4aacd70392460d9f42be317ae22e6e4d8",
+  "cases": 16,
+  "new_scientific_histories": 0,
+  "source_pins": 24,
+  "input_pins": 18,
+  "preservation_pins": 1289,
+  "calibration_max": 0.00042601238745000234,
+  "matched_initial_random_streams": true,
+  "calibration_sha256": "7f88a70385d932b840b48cc1c832d9cd345a18db85b78a34d92a2e526315d1c8",
+  "script_sha256": "685968c575f93ae71243fb1abd834536e4f64b997ee26a830ff9c0f7f89253de"
+}

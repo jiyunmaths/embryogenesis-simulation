@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_root": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output",
+  "target_root": "/mnt/data/Documents/Python/embryogenesis-simulation/output",
+  "original_copy_retained": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output.relocation-original-2026-10-10",
+  "manifest_sha256": "b13c05e24947894c2b3b49ca24cf4e40db8ab2a0d0f56a161d3622a18d4ec7c8",
+  "completed_utc": "2026-10-10T22:53:22.182371+00:00"
+}

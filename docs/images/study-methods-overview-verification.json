@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "utc": "2026-10-09T03:46:23.869402+00:00",
+  "figure_manifest_sha256": "baddd6cff10c470f99950704f78e4ce01e91f143ec3e2921b76e24de5821bd5a",
+  "caption_sha256": "20bf2a106975867453298e33cb22c1ade24628be17ee3a7b7f4e3956f58967bf",
+  "source_and_output_hashes_verified": true,
+  "active_study_source_and_input_pins_unchanged": 147,
+  "text_bounds_passed": true,
+  "pdf_pages": 1,
+  "pdf_render_visually_reviewed": true,
+  "scope": "Schematic figure and export verification only; no simulation result accepted or changed."
+}

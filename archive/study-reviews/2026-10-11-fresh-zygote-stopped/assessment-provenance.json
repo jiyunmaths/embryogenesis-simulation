@@ -1,0 +1,15 @@
+{
+  "assessed_utc": "2026-10-11T23:30:38.095358+00:00",
+  "original_status_sha256": "e467fd5ad84037c04368f14da0ff2d31df28b22184e63a04736e38e451291016",
+  "independent_review_sha256": "3298d37e46d146c13ad3518e7c2799b5c609f7eda0e80df9a19cb7b690aec07b",
+  "assessment_json_sha256": "0f4a74cacdce60d65da403fecc00aeafabb2048e35b9577e3fed00c07efa3fd8",
+  "assessment_markdown_sha256": "58624b0fc24aa18fecf0f13d4006e7dae591542ad5895e28fc65b66ec76b065f",
+  "plot_sha256": {
+    "cutoff-diagnostic.png": "2d4f49cb897b7e00dbc3b1b96214e33aadb1b7dfb92bfd3ba26b91b7e236e879",
+    "cutoff-diagnostic.svg": "705868bbd9480ab9b852edd185e7b56e20a2fd35de0e29ca521ab1b8c05e5993"
+  },
+  "original_failed_decision_retained": true,
+  "new_simulation_launched": false,
+  "link_correction_utc": "2026-10-11T23:33:09.672318+00:00",
+  "original_provenance_archive_sha256": "df7c525c7b3a8a3fc5a7402efeb6c2dacb7ab66b0d3ec7a77886642cc0ba9230"
+}

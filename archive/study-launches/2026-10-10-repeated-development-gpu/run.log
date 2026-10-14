@@ -1,0 +1,20 @@
+off_coarse True 82.42525248599122 None
+off_fine True 129.86438421500497 None
+off_space88 True 198.5689822480199 None
+off_space104 True 300.0676926400047 None
+tension_adhesion_coarse True 76.91700390799087 None
+tension_adhesion_fine True 122.44407002200023 None
+tension_adhesion_space88 True 195.7731148560124 None
+tension_adhesion_space104 True 298.32931814400945 None
+polarity_coarse True 80.40776700200513 None
+polarity_fine True 124.05311434200848 None
+polarity_space88 True 199.6084884830052 None
+polarity_space104 True 305.7532699010044 None
+full_coarse True 82.41712470899802 None
+full_fine True 127.09125208700425 None
+full_space88 True 199.5300306309946 None
+full_space104 True 307.01262068699 None
+{
+  "passed": false,
+  "action": "run"
+}

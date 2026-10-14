@@ -1,0 +1,20 @@
+Archived 1 file(s), 0.21 MiB each
+Archived 1 file(s), 0.21 MiB each
+Archived 1 file(s), 0.00 MiB each
+Completed: 3 originals, 1 blobs; all protected guards unchanged
+Verified 2 recoveries for 3 files
+Restored 1 independent files; recoveries remain available
+Restored 2 independent files; recoveries remain available
+Restored 0 independent files; recoveries remain available
+{
+  "passed": true,
+  "checks": [
+    "pack, same-pack duplicate blob reuse, blob+reference verification, prefix/all restore, exact bytes/mode/mtime, independent inode, idempotence",
+    "changed original cannot be overwritten",
+    "path traversal rejected",
+    "symlink ancestor rejected",
+    "modified protected reference rejected",
+    "stale candidate rejected before manifest/blob/unlink",
+    "protected shared inode rejected"
+  ]
+}

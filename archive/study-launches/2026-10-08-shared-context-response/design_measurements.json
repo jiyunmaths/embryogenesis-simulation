@@ -1,0 +1,383 @@
+{
+  "scope": "Static source calculations only; no ODE integration.",
+  "records": [
+    {
+      "seed": 7,
+      "cell": 22,
+      "recipient_concentrations": {
+        "S": [
+          0.964947964920474,
+          0.9677686364947108
+        ],
+        "R": [
+          0.9799030082480974,
+          0.9815297185391467
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.13451610941292766,
+        "R": 0.13451077585377583
+      },
+      "amounts": {
+        "SS": [
+          1.7440381872527158,
+          1.8493267787430974
+        ],
+        "SR": [
+          1.7440996937191997,
+          1.8493379009882371
+        ],
+        "RS": [
+          1.8698194917300204,
+          1.9631797583460577
+        ],
+        "RR": [
+          1.8695480993644744,
+          1.962910710724345
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        1.072120728431664,
+        1.0615645546864039
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        1.0719273136146035,
+        1.0614126870354075
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.000035266697102,
+        1.0000060142129923
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.9998548563822625,
+        0.99986295313989
+      ],
+      "common_factors": {
+        "S": 0.9,
+        "R": 0.9015261758767698
+      },
+      "common_amount_by_physics": {
+        "S": 0.012980104602702436,
+        "R": 0.012979589941997502
+      },
+      "largest_relative_common_dose_roundoff": 1.1102230246251565e-16
+    },
+    {
+      "seed": 7,
+      "cell": 23,
+      "recipient_concentrations": {
+        "S": [
+          0.016508860377315228,
+          0.1778658419523749
+        ],
+        "R": [
+          0.016960121427404072,
+          0.18188979165124414
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.13661547681180883,
+        "R": 0.1366153882071288
+      },
+      "amounts": {
+        "SS": [
+          1.7440381872527158,
+          1.8493267787430974
+        ],
+        "SR": [
+          1.7442115093312696,
+          1.8495014611426535
+        ],
+        "RS": [
+          1.6436724366720339,
+          1.7813294650499736
+        ],
+        "RR": [
+          1.6436031818059265,
+          1.781327290067742
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        0.9424520911788162,
+        0.9632313150522059
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        0.9423187342893315,
+        0.9631391634409456
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.0000993797497215,
+        1.000094457292007
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.999957865773884,
+        0.9999987790118143
+      ],
+      "common_factors": {
+        "S": 0.9,
+        "R": 0.9026607182738662
+      },
+      "common_amount_by_physics": {
+        "S": 0.00022553658320664983,
+        "R": 0.0002255364369304207
+      },
+      "largest_relative_common_dose_roundoff": 8.881784197001252e-16
+    },
+    {
+      "seed": 8,
+      "cell": 19,
+      "recipient_concentrations": {
+        "S": [
+          1.11942171656772,
+          1.1077223973322103
+        ],
+        "R": [
+          0.9744398008440632,
+          0.9765943908270495
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.1361563230684364,
+        "R": 0.13620837704617533
+      },
+      "amounts": {
+        "SS": [
+          1.7318612392254837,
+          1.822582526154049
+        ],
+        "SR": [
+          1.731922040929838,
+          1.8225978819075868
+        ],
+        "RS": [
+          1.873485296752014,
+          1.9690924948668844
+        ],
+        "RR": [
+          1.8731354917155227,
+          1.9687494103857355
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        1.0817756378622265,
+        1.0803859175704904
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        1.0815356854687697,
+        1.0801885758394396
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.0000351077228227,
+        1.000008425272007
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.999813286478897,
+        0.9998257651775916
+      ],
+      "common_factors": {
+        "S": 0.9129515010811287,
+        "R": 0.9
+      },
+      "common_amount_by_physics": {
+        "S": 0.01326761403344671,
+        "R": 0.013272686380216817
+      },
+      "largest_relative_common_dose_roundoff": 7.771561172376096e-16
+    },
+    {
+      "seed": 8,
+      "cell": 20,
+      "recipient_concentrations": {
+        "S": [
+          0.01111551836158325,
+          0.1397784492148503
+        ],
+        "R": [
+          0.0008181856196320561,
+          0.05983260003156013
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.13476385004068825,
+        "R": 0.13476583984420032
+      },
+      "amounts": {
+        "SS": [
+          1.7318612392254837,
+          1.822582526154049
+        ],
+        "SR": [
+          1.732148475428437,
+          1.822866030360983
+        ],
+        "RS": [
+          1.6063549966333728,
+          1.7045580665845053
+        ],
+        "RR": [
+          1.6062864237725991,
+          1.7045369671499342
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        0.9275310055162159,
+        0.9352432837054601
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        0.9273376079237626,
+        0.9350862536027313
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.0001658540513798,
+        1.0001555508202595
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.999957311515252,
+        0.999987621756639
+      ],
+      "common_factors": {
+        "S": 0.992639249083877,
+        "R": 0.9
+      },
+      "common_amount_by_physics": {
+        "S": 1.10261844149542e-05,
+        "R": 1.1026347217816149e-05
+      },
+      "largest_relative_common_dose_roundoff": 4.6629367034256575e-15
+    },
+    {
+      "seed": 9,
+      "cell": 29,
+      "recipient_concentrations": {
+        "S": [
+          1.1138739464709355,
+          1.1026655361673097
+        ],
+        "R": [
+          0.9683032637581586,
+          0.9709024481523437
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.13570737233618754,
+        "R": 0.13575956606121642
+      },
+      "amounts": {
+        "SS": [
+          1.6352189340399077,
+          1.7614084037788023
+        ],
+        "SR": [
+          1.6352804042559672,
+          1.7614241941241289
+        ],
+        "RS": [
+          1.7758597215645215,
+          1.9060857168095033
+        ],
+        "RR": [
+          1.775514887544444,
+          1.9057473835018635
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        1.086007313514376,
+        1.082137290091452
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        1.0857556189895652,
+        1.081935509832996
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.000037591428756,
+        1.00000896461337
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.9998058213630896,
+        0.999822498377352
+      ],
+      "common_factors": {
+        "S": 0.9130688650339642,
+        "R": 0.9
+      },
+      "common_amount_by_physics": {
+        "S": 0.013140589154917405,
+        "R": 0.013145643090346722
+      },
+      "largest_relative_common_dose_roundoff": 8.881784197001252e-16
+    },
+    {
+      "seed": 9,
+      "cell": 30,
+      "recipient_concentrations": {
+        "S": [
+          0.011311753011136808,
+          0.14158715051017848
+        ],
+        "R": [
+          0.0006461574791090588,
+          0.05856212462182724
+        ]
+      },
+      "recipient_volumes": {
+        "S": 0.13537534855685912,
+        "R": 0.13537740841816925
+      },
+      "amounts": {
+        "SS": [
+          1.6352189340399077,
+          1.7614084037788023
+        ],
+        "SR": [
+          1.6355064770668313,
+          1.7616927629802457
+        ],
+        "RS": [
+          1.5076651687021685,
+          1.6412635235223072
+        ],
+        "RR": [
+          1.5076036214135882,
+          1.6412486848287087
+        ]
+      },
+      "chemical_amount_ratio_red_sham_at_sham_physics": [
+        0.9219959097326437,
+        0.9317904467818227
+      ],
+      "chemical_amount_ratio_red_sham_at_red_physics": [
+        0.9217961790755924,
+        0.9316316211983624
+      ],
+      "physical_amount_ratio_red_sham_at_sham_chemistry": [
+        1.0001758437484656,
+        1.0001614385402235
+      ],
+      "physical_amount_ratio_red_sham_at_red_chemistry": [
+        0.999959177083972,
+        0.9999909589816712
+      ],
+      "common_factors": {
+        "S": 0.9942877334885858,
+        "R": 0.9
+      },
+      "common_amount_by_physics": {
+        "S": 8.747379395701026e-06,
+        "R": 8.747512495180172e-06
+      },
+      "largest_relative_common_dose_roundoff": 4.6629367034256575e-15
+    }
+  ],
+  "inputs_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_sham.npz": "27006d0a02d193b79e7eed6437223fbc4ee8e87c1811aa7fcdbf65448ddd026a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-22.npz": "73cdb358f18356685e649d9e5e7fb1d4548f247bded9226dc13eb8d062e606c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-23.npz": "4ceabd440d101964c4268479538557fe1820fb5f634c6513e40f3b6a941e6570",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_sham.npz": "b148069d8792259fddffe96e6f117249224eb24f9c0ac3ddfe723d34b0e67461",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-19.npz": "5fc314347524fb427337ac46da19578d71407cd44f9257d28cf41a211db43532",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-20.npz": "1f8d3ab2fe3722d6a92cf3898e396a8c8e9eeb20f9a60524602556e032a12523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_sham.npz": "e54319ae840ecd550e5399a104beb3fbe08c0d0ffeeefd36074f8da59124b56b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-29.npz": "5b119063a550097337f23361835ee8c8756fdf3837ad5c3973b942eac306dfa1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-30.npz": "3d4f6cbd7f64042e4e3c125a7e7ef9c5e895e9c13522b422ce9287693bdbe590"
+  }
+}

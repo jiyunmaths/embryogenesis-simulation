@@ -1,0 +1,568 @@
+{
+  "review_completed": true,
+  "temporal_screen_passed": true,
+  "full_development_qualified": false,
+  "qualification_accepted": false,
+  "protocol_sha256": "469784ecd00709ace6ad426a4728fe6ddb428a343a2263d3ca40795a5d519571",
+  "new_scientific_histories": 0,
+  "production_seconds": 702.6263499069901,
+  "source_count": 27,
+  "input_count": 38,
+  "preserved_count": 1592,
+  "paths": [
+    {
+      "case": "off_coarse",
+      "seconds": 70.04360680701211,
+      "recorded_runtime_gates_pass": true,
+      "boundary_max": 6.50114987885142e-12,
+      "graph_closure_max": 1.315084428288016e-16,
+      "audit": {
+        "max_volume_error": 0.016148282093776722,
+        "min_radius": 5.099106921926802,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "projection": {
+        "calls": 3690,
+        "correction_magnitude_max": 0.002142600857921912,
+        "before_relative_volume_error_max": 0.005946199280372211,
+        "after_relative_volume_error_max": 9.990505578372222e-08
+      },
+      "network_rows": 1226,
+      "regular_network_rows": 1201,
+      "old_reproduction": {
+        "exact": true,
+        "checkpoints": 7
+      },
+      "log_activator_sd_at_18": 0.004280512754795674
+    },
+    {
+      "case": "off_fine",
+      "seconds": 109.02630529899034,
+      "recorded_runtime_gates_pass": true,
+      "boundary_max": 6.405831594336053e-12,
+      "graph_closure_max": 1.3192061567795445e-16,
+      "audit": {
+        "max_volume_error": 0.01614436168718869,
+        "min_radius": 5.098950441576925,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "projection": {
+        "calls": 7360,
+        "correction_magnitude_max": 0.0010735671391114772,
+        "before_relative_volume_error_max": 0.0029891573679089456,
+        "after_relative_volume_error_max": 9.991806304565642e-08
+      },
+      "network_rows": 1229,
+      "regular_network_rows": 1201,
+      "old_reproduction": {
+        "exact": true,
+        "checkpoints": 7
+      },
+      "log_activator_sd_at_18": 0.004322475118054005
+    },
+    {
+      "case": "off_half",
+      "seconds": 181.32560112298233,
+      "recorded_runtime_gates_pass": true,
+      "boundary_max": 6.3745506269363705e-12,
+      "graph_closure_max": 1.3808556925212478e-16,
+      "audit": {
+        "max_volume_error": 0.016172799777455893,
+        "min_radius": 5.098923905887572,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "projection": {
+        "calls": 14703,
+        "correction_magnitude_max": 0.0005372619679415292,
+        "before_relative_volume_error_max": 0.0014983829783218328,
+        "after_relative_volume_error_max": 9.995894290071305e-08
+      },
+      "network_rows": 1228,
+      "regular_network_rows": 1201,
+      "old_reproduction": null,
+      "log_activator_sd_at_18": 0.004348049623025458
+    },
+    {
+      "case": "off_quarter",
+      "seconds": 330.94687906699255,
+      "recorded_runtime_gates_pass": true,
+      "boundary_max": 6.363395487624102e-12,
+      "graph_closure_max": 1.3166342068462904e-16,
+      "audit": {
+        "max_volume_error": 0.016175863849959504,
+        "min_radius": 5.098884335299548,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "projection": {
+        "calls": 29392,
+        "correction_magnitude_max": 0.0002687470526015891,
+        "before_relative_volume_error_max": 0.0007500405505145302,
+        "after_relative_volume_error_max": 9.980334603199026e-08
+      },
+      "network_rows": 1231,
+      "regular_network_rows": 1201,
+      "old_reproduction": null,
+      "log_activator_sd_at_18": 0.0043549069224295975
+    }
+  ],
+  "pairs": [
+    {
+      "cases": [
+        "off_coarse",
+        "off_fine"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0006518382176184442,
+        "log_wasserstein_max": 0.0006477308167867207,
+        "contrast_abs_max": 0.0008402282211711286,
+        "relative_axis_max": 0.008158956016479424,
+        "relative_total_volume_max": 0.000633722989407115,
+        "whole_amount_relative_max": 0.00013093922511120404,
+        "mean_polarity_abs_max": 5.2294682061148755e-05,
+        "cell_count_difference_max": 1.0,
+        "relative_spectrum_max": 0.050339701291357696,
+        "unmatched_observations_max": 3
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.0,
+        "log_wasserstein_max": 6.0,
+        "contrast_abs_max": 6.0,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.0,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 11.85,
+        "cell_count_difference_max": 6.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "unmatched_times": [
+        6.0,
+        6.3,
+        12.15
+      ],
+      "homologous_errors": {
+        "chemical_log_max": 0.0015008829394278105,
+        "polarity_abs_max": 0.0034141753302548636,
+        "relative_volume_max": 0.0015352734005351643,
+        "relative_transport_max": 0.05160885841664848,
+        "unmatched_observations_max": 3
+      },
+      "homologous_unmatched_times": [
+        6.0,
+        6.3,
+        12.15
+      ],
+      "maturity_time_error": 0.02812499999999929,
+      "parent_abscission_time_max": 0.02812499999999929,
+      "axis_angle_degrees_max": 0.09107240590353752,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.014293206497178272,
+            "activator_density": 0.014293209394124928,
+            "inhibitor_density": 0.014293200318957294,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.026265434661066667,
+            "activator_density": 0.0262268618260252,
+            "inhibitor_density": 0.026226331722048454,
+            "polarity_density": 0.002290593297171825
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.036697714450465824,
+            "activator_density": 0.036673783009177334,
+            "inhibitor_density": 0.036672185673597216,
+            "polarity_density": 0.002021843137177994
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.03951039450223334,
+            "activator_density": 0.039391784906068726,
+            "inhibitor_density": 0.03938585789217895,
+            "polarity_density": 0.0030773157488875862
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.004111615264549771,
+            "activator_density": 0.004111060155252103,
+            "inhibitor_density": 0.004111461631295104,
+            "polarity_density": 0.00047931454853400646
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.003955526226375534,
+            "activator_density": 0.003952985260893433,
+            "inhibitor_density": 0.0039543007404619895,
+            "polarity_density": 0.00040928874326581153
+          }
+        }
+      ],
+      "dense_spectrum_peak": {
+        "time": 11.61,
+        "relative_spectrum": 0.05070776516931367,
+        "cells": 8,
+        "edges": [
+          16,
+          17
+        ]
+      },
+      "dense_count_unmatched_times": [
+        3.195,
+        5.985,
+        6.0,
+        6.3,
+        6.315,
+        8.88,
+        9.09,
+        9.24,
+        9.255,
+        9.27,
+        11.775,
+        11.79,
+        11.805,
+        11.82,
+        11.925,
+        11.94,
+        12.135,
+        12.15,
+        12.225,
+        12.33,
+        12.345
+      ],
+      "dense_topology_mismatch_times": [
+        9.75,
+        9.78,
+        9.96,
+        9.975,
+        9.99,
+        11.61,
+        11.625,
+        11.64,
+        11.865,
+        11.88,
+        12.285
+      ],
+      "dense_conductance_peak": {
+        "time": 11.49,
+        "relative_conductance": 0.05492504054855541
+      },
+      "field_max": 0.03951039450223334,
+      "failed_gates": {
+        "relative_spectrum_max": 0.050339701291357696,
+        "field_max": 0.03951039450223334
+      },
+      "independently_passed": false
+    },
+    {
+      "cases": [
+        "off_fine",
+        "off_half"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.0004031662223688713,
+        "log_wasserstein_max": 0.0004011421130717648,
+        "contrast_abs_max": 0.000326786041364108,
+        "relative_axis_max": 0.004144174539252532,
+        "relative_total_volume_max": 0.00037474100543599675,
+        "whole_amount_relative_max": 6.101624417609308e-05,
+        "mean_polarity_abs_max": 1.8509258849060887e-05,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 0.02315217279791299,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 6.3,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.3,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 12.75,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "unmatched_times": [],
+      "homologous_errors": {
+        "chemical_log_max": 0.0012273298478002752,
+        "polarity_abs_max": 0.0016138409018033942,
+        "relative_volume_max": 0.0012599663598513722,
+        "relative_transport_max": 0.024096736909169688,
+        "unmatched_observations_max": 0
+      },
+      "homologous_unmatched_times": [],
+      "maturity_time_error": 0.011250000000000426,
+      "parent_abscission_time_max": 0.014999999999998792,
+      "axis_angle_degrees_max": 0.05058926767812855,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.0057110334243535635,
+            "activator_density": 0.0057110347288936115,
+            "inhibitor_density": 0.00571103204646486,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.013168126094353473,
+            "activator_density": 0.01315048537364584,
+            "inhibitor_density": 0.013148204653813072,
+            "polarity_density": 0.0010939545406380353
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.01823437167756973,
+            "activator_density": 0.018222973049576548,
+            "inhibitor_density": 0.01822207952052524,
+            "polarity_density": 0.0008205974281121149
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.01804388284972786,
+            "activator_density": 0.01799196160244298,
+            "inhibitor_density": 0.01799020055444437,
+            "polarity_density": 0.0014796178308830027
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.002275151349357599,
+            "activator_density": 0.002275167556916691,
+            "inhibitor_density": 0.0022751050690877636,
+            "polarity_density": 0.0002750037981556599
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.002250984742321164,
+            "activator_density": 0.002250831408826492,
+            "inhibitor_density": 0.0022505805525683082,
+            "polarity_density": 0.0002258274819292394
+          }
+        }
+      ],
+      "dense_spectrum_peak": {
+        "time": 11.595,
+        "relative_spectrum": 0.024644599238532572,
+        "cells": 8,
+        "edges": [
+          16,
+          17
+        ]
+      },
+      "dense_count_unmatched_times": [
+        8.865,
+        9.075,
+        11.775,
+        11.91,
+        11.925,
+        12.21,
+        12.315
+      ],
+      "dense_topology_mismatch_times": [
+        9.225,
+        9.735,
+        9.765,
+        9.945,
+        11.595,
+        11.835,
+        12.015
+      ],
+      "dense_conductance_peak": {
+        "time": 11.49,
+        "relative_conductance": 0.026037927218311854
+      },
+      "field_max": 0.01823437167756973,
+      "failed_gates": {
+        "relative_spectrum_max": 0.02315217279791299,
+        "field_max": 0.01823437167756973
+      },
+      "independently_passed": false
+    },
+    {
+      "cases": [
+        "off_half",
+        "off_quarter"
+      ],
+      "errors": {
+        "concentration_wasserstein_max": 0.00013443071319840032,
+        "log_wasserstein_max": 0.00013368638423712489,
+        "contrast_abs_max": 9.93015682203759e-05,
+        "relative_axis_max": 0.0017555563277156239,
+        "relative_total_volume_max": 0.0001192120816930764,
+        "whole_amount_relative_max": 2.5535725496350636e-05,
+        "mean_polarity_abs_max": 7.0536779868849515e-06,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 0.00988606040555972,
+        "unmatched_observations_max": 0
+      },
+      "peak_times": {
+        "concentration_wasserstein_max": 6.3,
+        "log_wasserstein_max": 6.3,
+        "contrast_abs_max": 6.3,
+        "relative_axis_max": 8.85,
+        "relative_total_volume_max": 6.3,
+        "whole_amount_relative_max": 13.35,
+        "mean_polarity_abs_max": 11.85,
+        "cell_count_difference_max": 0.0,
+        "relative_spectrum_max": 11.549999999999999
+      },
+      "unmatched_times": [],
+      "homologous_errors": {
+        "chemical_log_max": 0.0003950931135362774,
+        "polarity_abs_max": 0.0007453984841549145,
+        "relative_volume_max": 0.00041455773718079847,
+        "relative_transport_max": 0.010147011442124512,
+        "unmatched_observations_max": 0
+      },
+      "homologous_unmatched_times": [],
+      "maturity_time_error": 0.005156249999998863,
+      "parent_abscission_time_max": 0.005625000000000213,
+      "axis_angle_degrees_max": 0.023661147899367442,
+      "field_checks": [
+        {
+          "time": 0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 3,
+          "errors": {
+            "occupancy": 0.002853381250942164,
+            "activator_density": 0.0028533801684855736,
+            "inhibitor_density": 0.002853377539543267,
+            "polarity_density": 0.0
+          }
+        },
+        {
+          "time": 6,
+          "errors": {
+            "occupancy": 0.005242821216874866,
+            "activator_density": 0.0052348044507569864,
+            "inhibitor_density": 0.005233790294053142,
+            "polarity_density": 0.0005288996375771595
+          }
+        },
+        {
+          "time": 9,
+          "errors": {
+            "occupancy": 0.008097275209320368,
+            "activator_density": 0.008092041529338564,
+            "inhibitor_density": 0.008091683119221777,
+            "polarity_density": 0.0003631120020752918
+          }
+        },
+        {
+          "time": 12,
+          "errors": {
+            "occupancy": 0.007946938264452795,
+            "activator_density": 0.007923825121519313,
+            "inhibitor_density": 0.007923356829190258,
+            "polarity_density": 0.000625141072017653
+          }
+        },
+        {
+          "time": 15,
+          "errors": {
+            "occupancy": 0.0008932593145751814,
+            "activator_density": 0.0008933898455970439,
+            "inhibitor_density": 0.0008933355786496711,
+            "polarity_density": 0.00010839336191944865
+          }
+        },
+        {
+          "time": 18,
+          "errors": {
+            "occupancy": 0.0008820492706198195,
+            "activator_density": 0.0008822298635710831,
+            "inhibitor_density": 0.0008820737810938135,
+            "polarity_density": 8.92609578455573e-05
+          }
+        }
+      ],
+      "dense_spectrum_peak": {
+        "time": 11.535,
+        "relative_spectrum": 0.009915521781836547,
+        "cells": 8,
+        "edges": [
+          16,
+          16
+        ]
+      },
+      "dense_count_unmatched_times": [
+        6.285,
+        9.225,
+        9.24,
+        11.76,
+        11.79,
+        12.12
+      ],
+      "dense_topology_mismatch_times": [
+        9.96,
+        12.27
+      ],
+      "dense_conductance_peak": {
+        "time": 11.475,
+        "relative_conductance": 0.010900159957300126
+      },
+      "field_max": 0.008097275209320368,
+      "failed_gates": {},
+      "independently_passed": true
+    }
+  ],
+  "independent_full_restart_replay_performed": false,
+  "scope": "Adjacent timestep screen only: feedback off, one synthetic seed-7 zygote, grid72, t0\u201318, unchanged limits. No spatial/control/full-fine-CPU or fresh-history qualification.",
+  "independent_review": "archive/study-reviews/2026-10-10-development-time-diagnosis/independent_review.json",
+  "independent_review_sha256": "5138eaddd32863961e42445e77068893b14981379c2ab56332779ed29bfa3151",
+  "diagnosis": "archive/study-reviews/2026-10-10-development-time-diagnosis/cleavage_diagnosis.json",
+  "diagnosis_sha256": "4f8068b40a6244bda63291ff62f0457f48420f2128219ddcf14d8ba4314f6f24",
+  "report": "docs/development_time_diagnosis_assessment.md",
+  "next_test": "Feedback-off spatial ladder at dt=0.00046875, verify timestep at finer grid; then control and full restart qualification before fresh independent histories."
+}

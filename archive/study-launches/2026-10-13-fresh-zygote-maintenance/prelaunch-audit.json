@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "utc": "2026-10-13T02:44:32.218587+00:00",
+  "protocol_sha256": "78f7a98bdb2a3d0ecdaa825f94898d9111b664ba197654014d2ecc02ed656bfd",
+  "source_count": 68,
+  "input_count": 602,
+  "losslessly_checked_start_arrays": 432,
+  "all24_complete_starts_preserved": true,
+  "only_metadata_change": "config.steps",
+  "model_couplings_and_compensation_unchanged": true,
+  "original_failures_retained": true,
+  "histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "independent_histories": 3,
+  "inherited_start_time": 78.0,
+  "final_physical_time": 258.0,
+  "total_elapsed_since_t18": 240.0,
+  "readme_science_manuscript_and_ledger_unchanged": true,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 24,
+  "maintenance_extension_started": false,
+  "downstream_assays_started": false,
+  "test_log_sha256": "73eeeb145bb126f098c61da60c6df33c329a3ec443337ce6962ab80c5332fc4a",
+  "test_verification_sha256": "35a963d345b200db5d9999a1d9ddfb8d5e6094167eeef4640edaf4ff008a5509",
+  "migration_record_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "runtime_binary_sha256": "878c308c87e3b29a369dc1f94cf7de71b0e302aca24a980a08c71fcdbc504693",
+  "audit_script_sha256": "375256e5ef4ddea66c6ca8745fd165d8005a2ed5e14fdc95b5f882f4b42c9dde"
+}

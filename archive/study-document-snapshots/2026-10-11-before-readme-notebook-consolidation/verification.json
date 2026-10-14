@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-10-11T16:09:20.999168+00:00",
+  "check_scope": "Documentation migration, local destinations/anchors, preservation, and active source/input pins; no simulation launch or stop.",
+  "local_links_checked": 277,
+  "incoming_readme_anchors_checked": 3,
+  "broken_links": [],
+  "protected_documents_unchanged": 68,
+  "imported_source_sections_preserved": 4,
+  "original_readme_preserved": true,
+  "active_study": {
+    "protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+    "source_hashes_checked": 38,
+    "input_hashes_checked": 382,
+    "unchanged": true
+  },
+  "document_sha256": {
+    "README.md": "1791a75b3f7a2600c8be22f1fb5d242566999b3b6eb7d773b77f914eddc35e47",
+    "docs/lab_notebook.md": "3ffd787caef6a774f7535eae81b2de822f2781b9deba29476c42ef89f96e319e",
+    "docs/lab_notebook/run_records.md": "b1c2da804feb1877283c67b05c9c12b3da7a8ded0b95849edb4aff29725f842b",
+    "docs/lab_notebook/2026-10-11-readme-status-history.md": "5bfc50244c166c777ef52d07d4b892f9e4b0f844fe17677235b90622fae2d0da",
+    "docs/running.md": "1719d32e1b159fab0bb59fd71690126d595ea867707c4d28535a68c49455330d"
+  },
+  "readme_lines_before": 840,
+  "readme_lines_after": 209,
+  "readme_words_before": 15331,
+  "readme_words_after": 2445,
+  "checks_passed": true
+}

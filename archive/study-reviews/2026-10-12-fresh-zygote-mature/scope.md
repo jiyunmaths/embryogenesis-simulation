@@ -1,0 +1,13 @@
+# Completed mature-timestep saved-evidence audit
+
+This review independently reconstructs the numerical comparisons using NumPy/SciPy and earlier independently written audit algorithms. It imports no embryo solver and performs no new CPU/GPU mechanics steps. Its decision is recorded in `independent_review.json`; production status and summary remain original provisional records.
+
+The registered experiment contains 24 numerical paths and twelve timestep pairs, nested within three existing developmental histories (1101–1103), each with four mechanical branches. Compare dt=0.00375 and 0.001875 at grid120, extent2.24, physical t=18–24. These paths retain actual developmental chemistry, geometry, polarity and numerical compensation. There is no mature chemical reset or feedback switch.
+
+Check all registered source/input pins, the runtime binary and original scheduling/developmental failures. Recompute all 984 regular observations and 9,624 dense conservative graph checks, every weighted-distribution/homologous comparison, and all 72 complete checkpoint states/native density fields. Verify exact initial-state inheritance, unchanged targets, IDs/ancestry, cell-cycle due times, lineage/events and random states. The t=21 restart archive must be byte-identical to the corresponding full checkpoint. All original tolerances remain unchanged.
+
+Every-step extrema and the successful eight-step CPU/GPU prefixes and exact restart replays are recorded production checks verified through immutable evidence, not independently rerun trajectories. Boundary measurements between checkpoints are also recorded observations. Sampled checkpoint volume, radius and connectedness are independently reconstructed. An audit pass does not constitute a full fine CPU horizon, spatial convergence, long-time accuracy or biological identity qualification.
+
+The first audit incorrectly included the per-step rounding diagnostic among conserved arrays. Its source/log and the explanation are retained in [audit-check-correction](audit-check-correction/record.json). The corrected audit retains exact initial rounding inheritance and full restart archive equality, but does not require the diagnostic to remain constant as time advances. Production sources, results and acceptance thresholds are unchanged.
+
+The descriptive figure uses all twelve fine-clock histories. No curve represents an extra independent replicate. Chemical contrast is SD of natural-log activator; conductance is the sum over undirected edges divided by its own t=18 value. Frozen uniform eigenmode counts assess a fixed-volume/contact chemical linearization and do not establish stability of the entire moving system.

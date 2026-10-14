@@ -1,0 +1,3959 @@
+{
+  "review_completed": true,
+  "scoped_qualification_accepted": true,
+  "qualification_accepted": true,
+  "biological_identity_qualified": false,
+  "general_continuum_qualified": false,
+  "fine_cpu_ladder_performed": false,
+  "independently_repeated_mechanics": false,
+  "protocol_sha256": "c57f1e21732680319147c1c1bff11f2f8aea2a48753d32fdab4f37bdc0a66f88",
+  "source_count": 33,
+  "input_count": 38,
+  "preserved_count": 1774,
+  "paths": [
+    {
+      "case": "tension_adhesion_space88",
+      "reused": false,
+      "seconds": 542.019879228028,
+      "audit": {
+        "max_volume_error": 0.0161683431513574,
+        "min_radius": 6.233136838104457,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.0977230249549255e-12,
+      "graph_closure_max": 1.4750120715006937e-16,
+      "projection": {
+        "calls": 29413,
+        "correction_magnitude_max": 0.0002690827149509768,
+        "before_relative_volume_error_max": 0.0007543908974941838,
+        "after_relative_volume_error_max": 9.99799092404885e-08
+      },
+      "network_rows": 1230,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004360621488359836
+    },
+    {
+      "case": "tension_adhesion_space104",
+      "reused": false,
+      "seconds": 835.3174304999993,
+      "audit": {
+        "max_volume_error": 0.01613068534849338,
+        "min_radius": 7.366417345001159,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.537337519594509e-12,
+      "graph_closure_max": 1.4667569058055583e-16,
+      "projection": {
+        "calls": 29466,
+        "correction_magnitude_max": 0.000268417252309376,
+        "before_relative_volume_error_max": 0.0007556843767794197,
+        "after_relative_volume_error_max": 9.99739269147426e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004308019596731951
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "reused": false,
+      "seconds": 1241.5075290449895,
+      "audit": {
+        "max_volume_error": 0.016146283324169453,
+        "min_radius": 8.499462435529122,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.190110931834301e-12,
+      "graph_closure_max": 1.3555884815916235e-16,
+      "projection": {
+        "calls": 29453,
+        "correction_magnitude_max": 0.0002685390506029988,
+        "before_relative_volume_error_max": 0.0007571445607699179,
+        "after_relative_volume_error_max": 9.998792038778959e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.00434482578701919
+    },
+    {
+      "case": "tension_adhesion_time120_half",
+      "reused": false,
+      "seconds": 2327.6077034400078,
+      "audit": {
+        "max_volume_error": 0.016149978709108948,
+        "min_radius": 8.499417174386847,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.180406021347949e-12,
+      "graph_closure_max": 1.1648908474105078e-16,
+      "projection": {
+        "calls": 58885,
+        "correction_magnitude_max": 0.00013429619901624793,
+        "before_relative_volume_error_max": 0.00037878100366461886,
+        "after_relative_volume_error_max": 9.99097480303135e-08
+      },
+      "network_rows": 1230,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.00435043450700303
+    },
+    {
+      "case": "polarity_space88",
+      "reused": false,
+      "seconds": 525.9235006169765,
+      "audit": {
+        "max_volume_error": 0.016006816858328277,
+        "min_radius": 6.233097446356041,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 6.176622581455238e-12,
+      "graph_closure_max": 1.397879025406634e-16,
+      "projection": {
+        "calls": 29412,
+        "correction_magnitude_max": 0.00026846521996978773,
+        "before_relative_volume_error_max": 0.0007530492761446128,
+        "after_relative_volume_error_max": 9.999265992988171e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004179076727944433
+    },
+    {
+      "case": "polarity_space104",
+      "reused": false,
+      "seconds": 804.323912072985,
+      "audit": {
+        "max_volume_error": 0.015962860493214714,
+        "min_radius": 7.366348607673277,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.49704205765611e-12,
+      "graph_closure_max": 1.3336785075766942e-16,
+      "projection": {
+        "calls": 29467,
+        "correction_magnitude_max": 0.0002678151446216654,
+        "before_relative_volume_error_max": 0.00075439174447689,
+        "after_relative_volume_error_max": 9.997776428960492e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004130753984647867
+    },
+    {
+      "case": "polarity_space120",
+      "reused": false,
+      "seconds": 1193.4015253289836,
+      "audit": {
+        "max_volume_error": 0.015981381123913896,
+        "min_radius": 8.499444469110145,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.090706068494599e-12,
+      "graph_closure_max": 1.3136826498444916e-16,
+      "projection": {
+        "calls": 29452,
+        "correction_magnitude_max": 0.00026789497535419093,
+        "before_relative_volume_error_max": 0.0007557597750734724,
+        "after_relative_volume_error_max": 9.999558758799765e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004166896057626089
+    },
+    {
+      "case": "polarity_time120_half",
+      "reused": false,
+      "seconds": 2226.436141076003,
+      "audit": {
+        "max_volume_error": 0.01598514010833063,
+        "min_radius": 8.499392995511988,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.080037519117342e-12,
+      "graph_closure_max": 1.6491595564212813e-16,
+      "projection": {
+        "calls": 58884,
+        "correction_magnitude_max": 0.00013397373697049696,
+        "before_relative_volume_error_max": 0.00037808869182054394,
+        "after_relative_volume_error_max": 9.994536787072406e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.0041721968209414125
+    },
+    {
+      "case": "full_space88",
+      "reused": false,
+      "seconds": 522.1113855509902,
+      "audit": {
+        "max_volume_error": 0.016031839463474418,
+        "min_radius": 6.233067919305483,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 6.1755921557105076e-12,
+      "graph_closure_max": 1.3163805481744774e-16,
+      "projection": {
+        "calls": 29414,
+        "correction_magnitude_max": 0.0002684597972133254,
+        "before_relative_volume_error_max": 0.0007530303978909858,
+        "after_relative_volume_error_max": 9.998913030884182e-08
+      },
+      "network_rows": 1230,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004205581668753002
+    },
+    {
+      "case": "full_space104",
+      "reused": false,
+      "seconds": 798.5912625019846,
+      "audit": {
+        "max_volume_error": 0.015986410477404234,
+        "min_radius": 7.366291385063812,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.4914506102121674e-12,
+      "graph_closure_max": 1.4513307981100852e-16,
+      "projection": {
+        "calls": 29470,
+        "correction_magnitude_max": 0.00026782344959097555,
+        "before_relative_volume_error_max": 0.000754410376412773,
+        "after_relative_volume_error_max": 9.998452532578028e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004155439278288801
+    },
+    {
+      "case": "full_space120",
+      "reused": false,
+      "seconds": 1189.3116109220136,
+      "audit": {
+        "max_volume_error": 0.01600560520863037,
+        "min_radius": 8.499353494192112,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.08698031614907e-12,
+      "graph_closure_max": 1.6577655440331218e-16,
+      "projection": {
+        "calls": 29452,
+        "correction_magnitude_max": 0.00026790024873040303,
+        "before_relative_volume_error_max": 0.0007557688758534908,
+        "after_relative_volume_error_max": 9.999944583505282e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004193021844548577
+    },
+    {
+      "case": "full_time120_half",
+      "reused": false,
+      "seconds": 2239.0060725240037,
+      "audit": {
+        "max_volume_error": 0.0160083899128588,
+        "min_radius": 8.499314722638081,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 5.077936768987934e-12,
+      "graph_closure_max": 1.331508215978141e-16,
+      "projection": {
+        "calls": 58885,
+        "correction_magnitude_max": 0.00013397461171735939,
+        "before_relative_volume_error_max": 0.00037808889045598537,
+        "after_relative_volume_error_max": 9.964838332265913e-08
+      },
+      "network_rows": 1230,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.004197765587030469
+    },
+    {
+      "case": "off120",
+      "reused": true,
+      "seconds": 1246.9906060310022,
+      "audit": {
+        "max_volume_error": 0.016121538388706225,
+        "min_radius": 8.49955580563082,
+        "max_clipping": 0.0,
+        "dilution_amount_error": 4.440892098500626e-16
+      },
+      "boundary_max": 4.193284174752732e-12,
+      "graph_closure_max": 1.3120753690603124e-16,
+      "projection": {
+        "calls": 29453,
+        "correction_magnitude_max": 0.00026853297494254687,
+        "before_relative_volume_error_max": 0.0007571331884475008,
+        "after_relative_volume_error_max": 9.998435679392514e-08
+      },
+      "network_rows": 1231,
+      "recorded_runtime_event_gates_passed": true,
+      "log_activator_sd_at_18": 0.0043174565737343715
+    }
+  ],
+  "branch_rows": [
+    {
+      "branch": "tension_adhesion",
+      "independently_passed": true,
+      "space_rows": [
+        {
+          "cases": [
+            "tension_adhesion_space88",
+            "tension_adhesion_space104"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.00043326691715842166,
+            "log_wasserstein_max": 0.000430784078462385,
+            "contrast_abs_max": 0.000625471892450652,
+            "relative_axis_max": 0.003934326713527447,
+            "relative_total_volume_max": 0.00035916520499990057,
+            "whole_amount_relative_max": 7.863800145480049e-05,
+            "mean_polarity_abs_max": 4.6417031652803845e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.03774691236237824,
+            "unmatched_observations_max": 2
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 6.0,
+            "log_wasserstein_max": 6.0,
+            "contrast_abs_max": 6.0,
+            "relative_axis_max": 11.549999999999999,
+            "relative_total_volume_max": 6.3,
+            "whole_amount_relative_max": 12.0,
+            "mean_polarity_abs_max": 6.1499999999999995,
+            "cell_count_difference_max": 6.0,
+            "relative_spectrum_max": 8.85
+          },
+          "unmatched_times": [
+            6.0,
+            12.15
+          ],
+          "maturity_time_error": 0.003750000000000142,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 6.933120472485258e-05,
+                "activator_density": 6.933120472485369e-05,
+                "inhibitor_density": 6.933120472485361e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0780665269704077e-22,
+                  0.9999969601631165
+                ],
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0040056911399340795,
+                "activator_density": 0.0040057329478583,
+                "inhibitor_density": 0.004005772835796355,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  -0.00034797945409081876,
+                  1.0005970001220703
+                ],
+                [
+                  5.258933336046823e-25,
+                  0.9999682307243347
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.006742889712957985,
+                "activator_density": 0.006759537775715574,
+                "inhibitor_density": 0.006768089644615623,
+                "polarity_density": 0.00046077740191062267
+              },
+              "phase_ranges": [
+                [
+                  -0.0005531404749490321,
+                  0.9988788366317749
+                ],
+                [
+                  6.91113718434928e-23,
+                  0.9988901019096375
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.021019477968339067,
+                "activator_density": 0.02100703149346617,
+                "inhibitor_density": 0.021007019893636184,
+                "polarity_density": 0.001157663081515092
+              },
+              "phase_ranges": [
+                [
+                  -0.00019004421483259648,
+                  0.9964576959609985
+                ],
+                [
+                  -8.365791376698309e-14,
+                  0.9965907335281372
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.014024349402811831,
+                "activator_density": 0.013994198968817304,
+                "inhibitor_density": 0.013997176358025071,
+                "polarity_density": 0.0018213541752457273
+              },
+              "phase_ranges": [
+                [
+                  -4.767751731610259e-12,
+                  0.9930356740951538
+                ],
+                [
+                  -3.0927758184334797e-12,
+                  0.9930761456489563
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007670543849582932,
+                "activator_density": 0.007672542836526088,
+                "inhibitor_density": 0.007671981784536912,
+                "polarity_density": 0.000934834021601174
+              },
+              "phase_ranges": [
+                [
+                  1.1174274327523453e-18,
+                  0.9559193253517151
+                ],
+                [
+                  1.134075166363011e-18,
+                  0.9561043977737427
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0077733168017298255,
+                "activator_density": 0.007773581810508593,
+                "inhibitor_density": 0.007773074725423082,
+                "polarity_density": 0.0007670296234440257
+              },
+              "phase_ranges": [
+                [
+                  2.724444070770133e-20,
+                  0.9606394171714783
+                ],
+                [
+                  2.772321026130761e-20,
+                  0.9609255194664001
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.007785363577485241,
+                "activator_density": 0.00778563187060292,
+                "inhibitor_density": 0.00778510991659801,
+                "polarity_density": 0.0007679857173373615
+              },
+              "phase_ranges": [
+                [
+                  2.724444070770133e-20,
+                  0.9606242775917053
+                ],
+                [
+                  2.772321026130761e-20,
+                  0.9609227776527405
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007772789792716983,
+                "activator_density": 0.007773072083131749,
+                "inhibitor_density": 0.007772557612914784,
+                "polarity_density": 0.0007669650867433716
+              },
+              "phase_ranges": [
+                [
+                  2.724444070770133e-20,
+                  0.9607935547828674
+                ],
+                [
+                  2.772321026130761e-20,
+                  0.9610095024108887
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.007785350983720217,
+                "activator_density": 0.007785619693928295,
+                "inhibitor_density": 0.007785097573011104,
+                "polarity_density": 0.0007679837852377665
+              },
+              "phase_ranges": [
+                [
+                  2.724444070770133e-20,
+                  0.9607669711112976
+                ],
+                [
+                  2.772321026130761e-20,
+                  0.9610057473182678
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.865,
+              "relative_spectrum": 0.03780346345311729,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              6.0,
+              6.285,
+              9.24,
+              11.79,
+              11.805,
+              11.82,
+              11.91,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              10.005,
+              11.67,
+              11.685,
+              11.7,
+              11.985,
+              12.27
+            ],
+            "conductance_peak": {
+              "time": 8.79,
+              "relative_conductance": 0.05033622364505311
+            }
+          },
+          "production_passed": false,
+          "field_max": 0.021019477968339067,
+          "diagnostic_spread": {
+            "occupancy": 1.2573784768258288e-05,
+            "activator_density": 1.2559787471171265e-05,
+            "inhibitor_density": 1.2552303683226011e-05,
+            "polarity_density": 1.0206305939899083e-06
+          },
+          "failed_gates": {
+            "field_max": 0.021019477968339067
+          },
+          "independently_passed": false
+        },
+        {
+          "cases": [
+            "tension_adhesion_space104",
+            "tension_adhesion_space120"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.0002558355655928492,
+            "log_wasserstein_max": 0.0002557756181538535,
+            "contrast_abs_max": 0.00013471797233127357,
+            "relative_axis_max": 0.0010605741840777894,
+            "relative_total_volume_max": 9.131617505420131e-05,
+            "whole_amount_relative_max": 2.7855136883747633e-05,
+            "mean_polarity_abs_max": 3.14308597236274e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.014096774881750972,
+            "unmatched_observations_max": 1
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 12.15,
+            "log_wasserstein_max": 12.15,
+            "contrast_abs_max": 11.85,
+            "relative_axis_max": 11.549999999999999,
+            "relative_total_volume_max": 11.85,
+            "whole_amount_relative_max": 13.35,
+            "mean_polarity_abs_max": 9.15,
+            "cell_count_difference_max": 12.15,
+            "relative_spectrum_max": 8.85
+          },
+          "unmatched_times": [
+            12.15
+          ],
+          "maturity_time_error": 0.001875000000000071,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 2.9434899855655426e-05,
+                "activator_density": 2.9434899855655494e-05,
+                "inhibitor_density": 2.943489985565625e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ],
+                [
+                  9.763995850095893e-23,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0019048006094446205,
+                "activator_density": 0.00190484306076888,
+                "inhibitor_density": 0.0019048839128056002,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  5.258933336046823e-25,
+                  0.9999682307243347
+                ],
+                [
+                  4.293627419116962e-25,
+                  0.9999641180038452
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.004688476898799939,
+                "activator_density": 0.004688438161349298,
+                "inhibitor_density": 0.0046884251772063784,
+                "polarity_density": 7.984706271330675e-05
+              },
+              "phase_ranges": [
+                [
+                  6.91113718434928e-23,
+                  0.9988901019096375
+                ],
+                [
+                  5.471192139814641e-23,
+                  0.998910129070282
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007954327896510316,
+                "activator_density": 0.007952917885489083,
+                "inhibitor_density": 0.007953151090346517,
+                "polarity_density": 0.00029872921604278036
+              },
+              "phase_ranges": [
+                [
+                  -8.365791376698309e-14,
+                  0.9965907335281372
+                ],
+                [
+                  -3.744407399159516e-15,
+                  0.9966437816619873
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.008215109155177492,
+                "activator_density": 0.008198670920199195,
+                "inhibitor_density": 0.008195734885252643,
+                "polarity_density": 0.0007556617093834173
+              },
+              "phase_ranges": [
+                [
+                  -3.0927758184334797e-12,
+                  0.9930761456489563
+                ],
+                [
+                  -1.1773335127987505e-13,
+                  0.9932312965393066
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0033472503643600824,
+                "activator_density": 0.00334720786727803,
+                "inhibitor_density": 0.0033468374270852184,
+                "polarity_density": 0.00038153441390873026
+              },
+              "phase_ranges": [
+                [
+                  1.134075166363011e-18,
+                  0.9561043977737427
+                ],
+                [
+                  1.1358069723729673e-18,
+                  0.95624178647995
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.003316975755182486,
+                "activator_density": 0.0033191782663152584,
+                "inhibitor_density": 0.003318145878319167,
+                "polarity_density": 0.0003293498303546305
+              },
+              "phase_ranges": [
+                [
+                  2.772321026130761e-20,
+                  0.9609255194664001
+                ],
+                [
+                  2.780056457327839e-20,
+                  0.9610666036605835
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.0033241013610055825,
+                "activator_density": 0.003326297851523016,
+                "inhibitor_density": 0.0033252707606379914,
+                "polarity_density": 0.0003297230704739502
+              },
+              "phase_ranges": [
+                [
+                  2.772321026130761e-20,
+                  0.9609227776527405
+                ],
+                [
+                  2.780056457327839e-20,
+                  0.9610648155212402
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0033170007562390662,
+                "activator_density": 0.0033192058277366483,
+                "inhibitor_density": 0.0033181704970733465,
+                "polarity_density": 0.00032935867183423085
+              },
+              "phase_ranges": [
+                [
+                  2.772321026130761e-20,
+                  0.9610095024108887
+                ],
+                [
+                  2.780056457327839e-20,
+                  0.9611697196960449
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.0033240793187567074,
+                "activator_density": 0.0033262757834232074,
+                "inhibitor_density": 0.0033252486199713592,
+                "polarity_density": 0.0003297216346962602
+              },
+              "phase_ranges": [
+                [
+                  2.772321026130761e-20,
+                  0.9610057473182678
+                ],
+                [
+                  2.780056457327839e-20,
+                  0.9611623287200928
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.775,
+              "relative_spectrum": 0.014738770780522435,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              11.82,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              9.21,
+              9.225,
+              9.78,
+              9.975,
+              10.005,
+              11.985,
+              12.27
+            ],
+            "conductance_peak": {
+              "time": 8.73,
+              "relative_conductance": 0.0201954123735912
+            }
+          },
+          "production_passed": true,
+          "field_max": 0.008215109155177492,
+          "diagnostic_spread": {
+            "occupancy": 7.125605823096303e-06,
+            "activator_density": 7.119585207757562e-06,
+            "inhibitor_density": 7.124882318824185e-06,
+            "polarity_density": 3.7324011931973676e-07
+          },
+          "failed_gates": {},
+          "independently_passed": true
+        }
+      ],
+      "time_row": {
+        "cases": [
+          "tension_adhesion_space120",
+          "tension_adhesion_time120_half"
+        ],
+        "errors": {
+          "concentration_wasserstein_max": 0.0004345939695987398,
+          "log_wasserstein_max": 0.00043215384019928114,
+          "contrast_abs_max": 0.0006127387650338586,
+          "relative_axis_max": 0.0009350444013371817,
+          "relative_total_volume_max": 8.278617065071714e-05,
+          "whole_amount_relative_max": 1.5410728271492147e-05,
+          "mean_polarity_abs_max": 4.8353095629642825e-06,
+          "cell_count_difference_max": 1.0,
+          "relative_spectrum_max": 0.0076535739502122295,
+          "unmatched_observations_max": 1
+        },
+        "peak_times": {
+          "concentration_wasserstein_max": 6.0,
+          "log_wasserstein_max": 6.0,
+          "contrast_abs_max": 6.0,
+          "relative_axis_max": 8.85,
+          "relative_total_volume_max": 6.0,
+          "whole_amount_relative_max": 13.35,
+          "mean_polarity_abs_max": 11.85,
+          "cell_count_difference_max": 6.0,
+          "relative_spectrum_max": 11.7
+        },
+        "unmatched_times": [
+          6.0
+        ],
+        "maturity_time_error": 0.002343750000001421,
+        "field_checks": [
+          {
+            "time": 0,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0,
+              "activator_density": 0.0,
+              "inhibitor_density": 0.0,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 3,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0014754328160710964,
+              "activator_density": 0.0014754323691412836,
+              "inhibitor_density": 0.0014754311826038066,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 6,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0026304261416809404,
+              "activator_density": 0.0026507507666985986,
+              "inhibitor_density": 0.0026948134028946706,
+              "polarity_density": 0.00025981335412701505
+            }
+          },
+          {
+            "time": 9,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.00440397096428811,
+              "activator_density": 0.0044010418003495805,
+              "inhibitor_density": 0.0044008984590583776,
+              "polarity_density": 0.00023947988794499627
+            }
+          },
+          {
+            "time": 12,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.004117813867239553,
+              "activator_density": 0.004105873876532591,
+              "inhibitor_density": 0.004105487282577073,
+              "polarity_density": 0.00034301147739819747
+            }
+          },
+          {
+            "time": 15,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0004894669130390779,
+              "activator_density": 0.0004895046653910612,
+              "inhibitor_density": 0.0004894928139718935,
+              "polarity_density": 5.826065171428245e-05
+            }
+          },
+          {
+            "time": 18,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0004659175129903584,
+              "activator_density": 0.00046579307577770127,
+              "inhibitor_density": 0.00046583784729481334,
+              "polarity_density": 5.045659878834787e-05
+            }
+          }
+        ],
+        "dense": {
+          "peak": {
+            "time": 11.7,
+            "relative_spectrum": 0.0076535739502122295,
+            "cells": 8,
+            "edges": [
+              16,
+              17
+            ]
+          },
+          "unmatched_times": [
+            6.0,
+            11.805,
+            11.91
+          ],
+          "topology_mismatch_times": [
+            9.21,
+            9.225,
+            9.75,
+            11.7
+          ],
+          "conductance_peak": {
+            "time": 11.7,
+            "relative_conductance": 0.009593329177176795
+          }
+        },
+        "production_passed": true,
+        "field_max": 0.00440397096428811,
+        "diagnostic_spread": {
+          "occupancy": 0.0,
+          "activator_density": 0.0,
+          "inhibitor_density": 0.0,
+          "polarity_density": 0.0
+        },
+        "failed_gates": {},
+        "independently_passed": true
+      },
+      "dense_time_passed": true,
+      "spatial_error_decay_passed": true,
+      "spatial_error_sequences": {
+        "concentration_wasserstein_max": [
+          0.00043326691715842166,
+          0.0002558355655928492
+        ],
+        "log_wasserstein_max": [
+          0.000430784078462385,
+          0.0002557756181538535
+        ],
+        "relative_axis_max": [
+          0.003934326713527447,
+          0.0010605741840777894
+        ],
+        "occupancy": [
+          0.021019477968339067,
+          0.008215109155177492
+        ],
+        "activator_density": [
+          0.02100703149346617,
+          0.008198670920199195
+        ],
+        "inhibitor_density": [
+          0.021007019893636184,
+          0.008195734885252643
+        ],
+        "polarity_density": [
+          0.0018213541752457273,
+          0.0007556617093834173
+        ]
+      },
+      "regular_checkpoints": [
+        {
+          "case": "tension_adhesion_space88",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 7.388815115305647e-10,
+          "minimum_radius": 15.827873696615178
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 4.0871217521498693e-10,
+          "minimum_radius": 18.70566892133708
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004130551229441948,
+          "minimum_radius": 15.806051011907831
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.00413491107899755,
+          "minimum_radius": 18.679851208827486
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.0041376238631768425,
+          "minimum_radius": 21.55365490062587
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004137640508579676,
+          "minimum_radius": 21.55365478053924
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005541882081249505,
+          "minimum_radius": 9.952269276894963
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.0052625747362958775,
+          "minimum_radius": 14.820609482808036
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.005266102277798224,
+          "minimum_radius": 17.100683035463994
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005431010717087736,
+          "minimum_radius": 13.572041907073297
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009616464616213571,
+          "minimum_radius": 7.886738163677057
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009637817802897408,
+          "minimum_radius": 9.32039555101435
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009633847735216583,
+          "minimum_radius": 10.754326335474596
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009626284710690602,
+          "minimum_radius": 10.75435034120942
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015790477267291325,
+          "minimum_radius": 6.233277267342581
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015740622620353917,
+          "minimum_radius": 7.366417830444314
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.01579436495018849,
+          "minimum_radius": 8.49949088955223
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015800996750116147,
+          "minimum_radius": 8.499468875023997
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011741994041490567,
+          "minimum_radius": 6.242122601979425
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01175857332159358,
+          "minimum_radius": 7.37692495389396
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01176446403380016,
+          "minimum_radius": 8.51163396632208
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011764235141897283,
+          "minimum_radius": 8.51158680261814
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011367963779921886,
+          "minimum_radius": 6.242560774979304
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011383187247008375,
+          "minimum_radius": 7.377445195728872
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01138930646960068,
+          "minimum_radius": 8.512232467482415
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011389421218348073,
+          "minimum_radius": 8.512185152089955
+        }
+      ],
+      "live_checkpoints": [
+        {
+          "case": "tension_adhesion_space88",
+          "stage": 2,
+          "time": 5.996718749999999,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.00525693961218876,
+          "minimum_radius": 9.95321806538127
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "stage": 4,
+          "time": 8.881874999999999,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006765338510557495,
+          "minimum_radius": 7.894299053300638
+        },
+        {
+          "case": "tension_adhesion_space88",
+          "stage": 8,
+          "time": 11.78484375,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.00845692162152678,
+          "minimum_radius": 6.259397881429998
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "stage": 2,
+          "time": 6.008437499999999,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.0052625747544160495,
+          "minimum_radius": 11.763111291771931
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "stage": 4,
+          "time": 8.893593749999999,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006773222469903195,
+          "minimum_radius": 9.329373229809162
+        },
+        {
+          "case": "tension_adhesion_space104",
+          "stage": 8,
+          "time": 11.7965625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.00845856120940347,
+          "minimum_radius": 7.396984986827467
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "stage": 2,
+          "time": 6.00046875,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.00526610193743926,
+          "minimum_radius": 13.572792018697147
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "stage": 4,
+          "time": 8.893593749999999,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006777531383071023,
+          "minimum_radius": 10.764655267618114
+        },
+        {
+          "case": "tension_adhesion_space120",
+          "stage": 8,
+          "time": 11.7965625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008461954204302735,
+          "minimum_radius": 8.534921210848061
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "stage": 2,
+          "time": 5.998125,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005266099501105903,
+          "minimum_radius": 13.572792000250724
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "stage": 4,
+          "time": 8.890546875,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006777725812148416,
+          "minimum_radius": 10.76465119230459
+        },
+        {
+          "case": "tension_adhesion_time120_half",
+          "stage": 8,
+          "time": 11.793046875,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008462581911970912,
+          "minimum_radius": 8.534933623300176
+        }
+      ]
+    },
+    {
+      "branch": "polarity",
+      "independently_passed": true,
+      "space_rows": [
+        {
+          "cases": [
+            "polarity_space88",
+            "polarity_space104"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.00043328286329681674,
+            "log_wasserstein_max": 0.0004308036780424965,
+            "contrast_abs_max": 0.0006252140123413837,
+            "relative_axis_max": 0.0036993367329773985,
+            "relative_total_volume_max": 0.00037077528810824933,
+            "whole_amount_relative_max": 8.057497377578215e-05,
+            "mean_polarity_abs_max": 4.534165858258225e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.038965188078139465,
+            "unmatched_observations_max": 2
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 6.0,
+            "log_wasserstein_max": 6.0,
+            "contrast_abs_max": 6.0,
+            "relative_axis_max": 11.549999999999999,
+            "relative_total_volume_max": 6.3,
+            "whole_amount_relative_max": 12.0,
+            "mean_polarity_abs_max": 6.1499999999999995,
+            "cell_count_difference_max": 6.0,
+            "relative_spectrum_max": 8.85
+          },
+          "unmatched_times": [
+            6.0,
+            12.15
+          ],
+          "maturity_time_error": 0.004687500000001066,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 6.933120472485258e-05,
+                "activator_density": 6.933120472485369e-05,
+                "inhibitor_density": 6.933120472485361e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0780665269704077e-22,
+                  0.9999969601631165
+                ],
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.003995524077083437,
+                "activator_density": 0.003995565729378047,
+                "inhibitor_density": 0.003995603919858707,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  -0.0003386150347068906,
+                  1.0005933046340942
+                ],
+                [
+                  5.311639105276902e-25,
+                  0.9999682307243347
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0067418127487621025,
+                "activator_density": 0.0067584890223046454,
+                "inhibitor_density": 0.006766979310807765,
+                "polarity_density": 0.00046063319625274204
+              },
+              "phase_ranges": [
+                [
+                  -0.0005989298806525767,
+                  0.9988783597946167
+                ],
+                [
+                  6.577084252158218e-23,
+                  0.9988895654678345
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.02250301290449387,
+                "activator_density": 0.022489052192057622,
+                "inhibitor_density": 0.02248908112486345,
+                "polarity_density": 0.001143986108882191
+              },
+              "phase_ranges": [
+                [
+                  -0.00016957359912339598,
+                  0.9964597821235657
+                ],
+                [
+                  -9.212656950242232e-14,
+                  0.9965840578079224
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.013941462996037234,
+                "activator_density": 0.013912711859302694,
+                "inhibitor_density": 0.013916002268495053,
+                "polarity_density": 0.0018294460882104038
+              },
+              "phase_ranges": [
+                [
+                  -4.570303337170234e-12,
+                  0.9930388331413269
+                ],
+                [
+                  -3.769924043078854e-12,
+                  0.9930738210678101
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007525348886098403,
+                "activator_density": 0.007527496847375678,
+                "inhibitor_density": 0.007527109181008345,
+                "polarity_density": 0.0008698701364948232
+              },
+              "phase_ranges": [
+                [
+                  9.388364501651559e-19,
+                  0.9560607075691223
+                ],
+                [
+                  9.531263054397391e-19,
+                  0.9561813473701477
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007580699119680344,
+                "activator_density": 0.007580753821415993,
+                "inhibitor_density": 0.007580402306434401,
+                "polarity_density": 0.0006909876133108416
+              },
+              "phase_ranges": [
+                [
+                  2.0192648437504344e-20,
+                  0.9606702923774719
+                ],
+                [
+                  2.0595391691763903e-20,
+                  0.9608134031295776
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.007592934057223862,
+                "activator_density": 0.007592995113514587,
+                "inhibitor_density": 0.0075926269599739605,
+                "polarity_density": 0.0006918966617011429
+              },
+              "phase_ranges": [
+                [
+                  2.0192650053091478e-20,
+                  0.9606581926345825
+                ],
+                [
+                  2.0595391691763903e-20,
+                  0.9608018398284912
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0075797950127977805,
+                "activator_density": 0.007579872234657224,
+                "inhibitor_density": 0.007579511549319265,
+                "polarity_density": 0.0006909068651145323
+              },
+              "phase_ranges": [
+                [
+                  2.0192648437504344e-20,
+                  0.9607945680618286
+                ],
+                [
+                  2.0595406232048108e-20,
+                  0.9610583186149597
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.007592909841113498,
+                "activator_density": 0.0075929714720877894,
+                "inhibitor_density": 0.007592603093983867,
+                "polarity_density": 0.0006918943092902183
+              },
+              "phase_ranges": [
+                [
+                  2.0192648437504344e-20,
+                  0.9607815742492676
+                ],
+                [
+                  2.0595406232048108e-20,
+                  0.9610494375228882
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.865,
+              "relative_spectrum": 0.0390393802485756,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              6.0,
+              6.285,
+              9.24,
+              11.79,
+              11.805,
+              11.82,
+              11.91,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              9.21,
+              9.99,
+              11.7,
+              11.715,
+              11.895,
+              11.97
+            ],
+            "conductance_peak": {
+              "time": 8.79,
+              "relative_conductance": 0.0511011239062792
+            }
+          },
+          "production_passed": false,
+          "field_max": 0.02250301290449387,
+          "diagnostic_spread": {
+            "occupancy": 1.3139044426081423e-05,
+            "activator_density": 1.3122878857362713e-05,
+            "inhibitor_density": 1.311541065469532e-05,
+            "polarity_density": 9.897965866105442e-07
+          },
+          "failed_gates": {
+            "field_max": 0.02250301290449387
+          },
+          "independently_passed": false
+        },
+        {
+          "cases": [
+            "polarity_space104",
+            "polarity_space120"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.0002567722174696973,
+            "log_wasserstein_max": 0.0002567022821714017,
+            "contrast_abs_max": 0.00011740812199584035,
+            "relative_axis_max": 0.0010241787611460218,
+            "relative_total_volume_max": 7.950344405149856e-05,
+            "whole_amount_relative_max": 2.6812646797935713e-05,
+            "mean_polarity_abs_max": 2.8344204813830346e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.014522364153600162,
+            "unmatched_observations_max": 1
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 12.15,
+            "log_wasserstein_max": 12.15,
+            "contrast_abs_max": 11.85,
+            "relative_axis_max": 8.7,
+            "relative_total_volume_max": 11.85,
+            "whole_amount_relative_max": 13.2,
+            "mean_polarity_abs_max": 11.549999999999999,
+            "cell_count_difference_max": 12.15,
+            "relative_spectrum_max": 8.7
+          },
+          "unmatched_times": [
+            12.15
+          ],
+          "maturity_time_error": 0.001875000000000071,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 2.9434899855655426e-05,
+                "activator_density": 2.9434899855655494e-05,
+                "inhibitor_density": 2.943489985565625e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ],
+                [
+                  9.763995850095893e-23,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0019016690894666194,
+                "activator_density": 0.0019017113694993401,
+                "inhibitor_density": 0.0019017504826589829,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  5.311639105276902e-25,
+                  0.9999682307243347
+                ],
+                [
+                  4.334376522214219e-25,
+                  0.9999639987945557
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.00408136793263702,
+                "activator_density": 0.004081324739610275,
+                "inhibitor_density": 0.004081382043952161,
+                "polarity_density": 6.931313342409278e-05
+              },
+              "phase_ranges": [
+                [
+                  6.577084252158218e-23,
+                  0.9988895654678345
+                ],
+                [
+                  5.22148137571055e-23,
+                  0.9989096522331238
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.008103437700435399,
+                "activator_density": 0.008103514150127823,
+                "inhibitor_density": 0.008103765475661474,
+                "polarity_density": 0.00030012805869389776
+              },
+              "phase_ranges": [
+                [
+                  -9.212656950242232e-14,
+                  0.9965840578079224
+                ],
+                [
+                  -3.65503991751003e-15,
+                  0.9966378211975098
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.008019243695163807,
+                "activator_density": 0.00800428009492146,
+                "inhibitor_density": 0.008001421604776487,
+                "polarity_density": 0.0007771349620856739
+              },
+              "phase_ranges": [
+                [
+                  -3.769924043078854e-12,
+                  0.9930738210678101
+                ],
+                [
+                  -1.195055745984927e-13,
+                  0.9932214617729187
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.003532561760752295,
+                "activator_density": 0.003532508578027443,
+                "inhibitor_density": 0.003531968073235005,
+                "polarity_density": 0.0003981891743000482
+              },
+              "phase_ranges": [
+                [
+                  9.531263054397391e-19,
+                  0.9561813473701477
+                ],
+                [
+                  9.552025287772472e-19,
+                  0.9563249349594116
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.003497743956593459,
+                "activator_density": 0.0034997984139534563,
+                "inhibitor_density": 0.0034988410615691534,
+                "polarity_density": 0.00033511833098196376
+              },
+              "phase_ranges": [
+                [
+                  2.0595391691763903e-20,
+                  0.9608134031295776
+                ],
+                [
+                  2.0678500725105607e-20,
+                  0.9609271287918091
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.003504168564221101,
+                "activator_density": 0.0035062198630911438,
+                "inhibitor_density": 0.0035052664973229753,
+                "polarity_density": 0.000335471930536555
+              },
+              "phase_ranges": [
+                [
+                  2.0595391691763903e-20,
+                  0.9608018398284912
+                ],
+                [
+                  2.0678494262757072e-20,
+                  0.9609203934669495
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0034976284850631125,
+                "activator_density": 0.0034996876934708545,
+                "inhibitor_density": 0.003498727066819873,
+                "polarity_density": 0.00033511063363254255
+              },
+              "phase_ranges": [
+                [
+                  2.0595406232048108e-20,
+                  0.9610583186149597
+                ],
+                [
+                  2.0678163067394624e-20,
+                  0.9611881971359253
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.0035041315531648574,
+                "activator_density": 0.003506182936395984,
+                "inhibitor_density": 0.0035052294631823266,
+                "polarity_density": 0.00033546953417600494
+              },
+              "phase_ranges": [
+                [
+                  2.0595406232048108e-20,
+                  0.9610494375228882
+                ],
+                [
+                  2.0678166298568892e-20,
+                  0.9611870050430298
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.775,
+              "relative_spectrum": 0.015297030363617648,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              11.82,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              9.21,
+              9.765,
+              9.96,
+              9.99,
+              11.73,
+              11.97,
+              12.27
+            ],
+            "conductance_peak": {
+              "time": 8.73,
+              "relative_conductance": 0.020533351309771485
+            }
+          },
+          "production_passed": true,
+          "field_max": 0.008103765475661474,
+          "diagnostic_spread": {
+            "occupancy": 6.540079157988515e-06,
+            "activator_density": 6.532169620289234e-06,
+            "inhibitor_density": 6.539430503102201e-06,
+            "polarity_density": 3.612969040124353e-07
+          },
+          "failed_gates": {},
+          "independently_passed": true
+        }
+      ],
+      "time_row": {
+        "cases": [
+          "polarity_space120",
+          "polarity_time120_half"
+        ],
+        "errors": {
+          "concentration_wasserstein_max": 0.0004340765180135232,
+          "log_wasserstein_max": 0.00043163435187434777,
+          "contrast_abs_max": 0.0006140817622436322,
+          "relative_axis_max": 0.000993715445493537,
+          "relative_total_volume_max": 9.283548048077961e-05,
+          "whole_amount_relative_max": 1.5574087055991725e-05,
+          "mean_polarity_abs_max": 4.559665555114881e-06,
+          "cell_count_difference_max": 1.0,
+          "relative_spectrum_max": 0.006745230764105768,
+          "unmatched_observations_max": 1
+        },
+        "peak_times": {
+          "concentration_wasserstein_max": 6.0,
+          "log_wasserstein_max": 6.0,
+          "contrast_abs_max": 6.0,
+          "relative_axis_max": 8.85,
+          "relative_total_volume_max": 6.0,
+          "whole_amount_relative_max": 13.35,
+          "mean_polarity_abs_max": 11.85,
+          "cell_count_difference_max": 6.0,
+          "relative_spectrum_max": 11.549999999999999
+        },
+        "unmatched_times": [
+          6.0
+        ],
+        "maturity_time_error": 0.002343750000001421,
+        "field_checks": [
+          {
+            "time": 0,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0,
+              "activator_density": 0.0,
+              "inhibitor_density": 0.0,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 3,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0014755796012482821,
+              "activator_density": 0.0014755791376806634,
+              "inhibitor_density": 0.0014755780283706916,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 6,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.002983367712670321,
+              "activator_density": 0.0030003839605294196,
+              "inhibitor_density": 0.003039116639076173,
+              "polarity_density": 0.00029275875121322076
+            }
+          },
+          {
+            "time": 9,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.004479291147679751,
+              "activator_density": 0.004476326739725544,
+              "inhibitor_density": 0.00447619180714029,
+              "polarity_density": 0.00024140463773063145
+            }
+          },
+          {
+            "time": 12,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.004229945546767532,
+              "activator_density": 0.004217972550150988,
+              "inhibitor_density": 0.004217469835977255,
+              "polarity_density": 0.000347085479463123
+            }
+          },
+          {
+            "time": 15,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0005217887953357347,
+              "activator_density": 0.0005218044069847786,
+              "inhibitor_density": 0.0005217837189474882,
+              "polarity_density": 5.784966440695332e-05
+            }
+          },
+          {
+            "time": 18,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0005020117784472924,
+              "activator_density": 0.0005019457709928059,
+              "inhibitor_density": 0.0005019327193233028,
+              "polarity_density": 4.987286144087247e-05
+            }
+          }
+        ],
+        "dense": {
+          "peak": {
+            "time": 11.55,
+            "relative_spectrum": 0.006745230764105768,
+            "cells": 8,
+            "edges": [
+              16,
+              16
+            ]
+          },
+          "unmatched_times": [
+            6.0,
+            11.805,
+            11.91
+          ],
+          "topology_mismatch_times": [
+            9.21,
+            12.24
+          ],
+          "conductance_peak": {
+            "time": 9.21,
+            "relative_conductance": 0.009464313960046157
+          }
+        },
+        "production_passed": true,
+        "field_max": 0.004479291147679751,
+        "diagnostic_spread": {
+          "occupancy": 0.0,
+          "activator_density": 0.0,
+          "inhibitor_density": 0.0,
+          "polarity_density": 0.0
+        },
+        "failed_gates": {},
+        "independently_passed": true
+      },
+      "dense_time_passed": true,
+      "spatial_error_decay_passed": true,
+      "spatial_error_sequences": {
+        "concentration_wasserstein_max": [
+          0.00043328286329681674,
+          0.0002567722174696973
+        ],
+        "log_wasserstein_max": [
+          0.0004308036780424965,
+          0.0002567022821714017
+        ],
+        "relative_axis_max": [
+          0.0036993367329773985,
+          0.0010241787611460218
+        ],
+        "occupancy": [
+          0.02250301290449387,
+          0.008103437700435399
+        ],
+        "activator_density": [
+          0.022489052192057622,
+          0.008103514150127823
+        ],
+        "inhibitor_density": [
+          0.02248908112486345,
+          0.008103765475661474
+        ],
+        "polarity_density": [
+          0.0018294460882104038,
+          0.0007771349620856739
+        ]
+      },
+      "regular_checkpoints": [
+        {
+          "case": "polarity_space88",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 7.388815115305647e-10,
+          "minimum_radius": 15.827873696615178
+        },
+        {
+          "case": "polarity_space104",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 4.0871217521498693e-10,
+          "minimum_radius": 18.70566892133708
+        },
+        {
+          "case": "polarity_space120",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "polarity_space88",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.0041346936252997235,
+          "minimum_radius": 15.80602909638095
+        },
+        {
+          "case": "polarity_space104",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004139066458905494,
+          "minimum_radius": 18.679825227401142
+        },
+        {
+          "case": "polarity_space120",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004141785558821498,
+          "minimum_radius": 21.55362487643818
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004141796463145719,
+          "minimum_radius": 21.553624797769785
+        },
+        {
+          "case": "polarity_space88",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005537673160112444,
+          "minimum_radius": 9.952282526000817
+        },
+        {
+          "case": "polarity_space104",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.005258361342965867,
+          "minimum_radius": 14.820630408145792
+        },
+        {
+          "case": "polarity_space120",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.005261866445147367,
+          "minimum_radius": 17.100707308593723
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005446725982070522,
+          "minimum_radius": 13.571969823219666
+        },
+        {
+          "case": "polarity_space88",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009604733617456174,
+          "minimum_radius": 7.886888155965042
+        },
+        {
+          "case": "polarity_space104",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009627548794783003,
+          "minimum_radius": 9.320576484571399
+        },
+        {
+          "case": "polarity_space120",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009622107233605237,
+          "minimum_radius": 10.75453379297756
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009614139611836325,
+          "minimum_radius": 10.754556372376529
+        },
+        {
+          "case": "polarity_space88",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015643598796526992,
+          "minimum_radius": 6.233237025775305
+        },
+        {
+          "case": "polarity_space104",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015590344135901768,
+          "minimum_radius": 7.366352809698685
+        },
+        {
+          "case": "polarity_space120",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.01564901364403093,
+          "minimum_radius": 8.499473713913924
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015655879294230846,
+          "minimum_radius": 8.499445420875103
+        },
+        {
+          "case": "polarity_space88",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011669635846005555,
+          "minimum_radius": 6.241893654163183
+        },
+        {
+          "case": "polarity_space104",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011687685302081419,
+          "minimum_radius": 7.37662695061688
+        },
+        {
+          "case": "polarity_space120",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011692260537530919,
+          "minimum_radius": 8.511355506771975
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011692074506595262,
+          "minimum_radius": 8.51130147145464
+        },
+        {
+          "case": "polarity_space88",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011295536613473156,
+          "minimum_radius": 6.242371678107321
+        },
+        {
+          "case": "polarity_space104",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011308876715657501,
+          "minimum_radius": 7.377195018359052
+        },
+        {
+          "case": "polarity_space120",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011316968084420398,
+          "minimum_radius": 8.512008487105582
+        },
+        {
+          "case": "polarity_time120_half",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01131691450261807,
+          "minimum_radius": 8.511954220334866
+        }
+      ],
+      "live_checkpoints": [
+        {
+          "case": "polarity_space88",
+          "stage": 2,
+          "time": 5.996718749999999,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005252734822337568,
+          "minimum_radius": 9.953230780611255
+        },
+        {
+          "case": "polarity_space88",
+          "stage": 4,
+          "time": 8.881874999999999,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006767327540707746,
+          "minimum_radius": 7.894412750229908
+        },
+        {
+          "case": "polarity_space88",
+          "stage": 8,
+          "time": 11.78484375,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.0084471008918785,
+          "minimum_radius": 6.258779850394402
+        },
+        {
+          "case": "polarity_space104",
+          "stage": 2,
+          "time": 6.00796875,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005258360612699131,
+          "minimum_radius": 11.763129467620724
+        },
+        {
+          "case": "polarity_space104",
+          "stage": 4,
+          "time": 8.89265625,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006775190511419615,
+          "minimum_radius": 9.329515929963593
+        },
+        {
+          "case": "polarity_space104",
+          "stage": 8,
+          "time": 11.79515625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008451958383648872,
+          "minimum_radius": 7.396298852707431
+        },
+        {
+          "case": "polarity_space120",
+          "stage": 2,
+          "time": 6.00046875,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005261866034189544,
+          "minimum_radius": 13.57281070475623
+        },
+        {
+          "case": "polarity_space120",
+          "stage": 4,
+          "time": 8.893125,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006779371815029189,
+          "minimum_radius": 10.764813737564891
+        },
+        {
+          "case": "polarity_space120",
+          "stage": 8,
+          "time": 11.795625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008453533324313978,
+          "minimum_radius": 8.534109338249616
+        },
+        {
+          "case": "polarity_time120_half",
+          "stage": 2,
+          "time": 5.997890625,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.0052618788850185005,
+          "minimum_radius": 13.572810597290603
+        },
+        {
+          "case": "polarity_time120_half",
+          "stage": 4,
+          "time": 8.890078125,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006779630042256124,
+          "minimum_radius": 10.764806537970886
+        },
+        {
+          "case": "polarity_time120_half",
+          "stage": 8,
+          "time": 11.792578125,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008454129393218102,
+          "minimum_radius": 8.534105534753964
+        }
+      ]
+    },
+    {
+      "branch": "full",
+      "independently_passed": true,
+      "space_rows": [
+        {
+          "cases": [
+            "full_space88",
+            "full_space104"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.00043429816298625097,
+            "log_wasserstein_max": 0.00043182622069754407,
+            "contrast_abs_max": 0.0006208981099462711,
+            "relative_axis_max": 0.003652794089758382,
+            "relative_total_volume_max": 0.00035949115721412017,
+            "whole_amount_relative_max": 8.024575125675781e-05,
+            "mean_polarity_abs_max": 4.534631929677764e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.0383544835437247,
+            "unmatched_observations_max": 2
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 6.0,
+            "log_wasserstein_max": 6.0,
+            "contrast_abs_max": 6.0,
+            "relative_axis_max": 11.549999999999999,
+            "relative_total_volume_max": 6.3,
+            "whole_amount_relative_max": 12.0,
+            "mean_polarity_abs_max": 6.1499999999999995,
+            "cell_count_difference_max": 6.0,
+            "relative_spectrum_max": 8.85
+          },
+          "unmatched_times": [
+            6.0,
+            12.15
+          ],
+          "maturity_time_error": 0.003750000000000142,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 6.933120472485258e-05,
+                "activator_density": 6.933120472485369e-05,
+                "inhibitor_density": 6.933120472485361e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0780665269704077e-22,
+                  0.9999969601631165
+                ],
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0040056911399340795,
+                "activator_density": 0.0040057329478583,
+                "inhibitor_density": 0.004005772835796355,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  -0.00034797945409081876,
+                  1.0005970001220703
+                ],
+                [
+                  5.258933336046823e-25,
+                  0.9999682307243347
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.006554996108758153,
+                "activator_density": 0.006571982867874259,
+                "inhibitor_density": 0.006580748495804469,
+                "polarity_density": 0.00039896311971277963
+              },
+              "phase_ranges": [
+                [
+                  -0.0007647511083632708,
+                  0.9988781213760376
+                ],
+                [
+                  6.601417771185027e-23,
+                  0.9988899827003479
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.021903262648523266,
+                "activator_density": 0.0218897426829827,
+                "inhibitor_density": 0.021889813743121055,
+                "polarity_density": 0.0011482583568081244
+              },
+              "phase_ranges": [
+                [
+                  -0.00016745596076361835,
+                  0.9964599013328552
+                ],
+                [
+                  -9.925932553103353e-14,
+                  0.9965848326683044
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.013491489455866468,
+                "activator_density": 0.013464279501568154,
+                "inhibitor_density": 0.01346764117932176,
+                "polarity_density": 0.001799614841383435
+              },
+              "phase_ranges": [
+                [
+                  -4.755838951819857e-12,
+                  0.993061900138855
+                ],
+                [
+                  -3.747384780955487e-12,
+                  0.9930747747421265
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0074813704212489795,
+                "activator_density": 0.0074837696994567915,
+                "inhibitor_density": 0.0074833542254128,
+                "polarity_density": 0.0008623466568024641
+              },
+              "phase_ranges": [
+                [
+                  9.38512712352918e-19,
+                  0.9560589790344238
+                ],
+                [
+                  9.545374755647546e-19,
+                  0.9561796188354492
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007534455664139881,
+                "activator_density": 0.0075348633644677955,
+                "inhibitor_density": 0.0075343825569272995,
+                "polarity_density": 0.0006848549844803241
+              },
+              "phase_ranges": [
+                [
+                  2.021529896912152e-20,
+                  0.960669994354248
+                ],
+                [
+                  2.0618925949543316e-20,
+                  0.9608154296875
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.007546698463172366,
+                "activator_density": 0.007547111733153421,
+                "inhibitor_density": 0.00754661459053826,
+                "polarity_density": 0.0006857728798402518
+              },
+              "phase_ranges": [
+                [
+                  2.021529896912152e-20,
+                  0.9606578350067139
+                ],
+                [
+                  2.0618932411891852e-20,
+                  0.9608038663864136
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.007533493548415642,
+                "activator_density": 0.007533923503489211,
+                "inhibitor_density": 0.007533433821893173,
+                "polarity_density": 0.0006847696534108088
+              },
+              "phase_ranges": [
+                [
+                  2.0215297353534385e-20,
+                  0.9607940912246704
+                ],
+                [
+                  2.0618630297097814e-20,
+                  0.9610570669174194
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.0075466740822563135,
+                "activator_density": 0.007547087914659547,
+                "inhibitor_density": 0.007546590557532565,
+                "polarity_density": 0.0006857704806718732
+              },
+              "phase_ranges": [
+                [
+                  2.0215297353534385e-20,
+                  0.9607810974121094
+                ],
+                [
+                  2.061864160620775e-20,
+                  0.9610481858253479
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.865,
+              "relative_spectrum": 0.03840587973726877,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              6.0,
+              6.285,
+              9.24,
+              11.79,
+              11.805,
+              11.82,
+              11.91,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              9.21,
+              9.99,
+              11.7,
+              11.715,
+              11.97
+            ],
+            "conductance_peak": {
+              "time": 8.79,
+              "relative_conductance": 0.05045108511467475
+            }
+          },
+          "production_passed": false,
+          "field_max": 0.021903262648523266,
+          "diagnostic_spread": {
+            "occupancy": 1.3204914756723661e-05,
+            "activator_density": 1.3188229664210308e-05,
+            "inhibitor_density": 1.3180768645086605e-05,
+            "polarity_density": 1.0032264294430838e-06
+          },
+          "failed_gates": {
+            "field_max": 0.021903262648523266
+          },
+          "independently_passed": false
+        },
+        {
+          "cases": [
+            "full_space104",
+            "full_space120"
+          ],
+          "errors": {
+            "concentration_wasserstein_max": 0.00025632308515843475,
+            "log_wasserstein_max": 0.00025625468889004205,
+            "contrast_abs_max": 0.00013513460473479942,
+            "relative_axis_max": 0.001172758095366655,
+            "relative_total_volume_max": 9.245591751061433e-05,
+            "whole_amount_relative_max": 2.9307697627434237e-05,
+            "mean_polarity_abs_max": 2.8604069154050595e-05,
+            "cell_count_difference_max": 1.0,
+            "relative_spectrum_max": 0.015123261235617233,
+            "unmatched_observations_max": 1
+          },
+          "peak_times": {
+            "concentration_wasserstein_max": 12.15,
+            "log_wasserstein_max": 12.15,
+            "contrast_abs_max": 11.85,
+            "relative_axis_max": 8.7,
+            "relative_total_volume_max": 11.85,
+            "whole_amount_relative_max": 13.2,
+            "mean_polarity_abs_max": 9.15,
+            "cell_count_difference_max": 12.15,
+            "relative_spectrum_max": 8.7
+          },
+          "unmatched_times": [
+            12.15
+          ],
+          "maturity_time_error": 0.001875000000000071,
+          "field_checks": [
+            {
+              "time": 0,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 2.9434899855655426e-05,
+                "activator_density": 2.9434899855655494e-05,
+                "inhibitor_density": 2.943489985565625e-05,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  1.0133503977899933e-22,
+                  0.9999970197677612
+                ],
+                [
+                  9.763995850095893e-23,
+                  0.9999970197677612
+                ]
+              ]
+            },
+            {
+              "time": 3,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0019048006094446205,
+                "activator_density": 0.00190484306076888,
+                "inhibitor_density": 0.0019048839128056002,
+                "polarity_density": 0.0
+              },
+              "phase_ranges": [
+                [
+                  5.258933336046823e-25,
+                  0.9999682307243347
+                ],
+                [
+                  4.293627419116962e-25,
+                  0.9999641180038452
+                ]
+              ]
+            },
+            {
+              "time": 6,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.004691695858846139,
+                "activator_density": 0.004691657316593166,
+                "inhibitor_density": 0.004691644313753848,
+                "polarity_density": 7.89597332303806e-05
+              },
+              "phase_ranges": [
+                [
+                  6.601417771185027e-23,
+                  0.9988899827003479
+                ],
+                [
+                  5.2330467076698144e-23,
+                  0.9989098906517029
+                ]
+              ]
+            },
+            {
+              "time": 9,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.00830186850166018,
+                "activator_density": 0.008301240566736848,
+                "inhibitor_density": 0.008301453408249547,
+                "polarity_density": 0.00031032589667117293
+              },
+              "phase_ranges": [
+                [
+                  -9.925932553103353e-14,
+                  0.9965848326683044
+                ],
+                [
+                  -3.622985649687086e-15,
+                  0.9966381192207336
+                ]
+              ]
+            },
+            {
+              "time": 12,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0082774483403399,
+                "activator_density": 0.008261418919563099,
+                "inhibitor_density": 0.008258169691939408,
+                "polarity_density": 0.0007939423740897094
+              },
+              "phase_ranges": [
+                [
+                  -3.747384780955487e-12,
+                  0.9930747747421265
+                ],
+                [
+                  -1.1896878610289513e-13,
+                  0.9932225346565247
+                ]
+              ]
+            },
+            {
+              "time": 15,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.00346311169425297,
+                "activator_density": 0.0034630190824647914,
+                "inhibitor_density": 0.0034624367614999,
+                "polarity_density": 0.00039383095852025814
+              },
+              "phase_ranges": [
+                [
+                  9.545374755647546e-19,
+                  0.9561796188354492
+                ],
+                [
+                  9.54879101157739e-19,
+                  0.9563212394714355
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0034152818516729787,
+                "activator_density": 0.003417543121630589,
+                "inhibitor_density": 0.00341648456220844,
+                "polarity_density": 0.0003351206489718891
+              },
+              "phase_ranges": [
+                [
+                  2.0618925949543316e-20,
+                  0.9608154296875
+                ],
+                [
+                  2.0643133907157564e-20,
+                  0.9609277844429016
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 112,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.003421997442424001,
+                "activator_density": 0.0034242543331836923,
+                "inhibitor_density": 0.0034232009954941775,
+                "polarity_density": 0.00033547278370501887
+              },
+              "phase_ranges": [
+                [
+                  2.0618932411891852e-20,
+                  0.9608038663864136
+                ],
+                [
+                  2.0643129060396162e-20,
+                  0.9609211087226868
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 3,
+              "errors": {
+                "occupancy": 0.0034152442134211852,
+                "activator_density": 0.003417509629386058,
+                "inhibitor_density": 0.0034164481262037743,
+                "polarity_density": 0.0003351169354811666
+              },
+              "phase_ranges": [
+                [
+                  2.0618630297097814e-20,
+                  0.9610570669174194
+                ],
+                [
+                  2.0642793018272312e-20,
+                  0.9611884951591492
+                ]
+              ]
+            },
+            {
+              "time": 18,
+              "probe": 128,
+              "order": 5,
+              "errors": {
+                "occupancy": 0.0034219663230279813,
+                "activator_density": 0.003424223256108462,
+                "inhibitor_density": 0.0034231698316552215,
+                "polarity_density": 0.0003354706839826674
+              },
+              "phase_ranges": [
+                [
+                  2.061864160620775e-20,
+                  0.9610481858253479
+                ],
+                [
+                  2.064279624944658e-20,
+                  0.9611873626708984
+                ]
+              ]
+            }
+          ],
+          "dense": {
+            "peak": {
+              "time": 8.775,
+              "relative_spectrum": 0.015893568521197117,
+              "cells": 4,
+              "edges": [
+                6,
+                6
+              ]
+            },
+            "unmatched_times": [
+              11.82,
+              11.925,
+              12.15
+            ],
+            "topology_mismatch_times": [
+              9.21,
+              9.765,
+              9.96,
+              9.99,
+              11.73,
+              11.97,
+              12.27
+            ],
+            "conductance_peak": {
+              "time": 8.73,
+              "relative_conductance": 0.02123703232405424
+            }
+          },
+          "production_passed": true,
+          "field_max": 0.00830186850166018,
+          "diagnostic_spread": {
+            "occupancy": 6.7532290028158096e-06,
+            "activator_density": 6.744703797634255e-06,
+            "inhibitor_density": 6.752869290403175e-06,
+            "polarity_density": 3.558482238522737e-07
+          },
+          "failed_gates": {},
+          "independently_passed": true
+        }
+      ],
+      "time_row": {
+        "cases": [
+          "full_space120",
+          "full_time120_half"
+        ],
+        "errors": {
+          "concentration_wasserstein_max": 0.0004345937820590543,
+          "log_wasserstein_max": 0.0004321534612222734,
+          "contrast_abs_max": 0.0006126964034336045,
+          "relative_axis_max": 0.0008881075211697453,
+          "relative_total_volume_max": 8.276883377966726e-05,
+          "whole_amount_relative_max": 1.4267062531381214e-05,
+          "mean_polarity_abs_max": 4.1356221414820765e-06,
+          "cell_count_difference_max": 1.0,
+          "relative_spectrum_max": 0.006171909421673632,
+          "unmatched_observations_max": 1
+        },
+        "peak_times": {
+          "concentration_wasserstein_max": 6.0,
+          "log_wasserstein_max": 6.0,
+          "contrast_abs_max": 6.0,
+          "relative_axis_max": 8.85,
+          "relative_total_volume_max": 6.0,
+          "whole_amount_relative_max": 13.35,
+          "mean_polarity_abs_max": 11.85,
+          "cell_count_difference_max": 6.0,
+          "relative_spectrum_max": 11.549999999999999
+        },
+        "unmatched_times": [
+          6.0
+        ],
+        "maturity_time_error": 0.002109374999999858,
+        "field_checks": [
+          {
+            "time": 0,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0,
+              "activator_density": 0.0,
+              "inhibitor_density": 0.0,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 3,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0014754328160710964,
+              "activator_density": 0.0014754323691412836,
+              "inhibitor_density": 0.0014754311826038066,
+              "polarity_density": 0.0
+            }
+          },
+          {
+            "time": 6,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.0026305027030284604,
+              "activator_density": 0.0026508249827406297,
+              "inhibitor_density": 0.002694886225090664,
+              "polarity_density": 0.00025979308365025477
+            }
+          },
+          {
+            "time": 9,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.004106100847709437,
+              "activator_density": 0.004103375256399611,
+              "inhibitor_density": 0.0041032461796551,
+              "polarity_density": 0.0002208321642379972
+            }
+          },
+          {
+            "time": 12,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.003873810302250139,
+              "activator_density": 0.0038628110945308058,
+              "inhibitor_density": 0.003862331153442266,
+              "polarity_density": 0.00031579218182890205
+            }
+          },
+          {
+            "time": 15,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.00046418999168744234,
+              "activator_density": 0.0004641945121192289,
+              "inhibitor_density": 0.0004641820514234851,
+              "polarity_density": 5.2239006713360085e-05
+            }
+          },
+          {
+            "time": 18,
+            "probe": null,
+            "order": 3,
+            "errors": {
+              "occupancy": 0.00044596853586958176,
+              "activator_density": 0.00044588966960429393,
+              "inhibitor_density": 0.0004458888139673124,
+              "polarity_density": 4.504603905306062e-05
+            }
+          }
+        ],
+        "dense": {
+          "peak": {
+            "time": 11.55,
+            "relative_spectrum": 0.006171909421673632,
+            "cells": 8,
+            "edges": [
+              16,
+              16
+            ]
+          },
+          "unmatched_times": [
+            6.0,
+            11.805,
+            11.91
+          ],
+          "topology_mismatch_times": [
+            9.21,
+            12.24
+          ],
+          "conductance_peak": {
+            "time": 9.21,
+            "relative_conductance": 0.009379474701173982
+          }
+        },
+        "production_passed": true,
+        "field_max": 0.004106100847709437,
+        "diagnostic_spread": {
+          "occupancy": 0.0,
+          "activator_density": 0.0,
+          "inhibitor_density": 0.0,
+          "polarity_density": 0.0
+        },
+        "failed_gates": {},
+        "independently_passed": true
+      },
+      "dense_time_passed": true,
+      "spatial_error_decay_passed": true,
+      "spatial_error_sequences": {
+        "concentration_wasserstein_max": [
+          0.00043429816298625097,
+          0.00025632308515843475
+        ],
+        "log_wasserstein_max": [
+          0.00043182622069754407,
+          0.00025625468889004205
+        ],
+        "relative_axis_max": [
+          0.003652794089758382,
+          0.001172758095366655
+        ],
+        "occupancy": [
+          0.021903262648523266,
+          0.00830186850166018
+        ],
+        "activator_density": [
+          0.0218897426829827,
+          0.008301240566736848
+        ],
+        "inhibitor_density": [
+          0.021889813743121055,
+          0.008301453408249547
+        ],
+        "polarity_density": [
+          0.001799614841383435,
+          0.0007939423740897094
+        ]
+      },
+      "regular_checkpoints": [
+        {
+          "case": "full_space88",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 7.388815115305647e-10,
+          "minimum_radius": 15.827873696615178
+        },
+        {
+          "case": "full_space104",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 4.0871217521498693e-10,
+          "minimum_radius": 18.70566892133708
+        },
+        {
+          "case": "full_space120",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "full_time120_half",
+          "time": 0.0,
+          "cells": 1,
+          "active": 0,
+          "volume_error": 9.459804051203946e-10,
+          "minimum_radius": 21.583464130257997
+        },
+        {
+          "case": "full_space88",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004130551229441948,
+          "minimum_radius": 15.806051011907831
+        },
+        {
+          "case": "full_space104",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.00413491107899755,
+          "minimum_radius": 18.679851208827486
+        },
+        {
+          "case": "full_space120",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.0041376238631768425,
+          "minimum_radius": 21.55365490062587
+        },
+        {
+          "case": "full_time120_half",
+          "time": 3.0,
+          "cells": 1,
+          "active": 1,
+          "volume_error": 0.004137640508579676,
+          "minimum_radius": 21.55365478053924
+        },
+        {
+          "case": "full_space88",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.0055034304464675055,
+          "minimum_radius": 9.952396214024228
+        },
+        {
+          "case": "full_space104",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.005263324248778067,
+          "minimum_radius": 14.82060576047411
+        },
+        {
+          "case": "full_space120",
+          "time": 6.0,
+          "cells": 2,
+          "active": 2,
+          "volume_error": 0.005266847489619253,
+          "minimum_radius": 17.1006787650977
+        },
+        {
+          "case": "full_time120_half",
+          "time": 6.0,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005431722424986352,
+          "minimum_radius": 13.572037973833144
+        },
+        {
+          "case": "full_space88",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009611875325921004,
+          "minimum_radius": 7.886868813716569
+        },
+        {
+          "case": "full_space104",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009634747704180935,
+          "minimum_radius": 9.320554680943616
+        },
+        {
+          "case": "full_space120",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.00962777160992112,
+          "minimum_radius": 10.754510848687463
+        },
+        {
+          "case": "full_time120_half",
+          "time": 9.0,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.009620320077037947,
+          "minimum_radius": 10.75453267171754
+        },
+        {
+          "case": "full_space88",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.01566306427724251,
+          "minimum_radius": 6.233205905711252
+        },
+        {
+          "case": "full_space104",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.01560532538135695,
+          "minimum_radius": 7.366296160182827
+        },
+        {
+          "case": "full_space120",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015666824152754666,
+          "minimum_radius": 8.499381537471216
+        },
+        {
+          "case": "full_time120_half",
+          "time": 12.0,
+          "cells": 13,
+          "active": 3,
+          "volume_error": 0.015672610120554542,
+          "minimum_radius": 8.499363189908628
+        },
+        {
+          "case": "full_space88",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011661853664710842,
+          "minimum_radius": 6.241900546539662
+        },
+        {
+          "case": "full_space104",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011679770517778576,
+          "minimum_radius": 7.376613595472029
+        },
+        {
+          "case": "full_space120",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011684478297322887,
+          "minimum_radius": 8.511315623033443
+        },
+        {
+          "case": "full_time120_half",
+          "time": 15.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01168425631214609,
+          "minimum_radius": 8.511271742445253
+        },
+        {
+          "case": "full_space88",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01128633467665896,
+          "minimum_radius": 6.242348787034912
+        },
+        {
+          "case": "full_space104",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011299365929145155,
+          "minimum_radius": 7.37714718462592
+        },
+        {
+          "case": "full_space120",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.01130667748264269,
+          "minimum_radius": 8.511928258718251
+        },
+        {
+          "case": "full_time120_half",
+          "time": 18.0,
+          "cells": 16,
+          "active": 0,
+          "volume_error": 0.011306497201320265,
+          "minimum_radius": 8.511884185604023
+        }
+      ],
+      "live_checkpoints": [
+        {
+          "case": "full_space88",
+          "stage": 2,
+          "time": 5.9971875,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.0052576956995489255,
+          "minimum_radius": 9.953214491876981
+        },
+        {
+          "case": "full_space88",
+          "stage": 4,
+          "time": 8.88234375,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.0067639581810440275,
+          "minimum_radius": 7.894421291796562
+        },
+        {
+          "case": "full_space88",
+          "stage": 8,
+          "time": 11.78484375,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008446005454922245,
+          "minimum_radius": 6.258787858264874
+        },
+        {
+          "case": "full_space104",
+          "stage": 2,
+          "time": 6.008437499999999,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005263324551545212,
+          "minimum_radius": 11.763110088928231
+        },
+        {
+          "case": "full_space104",
+          "stage": 4,
+          "time": 8.893593749999999,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006771822724468413,
+          "minimum_radius": 9.329527255263983
+        },
+        {
+          "case": "full_space104",
+          "stage": 8,
+          "time": 11.7965625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008450457830058267,
+          "minimum_radius": 7.396282245770225
+        },
+        {
+          "case": "full_space120",
+          "stage": 2,
+          "time": 6.00046875,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005266847814768383,
+          "minimum_radius": 13.572787933966747
+        },
+        {
+          "case": "full_space120",
+          "stage": 4,
+          "time": 8.893125,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006776114331056626,
+          "minimum_radius": 10.764823062672347
+        },
+        {
+          "case": "full_space120",
+          "stage": 8,
+          "time": 11.795625,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008452547253740894,
+          "minimum_radius": 8.534105335106956
+        },
+        {
+          "case": "full_time120_half",
+          "stage": 2,
+          "time": 5.998125,
+          "cells": 3,
+          "active": 1,
+          "volume_error": 0.005266845720433788,
+          "minimum_radius": 13.572787910364443
+        },
+        {
+          "case": "full_time120_half",
+          "stage": 4,
+          "time": 8.8903125,
+          "cells": 5,
+          "active": 3,
+          "volume_error": 0.006776313615701857,
+          "minimum_radius": 10.764817188666672
+        },
+        {
+          "case": "full_time120_half",
+          "stage": 8,
+          "time": 11.7928125,
+          "cells": 9,
+          "active": 7,
+          "volume_error": 0.008453097704964274,
+          "minimum_radius": 8.53410531760888
+        }
+      ]
+    }
+  ],
+  "replay_rows": [
+    {
+      "case": "off120",
+      "stage": 2,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 80,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 1000.9953177699936,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011402911029810059,
+        "minimum_radius": 8.512317485662821
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "off120",
+      "stage": 4,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 61,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 889.4190685389913,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011402911029810059,
+        "minimum_radius": 8.512317485662821
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "off120",
+      "stage": 8,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 42,
+      "recorded_exact_checkpoints": [
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 679.6967179769999,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011402911029810059,
+        "minimum_radius": 8.512317485662821
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 2,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 80,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 1011.2238523749984,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01138930646960068,
+        "minimum_radius": 8.512232467482415
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 4,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 61,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 892.929322328011,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01138930646960068,
+        "minimum_radius": 8.512232467482415
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "tension_adhesion_space120",
+      "stage": 8,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 42,
+      "recorded_exact_checkpoints": [
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 682.7098369099549,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01138930646960068,
+        "minimum_radius": 8.512232467482415
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 2,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 80,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 961.7559489340056,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011316968084420398,
+        "minimum_radius": 8.512008487105582
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 4,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 61,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 842.4285979170236,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011316968084420398,
+        "minimum_radius": 8.512008487105582
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "polarity_space120",
+      "stage": 8,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 42,
+      "recorded_exact_checkpoints": [
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 642.4962430630112,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.011316968084420398,
+        "minimum_radius": 8.512008487105582
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "full_space120",
+      "stage": 2,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 80,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 947.7237261340488,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01130667748264269,
+        "minimum_radius": 8.511928258718251
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "full_space120",
+      "stage": 4,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 61,
+      "recorded_exact_checkpoints": [
+        9.0,
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 841.2013324929867,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01130667748264269,
+        "minimum_radius": 8.511928258718251
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    },
+    {
+      "case": "full_space120",
+      "stage": 8,
+      "independently_checked_final_arrays": true,
+      "recorded_exact_observations": 42,
+      "recorded_exact_checkpoints": [
+        12.0,
+        15.0,
+        18.0
+      ],
+      "recorded_full_replay_passed": true,
+      "seconds": 641.8555804829812,
+      "final_checkpoint": {
+        "time": 18.0,
+        "cells": 16,
+        "active": 0,
+        "volume_error": 0.01130667748264269,
+        "minimum_radius": 8.511928258718251
+      },
+      "note": "Intermediate exact comparisons are recorded production checks, not a new independent mechanics replay."
+    }
+  ],
+  "reused_regular_checkpoints": [
+    {
+      "time": 0.0,
+      "cells": 1,
+      "active": 0,
+      "volume_error": 9.459804051203946e-10,
+      "minimum_radius": 21.583464130257997
+    },
+    {
+      "time": 3.0,
+      "cells": 1,
+      "active": 1,
+      "volume_error": 0.004141785558821498,
+      "minimum_radius": 21.55362487643818
+    },
+    {
+      "time": 6.0,
+      "cells": 2,
+      "active": 2,
+      "volume_error": 0.005261124058136835,
+      "minimum_radius": 17.10071156275851
+    },
+    {
+      "time": 9.0,
+      "cells": 5,
+      "active": 3,
+      "volume_error": 0.009628188475485966,
+      "minimum_radius": 10.754349280176582
+    },
+    {
+      "time": 12.0,
+      "cells": 13,
+      "active": 3,
+      "volume_error": 0.01577614642360481,
+      "minimum_radius": 8.49958547160236
+    },
+    {
+      "time": 15.0,
+      "cells": 16,
+      "active": 0,
+      "volume_error": 0.01177236075648147,
+      "minimum_radius": 8.511675432171034
+    },
+    {
+      "time": 18.0,
+      "cells": 16,
+      "active": 0,
+      "volume_error": 0.011402911029810059,
+      "minimum_radius": 8.512317485662821
+    }
+  ],
+  "reused_live_checkpoints": [
+    {
+      "stage": 2,
+      "time": 6.00046875,
+      "cells": 3,
+      "active": 1,
+      "volume_error": 0.005261124297117892,
+      "minimum_radius": 13.572814771855263
+    },
+    {
+      "stage": 4,
+      "time": 8.893593749999999,
+      "cells": 5,
+      "active": 3,
+      "volume_error": 0.006780789262880171,
+      "minimum_radius": 10.764645960427478
+    },
+    {
+      "stage": 8,
+      "time": 11.7965625,
+      "cells": 9,
+      "active": 7,
+      "volume_error": 0.008462924673088401,
+      "minimum_radius": 8.534925280944943
+    }
+  ],
+  "recorded_checks_not_independently_replayed": [
+    "Every-step extrema, eight-step prefixes and intermediate full-replay exact checks; logged evidence and saved arrays inspected.",
+    "Inherited reconstruction calibration and instrumentation; original records and hashes verified."
+  ],
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 12,
+  "reused_numerical_paths": 1,
+  "resumed_coordinator_seconds": 20721.918057059025,
+  "scope": "Matched mechanical-control numerical qualification of one synthetic seed7 zygote, t0\u201318. Three branches, spatial/time screens and full remaining-horizon restart replays at stages2/4/8 for all four candidate branches at grid120,dt0.00046875. Zero new independent histories; no biological, continuum or fine CPU qualification.",
+  "original_reports_unchanged": true,
+  "independent_review": {
+    "path": "archive/study-reviews/2026-10-11-development-controls/independent_review.json",
+    "sha256": "fe625af21059ea80270bbb6c96c751766ab5479121ef1c17225c17122a0658d2",
+    "consumed_count": 2018,
+    "review_seconds": 1016.6990252719843,
+    "reviewed_at_utc": "2026-10-11T04:59:39.092093+00:00"
+  },
+  "reporting_snapshot": "archive/study-document-snapshots/2026-10-11-before-completed-development-control-review/manifest.json",
+  "historical_failures_preserved": true,
+  "new_jobs_launched_during_review": false,
+  "fresh_development_pilot_launched": false,
+  "next_step": "Prepare three new independent fresh-zygote histories with four matched mechanical branches; retain prospective actual-start/quality/refinement checks and qualify the post-cleavage scientific observation window before interpreting initiation or maintenance.",
+  "timing_scope": {
+    "resumed_coordinator_seconds": 20721.918057059025,
+    "prior_completed_production_seconds": 4946.452542213025,
+    "accounted_completed_run_and_assessment_seconds": 25668.37059927205,
+    "interrupted_attempt_and_storage_pause_excluded": true
+  }
+}

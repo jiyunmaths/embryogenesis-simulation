@@ -1,0 +1,50 @@
+Reviewed history, dense graph, events and pressure: h1103_off_development_half
+Reviewed history, dense graph, events and pressure: h1103_off_development_quarter
+Reviewed history, dense graph, events and pressure: h1103_tension_adhesion_development_half
+Reviewed history, dense graph, events and pressure: h1103_tension_adhesion_development_quarter
+Reviewed history, dense graph, events and pressure: h1103_polarity_development_half
+Reviewed history, dense graph, events and pressure: h1103_polarity_development_quarter
+Reviewed history, dense graph, events and pressure: h1103_full_development_half
+Reviewed history, dense graph, events and pressure: h1103_full_development_quarter
+Independently reconstructed density fields: off 0
+Independently reconstructed density fields: off 3
+Independently reconstructed density fields: off 6
+Independently reconstructed density fields: off 9
+Independently reconstructed density fields: off 12
+Independently reconstructed density fields: off 15
+Independently reconstructed density fields: off 18
+Independently reconstructed density fields: tension_adhesion 0
+Independently reconstructed density fields: tension_adhesion 3
+Independently reconstructed density fields: tension_adhesion 6
+Independently reconstructed density fields: tension_adhesion 9
+Independently reconstructed density fields: tension_adhesion 12
+Independently reconstructed density fields: tension_adhesion 15
+Independently reconstructed density fields: tension_adhesion 18
+Independently reconstructed density fields: polarity 0
+Independently reconstructed density fields: polarity 3
+Independently reconstructed density fields: polarity 6
+Independently reconstructed density fields: polarity 9
+Independently reconstructed density fields: polarity 12
+Independently reconstructed density fields: polarity 15
+Independently reconstructed density fields: polarity 18
+Independently reconstructed density fields: full 0
+Independently reconstructed density fields: full 3
+Independently reconstructed density fields: full 6
+Independently reconstructed density fields: full 9
+Independently reconstructed density fields: full 12
+Independently reconstructed density fields: full 15
+Independently reconstructed density fields: full 18
+Reconstructed earlier accepted pair: 1101 off
+Reconstructed earlier accepted pair: 1101 tension_adhesion
+Reconstructed earlier accepted pair: 1101 polarity
+Reconstructed earlier accepted pair: 1101 full
+Reconstructed earlier accepted pair: 1102 off
+Reconstructed earlier accepted pair: 1102 tension_adhesion
+Reconstructed earlier accepted pair: 1102 polarity
+Reconstructed earlier accepted pair: 1102 full
+{
+  "review_completed": true,
+  "scoped_control_completion_accepted": true,
+  "combined_history_branch_preparations": 12,
+  "seconds": 330.95786400302313
+}

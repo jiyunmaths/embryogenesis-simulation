@@ -1,0 +1,67 @@
+Checking 58 source and 494 input pins
+Independently checked histories, graph closure, provenance: h1101_off_coarse
+Independently checked histories, graph closure, provenance: h1101_off_fine
+Independently checked histories, graph closure, provenance: h1101_tension_adhesion_coarse
+Independently checked histories, graph closure, provenance: h1101_tension_adhesion_fine
+Independently checked histories, graph closure, provenance: h1101_polarity_coarse
+Independently checked histories, graph closure, provenance: h1101_polarity_fine
+Independently checked histories, graph closure, provenance: h1101_full_coarse
+Independently checked histories, graph closure, provenance: h1101_full_fine
+Independently checked histories, graph closure, provenance: h1102_off_coarse
+Independently checked histories, graph closure, provenance: h1102_off_fine
+Independently checked histories, graph closure, provenance: h1102_tension_adhesion_coarse
+Independently checked histories, graph closure, provenance: h1102_tension_adhesion_fine
+Independently checked histories, graph closure, provenance: h1102_polarity_coarse
+Independently checked histories, graph closure, provenance: h1102_polarity_fine
+Independently checked histories, graph closure, provenance: h1102_full_coarse
+Independently checked histories, graph closure, provenance: h1102_full_fine
+Independently checked histories, graph closure, provenance: h1103_off_coarse
+Independently checked histories, graph closure, provenance: h1103_off_fine
+Independently checked histories, graph closure, provenance: h1103_tension_adhesion_coarse
+Independently checked histories, graph closure, provenance: h1103_tension_adhesion_fine
+Independently checked histories, graph closure, provenance: h1103_polarity_coarse
+Independently checked histories, graph closure, provenance: h1103_polarity_fine
+Independently checked histories, graph closure, provenance: h1103_full_coarse
+Independently checked histories, graph closure, provenance: h1103_full_fine
+Independently reconstructed both checkpoint states and densities: h1101_off_coarse 0
+Independently reconstructed both checkpoint states and densities: h1101_off_coarse 3
+Independently reconstructed both checkpoint states and densities: h1101_off_coarse 6
+Independently reconstructed both checkpoint states and densities: h1101_tension_adhesion_coarse 0
+Independently reconstructed both checkpoint states and densities: h1101_tension_adhesion_coarse 3
+Independently reconstructed both checkpoint states and densities: h1101_tension_adhesion_coarse 6
+Independently reconstructed both checkpoint states and densities: h1101_polarity_coarse 0
+Independently reconstructed both checkpoint states and densities: h1101_polarity_coarse 3
+Independently reconstructed both checkpoint states and densities: h1101_polarity_coarse 6
+Independently reconstructed both checkpoint states and densities: h1101_full_coarse 0
+Independently reconstructed both checkpoint states and densities: h1101_full_coarse 3
+Independently reconstructed both checkpoint states and densities: h1101_full_coarse 6
+Independently reconstructed both checkpoint states and densities: h1102_off_coarse 0
+Independently reconstructed both checkpoint states and densities: h1102_off_coarse 3
+Independently reconstructed both checkpoint states and densities: h1102_off_coarse 6
+Independently reconstructed both checkpoint states and densities: h1102_tension_adhesion_coarse 0
+Independently reconstructed both checkpoint states and densities: h1102_tension_adhesion_coarse 3
+Independently reconstructed both checkpoint states and densities: h1102_tension_adhesion_coarse 6
+Independently reconstructed both checkpoint states and densities: h1102_polarity_coarse 0
+Independently reconstructed both checkpoint states and densities: h1102_polarity_coarse 3
+Independently reconstructed both checkpoint states and densities: h1102_polarity_coarse 6
+Independently reconstructed both checkpoint states and densities: h1102_full_coarse 0
+Independently reconstructed both checkpoint states and densities: h1102_full_coarse 3
+Independently reconstructed both checkpoint states and densities: h1102_full_coarse 6
+Independently reconstructed both checkpoint states and densities: h1103_off_coarse 0
+Independently reconstructed both checkpoint states and densities: h1103_off_coarse 3
+Independently reconstructed both checkpoint states and densities: h1103_off_coarse 6
+Independently reconstructed both checkpoint states and densities: h1103_tension_adhesion_coarse 0
+Independently reconstructed both checkpoint states and densities: h1103_tension_adhesion_coarse 3
+Independently reconstructed both checkpoint states and densities: h1103_tension_adhesion_coarse 6
+Independently reconstructed both checkpoint states and densities: h1103_polarity_coarse 0
+Independently reconstructed both checkpoint states and densities: h1103_polarity_coarse 3
+Independently reconstructed both checkpoint states and densities: h1103_polarity_coarse 6
+Independently reconstructed both checkpoint states and densities: h1103_full_coarse 0
+Independently reconstructed both checkpoint states and densities: h1103_full_coarse 3
+Independently reconstructed both checkpoint states and densities: h1103_full_coarse 6
+Checking that every pinned input and production record is unchanged
+{
+  "review_completed": true,
+  "scoped_mature_timestep_accepted": true,
+  "seconds": 439.25172947498504
+}

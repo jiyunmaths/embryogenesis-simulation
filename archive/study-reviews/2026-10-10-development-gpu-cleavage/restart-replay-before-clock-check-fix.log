@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/replay_restarts.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-10-development-gpu-cleavage/replay_restarts.py", line 24, in main
+    sim=DevelopmentGpu.restore(files[0]);assert sim.time==.45 and len(sim.ids)==1 and len(sim.host.divisions)==1
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

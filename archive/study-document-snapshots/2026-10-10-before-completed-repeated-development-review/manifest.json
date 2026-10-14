@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-10T11:16:10.232321+00:00",
+  "reporting_snapshots": [
+    "README.md",
+    "docs/plan.md",
+    "docs/repeated_development_gpu_launch.md",
+    "docs/repeated_development_gpu_interim.md"
+  ],
+  "study": "output/studies/repeated-development-gpu-qualification-v2",
+  "purpose": "Preserve interim reporting before completed numerical review; prospective protocol and original results unchanged."
+}

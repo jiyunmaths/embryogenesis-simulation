@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "unchanged_consumed_pins": 1674,
+  "preserved_prior_evidence_pins": 1592,
+  "saved_checkpoint_physical_gates_passed": true,
+  "local_links_checked": 24,
+  "artifact_sha256": {
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/review_saved_arrays.py": "f49d8ef715fbdea47d75faea880217dcf608833b8f1c2fd3d4c1fce41301bc0a",
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/review.log": "f929b1eeeef9b22b77cf96e2b01ca8d9ea2d94e8f2b9f6819b8e7ceea6a85f40",
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/independent_review.json": "5138eaddd32863961e42445e77068893b14981379c2ab56332779ed29bfa3151",
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/plot_and_diagnose.py": "54e11d6f9a84097116fe8e0126b31c5a93eff7d6ee94adfcef2563b9296ea9f5",
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/cleavage_diagnosis.json": "4f8068b40a6244bda63291ff62f0457f48420f2128219ddcf14d8ba4314f6f24",
+    "archive/study-reviews/2026-10-10-development-time-diagnosis/diagnosis.log": "cf5df11e8583b06bec9849d2c9cf7d45dfbed9260a64948560794352fdf76ca4",
+    "docs/development_time_diagnosis_assessment.md": "5aab7587782323614314f4dfd5decbe40cc4220e08545006e48dbd9f0fbc19c4",
+    "docs/development_time_diagnosis_assessment.json": "f7fec8df06248a772b88f817cca8fd36cd4c2fe254676cb32d80b96e933f9005",
+    "docs/development_time_diagnosis_launch.md": "f600a394a201464fca729620c487e126fbfa6dd418376077f7e275c6e673fb2c",
+    "README.md": "b6be663ce417d8aeaf61cbb692dfcd3e8c272b18aecad1742b8cfe35d06195f7",
+    "docs/plan.md": "ef6fbaf65a42105a501e9a88e231fb1737162fee643912e7f4b49fc31b92be4c",
+    "docs/figures/development-time-diagnosis.png": "9f26cd0b1f1afdb0d58c370b3133120998cfcf8c468964b1a9067104979dfb8b",
+    "docs/figures/development-time-diagnosis.svg": "7b743c0f19316568896576abb8e2aec51f38895a208524d326c78d43b0849cff"
+  },
+  "new_jobs_launched": false
+}

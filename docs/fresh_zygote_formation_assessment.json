@@ -1,0 +1,1008 @@
+{
+  "review_completed": true,
+  "scoped_formation_timestep_accepted": true,
+  "utc": "2026-10-13T02:14:00.074766+00:00",
+  "protocol_sha256": "e193c41f6d018cf4cfc7ed88777e00f7e62e99aa89fb98e783baab0c8e199d06",
+  "independent_review": {
+    "path": "archive/study-reviews/2026-10-13-fresh-zygote-formation/independent_review.json",
+    "sha256": "8bb00ae1d377bcc631baf87031f55fb9c6015b728cac49961c05e020d0fcaf99"
+  },
+  "histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "independent_histories": 3,
+  "new_scientific_histories": 0,
+  "numerical_paths": 24,
+  "time_pairs": 12,
+  "physical_time_window": [
+    18,
+    78
+  ],
+  "grid": 120,
+  "extent": 2.24,
+  "timesteps": [
+    0.00375,
+    0.001875
+  ],
+  "observations_per_path": 401,
+  "dense_graphs_per_path": 4001,
+  "complete_checkpoint_states_reconstructed": 144,
+  "initial_arrays_losslessly_checked": 432,
+  "maximum_regular_errors": {
+    "concentration_wasserstein_max": 0.0001773988729510947,
+    "log_wasserstein_max": 0.0004469742737736044,
+    "contrast_abs_max": 0.00011649015027281884,
+    "relative_axis_max": 2.568366542332612e-06,
+    "relative_total_volume_max": 1.0499618519066445e-07,
+    "whole_amount_relative_max": 0.00012640630159355126,
+    "mean_polarity_abs_max": 3.0996374647870167e-06,
+    "relative_spectrum_max": 0.0009377928803669642,
+    "cell_count_difference_max": 0.0,
+    "unmatched_observations_max": 0.0
+  },
+  "maximum_homologous_errors": {
+    "chemical_log_max": 0.0048528313979686565,
+    "polarity_abs_max": 2.9477542397255557e-05,
+    "relative_volume_max": 1.8273499382548408e-06,
+    "relative_transport_max": 0.002456482719354412,
+    "unmatched_observations_max": 0.0
+  },
+  "maximum_density_field_error": 0.0001890642356881212,
+  "maximum_dense_spectrum_error": 0.001001839729283588,
+  "recorded_every_step_extrema": {
+    "max_volume_error": 0.012398625619642778,
+    "min_radius": 8.509508712366511,
+    "max_clipping": 0.0,
+    "dilution_amount_error": 4.440892098500626e-16
+  },
+  "paired_topology_mismatch_times": 5,
+  "fine_endpoint_observations": [
+    {
+      "history": 1101,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003588514870726979,
+        "axis_ratio": 1.3244560276013122,
+        "summed_undirected_conductance": 6.335537184927325,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.4084309155392294,
+        "axis_ratio": 1.4082758594955131,
+        "summed_undirected_conductance": 3.618684086140858,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 9.15,
+          "first_sustained_onset_elapsed": 9.15,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.258904322965013,
+          "final_log_sd": 1.4084309155392294,
+          "sampled_transitions": [
+            {
+              "elapsed": 9.15,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 11.7,
+          "first_sustained_onset_elapsed": 11.7,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.258904322965013,
+          "final_log_sd": 1.4084309155392294,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.7,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 14.25,
+          "first_sustained_onset_elapsed": 14.25,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.258904322965013,
+          "final_log_sd": 1.4084309155392294,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.25,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 392.4829536108074,
+      "conductance_relative_change": -0.42882758312113545,
+      "frozen_uniform_max_growth_start": 0.3181634275055121,
+      "frozen_uniform_max_growth_end": 0.17110634508148692
+    },
+    {
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003611015553754401,
+        "axis_ratio": 1.3244193035748917,
+        "summed_undirected_conductance": 6.335784445717675,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.3614604268636379,
+        "axis_ratio": 1.4087938321803826,
+        "summed_undirected_conductance": 3.5609244118275143,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 9.15,
+          "first_sustained_onset_elapsed": 9.15,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2732908607297095,
+          "final_log_sd": 1.3614604268636379,
+          "sampled_transitions": [
+            {
+              "elapsed": 9.15,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 11.7,
+          "first_sustained_onset_elapsed": 11.7,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2732908607297095,
+          "final_log_sd": 1.3614604268636379,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.7,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 14.25,
+          "first_sustained_onset_elapsed": 14.25,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2732908607297095,
+          "final_log_sd": 1.3614604268636379,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.25,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 377.02978749236263,
+      "conductance_relative_change": -0.43796629409728016,
+      "frozen_uniform_max_growth_start": 0.3181626716436696,
+      "frozen_uniform_max_growth_end": 0.16353358753648806
+    },
+    {
+      "history": 1101,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0035414568624654746,
+        "axis_ratio": 1.327027726472003,
+        "summed_undirected_conductance": 5.996015500919227,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.436361116843866,
+        "axis_ratio": 1.4172700957346258,
+        "summed_undirected_conductance": 3.0015174469770196,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 9.45,
+          "first_sustained_onset_elapsed": 9.45,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2470244734625962,
+          "final_log_sd": 1.436361116843866,
+          "sampled_transitions": [
+            {
+              "elapsed": 9.45,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.15,
+          "first_sustained_onset_elapsed": 12.15,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2470244734625962,
+          "final_log_sd": 1.436361116843866,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.15,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 14.85,
+          "first_sustained_onset_elapsed": 14.85,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2470244734625962,
+          "final_log_sd": 1.436361116843866,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.85,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 405.5848123034617,
+      "conductance_relative_change": -0.4994146618672236,
+      "frozen_uniform_max_growth_start": 0.31430092397940435,
+      "frozen_uniform_max_growth_end": 0.10632271157905304
+    },
+    {
+      "history": 1101,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003564137472713679,
+        "axis_ratio": 1.3270011755556188,
+        "summed_undirected_conductance": 5.9963248289573885,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.454774625608696,
+        "axis_ratio": 1.4176215527522171,
+        "summed_undirected_conductance": 2.9472791795045366,
+        "frozen_uniform_unstable_modes": 4
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 9.45,
+          "first_sustained_onset_elapsed": 9.45,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2585867668526929,
+          "final_log_sd": 1.454774625608696,
+          "sampled_transitions": [
+            {
+              "elapsed": 9.45,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.15,
+          "first_sustained_onset_elapsed": 12.15,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2585867668526929,
+          "final_log_sd": 1.454774625608696,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.15,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 14.85,
+          "first_sustained_onset_elapsed": 14.85,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.2585867668526929,
+          "final_log_sd": 1.454774625608696,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.85,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 408.1701777067126,
+      "conductance_relative_change": -0.5084857369181257,
+      "frozen_uniform_max_growth_start": 0.31429879789616955,
+      "frozen_uniform_max_growth_end": 0.09551858115804102
+    },
+    {
+      "history": 1102,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019419320713861118,
+        "axis_ratio": 1.3206456699804798,
+        "summed_undirected_conductance": 6.325621287565111,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.4187627404375045,
+        "axis_ratio": 1.4006660480087323,
+        "summed_undirected_conductance": 3.657569526810163,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 11.25,
+          "first_sustained_onset_elapsed": 11.25,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3391771183737198,
+          "final_log_sd": 1.4187627404375045,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.25,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 13.799999999999999,
+          "first_sustained_onset_elapsed": 13.799999999999999,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3391771183737198,
+          "final_log_sd": 1.4187627404375045,
+          "sampled_transitions": [
+            {
+              "elapsed": 13.799999999999999,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 16.2,
+          "first_sustained_onset_elapsed": 16.2,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3391771183737198,
+          "final_log_sd": 1.4187627404375045,
+          "sampled_transitions": [
+            {
+              "elapsed": 16.2,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 730.5933927054515,
+      "conductance_relative_change": -0.42178493454861055,
+      "frozen_uniform_max_growth_start": 0.31838556088045067,
+      "frozen_uniform_max_growth_end": 0.17728310322785923
+    },
+    {
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019560725657752887,
+        "axis_ratio": 1.3206126907066835,
+        "summed_undirected_conductance": 6.325256090872974,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.4364444235884526,
+        "axis_ratio": 1.4021790306422341,
+        "summed_undirected_conductance": 3.599394354393188,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 11.25,
+          "first_sustained_onset_elapsed": 11.25,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3538407486840762,
+          "final_log_sd": 1.4364444235884526,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.25,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 13.65,
+          "first_sustained_onset_elapsed": 13.65,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3538407486840762,
+          "final_log_sd": 1.4364444235884526,
+          "sampled_transitions": [
+            {
+              "elapsed": 13.65,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 16.2,
+          "first_sustained_onset_elapsed": 16.2,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3538407486840762,
+          "final_log_sd": 1.4364444235884526,
+          "sampled_transitions": [
+            {
+              "elapsed": 16.2,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 734.3512959188804,
+      "conductance_relative_change": -0.4309488338998744,
+      "frozen_uniform_max_growth_start": 0.31838272991851824,
+      "frozen_uniform_max_growth_end": 0.16900177356336066
+    },
+    {
+      "history": 1102,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.001922705678641191,
+        "axis_ratio": 1.322915787555235,
+        "summed_undirected_conductance": 5.985299211869174,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.5013695630139159,
+        "axis_ratio": 1.4060898149148873,
+        "summed_undirected_conductance": 3.046006999047641,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 11.7,
+          "first_sustained_onset_elapsed": 11.7,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3728668021117807,
+          "final_log_sd": 1.5013695630139159,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.7,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 14.399999999999999,
+          "first_sustained_onset_elapsed": 14.399999999999999,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3728668021117807,
+          "final_log_sd": 1.5013695630139159,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.399999999999999,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 17.099999999999998,
+          "first_sustained_onset_elapsed": 17.099999999999998,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3728668021117807,
+          "final_log_sd": 1.5013695630139159,
+          "sampled_transitions": [
+            {
+              "elapsed": 17.099999999999998,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 780.8629160938243,
+      "conductance_relative_change": -0.4910852588610368,
+      "frozen_uniform_max_growth_start": 0.31455316714406933,
+      "frozen_uniform_max_growth_end": 0.11629769357324804
+    },
+    {
+      "history": 1102,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019364117512695258,
+        "axis_ratio": 1.3229092485104295,
+        "summed_undirected_conductance": 5.985530715092626,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.5191674066783294,
+        "axis_ratio": 1.4068715818762245,
+        "summed_undirected_conductance": 2.9919404296072876,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 11.7,
+          "first_sustained_onset_elapsed": 11.7,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3862939619932808,
+          "final_log_sd": 1.5191674066783294,
+          "sampled_transitions": [
+            {
+              "elapsed": 11.7,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 14.25,
+          "first_sustained_onset_elapsed": 14.25,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3862939619932808,
+          "final_log_sd": 1.5191674066783294,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.25,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 16.95,
+          "first_sustained_onset_elapsed": 16.95,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3862939619932808,
+          "final_log_sd": 1.5191674066783294,
+          "sampled_transitions": [
+            {
+              "elapsed": 16.95,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 784.5270540639675,
+      "conductance_relative_change": -0.5001378203501563,
+      "frozen_uniform_max_growth_start": 0.31455207082848524,
+      "frozen_uniform_max_growth_end": 0.10541073013680347
+    },
+    {
+      "history": 1103,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0030918097141869323,
+        "axis_ratio": 1.2852486288116949,
+        "summed_undirected_conductance": 6.636856148396923,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.4032442894291135,
+        "axis_ratio": 1.4083565871780526,
+        "summed_undirected_conductance": 3.9134526559994667,
+        "frozen_uniform_unstable_modes": 6
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 10.2,
+          "first_sustained_onset_elapsed": 10.2,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3145272239791015,
+          "final_log_sd": 1.4032442894291135,
+          "sampled_transitions": [
+            {
+              "elapsed": 10.2,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.6,
+          "first_sustained_onset_elapsed": 12.6,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3145272239791015,
+          "final_log_sd": 1.4032442894291135,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.6,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 15.0,
+          "first_sustained_onset_elapsed": 15.0,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3145272239791015,
+          "final_log_sd": 1.4032442894291135,
+          "sampled_transitions": [
+            {
+              "elapsed": 15.0,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 453.85855506897883,
+      "conductance_relative_change": -0.4103454152845051,
+      "frozen_uniform_max_growth_start": 0.32164260368617725,
+      "frozen_uniform_max_growth_end": 0.2204791578425498
+    },
+    {
+      "history": 1103,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0031112813210923762,
+        "axis_ratio": 1.2851246436509762,
+        "summed_undirected_conductance": 6.6367033129709,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.4218752592165282,
+        "axis_ratio": 1.4085426874293836,
+        "summed_undirected_conductance": 3.856185772007419,
+        "frozen_uniform_unstable_modes": 6
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 10.049999999999999,
+          "first_sustained_onset_elapsed": 10.049999999999999,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3301445380176684,
+          "final_log_sd": 1.4218752592165282,
+          "sampled_transitions": [
+            {
+              "elapsed": 10.049999999999999,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.45,
+          "first_sustained_onset_elapsed": 12.45,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3301445380176684,
+          "final_log_sd": 1.4218752592165282,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.45,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 14.85,
+          "first_sustained_onset_elapsed": 14.85,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.3301445380176684,
+          "final_log_sd": 1.4218752592165282,
+          "sampled_transitions": [
+            {
+              "elapsed": 14.85,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 457.0063303428008,
+      "conductance_relative_change": -0.4189606510704169,
+      "frozen_uniform_max_growth_start": 0.3216422052989323,
+      "frozen_uniform_max_growth_end": 0.21536854365016112
+    },
+    {
+      "history": 1103,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0030062470560131335,
+        "axis_ratio": 1.287549033314623,
+        "summed_undirected_conductance": 6.309328966992695,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.3605132048770725,
+        "axis_ratio": 1.415840621208892,
+        "summed_undirected_conductance": 3.2841259994979524,
+        "frozen_uniform_unstable_modes": 5
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 10.35,
+          "first_sustained_onset_elapsed": 10.35,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1751527520581868,
+          "final_log_sd": 1.3605132048770725,
+          "sampled_transitions": [
+            {
+              "elapsed": 10.35,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.9,
+          "first_sustained_onset_elapsed": 12.9,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1751527520581868,
+          "final_log_sd": 1.3605132048770725,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.9,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 15.299999999999999,
+          "first_sustained_onset_elapsed": 15.299999999999999,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1751527520581868,
+          "final_log_sd": 1.3605132048770725,
+          "sampled_transitions": [
+            {
+              "elapsed": 15.299999999999999,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 452.5620082207671,
+      "conductance_relative_change": -0.4794809374057235,
+      "frozen_uniform_max_growth_start": 0.3212092240715556,
+      "frozen_uniform_max_growth_end": 0.16973709934095105
+    },
+    {
+      "history": 1103,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003024538896907933,
+        "axis_ratio": 1.2874516063929577,
+        "summed_undirected_conductance": 6.308872712426416,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 78.0,
+        "log_activator_sd": 1.376234076911926,
+        "axis_ratio": 1.4142336847615453,
+        "summed_undirected_conductance": 3.1902320666761312,
+        "frozen_uniform_unstable_modes": 4
+      },
+      "formation": [
+        {
+          "threshold": 0.05,
+          "first_crossing_elapsed": 10.35,
+          "first_sustained_onset_elapsed": 10.35,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1868358228568532,
+          "final_log_sd": 1.376234076911926,
+          "sampled_transitions": [
+            {
+              "elapsed": 10.35,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "first_crossing_elapsed": 12.75,
+          "first_sustained_onset_elapsed": 12.75,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1868358228568532,
+          "final_log_sd": 1.376234076911926,
+          "sampled_transitions": [
+            {
+              "elapsed": 12.75,
+              "direction": "up"
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "first_crossing_elapsed": 15.299999999999999,
+          "first_sustained_onset_elapsed": 15.299999999999999,
+          "sustained_formation": true,
+          "late_persistent": true,
+          "late_min_log_sd": 1.1868358228568532,
+          "final_log_sd": 1.376234076911926,
+          "sampled_transitions": [
+            {
+              "elapsed": 15.299999999999999,
+              "direction": "up"
+            }
+          ]
+        }
+      ],
+      "log_contrast_growth": 455.0227733288161,
+      "conductance_relative_change": -0.4943261320849892,
+      "frozen_uniform_max_growth_start": 0.3212072065788032,
+      "frozen_uniform_max_growth_end": 0.1587548513231285
+    }
+  ],
+  "frozen_uniform_instability_band": [
+    4.325028624825873,
+    42.038607738810484
+  ],
+  "fine_frozen_growth_ranges": [
+    {
+      "history": 1101,
+      "branch": "off",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.17110634508148692
+    },
+    {
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.16353358753648806
+    },
+    {
+      "history": 1101,
+      "branch": "polarity",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.10632271157905304
+    },
+    {
+      "history": 1101,
+      "branch": "full",
+      "minimum_growing_modes": 4,
+      "minimum_max_growth": 0.09551858115804013
+    },
+    {
+      "history": 1102,
+      "branch": "off",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.17728310322785923
+    },
+    {
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.16900177356335977
+    },
+    {
+      "history": 1102,
+      "branch": "polarity",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.11629769357324804
+    },
+    {
+      "history": 1102,
+      "branch": "full",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.10541073013680435
+    },
+    {
+      "history": 1103,
+      "branch": "off",
+      "minimum_growing_modes": 6,
+      "minimum_max_growth": 0.2204791578425498
+    },
+    {
+      "history": 1103,
+      "branch": "tension_adhesion",
+      "minimum_growing_modes": 6,
+      "minimum_max_growth": 0.21536854365016023
+    },
+    {
+      "history": 1103,
+      "branch": "polarity",
+      "minimum_growing_modes": 5,
+      "minimum_max_growth": 0.16973709934095105
+    },
+    {
+      "history": 1103,
+      "branch": "full",
+      "minimum_growing_modes": 4,
+      "minimum_max_growth": 0.1587548513231285
+    }
+  ],
+  "sustained_and_late_formation_history_counts_by_branch": {
+    "off": 3,
+    "tension_adhesion": 3,
+    "polarity": 3,
+    "full": 3
+  },
+  "primary_threshold": 0.1,
+  "sensitivity_thresholds": [
+    0.05,
+    0.2
+  ],
+  "sustained_window": 24.0,
+  "late_window": [
+    36.0,
+    60.0
+  ],
+  "original_scheduling_failure_retained": true,
+  "original_developmental_failure_retained": true,
+  "production_acceptance_fields_unchanged": true,
+  "manuscript_and_ledger_unchanged": true,
+  "maintenance_240_qualified": false,
+  "biological_identity_qualified": false,
+  "general_convergence_accepted": false,
+  "new_simulation_launched": false,
+  "scope": "Independent NumPy/SciPy saved-array audit: 24 numerical paths within three histories, 9624 regular observations, 96024 dense conservative graphs, all twelve complete timestep comparisons, 144 complete checkpoint states/native density reconstructions, formation at thresholds0.05/0.1/0.2 with full24-unit windows, frozen chemical growth, exact inherited starts and unchanged lineage/targets/RNG. All24 prefixes and eight-step restarts checked through immutable saved evidence, not independently rerun. Both restart-start archives are byte-identical to their corresponding full checkpoints. Acceptance applies only to dt0.00375/0.001875, grid120, physical t18\u201378, twelve inherited contexts. No240-unit maintenance, biological identity or universal convergence claim.",
+  "coordinator_seconds": 36287.962771055,
+  "completed_local": "2026-10-12T21:34:45.027852-04:00"
+}

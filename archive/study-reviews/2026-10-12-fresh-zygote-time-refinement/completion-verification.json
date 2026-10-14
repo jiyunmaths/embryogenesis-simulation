@@ -1,0 +1,24 @@
+{
+  "verified_utc": "2026-10-12T02:57:05.947357+00:00",
+  "checks_passed": true,
+  "assessment_and_provenance_hashes_verified": true,
+  "production_records_unchanged": true,
+  "original_failed_pilot_retained": true,
+  "source_hashes_verified": 43,
+  "manuscript_sections_and_evidence_manifest_unchanged": true,
+  "ledger_updated": false,
+  "ledger_sha256": "24bd6990341158b46059b834c8ec516c09d54d6b54f700e2906c53768343ee9a",
+  "new_document_links_verified": 40,
+  "figure_visually_inspected": true,
+  "new_simulation_launched": false,
+  "document_updates": {
+    "README.md": {
+      "before_sha256": "b695d9b020bf30f9b4d5050f978763e6b6642d9b3e29bbc4d4592a7ead4c7b37",
+      "after_sha256": "c22b128e82bdc232ab22e093c456a9be1b0388b4131d1041a87f31567a60ec3f"
+    },
+    "docs/lab_notebook.md": {
+      "before_sha256": "be157134b6f9cb7c7128637c2031bb12afad7410849228f47674da8cca895272",
+      "after_sha256": "f13e5a80a78bc4c052f515776746bbcb697227e1812756f86e0fc3c996505450"
+    }
+  }
+}

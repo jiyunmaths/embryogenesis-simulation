@@ -1,0 +1,86 @@
+{
+  "diagnostic_complete": true,
+  "original_order_gate_unchanged": true,
+  "delayed_full_study_accepted": false,
+  "failed_order_record": {
+    "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60_control",
+    "errors": [
+      2.57571741713033e-14,
+      1.5609735726228482e-13,
+      1.5609735726228482e-13
+    ],
+    "reference_noise": 1.554312234475218e-15,
+    "order_resolved": true,
+    "orders": [
+      -2.599399883944869,
+      0.0
+    ],
+    "passed": false
+  },
+  "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60_control",
+  "mantissa_bits": {
+    "float64": 52,
+    "longdouble": 63
+  },
+  "equilibrium_precision_digits": 80,
+  "equilibrium_newton_residual_history": [
+    "0.00000000000005976784553992775989150017414703258605890524173440977648978553280659078165249551",
+    "1.2868941049720888942779367580843255803708937018436748546943235568010979669050569e-26",
+    "2.7816041058969665342919714993928033227274979887493706460372973160949470790188727e-53",
+    "9.4879781489074709019137166461430171069389652441316567950699867225973298618727836e-81"
+  ],
+  "equilibrium_maximum_absolute_residual": "9.4879781489074709019137166461430171069389652441316567950699867225973298618727836e-81",
+  "initial_maximum_relative_rate": 5.630765941228022e-14,
+  "initial_maximum_log_distance_to_equilibrium": 1.2249489617088077e-13,
+  "reference_endpoint_log_distance_to_equilibrium": {
+    "dop853": 1.0960199761655958e-15,
+    "radau": 1.058831841649343e-15
+  },
+  "approximate_rightmost_local_jacobian_eigenvalue": -0.585421777649991,
+  "levels": [
+    {
+      "level": "coarse",
+      "dt": 0.00375,
+      "float64_saved_max_log_drift": 1.3367085216487778e-13,
+      "float64_saved_exactly_constant": false,
+      "longdouble_max_log_drift": 1.5665105931179763e-13,
+      "longdouble_endpoint_log_distance_to_equilibrium": 8.239936510889834e-18,
+      "float64_endpoint_log_distance_to_equilibrium": 1.628655977442537e-14,
+      "first_euler_largest_increment_in_float64_ulps": 1.0132690429687499
+    },
+    {
+      "level": "fine",
+      "dt": 0.001875,
+      "float64_saved_max_log_drift": 0.0,
+      "float64_saved_exactly_constant": true,
+      "longdouble_max_log_drift": 1.5664439146843684e-13,
+      "longdouble_endpoint_log_distance_to_equilibrium": 5.757113535898029e-17,
+      "float64_endpoint_log_distance_to_equilibrium": 1.2249489617088077e-13,
+      "first_euler_largest_increment_in_float64_ulps": 0.5066345214843749
+    },
+    {
+      "level": "diagnostic",
+      "dt": 0.0009375,
+      "float64_saved_max_log_drift": 0.0,
+      "float64_saved_exactly_constant": true,
+      "longdouble_max_log_drift": 1.5669318056619869e-13,
+      "longdouble_endpoint_log_distance_to_equilibrium": 1.0473392986209973e-16,
+      "float64_endpoint_log_distance_to_equilibrium": 1.2249489617088077e-13,
+      "first_euler_largest_increment_in_float64_ulps": 0.25331726074218747
+    }
+  ],
+  "seconds": 5.5203497289912775,
+  "paths_sha256": "ec1cbcf7c144ebf479bcf5bc91d20ce690ca655138cbe1bfa9357ad8a2efc138",
+  "files_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-recipient-amount-delayed-response/contexts/seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60.npz": "90583dab55218f00faf1859c620ec09d4166bb98cdbb0fa8bba4de09c05de350",
+    "output/studies/phase-carry-recipient-amount-delayed-response/protocol.json": "f3234ec49000dab6725e31b0eda28a1cffbba53823a3c6a25a9fa14b2b3bd8bc",
+    "output/studies/phase-carry-recipient-amount-delayed-response/summary.json": "97f9edb1b15e5ac9065cb7cd7a6f230f0422a9d4d4d241f5596b61caa9c5474b",
+    "output/studies/phase-carry-recipient-amount-delayed-response/status.json": "7441f63ab05fab5e6b878b151aeb702c6277d9a7444ad99ae1f9502e961d31dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-recipient-amount-delayed-response/roundoff_diagnostic.py": "1397c2e06abeed7dc5bcc2ae886dcdcad25e347070360e2ebf51bb115b3b66ae",
+    "output/studies/phase-carry-recipient-amount-delayed-response/production/coarse/paths.npz": "c0abde3f132a46a3cac0c987ba7945bd70c989676c7494cfb323b9378a40797b",
+    "output/studies/phase-carry-recipient-amount-delayed-response/production/fine/paths.npz": "11c42b15eebeac757b4ab00b22c29bc24f46a2f873d7bbfcba2ddf0980ebeb08",
+    "output/studies/phase-carry-recipient-amount-delayed-response/production/diagnostic/paths.npz": "3e42f41118c5540c7fdec45524d7dab2c8cf75b11bbefafb1bf5feb6f2902099",
+    "output/studies/phase-carry-recipient-amount-delayed-response/references/seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60_control/paths.npz": "7f82e6025c886b228736b76cd7d184f0516d0e51acff9402588b3168c8eab304"
+  },
+  "scope": "Numerical diagnosis only: an80-digit stationary solution and identical SSP-RK2 calculations with63-bit longdouble mantissa. No delayed control replacement, source projection, new scientific perturbation, acceptance-floor amendment or threshold change. The original failed order gate is retained."
+}

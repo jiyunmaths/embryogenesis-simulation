@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-10-11T18:33:59.388543+00:00",
+  "authorization": "User explicitly requested revision of manuscript/sections.md around carry-qualified evidence, the literature gap, discrete spectra and contact-transport biology.",
+  "scope": "Introduction, bibliography, guide, generated previews and editorial manifest; Abstract and Methods onward preserved.",
+  "parent_preservation_manifest": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-10-before-development-controls/manifest.json",
+  "parent_preservation_manifest_sha256": "c6c68c1ca6b92aa469dab4b83a344d6591f692592cef85b6b04714cdf0e4a28b",
+  "active_protocol_sha256": "728f584676ea4eeeee530656015aec61931e9296ff095eff8b7c94f9832a13ee",
+  "non_input_document_relocations": [
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/README.md",
+      "expected_sha256": "ea9b400bb886785303986f8a0738ddcdfa259c806153b0b9b6c8605cc5685556",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/README.md",
+      "edited_sha256": "69d9feb11865c2a1e2d434c10bbc4f6d7e7c300ac7ac314325c3edfeeb6862a7",
+      "scope": "User-authorized non-input manuscript revision; original immutable scientific records and protocol remain unchanged."
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/introduction_methods.md",
+      "expected_sha256": "4a71427fc215596d7b65a51258f628756c482c4fdca0ef37e2767504b74755a7",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/introduction_methods.md",
+      "edited_sha256": "592bef2a1f38745283ee5424a2e2217c25b4c0487ae72575c18aa022f5cec53e",
+      "scope": "User-authorized non-input manuscript revision; original immutable scientific records and protocol remain unchanged."
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.md",
+      "expected_sha256": "fb51bca6440459bf65038f434397696ca018849f75f19d3a78aeb0172ea775df",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.md",
+      "edited_sha256": "dc22cba85a472a0ef9c8f9b4a4a4da4087a372eaffe4fe9ddb964127f785076e",
+      "scope": "User-authorized non-input manuscript revision; original immutable scientific records and protocol remain unchanged."
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/sections.tex",
+      "expected_sha256": "5f48d313afabe35dd9b45404b7d9802c2c8a92c8312cec5705c531306380c2eb",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/sections.tex",
+      "edited_sha256": "e1b4e3ddbe8498ffc0d394eaeeced98f7e2bbe9843e0558f9e91a573d3167b62",
+      "scope": "User-authorized non-input manuscript revision; original immutable scientific records and protocol remain unchanged."
+    },
+    {
+      "original_path": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/references.bib",
+      "expected_sha256": "2daffdda2b2c499a6e7f4cda9a597c16ce23e91d0675ea8bb180457bd5f017a0",
+      "preserved_bytes": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/manuscript/archive/before-carry-introduction-2026-10-11/references.bib",
+      "edited_sha256": "b42eaf1db91a3d91bb1e17c5f716299c9a1801e3bb6150dfa1c03e538e13a345",
+      "scope": "User-authorized non-input manuscript revision; original immutable scientific records and protocol remain unchanged."
+    }
+  ],
+  "source_and_input_pins_unchanged": true,
+  "original_numerical_evidence_unchanged": true,
+  "verification": "manuscript/carry_introduction_verification.json"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "observed_utc": "2026-10-08T01:58:00.996044+00:00",
+  "scientific_source_hashes_verified": 53,
+  "manuscript_ledger_hashes_verified": 52,
+  "guard_registry": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-document-snapshots/2026-10-07-before-redistribution-response-launch/manifest.json",
+  "guard_registry_sha256": "ec990e87a51064e2ded721f85e5116686228e6759a8a1fa7d72a9bb886b9ea9d",
+  "document_links_verified": 29,
+  "git_diff_check_passed": true,
+  "outputs_symlink_ignored_by_git": true,
+  "retired_original_duplicate_absent": true,
+  "running_verification_sha256": "514166ced79353ddad159b57de2a35f78534759ba4bbb02b4481e6448831ed38",
+  "scientific_verifier_source_preserved": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-07/verify_scientific_compatibility.py",
+  "scientific_verifier_sha256": "611ec32e4475e12098919e9996157882642db3ba2f574f38a692689763f7ca4c"
+}

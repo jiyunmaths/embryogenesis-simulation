@@ -1,0 +1,794 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-08T13:07:02.553948+00:00",
+  "finished_utc": "2026-10-08T13:07:17.822605+00:00",
+  "protocol_sha256": "0dec74211a532ff4fcef1c806fdcf0ff50673e215b4451c8477a00029e564eab",
+  "script_sha256": "d7d4ce4d541a791ad705169391be6d98cbfac3ea24688de1892f7c3c416bde7a",
+  "runtime": {
+    "torch": "2.7.1+cu118",
+    "torch_cuda": "11.8",
+    "expected_gpu_name": "NVIDIA GeForce GTX 1080 Ti",
+    "numpy": "2.4.0",
+    "scipy": "1.16.3"
+  },
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce GTX 1080 Ti",
+  "levels": [
+    {
+      "level": {
+        "level": "coarse",
+        "dt": 0.00375
+      },
+      "horizon": 0.6,
+      "logical_paths": 93,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 7.771561172376099e-16,
+      "normalized_response_error": 8.429785633579421e-15,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268734601803624e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2147561473741e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1613404493617955e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.221123334266049e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429785633579421e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.217007173042971e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149521071979534e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149511022757795e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376160939233348e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.323452678952918e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949100282387e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1075067037252714e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949594892519e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149492180467044e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214957131808822e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.412524831139156e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.107474671830988e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.478383410708397e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.239646059769898e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161217848856616e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949343661976e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.322423630796194e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.4246461376005388e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268686742385106e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1074745462770517e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161726339476459e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214997328695766e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1085035865214855e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612238783896574e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949104207864e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909635691e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092922117e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092454433e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214955121964474e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        }
+      ],
+      "gpu_wall_seconds": 0.9734272229979979,
+      "serial_cpu_wall_seconds": 1.281254538000212,
+      "estimated_full_gpu_seconds": 97.34272229979979,
+      "passed": true
+    },
+    {
+      "level": {
+        "level": "fine",
+        "dt": 0.001875
+      },
+      "horizon": 0.6,
+      "logical_paths": 93,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 1.1102230246251571e-15,
+      "normalized_response_error": 1.053737273100958e-14,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215077722469654e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376166941288049e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161726339476459e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.217007173042971e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.167386061158191e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214955121964474e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494928085434e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092615439e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.610100569846879e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1074745540666705e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429898175049172e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149511022757795e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1239391911080266e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.107475048676803e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215206352507875e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.7418177289853614e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.217007173042971e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.478383410708397e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214961151497516e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214961151497516e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 6.322423261801334e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.3587875580312978e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215978132737202e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149490924621e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.4246461376005388e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.247878382216053e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215142037488764e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214973210563599e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149489982199785e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.280807672000673e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1776764642158847e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.216492652890087e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 2.1074765560600633e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 1.053737273100958e-14
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429898184556187e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161726339476459e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149491238352506e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092615439e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268686868000377e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612118821312103e-15
+        }
+      ],
+      "gpu_wall_seconds": 1.6872390100033954,
+      "serial_cpu_wall_seconds": 2.5384404840006027,
+      "estimated_full_gpu_seconds": 168.72390100033954,
+      "passed": true
+    },
+    {
+      "level": {
+        "level": "diagnostic",
+        "dt": 0.0009375
+      },
+      "horizon": 0.6,
+      "logical_paths": 93,
+      "samples": 5,
+      "substeps": 1,
+      "raw_log_error": 1.110223024625156e-15,
+      "normalized_response_error": 1.2644332757141412e-14,
+      "pulse_errors": [
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 1.2644332757141412e-14
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1776764642158847e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_cell-22_matched-S_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161212824245748e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-sham_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21496517118621e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-22_cell-22_matched-R_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-22_physics-redistributed-cell-22_native_cell-22_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21906525365451e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161227898078352e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494928085434e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_cell-23_matched-S_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214957131808822e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-sham_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949469277248e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-sham_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-7_chemistry-sham_physics-redistributed-cell-23_cell-23_matched-R_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214953112120127e-15
+        },
+        {
+          "trial": "seed-7_chemistry-redistributed-cell-23_physics-redistributed-cell-23_native_cell-23_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949115984296e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.247878382216053e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949098319649e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215463612584317e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214957131808822e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_cell-19_matched-S_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.247878382216053e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612439768331295e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-sham_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.429897745209415e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-19_cell-19_matched-R_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.239646059769898e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-19_physics-redistributed-cell-19_native_cell-19_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2231814148775876e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909537554e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 0.0
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_cell-20_matched-S_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215978132737202e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-sham_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161215839012269e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-sham_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.161211944938846e-15
+        },
+        {
+          "trial": "seed-8_chemistry-sham_physics-redistributed-cell-20_cell-20_matched-R_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 5.268686993615649e-15
+        },
+        {
+          "trial": "seed-8_chemistry-redistributed-cell-20_physics-redistributed-cell-20_native_cell-20_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.215045564960098e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.2149521071979534e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949100282387e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214955121964474e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 8.42989812205523e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_cell-29_matched-S_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214957131808822e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.478383410708397e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-sham_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1614047643809063e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-29_cell-29_matched-R_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.3466662515699144e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-29_physics-redistributed-cell-29_native_cell-29_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21572087266076e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376160913717746e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 7.376675431907891e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_cell-30_matched-S_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.21494909635691e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-sham_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.247878382216053e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-sham_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 3.1612439768331295e-15
+        },
+        {
+          "trial": "seed-9_chemistry-sham_physics-redistributed-cell-30_cell-30_matched-R_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092523436e-15
+        },
+        {
+          "trial": "seed-9_chemistry-redistributed-cell-30_physics-redistributed-cell-30_native_cell-30_fractional",
+          "initial_log_amplitude": 0.10536051565782628,
+          "normalized_response_error": 4.214949092433349e-15
+        }
+      ],
+      "gpu_wall_seconds": 3.3711791959940456,
+      "serial_cpu_wall_seconds": 5.090668135002488,
+      "estimated_full_gpu_seconds": 337.11791959940456,
+      "passed": true
+    }
+  ],
+  "estimated_full_gpu_seconds": 603.1845428995439,
+  "scope": "All 93 logical paths at three timesteps through .6 units. Unchanged float64 PyTorch stages checked on CUDA and compared with NumPy/SciPy; no full-window scientific outcome or mechanics stepping."
+}

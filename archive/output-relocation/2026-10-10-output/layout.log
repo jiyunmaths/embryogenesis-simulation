@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "utc": "2026-10-10T22:55:39.158104+00:00",
+  "local_tracked_folders": [
+    "output/figures",
+    "output/presentations"
+  ],
+  "links": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies": "/mnt/data/Documents/Python/embryogenesis-simulation/output/studies",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/kernel-cache": "/mnt/data/Documents/Python/embryogenesis-simulation/output/kernel-cache",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/pdf": "/mnt/data/Documents/Python/embryogenesis-simulation/output/pdf"
+  },
+  "restored_local_bytes": 51228672,
+  "studies_manifest_sha256": "8fb2545d8bae35a1a673ec3a43d3cc191148f03cac58892f29bd368182a8aff6",
+  "full_manifest_sha256": "b13c05e24947894c2b3b49ca24cf4e40db8ab2a0d0f56a161d3622a18d4ec7c8"
+}

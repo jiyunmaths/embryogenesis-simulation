@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "review_and_assessment_hashes_verified": true,
+  "source_and_input_pins_unchanged": true,
+  "evidence_hashes": 3855,
+  "ledger_manuscript_files_preserved": 61,
+  "document_links_exist": true,
+  "amount_matched_history_counts_verified": [
+    1,
+    2,
+    2
+  ],
+  "new_simulation_launched": false
+}

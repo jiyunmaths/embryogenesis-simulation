@@ -1,0 +1,3085 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-08T12:34:51.914921+00:00",
+  "scope": "Read-only preparation audit. New backgrounds retain full concentrations and inherit measured graph/volumes independently; no simulation or permanent restore.",
+  "files_written_under_outputs": 0,
+  "phase_arrays_loaded_or_copied": false,
+  "permanent_decompression": false,
+  "protocol_sha256": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+  "source_hashes_verified": 56,
+  "parent_input_hashes_verified": 115,
+  "parent_review_artifacts_verified": 12,
+  "minimal_accepted_review_pins": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/status.json": "8f6ccb89edb8a13681e7fad6b6d46862cac5b56f84a96a95e64344a4e1cc1e05",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/summary.json": "86a3a3852025132e0ee0e8ceb7936d8390ee93ea7f311a5d1e46059cf30b7898",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.json": "239da4e6a6e7916ee1d5f9577ae6a1b293d8cdd7727158a219d24c6c2f26f17e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/review-provenance.json": "3619f03d7ab1729200168d4d04dc18c1b4603e4fa44b2422c756236f1f930213",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.png": "2b0b3babd55d4cff3341bc408114890c8a90feb0a9afd7d90ec51b5134ce9c50",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/figure-provenance.json": "8b9a0806841ba62764d6dcad863746f169bbb99d958b92bdc6330062c920a5ce",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/waveforms.npz": "23f5a0b9b131a77051a10264bc91902431824f8ebd2e05b595d50d17a3a3a523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.py": "75682955859709421f995508a0642889c6ac6c50e75cb7c2e74f998c0905c454",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/plot_results.py": "7727829deac936370a5a8a7b0341fd17d8eb39b56eb60c60274bf593f5927c65",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.svg": "9c42430791c0f61e5037b1db47e17790376ea31d79d10f77f42e54ca9d1f045b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/recipient-summary.csv": "f8434f34521ced9e228d7a56f641773215657f720fdd91e9c4b520732b10c4e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent-review-notes.md": "8c2470b0e0756a87cc0bba1e14c44c3b01d5e75e0039b456ad912b798c0f4211",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.json": "b74061f04406cbbf984d896f12b13aa3a70708f5c61f2522bb630bd3c01d89a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/initial-value-counts.json": "fa029a54ae83650bc5af5796600d80c96131fecbd201f109b29bbf8f4cff8db7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.md": "b16736a698f31e5f1b36272f4f6a0be79b7a88fea2dd9b5986461cb0fea9128d"
+  },
+  "minimal_context_control_pins": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_sham.npz": "27006d0a02d193b79e7eed6437223fbc4ee8e87c1811aa7fcdbf65448ddd026a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_control.npz": "ef9303dec3788caa5ae532afcd253a6dab61994706b4fcb62d24670405071ee7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-22.npz": "73cdb358f18356685e649d9e5e7fb1d4548f247bded9226dc13eb8d062e606c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_control.npz": "68b814786f10c8df255aea0b380d7ca957096be3f698fb39f413529cbd516ebb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-23.npz": "4ceabd440d101964c4268479538557fe1820fb5f634c6513e40f3b6a941e6570",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_control.npz": "5208c16aba9db5485163aa22195b7f5c09268b4567fa3ea61ff52034b8da161c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_sham.npz": "b148069d8792259fddffe96e6f117249224eb24f9c0ac3ddfe723d34b0e67461",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_control.npz": "d517c8ea2b5a11178b21dfb4b54fd05bd689c8326d2af05e57a4e6db6c5b71fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-19.npz": "5fc314347524fb427337ac46da19578d71407cd44f9257d28cf41a211db43532",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_control.npz": "23ed36761af298bc5a980c213a8aa6e15433cfa1e9f150ae237403d44f5bb9c2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-20.npz": "1f8d3ab2fe3722d6a92cf3898e396a8c8e9eeb20f9a60524602556e032a12523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_control.npz": "5fbfedbf526564677c26731dd576e68e8b394fb392768ddbe2902b7a9435a72c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_sham.npz": "e54319ae840ecd550e5399a104beb3fbe08c0d0ffeeefd36074f8da59124b56b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_control.npz": "122966172a5a67338bf22c9012d825f37be31e80544848fd93775c5fc5de4a06",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-29.npz": "5b119063a550097337f23361835ee8c8756fdf3837ad5c3973b942eac306dfa1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_control.npz": "2992cffbc7b09585db54581602fdc4cbc702a07c45e8322a8cc728140e314172",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-30.npz": "3d4f6cbd7f64042e4e3c125a7e7ef9c5e895e9c13522b422ce9287693bdbe590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_control.npz": "410cc144f7a52f33973f89efced77b8e6a74adf050fd2bf7a8ae28ecc39e0605"
+  },
+  "inherited_source_pins": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_moving.py": "2cd9a4946d7f093675a4b625892c905f5932860111a251f73aa9ad4fb2db700f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": "39ad8daf28b79e1ecb3fd7b430d6f249bf14d5a8fb4e69aecb9bfd4f39071b79",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": "96dbf041fd896095263f3adfa5424d6efea84b56912a4859877c7b454f846807",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": "abb048cd98ec5fe315bb080c56b21a0e137750604ec8e21be2e5e8a37978213d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": "cde4e3658c50d91e77d8f9cac44699763dfebf942f69267f27e41d191a8f7784",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": "7eb638e84a66d06e910af1dea69b0e9202b1753cc87683bd0554790444350d57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/benchmark_gpu_backend.py": "c628f5b18d21232ff79b004b810010fff33d1549867e4cc8551f5555878227e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/validate_gpu_backend.py": "584608cc2b85f38b4fa041a0d776e9078004e5415fdcd5bf8a70b6440d708d98",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_response_runner.py": "1ff752551042cd4d6ed2463929e15f51897577273fe9b09ed3f6785ffd156e38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_long.py": "b6405a02033266bf8c33e308fcc29a2b5b78721eae13b212f1e0d23694b61a41",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_survival_validation.py": "d86acec93a06f7ad4cbbc94c4e2d8d295dfe863074a6c55413edf0f0dd6d4019",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/neighbor_context.py": "a6b7a2f17133a16dca157016415a4fadee81c86746c0e0dfde0019fdbe690d55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness.py": "38ebbffe4e9a9f5490a098a4a62507c051f9a05391f7a91cf0fa27fa8d4679ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": "7e62bf8c2471b786e0cb04ee8ac785abd5d9b036a86b3f4de7b017b967903221",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_endpoint_bistability.py": "074fda2b22f24e3e3a21012deee519f053f466cec05ddfdd0c09f83889a1d9c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness.py": "ba54be6325c4faad6dacae8fb41d57c7e583d709de053c65f5071dad7781fa5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/geometry_precision.py": "e41e13eca2d9d498d2d3adcd47571c33b14a983bcbf3d2b094b9979fd9bbe1f4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_polarity.c": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_reference.py": "d4aca7e3059be7b07f1928f4e48766c13deafcf6e82e3b9e2935fb3d6d9e3ce8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness_refinement.py": "fa79709c6b7ef072ea467cf0683b9dfa112132bd78a1625e41987a6a503658b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation.py": "fe3e52bf39b041cfa3af3f666ef2ce6f08479670943be4eeed194030e216cca6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_convergence.py": "d119fa7dcd567939d0343cffbee8ed54710a33d4eb0ab319c3ad97db9470e752",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/mechanics_float64_reference.py": "544596a5b8db0cd355c36327c11bfd1cb1d2bfebd08c53259cd25e80c869f64a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_polarity.py": "a381607dcfcda1b22b37d711757e0ab73561deaf837be7c330007fa399c6d468",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/moving_initiation_controls.py": "d60de79470dc29da44095cb57750e3c7707f29f8e9937272d8876d4603e101dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_initiation_controls.py": "f097f456b0259fde80aec02d9c41bd9af79c84da4462c98a07790d1f2468d685",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_conductance_controls.py": "e55de53bc80a99a5f71c936ed19aa2e5186d34071ee2e2b39f824443554f94df",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_polarity_conductance_controls.py": "d59ecaac8fca92ebd15a599f000704d703379a380f61be8f7a2f6847c29ad607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_maintenance.py": "2a87d7ed4587b3acc13009c4190d1f9a22ac023af5a1b89fcd0a2c4255dc3afb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_maintenance.py": "e810e8d0df3916ecdd722cbe55711cff3d4013f67a6f37fc41b268aab5e7ad2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_exchange_response.py": "8d8362846cb564b1a23e9f6f87e54fd1ce703b7f89c71201fd73086ea7954b3d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_exchange_response.py": "ea4321e0db7bc6ca84d8a02829d8367b1db3de35875a2b2ac5070ccb5a0ffadd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_network_context.py": "771af7bfead3b16ba47dbe495afd26fc5247a267e8893ec3e0fd3ebdc998c22c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_network_context.py": "2ec96e8b8a8b6b045b8e2aa4d8270b6739ed689fcc9045cde5c1fdbc41a81b76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": "4ee8a7d79ce9c3b77c032e41067556295757794560b10e5674db6e8489056e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_delayed_response.py": "f9f59fd08254bf32d0d1d5d94f2ddc82f214223a2cb3accff6b234ea5c12d11d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_context_dosage.py": "d355dbb1de45a4e02827d02f494333e4cc9c1a9e9c0cf9163455e05386bffa31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_context_dosage.py": "989e4e86818aef66f2057de14b23650b20850ab080b6c1a2c1766630e332a987",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": "e0632a9048e7049c516187c37e48c997116db9ec24804bdb544b82cc63aac254",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_redistribution_response.py": "13bf5b08aae36985c8d9eb4292ccd57d227135c981532c2876cd4e4febcc2bf4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py": "53958aacd35948f5764f6a37fcd7f5fe5ce9c504bb21d07549af1adf2d56d13c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_frozen_response.py": "7e5836790be762c149e02d982d9afefc2d9e62787c567fcd47bc02a18f384e48",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": "7ad6d1f1617100c69793dbc59c2557a9a3e94854109ff83c16368d96c56d71ea"
+  },
+  "source_and_input_pins_unchanged": true,
+  "excluded_reporting_guards": [
+    "README.md",
+    "docs/plan.md"
+  ],
+  "historical_document_guards_not_assay_inputs": true,
+  "parent_compact_schema": "independent_review + independent_review_sha256; no full_assessment",
+  "parent_independent_evidence_schema": "inputs_sha256; no evidence_sha256",
+  "parent_contexts_verified": 9,
+  "shared_contexts": [
+    {
+      "key": "seed-7_chem-sham_physical-sham",
+      "arrays_sha256": "cfbec9124c300fb77568a0f746893e2b67ee61fb77dc74e2533b5ff2c1b1fe1b",
+      "total_activator_amount": 1.7440381872527158,
+      "total_inhibitor_amount": 1.8493267787430976,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-22_physical-sham",
+      "arrays_sha256": "e2f06e99141fa7b54af90d5512fa2655b750d0f27573366af04e597c3f8ce158",
+      "total_activator_amount": 1.8698194917300204,
+      "total_inhibitor_amount": 1.963179758346058,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-sham_physical-redistributed-cell-22",
+      "arrays_sha256": "263b704948ab859b11938ab49200467a7a69fb83790e730e9e4c22a3e6cb59b7",
+      "total_activator_amount": 1.7440996937191997,
+      "total_inhibitor_amount": 1.8493379009882371,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-22_physical-redistributed-cell-22",
+      "arrays_sha256": "366fe42e9de2c4f0c1291d8315d0a870c8c7eb7fdfd9bb92a7bd87829e2cfd96",
+      "total_activator_amount": 1.8695480993644746,
+      "total_inhibitor_amount": 1.962910710724345,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-23_physical-sham",
+      "arrays_sha256": "2db8551dbcf8b7ec9f89b6ceddad603aeaf0ad9728d953416726a528425fc81f",
+      "total_activator_amount": 1.6436724366720339,
+      "total_inhibitor_amount": 1.7813294650499736,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-sham_physical-redistributed-cell-23",
+      "arrays_sha256": "cce2ba775a8f3caecb5ec532a563d62dc230e00e7aa9c770e9329e7802d5ca45",
+      "total_activator_amount": 1.7442115093312696,
+      "total_inhibitor_amount": 1.8495014611426535,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-23_physical-redistributed-cell-23",
+      "arrays_sha256": "8fc608545c419441e4ebb667cbaf1626c003d586c6bd71f18325f58de3b7c9fc",
+      "total_activator_amount": 1.6436031818059265,
+      "total_inhibitor_amount": 1.781327290067742,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-sham_physical-sham",
+      "arrays_sha256": "4bc19f681dc612275d94fcd54fa4d9af6fb98384e49cf21fcc013c3270326172",
+      "total_activator_amount": 1.7318612392254835,
+      "total_inhibitor_amount": 1.822582526154049,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-19_physical-sham",
+      "arrays_sha256": "07760faff97e37f7c9d3dae6d0ef19a151ebdface59701cfc1a48e5aa3c427af",
+      "total_activator_amount": 1.873485296752014,
+      "total_inhibitor_amount": 1.9690924948668846,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-sham_physical-redistributed-cell-19",
+      "arrays_sha256": "5e62ea02486f5ea77792509761d32cd0e4b26be09b0a27b3e2fc746bb14e8aa8",
+      "total_activator_amount": 1.7319220409298377,
+      "total_inhibitor_amount": 1.822597881907587,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19",
+      "arrays_sha256": "a57cba2bd3ce5208d08d98feba128b8c4d5240575e4e7588b462a9436094640d",
+      "total_activator_amount": 1.873135491715523,
+      "total_inhibitor_amount": 1.9687494103857353,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-20_physical-sham",
+      "arrays_sha256": "de1fa7dd443a5d1f9085eeaaa23bf7e6268796e2b33d85fc23f54df799227d98",
+      "total_activator_amount": 1.6063549966333728,
+      "total_inhibitor_amount": 1.7045580665845053,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-sham_physical-redistributed-cell-20",
+      "arrays_sha256": "e58c73bcdc1e5e1b3aa7bc013704fa493677924ba723df70c72dd066dce1a69d",
+      "total_activator_amount": 1.732148475428437,
+      "total_inhibitor_amount": 1.8228660303609825,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20",
+      "arrays_sha256": "a6369d229214959c65cfaaf2397bf14d0f6a8a0fc7a529650cc8a2971e64b4b6",
+      "total_activator_amount": 1.6062864237725987,
+      "total_inhibitor_amount": 1.704536967149934,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-sham_physical-sham",
+      "arrays_sha256": "6bfa8822f96f32bcd565ae515b55f44dd943b237cdbb711858ffeb8fed035eb0",
+      "total_activator_amount": 1.635218934039908,
+      "total_inhibitor_amount": 1.7614084037788023,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-29_physical-sham",
+      "arrays_sha256": "7717a381ac558aa440181109ada7aac4f813ce3a315ff6dadec3facb0a5d7e90",
+      "total_activator_amount": 1.775859721564522,
+      "total_inhibitor_amount": 1.9060857168095033,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-sham_physical-redistributed-cell-29",
+      "arrays_sha256": "4809160503f9171e7582fbe71d4e0a0b0385ce7aa0efd542fb350ab58bcce8e9",
+      "total_activator_amount": 1.6352804042559672,
+      "total_inhibitor_amount": 1.7614241941241287,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29",
+      "arrays_sha256": "113b31f89876068531e194d2fc3e7570b83f3696c4655bdb9c3f919d5090ba9c",
+      "total_activator_amount": 1.775514887544444,
+      "total_inhibitor_amount": 1.9057473835018632,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-30_physical-sham",
+      "arrays_sha256": "9e4cbb300699312a10c52acd3ed31fa914293e9e8e065b6f5df8621a60ac37c3",
+      "total_activator_amount": 1.5076651687021685,
+      "total_inhibitor_amount": 1.6412635235223068,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-sham_physical-redistributed-cell-30",
+      "arrays_sha256": "6a9a183042ae352d0fb22510999d8ac4924e688468d8e9b0c0fe1ce79978749c",
+      "total_activator_amount": 1.6355064770668315,
+      "total_inhibitor_amount": 1.7616927629802455,
+      "small_arrays_bytes": 2560
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30",
+      "arrays_sha256": "c5705e373275dbc30b7715c633ed3e9a2b468ff9e6cd42b7290c049deb669ca3",
+      "total_activator_amount": 1.5076036214135882,
+      "total_inhibitor_amount": 1.6412486848287084,
+      "small_arrays_bytes": 2560
+    }
+  ],
+  "shared_contexts_count": 21,
+  "recipient_factorial_context_labels": 24,
+  "logical_starts_per_level": 69,
+  "unique_initial_value_problems_per_level": 57,
+  "duplicate_groups": [
+    [
+      "seed-7_chem-sham_physical-sham_cell-22_fractional",
+      "seed-7_chem-sham_physical-sham_cell-22_amount"
+    ],
+    [
+      "seed-7_chem-sham_physical-redistributed-cell-22_cell-22_fractional",
+      "seed-7_chem-sham_physical-redistributed-cell-22_cell-22_amount"
+    ],
+    [
+      "seed-7_chem-sham_physical-sham_cell-23_fractional",
+      "seed-7_chem-sham_physical-sham_cell-23_amount"
+    ],
+    [
+      "seed-7_chem-sham_physical-redistributed-cell-23_cell-23_fractional",
+      "seed-7_chem-sham_physical-redistributed-cell-23_cell-23_amount"
+    ],
+    [
+      "seed-8_chem-redistributed-cell-19_physical-sham_cell-19_fractional",
+      "seed-8_chem-redistributed-cell-19_physical-sham_cell-19_amount"
+    ],
+    [
+      "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19_cell-19_fractional",
+      "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19_cell-19_amount"
+    ],
+    [
+      "seed-8_chem-redistributed-cell-20_physical-sham_cell-20_fractional",
+      "seed-8_chem-redistributed-cell-20_physical-sham_cell-20_amount"
+    ],
+    [
+      "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20_cell-20_fractional",
+      "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20_cell-20_amount"
+    ],
+    [
+      "seed-9_chem-redistributed-cell-29_physical-sham_cell-29_fractional",
+      "seed-9_chem-redistributed-cell-29_physical-sham_cell-29_amount"
+    ],
+    [
+      "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29_cell-29_fractional",
+      "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29_cell-29_amount"
+    ],
+    [
+      "seed-9_chem-redistributed-cell-30_physical-sham_cell-30_fractional",
+      "seed-9_chem-redistributed-cell-30_physical-sham_cell-30_amount"
+    ],
+    [
+      "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30_cell-30_fractional",
+      "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30_cell-30_amount"
+    ]
+  ],
+  "production_paths_all_new_at_three_levels": 207,
+  "logical_reference_cases": 69,
+  "reference_trajectories_two_methods": 138,
+  "native_exact_continuity_cases": [
+    {
+      "key": "seed-7_chem-sham_physical-sham_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-7_sham_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-sham_physical-sham_cell-22_fractional",
+      "target": 22,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-7_sham_cell-22_fractional",
+        "seed-7_sham_cell-22_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-sham_physical-sham_cell-22_amount",
+      "target": 22,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-7_sham_cell-22_fractional",
+        "seed-7_sham_cell-22_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-22_physical-redistributed-cell-22_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-7_redistributed-cell-22_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-22_physical-redistributed-cell-22_cell-22_fractional",
+      "target": 22,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-7_redistributed-cell-22_cell-22_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-sham_physical-sham_cell-23_fractional",
+      "target": 23,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-7_sham_cell-23_fractional",
+        "seed-7_sham_cell-23_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-sham_physical-sham_cell-23_amount",
+      "target": 23,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-7_sham_cell-23_fractional",
+        "seed-7_sham_cell-23_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-23_physical-redistributed-cell-23_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-7_redistributed-cell-23_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-7_chem-redistributed-cell-23_physical-redistributed-cell-23_cell-23_fractional",
+      "target": 23,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-7_redistributed-cell-23_cell-23_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-sham_physical-sham_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-8_sham_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-sham_physical-sham_cell-19_fractional",
+      "target": 19,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-8_sham_cell-19_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-19_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19_cell-19_fractional",
+      "target": 19,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-19_cell-19_fractional",
+        "seed-8_redistributed-cell-19_cell-19_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19_cell-19_amount",
+      "target": 19,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-19_cell-19_fractional",
+        "seed-8_redistributed-cell-19_cell-19_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-sham_physical-sham_cell-20_fractional",
+      "target": 20,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-8_sham_cell-20_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-20_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20_cell-20_fractional",
+      "target": 20,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-20_cell-20_fractional",
+        "seed-8_redistributed-cell-20_cell-20_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20_cell-20_amount",
+      "target": 20,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-8_redistributed-cell-20_cell-20_fractional",
+        "seed-8_redistributed-cell-20_cell-20_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-sham_physical-sham_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-9_sham_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-sham_physical-sham_cell-29_fractional",
+      "target": 29,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-9_sham_cell-29_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-29_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29_cell-29_fractional",
+      "target": 29,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-29_cell-29_fractional",
+        "seed-9_redistributed-cell-29_cell-29_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29_cell-29_amount",
+      "target": 29,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-29_cell-29_fractional",
+        "seed-9_redistributed-cell-29_cell-29_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-sham_physical-sham_cell-30_fractional",
+      "target": 30,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-9_sham_cell-30_fractional"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30_control",
+      "target": null,
+      "dose": null,
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-30_control"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30_cell-30_fractional",
+      "target": 30,
+      "dose": "fractional",
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-30_cell-30_fractional",
+        "seed-9_redistributed-cell-30_cell-30_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    },
+    {
+      "key": "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30_cell-30_amount",
+      "target": 30,
+      "dose": "amount",
+      "parent_exact_matches": [
+        "seed-9_redistributed-cell-30_cell-30_fractional",
+        "seed-9_redistributed-cell-30_cell-30_amount"
+      ],
+      "identical_full_initial_graph_volume_ids": true
+    }
+  ],
+  "native_exact_matches_count": 27,
+  "native_controls": 9,
+  "native_fractional_pulses": 12,
+  "native_lower_common_amount_pulses": 6,
+  "native_trajectory_reuse_recommended": false,
+  "rationale": "All69 starts should be rerun perlevel;27 exact native cases support numerical continuity. Do not reuse old upper common-amount curves because their dose was matched across different volumes.",
+  "dose_definition": "fractional factor0.9; common factor1-0.1*min(a_sham,a_red)/a_chemical with separately requested0.1*min(V*a_sham,V*a_red); preserve all initial concentrations.",
+  "amount_design_checks": [
+    {
+      "seed": 7,
+      "target": 22,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 0.964947964920474,
+      "target_volume": 0.13451610941292766,
+      "common_removed_amount": 0.012980104602702436,
+      "actual_removed_amount": 0.012980104602702436,
+      "relative_amount_error": 0.0,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 7,
+      "target": 22,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-22",
+      "target_concentration": 0.9799030082480974,
+      "target_volume": 0.13451610941292766,
+      "common_removed_amount": 0.012980104602702436,
+      "actual_removed_amount": 0.012980104602702436,
+      "relative_amount_error": 0.0,
+      "amount_factor": 0.9015261758767698,
+      "amount_first_factor": 0.9015261758767698,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 7,
+      "target": 22,
+      "physical": "redistributed-cell-22",
+      "chemistry": "sham",
+      "target_concentration": 0.964947964920474,
+      "target_volume": 0.13451077585377583,
+      "common_removed_amount": 0.012979589941997502,
+      "actual_removed_amount": 0.0129795899419975,
+      "relative_amount_error": 1.1102230246251565e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 7,
+      "target": 22,
+      "physical": "redistributed-cell-22",
+      "chemistry": "redistributed-cell-22",
+      "target_concentration": 0.9799030082480974,
+      "target_volume": 0.13451077585377583,
+      "common_removed_amount": 0.012979589941997502,
+      "actual_removed_amount": 0.0129795899419975,
+      "relative_amount_error": 1.1102230246251565e-16,
+      "amount_factor": 0.9015261758767698,
+      "amount_first_factor": 0.9015261758767698,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 7,
+      "target": 23,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 0.016508860377315228,
+      "target_volume": 0.13661547681180883,
+      "common_removed_amount": 0.00022553658320664983,
+      "actual_removed_amount": 0.00022553658320664967,
+      "relative_amount_error": 6.661338147750939e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 7,
+      "target": 23,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-23",
+      "target_concentration": 0.016960121427404072,
+      "target_volume": 0.13661547681180883,
+      "common_removed_amount": 0.00022553658320664983,
+      "actual_removed_amount": 0.0002255365832066499,
+      "relative_amount_error": 2.220446049250313e-16,
+      "amount_factor": 0.9026607182738662,
+      "amount_first_factor": 0.9026607182738662,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 7,
+      "target": 23,
+      "physical": "redistributed-cell-23",
+      "chemistry": "sham",
+      "target_concentration": 0.016508860377315228,
+      "target_volume": 0.1366153882071288,
+      "common_removed_amount": 0.0002255364369304207,
+      "actual_removed_amount": 0.0002255364369304205,
+      "relative_amount_error": 8.881784197001252e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 7,
+      "target": 23,
+      "physical": "redistributed-cell-23",
+      "chemistry": "redistributed-cell-23",
+      "target_concentration": 0.016960121427404072,
+      "target_volume": 0.1366153882071288,
+      "common_removed_amount": 0.0002255364369304207,
+      "actual_removed_amount": 0.00022553643693042075,
+      "relative_amount_error": 2.220446049250313e-16,
+      "amount_factor": 0.9026607182738662,
+      "amount_first_factor": 0.9026607182738662,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 8,
+      "target": 19,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 1.11942171656772,
+      "target_volume": 0.1361563230684364,
+      "common_removed_amount": 0.01326761403344671,
+      "actual_removed_amount": 0.013267614033446699,
+      "relative_amount_error": 7.771561172376096e-16,
+      "amount_factor": 0.9129515010811287,
+      "amount_first_factor": 0.9129515010811287,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 8,
+      "target": 19,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-19",
+      "target_concentration": 0.9744398008440632,
+      "target_volume": 0.1361563230684364,
+      "common_removed_amount": 0.01326761403344671,
+      "actual_removed_amount": 0.013267614033446713,
+      "relative_amount_error": 2.220446049250313e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 8,
+      "target": 19,
+      "physical": "redistributed-cell-19",
+      "chemistry": "sham",
+      "target_concentration": 1.11942171656772,
+      "target_volume": 0.13620837704617533,
+      "common_removed_amount": 0.013272686380216817,
+      "actual_removed_amount": 0.013272686380216807,
+      "relative_amount_error": 7.771561172376096e-16,
+      "amount_factor": 0.9129515010811287,
+      "amount_first_factor": 0.9129515010811287,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 8,
+      "target": 19,
+      "physical": "redistributed-cell-19",
+      "chemistry": "redistributed-cell-19",
+      "target_concentration": 0.9744398008440632,
+      "target_volume": 0.13620837704617533,
+      "common_removed_amount": 0.013272686380216817,
+      "actual_removed_amount": 0.01327268638021682,
+      "relative_amount_error": 2.220446049250313e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 8,
+      "target": 20,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 0.01111551836158325,
+      "target_volume": 0.13476385004068825,
+      "common_removed_amount": 1.10261844149542e-05,
+      "actual_removed_amount": 1.1026184414954252e-05,
+      "relative_amount_error": 4.6629367034256575e-15,
+      "amount_factor": 0.992639249083877,
+      "amount_first_factor": 0.992639249083877,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 8,
+      "target": 20,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-20",
+      "target_concentration": 0.0008181856196320561,
+      "target_volume": 0.13476385004068825,
+      "common_removed_amount": 1.10261844149542e-05,
+      "actual_removed_amount": 1.1026184414954194e-05,
+      "relative_amount_error": 4.440892098500626e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 8,
+      "target": 20,
+      "physical": "redistributed-cell-20",
+      "chemistry": "sham",
+      "target_concentration": 0.01111551836158325,
+      "target_volume": 0.13476583984420032,
+      "common_removed_amount": 1.1026347217816149e-05,
+      "actual_removed_amount": 1.10263472178162e-05,
+      "relative_amount_error": 4.6629367034256575e-15,
+      "amount_factor": 0.992639249083877,
+      "amount_first_factor": 0.992639249083877,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 8,
+      "target": 20,
+      "physical": "redistributed-cell-20",
+      "chemistry": "redistributed-cell-20",
+      "target_concentration": 0.0008181856196320561,
+      "target_volume": 0.13476583984420032,
+      "common_removed_amount": 1.1026347217816149e-05,
+      "actual_removed_amount": 1.1026347217816142e-05,
+      "relative_amount_error": 6.661338147750939e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 9,
+      "target": 29,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 1.1138739464709355,
+      "target_volume": 0.13570737233618754,
+      "common_removed_amount": 0.013140589154917405,
+      "actual_removed_amount": 0.01314058915491741,
+      "relative_amount_error": 4.440892098500626e-16,
+      "amount_factor": 0.9130688650339642,
+      "amount_first_factor": 0.9130688650339642,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 9,
+      "target": 29,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-29",
+      "target_concentration": 0.9683032637581586,
+      "target_volume": 0.13570737233618754,
+      "common_removed_amount": 0.013140589154917405,
+      "actual_removed_amount": 0.013140589154917394,
+      "relative_amount_error": 7.771561172376096e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 9,
+      "target": 29,
+      "physical": "redistributed-cell-29",
+      "chemistry": "sham",
+      "target_concentration": 1.1138739464709355,
+      "target_volume": 0.13575956606121642,
+      "common_removed_amount": 0.013145643090346722,
+      "actual_removed_amount": 0.013145643090346725,
+      "relative_amount_error": 2.220446049250313e-16,
+      "amount_factor": 0.9130688650339642,
+      "amount_first_factor": 0.9130688650339641,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 9,
+      "target": 29,
+      "physical": "redistributed-cell-29",
+      "chemistry": "redistributed-cell-29",
+      "target_concentration": 0.9683032637581586,
+      "target_volume": 0.13575956606121642,
+      "common_removed_amount": 0.013145643090346722,
+      "actual_removed_amount": 0.01314564309034671,
+      "relative_amount_error": 8.881784197001252e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 9,
+      "target": 30,
+      "physical": "sham",
+      "chemistry": "sham",
+      "target_concentration": 0.011311753011136808,
+      "target_volume": 0.13537534855685912,
+      "common_removed_amount": 8.747379395701026e-06,
+      "actual_removed_amount": 8.747379395700985e-06,
+      "relative_amount_error": 4.6629367034256575e-15,
+      "amount_factor": 0.9942877334885858,
+      "amount_first_factor": 0.9942877334885858,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 9,
+      "target": 30,
+      "physical": "sham",
+      "chemistry": "redistributed-cell-30",
+      "target_concentration": 0.0006461574791090588,
+      "target_volume": 0.13537534855685912,
+      "common_removed_amount": 8.747379395701026e-06,
+      "actual_removed_amount": 8.74737939570103e-06,
+      "relative_amount_error": 4.440892098500626e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    },
+    {
+      "seed": 9,
+      "target": 30,
+      "physical": "redistributed-cell-30",
+      "chemistry": "sham",
+      "target_concentration": 0.011311753011136808,
+      "target_volume": 0.13537740841816925,
+      "common_removed_amount": 8.747512495180172e-06,
+      "actual_removed_amount": 8.747512495180133e-06,
+      "relative_amount_error": 4.440892098500626e-15,
+      "amount_factor": 0.9942877334885858,
+      "amount_first_factor": 0.9942877334885858,
+      "lower_concentration": false,
+      "byte_identical_to_fractional": false
+    },
+    {
+      "seed": 9,
+      "target": 30,
+      "physical": "redistributed-cell-30",
+      "chemistry": "redistributed-cell-30",
+      "target_concentration": 0.0006461574791090588,
+      "target_volume": 0.13537740841816925,
+      "common_removed_amount": 8.747512495180172e-06,
+      "actual_removed_amount": 8.747512495180177e-06,
+      "relative_amount_error": 6.661338147750939e-16,
+      "amount_factor": 0.9,
+      "amount_first_factor": 0.9,
+      "lower_concentration": true,
+      "byte_identical_to_fractional": true
+    }
+  ],
+  "operation_order_factor_differences": [
+    {
+      "seed": 9,
+      "target": 29,
+      "physical": "redistributed-cell-29",
+      "chemistry": "sham",
+      "amount_first_factor": 0.9130688650339641,
+      "concentration_first_factor": 0.9130688650339642,
+      "target_state_equal": true
+    }
+  ],
+  "maximum_amount_relative_error": 4.6629367034256575e-15,
+  "total_small_context_arrays_bytes": 53760,
+  "inherited_positive_substep_counts": {
+    "seed-7_chem-sham_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-redistributed-cell-22_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-sham_physical-redistributed-cell-22": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-redistributed-cell-22_physical-redistributed-cell-22": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-redistributed-cell-23_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-sham_physical-redistributed-cell-23": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-7_chem-redistributed-cell-23_physical-redistributed-cell-23": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-sham_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-redistributed-cell-19_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-sham_physical-redistributed-cell-19": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-redistributed-cell-19_physical-redistributed-cell-19": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-redistributed-cell-20_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-sham_physical-redistributed-cell-20": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-8_chem-redistributed-cell-20_physical-redistributed-cell-20": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-sham_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-redistributed-cell-29_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-sham_physical-redistributed-cell-29": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-redistributed-cell-29_physical-redistributed-cell-29": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-redistributed-cell-30_physical-sham": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-sham_physical-redistributed-cell-30": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    },
+    "seed-9_chem-redistributed-cell-30_physical-redistributed-cell-30": {
+      "coarse": 1,
+      "fine": 1,
+      "diagnostic": 1
+    }
+  },
+  "observation_clock": "elapsed0..60 at interval0.15, absolute t510..570",
+  "raw_three_level_trajectory_bytes": 21249792,
+  "minimal_context_operator_state_only": true,
+  "output_path_within_writable_workspace": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-shared-context-response",
+  "original_outputs_alias": "/mnt/data/Documents/Python/embryogenesis-simulation/outputs",
+  "hardware": {
+    "torch": "2.7.1+cu118",
+    "torch_cuda": "11.8",
+    "cuda_available": true,
+    "logical_gpu_count": 1,
+    "device_name": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_inventory": "0, NVIDIA GeForce GTX 1080, GPU-58eb27b5-82c6-5b40-14bc-0c962bede594, 8192, 6642, 14\n1, NVIDIA GeForce GTX 1080 Ti, GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e, 11264, 11157, 0",
+    "compute_apps": "",
+    "workspace_disk": {
+      "total": 234039422976,
+      "used": 126826299392,
+      "free": 95249973248
+    },
+    "relocated_outputs_disk": {
+      "total": 502922461184,
+      "used": 90503581696,
+      "free": 386796593152
+    },
+    "processes": []
+  },
+  "hardware_command": "env CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 PYTHONDONTWRITEBYTECODE=1 /home/sji/miniforge3/envs/deeplearning/bin/python - (host require_escalated read-only)",
+  "immutable_before_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-07/manifest.json": "edcf6b433ed7d3db70adb89c8ca701ec49b0d73a5b981380c61a966bf89a3c02",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.json": "239da4e6a6e7916ee1d5f9577ae6a1b293d8cdd7727158a219d24c6c2f26f17e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/status.json": "8f6ccb89edb8a13681e7fad6b6d46862cac5b56f84a96a95e64344a4e1cc1e05",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/summary.json": "86a3a3852025132e0ee0e8ceb7936d8390ee93ea7f311a5d1e46059cf30b7898",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/review-provenance.json": "3619f03d7ab1729200168d4d04dc18c1b4603e4fa44b2422c756236f1f930213",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.png": "2b0b3babd55d4cff3341bc408114890c8a90feb0a9afd7d90ec51b5134ce9c50",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/figure-provenance.json": "8b9a0806841ba62764d6dcad863746f169bbb99d958b92bdc6330062c920a5ce",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/waveforms.npz": "23f5a0b9b131a77051a10264bc91902431824f8ebd2e05b595d50d17a3a3a523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.py": "75682955859709421f995508a0642889c6ac6c50e75cb7c2e74f998c0905c454",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/plot_results.py": "7727829deac936370a5a8a7b0341fd17d8eb39b56eb60c60274bf593f5927c65",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.svg": "9c42430791c0f61e5037b1db47e17790376ea31d79d10f77f42e54ca9d1f045b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/recipient-summary.csv": "f8434f34521ced9e228d7a56f641773215657f720fdd91e9c4b520732b10c4e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent-review-notes.md": "8c2470b0e0756a87cc0bba1e14c44c3b01d5e75e0039b456ad912b798c0f4211",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.json": "b74061f04406cbbf984d896f12b13aa3a70708f5c61f2522bb630bd3c01d89a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/initial-value-counts.json": "fa029a54ae83650bc5af5796600d80c96131fecbd201f109b29bbf8f4cff8db7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.md": "b16736a698f31e5f1b36272f4f6a0be79b7a88fea2dd9b5986461cb0fea9128d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_moving.py": "2cd9a4946d7f093675a4b625892c905f5932860111a251f73aa9ad4fb2db700f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": "39ad8daf28b79e1ecb3fd7b430d6f249bf14d5a8fb4e69aecb9bfd4f39071b79",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": "96dbf041fd896095263f3adfa5424d6efea84b56912a4859877c7b454f846807",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": "abb048cd98ec5fe315bb080c56b21a0e137750604ec8e21be2e5e8a37978213d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": "cde4e3658c50d91e77d8f9cac44699763dfebf942f69267f27e41d191a8f7784",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": "7eb638e84a66d06e910af1dea69b0e9202b1753cc87683bd0554790444350d57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/benchmark_gpu_backend.py": "c628f5b18d21232ff79b004b810010fff33d1549867e4cc8551f5555878227e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/validate_gpu_backend.py": "584608cc2b85f38b4fa041a0d776e9078004e5415fdcd5bf8a70b6440d708d98",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_response_runner.py": "1ff752551042cd4d6ed2463929e15f51897577273fe9b09ed3f6785ffd156e38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_long.py": "b6405a02033266bf8c33e308fcc29a2b5b78721eae13b212f1e0d23694b61a41",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_survival_validation.py": "d86acec93a06f7ad4cbbc94c4e2d8d295dfe863074a6c55413edf0f0dd6d4019",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/neighbor_context.py": "a6b7a2f17133a16dca157016415a4fadee81c86746c0e0dfde0019fdbe690d55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness.py": "38ebbffe4e9a9f5490a098a4a62507c051f9a05391f7a91cf0fa27fa8d4679ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": "7e62bf8c2471b786e0cb04ee8ac785abd5d9b036a86b3f4de7b017b967903221",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_endpoint_bistability.py": "074fda2b22f24e3e3a21012deee519f053f466cec05ddfdd0c09f83889a1d9c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness.py": "ba54be6325c4faad6dacae8fb41d57c7e583d709de053c65f5071dad7781fa5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/geometry_precision.py": "e41e13eca2d9d498d2d3adcd47571c33b14a983bcbf3d2b094b9979fd9bbe1f4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_polarity.c": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_reference.py": "d4aca7e3059be7b07f1928f4e48766c13deafcf6e82e3b9e2935fb3d6d9e3ce8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness_refinement.py": "fa79709c6b7ef072ea467cf0683b9dfa112132bd78a1625e41987a6a503658b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation.py": "fe3e52bf39b041cfa3af3f666ef2ce6f08479670943be4eeed194030e216cca6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_convergence.py": "d119fa7dcd567939d0343cffbee8ed54710a33d4eb0ab319c3ad97db9470e752",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/mechanics_float64_reference.py": "544596a5b8db0cd355c36327c11bfd1cb1d2bfebd08c53259cd25e80c869f64a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_polarity.py": "a381607dcfcda1b22b37d711757e0ab73561deaf837be7c330007fa399c6d468",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/moving_initiation_controls.py": "d60de79470dc29da44095cb57750e3c7707f29f8e9937272d8876d4603e101dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_initiation_controls.py": "f097f456b0259fde80aec02d9c41bd9af79c84da4462c98a07790d1f2468d685",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_conductance_controls.py": "e55de53bc80a99a5f71c936ed19aa2e5186d34071ee2e2b39f824443554f94df",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_polarity_conductance_controls.py": "d59ecaac8fca92ebd15a599f000704d703379a380f61be8f7a2f6847c29ad607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_maintenance.py": "2a87d7ed4587b3acc13009c4190d1f9a22ac023af5a1b89fcd0a2c4255dc3afb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_maintenance.py": "e810e8d0df3916ecdd722cbe55711cff3d4013f67a6f37fc41b268aab5e7ad2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_exchange_response.py": "8d8362846cb564b1a23e9f6f87e54fd1ce703b7f89c71201fd73086ea7954b3d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_exchange_response.py": "ea4321e0db7bc6ca84d8a02829d8367b1db3de35875a2b2ac5070ccb5a0ffadd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_network_context.py": "771af7bfead3b16ba47dbe495afd26fc5247a267e8893ec3e0fd3ebdc998c22c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_network_context.py": "2ec96e8b8a8b6b045b8e2aa4d8270b6739ed689fcc9045cde5c1fdbc41a81b76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": "4ee8a7d79ce9c3b77c032e41067556295757794560b10e5674db6e8489056e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_delayed_response.py": "f9f59fd08254bf32d0d1d5d94f2ddc82f214223a2cb3accff6b234ea5c12d11d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_context_dosage.py": "d355dbb1de45a4e02827d02f494333e4cc9c1a9e9c0cf9163455e05386bffa31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_context_dosage.py": "989e4e86818aef66f2057de14b23650b20850ab080b6c1a2c1766630e332a987",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": "e0632a9048e7049c516187c37e48c997116db9ec24804bdb544b82cc63aac254",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_redistribution_response.py": "13bf5b08aae36985c8d9eb4292ccd57d227135c981532c2876cd4e4febcc2bf4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py": "53958aacd35948f5764f6a37fcd7f5fe5ce9c504bb21d07549af1adf2d56d13c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_frozen_response.py": "7e5836790be762c149e02d982d9afefc2d9e62787c567fcd47bc02a18f384e48",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": "7ad6d1f1617100c69793dbc59c2557a9a3e94854109ff83c16368d96c56d71ea",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/summary.json": "d343f6beae538e58a538bd9532dcaeba0bf35b57714f6a9de7146a49668fa4de",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/status.json": "545e9071e0fbd9d9fa178d74d3589c5e4c2bf85e568b0545a19b5eae51b09072",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.json": "f10d53a9907ec81f874eb1cea8e03a992138c59d0941b8a3c389dc3ba06fdc8b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/review-provenance.json": "e31f538e0820a73fa0af1f4cc8ce7eb7298927706c79303e7136cf109d50c8dd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification.json": "2b4d43fbefa5a7679573d30f92ab3b899d007613f5590a2f74c4ab1b84d36e2b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/figure-provenance.json": "f5e01b06850f1e37e880838d83642557caa653f87911835faa8400ab66d759d9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/finalize_review_script.py": "c27de5b5ab8a627d905b78e9471e48073872b6d0bfcc1468954d6ee42047e502",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification_script.py": "252cd0f88b4e58adfe67c81a963923b6788f6df41afe3be94120cf02bf260d03",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification_script.py": "6cb33f9e68a7e6fc8b6330fad1539b02c0e9a1fb7564aabbd4c3da1e4b0d67ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot_results.py": "980c122a04db32a8d4757928ba806662b8d6334ff71af371d87a1c6787700225",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction.json": "f32e1f6580976372a18f48d4867ff9ab0269242fba300ba676746ce5a8bf7a14",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response-timing-description.json": "d47b37e1eba5d430bbd979c8fee0bf8f85fdf34988d8039ac3039e92292cc3f8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification.json": "58da6681a31aaf1929785c2a86052b73e7d5021f0c934d026616a2b68210b4f0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_initial_script.py": "cb2a5a0513d2095798d8e568a12b56fe37af55a01ce78c7e6ea43306d5cea520",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/recipient-summary.csv": "8e55ca5e11997cf395af8b7463ffcd9e56a43569e9f3cbe00af57f9f93374758",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.svg": "0f99500dd79e4c7f06ca37266b4ef66193deca94a418d2fa99dd84f5427dd9d5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction_script.py": "61919efedc57b1a96bdf061d861cd6eb2468edf12f8ebed084033d9e3e0eba70",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.png": "1770f4dd491d49bfcc789c185fef9026fa5d023040ee2354ae88c78bcbbdab61",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot-data.json": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.md": "5aa8e0f0e5164b521cccf8064539fac1f05d1e1729c4ea843b5a31ae531fa550",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/history.json": "6c1338ec7c61cf27fb31896a03c83f35a0c7eb9a0c415404ba455061bbb9511c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/result.json": "e11da28ab37937e30fcecd8dc10b2d203555953d37d0fffb1de08222319f1789",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/source.npz": "5705115523d9d17e0d2ae1512a434436cc8dce19f7ffd51099551d09ffa31c3d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/history.json": "2788172a2c38fc1e300415b21234d42b2c95e66ea24bbd735d3525d07485bdcb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/result.json": "8079f3328f7388c8b85563d6cc2a658566d672bc6b2fe378f8d2175c3337d78f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/source.npz": "3588256310dc02da8dcad18606367b3582102a80b8edea488f548aff45dc0953",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/history.json": "20d1f5dac823a8534b1270b4824e30988c71eb908f040f2ae1567848e35a289a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/result.json": "abb3b7e4b4e46f869624e7391d021086a6ede71c94a30ad76b3078981a1530f2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/source.npz": "011e3513e2dad3dad98976cf3081fdb53187dd51db01f7de0067b2b72235c090",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/history.json": "7d3323664280ed0b05626c0619c2f291203fcf2a007524c1812a883eaa7afc1d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/result.json": "6f0518380f3187f9a8c2b558528eb2023ee9d9713e7fdf04a79ac10aaf8fd132",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/source.npz": "1f7468ae22f341bb64827ab0c70c9baba07c6f9f6954e2c7a52ec70b1403965a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/history.json": "2d2483390e20b58760f9405c2ea2e3b0b78e612e1810e66042cc3e084e4e38ab",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/result.json": "e7920970fc92fa9eaf027ceaeffb453911a39fc3cef16d218851bd704f3b1d92",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/source.npz": "e71c786f3148b17bd4501ec591fd12546ccd1f9fe9ee772333e8cdf9a53f2100",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/history.json": "37c52649982b7c24ed6857811d332f9c6707bc04d04d4ede695863f15ce1fb65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/result.json": "1bb00c14cf01d5707f4b6d91143019a397a7ef38e55d006f506fedad754e5587",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/source.npz": "5cdfb2c31fc8329c8c46400a57cf1785be91f01a15b4f2638281f61a97eb4dbe",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/history.json": "72fd11f18b5335115529ac51d7b8caac52fb28ffc673bc399c432f7a5b919055",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/result.json": "24a625b3ba9f60da35505053e17271217cf897aad308b76b856b64b5b4ae3200",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/source.npz": "42b8e56396797d16af4fd8a03649267bd06878af097aeb7c895e0c8a78a1dc90",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/history.json": "430b3a9fd00e65bd262654c1f3c786dd9f446a6744e7132992779df1bd786e74",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/result.json": "7bdb598616ec59c25685c9f0efc989137013798dc086ddc466b31bf3488816cd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/source.npz": "2e4707e75cecd536798c0dc5d7084f66a7f80eff2bd54c2267740505118b7813",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/history.json": "6773fe95e5ee6608cc4ec754f8a3444cf2462d79cadc5487ca0df458f5f8ce1c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/result.json": "a730fefc112ceb781da512ea0df1855a989a6a363cd349fca9f1ace8d9466546",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/source.npz": "98a85f8aef4fb77cc98b055f8cb37bf188deb41299cb44c6372153b99770bf63",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_sham.npz": "27006d0a02d193b79e7eed6437223fbc4ee8e87c1811aa7fcdbf65448ddd026a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_control.npz": "ef9303dec3788caa5ae532afcd253a6dab61994706b4fcb62d24670405071ee7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_fractional.npz": "aabeccbf931ea5d8653a1292d95b7749aaf6b2e3097823a6e08a33f201f9b7d0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_amount.npz": "aabeccbf931ea5d8653a1292d95b7749aaf6b2e3097823a6e08a33f201f9b7d0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_fractional.npz": "d0e2adedaae060b2ed37f20fc86926603684090ae8b3cde4f4502b59208d4de6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_amount.npz": "d0e2adedaae060b2ed37f20fc86926603684090ae8b3cde4f4502b59208d4de6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-22.npz": "73cdb358f18356685e649d9e5e7fb1d4548f247bded9226dc13eb8d062e606c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_control.npz": "68b814786f10c8df255aea0b380d7ca957096be3f698fb39f413529cbd516ebb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/source.npz": "4ec977d4a7427ea90206ae7e58a24a7f62e8ee12747e438ce9e13ee3b6bb08e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_fractional.npz": "9eb0d7186e3b5914843e7f17219f4bc3000f39e6a47a3af10ba0e06f15e31362",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/source.npz": "8787f19e3d3c0854cad230704cc90dada60359414412514e32ab0dafb08d8e54",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_amount.npz": "354d21b7227b2da8c36b92bffcebd81bcb3aafddce98187dc657a009f1a9e4b2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-23.npz": "4ceabd440d101964c4268479538557fe1820fb5f634c6513e40f3b6a941e6570",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_control.npz": "5208c16aba9db5485163aa22195b7f5c09268b4567fa3ea61ff52034b8da161c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/source.npz": "7d149ad8ea87db27746eca2484e20df9836132b0f2f315b4496409a86ea5b5c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_fractional.npz": "78ee1a0c9c15272382db73b800eb47b1fa324ac47c73d10ed448941bc476a8ba",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/source.npz": "43c590e0615fb65c67e845d850da106561e69569256112624efd220452400772",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_amount.npz": "67f45f5903500d801c61f26e774334710ee18ba81d895944529065d5a1a85f8a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_sham.npz": "b148069d8792259fddffe96e6f117249224eb24f9c0ac3ddfe723d34b0e67461",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_control.npz": "d517c8ea2b5a11178b21dfb4b54fd05bd689c8326d2af05e57a4e6db6c5b71fc",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/source.npz": "2d01ffa5600937bde96ade97eeec6274317c066da3d0e19fd7c30d99f8df01d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_fractional.npz": "677a719e7777689479dab26cdab9adc44362423cefb81160bd1a8c92190c7338",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/source.npz": "05e085c76b650bfcc01d11b94cea2a7fc1718698f1bf9c8eccef1f753c466dc3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_amount.npz": "f4912ee74d8f8af8b86ecd41137dbe2f85718a4579e07cb50d4f09c3de85ccd8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/source.npz": "55634fc58b3c91b4a8781eab31f330a4368ec9753a975f08fdd008c8ddd9de90",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_fractional.npz": "dc62a00a213c26177d9634069d807480f291b50c58be8d94ca4615d997908b0c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/source.npz": "c0b4db84fd64d4aa1c69cc7f05e806161bc799e1158587c8bb0daf0424570f5b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_amount.npz": "924cb1156c72efef58fb82c40fb3934a6ea660cdf350adb19a81072be760784a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-19.npz": "5fc314347524fb427337ac46da19578d71407cd44f9257d28cf41a211db43532",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_control.npz": "23ed36761af298bc5a980c213a8aa6e15433cfa1e9f150ae237403d44f5bb9c2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_fractional.npz": "e260d6dbe39a8f039a47794d26b28d4cfdfdda729f398b3549c6fd984b679859",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_amount.npz": "e260d6dbe39a8f039a47794d26b28d4cfdfdda729f398b3549c6fd984b679859",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-20.npz": "1f8d3ab2fe3722d6a92cf3898e396a8c8e9eeb20f9a60524602556e032a12523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_control.npz": "5fbfedbf526564677c26731dd576e68e8b394fb392768ddbe2902b7a9435a72c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_fractional.npz": "e729de4787a32863319f3915f0d04d4b648f5fabcadd61456e0b7b94ed875c04",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_amount.npz": "e729de4787a32863319f3915f0d04d4b648f5fabcadd61456e0b7b94ed875c04",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_sham.npz": "e54319ae840ecd550e5399a104beb3fbe08c0d0ffeeefd36074f8da59124b56b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_control.npz": "122966172a5a67338bf22c9012d825f37be31e80544848fd93775c5fc5de4a06",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/source.npz": "71052d09fd15d6ba2595943b79f7ce455cfcb1f58978ff6fa508401c0c9f5457",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_fractional.npz": "6d1f82e8c634b70f0112dbbc1803faa983c1a8bb08a69f91e16fc002d4f23e2f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/source.npz": "a0b7ea3f81a2278658ac6daac496e0d33567c0446546ab52eb50a5bf51b19601",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_amount.npz": "fca148fd5ad91795ff7786ce14913c4697f29e53a0f6c836591243f1832c9215",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/source.npz": "c79f127201cc039a66d14e13cfa30ff04f5fe5629e60f20be9667b634fa354e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_fractional.npz": "ced718f0fcf5d4dc952d60b311ff49d687b14c8afb7c7c9f8bd77dfdff53fd5d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/source.npz": "da33ce7dcfffe25e991ba2834cfead1f5ed60514a159d0ddb18c4e50ab823753",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_amount.npz": "aa2fcb02e051974324871993a32460ca8c618d085362d642fca3166fbb642f5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-29.npz": "5b119063a550097337f23361835ee8c8756fdf3837ad5c3973b942eac306dfa1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_control.npz": "2992cffbc7b09585db54581602fdc4cbc702a07c45e8322a8cc728140e314172",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_fractional.npz": "7fce9ab1f0c4897fef27d072f4af304ac506ac3b8732fdcd3a4a24861412804b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_amount.npz": "7fce9ab1f0c4897fef27d072f4af304ac506ac3b8732fdcd3a4a24861412804b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-30.npz": "3d4f6cbd7f64042e4e3c125a7e7ef9c5e895e9c13522b422ce9287693bdbe590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_control.npz": "410cc144f7a52f33973f89efced77b8e6a74adf050fd2bf7a8ae28ecc39e0605",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_fractional.npz": "9622b6a81a9292f48860cfe0a8e89126291ed6a0696d5fbf03a06a59571388fb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_amount.npz": "9622b6a81a9292f48860cfe0a8e89126291ed6a0696d5fbf03a06a59571388fb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response.md": "6b403f50d415f4cbbd838e143e3c58b575180879c2e6bbef081358a49c75f0b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/paths.npz": "ce78ec2fc7bef99b1d5b285130cfb048a431bc90836b74578d9aee79c02e6749",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/checkpoint.npz": "c528ad15289ded70fbf66be0ad54a3cfd59f6e1f31c1f0ec4e9ebabc118db2c1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/result.json": "d8ddd5e16a69d73618f0f5381da21e754ebcb9980c8f65aeb019d3a9d272413d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/paths.npz": "452709d551058c0516387f4ca37262f558dcfb54d273fc3dd40f44da6e15db2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/checkpoint.npz": "feb0a11ed46dfbe50c1dea06f65b68d594f7c74bad88038db014034b199b2f7f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/result.json": "12368f6274d54b66d94a57e23d0637e4f1147c95b71e2cb690fc1335c59cda6b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/paths.npz": "78046ef77573eeb3acae55981af037582d12ece62faba175d162cd6123bdd008",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/checkpoint.npz": "726cc871bc146f6d950acf40bf49841b04948938fae73375bd51de28e9c4d8e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/result.json": "6860d0910a32744c29c7fd90e5169b87cc9633b0ff29e51e1ce9e5cfb3bf4e47"
+  },
+  "immutable_after_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-07/manifest.json": "edcf6b433ed7d3db70adb89c8ca701ec49b0d73a5b981380c61a966bf89a3c02",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json": "1cfe1693c38fab95bdb9827ead20054315466d909af12a86cc224facd15b30fc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.json": "239da4e6a6e7916ee1d5f9577ae6a1b293d8cdd7727158a219d24c6c2f26f17e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/status.json": "8f6ccb89edb8a13681e7fad6b6d46862cac5b56f84a96a95e64344a4e1cc1e05",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/summary.json": "86a3a3852025132e0ee0e8ceb7936d8390ee93ea7f311a5d1e46059cf30b7898",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/review-provenance.json": "3619f03d7ab1729200168d4d04dc18c1b4603e4fa44b2422c756236f1f930213",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.png": "2b0b3babd55d4cff3341bc408114890c8a90feb0a9afd7d90ec51b5134ce9c50",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/figure-provenance.json": "8b9a0806841ba62764d6dcad863746f169bbb99d958b92bdc6330062c920a5ce",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/waveforms.npz": "23f5a0b9b131a77051a10264bc91902431824f8ebd2e05b595d50d17a3a3a523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.py": "75682955859709421f995508a0642889c6ac6c50e75cb7c2e74f998c0905c454",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/plot_results.py": "7727829deac936370a5a8a7b0341fd17d8eb39b56eb60c60274bf593f5927c65",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.svg": "9c42430791c0f61e5037b1db47e17790376ea31d79d10f77f42e54ca9d1f045b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/recipient-summary.csv": "f8434f34521ced9e228d7a56f641773215657f720fdd91e9c4b520732b10c4e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent-review-notes.md": "8c2470b0e0756a87cc0bba1e14c44c3b01d5e75e0039b456ad912b798c0f4211",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.json": "b74061f04406cbbf984d896f12b13aa3a70708f5c61f2522bb630bd3c01d89a1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/initial-value-counts.json": "fa029a54ae83650bc5af5796600d80c96131fecbd201f109b29bbf8f4cff8db7",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.md": "b16736a698f31e5f1b36272f4f6a0be79b7a88fea2dd9b5986461cb0fea9128d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_moving.py": "2cd9a4946d7f093675a4b625892c905f5932860111a251f73aa9ad4fb2db700f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": "39ad8daf28b79e1ecb3fd7b430d6f249bf14d5a8fb4e69aecb9bfd4f39071b79",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": "96dbf041fd896095263f3adfa5424d6efea84b56912a4859877c7b454f846807",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": "abb048cd98ec5fe315bb080c56b21a0e137750604ec8e21be2e5e8a37978213d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": "cde4e3658c50d91e77d8f9cac44699763dfebf942f69267f27e41d191a8f7784",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": "7eb638e84a66d06e910af1dea69b0e9202b1753cc87683bd0554790444350d57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/benchmark_gpu_backend.py": "c628f5b18d21232ff79b004b810010fff33d1549867e4cc8551f5555878227e9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/validate_gpu_backend.py": "584608cc2b85f38b4fa041a0d776e9078004e5415fdcd5bf8a70b6440d708d98",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_response_runner.py": "1ff752551042cd4d6ed2463929e15f51897577273fe9b09ed3f6785ffd156e38",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_long.py": "b6405a02033266bf8c33e308fcc29a2b5b78721eae13b212f1e0d23694b61a41",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_survival_validation.py": "d86acec93a06f7ad4cbbc94c4e2d8d295dfe863074a6c55413edf0f0dd6d4019",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/neighbor_context.py": "a6b7a2f17133a16dca157016415a4fadee81c86746c0e0dfde0019fdbe690d55",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness.py": "38ebbffe4e9a9f5490a098a4a62507c051f9a05391f7a91cf0fa27fa8d4679ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": "7e62bf8c2471b786e0cb04ee8ac785abd5d9b036a86b3f4de7b017b967903221",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_endpoint_bistability.py": "074fda2b22f24e3e3a21012deee519f053f466cec05ddfdd0c09f83889a1d9c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness.py": "ba54be6325c4faad6dacae8fb41d57c7e583d709de053c65f5071dad7781fa5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/geometry_precision.py": "e41e13eca2d9d498d2d3adcd47571c33b14a983bcbf3d2b094b9979fd9bbe1f4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_polarity.c": "023f95477d03b5aeba33facd86aea7f9e3586e081d64f21ba796a33069c16f5c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_reference.py": "d4aca7e3059be7b07f1928f4e48766c13deafcf6e82e3b9e2935fb3d6d9e3ce8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness_refinement.py": "fa79709c6b7ef072ea467cf0683b9dfa112132bd78a1625e41987a6a503658b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation.py": "fe3e52bf39b041cfa3af3f666ef2ce6f08479670943be4eeed194030e216cca6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_convergence.py": "d119fa7dcd567939d0343cffbee8ed54710a33d4eb0ab319c3ad97db9470e752",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/mechanics_float64_reference.py": "544596a5b8db0cd355c36327c11bfd1cb1d2bfebd08c53259cd25e80c869f64a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_polarity.py": "a381607dcfcda1b22b37d711757e0ab73561deaf837be7c330007fa399c6d468",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/moving_initiation_controls.py": "d60de79470dc29da44095cb57750e3c7707f29f8e9937272d8876d4603e101dc",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_initiation_controls.py": "f097f456b0259fde80aec02d9c41bd9af79c84da4462c98a07790d1f2468d685",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_conductance_controls.py": "e55de53bc80a99a5f71c936ed19aa2e5186d34071ee2e2b39f824443554f94df",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_polarity_conductance_controls.py": "d59ecaac8fca92ebd15a599f000704d703379a380f61be8f7a2f6847c29ad607",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_maintenance.py": "2a87d7ed4587b3acc13009c4190d1f9a22ac023af5a1b89fcd0a2c4255dc3afb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_maintenance.py": "e810e8d0df3916ecdd722cbe55711cff3d4013f67a6f37fc41b268aab5e7ad2c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_exchange_response.py": "8d8362846cb564b1a23e9f6f87e54fd1ce703b7f89c71201fd73086ea7954b3d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_exchange_response.py": "ea4321e0db7bc6ca84d8a02829d8367b1db3de35875a2b2ac5070ccb5a0ffadd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_network_context.py": "771af7bfead3b16ba47dbe495afd26fc5247a267e8893ec3e0fd3ebdc998c22c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_network_context.py": "2ec96e8b8a8b6b045b8e2aa4d8270b6739ed689fcc9045cde5c1fdbc41a81b76",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": "4ee8a7d79ce9c3b77c032e41067556295757794560b10e5674db6e8489056e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_delayed_response.py": "f9f59fd08254bf32d0d1d5d94f2ddc82f214223a2cb3accff6b234ea5c12d11d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_context_dosage.py": "d355dbb1de45a4e02827d02f494333e4cc9c1a9e9c0cf9163455e05386bffa31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_context_dosage.py": "989e4e86818aef66f2057de14b23650b20850ab080b6c1a2c1766630e332a987",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": "e0632a9048e7049c516187c37e48c997116db9ec24804bdb544b82cc63aac254",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_redistribution_response.py": "13bf5b08aae36985c8d9eb4292ccd57d227135c981532c2876cd4e4febcc2bf4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py": "53958aacd35948f5764f6a37fcd7f5fe5ce9c504bb21d07549af1adf2d56d13c",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_frozen_response.py": "7e5836790be762c149e02d982d9afefc2d9e62787c567fcd47bc02a18f384e48",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": "7ad6d1f1617100c69793dbc59c2557a9a3e94854109ff83c16368d96c56d71ea",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/summary.json": "d343f6beae538e58a538bd9532dcaeba0bf35b57714f6a9de7146a49668fa4de",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/status.json": "545e9071e0fbd9d9fa178d74d3589c5e4c2bf85e568b0545a19b5eae51b09072",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.json": "f10d53a9907ec81f874eb1cea8e03a992138c59d0941b8a3c389dc3ba06fdc8b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/review-provenance.json": "e31f538e0820a73fa0af1f4cc8ce7eb7298927706c79303e7136cf109d50c8dd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification.json": "2b4d43fbefa5a7679573d30f92ab3b899d007613f5590a2f74c4ab1b84d36e2b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/figure-provenance.json": "f5e01b06850f1e37e880838d83642557caa653f87911835faa8400ab66d759d9",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/finalize_review_script.py": "c27de5b5ab8a627d905b78e9471e48073872b6d0bfcc1468954d6ee42047e502",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification_script.py": "252cd0f88b4e58adfe67c81a963923b6788f6df41afe3be94120cf02bf260d03",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification_script.py": "6cb33f9e68a7e6fc8b6330fad1539b02c0e9a1fb7564aabbd4c3da1e4b0d67ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot_results.py": "980c122a04db32a8d4757928ba806662b8d6334ff71af371d87a1c6787700225",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction.json": "f32e1f6580976372a18f48d4867ff9ab0269242fba300ba676746ce5a8bf7a14",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response-timing-description.json": "d47b37e1eba5d430bbd979c8fee0bf8f85fdf34988d8039ac3039e92292cc3f8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification.json": "58da6681a31aaf1929785c2a86052b73e7d5021f0c934d026616a2b68210b4f0",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_initial_script.py": "cb2a5a0513d2095798d8e568a12b56fe37af55a01ce78c7e6ea43306d5cea520",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/recipient-summary.csv": "8e55ca5e11997cf395af8b7463ffcd9e56a43569e9f3cbe00af57f9f93374758",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.svg": "0f99500dd79e4c7f06ca37266b4ef66193deca94a418d2fa99dd84f5427dd9d5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction_script.py": "61919efedc57b1a96bdf061d861cd6eb2468edf12f8ebed084033d9e3e0eba70",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.png": "1770f4dd491d49bfcc789c185fef9026fa5d023040ee2354ae88c78bcbbdab61",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot-data.json": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.md": "5aa8e0f0e5164b521cccf8064539fac1f05d1e1729c4ea843b5a31ae531fa550",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/history.json": "6c1338ec7c61cf27fb31896a03c83f35a0c7eb9a0c415404ba455061bbb9511c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/result.json": "e11da28ab37937e30fcecd8dc10b2d203555953d37d0fffb1de08222319f1789",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/source.npz": "5705115523d9d17e0d2ae1512a434436cc8dce19f7ffd51099551d09ffa31c3d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/history.json": "2788172a2c38fc1e300415b21234d42b2c95e66ea24bbd735d3525d07485bdcb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/result.json": "8079f3328f7388c8b85563d6cc2a658566d672bc6b2fe378f8d2175c3337d78f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/source.npz": "3588256310dc02da8dcad18606367b3582102a80b8edea488f548aff45dc0953",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/history.json": "20d1f5dac823a8534b1270b4824e30988c71eb908f040f2ae1567848e35a289a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/result.json": "abb3b7e4b4e46f869624e7391d021086a6ede71c94a30ad76b3078981a1530f2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/source.npz": "011e3513e2dad3dad98976cf3081fdb53187dd51db01f7de0067b2b72235c090",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/history.json": "7d3323664280ed0b05626c0619c2f291203fcf2a007524c1812a883eaa7afc1d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/result.json": "6f0518380f3187f9a8c2b558528eb2023ee9d9713e7fdf04a79ac10aaf8fd132",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/source.npz": "1f7468ae22f341bb64827ab0c70c9baba07c6f9f6954e2c7a52ec70b1403965a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/history.json": "2d2483390e20b58760f9405c2ea2e3b0b78e612e1810e66042cc3e084e4e38ab",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/result.json": "e7920970fc92fa9eaf027ceaeffb453911a39fc3cef16d218851bd704f3b1d92",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/source.npz": "e71c786f3148b17bd4501ec591fd12546ccd1f9fe9ee772333e8cdf9a53f2100",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/history.json": "37c52649982b7c24ed6857811d332f9c6707bc04d04d4ede695863f15ce1fb65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/result.json": "1bb00c14cf01d5707f4b6d91143019a397a7ef38e55d006f506fedad754e5587",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/source.npz": "5cdfb2c31fc8329c8c46400a57cf1785be91f01a15b4f2638281f61a97eb4dbe",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/history.json": "72fd11f18b5335115529ac51d7b8caac52fb28ffc673bc399c432f7a5b919055",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/result.json": "24a625b3ba9f60da35505053e17271217cf897aad308b76b856b64b5b4ae3200",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/source.npz": "42b8e56396797d16af4fd8a03649267bd06878af097aeb7c895e0c8a78a1dc90",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/history.json": "430b3a9fd00e65bd262654c1f3c786dd9f446a6744e7132992779df1bd786e74",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/result.json": "7bdb598616ec59c25685c9f0efc989137013798dc086ddc466b31bf3488816cd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/source.npz": "2e4707e75cecd536798c0dc5d7084f66a7f80eff2bd54c2267740505118b7813",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/history.json": "6773fe95e5ee6608cc4ec754f8a3444cf2462d79cadc5487ca0df458f5f8ce1c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/result.json": "a730fefc112ceb781da512ea0df1855a989a6a363cd349fca9f1ace8d9466546",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/source.npz": "98a85f8aef4fb77cc98b055f8cb37bf188deb41299cb44c6372153b99770bf63",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_sham.npz": "27006d0a02d193b79e7eed6437223fbc4ee8e87c1811aa7fcdbf65448ddd026a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_control.npz": "ef9303dec3788caa5ae532afcd253a6dab61994706b4fcb62d24670405071ee7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_fractional.npz": "aabeccbf931ea5d8653a1292d95b7749aaf6b2e3097823a6e08a33f201f9b7d0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/source.npz": "e222adf92c5ca03516b5e9bd9b7795fe30ff8fd65f015db845a0aa9ef3b59062",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_amount.npz": "aabeccbf931ea5d8653a1292d95b7749aaf6b2e3097823a6e08a33f201f9b7d0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_fractional.npz": "d0e2adedaae060b2ed37f20fc86926603684090ae8b3cde4f4502b59208d4de6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/source.npz": "565eeb7d7db290fc2599e54ba87022795d96793d223bbbfa3a294d1da046a165",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_amount.npz": "d0e2adedaae060b2ed37f20fc86926603684090ae8b3cde4f4502b59208d4de6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-22.npz": "73cdb358f18356685e649d9e5e7fb1d4548f247bded9226dc13eb8d062e606c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_control.npz": "68b814786f10c8df255aea0b380d7ca957096be3f698fb39f413529cbd516ebb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/source.npz": "4ec977d4a7427ea90206ae7e58a24a7f62e8ee12747e438ce9e13ee3b6bb08e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_fractional.npz": "9eb0d7186e3b5914843e7f17219f4bc3000f39e6a47a3af10ba0e06f15e31362",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/source.npz": "8787f19e3d3c0854cad230704cc90dada60359414412514e32ab0dafb08d8e54",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_amount.npz": "354d21b7227b2da8c36b92bffcebd81bcb3aafddce98187dc657a009f1a9e4b2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-23.npz": "4ceabd440d101964c4268479538557fe1820fb5f634c6513e40f3b6a941e6570",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_control.npz": "5208c16aba9db5485163aa22195b7f5c09268b4567fa3ea61ff52034b8da161c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/source.npz": "7d149ad8ea87db27746eca2484e20df9836132b0f2f315b4496409a86ea5b5c3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_fractional.npz": "78ee1a0c9c15272382db73b800eb47b1fa324ac47c73d10ed448941bc476a8ba",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/source.npz": "43c590e0615fb65c67e845d850da106561e69569256112624efd220452400772",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_amount.npz": "67f45f5903500d801c61f26e774334710ee18ba81d895944529065d5a1a85f8a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_sham.npz": "b148069d8792259fddffe96e6f117249224eb24f9c0ac3ddfe723d34b0e67461",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_control.npz": "d517c8ea2b5a11178b21dfb4b54fd05bd689c8326d2af05e57a4e6db6c5b71fc",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/source.npz": "2d01ffa5600937bde96ade97eeec6274317c066da3d0e19fd7c30d99f8df01d8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_fractional.npz": "677a719e7777689479dab26cdab9adc44362423cefb81160bd1a8c92190c7338",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/source.npz": "05e085c76b650bfcc01d11b94cea2a7fc1718698f1bf9c8eccef1f753c466dc3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_amount.npz": "f4912ee74d8f8af8b86ecd41137dbe2f85718a4579e07cb50d4f09c3de85ccd8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/source.npz": "55634fc58b3c91b4a8781eab31f330a4368ec9753a975f08fdd008c8ddd9de90",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_fractional.npz": "dc62a00a213c26177d9634069d807480f291b50c58be8d94ca4615d997908b0c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/source.npz": "c0b4db84fd64d4aa1c69cc7f05e806161bc799e1158587c8bb0daf0424570f5b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_amount.npz": "924cb1156c72efef58fb82c40fb3934a6ea660cdf350adb19a81072be760784a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-19.npz": "5fc314347524fb427337ac46da19578d71407cd44f9257d28cf41a211db43532",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_control.npz": "23ed36761af298bc5a980c213a8aa6e15433cfa1e9f150ae237403d44f5bb9c2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_fractional.npz": "e260d6dbe39a8f039a47794d26b28d4cfdfdda729f398b3549c6fd984b679859",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/source.npz": "170929eb75ff1ad8a8ab775096314750d61676349c6043d805e823486aa7b283",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_amount.npz": "e260d6dbe39a8f039a47794d26b28d4cfdfdda729f398b3549c6fd984b679859",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-20.npz": "1f8d3ab2fe3722d6a92cf3898e396a8c8e9eeb20f9a60524602556e032a12523",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_control.npz": "5fbfedbf526564677c26731dd576e68e8b394fb392768ddbe2902b7a9435a72c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_fractional.npz": "e729de4787a32863319f3915f0d04d4b648f5fabcadd61456e0b7b94ed875c04",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/source.npz": "c609d307bebe125409180d1f520a4dce075ff72fa7a4fa5c21c167f756a87547",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_amount.npz": "e729de4787a32863319f3915f0d04d4b648f5fabcadd61456e0b7b94ed875c04",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_sham.npz": "e54319ae840ecd550e5399a104beb3fbe08c0d0ffeeefd36074f8da59124b56b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_control.npz": "122966172a5a67338bf22c9012d825f37be31e80544848fd93775c5fc5de4a06",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/source.npz": "71052d09fd15d6ba2595943b79f7ce455cfcb1f58978ff6fa508401c0c9f5457",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_fractional.npz": "6d1f82e8c634b70f0112dbbc1803faa983c1a8bb08a69f91e16fc002d4f23e2f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/source.npz": "a0b7ea3f81a2278658ac6daac496e0d33567c0446546ab52eb50a5bf51b19601",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_amount.npz": "fca148fd5ad91795ff7786ce14913c4697f29e53a0f6c836591243f1832c9215",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/source.npz": "c79f127201cc039a66d14e13cfa30ff04f5fe5629e60f20be9667b634fa354e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_fractional.npz": "ced718f0fcf5d4dc952d60b311ff49d687b14c8afb7c7c9f8bd77dfdff53fd5d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/source.npz": "da33ce7dcfffe25e991ba2834cfead1f5ed60514a159d0ddb18c4e50ab823753",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_amount.npz": "aa2fcb02e051974324871993a32460ca8c618d085362d642fca3166fbb642f5a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-29.npz": "5b119063a550097337f23361835ee8c8756fdf3837ad5c3973b942eac306dfa1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_control.npz": "2992cffbc7b09585db54581602fdc4cbc702a07c45e8322a8cc728140e314172",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_fractional.npz": "7fce9ab1f0c4897fef27d072f4af304ac506ac3b8732fdcd3a4a24861412804b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/source.npz": "7238f556e0ac7a76335c4ad4d043aff5ceb2fc082ae82bb68f0bc762d1718c0f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_amount.npz": "7fce9ab1f0c4897fef27d072f4af304ac506ac3b8732fdcd3a4a24861412804b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-30.npz": "3d4f6cbd7f64042e4e3c125a7e7ef9c5e895e9c13522b422ce9287693bdbe590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_control.npz": "410cc144f7a52f33973f89efced77b8e6a74adf050fd2bf7a8ae28ecc39e0605",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_fractional.npz": "9622b6a81a9292f48860cfe0a8e89126291ed6a0696d5fbf03a06a59571388fb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/source.npz": "9d5aaebf752d063155ff596463810da06cea4cc9521c25549edaf9a8ba7f36a5",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_amount.npz": "9622b6a81a9292f48860cfe0a8e89126291ed6a0696d5fbf03a06a59571388fb",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response.md": "6b403f50d415f4cbbd838e143e3c58b575180879c2e6bbef081358a49c75f0b6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/paths.npz": "ce78ec2fc7bef99b1d5b285130cfb048a431bc90836b74578d9aee79c02e6749",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/checkpoint.npz": "c528ad15289ded70fbf66be0ad54a3cfd59f6e1f31c1f0ec4e9ebabc118db2c1",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/result.json": "d8ddd5e16a69d73618f0f5381da21e754ebcb9980c8f65aeb019d3a9d272413d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/paths.npz": "452709d551058c0516387f4ca37262f558dcfb54d273fc3dd40f44da6e15db2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/checkpoint.npz": "feb0a11ed46dfbe50c1dea06f65b68d594f7c74bad88038db014034b199b2f7f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/result.json": "12368f6274d54b66d94a57e23d0637e4f1147c95b71e2cb690fc1335c59cda6b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/paths.npz": "78046ef77573eeb3acae55981af037582d12ece62faba175d162cd6123bdd008",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/checkpoint.npz": "726cc871bc146f6d950acf40bf49841b04948938fae73375bd51de28e9c4d8e2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/result.json": "6860d0910a32744c29c7fd90e5169b87cc9633b0ff29e51e1ce9e5cfb3bf4e47"
+  },
+  "immutable_stat_guards": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/output-relocation/2026-10-07/manifest.json": {
+      "device": 2082,
+      "inode": 2384794,
+      "bytes": 6163858,
+      "mode": 33204,
+      "mtime_ns": 1791423595661481881,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/protocol.json": {
+      "device": 2082,
+      "inode": 2361614,
+      "bytes": 139748,
+      "mode": 33204,
+      "mtime_ns": 1791461565185692639,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.json": {
+      "device": 2082,
+      "inode": 2363197,
+      "bytes": 38575,
+      "mode": 33204,
+      "mtime_ns": 1791462324397352443,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/status.json": {
+      "device": 2082,
+      "inode": 2363175,
+      "bytes": 178,
+      "mode": 33204,
+      "mtime_ns": 1791461951698285616,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/summary.json": {
+      "device": 2082,
+      "inode": 2363167,
+      "bytes": 295769,
+      "mode": 33204,
+      "mtime_ns": 1791461951695826398,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/review-provenance.json": {
+      "device": 2082,
+      "inode": 2363199,
+      "bytes": 3517,
+      "mode": 33204,
+      "mtime_ns": 1791462324408729990,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.png": {
+      "device": 2082,
+      "inode": 2363186,
+      "bytes": 153796,
+      "mode": 33204,
+      "mtime_ns": 1791462205748644640,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/figure-provenance.json": {
+      "device": 2082,
+      "inode": 2363191,
+      "bytes": 770,
+      "mode": 33204,
+      "mtime_ns": 1791462206177256652,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/waveforms.npz": {
+      "device": 2082,
+      "inode": 2363180,
+      "bytes": 260397,
+      "mode": 33204,
+      "mtime_ns": 1791462000745501416,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.py": {
+      "device": 2082,
+      "inode": 2363176,
+      "bytes": 32351,
+      "mode": 33204,
+      "mtime_ns": 1791461805485375861,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/plot_results.py": {
+      "device": 2082,
+      "inode": 2363184,
+      "bytes": 5227,
+      "mode": 33204,
+      "mtime_ns": 1791462204582723294,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/frozen-response.svg": {
+      "device": 2082,
+      "inode": 2363187,
+      "bytes": 129157,
+      "mode": 33204,
+      "mtime_ns": 1791462206174670583,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/recipient-summary.csv": {
+      "device": 2082,
+      "inode": 2363189,
+      "bytes": 722,
+      "mode": 33204,
+      "mtime_ns": 1791462206175391436,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent-review-notes.md": {
+      "device": 2082,
+      "inode": 2363195,
+      "bytes": 5984,
+      "mode": 33204,
+      "mtime_ns": 1791462136371327674,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/independent_review.json": {
+      "device": 2082,
+      "inode": 2363178,
+      "bytes": 307852,
+      "mode": 33204,
+      "mtime_ns": 1791462000753071982,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-frozen-response/initial-value-counts.json": {
+      "device": 2082,
+      "inode": 2363182,
+      "bytes": 8611,
+      "mode": 33204,
+      "mtime_ns": 1791461552284665656,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response_assessment.md": {
+      "device": 2082,
+      "inode": 2363193,
+      "bytes": 10813,
+      "mode": 33204,
+      "mtime_ns": 1791462272141168241,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_moving.py": {
+      "device": 2082,
+      "inode": 2366205,
+      "bytes": 23831,
+      "mode": 33204,
+      "mtime_ns": 1791073506943466748,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": {
+      "device": 2082,
+      "inode": 2364004,
+      "bytes": 15214,
+      "mode": 33204,
+      "mtime_ns": 1791028978865462566,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": {
+      "device": 2082,
+      "inode": 2364003,
+      "bytes": 4878,
+      "mode": 33204,
+      "mtime_ns": 1791028735801262274,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": {
+      "device": 2082,
+      "inode": 2363674,
+      "bytes": 5158,
+      "mode": 33204,
+      "mtime_ns": 1790974651132554035,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": {
+      "device": 2082,
+      "inode": 2363743,
+      "bytes": 5864,
+      "mode": 33204,
+      "mtime_ns": 1790980581925643094,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.py": {
+      "device": 2082,
+      "inode": 2363533,
+      "bytes": 7894,
+      "mode": 33204,
+      "mtime_ns": 1790959649964901808,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/native_mechanics.cpp": {
+      "device": 2082,
+      "inode": 2363531,
+      "bytes": 3140,
+      "mode": 33204,
+      "mtime_ns": 1790959412025642762,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.py": {
+      "device": 2082,
+      "inode": 2363221,
+      "bytes": 4795,
+      "mode": 33204,
+      "mtime_ns": 1790893985091337673,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_mechanics.c": {
+      "device": 2082,
+      "inode": 2363219,
+      "bytes": 1423,
+      "mode": 33204,
+      "mtime_ns": 1790893985089337776,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": {
+      "device": 2082,
+      "inode": 2367551,
+      "bytes": 15166,
+      "mode": 33204,
+      "mtime_ns": 1790542067651729450,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": {
+      "device": 2082,
+      "inode": 2367827,
+      "bytes": 5967,
+      "mode": 33204,
+      "mtime_ns": 1790553167605813887,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": {
+      "device": 2082,
+      "inode": 2360021,
+      "bytes": 33122,
+      "mode": 33204,
+      "mtime_ns": 1790467213757695881,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": {
+      "device": 2082,
+      "inode": 2361377,
+      "bytes": 2132,
+      "mode": 33204,
+      "mtime_ns": 1790135383923448464,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": {
+      "device": 2082,
+      "inode": 2361357,
+      "bytes": 7306,
+      "mode": 33204,
+      "mtime_ns": 1790446101396205243,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": {
+      "device": 2082,
+      "inode": 2361836,
+      "bytes": 15622,
+      "mode": 33204,
+      "mtime_ns": 1790445902429568965,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/benchmark_gpu_backend.py": {
+      "device": 2082,
+      "inode": 2364043,
+      "bytes": 4524,
+      "mode": 33204,
+      "mtime_ns": 1791029417929475390,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/validate_gpu_backend.py": {
+      "device": 2082,
+      "inode": 2364008,
+      "bytes": 16244,
+      "mode": 33204,
+      "mtime_ns": 1791029042688112537,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_response_runner.py": {
+      "device": 2082,
+      "inode": 2364030,
+      "bytes": 11270,
+      "mode": 33204,
+      "mtime_ns": 1791029749873156187,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": {
+      "device": 2082,
+      "inode": 2376611,
+      "bytes": 14884,
+      "mode": 33204,
+      "mtime_ns": 1790721535991152651,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_long.py": {
+      "device": 2082,
+      "inode": 2374307,
+      "bytes": 12205,
+      "mode": 33204,
+      "mtime_ns": 1790558859590179256,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_survival_validation.py": {
+      "device": 2082,
+      "inode": 2375222,
+      "bytes": 11405,
+      "mode": 33204,
+      "mtime_ns": 1790594538919007128,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/neighbor_context.py": {
+      "device": 2082,
+      "inode": 2365189,
+      "bytes": 24204,
+      "mode": 33204,
+      "mtime_ns": 1791069491445692059,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness.py": {
+      "device": 2082,
+      "inode": 2365811,
+      "bytes": 20108,
+      "mode": 33204,
+      "mtime_ns": 1791073327297743244,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": {
+      "device": 2082,
+      "inode": 2359639,
+      "bytes": 11154,
+      "mode": 33204,
+      "mtime_ns": 1790820746693546186,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/feedback_endpoint_bistability.py": {
+      "device": 2082,
+      "inode": 2375285,
+      "bytes": 6546,
+      "mode": 33204,
+      "mtime_ns": 1790594095817699718,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": {
+      "device": 2082,
+      "inode": 2364416,
+      "bytes": 15824,
+      "mode": 33204,
+      "mtime_ns": 1790452806410695748,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness.py": {
+      "device": 2082,
+      "inode": 2366657,
+      "bytes": 31300,
+      "mode": 33204,
+      "mtime_ns": 1791083197457872396,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/geometry_precision.py": {
+      "device": 2082,
+      "inode": 2377899,
+      "bytes": 18480,
+      "mode": 33204,
+      "mtime_ns": 1791120616342369109,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": {
+      "device": 2082,
+      "inode": 2377891,
+      "bytes": 7866,
+      "mode": 33204,
+      "mtime_ns": 1791120616308370867,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": {
+      "device": 2082,
+      "inode": 2377863,
+      "bytes": 3245,
+      "mode": 33204,
+      "mtime_ns": 1791120305568571194,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/fast_polarity.c": {
+      "device": 2082,
+      "inode": 2363419,
+      "bytes": 1844,
+      "mode": 33204,
+      "mtime_ns": 1790950655527899759,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/parameter_robustness_reference.py": {
+      "device": 2082,
+      "inode": 2366256,
+      "bytes": 6747,
+      "mode": 33204,
+      "mtime_ns": 1791073798299349770,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_robustness_refinement.py": {
+      "device": 2082,
+      "inode": 2377605,
+      "bytes": 18892,
+      "mode": 33204,
+      "mtime_ns": 1791114918361874444,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_formation.py": {
+      "device": 2082,
+      "inode": 2378094,
+      "bytes": 12287,
+      "mode": 33204,
+      "mtime_ns": 1791121906265151966,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_convergence.py": {
+      "device": 2082,
+      "inode": 2378828,
+      "bytes": 14225,
+      "mode": 33204,
+      "mtime_ns": 1791130117712221972,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/mechanics_float64_reference.py": {
+      "device": 2082,
+      "inode": 2378827,
+      "bytes": 11145,
+      "mode": 33204,
+      "mtime_ns": 1791130117674224060,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_polarity.py": {
+      "device": 2082,
+      "inode": 2378973,
+      "bytes": 28879,
+      "mode": 33204,
+      "mtime_ns": 1791134115215332755,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/moving_initiation_controls.py": {
+      "device": 2082,
+      "inode": 2379413,
+      "bytes": 29048,
+      "mode": 33204,
+      "mtime_ns": 1791162216410193485,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_initiation_controls.py": {
+      "device": 2082,
+      "inode": 2379412,
+      "bytes": 9147,
+      "mode": 33204,
+      "mtime_ns": 1791161888964335935,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity_conductance_controls.py": {
+      "device": 2082,
+      "inode": 2379715,
+      "bytes": 29403,
+      "mode": 33204,
+      "mtime_ns": 1791200990383720626,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_polarity_conductance_controls.py": {
+      "device": 2082,
+      "inode": 2379716,
+      "bytes": 11746,
+      "mode": 33204,
+      "mtime_ns": 1791200990422718597,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_maintenance.py": {
+      "device": 2082,
+      "inode": 2379998,
+      "bytes": 32958,
+      "mode": 33204,
+      "mtime_ns": 1791222880203215194,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_maintenance.py": {
+      "device": 2082,
+      "inode": 2379999,
+      "bytes": 9926,
+      "mode": 33204,
+      "mtime_ns": 1791222940657229221,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_exchange_response.py": {
+      "device": 2082,
+      "inode": 2380825,
+      "bytes": 43947,
+      "mode": 33204,
+      "mtime_ns": 1791254087689988550,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_exchange_response.py": {
+      "device": 2082,
+      "inode": 2380827,
+      "bytes": 16110,
+      "mode": 33204,
+      "mtime_ns": 1791254024380242760,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_network_context.py": {
+      "device": 2082,
+      "inode": 2381742,
+      "bytes": 25562,
+      "mode": 33204,
+      "mtime_ns": 1791286266624882428,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_network_context.py": {
+      "device": 2082,
+      "inode": 2381743,
+      "bytes": 9534,
+      "mode": 33204,
+      "mtime_ns": 1791286266659880590,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": {
+      "device": 2082,
+      "inode": 2382477,
+      "bytes": 26590,
+      "mode": 33204,
+      "mtime_ns": 1791322475674377125,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_delayed_response.py": {
+      "device": 2082,
+      "inode": 2382478,
+      "bytes": 11770,
+      "mode": 33204,
+      "mtime_ns": 1791322553939202331,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_context_dosage.py": {
+      "device": 2082,
+      "inode": 2383727,
+      "bytes": 26240,
+      "mode": 33204,
+      "mtime_ns": 1791372176671354298,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_context_dosage.py": {
+      "device": 2082,
+      "inode": 2383728,
+      "bytes": 10003,
+      "mode": 33204,
+      "mtime_ns": 1791372129818394205,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": {
+      "device": 2082,
+      "inode": 2384276,
+      "bytes": 27438,
+      "mode": 33204,
+      "mtime_ns": 1791408611567927968,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_redistribution_response.py": {
+      "device": 2082,
+      "inode": 2384273,
+      "bytes": 19008,
+      "mode": 33204,
+      "mtime_ns": 1791408596635923108,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_frozen_response.py": {
+      "device": 2082,
+      "inode": 2361409,
+      "bytes": 42486,
+      "mode": 33204,
+      "mtime_ns": 1791461476549289169,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_frozen_response.py": {
+      "device": 2082,
+      "inode": 2361410,
+      "bytes": 15097,
+      "mode": 33204,
+      "mtime_ns": 1791461476582286979,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": {
+      "device": 2082,
+      "inode": 2376431,
+      "bytes": 10989,
+      "mode": 33204,
+      "mtime_ns": 1790720764777072445,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json": {
+      "device": 2064,
+      "inode": 18222561,
+      "bytes": 767048,
+      "mode": 33204,
+      "mtime_ns": 1791410371087410401,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/summary.json": {
+      "device": 2064,
+      "inode": 18222654,
+      "bytes": 505452,
+      "mode": 33204,
+      "mtime_ns": 1791439306227245070,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/status.json": {
+      "device": 2064,
+      "inode": 18222655,
+      "bytes": 196,
+      "mode": 33204,
+      "mtime_ns": 1791439306230717803,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.json": {
+      "device": 2082,
+      "inode": 2360969,
+      "bytes": 20522,
+      "mode": 33204,
+      "mtime_ns": 1791460536146717067,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/review-provenance.json": {
+      "device": 2082,
+      "inode": 2361353,
+      "bytes": 4347,
+      "mode": 33204,
+      "mtime_ns": 1791460536173524356,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification.json": {
+      "device": 2082,
+      "inode": 2360575,
+      "bytes": 230817,
+      "mode": 33204,
+      "mtime_ns": 1791459555725842963,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/figure-provenance.json": {
+      "device": 2082,
+      "inode": 2360559,
+      "bytes": 931,
+      "mode": 33204,
+      "mtime_ns": 1791459491633062507,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/finalize_review_script.py": {
+      "device": 2082,
+      "inode": 2360596,
+      "bytes": 15736,
+      "mode": 33204,
+      "mtime_ns": 1791460146524094384,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/numerical_verification_script.py": {
+      "device": 2082,
+      "inode": 2360573,
+      "bytes": 19085,
+      "mode": 33204,
+      "mtime_ns": 1791459487865243222,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification_script.py": {
+      "device": 2082,
+      "inode": 2360581,
+      "bytes": 12558,
+      "mode": 33204,
+      "mtime_ns": 1791459994368271585,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot_results.py": {
+      "device": 2082,
+      "inode": 2360550,
+      "bytes": 5057,
+      "mode": 33204,
+      "mtime_ns": 1791459489836120851,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction.json": {
+      "device": 2082,
+      "inode": 2360536,
+      "bytes": 143290,
+      "mode": 33204,
+      "mtime_ns": 1791459357940512486,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response-timing-description.json": {
+      "device": 2082,
+      "inode": 2360577,
+      "bytes": 2304,
+      "mode": 33204,
+      "mtime_ns": 1791459806426538744,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_verification.json": {
+      "device": 2082,
+      "inode": 2360579,
+      "bytes": 2764422,
+      "mode": 33204,
+      "mtime_ns": 1791460493787501448,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/provenance_initial_script.py": {
+      "device": 2082,
+      "inode": 2360580,
+      "bytes": 15586,
+      "mode": 33204,
+      "mtime_ns": 1791459384368987530,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/recipient-summary.csv": {
+      "device": 2082,
+      "inode": 2360576,
+      "bytes": 1274,
+      "mode": 33204,
+      "mtime_ns": 1791459806422270519,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.svg": {
+      "device": 2082,
+      "inode": 2360558,
+      "bytes": 68165,
+      "mode": 33204,
+      "mtime_ns": 1791459491628009564,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/response_reconstruction_script.py": {
+      "device": 2082,
+      "inode": 2360534,
+      "bytes": 18758,
+      "mode": 33204,
+      "mtime_ns": 1791459348197415811,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/redistribution-response.png": {
+      "device": 2082,
+      "inode": 2360557,
+      "bytes": 289124,
+      "mode": 33204,
+      "mtime_ns": 1791459491112041612,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/archive/study-reviews/2026-10-08-redistribution-response/plot-data.json": {
+      "device": 2082,
+      "inode": 2360542,
+      "bytes": 649443,
+      "mode": 33204,
+      "mtime_ns": 1791459357936769454,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response_assessment.md": {
+      "device": 2082,
+      "inode": 2361349,
+      "bytes": 10827,
+      "mode": 33204,
+      "mtime_ns": 1791460536147422321,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/history.json": {
+      "device": 2064,
+      "inode": 18613191,
+      "bytes": 4261339,
+      "mode": 33204,
+      "mtime_ns": 1791328242536012362,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/result.json": {
+      "device": 2064,
+      "inode": 18613193,
+      "bytes": 1512,
+      "mode": 33204,
+      "mtime_ns": 1791328242952828697,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/source.npz": {
+      "device": 2064,
+      "inode": 18613194,
+      "bytes": 54420443,
+      "mode": 33204,
+      "mtime_ns": 1791322633509734653,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/history.json": {
+      "device": 2064,
+      "inode": 21627000,
+      "bytes": 4258422,
+      "mode": 33204,
+      "mtime_ns": 1791416010560026084,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/result.json": {
+      "device": 2064,
+      "inode": 21627002,
+      "bytes": 1575,
+      "mode": 33204,
+      "mtime_ns": 1791416010973975250,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/source.npz": {
+      "device": 2064,
+      "inode": 21627003,
+      "bytes": 54420039,
+      "mode": 33204,
+      "mtime_ns": 1791409963291992079,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/history.json": {
+      "device": 2064,
+      "inode": 21627015,
+      "bytes": 4262554,
+      "mode": 33204,
+      "mtime_ns": 1791418437219667951,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/result.json": {
+      "device": 2064,
+      "inode": 21627017,
+      "bytes": 1573,
+      "mode": 33204,
+      "mtime_ns": 1791418437647793470,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/source.npz": {
+      "device": 2064,
+      "inode": 21627018,
+      "bytes": 54419241,
+      "mode": 33204,
+      "mtime_ns": 1791409988073832571,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/history.json": {
+      "device": 2064,
+      "inode": 18613301,
+      "bytes": 4308757,
+      "mode": 33204,
+      "mtime_ns": 1791339647040562827,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/result.json": {
+      "device": 2064,
+      "inode": 18613303,
+      "bytes": 1512,
+      "mode": 33204,
+      "mtime_ns": 1791339647454691995,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/source.npz": {
+      "device": 2064,
+      "inode": 18613304,
+      "bytes": 54434373,
+      "mode": 33204,
+      "mtime_ns": 1791322728494815328,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/history.json": {
+      "device": 2064,
+      "inode": 21627070,
+      "bytes": 4332363,
+      "mode": 33204,
+      "mtime_ns": 1791427643269726867,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/result.json": {
+      "device": 2064,
+      "inode": 21627037,
+      "bytes": 1575,
+      "mode": 33204,
+      "mtime_ns": 1791427643657536916,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/source.npz": {
+      "device": 2064,
+      "inode": 21627072,
+      "bytes": 54432392,
+      "mode": 33204,
+      "mtime_ns": 1791410071772890491,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/history.json": {
+      "device": 2064,
+      "inode": 21627083,
+      "bytes": 4313999,
+      "mode": 33204,
+      "mtime_ns": 1791430003786057879,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/result.json": {
+      "device": 2064,
+      "inode": 21627045,
+      "bytes": 1576,
+      "mode": 33204,
+      "mtime_ns": 1791430004163247287,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/source.npz": {
+      "device": 2064,
+      "inode": 21627085,
+      "bytes": 54433872,
+      "mode": 33204,
+      "mtime_ns": 1791410096192564872,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/history.json": {
+      "device": 2064,
+      "inode": 18613411,
+      "bytes": 4289493,
+      "mode": 33204,
+      "mtime_ns": 1791351115905075017,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/result.json": {
+      "device": 2064,
+      "inode": 18613413,
+      "bytes": 1511,
+      "mode": 33204,
+      "mtime_ns": 1791351116318480070,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/source.npz": {
+      "device": 2064,
+      "inode": 18613414,
+      "bytes": 54391305,
+      "mode": 33204,
+      "mtime_ns": 1791322823350768806,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/history.json": {
+      "device": 2064,
+      "inode": 21627149,
+      "bytes": 4323959,
+      "mode": 33204,
+      "mtime_ns": 1791435680730801712,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/result.json": {
+      "device": 2064,
+      "inode": 21627148,
+      "bytes": 1573,
+      "mode": 33204,
+      "mtime_ns": 1791435681083583104,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/source.npz": {
+      "device": 2064,
+      "inode": 21627105,
+      "bytes": 54392973,
+      "mode": 33204,
+      "mtime_ns": 1791410180039367503,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/history.json": {
+      "device": 2064,
+      "inode": 21627167,
+      "bytes": 4306005,
+      "mode": 33204,
+      "mtime_ns": 1791437985750742782,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/result.json": {
+      "device": 2064,
+      "inode": 21627166,
+      "bytes": 1576,
+      "mode": 33204,
+      "mtime_ns": 1791437986108434454,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/source.npz": {
+      "device": 2064,
+      "inode": 21627108,
+      "bytes": 54391918,
+      "mode": 33204,
+      "mtime_ns": 1791410204549012350,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_sham.npz": {
+      "device": 2082,
+      "inode": 2361512,
+      "bytes": 1828,
+      "mode": 33204,
+      "mtime_ns": 1791461555647250723,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_control.npz": {
+      "device": 2082,
+      "inode": 2361521,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461555774520797,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613179,
+      "bytes": 54420442,
+      "mode": 33204,
+      "mtime_ns": 1791322637635145345,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_fractional.npz": {
+      "device": 2082,
+      "inode": 2361522,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461555900584203,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627023,
+      "bytes": 54420442,
+      "mode": 33204,
+      "mtime_ns": 1791409936071516442,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-22_amount.npz": {
+      "device": 2082,
+      "inode": 2361523,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461556026834123,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613189,
+      "bytes": 54420442,
+      "mode": 33204,
+      "mtime_ns": 1791322645924572411,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_fractional.npz": {
+      "device": 2082,
+      "inode": 2361524,
+      "bytes": 480,
+      "mode": 33204,
+      "mtime_ns": 1791461556159350145,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627028,
+      "bytes": 54420442,
+      "mode": 33204,
+      "mtime_ns": 1791409946540690746,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_sham_cell-23_amount.npz": {
+      "device": 2082,
+      "inode": 2361526,
+      "bytes": 480,
+      "mode": 33204,
+      "mtime_ns": 1791461556290742689,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-22.npz": {
+      "device": 2082,
+      "inode": 2361527,
+      "bytes": 1828,
+      "mode": 33204,
+      "mtime_ns": 1791461556290839392,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_control.npz": {
+      "device": 2082,
+      "inode": 2361528,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461556425565268,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21626998,
+      "bytes": 54420039,
+      "mode": 33204,
+      "mtime_ns": 1791409967474381892,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_fractional.npz": {
+      "device": 2082,
+      "inode": 2361530,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461556555477123,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/source.npz": {
+      "device": 2064,
+      "inode": 21626993,
+      "bytes": 54420039,
+      "mode": 33204,
+      "mtime_ns": 1791409971668958805,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-22_cell-22_amount.npz": {
+      "device": 2082,
+      "inode": 2361531,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461556684123236,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-7_redistributed-cell-23.npz": {
+      "device": 2082,
+      "inode": 2361534,
+      "bytes": 1826,
+      "mode": 33204,
+      "mtime_ns": 1791461556684346076,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_control.npz": {
+      "device": 2082,
+      "inode": 2361535,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461556817848177,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21627013,
+      "bytes": 54419240,
+      "mode": 33204,
+      "mtime_ns": 1791409992157890254,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_fractional.npz": {
+      "device": 2082,
+      "inode": 2361536,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461556945772640,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627008,
+      "bytes": 54419240,
+      "mode": 33204,
+      "mtime_ns": 1791409996230928513,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-7_redistributed-cell-23_cell-23_amount.npz": {
+      "device": 2082,
+      "inode": 2361537,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557075243303,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_sham.npz": {
+      "device": 2082,
+      "inode": 2361538,
+      "bytes": 1917,
+      "mode": 33204,
+      "mtime_ns": 1791461557075469833,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_control.npz": {
+      "device": 2082,
+      "inode": 2361539,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557204545083,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613289,
+      "bytes": 54434373,
+      "mode": 33204,
+      "mtime_ns": 1791322732677691197,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_fractional.npz": {
+      "device": 2082,
+      "inode": 2361540,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557332213896,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627089,
+      "bytes": 54434373,
+      "mode": 33204,
+      "mtime_ns": 1791410045117850356,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-19_amount.npz": {
+      "device": 2082,
+      "inode": 2361541,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557459030097,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613299,
+      "bytes": 54434373,
+      "mode": 33204,
+      "mtime_ns": 1791322740830639040,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_fractional.npz": {
+      "device": 2082,
+      "inode": 2361542,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557584483213,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627093,
+      "bytes": 54434373,
+      "mode": 33204,
+      "mtime_ns": 1791410055325902805,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_sham_cell-20_amount.npz": {
+      "device": 2082,
+      "inode": 2361543,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461557709846412,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-19.npz": {
+      "device": 2082,
+      "inode": 2361544,
+      "bytes": 1953,
+      "mode": 33204,
+      "mtime_ns": 1791461557710131060,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_control.npz": {
+      "device": 2082,
+      "inode": 2361545,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461557836877644,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21627068,
+      "bytes": 54432392,
+      "mode": 33204,
+      "mtime_ns": 1791410075830994303,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_fractional.npz": {
+      "device": 2082,
+      "inode": 2361546,
+      "bytes": 480,
+      "mode": 33204,
+      "mtime_ns": 1791461557963239670,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627064,
+      "bytes": 54432392,
+      "mode": 33204,
+      "mtime_ns": 1791410079898690733,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-19_cell-19_amount.npz": {
+      "device": 2082,
+      "inode": 2361547,
+      "bytes": 480,
+      "mode": 33204,
+      "mtime_ns": 1791461558127070894,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-8_redistributed-cell-20.npz": {
+      "device": 2082,
+      "inode": 2361558,
+      "bytes": 1934,
+      "mode": 33204,
+      "mtime_ns": 1791461558127299472,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_control.npz": {
+      "device": 2082,
+      "inode": 2361560,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461558254277105,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21627081,
+      "bytes": 54433872,
+      "mode": 33204,
+      "mtime_ns": 1791410100247826383,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_fractional.npz": {
+      "device": 2082,
+      "inode": 2361562,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461558379422250,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627077,
+      "bytes": 54433872,
+      "mode": 33204,
+      "mtime_ns": 1791410104309550996,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-8_redistributed-cell-20_cell-20_amount.npz": {
+      "device": 2082,
+      "inode": 2361567,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461558506562624,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_sham.npz": {
+      "device": 2082,
+      "inode": 2361569,
+      "bytes": 1864,
+      "mode": 33204,
+      "mtime_ns": 1791461558506787889,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_control.npz": {
+      "device": 2082,
+      "inode": 2361570,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461558631753768,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613399,
+      "bytes": 54391305,
+      "mode": 33204,
+      "mtime_ns": 1791322827468114151,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_fractional.npz": {
+      "device": 2082,
+      "inode": 2361576,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461558756820424,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627109,
+      "bytes": 54391305,
+      "mode": 33204,
+      "mtime_ns": 1791410153451573263,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-29_amount.npz": {
+      "device": 2082,
+      "inode": 2361581,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461558882368881,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/source.npz": {
+      "device": 2064,
+      "inode": 18613409,
+      "bytes": 54391305,
+      "mode": 33204,
+      "mtime_ns": 1791322835722229091,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_fractional.npz": {
+      "device": 2082,
+      "inode": 2361600,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461559007382972,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627110,
+      "bytes": 54391305,
+      "mode": 33204,
+      "mtime_ns": 1791410163717817986,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_sham_cell-30_amount.npz": {
+      "device": 2082,
+      "inode": 2361601,
+      "bytes": 479,
+      "mode": 33204,
+      "mtime_ns": 1791461559134232403,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-29.npz": {
+      "device": 2082,
+      "inode": 2361603,
+      "bytes": 1904,
+      "mode": 33204,
+      "mtime_ns": 1791461559134450735,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_control.npz": {
+      "device": 2082,
+      "inode": 2361604,
+      "bytes": 480,
+      "mode": 33204,
+      "mtime_ns": 1791461559262262182,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21627104,
+      "bytes": 54392973,
+      "mode": 33204,
+      "mtime_ns": 1791410184122410184,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_fractional.npz": {
+      "device": 2082,
+      "inode": 2361605,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461559388742620,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627103,
+      "bytes": 54392973,
+      "mode": 33204,
+      "mtime_ns": 1791410188210591379,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-29_cell-29_amount.npz": {
+      "device": 2082,
+      "inode": 2361606,
+      "bytes": 481,
+      "mode": 33204,
+      "mtime_ns": 1791461559515881173,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/contexts/seed-9_redistributed-cell-30.npz": {
+      "device": 2082,
+      "inode": 2361607,
+      "bytes": 1889,
+      "mode": 33204,
+      "mtime_ns": 1791461559516146564,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_control.npz": {
+      "device": 2082,
+      "inode": 2361609,
+      "bytes": 482,
+      "mode": 33204,
+      "mtime_ns": 1791461559641649884,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/source.npz": {
+      "device": 2064,
+      "inode": 21627107,
+      "bytes": 54391918,
+      "mode": 33204,
+      "mtime_ns": 1791410208653071622,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_fractional.npz": {
+      "device": 2082,
+      "inode": 2361611,
+      "bytes": 482,
+      "mode": 33204,
+      "mtime_ns": 1791461559767490517,
+      "nlink": 1
+    },
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/source.npz": {
+      "device": 2064,
+      "inode": 21627106,
+      "bytes": 54391918,
+      "mode": 33204,
+      "mtime_ns": 1791410212866460107,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/starts/seed-9_redistributed-cell-30_cell-30_amount.npz": {
+      "device": 2082,
+      "inode": 2361613,
+      "bytes": 482,
+      "mode": 33204,
+      "mtime_ns": 1791461559893192144,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_frozen_response.md": {
+      "device": 2082,
+      "inode": 2361395,
+      "bytes": 12359,
+      "mode": 33204,
+      "mtime_ns": 1791461401767250983,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/paths.npz": {
+      "device": 2082,
+      "inode": 2361946,
+      "bytes": 1204333,
+      "mode": 33204,
+      "mtime_ns": 1791461730702869718,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/checkpoint.npz": {
+      "device": 2082,
+      "inode": 2361939,
+      "bytes": 1206987,
+      "mode": 33204,
+      "mtime_ns": 1791461730638874092,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/coarse/result.json": {
+      "device": 2082,
+      "inode": 2361963,
+      "bytes": 410,
+      "mode": 33204,
+      "mtime_ns": 1791461730708168092,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/paths.npz": {
+      "device": 2082,
+      "inode": 2361974,
+      "bytes": 1187980,
+      "mode": 33204,
+      "mtime_ns": 1791461771766065510,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/checkpoint.npz": {
+      "device": 2082,
+      "inode": 2361967,
+      "bytes": 1190612,
+      "mode": 33204,
+      "mtime_ns": 1791461771701069945,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/fine/result.json": {
+      "device": 2082,
+      "inode": 2361984,
+      "bytes": 409,
+      "mode": 33204,
+      "mtime_ns": 1791461771772608125,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/paths.npz": {
+      "device": 2082,
+      "inode": 2361999,
+      "bytes": 1169751,
+      "mode": 33204,
+      "mtime_ns": 1791461851701619207,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/checkpoint.npz": {
+      "device": 2082,
+      "inode": 2361990,
+      "bytes": 1172554,
+      "mode": 33204,
+      "mtime_ns": 1791461851635623698,
+      "nlink": 1
+    },
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/phase-carry-frozen-response/production/diagnostic/result.json": {
+      "device": 2082,
+      "inode": 2362007,
+      "bytes": 416,
+      "mode": 33204,
+      "mtime_ns": 1791461851707476301,
+      "nlink": 1
+    },
+    "/tmp/shared-context-input-review.py": {
+      "device": 2082,
+      "inode": 657804,
+      "bytes": 15147,
+      "mode": 33204,
+      "mtime_ns": 1791462884777013480,
+      "nlink": 1
+    }
+  },
+  "immutable_before_after_equal": true,
+  "all_mismatches": [],
+  "script_path": "/tmp/shared-context-input-review.py",
+  "script_sha256": "8032caf2c2ea04d24002e8fe68e320c62df25b93e5dfd42f976cd125557b94fe",
+  "finished_utc": "2026-10-08T12:34:59.894433+00:00",
+  "elapsed_seconds": 7.979523812005937
+}

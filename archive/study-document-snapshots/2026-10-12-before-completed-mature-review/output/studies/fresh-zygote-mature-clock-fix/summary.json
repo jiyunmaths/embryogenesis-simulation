@@ -1,0 +1,1930 @@
+{
+  "execution_completed": true,
+  "mature_screens_passed": true,
+  "qualification_accepted": false,
+  "independent_review_pending": true,
+  "new_scientific_histories": 0,
+  "new_numerical_paths": 24,
+  "long_scientific_continuation_started": false,
+  "paths": [
+    {
+      "case": "h1101_off_coarse",
+      "passed": true,
+      "seconds": 188.89856560598128
+    },
+    {
+      "case": "h1101_off_fine",
+      "passed": true,
+      "seconds": 256.92938600998605
+    },
+    {
+      "case": "h1101_tension_adhesion_coarse",
+      "passed": true,
+      "seconds": 185.20349463599268
+    },
+    {
+      "case": "h1101_tension_adhesion_fine",
+      "passed": true,
+      "seconds": 258.9882823259686
+    },
+    {
+      "case": "h1101_polarity_coarse",
+      "passed": true,
+      "seconds": 184.68927095097024
+    },
+    {
+      "case": "h1101_polarity_fine",
+      "passed": true,
+      "seconds": 258.0717750240001
+    },
+    {
+      "case": "h1101_full_coarse",
+      "passed": true,
+      "seconds": 186.52036354399752
+    },
+    {
+      "case": "h1101_full_fine",
+      "passed": true,
+      "seconds": 259.26539759599837
+    },
+    {
+      "case": "h1102_off_coarse",
+      "passed": true,
+      "seconds": 187.28446344198892
+    },
+    {
+      "case": "h1102_off_fine",
+      "passed": true,
+      "seconds": 262.7142838049913
+    },
+    {
+      "case": "h1102_tension_adhesion_coarse",
+      "passed": true,
+      "seconds": 189.1445941280108
+    },
+    {
+      "case": "h1102_tension_adhesion_fine",
+      "passed": true,
+      "seconds": 259.5121442010277
+    },
+    {
+      "case": "h1102_polarity_coarse",
+      "passed": true,
+      "seconds": 187.81287973496364
+    },
+    {
+      "case": "h1102_polarity_fine",
+      "passed": true,
+      "seconds": 260.27476508298423
+    },
+    {
+      "case": "h1102_full_coarse",
+      "passed": true,
+      "seconds": 187.58780644199578
+    },
+    {
+      "case": "h1102_full_fine",
+      "passed": true,
+      "seconds": 260.5909656099975
+    },
+    {
+      "case": "h1103_off_coarse",
+      "passed": true,
+      "seconds": 186.97358011099277
+    },
+    {
+      "case": "h1103_off_fine",
+      "passed": true,
+      "seconds": 259.5364924200112
+    },
+    {
+      "case": "h1103_tension_adhesion_coarse",
+      "passed": true,
+      "seconds": 187.66567791899433
+    },
+    {
+      "case": "h1103_tension_adhesion_fine",
+      "passed": true,
+      "seconds": 259.0480142639717
+    },
+    {
+      "case": "h1103_polarity_coarse",
+      "passed": true,
+      "seconds": 187.40325416100677
+    },
+    {
+      "case": "h1103_polarity_fine",
+      "passed": true,
+      "seconds": 260.80298321001465
+    },
+    {
+      "case": "h1103_full_coarse",
+      "passed": true,
+      "seconds": 193.14349455799675
+    },
+    {
+      "case": "h1103_full_fine",
+      "passed": true,
+      "seconds": 260.49452841602033
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 1101,
+      "branch": "off",
+      "cases": [
+        "h1101_off_coarse",
+        "h1101_off_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.802748723287562e-07,
+        "log_wasserstein_max": 1.7986456993693552e-07,
+        "contrast_abs_max": 2.520520506199553e-07,
+        "relative_axis_max": 7.814500910807709e-07,
+        "relative_total_volume_max": 1.1237913710715475e-08,
+        "whole_amount_relative_max": 1.7100069027442544e-08,
+        "mean_polarity_abs_max": 6.742632712835586e-08,
+        "relative_spectrum_max": 8.711438996177572e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 5.981256557616217e-07,
+        "polarity_abs_max": 3.6739692397744217e-06,
+        "relative_volume_max": 2.2348014105944003e-08,
+        "relative_transport_max": 1.253713944111174e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.532116661974598e-20,
+              0.9609476327896118
+            ],
+            [
+              2.532116661974598e-20,
+              0.9609476327896118
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.251501163482415e-06,
+            "activator_density": 7.248917281713052e-06,
+            "inhibitor_density": 7.249223806151938e-06,
+            "polarity_density": 3.075201939797632e-06
+          },
+          "phase_ranges": [
+            [
+              6.257671316190609e-22,
+              0.9619940519332886
+            ],
+            [
+              6.284512276936318e-22,
+              0.9619938135147095
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.3907764796515324e-06,
+            "activator_density": 6.392817891135257e-06,
+            "inhibitor_density": 6.388469661764379e-06,
+            "polarity_density": 2.1235507595740453e-06
+          },
+          "phase_ranges": [
+            [
+              1.5501345557255396e-23,
+              0.9620558023452759
+            ],
+            [
+              1.5634481612229546e-23,
+              0.9620557427406311
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.251501163482415e-06,
+      "dense_peak": {
+        "time": 20.805,
+        "elapsed": 2.8049999999999997,
+        "relative_spectrum": 8.72577997955114e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_off_coarse/gpu-result.json": "9b207671ea69870765de6e3f7d82d4c96ba671abf48ec0c0c1a8ce21176a1a3b",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_off_fine/gpu-result.json": "0630ff92734bb5857cb97a71994141d10013d0c5bc3ea036caa4cac61128ec9c"
+      }
+    },
+    {
+      "seed": 1101,
+      "branch": "tension_adhesion",
+      "cases": [
+        "h1101_tension_adhesion_coarse",
+        "h1101_tension_adhesion_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 2.2034198378290773e-07,
+        "log_wasserstein_max": 2.1984834511136454e-07,
+        "contrast_abs_max": 3.118979111579878e-07,
+        "relative_axis_max": 7.814055704713496e-07,
+        "relative_total_volume_max": 1.2493452938855398e-08,
+        "whole_amount_relative_max": 1.7517090222796128e-08,
+        "mean_polarity_abs_max": 6.903451639899143e-08,
+        "relative_spectrum_max": 8.700733536800583e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 7.471567395773188e-07,
+        "polarity_abs_max": 3.6699821332891736e-06,
+        "relative_volume_max": 7.4695357454857e-08,
+        "relative_transport_max": 1.2545668111501566e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.527697223369835e-20,
+              0.9609485268592834
+            ],
+            [
+              2.527697223369835e-20,
+              0.9609485268592834
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.249409713888887e-06,
+            "activator_density": 7.247382340819272e-06,
+            "inhibitor_density": 7.247373218647759e-06,
+            "polarity_density": 3.0744603951764255e-06
+          },
+          "phase_ranges": [
+            [
+              6.229617150481543e-22,
+              0.9619940519332886
+            ],
+            [
+              6.256379856225454e-22,
+              0.9619938135147095
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.389175261129235e-06,
+            "activator_density": 6.3950305612076925e-06,
+            "inhibitor_density": 6.3882253260997464e-06,
+            "polarity_density": 2.1234476882314946e-06
+          },
+          "phase_ranges": [
+            [
+              1.535797639861872e-23,
+              0.9620550274848938
+            ],
+            [
+              1.5490172131393846e-23,
+              0.9620549082756042
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.249409713888887e-06,
+      "dense_peak": {
+        "time": 20.384999999999998,
+        "elapsed": 2.384999999999998,
+        "relative_spectrum": 8.731044065409069e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_coarse/gpu-result.json": "d57cad467b5251168df73101457eb9afb5501f3547b0a1a299419025f8ad258e",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_fine/gpu-result.json": "76358de74cecc0be632a68552b39d7bda9be662da9e89af044a22a3a927e8bab"
+      }
+    },
+    {
+      "seed": 1101,
+      "branch": "polarity",
+      "cases": [
+        "h1101_polarity_coarse",
+        "h1101_polarity_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 2.5443057318328723e-07,
+        "log_wasserstein_max": 2.539884971580128e-07,
+        "contrast_abs_max": 3.7475760618355114e-07,
+        "relative_axis_max": 9.485162002498271e-07,
+        "relative_total_volume_max": 1.269735760978108e-08,
+        "whole_amount_relative_max": 1.782420699925069e-08,
+        "mean_polarity_abs_max": 6.464964020583817e-08,
+        "relative_spectrum_max": 7.832597938621753e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 9.149772095163299e-07,
+        "polarity_abs_max": 3.453849775429327e-06,
+        "relative_volume_max": 2.377551777676956e-08,
+        "relative_transport_max": 1.0697240368805053e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.816464229800727e-20,
+              0.9613021016120911
+            ],
+            [
+              1.816464229800727e-20,
+              0.9613021016120911
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.469368933082899e-06,
+            "activator_density": 6.467654159484646e-06,
+            "inhibitor_density": 6.467227078286593e-06,
+            "polarity_density": 2.8148153704228043e-06
+          },
+          "phase_ranges": [
+            [
+              3.903578603685502e-22,
+              0.9619874954223633
+            ],
+            [
+              3.921705743763267e-22,
+              0.961987316608429
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.659400573869675e-06,
+            "activator_density": 5.673289681630825e-06,
+            "inhibitor_density": 5.6596931184729705e-06,
+            "polarity_density": 1.7948533368480325e-06
+          },
+          "phase_ranges": [
+            [
+              8.517410079761787e-24,
+              0.9619828462600708
+            ],
+            [
+              8.596324569276476e-24,
+              0.9619827270507812
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.469368933082899e-06,
+      "dense_peak": {
+        "time": 20.474999999999998,
+        "elapsed": 2.474999999999998,
+        "relative_spectrum": 7.840615061136367e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_coarse/gpu-result.json": "e4781e92c740f4ea3226cf9f47117d3dda0bb009f9e52ec510fefdb979b70d47",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_fine/gpu-result.json": "ce1ff0312371861f8065a7fff749e4aa48ac04b55994e793c2f4b8ff6c3fa578"
+      }
+    },
+    {
+      "seed": 1101,
+      "branch": "full",
+      "cases": [
+        "h1101_full_coarse",
+        "h1101_full_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 2.8735965571290334e-07,
+        "log_wasserstein_max": 2.868392559895822e-07,
+        "contrast_abs_max": 4.287125047464091e-07,
+        "relative_axis_max": 9.500993656264001e-07,
+        "relative_total_volume_max": 1.3923876274191116e-08,
+        "whole_amount_relative_max": 1.823558870572839e-08,
+        "mean_polarity_abs_max": 6.704223400112491e-08,
+        "relative_spectrum_max": 7.786064022082072e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 1.0497831704847794e-06,
+        "polarity_abs_max": 3.4503741906024427e-06,
+        "relative_volume_max": 7.323736639364142e-08,
+        "relative_transport_max": 1.066786263833097e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.81337215758517e-20,
+              0.9613010883331299
+            ],
+            [
+              1.81337215758517e-20,
+              0.9613010883331299
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.466859676573565e-06,
+            "activator_density": 6.465882067735828e-06,
+            "inhibitor_density": 6.465108306633582e-06,
+            "polarity_density": 2.819774910116827e-06
+          },
+          "phase_ranges": [
+            [
+              3.88701302954684e-22,
+              0.9619886875152588
+            ],
+            [
+              3.9050889252202018e-22,
+              0.9619885087013245
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.658268476693678e-06,
+            "activator_density": 5.677036978527886e-06,
+            "inhibitor_density": 5.660281381182502e-06,
+            "polarity_density": 1.7952051845188697e-06
+          },
+          "phase_ranges": [
+            [
+              8.445979513654929e-24,
+              0.9619842767715454
+            ],
+            [
+              8.524376510415793e-24,
+              0.9619841575622559
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.466859676573565e-06,
+      "dense_peak": {
+        "time": 20.669999999999998,
+        "elapsed": 2.669999999999998,
+        "relative_spectrum": 7.828290774928634e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_coarse/gpu-result.json": "20ccdca1a3921ea747a273f12a3c067dc4bd6b46cfe6cbaecd08ef932dddaebc",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_fine/gpu-result.json": "c33ce1a9112da4a583e1142c2d4be7ec5ca903ed5631c2b6c78c25d5cd444c54"
+      }
+    },
+    {
+      "seed": 1102,
+      "branch": "off",
+      "cases": [
+        "h1102_off_coarse",
+        "h1102_off_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.1384779987108485e-07,
+        "log_wasserstein_max": 1.1421701186600148e-07,
+        "contrast_abs_max": 1.4272604938712907e-07,
+        "relative_axis_max": 7.605345089256588e-07,
+        "relative_total_volume_max": 1.1704421876146398e-08,
+        "whole_amount_relative_max": 1.7609769198401182e-08,
+        "mean_polarity_abs_max": 2.2998295549220282e-08,
+        "relative_spectrum_max": 8.855073232610743e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 3.701466018170434e-07,
+        "polarity_abs_max": 3.916404952418462e-06,
+        "relative_volume_max": 2.342047089598509e-08,
+        "relative_transport_max": 1.2588951209083351e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.2101414552997338e-20,
+              0.961164653301239
+            ],
+            [
+              2.2101414552997338e-20,
+              0.961164653301239
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.333032213791377e-06,
+            "activator_density": 7.330262455793218e-06,
+            "inhibitor_density": 7.330656755561542e-06,
+            "polarity_density": 3.116418007270584e-06
+          },
+          "phase_ranges": [
+            [
+              5.4533871074216955e-22,
+              0.9619154334068298
+            ],
+            [
+              5.476795450378862e-22,
+              0.9619152545928955
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.432032833433919e-06,
+            "activator_density": 6.43126233198799e-06,
+            "inhibitor_density": 6.4298701686185215e-06,
+            "polarity_density": 2.1560084405263902e-06
+          },
+          "phase_ranges": [
+            [
+              1.347188097171675e-23,
+              0.9618500471115112
+            ],
+            [
+              1.3587715729317593e-23,
+              0.9618499875068665
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.333032213791377e-06,
+      "dense_peak": {
+        "time": 21.314999999999998,
+        "elapsed": 3.3149999999999977,
+        "relative_spectrum": 8.859673064573195e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_coarse/gpu-result.json": "2f9ce817dd5497a2773b3e706d95d6d9cba348cd4b0007a93fd4983822d28316",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_fine/gpu-result.json": "b74f03903484e6e6586287dde725a90c0cc3944bb321b2634637f84f2f10f9f7"
+      }
+    },
+    {
+      "seed": 1102,
+      "branch": "tension_adhesion",
+      "cases": [
+        "h1102_tension_adhesion_coarse",
+        "h1102_tension_adhesion_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.360691018294699e-07,
+        "log_wasserstein_max": 1.364882468247294e-07,
+        "contrast_abs_max": 1.7537940801351515e-07,
+        "relative_axis_max": 7.606291918538233e-07,
+        "relative_total_volume_max": 1.28803536725286e-08,
+        "whole_amount_relative_max": 1.8116373068366443e-08,
+        "mean_polarity_abs_max": 2.4030409225510438e-08,
+        "relative_spectrum_max": 8.890420324712505e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 4.2492868592587337e-07,
+        "polarity_abs_max": 3.915289360438556e-06,
+        "relative_volume_max": 4.4249701014464904e-08,
+        "relative_transport_max": 1.259371035053387e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.2149748073282004e-20,
+              0.9611642360687256
+            ],
+            [
+              2.2149748073282004e-20,
+              0.9611642360687256
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.334245421697624e-06,
+            "activator_density": 7.331603327758279e-06,
+            "inhibitor_density": 7.331925709747891e-06,
+            "polarity_density": 3.116558537906464e-06
+          },
+          "phase_ranges": [
+            [
+              5.468813440195473e-22,
+              0.9619154334068298
+            ],
+            [
+              5.492279338444285e-22,
+              0.9619153141975403
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.432654702250305e-06,
+            "activator_density": 6.432909384450567e-06,
+            "inhibitor_density": 6.430832162479018e-06,
+            "polarity_density": 2.156217076679387e-06
+          },
+          "phase_ranges": [
+            [
+              1.3524832471118805e-23,
+              0.9618501663208008
+            ],
+            [
+              1.3641061659172258e-23,
+              0.961850106716156
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.334245421697624e-06,
+      "dense_peak": {
+        "time": 21.0,
+        "elapsed": 3.0,
+        "relative_spectrum": 8.890420324712505e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_coarse/gpu-result.json": "1b6e547591778a69f0e2b19d90592428b742ec357e89ad04b5d4eeda1de6538d",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_fine/gpu-result.json": "5584dcac3adc7fab19c1c293af4fcf4ecfc36a20b666dbd0281c1243b42ad4a4"
+      }
+    },
+    {
+      "seed": 1102,
+      "branch": "polarity",
+      "cases": [
+        "h1102_polarity_coarse",
+        "h1102_polarity_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.5185418663938106e-07,
+        "log_wasserstein_max": 1.523277758447107e-07,
+        "contrast_abs_max": 2.0791342247167277e-07,
+        "relative_axis_max": 9.178674191812064e-07,
+        "relative_total_volume_max": 1.2713903485561673e-08,
+        "whole_amount_relative_max": 1.8381674404821524e-08,
+        "mean_polarity_abs_max": 4.5570551187435306e-08,
+        "relative_spectrum_max": 7.83878152824778e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 4.807933977682136e-07,
+        "polarity_abs_max": 3.550869946522539e-06,
+        "relative_volume_max": 2.4238272278154227e-08,
+        "relative_transport_max": 1.0667649382984478e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.5924530570462834e-20,
+              0.9610958099365234
+            ],
+            [
+              1.5924530570462834e-20,
+              0.9610958099365234
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.539846373242485e-06,
+            "activator_density": 6.536809966210568e-06,
+            "inhibitor_density": 6.5372678723459575e-06,
+            "polarity_density": 2.8524110006377884e-06
+          },
+          "phase_ranges": [
+            [
+              3.451427261748847e-22,
+              0.961577296257019
+            ],
+            [
+              3.46735543627609e-22,
+              0.9615770578384399
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.697901364007936e-06,
+            "activator_density": 5.69894707139017e-06,
+            "inhibitor_density": 5.695856678719431e-06,
+            "polarity_density": 1.819279441569828e-06
+          },
+          "phase_ranges": [
+            [
+              7.766997466200342e-24,
+              0.961739718914032
+            ],
+            [
+              7.837918428162426e-24,
+              0.9617395997047424
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.539846373242485e-06,
+      "dense_peak": {
+        "time": 20.52,
+        "elapsed": 2.5199999999999996,
+        "relative_spectrum": 7.91993379210157e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_coarse/gpu-result.json": "9b0c7ef12c1e4e8fb77450c66aa081a3e049a35b6104a31ad6321db532f48334",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_fine/gpu-result.json": "c881048f260fe7785f91e66542d07b5af12d75e9e1aea6b222fd9c462d3352ff"
+      }
+    },
+    {
+      "seed": 1102,
+      "branch": "full",
+      "cases": [
+        "h1102_full_coarse",
+        "h1102_full_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.738413380295828e-07,
+        "log_wasserstein_max": 1.7436782579828947e-07,
+        "contrast_abs_max": 2.386121217608922e-07,
+        "relative_axis_max": 9.181819728976137e-07,
+        "relative_total_volume_max": 1.3887057948025472e-08,
+        "whole_amount_relative_max": 1.8931638257058125e-08,
+        "mean_polarity_abs_max": 3.3855272904776204e-08,
+        "relative_spectrum_max": 7.87513005352453e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 5.328502363459717e-07,
+        "polarity_abs_max": 3.548650648450835e-06,
+        "relative_volume_max": 4.2969613645027493e-08,
+        "relative_transport_max": 1.0700850729194822e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.5955674243642882e-20,
+              0.961095929145813
+            ],
+            [
+              1.5955674243642882e-20,
+              0.961095929145813
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.538740098039802e-06,
+            "activator_density": 6.535863683478697e-06,
+            "inhibitor_density": 6.536225583641083e-06,
+            "polarity_density": 2.8539170145621423e-06
+          },
+          "phase_ranges": [
+            [
+              3.460221356902506e-22,
+              0.9615776538848877
+            ],
+            [
+              3.476184872398303e-22,
+              0.9615774750709534
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.6970428828546115e-06,
+            "activator_density": 5.699460554964713e-06,
+            "inhibitor_density": 5.695424439381312e-06,
+            "polarity_density": 1.8190232313793841e-06
+          },
+          "phase_ranges": [
+            [
+              7.794283376051031e-24,
+              0.9617418646812439
+            ],
+            [
+              7.865403130961232e-24,
+              0.9617417454719543
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.538740098039802e-06,
+      "dense_peak": {
+        "time": 20.55,
+        "elapsed": 2.5500000000000007,
+        "relative_spectrum": 7.87513005352453e-06,
+        "edges": [
+          40,
+          40
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_coarse/gpu-result.json": "d3a9cd3b7a88236efe05d5946dc0f2f3feec007d752f98e194772346df5902f3",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_fine/gpu-result.json": "01ee677b79f9231460e9a0bf8c452d4f94c3578214b3fc6922fceb1e28c393a3"
+      }
+    },
+    {
+      "seed": 1103,
+      "branch": "off",
+      "cases": [
+        "h1103_off_coarse",
+        "h1103_off_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.187933249607258e-07,
+        "log_wasserstein_max": 1.1934866843484192e-07,
+        "contrast_abs_max": 1.225897147925925e-07,
+        "relative_axis_max": 1.145298254012772e-06,
+        "relative_total_volume_max": 1.1653535469946519e-08,
+        "whole_amount_relative_max": 1.8235467691418705e-08,
+        "mean_polarity_abs_max": 3.761289499643245e-08,
+        "relative_spectrum_max": 9.702410593179165e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 3.314764070827756e-07,
+        "polarity_abs_max": 3.697683520001438e-06,
+        "relative_volume_max": 2.462963877292168e-08,
+        "relative_transport_max": 1.34296326988407e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.0095213993046413e-20,
+              0.961493194103241
+            ],
+            [
+              2.0095213993046413e-20,
+              0.961493194103241
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.375045708193634e-06,
+            "activator_density": 7.366417951232585e-06,
+            "inhibitor_density": 7.369119339137695e-06,
+            "polarity_density": 3.054357819461076e-06
+          },
+          "phase_ranges": [
+            [
+              5.034757179029395e-22,
+              0.9619794487953186
+            ],
+            [
+              5.05619652516713e-22,
+              0.9619792699813843
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.819709534283972e-06,
+            "activator_density": 6.803292534507727e-06,
+            "inhibitor_density": 6.807742924131962e-06,
+            "polarity_density": 2.2031514467713567e-06
+          },
+          "phase_ranges": [
+            [
+              1.2673131695048792e-23,
+              0.9619149565696716
+            ],
+            [
+              1.2781115708920876e-23,
+              0.9619148373603821
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.375045708193634e-06,
+      "dense_peak": {
+        "time": 20.564999999999998,
+        "elapsed": 2.5649999999999977,
+        "relative_spectrum": 9.809169535165751e-06,
+        "edges": [
+          36,
+          36
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_coarse/gpu-result.json": "11f91449e12171dbb2116930f504d20ddd61167c684521f6c0200589a85408d3",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_fine/gpu-result.json": "c47d941ef3cd7b783018afe304428e8056c791d85f42c7885e734be0bf7978af"
+      }
+    },
+    {
+      "seed": 1103,
+      "branch": "tension_adhesion",
+      "cases": [
+        "h1103_tension_adhesion_coarse",
+        "h1103_tension_adhesion_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.2131185661861802e-07,
+        "log_wasserstein_max": 1.217635500174459e-07,
+        "contrast_abs_max": 1.2840256391130622e-07,
+        "relative_axis_max": 1.1448233276922792e-06,
+        "relative_total_volume_max": 1.2331166088230816e-08,
+        "whole_amount_relative_max": 1.885953415659003e-08,
+        "mean_polarity_abs_max": 5.535475187954991e-08,
+        "relative_spectrum_max": 9.715804971301061e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 2.98774975096058e-07,
+        "polarity_abs_max": 3.812744635220411e-06,
+        "relative_volume_max": 7.134142565590196e-08,
+        "relative_transport_max": 1.3466762860514826e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              2.002966639185012e-20,
+              0.9614934921264648
+            ],
+            [
+              2.002966639185012e-20,
+              0.9614934921264648
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 7.369921201090173e-06,
+            "activator_density": 7.361728644175952e-06,
+            "inhibitor_density": 7.364455806613866e-06,
+            "polarity_density": 3.065795482788457e-06
+          },
+          "phase_ranges": [
+            [
+              5.003197694110761e-22,
+              0.9619835019111633
+            ],
+            [
+              5.024540105020462e-22,
+              0.961983323097229
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 6.813409440983764e-06,
+            "activator_density": 6.797724176505312e-06,
+            "inhibitor_density": 6.8019368760089756e-06,
+            "polarity_density": 2.2028296166626933e-06
+          },
+          "phase_ranges": [
+            [
+              1.2535907762863787e-23,
+              0.961912214756012
+            ],
+            [
+              1.2642956187702278e-23,
+              0.9619121551513672
+            ]
+          ]
+        }
+      ],
+      "field_max": 7.369921201090173e-06,
+      "dense_peak": {
+        "time": 20.669999999999998,
+        "elapsed": 2.669999999999998,
+        "relative_spectrum": 9.797848428717833e-06,
+        "edges": [
+          36,
+          36
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_coarse/gpu-result.json": "fed6055d371b00c2eb43b7a16fbf547110b64cb5681c42f9b6ea1b46faa5e34f",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_fine/gpu-result.json": "52f5308b527769fbd83540b8b388eff4018528788e507a003850076645db29e0"
+      }
+    },
+    {
+      "seed": 1103,
+      "branch": "polarity",
+      "cases": [
+        "h1103_polarity_coarse",
+        "h1103_polarity_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 1.7435282811071108e-07,
+        "log_wasserstein_max": 1.750987639770054e-07,
+        "contrast_abs_max": 1.9283140624895556e-07,
+        "relative_axis_max": 1.193925662779094e-06,
+        "relative_total_volume_max": 1.3286268085721531e-08,
+        "whole_amount_relative_max": 1.9364912451358407e-08,
+        "mean_polarity_abs_max": 3.4266539289535866e-08,
+        "relative_spectrum_max": 8.262588857993572e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 4.987829391095696e-07,
+        "polarity_abs_max": 3.481012244179252e-06,
+        "relative_volume_max": 2.5709293582920623e-08,
+        "relative_transport_max": 1.115784256174697e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.4040985385717038e-20,
+              0.9613763093948364
+            ],
+            [
+              1.4040985385717038e-20,
+              0.9613763093948364
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.354383629570274e-06,
+            "activator_density": 6.347398162002633e-06,
+            "inhibitor_density": 6.349117788614204e-06,
+            "polarity_density": 2.760687529850872e-06
+          },
+          "phase_ranges": [
+            [
+              2.992797667840772e-22,
+              0.9621267914772034
+            ],
+            [
+              3.0067002999988976e-22,
+              0.962126612663269
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.763317061515039e-06,
+            "activator_density": 5.7561783974874864e-06,
+            "inhibitor_density": 5.755320682674055e-06,
+            "polarity_density": 1.8318239981628728e-06
+          },
+          "phase_ranges": [
+            [
+              6.4299421295840495e-24,
+              0.961793065071106
+            ],
+            [
+              6.489623401368545e-24,
+              0.9617929458618164
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.354383629570274e-06,
+      "dense_peak": {
+        "time": 20.355,
+        "elapsed": 2.3550000000000004,
+        "relative_spectrum": 8.290182836979211e-06,
+        "edges": [
+          36,
+          36
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_coarse/gpu-result.json": "c1446f4ca826a6aff75f4f88af0796f18208d211bec4c9689c83905b183c86b1",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_fine/gpu-result.json": "293380b216ab1d73138aaccd524ab8b20f0a908691650659f9d99a5300bd6a45"
+      }
+    },
+    {
+      "seed": 1103,
+      "branch": "full",
+      "cases": [
+        "h1103_full_coarse",
+        "h1103_full_fine"
+      ],
+      "passed": true,
+      "errors": {
+        "concentration_wasserstein_max": 2.0372030876784887e-07,
+        "log_wasserstein_max": 2.045852670159658e-07,
+        "contrast_abs_max": 2.3431789123069813e-07,
+        "relative_axis_max": 1.191095492680816e-06,
+        "relative_total_volume_max": 1.38389175674547e-08,
+        "whole_amount_relative_max": 1.9857850808158162e-08,
+        "mean_polarity_abs_max": 4.381347229066027e-08,
+        "relative_spectrum_max": 8.24779076391754e-06,
+        "cell_count_difference_max": 0.0,
+        "unmatched_observations_max": 0
+      },
+      "homologous_errors": {
+        "chemical_log_max": 6.102999439636098e-07,
+        "polarity_abs_max": 3.4891232162711366e-06,
+        "relative_volume_max": 6.815057340681108e-08,
+        "relative_transport_max": 1.1159265477135634e-05,
+        "unmatched_observations_max": 0
+      },
+      "fields": [
+        {
+          "elapsed": 0,
+          "time": 18.0,
+          "errors": {
+            "occupancy": 0.0,
+            "activator_density": 0.0,
+            "inhibitor_density": 0.0,
+            "polarity_density": 0.0
+          },
+          "phase_ranges": [
+            [
+              1.3995865268241684e-20,
+              0.9613784551620483
+            ],
+            [
+              1.3995865268241684e-20,
+              0.9613784551620483
+            ]
+          ]
+        },
+        {
+          "elapsed": 3,
+          "time": 21.0,
+          "errors": {
+            "occupancy": 6.350243712480755e-06,
+            "activator_density": 6.343477432996086e-06,
+            "inhibitor_density": 6.345049245553134e-06,
+            "polarity_density": 2.7650557063197093e-06
+          },
+          "phase_ranges": [
+            [
+              2.9750143448999387e-22,
+              0.9621257781982422
+            ],
+            [
+              2.988855130363095e-22,
+              0.9621255397796631
+            ]
+          ]
+        },
+        {
+          "elapsed": 6,
+          "time": 24.0,
+          "errors": {
+            "occupancy": 5.759457711287737e-06,
+            "activator_density": 5.75440584449535e-06,
+            "inhibitor_density": 5.752219521184325e-06,
+            "polarity_density": 1.8313848954125515e-06
+          },
+          "phase_ranges": [
+            [
+              6.367759379869098e-24,
+              0.9617934823036194
+            ],
+            [
+              6.426967729540914e-24,
+              0.9617933630943298
+            ]
+          ]
+        }
+      ],
+      "field_max": 6.350243712480755e-06,
+      "dense_peak": {
+        "time": 20.654999999999998,
+        "elapsed": 2.6549999999999976,
+        "relative_spectrum": 8.269829440567366e-06,
+        "edges": [
+          36,
+          36
+        ]
+      },
+      "topology_mismatch_times": [],
+      "failed_gates": {},
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_coarse/gpu-result.json": "a907d2055dd9d3eb7ad1056f1f81bbd5153dbf5c65cc0b75caddb917985d6785",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_fine/gpu-result.json": "3b67c1ee494950fcd8e2c5f090883366a546a0db7e9f1ee0e1f1c34a61d6b3e2"
+      }
+    }
+  ],
+  "prefixes": [
+    {
+      "passed": true,
+      "case": "h1101_off_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 3.3881317890172014e-21,
+        "effective_phase_abs_max": 6.661338147750939e-16,
+        "chemical_log_max": 4.71177985628106e-10,
+        "polarity_abs_max": 4.477353210408097e-10,
+        "relative_volume_max": 1.4432899320127035e-15,
+        "relative_transport_max": 6.454803252878995e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 85.89426531596109,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-qualification/h1101_off_coarse/prefix-gpu.npz": "6a2988c0486f3cebcf5c12c7b9f3acbd79920283e50ee78128947c232e0cf009",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-qualification/h1101_off_coarse/prefix-cpu.npz": "e37bb8a8d45027dcfd7d48bad143f325d2d6c1c20caee09d85e9947413aa68ae"
+      },
+      "reused": true,
+      "original_protocol_sha256": "f6c099718c3d368646912660fb91fc2ce1280ce11130fb105cf07790f9811131",
+      "original_report": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-qualification/h1101_off_coarse/actual-start-prefix.json",
+      "original_report_sha256": "2e84da21aebbe74b07608074b55edc22ada999657aae653a23771feff132a52e"
+    },
+    {
+      "passed": true,
+      "case": "h1101_off_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 5.551115123125783e-16,
+        "chemical_log_max": 2.8198177130601667e-10,
+        "polarity_abs_max": 1.8683756625170744e-10,
+        "relative_volume_max": 1.4432899320127035e-15,
+        "relative_transport_max": 6.232536505427613e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 81.68937279103557,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_off_fine/prefix-gpu.npz": "67fb45c792a7074b9de0005dfd383420e60c4cac00353679a7f3e4e451455b1e",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_off_fine/prefix-cpu.npz": "eb1575b2e9c48cdd50915d6acdc8fe48be9d2423293fee5b18ceab676f116a40"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_tension_adhesion_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 2.9103830456733704e-11,
+        "effective_phase_abs_max": 3.531208095028382e-12,
+        "chemical_log_max": 5.313142149877928e-10,
+        "polarity_abs_max": 4.073581333363663e-10,
+        "relative_volume_max": 1.1102230246251565e-15,
+        "relative_transport_max": 6.669250047312143e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 85.64042212697677,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_coarse/prefix-gpu.npz": "88805c4e5e80473de6e8bde711ae2e72f779460c26dc7a4ce3223ab3e172e177",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_coarse/prefix-cpu.npz": "f95a46a779ef6b083063439a13ed376687a19a1f47a4140f844e072ada8d74cc"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_tension_adhesion_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.734723475976807e-18,
+        "effective_phase_abs_max": 1.2212453270876722e-14,
+        "chemical_log_max": 2.891402673262389e-10,
+        "polarity_abs_max": 2.2474248850823386e-10,
+        "relative_volume_max": 1.1102230246251565e-15,
+        "relative_transport_max": 6.368635672748035e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 86.22891191497911,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_fine/prefix-gpu.npz": "f8ec082ba8194e00abeedeccf9c1fca9494a10f1046212ca8b5a35020591b2cb",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_tension_adhesion_fine/prefix-cpu.npz": "9bfce1a7cf909ab11fb17c6491f7a4b61790b1a5ae32a5c29dea45d80509c141"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_polarity_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 3.725290298461914e-09,
+        "effective_phase_abs_max": 2.2852546938123552e-10,
+        "chemical_log_max": 3.453376474268455e-10,
+        "polarity_abs_max": 3.3843705615765884e-10,
+        "relative_volume_max": 3.597122599785507e-13,
+        "relative_transport_max": 5.908235072844168e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 88.079408531019,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_coarse/prefix-gpu.npz": "aacb190d88b411bb7b9a4bf2d6377bc54a96b5771a28116945602adaa418065e",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_coarse/prefix-cpu.npz": "02566dad9890a05da37ef1f74717937edc46bba93bdebd198d9542f9409861a4"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_polarity_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.4901161193847656e-08,
+        "effective_phase_abs_max": 8.889502745024203e-10,
+        "chemical_log_max": 1.8509827006177864e-10,
+        "polarity_abs_max": 1.7152067830275564e-10,
+        "relative_volume_max": 5.678235659445363e-12,
+        "relative_transport_max": 7.049227971304024e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 86.74864153400995,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_fine/prefix-gpu.npz": "f45f77a947f403da1fd95847c6654394ee8b9d1d3da4916e1a7bbe86d0f55b55",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_polarity_fine/prefix-cpu.npz": "a0340173f076ca6ab072f69e7f57710c0c0eab6295159a1074215163a2f71abd"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_full_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 5.960464477539063e-08,
+        "effective_phase_abs_max": 3.3259942577856805e-09,
+        "chemical_log_max": 4.4225145777519376e-10,
+        "polarity_abs_max": 3.862992876968452e-10,
+        "relative_volume_max": 6.8290928467718e-11,
+        "relative_transport_max": 7.776052628291481e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.5740098549868,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_coarse/prefix-gpu.npz": "6a662457b6eb0223aeb24ae88f656f4fc4be039324277eb5456ff08dc8a6a068",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_coarse/prefix-cpu.npz": "1040a1692d6b7fefdbbb06f19e6d8bdfb8bd2433b4df181aa5a578812a079df4"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1101_full_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 2.9802322387695312e-08,
+        "effective_phase_abs_max": 1.6491868981560742e-09,
+        "chemical_log_max": 2.0085189069503983e-10,
+        "polarity_abs_max": 2.809810786819078e-10,
+        "relative_volume_max": 1.1491918527894995e-11,
+        "relative_transport_max": 8.224995171154242e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 86.16153308202047,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_fine/prefix-gpu.npz": "173ecb0527b39c46e323b38d122e72a096f5078b4099cb6f3db77e5344a8f485",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1101_full_fine/prefix-cpu.npz": "89ae888ce5b81d4ab989da56b677d90e016e658f05bf2880fe23200d8173e828"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_off_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 7.771561172376096e-16,
+        "chemical_log_max": 8.497935688106276e-11,
+        "polarity_abs_max": 3.66583922939423e-10,
+        "relative_volume_max": 1.3322676295501878e-15,
+        "relative_transport_max": 5.336325660869726e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 83.34364431799622,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_coarse/prefix-gpu.npz": "7701c5b45950bd828a662a42515520103da3483094aa65704a3da33c96ef2c30",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_coarse/prefix-cpu.npz": "99067ba796ff3517f2a35cfe6a1cef8a99dfb88679b3cb1846008927826fb689"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_off_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.4901161193847656e-08,
+        "effective_phase_abs_max": 6.661338147750939e-16,
+        "chemical_log_max": 4.4937165099113234e-11,
+        "polarity_abs_max": 2.3887786193554916e-10,
+        "relative_volume_max": 5.697886606981228e-12,
+        "relative_transport_max": 5.240375175185804e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 84.0960703699966,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_fine/prefix-gpu.npz": "497506206f079eabf4761ecd39eaa766e5b07743d8719fe6c3342fcee5867a40",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_off_fine/prefix-cpu.npz": "b159dad913ef1503a33f9dffcb0499ac370851412eb20120074a614230ddd45a"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_tension_adhesion_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 5.960464477539063e-08,
+        "effective_phase_abs_max": 2.8149479275318967e-11,
+        "chemical_log_max": 1.3328205205276306e-10,
+        "polarity_abs_max": 1.9958775604456136e-10,
+        "relative_volume_max": 2.2790214160295363e-11,
+        "relative_transport_max": 6.730317419430758e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 86.82235477096401,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_coarse/prefix-gpu.npz": "e2c6593d52b3a2c69aef38eefe95b725d5bdafb4548474a10bf93a9a9d93a34a",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_coarse/prefix-cpu.npz": "92d0831012f9b4799ef095db619ae1b61686099c1bd3ddf653ce3eaf67a4eec8"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_tension_adhesion_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.3877787807814457e-17,
+        "effective_phase_abs_max": 2.3869795029440866e-15,
+        "chemical_log_max": 4.742006787127028e-11,
+        "polarity_abs_max": 2.611491300985591e-10,
+        "relative_volume_max": 1.3322676295501878e-15,
+        "relative_transport_max": 4.962800897994742e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.11397147399839,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_fine/prefix-gpu.npz": "4b0cc87bb8b94c46c4eb267d257270e897843b523a8f5584672a2f5dab7f47f4",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_tension_adhesion_fine/prefix-cpu.npz": "ab466cc13622c85e4811979d86dd88a1a05b1e421d04402fc8fd1065faf7716e"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_polarity_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 3.725290298461914e-09,
+        "effective_phase_abs_max": 4.4875387433807035e-10,
+        "chemical_log_max": 1.4532219872965929e-10,
+        "polarity_abs_max": 4.240442441627579e-10,
+        "relative_volume_max": 5.335731856348502e-13,
+        "relative_transport_max": 6.583639320856446e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.65414755500387,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_coarse/prefix-gpu.npz": "6874f14835d3a11a309ffe8cc78ce5651bc30fbb21500d77eaa328abe55a4d9e",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_coarse/prefix-cpu.npz": "949774b36c8f6e646c000822e6013fcbc135f649a08f4a09d61db50d57e88fb7"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_polarity_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 4.656612873077393e-10,
+        "effective_phase_abs_max": 3.824241921399074e-12,
+        "chemical_log_max": 8.644318594637798e-11,
+        "polarity_abs_max": 2.494742468162059e-10,
+        "relative_volume_max": 5.10702591327572e-15,
+        "relative_transport_max": 6.338956624946228e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 88.05599905300187,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_fine/prefix-gpu.npz": "8944ce885ceeddeef4458610d4ead732feef1b65af74935c9af2d2735d8eb6cd",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_polarity_fine/prefix-cpu.npz": "3328c5c23896774319380a5aab01cb05975ad731a44eaa751cff6eaac4aea27c"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_full_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.4901161193847656e-08,
+        "effective_phase_abs_max": 4.220155266909664e-10,
+        "chemical_log_max": 1.3501200156950193e-10,
+        "polarity_abs_max": 2.877245247612237e-10,
+        "relative_volume_max": 2.8566038423605278e-12,
+        "relative_transport_max": 5.949264420875795e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 88.02580975100864,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_coarse/prefix-gpu.npz": "12d6686efc03de9a3f7d6519c44cc9f03138d646c53808bd07d8c0ef334c7483",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_coarse/prefix-cpu.npz": "41792bde83c39cef8f0bf402e67d19a828938d662fec925d5de1af9b98e80239"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1102_full_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 7.450580596923828e-09,
+        "effective_phase_abs_max": 4.5342934962278036e-10,
+        "chemical_log_max": 7.194778106881658e-11,
+        "polarity_abs_max": 1.5927761887191139e-10,
+        "relative_volume_max": 2.8520519279595646e-12,
+        "relative_transport_max": 5.960000784473779e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.6811437170254,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_fine/prefix-gpu.npz": "d853f1230242eae8aec55feed8dc74e659c372851656641227f6f7aceac46141",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1102_full_fine/prefix-cpu.npz": "5ea95b8f2d8ae987e12bd70ceca65e48509143c66859477146df3223aec67507"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_off_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 5.169878828456423e-26,
+        "effective_phase_abs_max": 6.661338147750939e-16,
+        "chemical_log_max": 1.2215561894599574e-10,
+        "polarity_abs_max": 2.4893852257346083e-10,
+        "relative_volume_max": 1.3322676295501878e-15,
+        "relative_transport_max": 5.407792142784216e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 83.4996188590303,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_coarse/prefix-gpu.npz": "15850df7a597308e41da6b7f5ec1412f5e683ffd993467d8dee67c9dd9827699",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_coarse/prefix-cpu.npz": "66fd4ba103a0e229e409ea263d2a2987c1f6a31d4d2dee64911b55c36745b494"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_off_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 0.0,
+        "effective_phase_abs_max": 5.551115123125783e-16,
+        "chemical_log_max": 5.734168695590382e-11,
+        "polarity_abs_max": 2.2258095366822772e-10,
+        "relative_volume_max": 1.2212453270876722e-15,
+        "relative_transport_max": 5.905805847640823e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 83.3682306589908,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_fine/prefix-gpu.npz": "70bb5016d0e9e50f50595f984780bbc896c3e849b9f370b9d01e0e0b09f3441b",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_off_fine/prefix-cpu.npz": "c55822492d5f20cf154e8066d225fcead191f749b2d9eafc4fc0ae96fc4fe6c0"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_tension_adhesion_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 4.656612873077393e-10,
+        "effective_phase_abs_max": 5.6198250913963577e-11,
+        "chemical_log_max": 1.5933943052611286e-10,
+        "polarity_abs_max": 3.7105238326340384e-10,
+        "relative_volume_max": 8.43769498715119e-15,
+        "relative_transport_max": 5.606573706084209e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.5338801680482,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_coarse/prefix-gpu.npz": "6e2f54f4274135218ef20135f17b59de5ede2bf817e946b70e08145e4a41b176",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_coarse/prefix-cpu.npz": "eb5e0305227087b349882854868516215eda2e26efff4793b8eca15f0825ce45"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_tension_adhesion_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 3.552713678800501e-15,
+        "effective_phase_abs_max": 2.6645352591003757e-15,
+        "chemical_log_max": 6.890865656099364e-11,
+        "polarity_abs_max": 1.7895095821840457e-10,
+        "relative_volume_max": 1.6653345369377348e-15,
+        "relative_transport_max": 5.57632188197711e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.69000949797919,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_fine/prefix-gpu.npz": "23de307ac490e069a2c1de7e2da6dbb2dd063e1ced4a2033cb73e0852367a57c",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_tension_adhesion_fine/prefix-cpu.npz": "caa35831c2dc6d1fd230c76113352ec03dc1b4d1de6b13d7a744c4d0186edcbb"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_polarity_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 2.9802322387695312e-08,
+        "effective_phase_abs_max": 8.5724012610644e-10,
+        "chemical_log_max": 2.472437809735936e-10,
+        "polarity_abs_max": 7.183901841456564e-10,
+        "relative_volume_max": 1.0806910921701274e-12,
+        "relative_transport_max": 8.033337447836126e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.54784695099806,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_coarse/prefix-gpu.npz": "b1ef2a16682e4163fa736ff4e48b2de75e869257340c9556b5772657f3850506",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_coarse/prefix-cpu.npz": "7780cb424573d96dfce9296b37fb529aface18411b254095c246679a5e1416c5"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_polarity_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.4901161193847656e-08,
+        "effective_phase_abs_max": 8.902597355055913e-13,
+        "chemical_log_max": 1.0284240125639414e-10,
+        "polarity_abs_max": 2.0692363794649893e-10,
+        "relative_volume_max": 5.690559135018702e-12,
+        "relative_transport_max": 7.67532614391096e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 87.88006932399003,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_fine/prefix-gpu.npz": "4b8e1706f0d5622152739bf3a3fe901734fb96596e926a143c5920e30383b713",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_polarity_fine/prefix-cpu.npz": "b2ea0ba91818394452703c48d52376ad0e310e64f8259d40246ec399418becc5"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_full_coarse",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.862645149230957e-09,
+        "effective_phase_abs_max": 2.29874397295049e-10,
+        "chemical_log_max": 2.45071074514937e-10,
+        "polarity_abs_max": 3.546622232009078e-10,
+        "relative_volume_max": 8.970602038971265e-14,
+        "relative_transport_max": 6.657240862295879e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 92.71011172997532,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_coarse/prefix-gpu.npz": "d391ae355aadc2e92dc0bb455d05172f367a876b474ff96d346de480a584f422",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_coarse/prefix-cpu.npz": "3d585b0c41d3473af08c3e2673bba38eef15993a41216f8c05a206eb99c64009"
+      }
+    },
+    {
+      "passed": true,
+      "case": "h1103_full_fine",
+      "failure": null,
+      "steps": 8,
+      "errors": {
+        "phase_abs_max": 1.4901161193847656e-08,
+        "effective_phase_abs_max": 8.058755884832181e-10,
+        "chemical_log_max": 1.1509082575193405e-10,
+        "polarity_abs_max": 1.6919809303628242e-10,
+        "relative_volume_max": 5.6914473134384025e-12,
+        "relative_transport_max": 8.388125631446867e-07
+      },
+      "exact_gpu_restart": true,
+      "seconds": 92.38753897300921,
+      "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+      "evidence_sha256": {
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_fine/prefix-gpu.npz": "530926c34bb475876b513fa03bdd18cc92a4ab83131af77f58ec38a65732ee72",
+        "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/fresh-zygote-mature-clock-fix/h1103_full_fine/prefix-cpu.npz": "76528a321d6c0def3a19b0d4a3a8ccab09e44b8c49fd5533e0aa4515899f100b"
+      }
+    }
+  ],
+  "seconds": 7674.129595708975,
+  "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+  "scope": "Actual mature endpoints from three existing fresh developmental histories, four matched contexts, two larger timesteps, six elapsed units. Numerical clock/backend/transport qualification only; no new histories, reset chemistry, backend handoff, further division or long-window identity claim."
+}

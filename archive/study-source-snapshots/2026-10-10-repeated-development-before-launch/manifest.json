@@ -1,0 +1,32 @@
+{
+  "superseded_before_run": true,
+  "no_trajectories_launched": true,
+  "old_study": "output/studies/repeated-development-gpu-qualification",
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/qualify_repeated_development.py": "25f898bd8e1bd2654b491621a77d5195c180a7ce295a444518a778c89fd4dd66",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/qualify_development_gpu.py": "227a8ca4d7b71ab17b98717aad6ae85afd30690d17e88c96c7914aff4ad08650",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_gpu.py": "fba99c04be537ae717fa812c00f899360e6bdda64128428d31278b8285942a2b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/development_reference.py": "df59cdf08c3c1b37b2ba55f6e59a1197903ff067055155ade5e5f5861491514f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_development_kernels.cu": "afb406b026f3c106b8cd375fa18e72896284c0f0aebbfedb3455967f4e8f2f8b",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_backend.py": "c96694455939db05026eae0c731c55f4a27cf4452f260b7fda5b7229e288d8b4",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_control.py": "8f40252be6ca3d88f79ada7ebdc138cf115af251aa7896054c6519c49dc03d2f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_precision_kernels.cu": "e936ef8580bc403ff2d7e54dc9fce74fd58362f16b826e0dc4f135380dfe5874",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/gpu_kernels.cu": "33c1d3f557919c46bac061542d460fc107fd14e26600f0ab9cea4dd64ecc16cf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_spatial_bench.cu": "0e6f0560bbb21b3a5d492c53c72ec1eae73acc635c06238f727603b00027d8ed",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cuda_mechanics.cu": "6430d26b3959187581420dce1c44922ebfcabeeced1bbeb257f6cc5058cf952d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_moving.py": "f2dd90cc3c9a93364011482367c86558c1a930e093839fab2f5dee65e27495d2",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/compensated_chemistry.py": "2cd3bfa3fc1ea9e880280e9690aa3b2abe893eda4787a59fc766965887ed9d11",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_development.py": "742ed709ef48edb7d1cdd34ea28e44a92fd3abb808ff4450ea40bba87edfc0a8",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/model.py": "0c0e5d8b43ec58bb99198b36d4f83a7fe1702640025cb1228ffa06c34c73039f",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/transport.py": "ec6fbf0b38327a170f05c93cefa86060295538ecd84cb04eb1ab6d4fa144131e",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/signaling.py": "fd7ed395c602eabf84cc145e52b6c364d12db4581d567ca07f69f3af7772fb31",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/polarity.py": "80fcc4a88f4801fd68ac0c3d4f9da9a39c4b09f0e811209dc30ce86fdcabf590",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving.py": "f88f1a820c49afb9334083e193bf2ee3d1a5b05c430567444d0adbeb411b6921",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/shape.py": "f60888429c9e208a1c3770c900bce29492d4cde53157cdd6a4a07de969b87a28",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cleavage_measurement.py": "231b85133bb8ca166eda8e49b4476219f3b8f80acde7b820c52c205d4a6a3b3a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/resolution.py": "951b467623d332bd48b7025ea5f4445dbeda9b00437e50c587e7648c0501011a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/repeated_development_gpu.md": "c59ea8b683882f13129f59b1e8bc8b88b268d99af0809e69cd7c4b7c444ae34d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_repeated_development_gpu.py": "8a96630dd32cf35e2cc346df6313fc5cd73ad33e409e834669149e88322b801e"
+  },
+  "reason": "Add inherited per-cell, phase-field and contact-matrix backend gates conditional on verified ancestry/partition correspondence, before any trajectory launch."
+}

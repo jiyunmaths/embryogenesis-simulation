@@ -1,0 +1,13 @@
+{
+  "state": "running",
+  "stage": "production",
+  "case": "polarity_space88",
+  "completed": [
+    "tension_adhesion_space88",
+    "tension_adhesion_space104",
+    "tension_adhesion_space120",
+    "tension_adhesion_time120_half"
+  ],
+  "new_total": 12,
+  "replay_total": 12
+}

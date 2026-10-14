@@ -1,0 +1,17 @@
+{
+  "case": "polarity_space88",
+  "original_folder": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/polarity_space88",
+  "archived_folder": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88",
+  "files_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/gpu-history.json": "143920f9eeb78471b614f5b67870d4a86a3e0170a62de8fcb8cdfbb85261a475",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/gpu-progress.json": "90332ac27f407a9b47e2d22ad6b8e2ec589d19027f66a1baacad772c5c863a74",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/network.jsonl": "90e7bc421ac2523b4600678fedf5ae9583fd5190472111bfb8fafe0266bfa136",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/gpu-t03.npz": "3e09dc7c68dfd6bd1a0442e112747edc344a8e21b08279cbc84c25369fb9badf",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/projection.jsonl": "98d73b11f1f99b297aa5a0409353e2aef1271a1ff048ac77fad2c77f8d48421a",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/gpu-t00.npz": "cd4e4c9d1c9af925365d5cbb4f5eab2bdf966a347a6f44d93579bf7f1e4c8849",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/restart-stage-2.npz": "7bab16fd37a9c7d0dbbda6ecdd79472336428943e751e559fee671b2f1e62903",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/gpu-t06.npz": "3e240df03bd981eeca2531af15e006c0071f24322533bd7df5765c87ca312cc3",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-control-qualification/storage-interrupted-attempts/2026-10-10/polarity_space88/source.npz": "6c30a580ebfa2973fce32d1c3924b3c60482f26c7b6a219d05927ad4ba0a5f09"
+  },
+  "source_sha256": "6c30a580ebfa2973fce32d1c3924b3c60482f26c7b6a219d05927ad4ba0a5f09"
+}

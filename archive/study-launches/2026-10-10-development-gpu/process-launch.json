@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-10T03:30:31.836697+00:00",
+  "pid": 344869,
+  "argv": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "embryo.qualify_development_gpu",
+    "run",
+    "--output",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/output/studies/development-gpu-cleavage-qualification-v2",
+    "--workers",
+    "4"
+  ],
+  "cwd": "/home/sji/Documents/Programming/Python/embryogenesis-simulation",
+  "workers": 4,
+  "gpu_uuid": "GPU-2991ab3d-dcbd-41f3-eac1-133be278f56e",
+  "protocol_sha256": "e4315b596344d458929f11e1fdb5bed3d2cf2fbacad1355805e80ed6222da0d2",
+  "launcher_sha256": "29c27b7451d38570622791a320825a79e7d540cc5105d2049e887d3a91c7c7cd"
+}

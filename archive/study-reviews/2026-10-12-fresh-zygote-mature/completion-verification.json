@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "utc": "2026-10-12T15:01:57.201923+00:00",
+  "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+  "snapshot_files_checked": 71,
+  "only_existing_document_changes": [
+    "README.md",
+    "docs/lab_notebook.md"
+  ],
+  "manuscript_and_ledger_unchanged": true,
+  "original_production_records_unchanged": true,
+  "all58_production_source_pins_unchanged": true,
+  "new_simulation_launched": false,
+  "artifacts_sha256": {
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/review_saved_evidence.py": "b6b7f6e3733e04a0a75cd509a03663122e1692b7df7cc195c699e22a03d44cda",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/record_assessment.py": "206524e43bf1d1e1223748a3bcc66e1c1bb6d25ec4760a96bea2c65962d2546c",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/independent_review.json": "46984bc8bb8602519724a85b1fd31c293cdc4122fa47c435dac939534625f889",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/review.log": "4527ca318a8c356499b4c56ff883e54bd92ac612554089a0a1a2e5b906442f32",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/scope.md": "d28321b982277c7a44e09e2b865f3a14dd76508363373faeb3b895c079b5cfc1",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/mature-short-window.png": "9911ae7ea1f94b68cff21f031b9cf6318d665d6dd8a5570f21ba4b714c8f58ee",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/mature-short-window.svg": "b2321350c3edba7e99b7e52b4957fe3fb87dda3cd962f48ef8c498a13b500746",
+    "archive/study-reviews/2026-10-12-fresh-zygote-mature/plot_short_window.py": "90bc1e1637ef1a532d96abc42fae5c4b2b4c09840c9d77ca1df7e6560d505f8c",
+    "docs/fresh_zygote_mature_clock_fix_assessment.md": "c19ccbd145d0487fd85287b71e55641dfa483bcd97aaeb0e28f13198d2247a7b",
+    "docs/fresh_zygote_mature_clock_fix_assessment.json": "b0fc79f2dec7dd5a8354b90b7e199a975c1207e708cfa2078f7c0760ef3cf1a7",
+    "README.md": "f4c1c9402ecbe1b94e689aa9bddd6c245d2b1d5858ad05ef9b8cc77c36f50fd6",
+    "docs/lab_notebook.md": "e1c551e1f4874e8674110bb0d17f3d50e1080fe2c6c4e27e1fdeb3619c4f23a6"
+  }
+}

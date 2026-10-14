@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "counts": {
+    "long_cases": 36,
+    "controls": 12,
+    "pulses": 24,
+    "gpu_paths": 108,
+    "cpu_paths": 108,
+    "reused_reference_paths": 72,
+    "actual_start_prefix_cases": 144,
+    "independent_histories": 3,
+    "new_histories": 0
+  },
+  "diagnosed_control": {
+    "order_record": {
+      "trial": "seed-9_cell-30_matched-S_physics-S_chemistry-R_amountmatched_wait-60_control",
+      "errors": [
+        1.4432899320127045e-15,
+        1.4432899320127045e-15,
+        1.4432899320127045e-15
+      ],
+      "reference_noise": 1.554312234475218e-15,
+      "order_resolved": false,
+      "orders": null,
+      "passed": true
+    },
+    "stored_max_log_relaxation": 1.567634910770844e-13,
+    "passed": true
+  },
+  "raw_error_max": 1.1960691962665826e-06,
+  "cpu_gpu_error_max": 8.881784197001248e-16
+}

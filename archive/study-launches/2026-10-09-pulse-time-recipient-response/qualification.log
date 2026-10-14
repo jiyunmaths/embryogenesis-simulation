@@ -1,0 +1,13 @@
+Compensated production: coarse 0.0
+Compensated production: coarse 0.3
+Compensated production: coarse 0.3
+Compensated production: coarse 0.6
+Compensated production: fine 0.0
+Compensated production: fine 0.3
+Compensated production: fine 0.3
+Compensated production: fine 0.6
+Compensated production: diagnostic 0.0
+Compensated production: diagnostic 0.3
+Compensated production: diagnostic 0.3
+Compensated production: diagnostic 0.6
+{'passed': True}

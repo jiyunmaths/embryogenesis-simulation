@@ -1,0 +1,2488 @@
+{
+  "created_utc": "2026-10-08T11:35:57.918976+00:00",
+  "independent_response_reconstruction_passed": true,
+  "scope": "Response/dose/raw-history audit only, not full mechanical/provenance acceptance. No project numerical helpers called. Histories are the three existing independent units; recipients, doses and timestep paths are nested.",
+  "root": "/home/sji/Documents/Programming/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response",
+  "protocol_sha256": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+  "script_sha256": "61919efedc57b1a96bdf061d861cd6eb2468edf12f8ebed084033d9e3e0eba70",
+  "independent_histories": 3,
+  "new_histories": 0,
+  "raw_logical_paths_checked": 66,
+  "normalized_target_effects": 24,
+  "pulse_metric_records": 48,
+  "full_response_refinement_rows": 24,
+  "effect_screen": 0.01,
+  "max_relative_pulse_amount_error": 4.218847493575595e-15,
+  "max_difference_from_saved_primary_effect": 1.249000902703301e-16,
+  "max_coarse_fine_primary_effect_discrepancy": 4.212906001416217e-07,
+  "max_full_network_normalized_response_error": 1.758616974270051e-05,
+  "max_relative_target_auc_error": 1.4149656805351185e-05,
+  "max_recovery_time_discrepancy": 0.0,
+  "all_48_target_recovered": true,
+  "all_48_network_recovered": true,
+  "history_outcomes": [
+    {
+      "history": 7,
+      "recipients": 2,
+      "fractional_above_screen": 0,
+      "amount_above_screen": 0,
+      "both_doses_above_screen": 0
+    },
+    {
+      "history": 8,
+      "recipients": 2,
+      "fractional_above_screen": 1,
+      "amount_above_screen": 1,
+      "both_doses_above_screen": 1
+    },
+    {
+      "history": 9,
+      "recipients": 2,
+      "fractional_above_screen": 1,
+      "amount_above_screen": 1,
+      "both_doses_above_screen": 1
+    }
+  ],
+  "recipients": [
+    {
+      "history": 7,
+      "cell": 22,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0093520550713506,
+            "raw_log_response_shift_rms": 0.0009853373447778887,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0006479449286493997
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.009577565593833196,
+            "raw_log_response_shift_rms": 0.001184014128047935,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.00042243440616680436
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.009352072630163645,
+            "raw_log_response_shift_rms": 0.0009853391947834851,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0006479273698363555
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.009577582806026028,
+            "raw_log_response_shift_rms": 0.0011840145270236838,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0004224171939739719
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          1.0154982899299196,
+          1.01421939245136
+        ],
+        "final_species_ratios": [
+          1.0124940041515242,
+          1.0114501480542153
+        ],
+        "late_two_species_state_log_rms": 0.012411982269540113,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.12980104602702436,
+            0.13018047179312234
+          ],
+          "redistributed": [
+            0.13180751390090048,
+            0.13202632396423883
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7440381872527158,
+            1.8493267787430974
+          ],
+          "redistributed": [
+            1.8695480993644744,
+            1.962910710724345
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.071965116950488,
+          1.06141907059738
+        ],
+        "final_aggregate_amount_ratios": [
+          1.072341218040595,
+          1.0622153209482015
+        ]
+      }
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 5.163825431343596e-05,
+            "raw_log_response_shift_rms": 5.440633102133395e-06,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009948361745686564
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00010065295622963573,
+            "raw_log_response_shift_rms": 0.00019660522710237337,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009899347043770365
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 5.164222633958311e-05,
+            "raw_log_response_shift_rms": 5.44105159685677e-06,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.009948357773660417
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.0001006528520619906,
+            "raw_log_response_shift_rms": 0.00019660519045273784,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.00989934714793801
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          1.0273344761403955,
+          1.0226235102518824
+        ],
+        "final_species_ratios": [
+          1.0249906192726566,
+          1.0206580308349884
+        ],
+        "late_two_species_state_log_rms": 0.023083749468630003,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.0022553658320664982,
+            0.024299226806857525
+          ],
+          "redistributed": [
+            0.0023170135728448507,
+            0.02484894449734849
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7440381872527158,
+            1.8493267787430974
+          ],
+          "redistributed": [
+            1.6436031818059265,
+            1.781327290067742
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.942412381689303,
+          0.9632301389581501
+        ],
+        "final_aggregate_amount_ratios": [
+          0.9411728489848683,
+          0.961034806513611
+        ]
+      }
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0726632928594919,
+            "raw_log_response_shift_rms": 0.0076558420050717255,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.0626632928594919
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.07314593519561702,
+            "raw_log_response_shift_rms": 0.008386342165392264,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06314593519561702
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07266371415009204,
+            "raw_log_response_shift_rms": 0.007655886392466599,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06266371415009205
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.0731463506928081,
+            "raw_log_response_shift_rms": 0.008386367942052116,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.0631463506928081
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": true,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.8704849891887138,
+          0.8816237652854508
+        ],
+        "final_species_ratios": [
+          0.8829415558448033,
+          0.8930034271896579
+        ],
+        "late_two_species_state_log_rms": 0.12143541094337716,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.15241634489081812,
+            0.1508234086013073
+          ],
+          "redistributed": [
+            0.13272686380216817,
+            0.13302033700695068
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7318612392254837,
+            1.822582526154049
+          ],
+          "redistributed": [
+            1.8731354917155227,
+            1.9687494103857355
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.081573655723838,
+          1.0801976767220098
+        ],
+        "final_aggregate_amount_ratios": [
+          1.0818683751969749,
+          1.0808611878870116
+        ]
+      }
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006403129741322762,
+            "raw_log_response_shift_rms": 0.0006746370513697299,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003596870258677238
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.007978945596008348,
+            "raw_log_response_shift_rms": 0.006177890253565369,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.002021054403991652
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.0064031914381518,
+            "raw_log_response_shift_rms": 0.000674643551779452,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0035968085618482
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.007979022562964868,
+            "raw_log_response_shift_rms": 0.006177884463454338,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0020209774370351322
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.0736075091612297,
+          0.4280531109598504
+        ],
+        "final_species_ratios": [
+          0.06133830163841029,
+          0.4320444381885242
+        ],
+        "late_two_species_state_log_rms": 2.06972935617417,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.001497970049604922,
+            0.018837081968910045
+          ],
+          "redistributed": [
+            0.00011026347217816148,
+            0.008063390593315328
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.7318612392254837,
+            1.822582526154049
+          ],
+          "redistributed": [
+            1.6062864237725991,
+            1.7045369671499342
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.9274914106230336,
+          0.9352317070364926
+        ],
+        "final_aggregate_amount_ratios": [
+          0.9269715404967203,
+          0.9345332821359306
+        ]
+      }
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07296451081268623,
+            "raw_log_response_shift_rms": 0.007687578483945663,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06296451081268624
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.07346874339850201,
+            "raw_log_response_shift_rms": 0.00843970109429157,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06346874339850202
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.07296491808289647,
+            "raw_log_response_shift_rms": 0.007687621394145025,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.06296491808289648
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.073469151509408,
+            "raw_log_response_shift_rms": 0.00843972620554079,
+            "response_shift_detected": true,
+            "signed_margin_above_screen": 0.063469151509408
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": true,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.8693113496603582,
+          0.8805049367254612
+        ],
+        "final_species_ratios": [
+          0.8806392592899117,
+          0.8908878301399219
+        ],
+        "late_two_species_state_log_rms": 0.12370169385291639,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.15116090638930987,
+            0.14963984247893897
+          ],
+          "redistributed": [
+            0.1314564309034672,
+            0.13180929504893485
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.6352189340399077,
+            1.7614084037788023
+          ],
+          "redistributed": [
+            1.775514887544444,
+            1.9057473835018635
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          1.085796434094563,
+          1.081945208966533
+        ],
+        "final_aggregate_amount_ratios": [
+          1.0862087762479595,
+          1.0826515781316286
+        ]
+      }
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "by_timestep": {
+        "coarse": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006645381088000517,
+            "raw_log_response_shift_rms": 0.0007001607781744959,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003354618911999483
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00825106714101174,
+            "raw_log_response_shift_rms": 0.006278039985733709,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0017489328589882606
+          }
+        },
+        "fine": {
+          "fractional": {
+            "normalized_response_shift_rms": 0.006645432167359139,
+            "raw_log_response_shift_rms": 0.0007001661599220598,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.003354567832640861
+          },
+          "amount": {
+            "normalized_response_shift_rms": 0.00825114628319589,
+            "raw_log_response_shift_rms": 0.006278033744871113,
+            "response_shift_detected": false,
+            "signed_margin_above_screen": -0.0017488537168041107
+          }
+        }
+      },
+      "same_effect_decisions": true,
+      "shifted_at_both_doses": false,
+      "fine_baseline": {
+        "initial_species_ratios": [
+          0.05712266511414232,
+          0.4136118596271722
+        ],
+        "final_species_ratios": [
+          0.05897573389709047,
+          0.4223104402552907
+        ],
+        "late_two_species_state_log_rms": 2.0972472549405388,
+        "initial_target_species_amounts": {
+          "sham": [
+            0.001531332506671746,
+            0.019167409851487884
+          ],
+          "redistributed": [
+            8.747512495180173e-05,
+            0.007927988662764833
+          ]
+        },
+        "initial_aggregate_species_amounts": {
+          "sham": [
+            1.6352189340399077,
+            1.7614084037788023
+          ],
+          "redistributed": [
+            1.5076036214135882,
+            1.6412486848287087
+          ]
+        },
+        "initial_aggregate_amount_ratios": [
+          0.9219582711710425,
+          0.9317820224473147
+        ],
+        "final_aggregate_amount_ratios": [
+          0.921399371360333,
+          0.9308904222159531
+        ]
+      }
+    }
+  ],
+  "pulse_doses_and_metrics": [
+    {
+      "job": "seed-7_coarse_sham_cell-22_fractional",
+      "history": 7,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 22,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.12980104602702436,
+      "starting_volume": 0.13451610941292766,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.211126667504261,
+        "target_inhibitor_peak_gain": 1.495622290642232,
+        "target_activator_log_auc_per_log_pulse": 2.5489998781587118,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06397308569850586,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 7.545149776815806e-06,
+        "late_max_log_rms_from_control": 7.808527678121769e-06
+      }
+    },
+    {
+      "job": "seed-7_coarse_sham_cell-22_amount",
+      "history": 7,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 22,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.12980104602702436,
+      "starting_volume": 0.13451610941292766,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.211126667504261,
+        "target_inhibitor_peak_gain": 1.495622290642232,
+        "target_activator_log_auc_per_log_pulse": 2.5489998781587118,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06397308569850586,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 7.545149776815806e-06,
+        "late_max_log_rms_from_control": 7.808527678121769e-06
+      }
+    },
+    {
+      "job": "seed-7_coarse_sham_cell-23_fractional",
+      "history": 7,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 23,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00022553658320664967,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.0022553658320664982,
+      "starting_volume": 0.13661547681180883,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0012639012265999638,
+        "target_activator_log_auc_per_log_pulse": 1.158121339365842,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000658072869996016,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.1693948405485206e-07,
+        "late_max_log_rms_from_control": 4.3546901281978865e-07
+      }
+    },
+    {
+      "job": "seed-7_coarse_sham_cell-23_amount",
+      "history": 7,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 23,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00022553658320664967,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.0022553658320664982,
+      "starting_volume": 0.13661547681180883,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0012639012265999638,
+        "target_activator_log_auc_per_log_pulse": 1.158121339365842,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000658072869996016,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.1693948405485206e-07,
+        "late_max_log_rms_from_control": 4.3546901281978865e-07
+      }
+    },
+    {
+      "job": "seed-7_fine_sham_cell-22_fractional",
+      "history": 7,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 22,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.12980104602702436,
+      "starting_volume": 0.13451610941292766,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2111282661362868,
+        "target_inhibitor_peak_gain": 1.495629818833201,
+        "target_activator_log_auc_per_log_pulse": 2.5489999598199957,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06397362706218328,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 7.543632739891851e-06,
+        "late_max_log_rms_from_control": 7.806680890635726e-06
+      }
+    },
+    {
+      "job": "seed-7_fine_sham_cell-22_amount",
+      "history": 7,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 22,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.12980104602702436,
+      "starting_volume": 0.13451610941292766,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2111282661362868,
+        "target_inhibitor_peak_gain": 1.495629818833201,
+        "target_activator_log_auc_per_log_pulse": 2.5489999598199957,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06397362706218328,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 5.25,
+        "final_log_rms_from_control": 7.543632739891851e-06,
+        "late_max_log_rms_from_control": 7.806680890635726e-06
+      }
+    },
+    {
+      "job": "seed-7_fine_sham_cell-23_fractional",
+      "history": 7,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 23,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00022553658320664967,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.0022553658320664982,
+      "starting_volume": 0.13661547681180883,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0012639355872032848,
+        "target_activator_log_auc_per_log_pulse": 1.1581207230762758,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000658078745294082,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.179591655297071e-07,
+        "late_max_log_rms_from_control": 4.362609456293199e-07
+      }
+    },
+    {
+      "job": "seed-7_fine_sham_cell-23_amount",
+      "history": 7,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 23,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00022553658320664967,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.0022553658320664982,
+      "starting_volume": 0.13661547681180883,
+      "starting_global_species_amounts": [
+        1.7440381872527158,
+        1.8493267787430974
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0012639355872032848,
+        "target_activator_log_auc_per_log_pulse": 1.1581207230762758,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000658078745294082,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.179591655297071e-07,
+        "late_max_log_rms_from_control": 4.362609456293199e-07
+      }
+    },
+    {
+      "job": "seed-7_coarse_redistributed-cell-22_cell-22_fractional",
+      "history": 7,
+      "level": "coarse",
+      "background": "redistributed-cell-22",
+      "recipient": 22,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01318075139009005,
+      "requested_removed_amount": 0.013180751390090048,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13180751390090048,
+      "starting_volume": 0.13451077585377583,
+      "starting_global_species_amounts": [
+        1.8695480993644744,
+        1.962910710724345
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2070991719666038,
+        "target_inhibitor_peak_gain": 1.5073124817974894,
+        "target_activator_log_auc_per_log_pulse": 2.4231463414848773,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06816267673431958,
+        "target_recovery_time": 3.9,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 3.807332908148695e-06,
+        "late_max_log_rms_from_control": 3.9508726411440285e-06
+      }
+    },
+    {
+      "job": "seed-7_coarse_redistributed-cell-22_cell-22_amount",
+      "history": 7,
+      "level": "coarse",
+      "background": "redistributed-cell-22",
+      "recipient": 22,
+      "dose": "amount",
+      "observed_factor": 0.901522271238182,
+      "actual_log_amplitude": 0.1036705319981273,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.13180751390090048,
+      "starting_volume": 0.13451077585377583,
+      "starting_global_species_amounts": [
+        1.8695480993644744,
+        1.962910710724345
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2068937270940359,
+        "target_inhibitor_peak_gain": 1.507526259538317,
+        "target_activator_log_auc_per_log_pulse": 2.4199732691639237,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06824527811914187,
+        "target_recovery_time": 3.9,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 3.748931983762189e-06,
+        "late_max_log_rms_from_control": 3.89056508884867e-06
+      }
+    },
+    {
+      "job": "seed-7_fine_redistributed-cell-22_cell-22_fractional",
+      "history": 7,
+      "level": "fine",
+      "background": "redistributed-cell-22",
+      "recipient": 22,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01318075139009005,
+      "requested_removed_amount": 0.013180751390090048,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13180751390090048,
+      "starting_volume": 0.13451077585377583,
+      "starting_global_species_amounts": [
+        1.8695480993644744,
+        1.962910710724345
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2071008975390565,
+        "target_inhibitor_peak_gain": 1.5073205147950801,
+        "target_activator_log_auc_per_log_pulse": 2.4231470751791306,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06816305817648108,
+        "target_recovery_time": 3.9,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 3.806273805419622e-06,
+        "late_max_log_rms_from_control": 3.950188085698199e-06
+      }
+    },
+    {
+      "job": "seed-7_fine_redistributed-cell-22_cell-22_amount",
+      "history": 7,
+      "level": "fine",
+      "background": "redistributed-cell-22",
+      "recipient": 22,
+      "dose": "amount",
+      "observed_factor": 0.901522271238182,
+      "actual_log_amplitude": 0.1036705319981273,
+      "measured_removed_amount": 0.012980104602702436,
+      "requested_removed_amount": 0.012980104602702436,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.13180751390090048,
+      "starting_volume": 0.13451077585377583,
+      "starting_global_species_amounts": [
+        1.8695480993644744,
+        1.962910710724345
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.20689548267585,
+        "target_inhibitor_peak_gain": 1.507534329468446,
+        "target_activator_log_auc_per_log_pulse": 2.419974035804621,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06824565286396975,
+        "target_recovery_time": 3.9,
+        "network_recovery_time": 5.3999999999999995,
+        "final_log_rms_from_control": 3.7481388440152915e-06,
+        "late_max_log_rms_from_control": 3.890009520763855e-06
+      }
+    },
+    {
+      "job": "seed-7_coarse_redistributed-cell-23_cell-23_fractional",
+      "history": 7,
+      "level": "coarse",
+      "background": "redistributed-cell-23",
+      "recipient": 23,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00023170135728448497,
+      "requested_removed_amount": 0.00023170135728448507,
+      "relative_dose_error": 4.440892098500626e-16,
+      "target_starting_amount": 0.0023170135728448507,
+      "starting_volume": 0.1366153882071288,
+      "starting_global_species_amounts": [
+        1.6436031818059265,
+        1.781327290067742
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0013076292027058311,
+        "target_activator_log_auc_per_log_pulse": 1.1593489488066666,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000668620000095898,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.237575756547882e-07,
+        "late_max_log_rms_from_control": 4.4044116685314475e-07
+      }
+    },
+    {
+      "job": "seed-7_coarse_redistributed-cell-23_cell-23_amount",
+      "history": 7,
+      "level": "coarse",
+      "background": "redistributed-cell-23",
+      "recipient": 23,
+      "dose": "amount",
+      "observed_factor": 0.9026606551425014,
+      "actual_log_amplitude": 0.10240859337899284,
+      "measured_removed_amount": 0.00022553658320664994,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 4.440892098500626e-16,
+      "target_starting_amount": 0.0023170135728448507,
+      "starting_volume": 0.1366153882071288,
+      "starting_global_species_amounts": [
+        1.6436031818059265,
+        1.781327290067742
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0013108597442415195,
+        "target_activator_log_auc_per_log_pulse": 1.1603757126433236,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006696626014114941,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.1208213213092527e-07,
+        "late_max_log_rms_from_control": 4.2831302092648924e-07
+      }
+    },
+    {
+      "job": "seed-7_fine_redistributed-cell-23_cell-23_fractional",
+      "history": 7,
+      "level": "fine",
+      "background": "redistributed-cell-23",
+      "recipient": 23,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00023170135728448497,
+      "requested_removed_amount": 0.00023170135728448507,
+      "relative_dose_error": 4.440892098500626e-16,
+      "target_starting_amount": 0.0023170135728448507,
+      "starting_volume": 0.1366153882071288,
+      "starting_global_species_amounts": [
+        1.6436031818059265,
+        1.781327290067742
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0013076379492620845,
+        "target_activator_log_auc_per_log_pulse": 1.1593488658127553,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006686168436773962,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.233002645362352e-07,
+        "late_max_log_rms_from_control": 4.4128750035882104e-07
+      }
+    },
+    {
+      "job": "seed-7_fine_redistributed-cell-23_cell-23_amount",
+      "history": 7,
+      "level": "fine",
+      "background": "redistributed-cell-23",
+      "recipient": 23,
+      "dose": "amount",
+      "observed_factor": 0.9026606551425014,
+      "actual_log_amplitude": 0.10240859337899284,
+      "measured_removed_amount": 0.00022553658320664994,
+      "requested_removed_amount": 0.00022553658320664983,
+      "relative_dose_error": 4.440892098500626e-16,
+      "target_starting_amount": 0.0023170135728448507,
+      "starting_volume": 0.1366153882071288,
+      "starting_global_species_amounts": [
+        1.6436031818059265,
+        1.781327290067742
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0013108682266140203,
+        "target_activator_log_auc_per_log_pulse": 1.1603753613917906,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006696577498525827,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 4.121552647996477e-07,
+        "late_max_log_rms_from_control": 4.291955023008621e-07
+      }
+    },
+    {
+      "job": "seed-8_coarse_sham_cell-19_fractional",
+      "history": 8,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 19,
+      "dose": "fractional",
+      "observed_factor": 0.9000000000000001,
+      "actual_log_amplitude": 0.10536051565782616,
+      "measured_removed_amount": 0.015241634489081798,
+      "requested_removed_amount": 0.015241634489081814,
+      "relative_dose_error": 9.992007221626409e-16,
+      "target_starting_amount": 0.15241634489081812,
+      "starting_volume": 0.1361563230684364,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1664167141798532,
+        "target_inhibitor_peak_gain": 1.6451367298256927,
+        "target_activator_log_auc_per_log_pulse": 1.7582966922352723,
+        "other_cells_peak_log_rms_per_log_pulse": 0.20974082444370137,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.64495442090333e-05,
+        "late_max_log_rms_from_control": 5.964878118420362e-05
+      }
+    },
+    {
+      "job": "seed-8_coarse_sham_cell-19_amount",
+      "history": 8,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 19,
+      "dose": "amount",
+      "observed_factor": 0.9129182215350684,
+      "actual_log_amplitude": 0.09110897355436037,
+      "measured_removed_amount": 0.013272686380216829,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.15241634489081812,
+      "starting_volume": 0.1361563230684364,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1650318330740184,
+        "target_inhibitor_peak_gain": 1.6456394553631422,
+        "target_activator_log_auc_per_log_pulse": 1.7515140811736127,
+        "other_cells_peak_log_rms_per_log_pulse": 0.21031960343550674,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.8805418586725006e-05,
+        "late_max_log_rms_from_control": 5.1570857985251045e-05
+      }
+    },
+    {
+      "job": "seed-8_coarse_sham_cell-20_fractional",
+      "history": 8,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 20,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00014979700496049224,
+      "requested_removed_amount": 0.0001497970049604922,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.001497970049604922,
+      "starting_volume": 0.13476385004068825,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006876932704703852,
+        "target_activator_log_auc_per_log_pulse": 1.1148374301088546,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006669594090598878,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 8.543017969701177e-08,
+        "late_max_log_rms_from_control": 9.528142228162869e-08
+      }
+    },
+    {
+      "job": "seed-8_coarse_sham_cell-20_amount",
+      "history": 8,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 20,
+      "dose": "amount",
+      "observed_factor": 0.9926391404015559,
+      "actual_log_amplitude": 0.007388084406390725,
+      "measured_removed_amount": 1.1026347217816186e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 3.3306690738754696e-15,
+      "target_starting_amount": 0.001497970049604922,
+      "starting_volume": 0.13476385004068825,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007486758110157969,
+        "target_activator_log_auc_per_log_pulse": 1.1472398785450262,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007022875644570629,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 8.051029470520239e-09,
+        "late_max_log_rms_from_control": 8.437346490978837e-09
+      }
+    },
+    {
+      "job": "seed-8_fine_sham_cell-19_fractional",
+      "history": 8,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 19,
+      "dose": "fractional",
+      "observed_factor": 0.9000000000000001,
+      "actual_log_amplitude": 0.10536051565782616,
+      "measured_removed_amount": 0.015241634489081798,
+      "requested_removed_amount": 0.015241634489081814,
+      "relative_dose_error": 9.992007221626409e-16,
+      "target_starting_amount": 0.15241634489081812,
+      "starting_volume": 0.1361563230684364,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1664197402787302,
+        "target_inhibitor_peak_gain": 1.6451486706547225,
+        "target_activator_log_auc_per_log_pulse": 1.7583213249744771,
+        "other_cells_peak_log_rms_per_log_pulse": 0.2097407230295398,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.6488233282414895e-05,
+        "late_max_log_rms_from_control": 5.968782547812721e-05
+      }
+    },
+    {
+      "job": "seed-8_fine_sham_cell-19_amount",
+      "history": 8,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 19,
+      "dose": "amount",
+      "observed_factor": 0.9129182215350684,
+      "actual_log_amplitude": 0.09110897355436037,
+      "measured_removed_amount": 0.013272686380216829,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.15241634489081812,
+      "starting_volume": 0.1361563230684364,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1650326254233294,
+        "target_inhibitor_peak_gain": 1.6456514606095751,
+        "target_activator_log_auc_per_log_pulse": 1.751538864496751,
+        "other_cells_peak_log_rms_per_log_pulse": 0.2103195107174473,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.883811458951418e-05,
+        "late_max_log_rms_from_control": 5.160564706445057e-05
+      }
+    },
+    {
+      "job": "seed-8_fine_sham_cell-20_fractional",
+      "history": 8,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 20,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.00014979700496049224,
+      "requested_removed_amount": 0.0001497970049604922,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.001497970049604922,
+      "starting_volume": 0.13476385004068825,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0006877228294557553,
+        "target_activator_log_auc_per_log_pulse": 1.1148374206229874,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006669619429264953,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 8.47187650404018e-08,
+        "late_max_log_rms_from_control": 9.471099607620074e-08
+      }
+    },
+    {
+      "job": "seed-8_fine_sham_cell-20_amount",
+      "history": 8,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 20,
+      "dose": "amount",
+      "observed_factor": 0.9926391404015559,
+      "actual_log_amplitude": 0.007388084406390725,
+      "measured_removed_amount": 1.1026347217816186e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 3.3306690738754696e-15,
+      "target_starting_amount": 0.001497970049604922,
+      "starting_volume": 0.13476385004068825,
+      "starting_global_species_amounts": [
+        1.7318612392254837,
+        1.822582526154049
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007490710118530177,
+        "target_activator_log_auc_per_log_pulse": 1.1472373001113891,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0007022484276672392,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 7.007642100586497e-09,
+        "late_max_log_rms_from_control": 7.875519130002265e-09
+      }
+    },
+    {
+      "job": "seed-8_coarse_redistributed-cell-19_cell-19_fractional",
+      "history": 8,
+      "level": "coarse",
+      "background": "redistributed-cell-19",
+      "recipient": 19,
+      "dose": "fractional",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 0.01327268638021682,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13272686380216817,
+      "starting_volume": 0.13620837704617533,
+      "starting_global_species_amounts": [
+        1.8731354917155227,
+        1.9687494103857355
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2079034226618122,
+        "target_inhibitor_peak_gain": 1.5169930939784697,
+        "target_activator_log_auc_per_log_pulse": 2.335077532203559,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06518865852661992,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 5.1,
+        "final_log_rms_from_control": 2.506186705596461e-06,
+        "late_max_log_rms_from_control": 2.8444988024567923e-06
+      }
+    },
+    {
+      "job": "seed-8_coarse_redistributed-cell-19_cell-19_amount",
+      "history": 8,
+      "level": "coarse",
+      "background": "redistributed-cell-19",
+      "recipient": 19,
+      "dose": "amount",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 0.01327268638021682,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13272686380216817,
+      "starting_volume": 0.13620837704617533,
+      "starting_global_species_amounts": [
+        1.8731354917155227,
+        1.9687494103857355
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2079034226618122,
+        "target_inhibitor_peak_gain": 1.5169930939784697,
+        "target_activator_log_auc_per_log_pulse": 2.335077532203559,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06518865852661992,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 5.1,
+        "final_log_rms_from_control": 2.506186705596461e-06,
+        "late_max_log_rms_from_control": 2.8444988024567923e-06
+      }
+    },
+    {
+      "job": "seed-8_fine_redistributed-cell-19_cell-19_fractional",
+      "history": 8,
+      "level": "fine",
+      "background": "redistributed-cell-19",
+      "recipient": 19,
+      "dose": "fractional",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 0.01327268638021682,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13272686380216817,
+      "starting_volume": 0.13620837704617533,
+      "starting_global_species_amounts": [
+        1.8731354917155227,
+        1.9687494103857355
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.207905089578057,
+        "target_inhibitor_peak_gain": 1.5170011736422826,
+        "target_activator_log_auc_per_log_pulse": 2.33507919180644,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06518904459983234,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 5.1,
+        "final_log_rms_from_control": 2.505739864517284e-06,
+        "late_max_log_rms_from_control": 2.8442171181763504e-06
+      }
+    },
+    {
+      "job": "seed-8_fine_redistributed-cell-19_cell-19_amount",
+      "history": 8,
+      "level": "fine",
+      "background": "redistributed-cell-19",
+      "recipient": 19,
+      "dose": "amount",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 0.01327268638021682,
+      "requested_removed_amount": 0.013272686380216817,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.13272686380216817,
+      "starting_volume": 0.13620837704617533,
+      "starting_global_species_amounts": [
+        1.8731354917155227,
+        1.9687494103857355
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.207905089578057,
+        "target_inhibitor_peak_gain": 1.5170011736422826,
+        "target_activator_log_auc_per_log_pulse": 2.33507919180644,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06518904459983234,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 5.1,
+        "final_log_rms_from_control": 2.505739864517284e-06,
+        "late_max_log_rms_from_control": 2.8442171181763504e-06
+      }
+    },
+    {
+      "job": "seed-8_coarse_redistributed-cell-20_cell-20_fractional",
+      "history": 8,
+      "level": "coarse",
+      "background": "redistributed-cell-20",
+      "recipient": 20,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 1.1026347217816142e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.00011026347217816148,
+      "starting_volume": 0.13476583984420032,
+      "starting_global_species_amounts": [
+        1.6062864237725991,
+        1.7045369671499342
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 6.336723716929497e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9701235669968378,
+        "other_cells_peak_log_rms_per_log_pulse": 5.812255730494901e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.872700041944056e-08,
+        "late_max_log_rms_from_control": 3.1340421955635885e-08
+      }
+    },
+    {
+      "job": "seed-8_coarse_redistributed-cell-20_cell-20_amount",
+      "history": 8,
+      "level": "coarse",
+      "background": "redistributed-cell-20",
+      "recipient": 20,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 1.1026347217816142e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.00011026347217816148,
+      "starting_volume": 0.13476583984420032,
+      "starting_global_species_amounts": [
+        1.6062864237725991,
+        1.7045369671499342
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 6.336723716929497e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9701235669968378,
+        "other_cells_peak_log_rms_per_log_pulse": 5.812255730494901e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.872700041944056e-08,
+        "late_max_log_rms_from_control": 3.1340421955635885e-08
+      }
+    },
+    {
+      "job": "seed-8_fine_redistributed-cell-20_cell-20_fractional",
+      "history": 8,
+      "level": "fine",
+      "background": "redistributed-cell-20",
+      "recipient": 20,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 1.1026347217816142e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.00011026347217816148,
+      "starting_volume": 0.13476583984420032,
+      "starting_global_species_amounts": [
+        1.6062864237725991,
+        1.7045369671499342
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 6.340932028180206e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9701220071321408,
+        "other_cells_peak_log_rms_per_log_pulse": 5.81199722050423e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.8519782654893214e-08,
+        "late_max_log_rms_from_control": 3.0873596817275395e-08
+      }
+    },
+    {
+      "job": "seed-8_fine_redistributed-cell-20_cell-20_amount",
+      "history": 8,
+      "level": "fine",
+      "background": "redistributed-cell-20",
+      "recipient": 20,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 1.1026347217816142e-05,
+      "requested_removed_amount": 1.1026347217816149e-05,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 0.00011026347217816148,
+      "starting_volume": 0.13476583984420032,
+      "starting_global_species_amounts": [
+        1.6062864237725991,
+        1.7045369671499342
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 6.340932028180206e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9701220071321408,
+        "other_cells_peak_log_rms_per_log_pulse": 5.81199722050423e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.8519782654893214e-08,
+        "late_max_log_rms_from_control": 3.0873596817275395e-08
+      }
+    },
+    {
+      "job": "seed-9_coarse_sham_cell-29_fractional",
+      "history": 9,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 29,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01511609063893099,
+      "requested_removed_amount": 0.015116090638930988,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.15116090638930987,
+      "starting_volume": 0.13570737233618754,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1679189925510864,
+        "target_inhibitor_peak_gain": 1.6435420264460907,
+        "target_activator_log_auc_per_log_pulse": 1.7640690349902028,
+        "other_cells_peak_log_rms_per_log_pulse": 0.21219673058783547,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.218771901330632e-05,
+        "late_max_log_rms_from_control": 5.5559777496954074e-05
+      }
+    },
+    {
+      "job": "seed-9_coarse_sham_cell-29_amount",
+      "history": 9,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 29,
+      "dose": "amount",
+      "observed_factor": 0.913035430890507,
+      "actual_log_amplitude": 0.09098059203115592,
+      "measured_removed_amount": 0.013145643090346737,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 1.1102230246251565e-15,
+      "target_starting_amount": 0.15116090638930987,
+      "starting_volume": 0.13570737233618754,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1656892807218342,
+        "target_inhibitor_peak_gain": 1.6441388559063388,
+        "target_activator_log_auc_per_log_pulse": 1.7566383064693436,
+        "other_cells_peak_log_rms_per_log_pulse": 0.21278311883433343,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.505590853288429e-05,
+        "late_max_log_rms_from_control": 4.7969647471552895e-05
+      }
+    },
+    {
+      "job": "seed-9_coarse_sham_cell-30_fractional",
+      "history": 9,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 30,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.0001531332506671746,
+      "requested_removed_amount": 0.0001531332506671746,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.001531332506671746,
+      "starting_volume": 0.13537534855685912,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007066099890406902,
+        "target_activator_log_auc_per_log_pulse": 1.115976727183487,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006451274497731189,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.6465642925175734e-07,
+        "late_max_log_rms_from_control": 1.6931634469731115e-07
+      }
+    },
+    {
+      "job": "seed-9_coarse_sham_cell-30_amount",
+      "history": 9,
+      "level": "coarse",
+      "background": "sham",
+      "recipient": 30,
+      "dose": "amount",
+      "observed_factor": 0.9942876465711602,
+      "actual_log_amplitude": 0.005728731320338723,
+      "measured_removed_amount": 8.74751249518021e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 4.218847493575595e-15,
+      "target_starting_amount": 0.001531332506671746,
+      "starting_volume": 0.13537534855685912,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007699943884055156,
+        "target_activator_log_auc_per_log_pulse": 1.1489953216917062,
+        "other_cells_peak_log_rms_per_log_pulse": 0.000679888891411955,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.0314811074936708e-08,
+        "late_max_log_rms_from_control": 1.175574917437343e-08
+      }
+    },
+    {
+      "job": "seed-9_fine_sham_cell-29_fractional",
+      "history": 9,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 29,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01511609063893099,
+      "requested_removed_amount": 0.015116090638930988,
+      "relative_dose_error": 2.220446049250313e-16,
+      "target_starting_amount": 0.15116090638930987,
+      "starting_volume": 0.13570737233618754,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.167921959589723,
+        "target_inhibitor_peak_gain": 1.6435537658653891,
+        "target_activator_log_auc_per_log_pulse": 1.764092921835606,
+        "other_cells_peak_log_rms_per_log_pulse": 0.2121966341694858,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 5.222269112341295e-05,
+        "late_max_log_rms_from_control": 5.559682441095481e-05
+      }
+    },
+    {
+      "job": "seed-9_fine_sham_cell-29_amount",
+      "history": 9,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 29,
+      "dose": "amount",
+      "observed_factor": 0.913035430890507,
+      "actual_log_amplitude": 0.09098059203115592,
+      "measured_removed_amount": 0.013145643090346737,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 1.1102230246251565e-15,
+      "target_starting_amount": 0.15116090638930987,
+      "starting_volume": 0.13570737233618754,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.1656900556790686,
+        "target_inhibitor_peak_gain": 1.6441507809247187,
+        "target_activator_log_auc_per_log_pulse": 1.75666219259629,
+        "other_cells_peak_log_rms_per_log_pulse": 0.2127830259048948,
+        "target_recovery_time": 4.35,
+        "network_recovery_time": 4.8,
+        "final_log_rms_from_control": 4.508596955752727e-05,
+        "late_max_log_rms_from_control": 4.8001681990775515e-05
+      }
+    },
+    {
+      "job": "seed-9_fine_sham_cell-30_fractional",
+      "history": 9,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 30,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.0001531332506671746,
+      "requested_removed_amount": 0.0001531332506671746,
+      "relative_dose_error": 0.0,
+      "target_starting_amount": 0.001531332506671746,
+      "starting_volume": 0.13537534855685912,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007066281864665977,
+        "target_activator_log_auc_per_log_pulse": 1.115976323200108,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006451332039478553,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 1.6541969805517853e-07,
+        "late_max_log_rms_from_control": 1.6803793804094123e-07
+      }
+    },
+    {
+      "job": "seed-9_fine_sham_cell-30_amount",
+      "history": 9,
+      "level": "fine",
+      "background": "sham",
+      "recipient": 30,
+      "dose": "amount",
+      "observed_factor": 0.9942876465711602,
+      "actual_log_amplitude": 0.005728731320338723,
+      "measured_removed_amount": 8.74751249518021e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 4.218847493575595e-15,
+      "target_starting_amount": 0.001531332506671746,
+      "starting_volume": 0.13537534855685912,
+      "starting_global_species_amounts": [
+        1.6352189340399077,
+        1.7614084037788023
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 0.0007706738670874486,
+        "target_activator_log_auc_per_log_pulse": 1.1490070421625136,
+        "other_cells_peak_log_rms_per_log_pulse": 0.0006798436319117294,
+        "target_recovery_time": 2.6999999999999997,
+        "network_recovery_time": 2.6999999999999997,
+        "final_log_rms_from_control": 9.417130160795544e-09,
+        "late_max_log_rms_from_control": 1.1365533675316812e-08
+      }
+    },
+    {
+      "job": "seed-9_coarse_redistributed-cell-29_cell-29_fractional",
+      "history": 9,
+      "level": "coarse",
+      "background": "redistributed-cell-29",
+      "recipient": 29,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01314564309034671,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.1314564309034672,
+      "starting_volume": 0.13575956606121642,
+      "starting_global_species_amounts": [
+        1.775514887544444,
+        1.9057473835018635
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.209389242509225,
+        "target_inhibitor_peak_gain": 1.5170979414540235,
+        "target_activator_log_auc_per_log_pulse": 2.33828835896813,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06294492230763064,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.95,
+        "final_log_rms_from_control": 4.9605993542370045e-06,
+        "late_max_log_rms_from_control": 5.11367505511731e-06
+      }
+    },
+    {
+      "job": "seed-9_coarse_redistributed-cell-29_cell-29_amount",
+      "history": 9,
+      "level": "coarse",
+      "background": "redistributed-cell-29",
+      "recipient": 29,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01314564309034671,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.1314564309034672,
+      "starting_volume": 0.13575956606121642,
+      "starting_global_species_amounts": [
+        1.775514887544444,
+        1.9057473835018635
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.209389242509225,
+        "target_inhibitor_peak_gain": 1.5170979414540235,
+        "target_activator_log_auc_per_log_pulse": 2.33828835896813,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06294492230763064,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.95,
+        "final_log_rms_from_control": 4.9605993542370045e-06,
+        "late_max_log_rms_from_control": 5.11367505511731e-06
+      }
+    },
+    {
+      "job": "seed-9_fine_redistributed-cell-29_cell-29_fractional",
+      "history": 9,
+      "level": "fine",
+      "background": "redistributed-cell-29",
+      "recipient": 29,
+      "dose": "fractional",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01314564309034671,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.1314564309034672,
+      "starting_volume": 0.13575956606121642,
+      "starting_global_species_amounts": [
+        1.775514887544444,
+        1.9057473835018635
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2093909012359736,
+        "target_inhibitor_peak_gain": 1.5171059183141344,
+        "target_activator_log_auc_per_log_pulse": 2.338290294379466,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06294533705655196,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.95,
+        "final_log_rms_from_control": 4.959109733962564e-06,
+        "late_max_log_rms_from_control": 5.112984331409678e-06
+      }
+    },
+    {
+      "job": "seed-9_fine_redistributed-cell-29_cell-29_amount",
+      "history": 9,
+      "level": "fine",
+      "background": "redistributed-cell-29",
+      "recipient": 29,
+      "dose": "amount",
+      "observed_factor": 0.9,
+      "actual_log_amplitude": 0.10536051565782628,
+      "measured_removed_amount": 0.01314564309034671,
+      "requested_removed_amount": 0.013145643090346722,
+      "relative_dose_error": 8.881784197001252e-16,
+      "target_starting_amount": 0.1314564309034672,
+      "starting_volume": 0.13575956606121642,
+      "starting_global_species_amounts": [
+        1.775514887544444,
+        1.9057473835018635
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.2093909012359736,
+        "target_inhibitor_peak_gain": 1.5171059183141344,
+        "target_activator_log_auc_per_log_pulse": 2.338290294379466,
+        "other_cells_peak_log_rms_per_log_pulse": 0.06294533705655196,
+        "target_recovery_time": 3.75,
+        "network_recovery_time": 4.95,
+        "final_log_rms_from_control": 4.959109733962564e-06,
+        "late_max_log_rms_from_control": 5.112984331409678e-06
+      }
+    },
+    {
+      "job": "seed-9_coarse_redistributed-cell-30_cell-30_fractional",
+      "history": 9,
+      "level": "coarse",
+      "background": "redistributed-cell-30",
+      "recipient": 30,
+      "dose": "fractional",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 8.747512495180177e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 8.747512495180173e-05,
+      "starting_volume": 0.13537740841816925,
+      "starting_global_species_amounts": [
+        1.5076036214135882,
+        1.6412486848287087
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 3.834319503473603e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9658521055043507,
+        "other_cells_peak_log_rms_per_log_pulse": 4.467196363249317e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.6636120575426763e-08,
+        "late_max_log_rms_from_control": 2.865321787637792e-08
+      }
+    },
+    {
+      "job": "seed-9_coarse_redistributed-cell-30_cell-30_amount",
+      "history": 9,
+      "level": "coarse",
+      "background": "redistributed-cell-30",
+      "recipient": 30,
+      "dose": "amount",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 8.747512495180177e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 8.747512495180173e-05,
+      "starting_volume": 0.13537740841816925,
+      "starting_global_species_amounts": [
+        1.5076036214135882,
+        1.6412486848287087
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 3.834319503473603e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9658521055043507,
+        "other_cells_peak_log_rms_per_log_pulse": 4.467196363249317e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.6636120575426763e-08,
+        "late_max_log_rms_from_control": 2.865321787637792e-08
+      }
+    },
+    {
+      "job": "seed-9_fine_redistributed-cell-30_cell-30_fractional",
+      "history": 9,
+      "level": "fine",
+      "background": "redistributed-cell-30",
+      "recipient": 30,
+      "dose": "fractional",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 8.747512495180177e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 8.747512495180173e-05,
+      "starting_volume": 0.13537740841816925,
+      "starting_global_species_amounts": [
+        1.5076036214135882,
+        1.6412486848287087
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 3.820240324417554e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9658506563586138,
+        "other_cells_peak_log_rms_per_log_pulse": 4.467119847615679e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.713916832490476e-08,
+        "late_max_log_rms_from_control": 2.8662733896267165e-08
+      }
+    },
+    {
+      "job": "seed-9_fine_redistributed-cell-30_cell-30_amount",
+      "history": 9,
+      "level": "fine",
+      "background": "redistributed-cell-30",
+      "recipient": 30,
+      "dose": "amount",
+      "observed_factor": 0.8999999999999999,
+      "actual_log_amplitude": 0.1053605156578264,
+      "measured_removed_amount": 8.747512495180177e-06,
+      "requested_removed_amount": 8.747512495180172e-06,
+      "relative_dose_error": 6.661338147750939e-16,
+      "target_starting_amount": 8.747512495180173e-05,
+      "starting_volume": 0.13537740841816925,
+      "starting_global_species_amounts": [
+        1.5076036214135882,
+        1.6412486848287087
+      ],
+      "metrics": {
+        "target_activator_peak_gain": 1.0,
+        "target_inhibitor_peak_gain": 3.820240324417554e-06,
+        "target_activator_log_auc_per_log_pulse": 0.9658506563586138,
+        "other_cells_peak_log_rms_per_log_pulse": 4.467119847615679e-05,
+        "target_recovery_time": 2.25,
+        "network_recovery_time": 2.25,
+        "final_log_rms_from_control": 2.713916832490476e-08,
+        "late_max_log_rms_from_control": 2.8662733896267165e-08
+      }
+    }
+  ],
+  "response_refinement": [
+    {
+      "history": 7,
+      "cell": 22,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 7.773529402603986e-06,
+      "relative_auc_error": 3.2036597819029566e-08,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "background": "redistributed-cell-22",
+      "dose": "fractional",
+      "normalized_response_error": 8.282218662880267e-06,
+      "relative_auc_error": 3.0278577933806616e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 7.773529402603986e-06,
+      "relative_auc_error": 3.2036597819029566e-08,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 22,
+      "background": "redistributed-cell-22",
+      "dose": "amount",
+      "normalized_response_error": 8.294499214515428e-06,
+      "relative_auc_error": 3.167971758255561e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 2.887709115822259e-07,
+      "relative_auc_error": 5.321459378704319e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "background": "redistributed-cell-23",
+      "dose": "fractional",
+      "normalized_response_error": 2.585363698768287e-07,
+      "relative_auc_error": 7.15866533829157e-08,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 2.887709115822259e-07,
+      "relative_auc_error": 5.321459378704319e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 7,
+      "cell": 23,
+      "background": "redistributed-cell-23",
+      "dose": "amount",
+      "normalized_response_error": 2.766777191084725e-07,
+      "relative_auc_error": 3.027050025083966e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 1.7383422308166724e-05,
+      "relative_auc_error": 1.4009432716122205e-05,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "background": "redistributed-cell-19",
+      "dose": "fractional",
+      "normalized_response_error": 8.378300844715537e-06,
+      "relative_auc_error": 7.107270991735248e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 1.758616974270051e-05,
+      "relative_auc_error": 1.4149656805351185e-05,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 19,
+      "background": "redistributed-cell-19",
+      "dose": "amount",
+      "normalized_response_error": 8.378300844715537e-06,
+      "relative_auc_error": 7.107270991735248e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 4.443951135049246e-07,
+      "relative_auc_error": 8.508744819835101e-09,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "background": "redistributed-cell-20",
+      "dose": "fractional",
+      "normalized_response_error": 8.630523597008878e-07,
+      "relative_auc_error": 1.607903106437547e-06,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 1.596400152773079e-06,
+      "relative_auc_error": 2.2475104686225933e-06,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 8,
+      "cell": 20,
+      "background": "redistributed-cell-20",
+      "dose": "amount",
+      "normalized_response_error": 8.630523597008878e-07,
+      "relative_auc_error": 1.607903106437547e-06,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 1.7396974034703453e-05,
+      "relative_auc_error": 1.3540765655628562e-05,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "background": "redistributed-cell-29",
+      "dose": "fractional",
+      "normalized_response_error": 8.263228845147893e-06,
+      "relative_auc_error": 8.27704302874821e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 1.7584473519838706e-05,
+      "relative_auc_error": 1.3597635243556283e-05,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 29,
+      "background": "redistributed-cell-29",
+      "dose": "amount",
+      "normalized_response_error": 8.263228845147893e-06,
+      "relative_auc_error": 8.27704302874821e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "background": "sham",
+      "dose": "fractional",
+      "normalized_response_error": 2.29828056364266e-07,
+      "relative_auc_error": 3.6199982411666554e-07,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "background": "redistributed-cell-30",
+      "dose": "fractional",
+      "normalized_response_error": 6.889389485678947e-07,
+      "relative_auc_error": 1.500380574559479e-06,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "background": "sham",
+      "dose": "amount",
+      "normalized_response_error": 1.982616944755616e-06,
+      "relative_auc_error": 1.0200625351730608e-05,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    },
+    {
+      "history": 9,
+      "cell": 30,
+      "background": "redistributed-cell-30",
+      "dose": "amount",
+      "normalized_response_error": 6.889389485678947e-07,
+      "relative_auc_error": 1.500380574559479e-06,
+      "recovery_time_errors": {
+        "target_recovery_time": 0.0,
+        "network_recovery_time": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "evidence_sha256": {
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/protocol.json": "5574abd1b40bb711676685611cb84b511bdb342a1c377345bbef5d752d78ccc1",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/status.json": "545e9071e0fbd9d9fa178d74d3589c5e4c2bf85e568b0545a19b5eae51b09072",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/docs/phase_carry_redistribution_response.md": "be39c67e9e1f5899e6a3fd52b8d5448adc03a28ffe2f58c01a238c74d47fbcf6",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_redistribution_response.py": "e0632a9048e7049c516187c37e48c997116db9ec24804bdb544b82cc63aac254",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_delayed_response.py": "4ee8a7d79ce9c3b77c032e41067556295757794560b10e5674db6e8489056e18",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response.py": "7ad6d1f1617100c69793dbc59c2557a9a3e94854109ff83c16368d96c56d71ea",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/attribute_persistence.py": "7eb638e84a66d06e910af1dea69b0e9202b1753cc87683bd0554790444350d57",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_exchange.py": "7e62bf8c2471b786e0cb04ee8ac785abd5d9b036a86b3f4de7b017b967903221",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_response_moving_refinement.py": "861a82bf7aee7e2539862c7b30fc7083bfd37526c59e3bacfc6e278a8f4fc689",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/cell_exchange_response_moving.py": "b8d1a83fa20cc3af62878bbdb60df1ee1638be7df3ca1c6a018532de80832d2c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_control/history.json": "02d748c7a25d9fb2ecb1208625017a1bcfdd01624dff6d72dc8a26625955f23c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_control/result.json": "f50e84da7d512f4782f0a1cb3c85be94c72879c817b69f6418e1dab435116860",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_sham_control.json": "9357340667b6a16b4fc5686cc7f2d12ed1381d9c992b6890db7ac0fe24840da7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_sham_control.json": "02d748c7a25d9fb2ecb1208625017a1bcfdd01624dff6d72dc8a26625955f23c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_cell-22_fractional/history.json": "091768263c0514aa3bb33644525406518ac6c4a1c6353ce67fdec5f4a3c5b12b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_cell-22_fractional/result.json": "689314b52f9fd682a4e02f147d1f1679b1acae254234a4a2b014a65eeb0d7a9b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_sham_cell-22_fractional.json": "95d5b549731cba1495ea81eb449d1fe4ce7532e386359b7982529ea7e2c45b0b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_sham_cell-22_fractional.json": "091768263c0514aa3bb33644525406518ac6c4a1c6353ce67fdec5f4a3c5b12b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_sham_cell-22_amount/history.json": "091768263c0514aa3bb33644525406518ac6c4a1c6353ce67fdec5f4a3c5b12b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_sham_cell-22_amount/result.json": "2c28893a91403fb18e1e26dbaf4049f22de6f1127ce79a8830c7a8bc5bee6041",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_sham_cell-22_amount.json": "95d5b549731cba1495ea81eb449d1fe4ce7532e386359b7982529ea7e2c45b0b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_sham_cell-22_amount.json": "091768263c0514aa3bb33644525406518ac6c4a1c6353ce67fdec5f4a3c5b12b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_cell-23_fractional/history.json": "a94abb8651737f2ffd0a7b2848ec3a1b10809ff314945c6110444137141cfede",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_coarse_sham_cell-23_fractional/result.json": "82710094d166ce2a260a74881708cacbea98b6b10da1eca4a0bca29040dff68f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_sham_cell-23_fractional.json": "3a07b652808c2c0b6a3b872f696c9db5f424d50a41cd38cc3c9916ec55d5f0e7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_sham_cell-23_fractional.json": "a94abb8651737f2ffd0a7b2848ec3a1b10809ff314945c6110444137141cfede",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_sham_cell-23_amount/history.json": "a94abb8651737f2ffd0a7b2848ec3a1b10809ff314945c6110444137141cfede",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_sham_cell-23_amount/result.json": "0b1a3727450740cd01cf44bd81932e9298acc043b40959e3ddccb8df72edc31b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_sham_cell-23_amount.json": "3a07b652808c2c0b6a3b872f696c9db5f424d50a41cd38cc3c9916ec55d5f0e7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_sham_cell-23_amount.json": "a94abb8651737f2ffd0a7b2848ec3a1b10809ff314945c6110444137141cfede",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/history.json": "6c1338ec7c61cf27fb31896a03c83f35a0c7eb9a0c415404ba455061bbb9511c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_control/result.json": "e11da28ab37937e30fcecd8dc10b2d203555953d37d0fffb1de08222319f1789",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_sham_control.json": "d7a0c4f61090f64f5a1474016ee87fe9c360ca8c7fc64467e1a005fe55274c00",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_sham_control.json": "6c1338ec7c61cf27fb31896a03c83f35a0c7eb9a0c415404ba455061bbb9511c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/history.json": "59d152533515400b40caf12b1f4603a2a81d1789c8035d45a7bdc63499953f4c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-22_fractional/result.json": "158cd05e1c08d8eafd70d6e92e6d0082de451cc27c4e73d13206dcaaaeb00216",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_sham_cell-22_fractional.json": "0f65d391525d303e94fb45842cfd874a6c2b18f0bfa8db5d18b53238c4c0b9e8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_sham_cell-22_fractional.json": "59d152533515400b40caf12b1f4603a2a81d1789c8035d45a7bdc63499953f4c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/history.json": "59d152533515400b40caf12b1f4603a2a81d1789c8035d45a7bdc63499953f4c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-22_amount/result.json": "8c5d0f4f7894fe9e63588ea167d38d44b44a6de270a9f03a18db36780322f3c9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_sham_cell-22_amount.json": "0f65d391525d303e94fb45842cfd874a6c2b18f0bfa8db5d18b53238c4c0b9e8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_sham_cell-22_amount.json": "59d152533515400b40caf12b1f4603a2a81d1789c8035d45a7bdc63499953f4c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/history.json": "5c5772db8ef4415cc396d9916035d82a05f20bf71d2512fc88eabeaebfc2b60f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-7_fine_sham_cell-23_fractional/result.json": "cf957dc72d20148d04ea56339d50b3d263d7bbdb5a1c6b29da6a009fe407c11f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_sham_cell-23_fractional.json": "17897aed0d585a0bdfce927d46736103f6770a55432cadea43550b68b0c0e5d6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_sham_cell-23_fractional.json": "5c5772db8ef4415cc396d9916035d82a05f20bf71d2512fc88eabeaebfc2b60f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/history.json": "5c5772db8ef4415cc396d9916035d82a05f20bf71d2512fc88eabeaebfc2b60f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_sham_cell-23_amount/result.json": "d6bbf82cc18f6765d6c8d3cb3b3700842dccc3ba13feac84ec6c2b4fdc8a595a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_sham_cell-23_amount.json": "17897aed0d585a0bdfce927d46736103f6770a55432cadea43550b68b0c0e5d6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_sham_cell-23_amount.json": "5c5772db8ef4415cc396d9916035d82a05f20bf71d2512fc88eabeaebfc2b60f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_control/history.json": "bd3cdf37a1fd9a0e3a9708ecb39a50c03f0295995627c5d636864ccb80df8007",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_control/result.json": "6fe231258a88bb6d85d01143450ec57da7459857802c231443a32e748f58f0db",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-22_control.json": "bc7e74aa1ed5e1b696d685c68c65155fa61091917daa978362d7a247f012828b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-22_control.json": "bd3cdf37a1fd9a0e3a9708ecb39a50c03f0295995627c5d636864ccb80df8007",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_cell-22_fractional/history.json": "3163247ef9642de830c39f763dde5e3baf8383b029956ea7d4db5ef53333b86f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_cell-22_fractional/result.json": "cb3da9c33264050c3f812e1eff2bea6f82077f3f57d1c2768bb7cddd2098d010",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-22_cell-22_fractional.json": "614135c10738768c62c639ee378eab9c7b71fa9af2585bc4900e9bf6c2d9d085",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-22_cell-22_fractional.json": "3163247ef9642de830c39f763dde5e3baf8383b029956ea7d4db5ef53333b86f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_cell-22_amount/history.json": "d1c660044a1fb7f77a552c9e7fe39747083716e71503ab752c7a78024613599c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-22_cell-22_amount/result.json": "17e247c2cd1c0b1f3790d201b132185d0eae025758eae8d39c95d34db69bb8cf",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-22_cell-22_amount.json": "348055b569fdb49be0f01e75e888e4e9036f39b2199dda0bc01e1a1b4d84d3c8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-22_cell-22_amount.json": "d1c660044a1fb7f77a552c9e7fe39747083716e71503ab752c7a78024613599c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/history.json": "2788172a2c38fc1e300415b21234d42b2c95e66ea24bbd735d3525d07485bdcb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_control/result.json": "8079f3328f7388c8b85563d6cc2a658566d672bc6b2fe378f8d2175c3337d78f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-22_control.json": "7951c1cd70343fdfa1e1bf2b5000a5396c4c3196bfe9a3cb5494663f0ccfbc4d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-22_control.json": "2788172a2c38fc1e300415b21234d42b2c95e66ea24bbd735d3525d07485bdcb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/history.json": "0f897512e43e3e4bc739770a85486ca97c578dcecd0e8c3fe570638cc55390e7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_fractional/result.json": "6b791d4bf3cdc65b346b335fa64bf5ced616a1dbe967a9b3008331f432a3f67f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-22_cell-22_fractional.json": "85756739484f3b6b3e9a050dfde92f0ae021e7bdbcedde425753d85e6b9a13a2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-22_cell-22_fractional.json": "0f897512e43e3e4bc739770a85486ca97c578dcecd0e8c3fe570638cc55390e7",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/history.json": "50747379a457b6dd6225b05ec3c149601ea034606d7d53f2388b2c22b777c396",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-22_cell-22_amount/result.json": "84ea2752ca26a36567f4db8143607db412d6ea22f4482dc69fcfd3cd796018ff",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-22_cell-22_amount.json": "85bb1a3085df0cba3320ffd14cbd27e8c5c2e87dae0b82d1e5699f331c6cc8bf",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-22_cell-22_amount.json": "50747379a457b6dd6225b05ec3c149601ea034606d7d53f2388b2c22b777c396",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_control/history.json": "1635ddc9999d5e96c0a170169291658e2fd90f39ccf73602971595103b2b18f4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_control/result.json": "17802bf2eba92e586f17ed641396a49a30a4fc6f2593de976bf78ed77433a2a3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-23_control.json": "7f126343b20e1e82d28856587dd2c8a7d5b80db52a28bd59c4e55049c11627c2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-23_control.json": "1635ddc9999d5e96c0a170169291658e2fd90f39ccf73602971595103b2b18f4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_cell-23_fractional/history.json": "9723cc6b98492ce47c3d556a0ad7b0e3b0d4ae4b6f3bcb44d6887c86ca948f2b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_cell-23_fractional/result.json": "78c6fb54d68a3c04cd72ce073896081376284faa1e1d2e5233e6fd00c28fc17d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-23_cell-23_fractional.json": "295daec938b882546f3c0b33466063da0d9830c18225ae37f4abe13063da704e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-23_cell-23_fractional.json": "9723cc6b98492ce47c3d556a0ad7b0e3b0d4ae4b6f3bcb44d6887c86ca948f2b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_cell-23_amount/history.json": "2d3879ba0187704468ca39d9f701cf9432ee6cf12e301b4548b30c397c698cf3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_coarse_redistributed-cell-23_cell-23_amount/result.json": "dd1b0cfe2a77fe6a0721464012e3796a577b589f9420d9bdedd83c4a4502b8a8",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_coarse_redistributed-cell-23_cell-23_amount.json": "5b41e80d7dc0fbb76e13e569220e8fb0ad51f126c4a8f890965c7c575c00b7c6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_coarse_redistributed-cell-23_cell-23_amount.json": "2d3879ba0187704468ca39d9f701cf9432ee6cf12e301b4548b30c397c698cf3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/history.json": "20d1f5dac823a8534b1270b4824e30988c71eb908f040f2ae1567848e35a289a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_control/result.json": "abb3b7e4b4e46f869624e7391d021086a6ede71c94a30ad76b3078981a1530f2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-23_control.json": "125411c32c8e83b53d55a6ecab010ea3e9801c05a98a91587f492dce61a41ce9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-23_control.json": "20d1f5dac823a8534b1270b4824e30988c71eb908f040f2ae1567848e35a289a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/history.json": "6d6e48f8db20465a8e2ad017eafd1d07c9d87d6973ed9f9d35c865868c666924",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_fractional/result.json": "011c5a5f978d623b5e3b907298b5077ae769381dae7d083416c897095790716f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-23_cell-23_fractional.json": "be518442309a2cd6a6987105531992fe9b28256cc4c790dc5f6735094182f486",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-23_cell-23_fractional.json": "6d6e48f8db20465a8e2ad017eafd1d07c9d87d6973ed9f9d35c865868c666924",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/history.json": "9aa6c472cc633503887e933c5a05efbdbf21b7f4b6a9c3b68dba095b371c286c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-7_fine_redistributed-cell-23_cell-23_amount/result.json": "a923e641b542880c10637db208f3e483eb836bbdae026acd19b755f3caf8fcbf",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/pilot_seed-7_fine_redistributed-cell-23_cell-23_amount.json": "fd9387bccd7f31958dbafe2b96cccdc8ade3cc374f2029ff322ea423b46ae742",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full_seed-7_fine_redistributed-cell-23_cell-23_amount.json": "9aa6c472cc633503887e933c5a05efbdbf21b7f4b6a9c3b68dba095b371c286c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_control/history.json": "cbfaef7eab892b5410852a628fe98563567176dba628147b1da9b662c6c85e95",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_control/result.json": "641ca828500eede56470a3e4702705e2bf7024d88a408c35b9b908989488d5cd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_sham_control.json": "9b0f4ca3f7b85802a4f134c4d59536a06f5df657cf8780bfd13dcaf387307238",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_sham_control.json": "cbfaef7eab892b5410852a628fe98563567176dba628147b1da9b662c6c85e95",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_cell-19_fractional/history.json": "5303a7f04956194d4614214853a06fa3fce2427ee74b83ff54c0294c7b979da3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_cell-19_fractional/result.json": "79ebcd34e0becfebc6b6fdc87134f2cffb1202294bbc6a58e93f640e8ea4ff26",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_sham_cell-19_fractional.json": "95be12983660f0d3f45958639554577aff6641691c43724eb1db97ef7a15ac02",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_sham_cell-19_fractional.json": "5303a7f04956194d4614214853a06fa3fce2427ee74b83ff54c0294c7b979da3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_sham_cell-19_amount/history.json": "282e7333e9d10c966b590291827445408a68f7e4f76544f9767a0fc8c4f66122",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_sham_cell-19_amount/result.json": "2d2c812a3514ab1bdaa7d31c93d2534bc451c24ce6d634a27cb22398ecd10002",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_sham_cell-19_amount.json": "5bc601abfffc36fc89a372833fde488acbe6748089793d7312219e205ef981fb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_sham_cell-19_amount.json": "282e7333e9d10c966b590291827445408a68f7e4f76544f9767a0fc8c4f66122",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_cell-20_fractional/history.json": "6bb2b27448321fc540318580bd767c2c42c385b02cc75cf31784de0c89ea07d5",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_coarse_sham_cell-20_fractional/result.json": "f61903d343de4151d795f0728a7719678ddfbc5040601baf2b80a461f4b581d5",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_sham_cell-20_fractional.json": "a5c7cbccd5d4111e05ef050d9db45243042d12e1a12df3850143b050b28d9bec",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_sham_cell-20_fractional.json": "6bb2b27448321fc540318580bd767c2c42c385b02cc75cf31784de0c89ea07d5",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_sham_cell-20_amount/history.json": "58295fd2d86a0cf25ae80cb6cfb7e417309386414b04027c122ac60f532f635a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_sham_cell-20_amount/result.json": "dfd7f04fed9b1adf2fe3b39fcba3fc64f816a9836f3265140e75c0bb05ee71e4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_sham_cell-20_amount.json": "e5431e02d7d8fe37b42d83c54297a2357ecca4da483cac645f6385879c256dd4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_sham_cell-20_amount.json": "58295fd2d86a0cf25ae80cb6cfb7e417309386414b04027c122ac60f532f635a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/history.json": "7d3323664280ed0b05626c0619c2f291203fcf2a007524c1812a883eaa7afc1d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_control/result.json": "6f0518380f3187f9a8c2b558528eb2023ee9d9713e7fdf04a79ac10aaf8fd132",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_sham_control.json": "55e7dcda132f5708249b1a5d1a20964c607b7059fa230b28e40e60660f1ea04e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_sham_control.json": "7d3323664280ed0b05626c0619c2f291203fcf2a007524c1812a883eaa7afc1d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/history.json": "0f3c5e6494c9c882f30572db236b40e403310c686f38e74d9a5c6c3afb39be92",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-19_fractional/result.json": "186fcfa4869d3c1688646d2e728d9f2ba39eca6394a8d7cf0b4e31438ded9604",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_sham_cell-19_fractional.json": "47c13be57267eb682567c8bce1387e8b6966196449c0ee650907ae2f059575f2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_sham_cell-19_fractional.json": "0f3c5e6494c9c882f30572db236b40e403310c686f38e74d9a5c6c3afb39be92",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/history.json": "82045b740f67be3f93dcd776085fd774179aaaccccf4331bcf22bc829406aebd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-19_amount/result.json": "25ed24dc7515a06eaa443e8026d0380cb82f3e2ee9332f76bc47cf63d679d88a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_sham_cell-19_amount.json": "48c36299a8f8460bb939f7f44b86aad140484880ac0cf9c76a19a86c08808d04",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_sham_cell-19_amount.json": "82045b740f67be3f93dcd776085fd774179aaaccccf4331bcf22bc829406aebd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/history.json": "35fbe51c5fbe74414782ee33af5919f9f8aecad47649de2a5dd0c3061becac37",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-8_fine_sham_cell-20_fractional/result.json": "30348250a47a5f2186e054a725463aba39431f46f4697137d5a25c5b1c50af70",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_sham_cell-20_fractional.json": "a2f11e518f8ac98ee5faca60eb6bc5fc84e8dd3058a8fd69ef0708e74118429a",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_sham_cell-20_fractional.json": "35fbe51c5fbe74414782ee33af5919f9f8aecad47649de2a5dd0c3061becac37",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/history.json": "3dd6a5f165f5515d85aee370887e5a148c75864267460a993c09aa9c3a8c63e4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_sham_cell-20_amount/result.json": "344d994a0733586f246234d746dba89b6f8ad18dfe09d386ca6e232032a172aa",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_sham_cell-20_amount.json": "d8f1dae4598e66ea9d522482e3dcb1d690acb3e270c4071fcfd26d9a982e36bc",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_sham_cell-20_amount.json": "3dd6a5f165f5515d85aee370887e5a148c75864267460a993c09aa9c3a8c63e4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_control/history.json": "1fb3d62ce714a726b4b79f8246138f9991821b1b0fd4bc9861775af6981e85ca",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_control/result.json": "5fd99e7ffe89453c7b8ca53637500e435a7f97c2076ecfe343cd535c0cf7b1c9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-19_control.json": "ef28f4f9804e010a2aa68619ca746b98ea5acf02ac52295111122c6e783fbcfb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-19_control.json": "1fb3d62ce714a726b4b79f8246138f9991821b1b0fd4bc9861775af6981e85ca",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_cell-19_fractional/history.json": "9609ef721403d57a46136046c499d56fbb1d25ebfb85dab550ec73933a801e05",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_cell-19_fractional/result.json": "17eabba88eaff57e849ba1292686d313ce72667510356473e00156363a08c3fa",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-19_cell-19_fractional.json": "f8f99c59c8dfb66d9efb81b9edb7b14eaafcd0602b9c89430f1b448836911a8d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-19_cell-19_fractional.json": "9609ef721403d57a46136046c499d56fbb1d25ebfb85dab550ec73933a801e05",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_cell-19_amount/history.json": "9609ef721403d57a46136046c499d56fbb1d25ebfb85dab550ec73933a801e05",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-19_cell-19_amount/result.json": "58725c18e4b43a74a7dbd8ce654306cf86efffd86c082c258fdcb218ccce0fd6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-19_cell-19_amount.json": "f8f99c59c8dfb66d9efb81b9edb7b14eaafcd0602b9c89430f1b448836911a8d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-19_cell-19_amount.json": "9609ef721403d57a46136046c499d56fbb1d25ebfb85dab550ec73933a801e05",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/history.json": "2d2483390e20b58760f9405c2ea2e3b0b78e612e1810e66042cc3e084e4e38ab",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_control/result.json": "e7920970fc92fa9eaf027ceaeffb453911a39fc3cef16d218851bd704f3b1d92",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-19_control.json": "5345f57d7e6c8ace75d62d38d0fc6b03f1e3e4567669b8e26ae67645cc3bc515",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-19_control.json": "2d2483390e20b58760f9405c2ea2e3b0b78e612e1810e66042cc3e084e4e38ab",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/history.json": "6da679ce5afd4b721c28b6113d50be52212cbec198224c45f0ca5bb2b7f2175c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_fractional/result.json": "ec6cb4f8ecb6f4c091b64884c084e903da716bc58898e4d8da795c07a004e76c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-19_cell-19_fractional.json": "925fc3e83bf0b3903924270832db1181264c5161611a7d0559198eb9f961cbd9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-19_cell-19_fractional.json": "6da679ce5afd4b721c28b6113d50be52212cbec198224c45f0ca5bb2b7f2175c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/history.json": "6da679ce5afd4b721c28b6113d50be52212cbec198224c45f0ca5bb2b7f2175c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-19_cell-19_amount/result.json": "74ae20770bd567eda842b5e893c35c99c981c735e2429d0b357081499f7309c2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-19_cell-19_amount.json": "925fc3e83bf0b3903924270832db1181264c5161611a7d0559198eb9f961cbd9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-19_cell-19_amount.json": "6da679ce5afd4b721c28b6113d50be52212cbec198224c45f0ca5bb2b7f2175c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_control/history.json": "bef110452003092ec602747219a0d1783c8994a1761d87658ba65185889e5e65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_control/result.json": "b2b395a01df7ac8f0ef39108628096ca66e107d787c60a89e3075444e13034b2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-20_control.json": "b8960eef6cbc77f0856f7ffbbeca2d3c0ddbeff7e63fae3e175977d990f3217d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-20_control.json": "bef110452003092ec602747219a0d1783c8994a1761d87658ba65185889e5e65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_cell-20_fractional/history.json": "e5f9cfd3f1de90e595d7277e669425fbdd9c2d3e884d844c95712b3efd007e97",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_cell-20_fractional/result.json": "5184a8efa535f4c2edc2407a519ab7e32dc9f614982b2cebc6511b9d359f48c3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-20_cell-20_fractional.json": "7cbfc2a135923b9410d4b7052ef4208b14272e04fe7a7dce772113f19e4fd7bd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-20_cell-20_fractional.json": "e5f9cfd3f1de90e595d7277e669425fbdd9c2d3e884d844c95712b3efd007e97",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_cell-20_amount/history.json": "e5f9cfd3f1de90e595d7277e669425fbdd9c2d3e884d844c95712b3efd007e97",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_coarse_redistributed-cell-20_cell-20_amount/result.json": "0b9bb5a851db9ca2011f60e101cb285027c1aadbfabaf929bcef94f9f1c8e8a6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_coarse_redistributed-cell-20_cell-20_amount.json": "7cbfc2a135923b9410d4b7052ef4208b14272e04fe7a7dce772113f19e4fd7bd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_coarse_redistributed-cell-20_cell-20_amount.json": "e5f9cfd3f1de90e595d7277e669425fbdd9c2d3e884d844c95712b3efd007e97",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/history.json": "37c52649982b7c24ed6857811d332f9c6707bc04d04d4ede695863f15ce1fb65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_control/result.json": "1bb00c14cf01d5707f4b6d91143019a397a7ef38e55d006f506fedad754e5587",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-20_control.json": "dcce029da939c25073a4bf0eebae9b48b7e716357e9e056eac23e6cd6f976d76",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-20_control.json": "37c52649982b7c24ed6857811d332f9c6707bc04d04d4ede695863f15ce1fb65",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/history.json": "954fd027c0d42b2a25ecf767546590ccacc2597aed5ce90aadeefb000b2fbcb2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_fractional/result.json": "bbb3e7049940f33eb6df69d998b158e322aa4a1d94a99d5dab880b71e5e5e875",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-20_cell-20_fractional.json": "f50cfbca0c0a5273122a55bf5477dc580b2dbc8cacc8e9cbdfe280657f569418",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-20_cell-20_fractional.json": "954fd027c0d42b2a25ecf767546590ccacc2597aed5ce90aadeefb000b2fbcb2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/history.json": "954fd027c0d42b2a25ecf767546590ccacc2597aed5ce90aadeefb000b2fbcb2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-8_fine_redistributed-cell-20_cell-20_amount/result.json": "0b6d5db8ec3e5c28e1312d68b4510a5b5db7b14a947befe77da154ef25033b8b",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/pilot_seed-8_fine_redistributed-cell-20_cell-20_amount.json": "f50cfbca0c0a5273122a55bf5477dc580b2dbc8cacc8e9cbdfe280657f569418",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full_seed-8_fine_redistributed-cell-20_cell-20_amount.json": "954fd027c0d42b2a25ecf767546590ccacc2597aed5ce90aadeefb000b2fbcb2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_control/history.json": "1862486cbfc1eb0531183473a163e7c101e2e742a6c0098ed1aa94421a38fdb9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_control/result.json": "e050bdec507861f46826948ff8a7f969419bf58820e960dffc1eb493a6926a43",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_sham_control.json": "0237e9eee41048f09dff51907e31b7108cfb39e129b7513cb773dab42771ddc9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_sham_control.json": "1862486cbfc1eb0531183473a163e7c101e2e742a6c0098ed1aa94421a38fdb9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_cell-29_fractional/history.json": "99ab6bbfb7b21547f53829dff23616e8fe21a590edde4ad950c68ef5d6096391",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_cell-29_fractional/result.json": "bd8b996141851da74ac1855e209aad158c9eca5e41b1bb2b9e92065280ec660c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_sham_cell-29_fractional.json": "d51bd8012f4f7a008bd29d85aeaa489723ee6fc722100afd294ec44c83981d6c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_sham_cell-29_fractional.json": "99ab6bbfb7b21547f53829dff23616e8fe21a590edde4ad950c68ef5d6096391",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_sham_cell-29_amount/history.json": "a40941c70c771a89c0915be796ddd5ba2901e97812e40b2d5a6c28543c9357e0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_sham_cell-29_amount/result.json": "e667d644c7c1790395c20f6263e0a8c6c681a071afe3b78a1dbeb059d4f0f034",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_sham_cell-29_amount.json": "0ca8189b83c16be8cbbd94a0bf99b6496fa88d9464712f375b5849e34d148fd9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_sham_cell-29_amount.json": "a40941c70c771a89c0915be796ddd5ba2901e97812e40b2d5a6c28543c9357e0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_cell-30_fractional/history.json": "53641afa127c87db2271cc640b3d98f2f2e4fba92fa3257fb9aa558e2f951825",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_coarse_sham_cell-30_fractional/result.json": "82c89f9373f7855788c0b1f318a2389437f3e6bc6aa433f58a44cec0868f1301",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_sham_cell-30_fractional.json": "29f94d741d5fc3bde7e3934624dadd0bb654b686cbbee3e56d4b1d022c22e714",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_sham_cell-30_fractional.json": "53641afa127c87db2271cc640b3d98f2f2e4fba92fa3257fb9aa558e2f951825",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_sham_cell-30_amount/history.json": "52a1a943e15f8099dc00a70dbc4288113bec324943b19ec15f2bdd70fb9585eb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_sham_cell-30_amount/result.json": "d76cd186da4549e87fb4f3cb11ec8a79be03b8d4bf75118c82343ca4604ca0b3",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_sham_cell-30_amount.json": "589563f4c518313e5379fa95fb454f66274d0325c4edce8ed302a419b36894d0",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_sham_cell-30_amount.json": "52a1a943e15f8099dc00a70dbc4288113bec324943b19ec15f2bdd70fb9585eb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/history.json": "72fd11f18b5335115529ac51d7b8caac52fb28ffc673bc399c432f7a5b919055",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_control/result.json": "24a625b3ba9f60da35505053e17271217cf897aad308b76b856b64b5b4ae3200",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_sham_control.json": "f9ef4db96097de9486264747e10839ba41cec0a659344c6f16e50b25a4a021da",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_sham_control.json": "72fd11f18b5335115529ac51d7b8caac52fb28ffc673bc399c432f7a5b919055",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/history.json": "3870efeea633611cf296ffe1b72103f3d6cb61fa8eb2f02095bf191791806cb6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-29_fractional/result.json": "607f252ee8e9d54ce04439f0ef05c7020ddcce0104e2821bbbebefd0fcb773b9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_sham_cell-29_fractional.json": "72951a9294b429c144fad2612c6153b4baa1f55e83b030f00f2cce79b810cafd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_sham_cell-29_fractional.json": "3870efeea633611cf296ffe1b72103f3d6cb61fa8eb2f02095bf191791806cb6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/history.json": "28bbe1d5b0ba563289f54c12afc916257c535a50668154f93bc17104342083b2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-29_amount/result.json": "de0f5c490c8fbe4fdeeae20a63972ac5818572af3fe8ab3655dd5f34e8a5ea82",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_sham_cell-29_amount.json": "01e466e9b046b0421781dcd5ffcf6caa28a17cd1611f453b77c0f541215efad5",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_sham_cell-29_amount.json": "28bbe1d5b0ba563289f54c12afc916257c535a50668154f93bc17104342083b2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/history.json": "6199b07a379f876b6aad7b7542208e93e8d941dd2207c96a7d44d66f16d53208",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-delayed-response/seed-9_fine_sham_cell-30_fractional/result.json": "6291ec54be21ce9a82b6cd5393d37a86b4b30039cdf88952e6ede1f86a45ffba",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_sham_cell-30_fractional.json": "c32b98cfe1ddcc8bc4cdff230bb3896d14f610ee49a6ea052a1be23b192480fb",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_sham_cell-30_fractional.json": "6199b07a379f876b6aad7b7542208e93e8d941dd2207c96a7d44d66f16d53208",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/history.json": "cfa86e4cd429857eb90e1286641b2f7005503b2e571853df44aca2acf9f14d6c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_sham_cell-30_amount/result.json": "9c526068897dd92e2f285c8532d5d9a14ec55abde2271e1306f3b091dd7fc975",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_sham_cell-30_amount.json": "6adf8a9325ea19e92dd01a59f62a5a81039cb4f98f941d7efded0ebe19ebcac2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_sham_cell-30_amount.json": "cfa86e4cd429857eb90e1286641b2f7005503b2e571853df44aca2acf9f14d6c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_control/history.json": "87a929966521d7e55fdd5abc5ff5761be56f0df86a9a9307f81f2fa7981751d9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_control/result.json": "1964dcb69a5c862ae048aad2890d49802c98371b58bd2d7340bb435359dd4ddd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-29_control.json": "45984561381352551dd2ff9fe2e825d435855d85dec0ed9febeac0c04becd322",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-29_control.json": "87a929966521d7e55fdd5abc5ff5761be56f0df86a9a9307f81f2fa7981751d9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_cell-29_fractional/history.json": "17f8ef209e7d34211414c07da3a3285f89b48b90281ca88f50226629cd4a7464",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_cell-29_fractional/result.json": "f2b18d399e4c4a506e7d998ba7d126acebc3cf498647a784ed3ddd183b5a9d59",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-29_cell-29_fractional.json": "e731c90d6447b536e174d575c86e2fbea8508958136ba1edee29096568bb2dd9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-29_cell-29_fractional.json": "17f8ef209e7d34211414c07da3a3285f89b48b90281ca88f50226629cd4a7464",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_cell-29_amount/history.json": "17f8ef209e7d34211414c07da3a3285f89b48b90281ca88f50226629cd4a7464",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-29_cell-29_amount/result.json": "b5e56ecd94d9e7bdefc7a16ffb063632227a9b2e994c722a4339ab1666e3ca2c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-29_cell-29_amount.json": "e731c90d6447b536e174d575c86e2fbea8508958136ba1edee29096568bb2dd9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-29_cell-29_amount.json": "17f8ef209e7d34211414c07da3a3285f89b48b90281ca88f50226629cd4a7464",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/history.json": "430b3a9fd00e65bd262654c1f3c786dd9f446a6744e7132992779df1bd786e74",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_control/result.json": "7bdb598616ec59c25685c9f0efc989137013798dc086ddc466b31bf3488816cd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-29_control.json": "af52aaeb4ed7e26816742030df68d492492c13b82dc9afcc7aa6951d205ceedd",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-29_control.json": "430b3a9fd00e65bd262654c1f3c786dd9f446a6744e7132992779df1bd786e74",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/history.json": "b232eff7aea29cc4720c0e868a51523b4305adb8aa733ae26c8e5b0e7fa6bbd2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_fractional/result.json": "d0b23b1c3e56cd98d7e476282f315e1fcaf8c132ca196386c31bb96e384e7b37",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-29_cell-29_fractional.json": "7746755d673cdbfea5399a700876ca698c8ca57fc200bcdf6b65a68b0a1b709e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-29_cell-29_fractional.json": "b232eff7aea29cc4720c0e868a51523b4305adb8aa733ae26c8e5b0e7fa6bbd2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/history.json": "b232eff7aea29cc4720c0e868a51523b4305adb8aa733ae26c8e5b0e7fa6bbd2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-29_cell-29_amount/result.json": "258b04a4b08099d53efd255e436f21798e2da216d3ec39bf8f7ab672eaaaa3d4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-29_cell-29_amount.json": "7746755d673cdbfea5399a700876ca698c8ca57fc200bcdf6b65a68b0a1b709e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-29_cell-29_amount.json": "b232eff7aea29cc4720c0e868a51523b4305adb8aa733ae26c8e5b0e7fa6bbd2",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_control/history.json": "c297e08837d9d0b4baf3f7d51d5ba57e4ff135120e36084c93821ccb47db0aed",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_control/result.json": "05d6aadcc7146a21164f415724a0ebb0083ee8c79dba3226dc9f12bfe9950e0e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-30_control.json": "3e7dde999dff52519f2f6eed28e1b9e12dbf0c6ac086db7fbfa5fb98dc17695d",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-30_control.json": "c297e08837d9d0b4baf3f7d51d5ba57e4ff135120e36084c93821ccb47db0aed",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_cell-30_fractional/history.json": "5b9706721b263717fe64046b06af86733559aac28d78383ef0254ae9b3e4773e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_cell-30_fractional/result.json": "fb257fa8f2f71145947cc3ad488ca7b261bb84417d927d0786972db27085a9a6",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-30_cell-30_fractional.json": "1f29aae436736c000d13cf2f31bc5c4290c28d10937d1e70a2c410ef760cae8f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-30_cell-30_fractional.json": "5b9706721b263717fe64046b06af86733559aac28d78383ef0254ae9b3e4773e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_cell-30_amount/history.json": "5b9706721b263717fe64046b06af86733559aac28d78383ef0254ae9b3e4773e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_coarse_redistributed-cell-30_cell-30_amount/result.json": "253dc58feef1f03ce9aded10347c02c62e83279653eae7724fe8ff8630d338db",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_coarse_redistributed-cell-30_cell-30_amount.json": "1f29aae436736c000d13cf2f31bc5c4290c28d10937d1e70a2c410ef760cae8f",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_coarse_redistributed-cell-30_cell-30_amount.json": "5b9706721b263717fe64046b06af86733559aac28d78383ef0254ae9b3e4773e",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/history.json": "6773fe95e5ee6608cc4ec754f8a3444cf2462d79cadc5487ca0df458f5f8ce1c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_control/result.json": "a730fefc112ceb781da512ea0df1855a989a6a363cd349fca9f1ace8d9466546",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-30_control.json": "8958366be3b1a10f439cb900d66988c0d848246f749379238491f6f5fb1f2121",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-30_control.json": "6773fe95e5ee6608cc4ec754f8a3444cf2462d79cadc5487ca0df458f5f8ce1c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/history.json": "df397c59d5851d229dcd13eda9472f31bee233d16682380e07397c38b62d6173",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_fractional/result.json": "d68a15fddb02c27cdaf34a79c7cb7589b959bf32fa73e9aface789c98ecdb8c4",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-30_cell-30_fractional.json": "6dca1249b64c0ee5dc8a28fc6fff91a265caf64b46490d537c738dc321dabc0c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-30_cell-30_fractional.json": "df397c59d5851d229dcd13eda9472f31bee233d16682380e07397c38b62d6173",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/history.json": "df397c59d5851d229dcd13eda9472f31bee233d16682380e07397c38b62d6173",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/seed-9_fine_redistributed-cell-30_cell-30_amount/result.json": "206a21ee12b37aa3e14d85b4c2eb05b5fdedc7679a7c2afc3bb52fe3988833a9",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/pilot_seed-9_fine_redistributed-cell-30_cell-30_amount.json": "6dca1249b64c0ee5dc8a28fc6fff91a265caf64b46490d537c738dc321dabc0c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full_seed-9_fine_redistributed-cell-30_cell-30_amount.json": "df397c59d5851d229dcd13eda9472f31bee233d16682380e07397c38b62d6173",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-7/full-refinement.json": "df8a7e2bf9c5b39d8377fc9cd0ca580dc86ee0a7f88ed5d9fc9e4513f0fd698c",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-8/full-refinement.json": "890a921472624646c3b76111fd94908ef90b872507f81c821e0b1b21fb04ae33",
+    "/mnt/data/Documents/Python/embryogenesis-simulation/outputs/phase-carry-redistribution-response/pairs/seed-9/full-refinement.json": "7b3e35ea249c7c4745aaaf8362b71fa22041f057ffad44c33d90707cc26f22b6"
+  },
+  "source_npz_scope": "Prepared source chemistry/IDs/time/dtype/config checked by partial ZIP reads. Full source and checkpoint hashes and physical field/carry equality require the separate provenance/mechanics audit.",
+  "plot_data": "/tmp/redistribution-response-independent-plot-data.json",
+  "plot_data_sha256": "6e295bbea13fd39edd5ddc6fc82975522e5d61b3a6d725db1a6d3677d43648fd"
+}

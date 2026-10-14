@@ -1,0 +1,324 @@
+{
+  "review_completed": true,
+  "scoped_mature_timestep_accepted": true,
+  "utc": "2026-10-12T15:01:19.991513+00:00",
+  "protocol_sha256": "057f18713e37c562cc70743dd0dbff37be6e76b53040455a4535452752c19b04",
+  "independent_review": {
+    "path": "archive/study-reviews/2026-10-12-fresh-zygote-mature/independent_review.json",
+    "sha256": "46984bc8bb8602519724a85b1fd31c293cdc4122fa47c435dac939534625f889"
+  },
+  "histories": [
+    1101,
+    1102,
+    1103
+  ],
+  "independent_histories": 3,
+  "new_scientific_histories": 0,
+  "numerical_paths": 24,
+  "time_pairs": 12,
+  "physical_time_window": [
+    18,
+    24
+  ],
+  "grid": 120,
+  "extent": 2.24,
+  "timesteps": [
+    0.00375,
+    0.001875
+  ],
+  "observations_per_path": 41,
+  "dense_graphs_per_path": 401,
+  "complete_checkpoint_states_reconstructed": 72,
+  "maximum_regular_errors": {
+    "concentration_wasserstein_max": 2.873596557027202e-07,
+    "log_wasserstein_max": 2.8683925597971414e-07,
+    "contrast_abs_max": 4.287125047464091e-07,
+    "relative_axis_max": 1.193925662779094e-06,
+    "relative_total_volume_max": 1.3923876274191116e-08,
+    "whole_amount_relative_max": 1.9857850808158162e-08,
+    "mean_polarity_abs_max": 6.903451639899143e-08,
+    "relative_spectrum_max": 9.715804971146527e-06,
+    "cell_count_difference_max": 0.0,
+    "unmatched_observations_max": 0.0
+  },
+  "maximum_homologous_errors": {
+    "chemical_log_max": 1.0497831704847794e-06,
+    "polarity_abs_max": 3.916404952418462e-06,
+    "relative_volume_max": 7.4695357454857e-08,
+    "relative_transport_max": 1.3466762860514826e-05,
+    "unmatched_observations_max": 0.0
+  },
+  "maximum_density_field_error": 7.375045708193634e-06,
+  "maximum_dense_spectrum_error": 9.80916953553831e-06,
+  "recorded_every_step_extrema": {
+    "max_volume_error": 0.011606553388044505,
+    "min_radius": 8.511218524999505,
+    "max_clipping": 0.0,
+    "dilution_amount_error": 4.440892098500626e-16
+  },
+  "paired_topology_mismatch_times": 0,
+  "fine_endpoint_observations": [
+    {
+      "history": 1101,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003588514870726979,
+        "axis_ratio": 1.3244560276013122,
+        "summed_undirected_conductance": 6.335537184927325,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.020630478424121825,
+        "axis_ratio": 1.346286044710113,
+        "summed_undirected_conductance": 5.6340917425806,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.749029659153231,
+      "conductance_relative_change": -0.11071601694888822
+    },
+    {
+      "history": 1101,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003611015553754401,
+        "axis_ratio": 1.3244193035748917,
+        "summed_undirected_conductance": 6.335784445717675,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.020858928157306268,
+        "axis_ratio": 1.3462492393000864,
+        "summed_undirected_conductance": 5.634190538173797,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.776471423840609,
+      "conductance_relative_change": -0.11073512894178106
+    },
+    {
+      "history": 1101,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0035414568624654746,
+        "axis_ratio": 1.327027726472003,
+        "summed_undirected_conductance": 5.996015500919227,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.019626755634444288,
+        "axis_ratio": 1.3516394223120736,
+        "summed_undirected_conductance": 5.224879495338807,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "log_contrast_growth": 5.542000480779717,
+      "conductance_relative_change": -0.12860807405554575
+    },
+    {
+      "history": 1101,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003564137472713679,
+        "axis_ratio": 1.3270011755556188,
+        "summed_undirected_conductance": 5.9963248289573885,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.019844155543569404,
+        "axis_ratio": 1.3516155031411683,
+        "summed_undirected_conductance": 5.225029869578071,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "log_contrast_growth": 5.567730115769179,
+      "conductance_relative_change": -0.12862794818162415
+    },
+    {
+      "history": 1102,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019419320713861118,
+        "axis_ratio": 1.3206456699804798,
+        "summed_undirected_conductance": 6.325621287565111,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.011137437178283624,
+        "axis_ratio": 1.3413732361212738,
+        "summed_undirected_conductance": 5.630604511961334,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.735235203327141,
+      "conductance_relative_change": -0.10987328264024276
+    },
+    {
+      "history": 1102,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019560725657752887,
+        "axis_ratio": 1.3206126907066835,
+        "summed_undirected_conductance": 6.325256090872974,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.01128068530140118,
+        "axis_ratio": 1.341337586178711,
+        "summed_undirected_conductance": 5.630256709608411,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.767007573632671,
+      "conductance_relative_change": -0.10987687633191823
+    },
+    {
+      "history": 1102,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.001922705678641191,
+        "axis_ratio": 1.322915787555235,
+        "summed_undirected_conductance": 5.985299211869174,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.01071676834656325,
+        "axis_ratio": 1.3463784698466483,
+        "summed_undirected_conductance": 5.219666615044609,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "log_contrast_growth": 5.573795545315585,
+      "conductance_relative_change": -0.12791885079133114
+    },
+    {
+      "history": 1102,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0019364117512695258,
+        "axis_ratio": 1.3229092485104295,
+        "summed_undirected_conductance": 5.985530715092626,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.010850609060896308,
+        "axis_ratio": 1.3463708043408984,
+        "summed_undirected_conductance": 5.219842839968158,
+        "frozen_uniform_unstable_modes": 8
+      },
+      "log_contrast_growth": 5.603461688239895,
+      "conductance_relative_change": -0.127923138577131
+    },
+    {
+      "history": 1103,
+      "branch": "off",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0030918097141869323,
+        "axis_ratio": 1.2852486288116949,
+        "summed_undirected_conductance": 6.636856148396923,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.015628814329910094,
+        "axis_ratio": 1.3175271684449716,
+        "summed_undirected_conductance": 6.002463410810277,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.054908217086082,
+      "conductance_relative_change": -0.09558633235404357
+    },
+    {
+      "history": 1103,
+      "branch": "tension_adhesion",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0031112813210923762,
+        "axis_ratio": 1.2851246436509762,
+        "summed_undirected_conductance": 6.6367033129709,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.01580365840681681,
+        "axis_ratio": 1.3173882114665287,
+        "summed_undirected_conductance": 6.002106662509488,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.07946944549139,
+      "conductance_relative_change": -0.09561925861913156
+    },
+    {
+      "history": 1103,
+      "branch": "polarity",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.0030062470560131335,
+        "axis_ratio": 1.287549033314623,
+        "summed_undirected_conductance": 6.309328966992695,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.014965830367293988,
+        "axis_ratio": 1.323680990779845,
+        "summed_undirected_conductance": 5.592502204225518,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 4.978243666753584,
+      "conductance_relative_change": -0.11361378785561216
+    },
+    {
+      "history": 1103,
+      "branch": "full",
+      "dt": 0.001875,
+      "start": {
+        "time": 18.0,
+        "log_activator_sd": 0.003024538896907933,
+        "axis_ratio": 1.2874516063929577,
+        "summed_undirected_conductance": 6.308872712426416,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "end": {
+        "time": 24.0,
+        "log_activator_sd": 0.01513011303358592,
+        "axis_ratio": 1.3235645821883177,
+        "summed_undirected_conductance": 5.591903219915389,
+        "frozen_uniform_unstable_modes": 9
+      },
+      "log_contrast_growth": 5.002452786788042,
+      "conductance_relative_change": -0.11364462800126418
+    }
+  ],
+  "original_scheduling_failure_retained": true,
+  "original_developmental_failure_retained": true,
+  "production_acceptance_fields_unchanged": true,
+  "manuscript_and_ledger_unchanged": true,
+  "long_window_qualification_accepted": false,
+  "biological_identity_qualified": false,
+  "general_convergence_accepted": false,
+  "new_simulation_launched": false,
+  "scope": "Independent NumPy/SciPy saved-array audit: 24 histories (984 regular observations), 9624 dense graphs, all 12 timestep comparisons, 72 complete checkpoint states/native density reconstructions, exact initial-state inheritance and unchanged lineage/targets/RNG. All 24 prefixes and eight-step restarts checked through immutable saved evidence; no fresh CPU/GPU stepping. Restart-start archives are byte-identical to their t21 checkpoints. Acceptance applies only to dt0.00375/0.001875, grid120, physical t18\u201324, these twelve contexts. No long-window formation, persistence, biological identity or universal convergence claim.",
+  "coordinator_seconds": 7674.129595708975
+}

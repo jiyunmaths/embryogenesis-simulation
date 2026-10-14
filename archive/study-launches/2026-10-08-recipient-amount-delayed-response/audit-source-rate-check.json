@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "contexts": 45,
+  "maximum_absolute_rate_discrepancy": 0.0,
+  "script_sha256": "a503730c5e3ef10b2d60364aca5fccd90288306308681213c21345a5fe21bc17",
+  "scope": "Check the phase2 literal source-rate formula against all45 accepted historical delayed contexts. No new integration or acceptance."
+}

@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/home/sji/miniforge3/envs/deeplearning/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase_carry_shared_context_response.py"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONPATH": ".",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 19.23706928700267,
+  "source_sha256": {
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/embryo/phase_carry_shared_context_response.py": "ea63ff96ff9d54dffa758cdedeeb0e701b1647d8a08246ce8a7df32b173c820d",
+    "/home/sji/Documents/Programming/Python/embryogenesis-simulation/tests/test_phase_carry_shared_context_response.py": "4db847d4be6072c970c3e1cbf3edca519b1f3d701e28c7588b01b21b1684844b"
+  },
+  "log": "/tmp/shared-context-tests.log",
+  "log_sha256": "9a071c954ec47a172986d2c484937609a55a4a1d7f9a879325693a0c9e351460"
+}
